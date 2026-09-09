@@ -46,6 +46,35 @@
 4. 在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅本仓库合并产物的 raw 链接：`https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt`。之后每次运行 `update_lists.bat` 即可更新。
 [订阅链接](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt)
 
+## 订阅加速镜像（GitHub 直连慢/超时时选用）
+
+AdGuard Home 是**由您的设备去拉取规则**，国内网络直连 `raw.githubusercontent.com` 常常很慢甚至超时。
+此时可将下表任意一条地址粘贴到「DNS 拦截清单」使用（按推荐程度排序）：
+
+| 方式 | 地址 |
+|---|---|
+| **jsDelivr CDN**（推荐：免费全球 CDN，自动跟随 main 分支，缓存约数分钟） | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt |
+| **gh-proxy.com** 代理 | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt |
+| **ghfast.top** 代理 | https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt |
+| **gh.ddlc.top** 代理 | https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt |
+| 直连 raw.githubusercontent.com | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt |
+
+一次性复制全部地址：
+
+```text
+https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt
+https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
+https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
+https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
+https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
+```
+
+注意事项：
+
+- jsDelivr 免费加速**公开仓库**且单文件需 ≤20 MB（本文件约 5.8 MB，满足）；列表更新后其缓存有数分钟到数小时的延迟，拉取到的可能不是最新版本，稍候再试即可。
+- 第三方代理站可能限速或失效，失效就换下一条；ghfast.top 等加速站域名偶尔变动，最新地址见其主页发布站。
+- 加速站属于第三方服务，仅作下载加速，不影响列表内容本身。
+
 ## 上游规则源与许可
 
 合并产物由以下三个上游编译而来。各列表文件**本身不含许可声明**，下列许可证来自各上游仓库的 LICENSE 文件：
