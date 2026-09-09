@@ -97,8 +97,25 @@ def main():
     header.append("!")
 
     body = sorted_blocks + sorted_whites
-    with open(OUT_FILE, "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n".join(header + body + [""]))
+    new_text = "\n".join(header + body + [""])
+
+    # Rewrite only when something besides the generated timestamp changed,
+    # so a scheduled run with identical rules creates no git commit.
+    def content_key(text):
+        return [ln for ln in text.splitlines()
+                if not ln.startswith("! Generated:")]
+
+    changed = True
+    if os.path.exists(OUT_FILE):
+        with open(OUT_FILE, "r", encoding="utf-8") as f:
+            old_text = f.read()
+        changed = content_key(old_text) != content_key(new_text)
+    if changed:
+        with open(OUT_FILE, "w", encoding="utf-8", newline="\n") as f:
+            f.write(new_text)
+        out_status = "written (content changed)"
+    else:
+        out_status = "unchanged - file kept as-is"
 
     # ---- Console report (ASCII only, safe under any codepage) ----
     print("==== Per-source input stats ====")
@@ -113,7 +130,7 @@ def main():
     print(f"Whitelist rules after dedup  : {len(sorted_whites)}")
     print(f"Total after dedup            : {len(sorted_blocks) + len(sorted_whites)}")
     print(f"Duplicate lines removed      : {sum_total - len(sorted_blocks) - len(sorted_whites)}")
-    print(f"Output file                  : {os.path.relpath(OUT_FILE, BASE_DIR)}")
+    print(f"Output file                  : {os.path.relpath(OUT_FILE, BASE_DIR)}  [{out_status}]")
 
 
 if __name__ == "__main__":
