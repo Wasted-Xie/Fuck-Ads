@@ -44,6 +44,7 @@
    也可跳过推送仅手动合并：`py merge_dedup.py`。
 
 4. 在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅本仓库合并产物的 raw 链接：`https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt`。之后每次运行 `update_lists.bat` 即可更新。
+[订阅链接](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt)
 
 ## 上游规则源与许可
 
