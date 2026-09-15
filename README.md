@@ -12,15 +12,18 @@
 - **排除翻墙/加速类条目**：指向非本地 IP 的 hosts 重定向条目一律不纳入
 - **保护域名**：附加源中 360 系列的拦截被过滤（原有上游列表不受影响，一概照拦）
 - 合并文件头部自动写入生成时间、来源与统计信息，便于审计
-- 一键脚本：拉取 → 清洗 → 合并 → 提交并推送到 GitHub 仓库
+- **两种更新方式**：GitHub Actions 云端每小时自动更新（推荐），或本地 Windows 一键脚本
 
 ## 目录结构
 
 ```
 .
+├── fetch_sources.py      # 源下载脚本：21 个上游 → raw/ 与 sources/（本地与云端通用）
 ├── integrate_sources.py  # 附加源清洗脚本：多格式解析 → 统一为 ||域名^（Python 3）
 ├── merge_dedup.py        # 合并去重脚本：主源 + 附加源 → 最终产物（Python 3）
-├── update_lists.bat      # 一键更新脚本：下载 → 清洗 → 合并 → git 提交推送
+├── update_lists.bat      # 本地一键脚本：下载 → 清洗 → 合并 → git 提交推送（Windows）
+├── .github/workflows/
+│   └── update.yml        # GitHub Actions 定时工作流（每小时）
 ├── .gitignore            # 忽略 raw/ 与 sources/（上游源文件不入库）
 ├── raw/                  # 3 个主源文件（脚本自动拉取，临时产物）
 ├── sources/              # 18 个附加源文件（脚本自动拉取，临时产物）
@@ -31,9 +34,25 @@
 
 ## 使用方法
 
+两种更新方式**任选其一**（不要同时启用，否则两边会互相推送冲突）。
+
+### 方式一：GitHub Actions 云端自动更新（推荐）
+
+不需要本地机器开机，云端每小时自动执行：
+
+1. `.github/workflows/update.yml` 已随仓库提供，**无需再配置任何脚本**；
+2. **首次部署需确认一次仓库设置**：`Settings → Actions → General → Workflow permissions` 选择 **Read and write**，否则工作流没有权限把产物推回仓库；
+3. 想立刻验证：打开 `Actions` 标签页 → 选择 **Update merged DNS rules** → **Run workflow**。
+
+工作流每次执行：拉取 21 个源 → 格式清洗 → 合并去重 → **仅在有变化时**提交推送。
+
+> 说明：GitHub 的定时触发为每小时整点（UTC），高峰期可能有数分钟到数十分钟延迟；规则无变化时不产生提交。
+
+### 方式二：本地 Windows 运行（可选/应急）
+
 前置依赖：Windows 10 1803+（自带 curl）、[Python 3](https://www.python.org/downloads/)（安装时勾选 **py launcher**）、git。
 
-1. 用文本编辑器打开 `update_lists.bat`，在顶部配置区确认目标仓库地址：
+1. 用文本编辑器打开 `update_lists.bat`，确认顶部目标仓库地址：
    ```bat
    set "REMOTE_URL=https://github.com/Wasted-Xie/Fuck-Ads.git"
    ```
@@ -42,19 +61,27 @@
    git config --global user.name  "你的名字"
    git config --global user.email "you@example.com"
    ```
-3. 双击运行 `update_lists.bat`。脚本会依次执行 5 步：
+3. 双击运行 `update_lists.bat`，脚本依次执行 5 步：
    1. **定位路径** —— `cd` 到脚本所在目录；
    2. **下载 3 个主源** 到 `raw/`（多镜像链自动回退，失败会中止）；
-   3. **下载 18 个附加源** 到 `sources/`（GitHub 源经镜像链轮换，非 GitHub 源直连；个别失败只告警不中止）；
+   3. **下载 18 个附加源** 到 `sources/`（GitHub 源经镜像链轮换，非 GitHub 源直连；个别失败只告警并沿用本地缓存）；
    4. **清洗 + 合并** —— 运行 `integrate_sources.py` 统一格式，再运行 `merge_dedup.py` 去重合并；
-   5. **提交推送** —— 初始化本地 git 仓库（如尚未初始化），提交产物与脚本，推送到 `origin/main`。
+   5. **提交推送** —— 初始化本地 git 仓库（如尚未初始化），提交产物与脚本，推送到 `origin/main`（仅在有变化时）。
 
    也可手动分步执行：
    ```bat
+   py fetch_sources.py
    py integrate_sources.py
    py merge_dedup.py
    ```
-4. 在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅本仓库合并产物的 raw 链接：`https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt`。之后每次运行 `update_lists.bat` 即可更新。
+4. 如需本机定时运行（示例：每小时）：
+   ```bat
+   schtasks /Create /TN FuckAdsUpdate /TR "C:\path\to\update_lists.bat" /SC HOURLY /MO 1 /F
+   ```
+
+### 订阅
+
+在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅：`https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt`。列表随上游自动更新。
 
 ## 订阅加速镜像（GitHub 直连慢/超时时选用）
 

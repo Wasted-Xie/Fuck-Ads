@@ -1,0 +1,62 @@
+name: Update merged DNS rules
+
+on:
+  schedule:
+    # 每小时整点（UTC）；GitHub 的定时触发在高峰期可能有数分钟到数十分钟延迟
+    - cron: '0 * * * *'
+  # 支持在 Actions 页面手动点一下运行
+  workflow_dispatch:
+
+permissions:
+  contents: write          # 需要写权限才能把产物推回仓库
+
+# 定时触发与手动触发同时发生时排队而非并行，避免互相干扰
+concurrency:
+  group: update-dns-rules
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 缓存上一次下载的上游源文件。
+      # 某个源本次拉取失败或响应异常时，fetch_sources.py 会沿用缓存副本，
+      # 使规则集保持稳定、不产生无意义的提交（对应本地 bat 的缓存保护行为）。
+      - name: Restore upstream source cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            raw
+            sources
+          key: dns-sources-${{ github.run_id }}
+          restore-keys: |
+            dns-sources-
+
+      - name: Fetch upstream sources
+        run: python3 fetch_sources.py
+
+      - name: Clean and integrate extra sources
+        run: python3 integrate_sources.py
+
+      - name: Merge and deduplicate
+        run: python3 merge_dedup.py
+
+      - name: Commit and push when changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add out/merged_dns_rules.txt
+          if git diff --cached --quiet; then
+            echo "No rule changes - nothing to commit"
+          else
+            git commit -m "Update merged DNS rules"
+            git push
+          fi
