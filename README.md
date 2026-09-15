@@ -123,6 +123,8 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.
 | Adblock Warning Removal List | https://easylist-downloads.adblockplus.org/antiadblockfilters.txt | 反 Adblock 提示 |
 | I don't care about cookies | https://www.i-dont-care-about-cookies.eu/abp/ | Cookie 提示（DNS 层基本无有效规则） |
 
+**附加源清单来源**：[otobtc/ADhosts](https://github.com/otobtc/ADhosts)（https://github.com/otobtc/ADhosts）—— 本项目的附加源即从该仓库的推荐列表中筛选非翻墙类源，再统一做格式清洗。
+
 > 附加源各自适用其仓库声明的许可，使用与再分发前请查阅对应仓库。
 
 ### 清洗规则明细
