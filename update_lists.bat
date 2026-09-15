@@ -129,6 +129,10 @@ if errorlevel 1 (
     )
 )
 
+rem  -- start from a clean index so any leftover staged entry (e.g. from an
+rem     interrupted or manual run) can never be committed by accident --
+git reset >nul 2>nul
+
 rem  -- stage the merged file and the scripts (raw/ and sources/ stay untracked) --
 git add "%OUT_DIR%\%OUT_NAME%" "%MERGE_SCRIPT%" "%INTEGRATE_SCRIPT%" .gitignore README.md "%~nx0" || ( echo [ERROR] git add failed & exit /b 1 )
 git diff --cached --quiet
