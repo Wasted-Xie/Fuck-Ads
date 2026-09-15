@@ -2,5 +2,9 @@
 raw/
 sources/
 
+# 合并流程的中间产物，不纳入版本库
+out/integrated_extra.txt
+out/excluded_redirect_entries.txt
+
 # 本地测试目录，不纳入版本库
 test/
