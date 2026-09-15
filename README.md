@@ -97,7 +97,7 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.
 | GOODBYEADS dns | https://github.com/8680/GOODBYEADS | **MIT** | 去广告域名 |
 | AdBlock DNS（217heidai/adblockfilters） | https://github.com/217heidai/adblockfilters | **GPL-3.0** | 去广告合并域名（含 `@@` 白名单） |
 
-> 注：URLhaus 数据（[API 文档](https://urlhaus.abuse.ch/api/)原文）：“available free of charge under the fair use principles”，商业/营利用途可能需要 abuse.ch 商业 API 订阅；再分发请遵守其 [Terms of Service](https://urlhaus.abuse.ch/faq/#tos)。个人非商业用途并注明来源风险较低。
+> 注：URLhaus 数据 ([API 文档](https://urlhaus.abuse.ch/api/) 原文)：“available free of charge under the fair use principles”，商业/营利用途可能需要 abuse.ch 商业 API 订阅；再分发请遵守其 [Terms of Service](https://urlhaus.abuse.ch/faq/#tos)。个人非商业用途并注明来源风险较低。
 
 ### 附加源（18 个，经格式清洗）
 
