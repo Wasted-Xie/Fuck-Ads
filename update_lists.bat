@@ -1,5 +1,5 @@
 @echo off
-setlocal EnableExtensions
+setlocal EnableExtensions EnableDelayedExpansion
 title Update DNS merged lists
 
 rem ============================================================
@@ -23,6 +23,9 @@ set "OUT_NAME=merged_dns_rules.txt"
 rem  Source directories (both stay untracked)
 set "RAW_DIR=raw"
 set "EXTRA_DIR=sources"
+
+rem  Counter: extra sources that fell back to their cached copy
+set /a CACHE_USED=0
 rem ============================================================
 
 rem  Primary sources (3). Each has a chain of mirror URLs
@@ -77,6 +80,7 @@ call :fetch_direct "easylist-privacy.txt" "https://easylist.to/easylist/easypriv
 call :fetch_direct "easylistchina.txt"    "https://easylist-downloads.adblockplus.org/easylistchina.txt"
 call :fetch_direct "idontcarecookies.txt" "https://www.i-dont-care-about-cookies.eu/abp/"
 call :fetch_direct "antiadblock.txt"      "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
+if %CACHE_USED% GTR 0 echo       [INFO] %CACHE_USED% extra source^(s^) reused from cache - rule set unchanged
 
 rem ---- Step 4: clean the extra sources, then merge everything ----
 where py >nul 2>nul
@@ -198,7 +202,12 @@ for %%P in (https://gh-proxy.com/ https://gh.ddlc.top/ https://gh.con.sh/ https:
 )
 curl -sSL --fail --ssl-no-revoke --connect-timeout 15 --max-time 150 -o "%TMPF%" "%RAW%" 2>nul
 if errorlevel 1 (
-    echo       [WARN] %NAME% failed on all mirrors - skipped
+    if exist "%EXTRA_DIR%\%NAME%" (
+        set /a CACHE_USED+=1
+        echo       [WARN] %NAME% download failed - keeping cached copy ^(rules unchanged^)
+    ) else (
+        echo       [WARN] %NAME% download failed and no cache - source omitted
+    )
     del "%TMPF%" >nul 2>nul
     exit /b 1
 )
@@ -218,7 +227,12 @@ set "TMPF=%EXTRA_DIR%\%NAME%.tmp"
 echo       %NAME% ...
 curl -sSL --fail --ssl-no-revoke --retry 2 --connect-timeout 15 --max-time 150 -o "%TMPF%" "%URL%" 2>nul
 if errorlevel 1 (
-    echo       [WARN] %NAME% download failed - skipped
+    if exist "%EXTRA_DIR%\%NAME%" (
+        set /a CACHE_USED+=1
+        echo       [WARN] %NAME% download failed - keeping cached copy ^(rules unchanged^)
+    ) else (
+        echo       [WARN] %NAME% download failed and no cache - source omitted
+    )
     del "%TMPF%" >nul 2>nul
     exit /b 1
 )
@@ -226,25 +240,40 @@ call :check_and_move "%NAME%" || exit /b 1
 exit /b 0
 
 rem ============================================================
-rem  Helper: reject empty extra download, otherwise move into place.
+rem  Helper: reject empty/abnormally small extra download, otherwise
+rem  move it into place. A new copy smaller than half of the cached
+rem  one is treated as a broken response (error page / truncation),
+rem  so the cached copy is kept and the rule set stays stable.
 rem  Usage: call :check_and_move "name"
 rem ============================================================
 :check_and_move
 set "NAME=%~1"
 set "TMPF=%EXTRA_DIR%\%NAME%.tmp"
+set "DEST=%EXTRA_DIR%\%NAME%"
 if not exist "%TMPF%" (
     echo       [WARN] %NAME% missing - skipped
     exit /b 1
 )
-for %%A in ("%TMPF%") do if %%~zA EQU 0 (
+for %%A in ("%TMPF%") do set "NEWSIZE=%%~zA"
+if !NEWSIZE! EQU 0 (
     echo       [WARN] %NAME% empty response - skipped
     del "%TMPF%" >nul 2>nul
     exit /b 1
 )
-move /y "%TMPF%" "%EXTRA_DIR%\%NAME%" >nul
+if exist "!DEST!" (
+    for %%B in ("!DEST!") do set "OLDSIZE=%%~zB"
+    set /a HALFSIZE=!OLDSIZE!/2
+    if !NEWSIZE! LSS !HALFSIZE! (
+        set /a CACHE_USED+=1
+        echo       [WARN] %NAME% new copy is !NEWSIZE! bytes vs cached !OLDSIZE! bytes - keeping cached copy
+        del "%TMPF%" >nul 2>nul
+        exit /b 1
+    )
+)
+move /y "%TMPF%" "%DEST%" >nul
 if errorlevel 1 (
-    echo       [WARN] cannot write %EXTRA_DIR%\%NAME%
+    echo       [WARN] cannot write %DEST%
     exit /b 1
 )
-echo       OK: %EXTRA_DIR%\%NAME%
+echo       OK: %DEST%
 exit /b 0
