@@ -26,7 +26,29 @@ SOURCES = [
      "url": "https://github.com/8680/GOODBYEADS (mirror ghfast.top)"},
     {"label": "AdBlock DNS (217heidai)", "file": "adblockdns.txt",
      "url": "https://github.com/217heidai/adblockfilters"},
+    {"label": "Integrated extra sources (18 lists)", "file": "integrated_extra.txt",
+     "path": os.path.join(OUT_DIR, "integrated_extra.txt"),
+     "url": "yhosts / ad-wars / 1024_hosts / AdAway / YousList / StevenBlack / anti-AD / "
+            "EasyList family / ADgk / CJX / mvps / etc.",
+     "optional": True},
 ]
+
+# 永不拦截的保护域名（含其全部子域）：用户明确要求放行 360 系列
+PROTECTED_DOMAINS = (
+    "360.cn", "360.com", "360safe.com", "360shouji.com", "360os.com",
+    "360totalsecurity.com", "qhimg.com", "qhmsg.com", "qhres.com",
+)
+
+
+def is_protected(domain):
+    """判断域名是否属于受保护域名（自身或其子域）"""
+    d = (domain or "").lower().strip()
+    if d.startswith("*."):
+        d = d[2:]
+    for p in PROTECTED_DOMAINS:
+        if d == p or d.endswith("." + p):
+            return True
+    return False
 
 
 def is_block_rule(line):
@@ -37,14 +59,18 @@ def is_white_rule(line):
     return line.startswith("@@")
 
 
-def load_rules(filename):
-    """Read one source file, return (block_set, white_set, total_rule_lines)."""
-    path = os.path.join(RAW_DIR, filename)
+def load_rules(path, apply_protection=False):
+    """Read one source file, return (block_set, white_set, total_rule_lines, protected_count).
+
+    apply_protection: 仅对附加上游源启用保护域名过滤；
+                      原有上游列表按原样一概拦截，不做任何豁免。
+    """
     with open(path, "r", encoding="utf-8") as f:
         text = f.read()
 
     blocks, whites = set(), set()
     total = 0
+    protected = 0
     for raw_line in text.splitlines():
         line = raw_line.strip()
         if not line:                      # empty line
@@ -54,12 +80,17 @@ def load_rules(filename):
         total += 1
         if is_white_rule(line):
             whites.add(line)
-        elif is_block_rule(line):
-            blocks.add(line)
+            continue
+        if is_block_rule(line):
+            dom = line[2:].rstrip("^")
         else:
-            # Keep any unexpected line in the block set instead of dropping it
-            blocks.add(line)
-    return blocks, whites, total
+            # 容错：非标准行（如 hosts 形式）取末段作为域名判断
+            dom = line.split()[-1] if " " in line else line
+        if apply_protection and is_protected(dom):
+            protected += 1                # 保护域名：附加源中永不拦截
+            continue
+        blocks.add(line)
+    return blocks, whites, total, protected
 
 
 def main():
@@ -67,13 +98,18 @@ def main():
     all_blocks, all_whites = set(), set()
 
     for src in SOURCES:
-        path = os.path.join(RAW_DIR, src["file"])
+        path = src.get("path") or os.path.join(RAW_DIR, src["file"])
         if not os.path.exists(path):
+            if src.get("optional"):
+                print(f"[WARN] optional source missing, skipped: {src['file']}")
+                continue
             print(f"[ERROR] missing source file: {path}", file=sys.stderr)
             sys.exit(1)
-        blocks, whites, total = load_rules(src["file"])
+        blocks, whites, total, protected = load_rules(
+            path, apply_protection=bool(src.get("optional")))
         per_source.append({**src, "total": total,
-                           "blocks": len(blocks), "whites": len(whites)})
+                           "blocks": len(blocks), "whites": len(whites),
+                           "protected": protected})
         all_blocks |= blocks
         all_whites |= whites
 
@@ -86,14 +122,14 @@ def main():
     header = [
         "!",
         "! Title: Merged DNS blocklist (line-level dedup)",
-        "! Description: 三个源按整行精确去重合并，白名单(@@)规则保留在文件末尾",
+        f"! Description: {len(per_source)} 个源按整行精确去重合并，白名单(@@)规则保留在文件末尾",
         f"! Generated: {stamp}",
         f"! Block rules: {len(sorted_blocks)}",
         f"! Whitelist rules: {len(sorted_whites)}",
         "!",
     ]
     header += [f"! Source {i + 1}: {s['label']}  <-  {s['url']}"
-               for i, s in enumerate(SOURCES)]
+               for i, s in enumerate(per_source)]
     header.append("!")
 
     body = sorted_blocks + sorted_whites
@@ -120,16 +156,20 @@ def main():
     # ---- Console report (ASCII only, safe under any codepage) ----
     print("==== Per-source input stats ====")
     sum_total = 0
+    sum_protected = 0
     for s in per_source:
         sum_total += s["total"]
+        sum_protected += s["protected"]
+        extra = f"  protected={s['protected']}" if s["protected"] else ""
         print(f"{s['label']:<34} rules={s['total']:>7}  "
-              f"(block {s['blocks']} / white {s['whites']})")
+              f"(block {s['blocks']} / white {s['whites']}){extra}")
     print("==== Merge dedup result ====")
     print(f"Total input rule lines       : {sum_total}")
     print(f"Block rules after dedup      : {len(sorted_blocks)}")
     print(f"Whitelist rules after dedup  : {len(sorted_whites)}")
     print(f"Total after dedup            : {len(sorted_blocks) + len(sorted_whites)}")
     print(f"Duplicate lines removed      : {sum_total - len(sorted_blocks) - len(sorted_whites)}")
+    print(f"Protected domains skipped    : {sum_protected}  (extra sources only)")
     print(f"Output file                  : {os.path.relpath(OUT_FILE, BASE_DIR)}  [{out_status}]")
 
 
