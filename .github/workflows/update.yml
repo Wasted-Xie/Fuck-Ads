@@ -20,10 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.x'
 
@@ -31,7 +31,7 @@ jobs:
       # 某个源本次拉取失败或响应异常时，fetch_sources.py 会沿用缓存副本，
       # 使规则集保持稳定、不产生无意义的提交（对应本地 bat 的缓存保护行为）。
       - name: Restore upstream source cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             raw
