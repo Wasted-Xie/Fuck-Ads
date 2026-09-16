@@ -2,8 +2,8 @@ name: Update merged DNS rules
 
 on:
   schedule:
-    # 每小时整点（UTC）；GitHub 的定时触发在高峰期可能有数分钟到数十分钟延迟
-    - cron: '0 * * * *'
+    # 每 30 分钟（UTC 的 0 分与 30 分）；GitHub 的定时触发在高峰期可能有数分钟到数十分钟延迟
+    - cron: '0,30 * * * *'
   # 支持在 Actions 页面手动点一下运行
   workflow_dispatch:
 
