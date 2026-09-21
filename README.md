@@ -23,7 +23,7 @@
 - **三版本产物**：覆盖从高性能设备到 229MB 低配软路由的全部场景
 - **各版互不冲突**：三套列表共用同一份白名单，且都会剔除白名单中已有的域名，不会出现「A 版拦截 / B 版放行」的矛盾
 - 合并文件头部自动写入生成时间、来源与统计信息，便于审计
-- **两种更新方式**：GitHub Actions 云端每 30 分钟自动更新（推荐），或本地 Windows 一键脚本
+- **全自动更新**：GitHub Actions 云端每 30 分钟拉取上游并重建三套列表，仅在有变化时提交
 
 ## 目录结构
 
@@ -33,7 +33,6 @@
 .
 ├── fetch_sources.py          # 公共：下载 21 个上游 + Lite 专用上游 → Cache/
 ├── integrate_sources.py      # 公共：附加源清洗（多格式解析 → 统一为 ||域名^）
-├── update_lists.bat          # 本地一键脚本：下载 → 清洗 → 三版构建 → 提交推送
 ├── CHANGELOG.md              # 版本变更记录
 │
 ├── Full/                     # 全量版：21 个源全覆盖
@@ -62,9 +61,9 @@
 
 ## 使用方法
 
-两种更新方式**任选其一**（不要同时启用，否则两边会互相推送冲突）。
+更新流程已完全托管在 GitHub Actions 上，本地无需运行任何脚本。
 
-### 方式一：GitHub Actions 云端自动更新（推荐）
+### 方式一：GitHub Actions 云端自动更新（默认方式）
 
 不需要本地机器开机，云端每 30 分钟自动执行：
 
@@ -72,43 +71,26 @@
 2. **首次部署需确认一次仓库设置**：`Settings → Actions → General → Workflow permissions` 选择 **Read and write**，否则工作流没有权限把产物推回仓库；
 3. 想立刻验证：打开 `Actions` 标签页 → 选择 **Update merged DNS rules** → **Run workflow**。
 
-工作流每次执行：拉取 21 个源 + Lite 专用上游 → 格式清洗 → 合并去重（全量）→ 构建 Lite 版 → **仅在有变化时**提交推送（两套产物一起提交）。
+工作流每次执行：拉取 21 个源 + Lite 专用上游 → 格式清洗 → 合并去重（全量）→ 构建 Lite 版 → 构建 Slim 版 → **仅在有变化时**提交推送（三套产物一起提交）。
 
 > 说明：GitHub 的定时触发为每 30 分钟（UTC 的 0 分与 30 分），高峰期可能有数分钟到数十分钟延迟；规则无变化时不产生提交。
 
-### 方式二：本地 Windows 运行（可选/应急）
+### 方式二：本地手动运行（可选/应急）
 
-前置依赖：Windows 10 1803+（自带 curl）、[Python 3](https://www.python.org/downloads/)（安装时勾选 **py launcher**）、git。
+日常更新由云端 Actions 全自动完成，**本地无需运行任何脚本**。
+仅在需要本地排查、或临时离线生成规则时，按顺序手动执行：
 
-1. 用文本编辑器打开 `update_lists.bat`，确认顶部目标仓库地址：
-   ```bat
-   set "REMOTE_URL=https://github.com/Wasted-Xie/Fuck-Ads.git"
-   ```
-2. 首次使用前配置 git 身份（否则提交会失败）：
-   ```bat
-   git config --global user.name  "你的名字"
-   git config --global user.email "you@example.com"
-   ```
-3. 双击运行 `update_lists.bat`，脚本依次执行：
-   1. **定位路径** —— `cd` 到脚本所在目录；
-   2. **下载 3 个主源** 到 `raw/`（多镜像链自动回退，失败会中止）；
-   3. **下载 18 个附加源** 到 `sources/` 与 **Lite 专用上游** 到 `raw/`（GitHub 源经镜像链轮换，非 GitHub 源直连；个别失败只告警并沿用本地缓存）；
-   4. **清洗 + 合并（全量）** —— `integrate_sources.py` 统一格式，`merge_dedup.py` 去重合并；
-   5. **构建 Lite 版** —— `build_lite.py` 以全量白名单为基准生成 `merged_dns_rules_lite.txt`；
-   6. **提交推送** —— 初始化本地 git 仓库（如尚未初始化），提交两套产物与脚本，推送到 `origin/main`（仅在有变化时）。
+前置依赖：[Python 3](https://www.python.org/downloads/)（安装时勾选 **py launcher**）。
 
-   也可手动分步执行：
-   ```bat
-   py fetch_sources.py
-   py integrate_sources.py
-   py Full\merge_dedup.py
-   py Lite\build_lite.py           :: 必须在 Full\merge_dedup.py 之后运行
-   py Slim\build_lite_slim.py      :: 同上，需要全量产物作为白名单基准
-   ```
-4. 如需本机定时运行（示例：每小时）：
-   ```bat
-   schtasks /Create /TN FuckAdsUpdate /TR "C:\path\to\update_lists.bat" /SC HOURLY /MO 1 /F
-   ```
+```bat
+py fetch_sources.py             :: 下载全部上游 → Cache/
+py integrate_sources.py         :: 清洗附加源
+py Full\merge_dedup.py          :: 生成全量版（必须在 integrate 之后）
+py Lite\build_lite.py           :: 生成 Lite 版（需要全量产物作白名单基准）
+py Slim\build_lite_slim.py      :: 生成 Slim 版（同上）
+```
+
+产物输出到 `out/`，文件名与云端一致；若需要提交推送，自行执行 `git add` / `commit` / `push` 即可。
 
 ### 订阅
 

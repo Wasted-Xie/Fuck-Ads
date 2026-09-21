@@ -65,7 +65,7 @@
 ```
 ├── fetch_sources.py          # 公共：下载 → Cache/
 ├── integrate_sources.py      # 公共：附加源清洗
-├── update_lists.bat          # 本地一键脚本
+├── CHANGELOG.md              # 版本变更记录
 ├── Full/merge_dedup.py       # 全量版
 ├── Lite/build_lite.py        # Lite 版
 ├── Slim/build_lite_slim.py   # Slim 版
@@ -89,6 +89,7 @@
 
 ### 移除
 
+- `update_lists.bat`（本地一键脚本）—— 更新流程已完全托管至 GitHub Actions，本地不再需要该脚本；如需本地生成，按 README「方式二」依次运行五个 Python 脚本即可
 - `update_lists_no_window.bat`（旧版隐藏窗口启动器，内容为早期流程快照）
 - `merge_dedup.js`（早期 JS 实现，已被 `Full/merge_dedup.py` 取代）
 - `run_hidden.vbs`（定时任务包装器）
