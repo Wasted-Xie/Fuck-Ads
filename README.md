@@ -27,25 +27,38 @@
 
 ## 目录结构
 
+代码按版本分目录存放，公共部分（下载、清洗）留在根目录：
+
 ```
 .
-├── fetch_sources.py      # 源下载：21 个上游 + Lite 专用上游 → raw/ 与 sources/
-├── integrate_sources.py  # 附加源清洗：多格式解析 → 统一为 ||域名^（Python 3）
-├── merge_dedup.py        # 全量合并去重：主源 + 附加源 → merged_dns_rules.txt
-├── build_lite.py         # Lite 版构建：国内向源 → merged_dns_rules_lite.txt（Python 3）
-├── build_lite_slim.py    # Slim 版构建：仅国内源 + 父域收敛 → merged_dns_rules_slim.txt
-├── update_lists.bat      # 本地一键脚本：下载 → 清洗 → 合并 → 构建 Lite → 提交推送（Windows）
+├── fetch_sources.py          # 公共：下载 21 个上游 + Lite 专用上游 → Cache/
+├── integrate_sources.py      # 公共：附加源清洗（多格式解析 → 统一为 ||域名^）
+├── update_lists.bat          # 本地一键脚本：下载 → 清洗 → 三版构建 → 提交推送
+├── update_lists_no_window.bat# 同上，但以隐藏窗口方式启动（无控制台闪现）
+│
+├── Full/                     # 全量版：21 个源全覆盖
+│   └── merge_dedup.py        #   → out/merged_dns_rules.txt
+├── Lite/                     # Lite 版：国内向源，优先国内域名
+│   └── build_lite.py         #   → out/merged_dns_rules_lite.txt
+├── Slim/                     # Slim 版：仅国内源 + 父域无损收敛
+│   └── build_lite_slim.py    #   → out/merged_dns_rules_slim.txt
+│
+├── Cache/                    # 上游源文件缓存（脚本自动拉取，不入库）
+│   ├── raw/                  #   主源 + Lite 专用上游
+│   └── sources/              #   18 个附加源
+├── out/                      # 最终产物（入库，供订阅）
+│   ├── integrated_extra.txt          # 中间产物（不入库）
+│   ├── excluded_redirect_entries.txt # 中间产物（不入库）
+│   ├── merged_dns_rules.txt          # 全量版
+│   ├── merged_dns_rules_lite.txt     # Lite 版
+│   └── merged_dns_rules_slim.txt     # Slim 版
 ├── .github/workflows/
-│   └── update.yml        # GitHub Actions 定时工作流（每 30 分钟）
-├── .gitignore            # 忽略 raw/ 与 sources/（上游源文件不入库）
-├── raw/                  # 主源 + Lite 专用上游（脚本自动拉取，临时产物）
-├── sources/              # 18 个附加源（脚本自动拉取，临时产物）
-└── out/
-    ├── integrated_extra.txt        # 附加源清洗后的中间产物
-    ├── merged_dns_rules.txt        # 全量产物
-    ├── merged_dns_rules_lite.txt   # Lite 产物（国内优先）
-    └── merged_dns_rules_slim.txt   # Slim 产物（仅国内源 + 父域收敛，低配设备用）
+│   └── update.yml            # GitHub Actions 定时工作流（每 30 分钟）
+└── .gitignore                # 忽略 Cache/、中间产物、__pycache__、test/
 ```
+
+> 三个版本目录中的脚本**只读取** `Cache/` 的源文件与 `out/` 中的全量产物，彼此不干扰；
+> 各版本脚本可独立运行，但存在顺序依赖：`integrate_sources.py` → `Full/` → `Lite/` 与 `Slim/`。
 
 ## 使用方法
 
@@ -88,8 +101,9 @@
    ```bat
    py fetch_sources.py
    py integrate_sources.py
-   py merge_dedup.py
-   py build_lite.py            :: 必须在 merge_dedup.py 之后运行
+   py Full\merge_dedup.py
+   py Lite\build_lite.py           :: 必须在 Full\merge_dedup.py 之后运行
+   py Slim\build_lite_slim.py      :: 同上，需要全量产物作为白名单基准
    ```
 4. 如需本机定时运行（示例：每小时）：
    ```bat
@@ -204,7 +218,7 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_
 2. **传统去重手段已接近极限**：父域归并只能挤出 10%。继续压缩的唯一途径是"删规则"，而每删一条都可能漏掉一个真实广告域。
 3. **国内网络环境的广告治理成本极高**：广告域名不是集中在几个可被一次性封禁的大平台，而是像霉菌一样散布在数十万个廉价域名上。这既是监管缺位的表现，也是流量变现链条极度碎片化的结果。
 
-> 上述数据全部由本仓库脚本在本地实测得出，可用 `py build_lite_slim.py` 复现。
+> 上述数据全部由本仓库脚本在本地实测得出，可用 `py Slim\build_lite_slim.py` 复现。
 
 ## Lite 版说明（面向极低配置软路由）
 
@@ -236,9 +250,9 @@ Lite 版把规则量压到全量的约 **47%**（约 14.7 万条，3.2 MB），�
 ### 手动调整
 
 ```bat
-py build_lite.py                    :: 默认：全部国内向源（约 14.7 万条）
-py build_lite.py --max 120000       :: 限到 12 万条，超限时按「优先级 → .cn 优先 → 域名长度」裁剪
-py build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727 条）
+py Lite\build_lite.py                    :: 默认：全部国内向源（约 14.7 万条）
+py Lite\build_lite.py --max 120000       :: 限到 12 万条，超限时按「优先级 → .cn 优先 → 域名长度」裁剪
+py Lite\build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727 条）
 ```
 
 ## Slim 版说明（面向 229MB 级内存设备）
@@ -282,9 +296,9 @@ py build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727 条�
 ### 手动调整
 
 ```bat
-py build_lite_slim.py                  :: 默认：无损去重，不裁剪（约 12.9 万条）
-py build_lite_slim.py --max 80000      :: 内存紧张时裁到 8 万条（保底清单强制保留）
-py build_lite_slim.py --with-security  :: 额外纳入 URLHaus 安全源（默认不纳入）
+py Slim\build_lite_slim.py                  :: 默认：无损去重，不裁剪（约 12.9 万条）
+py Slim\build_lite_slim.py --max 80000      :: 内存紧张时裁到 8 万条（保底清单强制保留）
+py Slim\build_lite_slim.py --with-security  :: 额外纳入 URLHaus 安全源（默认不纳入）
 ```
 
 ### 内存占用说明

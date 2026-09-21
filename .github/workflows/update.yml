@@ -34,8 +34,8 @@ jobs:
         uses: actions/cache@v6
         with:
           path: |
-            raw
-            sources
+            Cache/raw
+            Cache/sources
           key: dns-sources-${{ github.run_id }}
           restore-keys: |
             dns-sources-
@@ -47,18 +47,18 @@ jobs:
         run: python3 integrate_sources.py
 
       - name: Merge and deduplicate (full list)
-        run: python3 merge_dedup.py
+        run: python3 Full/merge_dedup.py
 
       # lite 版：面向低配软路由的国内优先精简列表。
       # 独立于全量流程，只读取全量产物作为白名单基准，不改变全量的生成逻辑。
       - name: Build lite list
-        run: python3 build_lite.py
+        run: python3 Lite/build_lite.py
 
       # slim 版：229MB 级内存设备用。
       # 仅使用国内规则源 + 父域无损收敛，并在去重前先做品牌保护
       # （360 只拦广告子域、简书整域放行），同样只读全量白名单、不改动全量产出。
       - name: Build slim list
-        run: python3 build_lite_slim.py
+        run: python3 Slim/build_lite_slim.py
 
       - name: Commit and push when changed
         run: |

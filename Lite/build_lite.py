@@ -21,14 +21,15 @@ import os
 import sys
 from datetime import datetime
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-RAW_DIR = os.path.join(BASE_DIR, "raw")
-SRC_DIR = os.path.join(BASE_DIR, "sources")
-OUT_DIR = os.path.join(BASE_DIR, "out")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))            # Lite/
+ROOT_DIR = os.path.dirname(BASE_DIR)                             # 项目根目录
+RAW_DIR = os.path.join(ROOT_DIR, "Cache", "raw")
+SRC_DIR = os.path.join(ROOT_DIR, "Cache", "sources")
+OUT_DIR = os.path.join(ROOT_DIR, "out")
 FULL_FILE = os.path.join(OUT_DIR, "merged_dns_rules.txt")
 OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules_lite.txt")
 
-sys.path.insert(0, BASE_DIR)
+sys.path.insert(0, ROOT_DIR)
 import integrate_sources as integ                                # noqa: E402
 
 # 国内向源：(标识, 路径, 说明, 优先级) —— 优先级数字越小越先保留
@@ -160,7 +161,7 @@ def main():
     if full_blocks:
         print(f"full list size (unchanged)      : {len(full_blocks)}")
         print(f"lite / full                     : {len(sorted_blocks)*100//max(1,len(full_blocks))}%")
-    print(f"output                          : {os.path.relpath(OUT_FILE, BASE_DIR)}")
+    print(f"output                          : {os.path.relpath(OUT_FILE, ROOT_DIR)}")
 
 
 if __name__ == "__main__":

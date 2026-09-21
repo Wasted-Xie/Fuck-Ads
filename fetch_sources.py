@@ -17,8 +17,8 @@ import urllib.request
 import urllib.error
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-RAW_DIR = os.path.join(BASE_DIR, "raw")
-EXTRA_DIR = os.path.join(BASE_DIR, "sources")
+RAW_DIR = os.path.join(BASE_DIR, "Cache", "raw")
+EXTRA_DIR = os.path.join(BASE_DIR, "Cache", "sources")
 
 UA = "Mozilla/5.0 (compatible; fuck-ads-updater/1.0)"
 TIMEOUT = 45

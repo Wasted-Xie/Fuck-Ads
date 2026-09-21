@@ -22,7 +22,7 @@ import sys
 from datetime import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-SRC_DIR = os.path.join(BASE_DIR, "sources")
+SRC_DIR = os.path.join(BASE_DIR, "Cache", "sources")
 OUT_DIR = os.path.join(BASE_DIR, "out")
 OUT_RULES = os.path.join(OUT_DIR, "integrated_extra.txt")
 OUT_EXCLUDED = os.path.join(OUT_DIR, "excluded_redirect_entries.txt")

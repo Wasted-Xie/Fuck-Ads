@@ -14,19 +14,22 @@ rem  Branch to create/push (used on first init as the default branch)
 set "BRANCH=main"
 
 rem  Python launcher / scripts / output file
+rem  各版本的构建脚本按版本分目录存放：
+rem    Full/  = 全量版   Lite/ = Lite 版   Slim/ = Slim 版
 set "PY=py"
-set "MERGE_SCRIPT=merge_dedup.py"
 set "INTEGRATE_SCRIPT=integrate_sources.py"
-set "LITE_SCRIPT=build_lite.py"
-set "SLIM_SCRIPT=build_lite_slim.py"
+set "MERGE_SCRIPT=Full\merge_dedup.py"
+set "LITE_SCRIPT=Lite\build_lite.py"
+set "SLIM_SCRIPT=Slim\build_lite_slim.py"
 set "OUT_DIR=out"
 set "OUT_NAME=merged_dns_rules.txt"
 set "LITE_NAME=merged_dns_rules_lite.txt"
 set "SLIM_NAME=merged_dns_rules_slim.txt"
 
-rem  Source directories (both stay untracked)
-set "RAW_DIR=raw"
-set "EXTRA_DIR=sources"
+rem  Upstream cache directories (created by fetch; stay untracked)
+set "CACHE_DIR=Cache"
+set "RAW_DIR=%CACHE_DIR%\raw"
+set "EXTRA_DIR=%CACHE_DIR%\sources"
 
 rem  Counter: extra sources that fell back to their cached copy
 set /a CACHE_USED=0
@@ -46,6 +49,7 @@ rem ---- Step 1: cd to the directory this script lives in ----
 cd /d "%~dp0" || ( echo [ERROR] cannot enter script directory & exit /b 1 )
 echo.
 echo [1/5] Working dir: %CD%
+if not exist "%CACHE_DIR%" mkdir "%CACHE_DIR%"
 if not exist "%RAW_DIR%" mkdir "%RAW_DIR%"
 if not exist "%EXTRA_DIR%" mkdir "%EXTRA_DIR%"
 

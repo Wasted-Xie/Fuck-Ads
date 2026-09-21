@@ -13,9 +13,10 @@ import sys
 import os
 from datetime import datetime
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-RAW_DIR = os.path.join(BASE_DIR, "raw")
-OUT_DIR = os.path.join(BASE_DIR, "out")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))            # Full/
+ROOT_DIR = os.path.dirname(BASE_DIR)                             # 项目根目录
+RAW_DIR = os.path.join(ROOT_DIR, "Cache", "raw")
+OUT_DIR = os.path.join(ROOT_DIR, "out")
 OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules.txt")
 
 # Source definitions
@@ -170,7 +171,7 @@ def main():
     print(f"Total after dedup            : {len(sorted_blocks) + len(sorted_whites)}")
     print(f"Duplicate lines removed      : {sum_total - len(sorted_blocks) - len(sorted_whites)}")
     print(f"Protected domains skipped    : {sum_protected}  (extra sources only)")
-    print(f"Output file                  : {os.path.relpath(OUT_FILE, BASE_DIR)}  [{out_status}]")
+    print(f"Output file                  : {os.path.relpath(OUT_FILE, ROOT_DIR)}  [{out_status}]")
 
 
 if __name__ == "__main__":

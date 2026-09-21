@@ -22,14 +22,15 @@ import os
 import sys
 from datetime import datetime
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-RAW_DIR = os.path.join(BASE_DIR, "raw")
-SRC_DIR = os.path.join(BASE_DIR, "sources")
-OUT_DIR = os.path.join(BASE_DIR, "out")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))            # Slim/
+ROOT_DIR = os.path.dirname(BASE_DIR)                             # 项目根目录
+RAW_DIR = os.path.join(ROOT_DIR, "Cache", "raw")
+SRC_DIR = os.path.join(ROOT_DIR, "Cache", "sources")
+OUT_DIR = os.path.join(ROOT_DIR, "out")
 FULL_FILE = os.path.join(OUT_DIR, "merged_dns_rules.txt")
 DEFAULT_OUT = os.path.join(OUT_DIR, "merged_dns_rules_slim.txt")
 
-sys.path.insert(0, BASE_DIR)
+sys.path.insert(0, ROOT_DIR)
 import integrate_sources as integ                                # noqa: E402
 
 # 国内规则源：(源名, 路径, 权重)
@@ -299,7 +300,7 @@ def main():
     print(f"  .cn domains : {cn}")
     size_mb = os.path.getsize(out_path) / 1024 / 1024
     print(f"file size     : {size_mb:.2f} MB")
-    print(f"output        : {os.path.relpath(out_path, BASE_DIR)}")
+    print(f"output        : {os.path.relpath(out_path, ROOT_DIR)}")
 
 
 if __name__ == "__main__":
