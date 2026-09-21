@@ -155,8 +155,8 @@ rem  -- start from a clean index so any leftover staged entry (e.g. from an
 rem     interrupted or manual run) can never be committed by accident --
 git reset >nul 2>nul
 
-rem  -- stage the outputs and scripts (raw/ and sources/ stay untracked) --
-git add "%OUT_DIR%\%OUT_NAME%" "%OUT_DIR%\%LITE_NAME%" "%OUT_DIR%\%SLIM_NAME%" "%MERGE_SCRIPT%" "%INTEGRATE_SCRIPT%" "%LITE_SCRIPT%" "%SLIM_SCRIPT%" .gitignore README.md "%~nx0" || ( echo [ERROR] git add failed & exit /b 1 )
+rem  -- stage the outputs and scripts (Cache/ stays untracked) --
+git add "%OUT_DIR%\%OUT_NAME%" "%OUT_DIR%\%LITE_NAME%" "%OUT_DIR%\%SLIM_NAME%" "%MERGE_SCRIPT%" "%INTEGRATE_SCRIPT%" "%LITE_SCRIPT%" "%SLIM_SCRIPT%" .gitignore README.md CHANGELOG.md "%~nx0" || ( echo [ERROR] git add failed & exit /b 1 )
 git diff --cached --quiet
 if errorlevel 1 (
     git commit -m "Update merged DNS rules" || ( echo [ERROR] commit failed. Configure git user first: git config --global user.name/user.email & exit /b 1 )

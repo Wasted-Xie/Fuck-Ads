@@ -34,7 +34,7 @@
 ├── fetch_sources.py          # 公共：下载 21 个上游 + Lite 专用上游 → Cache/
 ├── integrate_sources.py      # 公共：附加源清洗（多格式解析 → 统一为 ||域名^）
 ├── update_lists.bat          # 本地一键脚本：下载 → 清洗 → 三版构建 → 提交推送
-├── update_lists_no_window.bat# 同上，但以隐藏窗口方式启动（无控制台闪现）
+├── CHANGELOG.md              # 版本变更记录
 │
 ├── Full/                     # 全量版：21 个源全覆盖
 │   └── merge_dedup.py        #   → out/merged_dns_rules.txt
