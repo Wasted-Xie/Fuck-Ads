@@ -67,6 +67,13 @@ EXTRA_SOURCES = (
     ("antiadblock.txt", "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"),
 )
 
+# lite 版专用上游（217 Lite，仅国内域名）。
+# 仅供 build_lite.py 使用，全量流程（merge_dedup.py）不读取它。
+LITE_SOURCES = (
+    ("adblockdnslite.txt",
+     "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt"),
+)
+
 
 def with_mirrors(url):
     """为 GitHub raw 地址补充镜像候选（直连优先）"""
@@ -145,6 +152,11 @@ def main():
     print("==== extra sources (sources/) ====")
     for name, url in EXTRA_SOURCES:
         result = fetch_one(name, with_mirrors(url), EXTRA_DIR, critical=False)
+        stats[result] += 1
+
+    print("==== lite sources (raw/) ====")
+    for name, url in LITE_SOURCES:
+        result = fetch_one(name, with_mirrors(url), RAW_DIR, critical=False)
         stats[result] += 1
 
     print("==== fetch summary ====")

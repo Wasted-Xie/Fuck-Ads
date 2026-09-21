@@ -46,14 +46,19 @@ jobs:
       - name: Clean and integrate extra sources
         run: python3 integrate_sources.py
 
-      - name: Merge and deduplicate
+      - name: Merge and deduplicate (full list)
         run: python3 merge_dedup.py
+
+      # lite 版：面向极低配置软路由的国内优先精简列表。
+      # 独立于全量流程，只读取全量产物作为白名单基准，不改变全量的生成逻辑。
+      - name: Build lite list
+        run: python3 build_lite.py
 
       - name: Commit and push when changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add out/merged_dns_rules.txt
+          git add out/merged_dns_rules.txt out/merged_dns_rules_lite.txt
           if git diff --cached --quiet; then
             echo "No rule changes - nothing to commit"
           else

@@ -17,8 +17,10 @@ rem  Python launcher / scripts / output file
 set "PY=py"
 set "MERGE_SCRIPT=merge_dedup.py"
 set "INTEGRATE_SCRIPT=integrate_sources.py"
+set "LITE_SCRIPT=build_lite.py"
 set "OUT_DIR=out"
 set "OUT_NAME=merged_dns_rules.txt"
+set "LITE_NAME=merged_dns_rules_lite.txt"
 
 rem  Source directories (both stay untracked)
 set "RAW_DIR=raw"
@@ -82,6 +84,12 @@ call :fetch_direct "idontcarecookies.txt" "https://www.i-dont-care-about-cookies
 call :fetch_direct "antiadblock.txt"      "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"
 if %CACHE_USED% GTR 0 echo       [INFO] %CACHE_USED% extra source^(s^) reused from cache - rule set unchanged
 
+rem ---- Step 3b: fetch the lite-only upstream (217 Lite) ----
+rem  Used by build_lite.py only; the full-list pipeline ignores it.
+echo.
+echo [3/5] Fetching lite sources ...
+call :fetch_gh "adblockdnslite.txt" "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt"
+
 rem ---- Step 4: clean the extra sources, then merge everything ----
 where py >nul 2>nul
 if errorlevel 1 ( echo [ERROR] Python launcher "py" not found. Install Python 3 ^(check "py launcher"^). & exit /b 1 )
@@ -93,6 +101,10 @@ echo.
 echo [4/5] Running %MERGE_SCRIPT% ...
 %PY% "%MERGE_SCRIPT%"
 if errorlevel 1 ( echo [ERROR] merge script failed & exit /b 1 )
+echo.
+echo [4/5] Running %LITE_SCRIPT% ...
+%PY% "%LITE_SCRIPT%"
+if errorlevel 1 echo [WARN] lite build failed - lite output not updated
 
 rem ---- Step 5: commit and push to GitHub ----
 echo.
@@ -133,8 +145,8 @@ rem  -- start from a clean index so any leftover staged entry (e.g. from an
 rem     interrupted or manual run) can never be committed by accident --
 git reset >nul 2>nul
 
-rem  -- stage the merged file and the scripts (raw/ and sources/ stay untracked) --
-git add "%OUT_DIR%\%OUT_NAME%" "%MERGE_SCRIPT%" "%INTEGRATE_SCRIPT%" .gitignore README.md "%~nx0" || ( echo [ERROR] git add failed & exit /b 1 )
+rem  -- stage the outputs and scripts (raw/ and sources/ stay untracked) --
+git add "%OUT_DIR%\%OUT_NAME%" "%OUT_DIR%\%LITE_NAME%" "%MERGE_SCRIPT%" "%INTEGRATE_SCRIPT%" "%LITE_SCRIPT%" .gitignore README.md "%~nx0" || ( echo [ERROR] git add failed & exit /b 1 )
 git diff --cached --quiet
 if errorlevel 1 (
     git commit -m "Update merged DNS rules" || ( echo [ERROR] commit failed. Configure git user first: git config --global user.name/user.email & exit /b 1 )
