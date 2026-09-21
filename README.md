@@ -1,7 +1,14 @@
 # Merged DNS Blocklist（合并 DNS 拦截列表）
 
 将 **21 个上游**黑名单/去广告列表（3 个主源 + 18 个附加源）**自动拉取 → 格式清洗 → 整行精确去重 → 合并**
-为单一 AdGuard 语法列表，可供 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) 作为 DNS 拦截清单订阅使用。
+为 AdGuard 语法列表，可供 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) 作为 DNS 拦截清单订阅使用。
+
+每次运行产出**两套并列的列表**，可按设备性能任选其一订阅（同时订阅也不冲突）：
+
+| 版本 | 产物文件 | 规则量 | 适用场景 |
+|---|---|---|---|
+| **全量版** | `out/merged_dns_rules.txt` | 约 31 万条 | 性能充足的设备（软路由 / NAS / 小主机） |
+| **Lite 版** | `out/merged_dns_rules_lite.txt` | 约 14.7 万条 | **极低配置软路由**，优先保留国内域名拦截 |
 
 ## 特性
 
@@ -11,6 +18,8 @@
 - **剔除 DNS 层无法表达的内容**：带路径规则、`$domain=` / `$app=` 站点限定规则、元素隐藏规则（`##`）、正则规则
 - **排除翻墙/加速类条目**：指向非本地 IP 的 hosts 重定向条目一律不纳入
 - **保护域名**：附加源中 360 系列的拦截被过滤（原有上游列表不受影响，一概照拦）
+- **双版本产物**：全量版覆盖广；Lite 版面向极低配置软路由，只取国内向上游并优先国内域名，体量约为全量的 47%
+- **两版互不冲突**：Lite 版会剔除全量白名单中的域名，并沿用同一份白名单，不会出现「Lite 拦截 / 全量放行」的矛盾
 - 合并文件头部自动写入生成时间、来源与统计信息，便于审计
 - **两种更新方式**：GitHub Actions 云端每 30 分钟自动更新（推荐），或本地 Windows 一键脚本
 
@@ -18,18 +27,20 @@
 
 ```
 .
-├── fetch_sources.py      # 源下载脚本：21 个上游 → raw/ 与 sources/（本地与云端通用）
-├── integrate_sources.py  # 附加源清洗脚本：多格式解析 → 统一为 ||域名^（Python 3）
-├── merge_dedup.py        # 合并去重脚本：主源 + 附加源 → 最终产物（Python 3）
-├── update_lists.bat      # 本地一键脚本：下载 → 清洗 → 合并 → git 提交推送（Windows）
+├── fetch_sources.py      # 源下载：21 个上游 + Lite 专用上游 → raw/ 与 sources/
+├── integrate_sources.py  # 附加源清洗：多格式解析 → 统一为 ||域名^（Python 3）
+├── merge_dedup.py        # 全量合并去重：主源 + 附加源 → merged_dns_rules.txt
+├── build_lite.py         # Lite 版构建：国内向源 → merged_dns_rules_lite.txt（Python 3）
+├── update_lists.bat      # 本地一键脚本：下载 → 清洗 → 合并 → 构建 Lite → 提交推送（Windows）
 ├── .github/workflows/
 │   └── update.yml        # GitHub Actions 定时工作流（每 30 分钟）
 ├── .gitignore            # 忽略 raw/ 与 sources/（上游源文件不入库）
-├── raw/                  # 3 个主源文件（脚本自动拉取，临时产物）
-├── sources/              # 18 个附加源文件（脚本自动拉取，临时产物）
+├── raw/                  # 主源 + Lite 专用上游（脚本自动拉取，临时产物）
+├── sources/              # 18 个附加源（脚本自动拉取，临时产物）
 └── out/
-    ├── integrated_extra.txt      # 附加源清洗后的中间产物
-    └── merged_dns_rules.txt      # 最终产物，供 AdGuard Home 订阅
+    ├── integrated_extra.txt        # 附加源清洗后的中间产物
+    ├── merged_dns_rules.txt        # 全量产物，供 AdGuard Home 订阅
+    └── merged_dns_rules_lite.txt   # Lite 产物（国内优先，低配设备用）
 ```
 
 ## 使用方法
@@ -44,7 +55,7 @@
 2. **首次部署需确认一次仓库设置**：`Settings → Actions → General → Workflow permissions` 选择 **Read and write**，否则工作流没有权限把产物推回仓库；
 3. 想立刻验证：打开 `Actions` 标签页 → 选择 **Update merged DNS rules** → **Run workflow**。
 
-工作流每次执行：拉取 21 个源 → 格式清洗 → 合并去重 → **仅在有变化时**提交推送。
+工作流每次执行：拉取 21 个源 + Lite 专用上游 → 格式清洗 → 合并去重（全量）→ 构建 Lite 版 → **仅在有变化时**提交推送（两套产物一起提交）。
 
 > 说明：GitHub 的定时触发为每 30 分钟（UTC 的 0 分与 30 分），高峰期可能有数分钟到数十分钟延迟；规则无变化时不产生提交。
 
@@ -61,18 +72,20 @@
    git config --global user.name  "你的名字"
    git config --global user.email "you@example.com"
    ```
-3. 双击运行 `update_lists.bat`，脚本依次执行 5 步：
+3. 双击运行 `update_lists.bat`，脚本依次执行：
    1. **定位路径** —— `cd` 到脚本所在目录；
    2. **下载 3 个主源** 到 `raw/`（多镜像链自动回退，失败会中止）；
-   3. **下载 18 个附加源** 到 `sources/`（GitHub 源经镜像链轮换，非 GitHub 源直连；个别失败只告警并沿用本地缓存）；
-   4. **清洗 + 合并** —— 运行 `integrate_sources.py` 统一格式，再运行 `merge_dedup.py` 去重合并；
-   5. **提交推送** —— 初始化本地 git 仓库（如尚未初始化），提交产物与脚本，推送到 `origin/main`（仅在有变化时）。
+   3. **下载 18 个附加源** 到 `sources/` 与 **Lite 专用上游** 到 `raw/`（GitHub 源经镜像链轮换，非 GitHub 源直连；个别失败只告警并沿用本地缓存）；
+   4. **清洗 + 合并（全量）** —— `integrate_sources.py` 统一格式，`merge_dedup.py` 去重合并；
+   5. **构建 Lite 版** —— `build_lite.py` 以全量白名单为基准生成 `merged_dns_rules_lite.txt`；
+   6. **提交推送** —— 初始化本地 git 仓库（如尚未初始化），提交两套产物与脚本，推送到 `origin/main`（仅在有变化时）。
 
    也可手动分步执行：
    ```bat
    py fetch_sources.py
    py integrate_sources.py
    py merge_dedup.py
+   py build_lite.py            :: 必须在 merge_dedup.py 之后运行
    ```
 4. 如需本机定时运行（示例：每小时）：
    ```bat
@@ -81,7 +94,14 @@
 
 ### 订阅
 
-在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅：`https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt`。列表随上游自动更新。
+在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅（二选一，或同时订阅均无冲突）：
+
+| 版本 | 订阅地址 |
+|---|---|
+| 全量版 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt` |
+| **Lite 版**（低配设备） | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt` |
+
+列表随上游自动更新。
 
 ## 订阅加速镜像（GitHub 直连慢/超时时选用）
 
@@ -108,9 +128,54 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.
 
 注意事项：
 
-- jsDelivr 免费加速**公开仓库**且单文件需 ≤20 MB（本文件约 7 MB，满足）；列表更新后其缓存有数分钟到数小时的延迟，拉取到的可能不是最新版本，稍候再试即可。
+- jsDelivr 免费加速**公开仓库**且单文件需 ≤20 MB（全量约 7 MB、Lite 约 3 MB，均满足）；列表更新后其缓存有数分钟到数小时的延迟，拉取到的可能不是最新版本，稍候再试即可。
 - 第三方代理站可能限速或失效，失效就换下一条；ghfast.top 等加速站域名偶尔变动，最新地址见其主页发布站。
 - 加速站属于第三方服务，仅作下载加速，不影响列表内容本身。
+
+Lite 版的对应加速地址（把上面地址里的文件名替换即可）：
+
+```text
+https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt
+https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
+https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
+https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
+https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
+```
+
+## Lite 版说明（面向极低配置软路由）
+
+### 定位
+
+Lite 版把规则量压到全量的约 **47%**（约 14.7 万条，3.2 MB），在保证国内广告拦截效果的前提下，降低 AdGuard Home 的内存占用与匹配开销。
+
+### 与全量版的关系
+
+| 项 | 说明 |
+|---|---|
+| 产出方式 | `build_lite.py` 独立生成，**不修改全量版的任何产出逻辑** |
+| 白名单 | **直接沿用全量白名单**（274 条） |
+| 冲突处理 | Lite 屏蔽集会**剔除全量白名单中的域名**，杜绝两版结论相反 |
+| 订阅关系 | 两版可单独订阅，也可同时订阅（同时订阅时 Lite 是子集，无副作用） |
+
+### 组成来源（按优先级）
+
+| 优先级 | 源 | 说明 |
+|---|---|---|
+| P1 | **adblockdnslite**（217 Lite） | 官方 Lite 版，仅针对国内域名拦截 |
+| P2 | anti-AD、ADgk、EasyList China、yhosts、大圣净化 | 国内向主力源 |
+| P3 | CJX's Annoyance、乘风规则、GOODBYEADS | 国内补充 |
+| P4 | 1024_hosts | 成人/赌博站点 |
+| P5 | URLHaus（filter_11） | 恶意网站/钓鱼（安全类，可用 `--no-security` 去掉） |
+
+> 注意：全量版中的国际源（EasyList、EasyPrivacy、StevenBlack、Mvps、AdAway、YousList 等）**不参与 Lite 版**，这是体量下降的主要来源。
+
+### 手动调整
+
+```bat
+py build_lite.py                    :: 默认：全部国内向源（约 14.7 万条）
+py build_lite.py --max 120000       :: 限到 12 万条，超限时按「优先级 → .cn 优先 → 域名长度」裁剪
+py build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727 条）
+```
 
 ## 数据处理规则
 
@@ -125,6 +190,12 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.
 | AdBlock DNS（217heidai/adblockfilters） | https://github.com/217heidai/adblockfilters | **GPL-3.0** | 去广告合并域名（含 `@@` 白名单） |
 
 > 注：URLhaus 数据 ([API 文档](https://urlhaus.abuse.ch/api/) 原文)：“available free of charge under the fair use principles”，商业/营利用途可能需要 abuse.ch 商业 API 订阅；再分发请遵守其 [Terms of Service](https://urlhaus.abuse.ch/faq/#tos)。个人非商业用途并注明来源风险较低。
+
+### Lite 专用上游（1 个，仅供 Lite 版）
+
+| 源 | 地址 | 说明 |
+|---|---|---|
+| AdBlock DNS **Lite**（217heidai/adblockfilters） | https://github.com/217heidai/adblockfilters | 与全量主源同一项目，但内容为**仅国内域名拦截**的精简版（约 5,173 条），由 `build_lite.py` 使用；全量流程不读取它 |
 
 ### 附加源（18 个，经格式清洗）
 
