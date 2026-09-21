@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-09-21 20:43:32
-! Block rules: 148956
+! Generated: 2026-09-21 23:45:08
+! Block rules: 148960
 ! Whitelist rules: 274
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 5235 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100124 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3208 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5922 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5926 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -131,6 +131,7 @@
 ||03h6fpes.xyz^
 ||03in08p3r1.com^
 ||03mhpavj25.com^
+||03mnj87wir.com^
 ||03teste.com^
 ||04.lzzncm.com^
 ||0488531c4b.777ebfeef8.com^
@@ -3205,6 +3206,7 @@
 ||4k.2zxg8qlei23bc8h.cfd^
 ||4k.fanza18r.online^
 ||4k28959nr2pfj8cinwu5x.rest^
+||4k3nzijpm0.com^
 ||4kngwxegq5.com^
 ||4l.vlgtgclmpk95tbf.cyou^
 ||4l5bbkug99.com^
@@ -34509,6 +34511,7 @@
 ||corkdeclarationfourteenth.com^
 ||corkecane.cyou^
 ||corksadly.com^
+||corkscrew33.com^
 ||cormousbegaud.cfd^
 ||corneaananism.cyou^
 ||cornealtextlet.qpon^
@@ -125993,6 +125996,7 @@
 ||tpubrk.eobuv.com^
 ||tpubwzwrhdcst.store^
 ||tpush.html5.qq.com^
+||tpvqrzryebtfhu.com^
 ||tpvwydmtfmjlt.site^
 ||tpx.tesseradigital.com^
 ||tpxludqpybpkx.store^

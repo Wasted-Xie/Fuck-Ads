@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-21 20:43:34
-! Block rules: 130953
+! Generated: 2026-09-21 23:45:10
+! Block rules: 130957
 ! Whitelist rules: 274
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100124
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 5922
+!   - easylistchina [w=3] block 5926
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 118202
 !   - cjx-annoyance [w=2] block 159
@@ -116,6 +116,7 @@
 ||03h6fpes.xyz^
 ||03in08p3r1.com^
 ||03mhpavj25.com^
+||03mnj87wir.com^
 ||04.lzzncm.com^
 ||048f3c0516.com^
 ||049bv1hdzn.com^
@@ -2049,6 +2050,7 @@
 ||4jh1le34m.com^
 ||4jnzhl0d0.com^
 ||4k28959nr2pfj8cinwu5x.rest^
+||4k3nzijpm0.com^
 ||4kngwxegq5.com^
 ||4l.vlgtgclmpk95tbf.cyou^
 ||4l5bbkug99.com^
@@ -27881,6 +27883,7 @@
 ||corkdeclarationfourteenth.com^
 ||corkecane.cyou^
 ||corksadly.com^
+||corkscrew33.com^
 ||cormousbegaud.cfd^
 ||corneaananism.cyou^
 ||cornealtextlet.qpon^
@@ -111470,6 +111473,7 @@
 ||tpubrk.eobuv.com^
 ||tpubwzwrhdcst.store^
 ||tpush.html5.qq.com^
+||tpvqrzryebtfhu.com^
 ||tpvwydmtfmjlt.site^
 ||tpx.tesseradigital.com^
 ||tpxludqpybpkx.store^
