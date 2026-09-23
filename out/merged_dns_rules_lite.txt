@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-09-23 20:55:23
-! Block rules: 149613
+! Generated: 2026-09-23 23:23:12
+! Block rules: 149615
 ! Whitelist rules: 276
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 5337 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100846 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3208 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5938 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5940 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -2626,6 +2626,7 @@
 ||3esm.consubebe.es^
 ||3ewx6rogjheu4rxw.t14pwt4bnxzpm547h.cyou^
 ||3ez1ja1uq3.ru^
+||3f1l3f80xm.com^
 ||3f294e48a8.56ad42c3a8.com^
 ||3f47f5f38f.com^
 ||3f55bdb730.com^
@@ -72023,6 +72024,7 @@
 ||l8mm2z4bwbbk1b4.rest^
 ||l8o4vnlul7oq6wg7882g95hruhx4rv.cfd^
 ||l8opsdgim.com^
+||l8rbwdji18.com^
 ||l936.expressnews.com^
 ||l997.lmtonline.com^
 ||l9bdhcgihw.neihanw.com^

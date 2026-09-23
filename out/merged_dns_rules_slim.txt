@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-23 20:55:24
-! Block rules: 131627
+! Generated: 2026-09-23 23:23:14
+! Block rules: 131629
 ! Whitelist rules: 276
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100846
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 5938
+!   - easylistchina [w=3] block 5940
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 118852
 !   - cjx-annoyance [w=2] block 159
@@ -1711,6 +1711,7 @@
 ||3esm.consubebe.es^
 ||3ewx6rogjheu4rxw.t14pwt4bnxzpm547h.cyou^
 ||3ez1ja1uq3.ru^
+||3f1l3f80xm.com^
 ||3f47f5f38f.com^
 ||3f55bdb730.com^
 ||3f56937492.com^
@@ -61842,6 +61843,7 @@
 ||l8mm2z4bwbbk1b4.rest^
 ||l8o4vnlul7oq6wg7882g95hruhx4rv.cfd^
 ||l8opsdgim.com^
+||l8rbwdji18.com^
 ||l936.expressnews.com^
 ||l997.lmtonline.com^
 ||l9bdhcgihw.neihanw.com^
