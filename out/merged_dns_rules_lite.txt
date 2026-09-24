@@ -2,8 +2,8 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-09-23 23:23:12
-! Block rules: 149615
+! Generated: 2026-09-24 01:33:56
+! Block rules: 149614
 ! Whitelist rules: 276
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 5337 / white 16, priority 1)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 0 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 118852 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 3490 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 3492 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.diwodiwo.xyz^
@@ -745,6 +745,7 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||179.248.3.202.ll.sta.mana.pf^
@@ -3198,8 +3199,6 @@
 ||4hf2saujov.com^
 ||4i2q0y9wv.com^
 ||4ikj2pbeqb.com^
-||4iuq4imv.jetbet1.pro^
-||4iw2skgz.tinyshart.com^
 ||4j6m037n.mcbelize.com^
 ||4j7mf4mmx.com^
 ||4jaehnfqizyx.controlconceptsusa.com^
@@ -4210,7 +4209,6 @@
 ||71efe2183b8663ad5bf9d7a9320aeb48.leboncoin.fr^
 ||71mnjocvbcxb1jv.cfd^
 ||71ybxtqp3ci94tyc9x7.cfd^
-||71zdauu1.taktikbet.bio^
 ||71zrh.cn^
 ||720-trail.co.uk^
 ||72072vip.com^
@@ -4543,7 +4541,6 @@
 ||7uj7tio72lyj98.cfd^
 ||7usgqu07mk.com^
 ||7v8ver7f.1xgame.pro^
-||7vs3nqp7.vip1x.bet^
 ||7vyou.oss-cn-shenzhen.aliyuncs.com^
 ||7vyzkqveuxwz1tvhtk.cfd^
 ||7w7kditsz.com^
@@ -4938,7 +4935,6 @@
 ||8oes4jec.betfakade.com^
 ||8oghu1wcau.com^
 ||8omeu821.1xpin.casino^
-||8opocc30.1x303.casino^
 ||8opyutprrkgg5ro9b.cfd^
 ||8ox.cn^
 ||8p14q886v2.com^
@@ -29651,7 +29647,6 @@
 ||cd03a8c790.f247dab479.com^
 ||cd2ef10dae.com^
 ||cd5p7l7t.xbetone.com^
-||cd6ts3mz.blackjackonlineplay83.com^
 ||cd828.com^
 ||cda5e3eeec.com^
 ||cda7k-ddok.com^
@@ -36639,6 +36634,7 @@
 ||cyberanalytics.nl^
 ||cyberbounty.com^
 ||cyberfluxer.com^
+||cyberleak.top^
 ||cybermonitor.com^
 ||cybernetentertainment.com^
 ||cybkit.com^
@@ -48392,7 +48388,6 @@
 ||eta.animenewsnetwork.com^
 ||etaargon.com^
 ||etab.goasrv.com^
-||etaczb1.jetbetapk.online^
 ||etahub.com^
 ||etargetnet.com^
 ||etaru.oasis-active.com^
@@ -49179,7 +49174,6 @@
 ||ex.qq.com^
 ||ex.tanx.com^
 ||ex.umengcloud.com^
-||ex5nibpq.vip1xbet.net^
 ||ex8.lostporntube.com^
 ||exacdn.com^
 ||exactag.com^
@@ -51122,7 +51116,6 @@
 ||file.iporngay.com^
 ||file.ppbk9.com^
 ||file.tugou.com.co^
-||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -53609,6 +53602,7 @@
 ||funoverbored.com^
 ||funoverflow.com^
 ||funpageexchange.com^
+||funrat.co^
 ||funrechaw.cfd^
 ||funsdata.com^
 ||funsday.cfd^
@@ -54445,6 +54439,7 @@
 ||garmentclimbinghotel.com^
 ||garnetzexegete.cfd^
 ||garnishdecoction.com^
+||garogradba.mk^
 ||garonvizor.cyou^
 ||garosesia.com^
 ||garotas.info^
@@ -59451,7 +59446,6 @@
 ||hdapp1008-a.akamaihd.net^
 ||hdat.xyz^
 ||hdb.maxli.cn^
-||hdb1qm8y.shartcart.xyz^
 ||hdbaichuan.cn^
 ||hdbcdn.com^
 ||hdbcell.com^
@@ -68651,6 +68645,7 @@
 ||journey.cisco.com^
 ||journeydirectsubmarine.com^
 ||journeyjp.live^
+||journeylake11.com^
 ||journeylula.com^
 ||journeymv.com^
 ||journeys.journeyed.com^
@@ -71173,6 +71168,8 @@
 ||kopsil.com^
 ||koraniccreases.cfd^
 ||koreomneity.com^
+||korexnode.duckdns.org^
+||korexnode.xyz^
 ||korexo.com^
 ||korgiejoinyou.com^
 ||korovaafflux.qpon^
@@ -71565,6 +71562,7 @@
 ||kuphqltnqpmpk.space^
 ||kupona.de^
 ||kuppwuhxrlalt.site^
+||kupunasvolpiano.com^
 ||kuqetgql.shartebartar.game^
 ||kuqgnpzskjukc.site^
 ||kuqi.com^
@@ -73090,6 +73088,7 @@
 ||lets.watcho.com^
 ||letsgetsocialnow.com^
 ||letsgobok.com^
+||letsupconfig.sbs^
 ||letterbox-path.com^
 ||letterboxtrail.com^
 ||letterdigamyaxillar.cyou^
@@ -88544,7 +88543,6 @@
 ||nmnzqnhwtnrqv.site^
 ||nmo-ep.nl^
 ||nmo1.orpi.com^
-||nmo1ivv6.akhlagvaahkam.xyz^
 ||nmobi.kuwo.cn^
 ||nmonomqmojouo.site^
 ||nmpcdn.com^
@@ -98075,7 +98073,6 @@
 ||providingapologizeguile.com^
 ||providingextensionpreference.com^
 ||providinggleam.com^
-||proviewhomeinspections.com^
 ||provify.io^
 ||provincegreensfur.com^
 ||provincia.adnxs.com^
@@ -98396,6 +98393,7 @@
 ||pub-3bc1de741f8149f49bdbafa703067f24.r2.dev^
 ||pub-3e266bf2bf6b4d6299ab2e84824e6e80.r2.dev^
 ||pub-3e3889b5442b4ed4ab5f97beec5959ea.r2.dev^
+||pub-43fc211373d547278dd3d5bd0b4d9dac.r2.dev^
 ||pub-45a83f302a1943ed8d62418c2af947ef.r2.dev^
 ||pub-4b56b0bd24274a89bb1d367d0cec866f.r2.dev^
 ||pub-4cf232026b854c1e8bb06b595c8f7587.r2.dev^
@@ -103416,6 +103414,7 @@
 ||rhdcmp.maxcolchon.com^
 ||rhdmfxeubjigd.com^
 ||rhe7o73opjrgk1wh.hz62cbo4ffkc9zrp.cfd^
+||rheddh.com^
 ||rheebocunprime.shop^
 ||rheinicanna.qpon^
 ||rhemishcanham.cyou^
@@ -104121,6 +104120,7 @@
 ||rombosforwean.shop^
 ||romeccs.microsoft.com^
 ||romemedieval.com^
+||romeopirlanta.com^
 ||romlmlpyegphj.space^
 ||romotur.actonservice.com^
 ||romperspardesi.com^
@@ -122662,7 +122662,6 @@
 ||t1n.cn^
 ||t1viiujqi7piht.rest^
 ||t1w.pfqg753un1ekhnf.cyou^
-||t1x1vby3.ahkam.xyz^
 ||t1y6x95x87z6hn.cfd^
 ||t2.58cdn.com.cn^
 ||t2.a.market.xiaomi.com^
@@ -122689,6 +122688,7 @@
 ||t3.wubiinlee.com^
 ||t3e.firstchoice.co.uk^
 ||t3nlink.com^
+||t3u5y0liyio.map.azionedge.net^
 ||t4.a.market.xiaomi.com^
 ||t4.agrantsem.com^
 ||t4.kugou.com^
@@ -130954,7 +130954,6 @@
 ||tv-test.esvdigital.com^
 ||tv.code.jjyx.com^
 ||tv.totaljobs.com^
-||tv2gs2t9.1xfa.bio^
 ||tva4k92u14.com^
 ||tvabqt.cn^
 ||tvapp.hpplay.cn^
