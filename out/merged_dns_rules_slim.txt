@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-24 07:00:50
-! Block rules: 131775
+! Generated: 2026-09-24 12:48:16
+! Block rules: 131782
 ! Whitelist rules: 276
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100846
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 5945
+!   - easylistchina [w=3] block 5952
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 119004
 !   - cjx-annoyance [w=2] block 159
@@ -2907,6 +2907,7 @@
 ||75.5ijle4zi4nhcybq5o.cyou^
 ||750040424c.com^
 ||7540.com^
+||754nyfabh6.com^
 ||7550f3b810.com^
 ||7555.net^
 ||7577.cc^
@@ -53050,6 +53051,7 @@
 ||i16-tb.isnssdk.com^
 ||i16vlgqdhh.com^
 ||i18n-pglstatp.com^
+||i1fqn4bnkh37ywbx.cfd^
 ||i1img.com^
 ||i2.akjunshi.com^
 ||i218435.net^
@@ -61530,6 +61532,7 @@
 ||kvecc.com^
 ||kvemm.com^
 ||kvezz.com^
+||kvfskyv6h7.com^
 ||kvfumh.fairwaystyles.com^
 ||kvfunf.factorydirect.ca^
 ||kvg2q75ps.com^
@@ -76890,6 +76893,7 @@
 ||ngmco.net^
 ||ngmdyqmrfvdzp.space^
 ||ngnmengjbwjle.space^
+||ngowvulz.com^
 ||ngrikewslmhsa.website^
 ||ngsekdkrkwixb.site^
 ||ngseriegentsf.org^
@@ -87341,6 +87345,7 @@
 ||qa-track.ssg.com^
 ||qa.hdclips.fun^
 ||qa.xxmvideos.club^
+||qa2bdtwm7h.com^
 ||qaapp.forever21.com^
 ||qab0m5irus.com^
 ||qacpawtfywgcw.site^
@@ -87907,6 +87912,7 @@
 ||qloevv.wikicasa.it^
 ||qlp.czfhou822nye2zwuotpoxm.cyou^
 ||qlp.egghead.link^
+||qlplayerr.cyou^
 ||qlpqyeiodksjq.online^
 ||qlpwodpqwzqcc.website^
 ||qlqvej.bahia-principe.com^
@@ -121791,6 +121797,7 @@
 ||vwfurlcwpujuz.site^
 ||vwfwdxariknxp.website^
 ||vwfxuhjgwwent.online^
+||vwhhsovqtt.icu^
 ||vwhi.gou.sogou.com^
 ||vwhngsatdzsyj.website^
 ||vwiind.beautyforever.com^
