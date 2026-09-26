@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-25 21:55:13
-! Block rules: 132295
+! Generated: 2026-09-26 00:18:16
+! Block rules: 132299
 ! Whitelist rules: 276
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101507
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 5963
+!   - easylistchina [w=3] block 5967
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 119449
 !   - cjx-annoyance [w=2] block 159
@@ -53240,6 +53240,7 @@
 ||i1img.com^
 ||i2.akjunshi.com^
 ||i218435.net^
+||i27jhc4ut0.com^
 ||i2ad.jp^
 ||i2fxsez4f0.com^
 ||i2i.jp^
@@ -104711,6 +104712,7 @@
 ||star-seo.oss-ap-northeast-1.aliyuncs.com^
 ||star-theladyfinds.com^
 ||star8.net^
+||starboard65.com^
 ||starchild.odencat.com^
 ||starchy-choice.pro^
 ||starcountry.net^
@@ -112040,6 +112042,7 @@
 ||toffeeemulation.com^
 ||tofilescalary.cfd^
 ||tofiletumasha.cyou^
+||tofqldmutnvdda.com^
 ||tofusquirrel.com^
 ||togaedspinula.cfd^
 ||togatapotware.cyou^
@@ -132060,6 +132063,7 @@
 ||zuznvlaqsshto.space^
 ||zuzonmzap.com^
 ||zv.7vid.net^
+||zv5h2l1qdi.com^
 ||zvbqvqbljblle.top^
 ||zvbqya.marideal.mu^
 ||zvciaoan1k.com^

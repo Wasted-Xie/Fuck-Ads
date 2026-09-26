@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-09-25 21:55:12
-! Block rules: 150207
+! Generated: 2026-09-26 00:18:15
+! Block rules: 150211
 ! Whitelist rules: 276
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 5300 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101507 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3208 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5963 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5967 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -62540,6 +62540,7 @@
 ||i1img.com^
 ||i2.akjunshi.com^
 ||i218435.net^
+||i27jhc4ut0.com^
 ||i2ad.jp^
 ||i2fxsez4f0.com^
 ||i2i.jp^
@@ -118485,6 +118486,7 @@
 ||star.86uk.com^
 ||star.zcnet.net^
 ||star8.net^
+||starboard65.com^
 ||starchild.odencat.com^
 ||starchy-choice.pro^
 ||starcountry.net^
@@ -126441,6 +126443,7 @@
 ||toffeeemulation.com^
 ||tofilescalary.cfd^
 ||tofiletumasha.cyou^
+||tofqldmutnvdda.com^
 ||tofusquirrel.com^
 ||togaedspinula.cfd^
 ||togatapotware.cyou^
@@ -149941,6 +149944,7 @@
 ||zuznvlaqsshto.space^
 ||zuzonmzap.com^
 ||zv.7vid.net^
+||zv5h2l1qdi.com^
 ||zvbqvqbljblle.top^
 ||zvbqya.marideal.mu^
 ||zvciaoan1k.com^
