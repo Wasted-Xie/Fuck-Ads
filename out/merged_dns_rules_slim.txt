@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-27 08:49:18
-! Block rules: 132721
+! Generated: 2026-09-27 14:29:27
+! Block rules: 132734
 ! Whitelist rules: 276
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 5290
+!   - adblockdnslite [w=5] block 5305
 !   - anti-ad [w=5] block 101507
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 5983
+!   - easylistchina [w=3] block 5987
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 119925
 !   - cjx-annoyance [w=2] block 159
@@ -1085,6 +1085,7 @@
 ||235123.net^
 ||2398.pw^
 ||23cox7hu4.com^
+||23dx6xe42.com^
 ||23hssicm9.de^
 ||23l1b.cn^
 ||23oct2023.site^
@@ -7083,6 +7084,7 @@
 ||ad-files.4pyun.com^
 ||ad-files.classting.com^
 ||ad-flow.com^
+||ad-ggtg-api.37.com.cn^
 ||ad-hatena.com^
 ||ad-host-backup-*.aliyuncs.com^
 ||ad-host-backup-america.oss-us-west-1.aliyuncs.com^
@@ -7219,6 +7221,7 @@
 ||ad.csdn.net^
 ||ad.cub.red^
 ||ad.cyapi.cn^
+||ad.data.peasun.net^
 ||ad.datadeliver.net^
 ||ad.daum.net^
 ||ad.ddo.jp^
@@ -7258,7 +7261,6 @@
 ||ad.f1cd.ru^
 ||ad.firestorage.jp^
 ||ad.flipboard.com^
-||ad.foxitreader.cn^
 ||ad.foxnetworks.com^
 ||ad.funp.com^
 ||ad.funshion.org.cn^
@@ -7340,6 +7342,7 @@
 ||ad.land.to^
 ||ad.ldplayer.net^
 ||ad.leap.app^
+||ad.lelongpp.com^
 ||ad.lflucky.com^
 ||ad.lgappstv.com^
 ||ad.life.360.cn^
@@ -8884,6 +8887,7 @@
 ||ads-img-bak.xhscdn.com^
 ||ads-img-qc.xhscdn.com^
 ||ads-img.mozilla.org^
+||ads-impression.papegames.com^
 ||ads-integration.rustore.ru^
 ||ads-interfaces.sc-cdn.net^
 ||ads-jp.tiktok.com^
@@ -10248,6 +10252,7 @@
 ||adx-dre.op.dbankcloud.com^
 ||adx-dre.op.hicloud.com^
 ||adx-drru.op.dbankcloud.ru^
+||adx-drru.op.hicloud.com^
 ||adx-exchange.toast.com^
 ||adx-f.ads.heytapmobi.com^
 ||adx-id.ads.heytapmobi.com^
@@ -10943,6 +10948,7 @@
 ||agonizing-initiative.pro^
 ||agonizingrest.com^
 ||agonyshark.com^
+||agoodm.m.taobao.com^
 ||agoproceedloner.com^
 ||agoqaa.stockmann.com^
 ||agorahtag.tech^
@@ -12724,7 +12730,6 @@
 ||analytics.evo.co.uk^
 ||analytics.evolushost.com^
 ||analytics.explus.vn^
-||analytics.f2b211.com^
 ||analytics.fabricators.ltd^
 ||analytics.facebook.com^
 ||analytics.faceitanalytics.com^
@@ -12743,6 +12748,7 @@
 ||analytics.floridatravellife.com^
 ||analytics.fnbfremont.com^
 ||analytics.fnni.com^
+||analytics.fontke.com^
 ||analytics.footballdb.com^
 ||analytics.foresee.com^
 ||analytics.formstack.com^
@@ -13947,6 +13953,7 @@
 ||api-analytics.pelikan.sk^
 ||api-analytics.prod.birdapp.com^
 ||api-analytics.rozetka.com.ua^
+||api-analytics.zepp.com^
 ||api-ao.adison.co^
 ||api-app.coocaa.ottcn.com^
 ||api-cloudfalcon.hismarttv.com^
@@ -16712,6 +16719,7 @@
 ||auth-launcher-sa.hismarttv.com^
 ||auth-na.hismarttv.com^
 ||auth-phone-afr.hismarttv.com^
+||auth-phone-ap.hismarttv.com^
 ||auth-sa.hismarttv.com^
 ||auth-srv.launchthatapps.com^
 ||auth.api.gitv.tv^
@@ -17030,6 +17038,7 @@
 ||aws-itcloud.net^
 ||aws.userlogsanalytics.com^
 ||awsexam.quantresear.ch^
+||awssgp0-files.fds.api.xiaomi.com^
 ||awstats.cloud^
 ||awsurveys.com^
 ||awsync.yandex.ru^
@@ -26759,6 +26768,7 @@
 ||collect.banggood.com^
 ||collect.bannercrowd.net^
 ||collect.biomedcentral.com^
+||collect.camera360.com^
 ||collect.cap.ch^
 ||collect.chaordicsystems.com^
 ||collect.cloudsponge.com^
@@ -31743,6 +31753,7 @@
 ||dafvng.sunrefre.jp^
 ||dagameuster.cyou^
 ||dagd0kz7sipfl.cloudfront.net^
+||dageyuan.cn^
 ||dagfs.com^
 ||daggersaimore.cfd^
 ||dagglespirates.qpon^
@@ -43281,6 +43292,7 @@
 ||figglefodge.com^
 ||fight.offtherecord.com^
 ||fightducklet.cfd^
+||fighter-shop.shop^
 ||fighterfan.shop^
 ||fightingdesert.com^
 ||fightmallowfiasco.com^
@@ -49713,8 +49725,6 @@
 ||guhyqz.hawesko.de^
 ||guibaarcosekoae.qpon^
 ||guibareffed.cfd^
-||guid.tpns.hk.tencent.com^
-||guid.tpns.sh.tencent.com^
 ||guidecent.com^
 ||guidelingerbeige.com^
 ||guidepaparazzisurface.com^
@@ -57094,7 +57104,6 @@
 ||ios-pclog.3u.com^
 ||ios-pclog.i4.cn^
 ||ios.asktagapp.com^
-||ios.bugly.tencent.com^
 ||iosipa.b0.upaiyun.com^
 ||iosjscxobtbkk.store^
 ||ioskyathos.cfd^
@@ -59570,7 +59579,6 @@
 ||js.onclckpsh.com^
 ||js.onclmng.com^
 ||js.paochala.net^
-||js.passport.qihucdn.com^
 ||js.pub.tom.com^
 ||js.pusher.com^
 ||js.rev.iq^
@@ -62029,6 +62037,7 @@
 ||kwfvcxbiqglkm.online^
 ||kwgavfflgjpop.site^
 ||kwgs.letudiant.fr^
+||kwgvshdzl.com^
 ||kwhpllmraltfm.website^
 ||kwijfh.proactiv.com^
 ||kwitvg.letudiant.fr^
@@ -62922,8 +62931,6 @@
 ||lczk.cn^
 ||lczoidhsuvuyu.site^
 ||lcztnn.asics-trading.co.jp^
-||ld-analytics.leadongcdn.com^
-||ld-analytics.micyjz.com^
 ||ld.mediaget.com^
 ||ld.za9mnx.com^
 ||ldckmk.divarese.com.tr^
@@ -65459,6 +65466,7 @@
 ||log-hl.snssdk.com^
 ||log-klink.zijieapi.com^
 ||log-lb.skyperfectv.co.jp^
+||log-lf.snssdk.com^
 ||log-lq.snssdk.com^
 ||log-mediation.easemobi.net^
 ||log-nontt.bytegsdk.com^
@@ -65586,7 +65594,6 @@
 ||log.hemera.com.vn^
 ||log.hiapkdownload.com^
 ||log.hiiir.com^
-||log.homestyler.com^
 ||log.hotweathers.live^
 ||log.hunantv.com^
 ||log.hypebeast.com^
@@ -65606,7 +65613,6 @@
 ||log.kino-dom.org^
 ||log.kinolights.com^
 ||log.klook.com^
-||log.kookapp.cn^
 ||log.kroffle.net^
 ||log.kuaigeng.com^
 ||log.kuwo.cn^
@@ -70652,7 +70658,6 @@
 ||matomo.cloud^
 ||matomo.cloudfront.similarweb.io^
 ||matomo.datago.ru^
-||matomo.datasanalytics.com^
 ||matomo.eduwill.net^
 ||matomo.menshealth.de^
 ||matomo.mobilism.org^
@@ -79004,6 +79009,7 @@
 ||o28wg9kq8i.com^
 ||o2c7dks4.de^
 ||o2l8k6vpnq1xxf8kvolg.c6ynyryg999jri3q2it.cyou^
+||o2o-ad-dev.oss-cn-shanghai.aliyuncs.com^
 ||o2o.api.xiaomi.com^
 ||o2omobi.com^
 ||o2x4h2txrc.com^
@@ -79851,6 +79857,7 @@
 ||ojmxro.yatsan.com^
 ||ojn1zxz0ni.com^
 ||ojnzzwsshjjqn.website^
+||ojobjjol7.com^
 ||ojokavacpkcjv.space^
 ||ojonvpuqbtqul.site^
 ||ojowckijsrrgp.online^
@@ -81603,6 +81610,7 @@
 ||overturnmarshaltowers.com^
 ||overwebwhorl.com^
 ||ovffiivmnrntd.space^
+||ovgadhtcyvak.in^
 ||ovghljmcnxejx.online^
 ||ovgpljyqpochn.store^
 ||ovicidecypriot.cfd^
@@ -84796,7 +84804,6 @@
 ||plausible.kdojang.com^
 ||plausible.kundenportal.io^
 ||plausible.lesbianromantic.com^
-||plausible.lobehub-inc.cn^
 ||plausible.logicboard.com^
 ||plausible.mattpruitt.com^
 ||plausible.mcj.co^
@@ -91155,6 +91162,7 @@
 ||repulsiveformerlydevaluation.com^
 ||repuremucro.qpon^
 ||repurgedombeya.cfd^
+||req.adx.xlqeai.com^
 ||req12pkg.com^
 ||req12pkgb.com^
 ||reqde.sooplive.com^
@@ -91401,7 +91409,6 @@
 ||ressources.usine-digitale.com^
 ||ressources.usine-nouvelle.com^
 ||ressqretcwdkp.site^
-||rest-argus-ad.agoralab.co^
 ||rest.comfy.ua^
 ||rest.sexypornvideo.net^
 ||rest.wildstar-online.com^
@@ -93326,6 +93333,7 @@
 ||rtyznd.com^
 ||rtznhfqlsdmnf.site^
 ||rtztthwgifaal.site^
+||ru-album-api.vivoglobal.com^
 ||ru-commonitor-stsdk.vivoglobal.com^
 ||ru-comonrt-stsdk.vivoglobal.com^
 ||ru-comort-stsdk.vivoglobal.com^
@@ -93336,8 +93344,11 @@
 ||ru-go.experian.com^
 ||ru-log.vietnamplus.vn^
 ||ru-onrt-stsdk.vivoglobal.com^
+||ru-ort-stsdk.vivoglobal.com^
 ||ru-os-config-appstore.vivoglobal.com^
 ||ru-p.vivoglobal.com^
+||ru-pnrt-stsdk.vivoglobal.com^
+||ru-prt-stsdk.vivoglobal.com^
 ||ru-romsp-unifyconfig.vivoglobal.com^
 ||ru-ru.siemensplmevents.com^
 ||ru-st-exappupgrade.vivoglobal.com^
@@ -96869,6 +96880,7 @@
 ||sentry-next.yuanfudao.com^
 ||sentry-ng.g.smailru.net^
 ||sentry-oversea.sunborngame.com^
+||sentry-qa.sunborngame.com^
 ||sentry-sg.insta360.com^
 ||sentry-us.didiglobal.com^
 ||sentry-v2.coros.com^
@@ -105629,7 +105641,6 @@
 ||static.pronivydigital.com^
 ||static.proxibid.com^
 ||static.ptqy.gitv.tv^
-||static.qiyi.com^
 ||static.qohere.in^
 ||static.qovolta.com^
 ||static.quirks.com^
@@ -105762,6 +105773,7 @@
 ||statistics.daktilo.com^
 ||statistics.darkreader.app^
 ||statistics.fppressa.ru^
+||statistics.gd.gov.cn^
 ||statistics.heatbeat.de^
 ||statistics.jfmedier.dk^
 ||statistics.klicktel.de^
@@ -113066,9 +113078,11 @@
 ||tr-boost.com^
 ||tr-bouncer.com^
 ||tr-business.vodafone.com^
+||tr-cota.vivoglobal.com^
 ||tr-domaincfg.vivoglobal.com^
 ||tr-err-up.vivoglobal.com^
 ||tr-experiments.parsely.com^
+||tr-gdpr-vgc-datacenter.vivoglobal.com^
 ||tr-monday.xyz^
 ||tr-ms.bosch-home.com^
 ||tr-ms.profilo.com^
@@ -129399,7 +129413,6 @@
 ||yangshengzu.cn^
 ||yangzxsh.top^
 ||yanhao.red^
-||yanjiapi.antutu.net^
 ||yanmysipmhlgg.space^
 ||yannqrnohpakv.space^
 ||yanpoly.com^
