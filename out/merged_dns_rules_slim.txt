@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-28 05:39:59
-! Block rules: 133090
+! Generated: 2026-09-28 12:33:46
+! Block rules: 133094
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101507
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 5992
+!   - easylistchina [w=3] block 5996
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 120289
 !   - cjx-annoyance [w=2] block 159
@@ -2403,6 +2403,7 @@
 ||5e2hf0q3a.com^
 ||5e56217cd5.396d8aaa17.com^
 ||5e770lhs7b.com^
+||5e9rwtjh1s.com^
 ||5edf1d2qv.com^
 ||5edrgrnqg.com^
 ||5ee515d98a.com^
@@ -17656,6 +17657,7 @@
 ||b4c73f11d0.com^
 ||b4ffghwq74mm2fpplktfu9tbhc.rest^
 ||b4xuj.zzhhts.com^
+||b56iy3m1jg.com^
 ||b58ncoa1c07f.com^
 ||b59j1wk7yu39rp.rest^
 ||b5e17bdf06.com^
@@ -68573,6 +68575,7 @@
 ||m8tj9yw5xq1b8fxxj.rest^
 ||m8ysv4ckls.com^
 ||m91it4t67mi2biwrjznwbi.cfd^
+||m96v7deg59.com^
 ||m9sm6th48c.com^
 ||m9sz0hh3f7.com^
 ||m9ylqs5rn.com^
@@ -88119,6 +88122,7 @@
 ||pzkrgcp.cn^
 ||pzlsmpdqmlowi.site^
 ||pzmbetafgealw.online^
+||pzmu7go7i2.com^
 ||pzoapdfmzfrqz.website^
 ||pzpcbt.icu^
 ||pzpujmtuoosiq.space^

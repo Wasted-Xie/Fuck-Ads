@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-09-28 05:39:58
-! Block rules: 150964
+! Generated: 2026-09-28 12:33:44
+! Block rules: 150968
 ! Whitelist rules: 277
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 5305 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101507 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3208 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5992 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5996 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -3629,6 +3629,7 @@
 ||5e56217cd5.396d8aaa17.com^
 ||5e770lhs7b.com^
 ||5e8gvz6c7.g2u9g28vywgnl8.cfd^
+||5e9rwtjh1s.com^
 ||5eb7c33741.4c469d624d.com^
 ||5edf1d2qv.com^
 ||5edrgrnqg.com^
@@ -22761,6 +22762,7 @@
 ||b5191b4a15.02e8b93f0e.com^
 ||b536mpmxoqxa.www.themoneytizer.com^
 ||b56f5e0992.ad2391c451.com^
+||b56iy3m1jg.com^
 ||b58jef3z.22beet.com^
 ||b58ncoa1c07f.com^
 ||b59j1wk7yu39rp.rest^
@@ -79135,6 +79137,7 @@
 ||m8tj9yw5xq1b8fxxj.rest^
 ||m8ysv4ckls.com^
 ||m91it4t67mi2biwrjznwbi.cfd^
+||m96v7deg59.com^
 ||m9sm6th48c.com^
 ||m9sz0hh3f7.com^
 ||m9ylqs5rn.com^
@@ -100199,6 +100202,7 @@
 ||pzkrgcp.cn^
 ||pzlsmpdqmlowi.site^
 ||pzmbetafgealw.online^
+||pzmu7go7i2.com^
 ||pzoapdfmzfrqz.website^
 ||pzpcbt.icu^
 ||pzpujmtuoosiq.space^
