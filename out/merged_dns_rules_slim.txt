@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-29 22:28:34
-! Block rules: 126018
+! Generated: 2026-09-30 01:25:57
+! Block rules: 126024
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 98778
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6012
+!   - easylistchina [w=3] block 6018
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 113057
 !   - cjx-annoyance [w=2] block 159
@@ -17861,6 +17861,7 @@
 ||bazhigu.com^
 ||bazinga.mse.sogou.com^
 ||bazlny.homepal.it^
+||baztfhhqiuvttm.com^
 ||baztrack.com^
 ||bb-503.com^
 ||bb.lekumo.jp^
@@ -44030,6 +44031,7 @@
 ||gangismdisard.shop^
 ||gangplank39.com^
 ||gangsterrecuperateintrepid.com^
+||gangway97.com^
 ||gangwaynumberprivacy.com^
 ||ganismpro.com^
 ||ganja.com^
@@ -50093,6 +50095,7 @@
 ||ht.ruanjiancms.com^
 ||ht.www.sogou.com^
 ||ht55.cn^
+||ht55hm12n2.com^
 ||ht858.ckrcbzh7mo5t1m14n9m5qlqt7fte.cyou^
 ||ht9s1j1bf.com^
 ||htajztellrgmu.space^
@@ -75067,6 +75070,7 @@
 ||o0rnzwzst5.com^
 ||o1.jyjyj.cn^
 ||o11y-proxy-otel-frontend.meli.com^
+||o17kbwlq9p.com^
 ||o18.click^
 ||o18.link^
 ||o1cqxzypeckmhy.cfd^
@@ -88691,6 +88695,7 @@
 ||rwgsidrmjrghq.online^
 ||rwherrgvrxvd.com^
 ||rwhneg.breaking-news.jp^
+||rwhyrlb8r2.com^
 ||rwilwcovop.icu^
 ||rwjbdrzrqgsrf.space^
 ||rwjfbjhktsftpe.com^
@@ -124233,6 +124238,7 @@
 ||ywugyssrmkvat.website^
 ||ywuzuazsjnzto.online^
 ||ywwm.net^
+||ywxc.net^
 ||ywygrtyblmaxe.site^
 ||ywzmvh.trovaprezzi.it^
 ||ywzyhljazdsrx.space^
