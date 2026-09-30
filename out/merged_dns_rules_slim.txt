@@ -3,13 +3,13 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-30 19:32:24
-! Block rules: 126350
+! Generated: 2026-09-30 23:21:55
+! Block rules: 126357
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 5355
+!   - adblockdnslite [w=5] block 5360
 !   - anti-ad [w=5] block 98778
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
@@ -2195,7 +2195,6 @@
 ||52d8.pandasuite.io^
 ||52data-venture.com^
 ||52kmh.com^
-||52kuwang.cn^
 ||52linglei.com^
 ||52m.xde6.net^
 ||52pk.com^
@@ -8759,6 +8758,7 @@
 ||ads-i2.xhscdn.com.w.cdngslb.com^
 ||ads-i3.xhscdn.com^
 ||ads-i4.xhscdn.com^
+||ads-i8.xhscdn.com^
 ||ads-image.production-public.tubi.io^
 ||ads-img-al.xhscdn.com^
 ||ads-img-al.xhscdn.com.w.cdngslb.com^
@@ -8776,6 +8776,7 @@
 ||ads-media.gameforge.com^
 ||ads-media.wildberries.ru^
 ||ads-monitoring.papegames.com^
+||ads-monitoring.shziyi.com^
 ||ads-partners.coupang.com^
 ||ads-pixiv.net^
 ||ads-platform.zalo.me^
@@ -12483,6 +12484,7 @@
 ||analytics.electro-com.ru^
 ||analytics.elegela.us^
 ||analytics.emol.com^
+||analytics.emqx.com^
 ||analytics.enjoymobiserver.com^
 ||analytics.erepublic.com^
 ||analytics.ericafischerphotography.com^
@@ -12538,6 +12540,7 @@
 ||analytics.gewaterheater.com^
 ||analytics.githubassets.com^
 ||analytics.global.sky.com^
+||analytics.globalsources.com^
 ||analytics.gnetworks.xyz^
 ||analytics.gokwik.co^
 ||analytics.google.com^
@@ -13111,6 +13114,7 @@
 ||analytics2-3-meride-tv.akamaized.net^
 ||analytics2-meride-tv.akamaized.net^
 ||analytics2.awsli.com.br^
+||analytics2.xdiarys.com^
 ||analytics3.dopool.com^
 ||analytics3.starschina.com^
 ||analyticsapi.qogita.com^
@@ -14123,7 +14127,6 @@
 ||app-posthog.bi-sage.site^
 ||app-qa.rnd.thronelabs.co^
 ||app-redirect.wearephlo.com^
-||app-sentry.taou.com^
 ||app-stage.mschfsneakers.com^
 ||app-stats.supernotes.app^
 ||app-test.albrt.co^
@@ -14956,7 +14959,6 @@
 ||app03.ikk-classic.de^
 ||app1.maatwerkonline.nl^
 ||app2.220cordncode.com^
-||appadapi.ihuman.com^
 ||appadhoc.com^
 ||appadhoc.net^
 ||appads.com^
@@ -16365,7 +16367,6 @@
 ||auth-eu.hismarttv.com^
 ||auth-launcher-em.hismarttv.com^
 ||auth-launcher-eu.hismarttv.com^
-||auth-launcher-jp.hismarttv.com^
 ||auth-launcher-na.hismarttv.com^
 ||auth-launcher-sa.hismarttv.com^
 ||auth-na.hismarttv.com^
@@ -22584,7 +22585,6 @@
 ||capybara.randyhamiltonelectric.com^
 ||caqvwtvivqbae.website^
 ||car-a8.tabirai.net^
-||car-app-sentry.d.xiaomi.net^
 ||car.qcmrjx.com^
 ||car156.net^
 ||caraganaarborescenspendula.com^
@@ -25003,7 +25003,6 @@
 ||cljfpthmkqkby.online^
 ||cljsqdtcdpxfr.online^
 ||clk-m.joybuy.com^
-||clk.ad.xelements.cn^
 ||clk.entry.surala.jp^
 ||clk.glam-print.com^
 ||clk.ingage.jp^
@@ -31542,6 +31541,7 @@
 ||dc-storm.com^
 ||dc-tag.jp^
 ||dc.api.my7v.com^
+||dc.applicationinsights.azure.cn^
 ||dc.audi.com^
 ||dc.banggood.com^
 ||dc.bluecoat.com^
@@ -32441,6 +32441,7 @@
 ||devgottia.github.io^
 ||device-metrics-us-2.amazon.com^
 ||device-metrics-us.amazon.com^
+||device-ups.push.heytapmobi.com^
 ||device9.com^
 ||deviceinf.com^
 ||devicemessaging.us-east-1.amazon.com^
@@ -33715,7 +33716,6 @@
 ||dlog-config.uu.cc^
 ||dlog.perfectworldgames.com^
 ||dlog.pwsdk.com^
-||dlog.wanmei.com^
 ||dlogs.bwton.com^
 ||dlohjhkldludr.space^
 ||dlonte.xyz^
@@ -40594,7 +40594,6 @@
 ||fakers.co.jp^
 ||fakerymethod.shop^
 ||fakeschool.com^
-||fakjkwp.cn^
 ||faktor.io^
 ||fal2.carrefour-banque.fr^
 ||falal.cn^
@@ -41103,6 +41102,7 @@
 ||feedback.uc.cn^
 ||feedbackadmiralfortnight.com^
 ||feedbackresearch.com^
+||feedbackstorage.blob.core.chinacloudapi.cn^
 ||feedblitz.com^
 ||feedcat.net^
 ||feedify.net^
@@ -44166,6 +44166,7 @@
 ||gardenia25.com^
 ||gardeningcoercive.com^
 ||gardeningremovalcontrary.com^
+||gardenmarket.shop^
 ||gardennyet.cfd^
 ||gardenovens.com^
 ||gareheimuvyyi.space^
@@ -47470,6 +47471,7 @@
 ||guidelingerbeige.com^
 ||guidepaparazzisurface.com^
 ||guidonsfeeing.com^
+||guif-eu.coloros.com^
 ||guif.coloros.com^
 ||guiheng.wang^
 ||guildalpha.com^
@@ -49175,7 +49177,6 @@
 ||hirmbzroviasa.online^
 ||hirony.xyz^
 ||hirsung.de^
-||hisearch-dra-dt-dbankcloud-com-dra.appacc.dbankedge.cn^
 ||hisearch-dra.dt.dbankcloud.com^
 ||hisearch-drcn.dt.dbankcloud.com^
 ||hisearch-dre.dt.dbankcloud.com^
@@ -59157,7 +59158,6 @@
 ||kyyfjvqqwltzs.space^
 ||kyywpllomeljh.site^
 ||kyzsragswmnyd.space^
-||kz-onrt-stsdk.vivoglobal.com^
 ||kz-vcode-od.vivoglobal.com^
 ||kz.k1wlwifceil7rwcb19rqk5jgk9j7b3.cfd^
 ||kzagvdulumvgl.site^
@@ -60321,7 +60321,6 @@
 ||lf-static.tiktokpangle-cdn-us.com^
 ||lf2cgxz0b.com^
 ||lf3-ad.searchpstatp.com^
-||lf3-analytics.bytescm.com.queniuuf.com^
 ||lfafacbfqrsom.online^
 ||lfapbe.quiksilver.co.jp^
 ||lfavcwgydohba.store^
@@ -62432,6 +62431,7 @@
 ||log.hemera.com.vn^
 ||log.hiapkdownload.com^
 ||log.hiiir.com^
+||log.homestyler.com^
 ||log.hotweathers.live^
 ||log.hunantv.com^
 ||log.hypebeast.com^
@@ -62559,7 +62559,6 @@
 ||log.tv.moliv.cn^
 ||log.tv.zing.vn^
 ||log.tv360.vn^
-||log.ua.iegcom.com^
 ||log.ubianet.com^
 ||log.ultimatecleaner.pro^
 ||log.us.xiaoyi.com^
@@ -67334,6 +67333,7 @@
 ||matomo.cloud^
 ||matomo.cloudfront.similarweb.io^
 ||matomo.datago.ru^
+||matomo.datasanalytics.com^
 ||matomo.eduwill.net^
 ||matomo.menshealth.de^
 ||matomo.mobilism.org^
@@ -70417,6 +70417,7 @@
 ||miscropsite.qpon^
 ||miscuedorgiasm.qpon^
 ||misdateturakooflecked.cfd^
+||misecanjesbac.click^
 ||miserableconcept.com^
 ||miserly-wrap.com^
 ||misfiledumdumpelages.qpon^
@@ -70425,6 +70426,7 @@
 ||mishearanhimae.qpon^
 ||mishop.cdn.pandora.xiaomi.com^
 ||mishop.pandora.xiaomi.com^
+||misicanjesbac.click^
 ||misjudgebuoyeye.com^
 ||mislainwerefox.cyou^
 ||mismeetchelpwur.cyou^
@@ -73704,6 +73706,7 @@
 ||nezygmobha.com^
 ||nf1nknlw.mateforevents.com^
 ||nf4egyhllyxbuc8xmf4pjvq.cfd^
+||nfa.jd.com^
 ||nfcliqjyhwatk.website^
 ||nfcwnzrbsoapk.online^
 ||nfdnserror11.wo.com.cn^
@@ -77420,7 +77423,6 @@
 ||ot.obi.si^
 ||ot.obi.sk^
 ||ota.cartrawler.com^
-||ota.ptqy.gitv.tv^
 ||otaavlxnmqwyi.online^
 ||otakusphere.online^
 ||otalgyfab.qpon^
@@ -80453,6 +80455,7 @@
 ||pl-fighter.shop^
 ||pl-go.experian.com^
 ||pl-rituals.club^
+||pl-ritualsbeat.club^
 ||pl-topgal.m-shop.me^
 ||pl.1feed.app^
 ||pl.astro-akatemia.fi^
@@ -86857,6 +86860,7 @@
 ||ressources.usine-digitale.com^
 ||ressources.usine-nouvelle.com^
 ||ressqretcwdkp.site^
+||rest-argus-ad.agoralab.co^
 ||rest.comfy.ua^
 ||rest.sexypornvideo.net^
 ||rest.wildstar-online.com^
@@ -92020,6 +92024,7 @@
 ||sentry-cdn.top^
 ||sentry-cn.cs.pudutech.com^
 ||sentry-inc.ssr.mihoyo.com^
+||sentry-ingester.qclxbj.com^
 ||sentry-io.djiops.com^
 ||sentry-io.djiops.com.w.cdngslb.com^
 ||sentry-lb.lenovo.com.cn^
@@ -92039,6 +92044,7 @@
 ||sentry.d.xiaomi.net^
 ||sentry.dev-my.com^
 ||sentry.dhgate.com^
+||sentry.dreambig.work^
 ||sentry.duozhuayu.net^
 ||sentry.eks.hoyoverse.com^
 ||sentry.globalsources.com^
@@ -92050,7 +92056,6 @@
 ||sentry.kontur.host^
 ||sentry.kuaishou.com^
 ||sentry.mediacdn.vn^
-||sentry.meitu-int.com^
 ||sentry.mindbox.ru^
 ||sentry.monitoring.ugnas.com^
 ||sentry.music.163.com^
@@ -92073,6 +92078,7 @@
 ||sentry.xindong.com^
 ||sentry.xunlei.com^
 ||sentry.zhuanzhuan.com^
+||sentry.zwoastro.cn^
 ||sentry01.zerg.rambler.ru^
 ||sentry2.lx.netease.com^
 ||sentrymagic.com^
@@ -100232,7 +100238,6 @@
 ||stat.zuimeitianqi.com^
 ||stat1.clickfraud.ru^
 ||stat2.corp.56.com^
-||stat2.pixpin.cn^
 ||stat24.com^
 ||stat24.meta.ua^
 ||stat24.ru^
@@ -103127,6 +103132,7 @@
 ||swylysnrppthv.space^
 ||swyvermont.qpon^
 ||swziwafflvfbq.site^
+||sx.fakjkwp.cn^
 ||sx2sg2t5sd.com^
 ||sxarakia.openapp.link^
 ||sxcclxzqbmxvi.space^
@@ -114756,7 +114762,6 @@
 ||v5-se-ex-mc-reading-ad.qznovelvod.com^
 ||v5-se-gddgtc-reading-ad.qznovelvod.com^
 ||v5-se-sjy-daily-reading-ad.qznovelvod.com^
-||v5-se2-bjtc-reading-ad.qznovelvod.com^
 ||v5-se2-gddgtc-reading-ad.qznovelvod.com^
 ||v53groc9v.com^
 ||v55770.com^
@@ -117215,6 +117220,7 @@
 ||wangmeng.baidu.cn^
 ||wangmeng.baidu.com^
 ||wangmeng.sogou.com^
+||wangsu-smetrics.redhat.com.edgekey.net.wanakadns.net^
 ||wangxiankang.top^
 ||wangyouxs.cn^
 ||wangzhan5.com^
@@ -117900,6 +117906,7 @@
 ||webcampromotions.com^
 ||webcash.nl^
 ||webcasts.de.ni.com^
+||webcert.cnmstl.net^
 ||webchat.caresoft.vn^
 ||webclarion.com^
 ||webclickengine.com^

@@ -2,11 +2,11 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-09-30 19:32:22
-! Block rules: 144052
+! Generated: 2026-09-30 23:21:53
+! Block rules: 144057
 ! Whitelist rules: 277
 ! Sources (China-focused only):
-!   - adblockdnslite: 217 Lite（仅国内域名） (block 5355 / white 16, priority 1)
+!   - adblockdnslite: 217 Lite（仅国内域名） (block 5360 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 98778 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3208 / white 29, priority 2)
 !   - easylistchina: EasyList China (block 6021 / white 11, priority 2)
@@ -3343,7 +3343,6 @@
 ||52data-venture.com^
 ||52f077e9dc.9e9cb445eb.com^
 ||52kmh.com^
-||52kuwang.cn^
 ||52linglei.com^
 ||52m.xde6.net^
 ||52pk.com^
@@ -12997,6 +12996,7 @@
 ||ads-i2.xhscdn.com.w.cdngslb.com^
 ||ads-i3.xhscdn.com^
 ||ads-i4.xhscdn.com^
+||ads-i8.xhscdn.com^
 ||ads-image.production-public.tubi.io^
 ||ads-img-al.xhscdn.com^
 ||ads-img-al.xhscdn.com.w.cdngslb.com^
@@ -13014,6 +13014,7 @@
 ||ads-media.gameforge.com^
 ||ads-media.wildberries.ru^
 ||ads-monitoring.papegames.com^
+||ads-monitoring.shziyi.com^
 ||ads-partners.coupang.com^
 ||ads-pixiv.net^
 ||ads-platform.zalo.me^
@@ -17054,6 +17055,7 @@
 ||analytics.electro-com.ru^
 ||analytics.elegela.us^
 ||analytics.emol.com^
+||analytics.emqx.com^
 ||analytics.enjoymobiserver.com^
 ||analytics.erepublic.com^
 ||analytics.ericafischerphotography.com^
@@ -17110,6 +17112,7 @@
 ||analytics.githubassets.com^
 ||analytics.glance.inmobi.com^
 ||analytics.global.sky.com^
+||analytics.globalsources.com^
 ||analytics.gnetworks.xyz^
 ||analytics.gokwik.co^
 ||analytics.google.com^
@@ -17704,6 +17707,7 @@
 ||analytics2-3-meride-tv.akamaized.net^
 ||analytics2-meride-tv.akamaized.net^
 ||analytics2.awsli.com.br^
+||analytics2.xdiarys.com^
 ||analytics3.dopool.com^
 ||analytics3.starschina.com^
 ||analyticsapi.qogita.com^
@@ -18916,7 +18920,6 @@
 ||app-posthog.bi-sage.site^
 ||app-qa.rnd.thronelabs.co^
 ||app-redirect.wearephlo.com^
-||app-sentry.taou.com^
 ||app-stage.mschfsneakers.com^
 ||app-stats.supernotes.app^
 ||app-test.albrt.co^
@@ -19777,7 +19780,6 @@
 ||app03.ikk-classic.de^
 ||app1.maatwerkonline.nl^
 ||app2.220cordncode.com^
-||appadapi.ihuman.com^
 ||appadhoc.com^
 ||appadhoc.net^
 ||appads.com^
@@ -21323,7 +21325,6 @@
 ||auth-eu.hismarttv.com^
 ||auth-launcher-em.hismarttv.com^
 ||auth-launcher-eu.hismarttv.com^
-||auth-launcher-jp.hismarttv.com^
 ||auth-launcher-na.hismarttv.com^
 ||auth-launcher-sa.hismarttv.com^
 ||auth-na.hismarttv.com^
@@ -28262,7 +28263,6 @@
 ||capybara.randyhamiltonelectric.com^
 ||caqvwtvivqbae.website^
 ||car-a8.tabirai.net^
-||car-app-sentry.d.xiaomi.net^
 ||car.go-static.info^
 ||car.h5.goaserv.com^
 ||car.mobadme.jp^
@@ -31316,7 +31316,6 @@
 ||cljfpthmkqkby.online^
 ||cljsqdtcdpxfr.online^
 ||clk-m.joybuy.com^
-||clk.ad.xelements.cn^
 ||clk.atdmt.com^
 ||clk.dxpmedia.com^
 ||clk.entry.surala.jp^
@@ -34374,7 +34373,6 @@
 ||crapunpredictablefiddle.com^
 ||crash.163.com^
 ||crash.browser.qq.com^
-||crash.pcsafe.360safe.com^
 ||crash.rnote.com^
 ||crash.rnote.com.eo.dnse0.com^
 ||crash.safe.360.cn^
@@ -38476,6 +38474,7 @@
 ||dc.actonservice.com^
 ||dc.ads.linkedin.com^
 ||dc.api.my7v.com^
+||dc.applicationinsights.azure.cn^
 ||dc.audi.com^
 ||dc.banggood.com^
 ||dc.bluecoat.com^
@@ -39466,6 +39465,7 @@
 ||devgottia.github.io^
 ||device-metrics-us-2.amazon.com^
 ||device-metrics-us.amazon.com^
+||device-ups.push.heytapmobi.com^
 ||device9.com^
 ||deviceauth-code.us.com^
 ||deviceinf.com^
@@ -40831,7 +40831,6 @@
 ||dlog-config.uu.cc^
 ||dlog.perfectworldgames.com^
 ||dlog.pwsdk.com^
-||dlog.wanmei.com^
 ||dlogs.bwton.com^
 ||dlohjhkldludr.space^
 ||dlonte.xyz^
@@ -48449,7 +48448,6 @@
 ||fakerymethod.shop^
 ||fakeschool.com^
 ||fakexa-post.mno.link^
-||fakjkwp.cn^
 ||faktor.io^
 ||fal2.carrefour-banque.fr^
 ||falal.cn^
@@ -49021,6 +49019,7 @@
 ||feedback.uc.cn^
 ||feedbackadmiralfortnight.com^
 ||feedbackresearch.com^
+||feedbackstorage.blob.core.chinacloudapi.cn^
 ||feedblitz.com^
 ||feedcat.net^
 ||feedify.net^
@@ -52576,6 +52575,7 @@
 ||gardenia25.com^
 ||gardeningcoercive.com^
 ||gardeningremovalcontrary.com^
+||gardenmarket.shop^
 ||gardennyet.cfd^
 ||gardenovens.com^
 ||gardenworkflowhub.garden^
@@ -56214,6 +56214,7 @@
 ||guidepointglobal.actonservice.com^
 ||guideposts.actonservice.com^
 ||guidonsfeeing.com^
+||guif-eu.coloros.com^
 ||guif.coloros.com^
 ||guiheng.wang^
 ||guildalpha.com^
@@ -58116,7 +58117,6 @@
 ||hirumacnopokemon.goasrv.com^
 ||his-www.dv.go-static.info^
 ||his19741215.goasrv.com^
-||hisearch-dra-dt-dbankcloud-com-dra.appacc.dbankedge.cn^
 ||hisearch-dra.dt.dbankcloud.com^
 ||hisearch-drcn.dt.dbankcloud.com^
 ||hisearch-dre.dt.dbankcloud.com^
@@ -69146,7 +69146,6 @@
 ||kyyfjvqqwltzs.space^
 ||kyywpllomeljh.site^
 ||kyzsragswmnyd.space^
-||kz-onrt-stsdk.vivoglobal.com^
 ||kz-vcode-od.vivoglobal.com^
 ||kz.admaster.com.cn^
 ||kz.k1wlwifceil7rwcb19rqk5jgk9j7b3.cfd^
@@ -70415,7 +70414,6 @@
 ||lf2cgxz0b.com^
 ||lf3-ad-union-sdk.pglstatp-toutiao.com^
 ||lf3-ad.searchpstatp.com^
-||lf3-analytics.bytescm.com.queniuuf.com^
 ||lf6-ad-union-sdk.pglstatp-toutiao.com^
 ||lfafacbfqrsom.online^
 ||lfapbe.quiksilver.co.jp^
@@ -72645,6 +72643,7 @@
 ||log.hemera.com.vn^
 ||log.hiapkdownload.com^
 ||log.hiiir.com^
+||log.homestyler.com^
 ||log.hotweathers.live^
 ||log.houyi.baofeng.net^
 ||log.hunantv.com^
@@ -72782,7 +72781,6 @@
 ||log.tv.moliv.cn^
 ||log.tv.zing.vn^
 ||log.tv360.vn^
-||log.ua.iegcom.com^
 ||log.ubianet.com^
 ||log.ultimatecleaner.pro^
 ||log.umsns.com^
@@ -77872,6 +77870,7 @@
 ||matomo.cloud^
 ||matomo.cloudfront.similarweb.io^
 ||matomo.datago.ru^
+||matomo.datasanalytics.com^
 ||matomo.eduwill.net^
 ||matomo.menshealth.de^
 ||matomo.mobilism.org^
@@ -81133,6 +81132,7 @@
 ||miscropsite.qpon^
 ||miscuedorgiasm.qpon^
 ||misdateturakooflecked.cfd^
+||misecanjesbac.click^
 ||miserableconcept.com^
 ||miserly-wrap.com^
 ||misfiledumdumpelages.qpon^
@@ -81141,6 +81141,7 @@
 ||mishearanhimae.qpon^
 ||mishop.cdn.pandora.xiaomi.com^
 ||mishop.pandora.xiaomi.com^
+||misicanjesbac.click^
 ||misjudgebuoyeye.com^
 ||mislainwerefox.cyou^
 ||mismeetchelpwur.cyou^
@@ -84730,6 +84731,7 @@
 ||nf.boletos-notas.com^
 ||nf1nknlw.mateforevents.com^
 ||nf4egyhllyxbuc8xmf4pjvq.cfd^
+||nfa.jd.com^
 ||nfcliqjyhwatk.website^
 ||nfcwnzrbsoapk.online^
 ||nfdnserror11.wo.com.cn^
@@ -88725,7 +88727,6 @@
 ||ot.obi.sk^
 ||ot7.wagbridge.advertisement.tanx.com^
 ||ota.cartrawler.com^
-||ota.ptqy.gitv.tv^
 ||otaavlxnmqwyi.online^
 ||otaku.otakusphere.online^
 ||otakusphere.online^
@@ -92077,6 +92078,7 @@
 ||pl-go.experian.com^
 ||pl-pay.surf4623404.notify6.com^
 ||pl-rituals.club^
+||pl-ritualsbeat.club^
 ||pl-topgal.m-shop.me^
 ||pl.1feed.app^
 ||pl.astro-akatemia.fi^
@@ -99044,6 +99046,7 @@
 ||ressources.usine-digitale.com^
 ||ressources.usine-nouvelle.com^
 ||ressqretcwdkp.site^
+||rest-argus-ad.agoralab.co^
 ||rest.comfy.ua^
 ||rest.irs01.com^
 ||rest.sexypornvideo.net^
@@ -105245,6 +105248,7 @@
 ||sentry-cdn.top^
 ||sentry-cn.cs.pudutech.com^
 ||sentry-inc.ssr.mihoyo.com^
+||sentry-ingester.qclxbj.com^
 ||sentry-io.djiops.com^
 ||sentry-io.djiops.com.w.cdngslb.com^
 ||sentry-lb.lenovo.com.cn^
@@ -105264,6 +105268,7 @@
 ||sentry.d.xiaomi.net^
 ||sentry.dev-my.com^
 ||sentry.dhgate.com^
+||sentry.dreambig.work^
 ||sentry.duozhuayu.net^
 ||sentry.eks.hoyoverse.com^
 ||sentry.globalsources.com^
@@ -105275,7 +105280,6 @@
 ||sentry.kontur.host^
 ||sentry.kuaishou.com^
 ||sentry.mediacdn.vn^
-||sentry.meitu-int.com^
 ||sentry.mindbox.ru^
 ||sentry.monitoring.ugnas.com^
 ||sentry.music.163.com^
@@ -105298,6 +105302,7 @@
 ||sentry.xindong.com^
 ||sentry.xunlei.com^
 ||sentry.zhuanzhuan.com^
+||sentry.zwoastro.cn^
 ||sentry01.zerg.rambler.ru^
 ||sentry2.lx.netease.com^
 ||sentrymagic.com^
@@ -113849,7 +113854,6 @@
 ||stat1.clickfraud.ru^
 ||stat2.corp.56.com^
 ||stat2.openinstall.io^
-||stat2.pixpin.cn^
 ||stat24.com^
 ||stat24.meta.ua^
 ||stat24.ru^
@@ -129614,7 +129618,6 @@
 ||v5-se-ex-mc-reading-ad.qznovelvod.com^
 ||v5-se-gddgtc-reading-ad.qznovelvod.com^
 ||v5-se-sjy-daily-reading-ad.qznovelvod.com^
-||v5-se2-bjtc-reading-ad.qznovelvod.com^
 ||v5-se2-gddgtc-reading-ad.qznovelvod.com^
 ||v5.cnzz.com^
 ||v5.juzi.cn^
@@ -132363,6 +132366,7 @@
 ||wangmeng.baidu.cn^
 ||wangmeng.baidu.com^
 ||wangmeng.sogou.com^
+||wangsu-smetrics.redhat.com.edgekey.net.wanakadns.net^
 ||wangxiankang.top^
 ||wangyouxs.cn^
 ||wangzhan5.com^
@@ -133126,6 +133130,7 @@
 ||webcast.notifysrv.com^
 ||webcasts.de.ni.com^
 ||webcasts.partnermcafee.com^
+||webcert.cnmstl.net^
 ||webchat.caresoft.vn^
 ||webclarion.com^
 ||webclickengine.com^
