@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-09-30 23:21:55
-! Block rules: 126357
+! Generated: 2026-10-01 02:16:02
+! Block rules: 126361
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 98778
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6021
+!   - easylistchina [w=3] block 6025
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 113389
 !   - cjx-annoyance [w=2] block 159
@@ -15879,6 +15879,7 @@
 ||asqdfuhwian.com^
 ||asqfunkmi.in^
 ||asrop.xyz^
+||asrxwyud2.com^
 ||assassinationapprenticeedible.com^
 ||assateagal.com^
 ||asscfpprqsurr.online^
@@ -46771,6 +46772,7 @@
 ||gp.jstv.com^
 ||gp.oddo-bhf.com^
 ||gp.zaiyunli.cn^
+||gp2mi428s.com^
 ||gpawrschgrqzb.space^
 ||gpbemgixdkodl.com^
 ||gpcrn.com^
@@ -105640,6 +105642,7 @@
 ||tfs.zhamm.cn^
 ||tfssl.caohua.com^
 ||tftfbezn.com^
+||tftwrvvavlpjjq.com^
 ||tfunqc.domonet.jp^
 ||tfuodg.memolife.de^
 ||tfuxcxvzsuglw.online^
@@ -105973,6 +105976,7 @@
 ||threetruck.com^
 ||threewoodslose.com^
 ||threnosdemeans.com^
+||thresher30.com^
 ||thresholdaccommodate.com^
 ||thresholdskill.com^
 ||threwdownth.xyz^
