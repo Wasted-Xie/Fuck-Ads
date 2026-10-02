@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-02 07:12:15
-! Block rules: 126900
+! Generated: 2026-10-02 13:59:20
+! Block rules: 126904
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 99457
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6040
+!   - easylistchina [w=3] block 6044
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 113926
 !   - cjx-annoyance [w=2] block 159
@@ -2480,6 +2480,7 @@
 ||5wzew9jht.com^
 ||5x3pl3o58.l3j593g9cmwhmwnbi6c.cfd^
 ||5xdz5pz072.com^
+||5xg31saxfv.com^
 ||5xvtbbvb6.com^
 ||5yahh8v3.xyz^
 ||5yc8ui0n3j.com^
@@ -22157,6 +22158,7 @@
 ||c55d4b9929.com^
 ||c5acd666f8.com^
 ||c5krw17gn0.com^
+||c5mj81yuuo.com^
 ||c5mwwyqfvi.com^
 ||c6.bjdianyue.com^
 ||c6.friok.com^
@@ -39969,6 +39971,7 @@
 ||evylputjibynd.website^
 ||evynujgbglxzi.space^
 ||evyy.net^
+||ew0ctzt3vd.com^
 ||ew16d.package12.com^
 ||ew3.io^
 ||ewalxb.epicsports.com^
@@ -78293,6 +78296,7 @@
 ||oypineyedestan.cfd^
 ||oyqxdtshsivhl.online^
 ||oyrsdqzzdfmjy.website^
+||oysdzwzivk.com^
 ||oyshsqsoyrexh.site^
 ||oyssqe.easyvoyage.com^
 ||oysterspottery.com^
