@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-02 23:07:15
-! Block rules: 127106
+! Generated: 2026-10-03 02:10:27
+! Block rules: 127111
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 99457
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6045
+!   - easylistchina [w=3] block 6050
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 114103
 !   - cjx-annoyance [w=2] block 159
@@ -3442,6 +3442,7 @@
 ||8t2.di91ba.cn^
 ||8tb11bh7ig8wpufwrt6zb8torymq1b1xp.cfd^
 ||8tbllquzr6.com^
+||8tjomzqlw.com^
 ||8ue4rp6yxyis.www.tapmyback.com^
 ||8uuxq3tvn.com^
 ||8uy9oc8g6gwm9l.rest^
@@ -48805,6 +48806,7 @@
 ||hdppc.com^
 ||hdrctfcvghgvq.site^
 ||hdrjnmjbqlerc.site^
+||hdry1a0g9.com^
 ||hdsrc-a.akamaihd.net^
 ||hdswgc.com^
 ||hdtcode.com^
@@ -60525,6 +60527,7 @@
 ||lel704cjev.com^
 ||lelexing.cn^
 ||leluhrmmslpud.store^
+||lelzbtm2o.com^
 ||lem.nouvelobs.com^
 ||lemansnuclein.cyou^
 ||lembsmhpronni.website^
@@ -88395,6 +88398,7 @@
 ||rothermophony.com^
 ||rotiqucdne.me.uk^
 ||rotoskhutba.qpon^
+||rotovator44.top^
 ||rotsurroundings.com^
 ||rottemuckna.com^
 ||rottencycle.com^
@@ -122095,6 +122099,7 @@
 ||xljqqe.hsn.com^
 ||xlkbinzjgmnsy.site^
 ||xllceyjtmljek.space^
+||xlljnxnyhrprhw.com^
 ||xllkxiffgdidv.site^
 ||xlmamdeykpist.online^
 ||xlmuhiaozekzh.site^
