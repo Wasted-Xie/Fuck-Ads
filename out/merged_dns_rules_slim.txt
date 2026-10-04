@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-04 09:11:33
-! Block rules: 127653
+! Generated: 2026-10-04 14:54:03
+! Block rules: 127678
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 5456
+!   - adblockdnslite [w=5] block 5491
 !   - anti-ad [w=5] block 99457
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6067
+!   - easylistchina [w=3] block 6070
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 114577
 !   - cjx-annoyance [w=2] block 159
@@ -427,6 +427,7 @@
 ||10f08b9ab4.d033093f1f.com^
 ||10f55ab5ed.com^
 ||10f8fc8a55.com^
+||10jqka-jq.com.cn^
 ||10q6e9ne5.de^
 ||10sn95to9.de^
 ||10stepswp.advancedtech.com^
@@ -1318,6 +1319,7 @@
 ||2kbmdtlgme.com^
 ||2kn40j226.de^
 ||2l6ddsmnm.de^
+||2lcdjyf37f.com^
 ||2leep.com^
 ||2linkpath.com^
 ||2lj9n8sz0w.com^
@@ -7178,7 +7180,6 @@
 ||ad.f1cd.ru^
 ||ad.firestorage.jp^
 ||ad.flipboard.com^
-||ad.foxitreader.cn^
 ||ad.foxnetworks.com^
 ||ad.funp.com^
 ||ad.funshion.org.cn^
@@ -7237,6 +7238,7 @@
 ||ad.jiemian.com^
 ||ad.jooancloud.com^
 ||ad.jorte.com^
+||ad.jschina.com.cn^
 ||ad.jsnbrynb.com^
 ||ad.juksy.com^
 ||ad.jxnews.com.cn^
@@ -7301,6 +7303,8 @@
 ||ad.netmedia.hu^
 ||ad.netowl.jp^
 ||ad.nettvservices.com^
+||ad.new.oe.hmgreat.com^
+||ad.nmjsjs.com^
 ||ad.norfolkbroads.com^
 ||ad.nttnavi.co.jp^
 ||ad.ntvmsnbc.com^
@@ -8803,6 +8807,7 @@
 ||ads-i2.xhscdn.com^
 ||ads-i2.xhscdn.com.w.cdngslb.com^
 ||ads-i3.xhscdn.com^
+||ads-i3.xhscdn.com.a.bdydns.com^
 ||ads-i4.xhscdn.com^
 ||ads-i8.xhscdn.com^
 ||ads-image.production-public.tubi.io^
@@ -10021,6 +10026,7 @@
 ||advert-api.wildberries.ru^
 ||advert-media-api.wb.ru^
 ||advert-media-api.wildberries.ru^
+||advert-prod.hyrz.qq.com^
 ||advert-server.elecfans.com^
 ||advert.58.com^
 ||advert.api.thejoyrun.com^
@@ -12273,9 +12279,11 @@
 ||analytics-1.cavai.com^
 ||analytics-adv.ozon.ru^
 ||analytics-alv.google.com^
+||analytics-api-01.smzdm.com^
 ||analytics-api-s.cloudinary.com^
 ||analytics-api.a-f.io^
 ||analytics-api.byub.org^
+||analytics-api.dvdfab.cn^
 ||analytics-api.gemcommerce.com^
 ||analytics-api.invideo.io^
 ||analytics-api.liveapp.com^
@@ -12391,6 +12399,7 @@
 ||analytics.animexx.de^
 ||analytics.any.do^
 ||analytics.api.justeattakeaway.com^
+||analytics.api.myqnapcloud.cn^
 ||analytics.apnewsregistry.com^
 ||analytics.app.funnelish.com^
 ||analytics.apps.seabroadnet.com^
@@ -12507,6 +12516,7 @@
 ||analytics.consumerrights.wiki^
 ||analytics.contents.by-fw.jp^
 ||analytics.convertlanguage.com^
+||analytics.coodesker.com^
 ||analytics.cookiefirst.dev^
 ||analytics.corusent.com^
 ||analytics.cosmicstack.org^
@@ -12663,6 +12673,7 @@
 ||analytics.ifood.tv^
 ||analytics.ihg.com^
 ||analytics.ikyu.com^
+||analytics.infility.cn^
 ||analytics.infraloods.nl^
 ||analytics.innologica.com^
 ||analytics.inquirernetwork.net^
@@ -13165,7 +13176,6 @@
 ||analytics.woozooo.com^
 ||analytics.wrc.nic.in^
 ||analytics.ws.126.net^
-||analytics.xdiarys.com^
 ||analytics.xgimi.com^
 ||analytics.xiloc.net^
 ||analytics.xoomenergy.com^
@@ -15048,6 +15058,7 @@
 ||app03.ikk-classic.de^
 ||app1.maatwerkonline.nl^
 ||app2.220cordncode.com^
+||appadapi.ihuman.com^
 ||appadhoc.com^
 ||appadhoc.net^
 ||appads.com^
@@ -22677,7 +22688,6 @@
 ||canidquott.shop^
 ||caninesindium.com^
 ||caningphloxesfeuage.cyou^
-||canjearppuntos.click^
 ||cank9.site^
 ||canlytics.com^
 ||cannedrestrict.com^
@@ -25610,6 +25620,7 @@
 ||cn.vortex-win.data.microsoft.com^
 ||cn1.stadiumgoods.com^
 ||cn2.stadiumgoods.com^
+||cn4-rum-openway.guance.com^
 ||cn4.animehdl.net^
 ||cn6x.com^
 ||cn846.com^
@@ -39635,6 +39646,7 @@
 ||etznkn.ec-store.net^
 ||etzuqprynhyfx.site^
 ||eu-1-id5-sync.com^
+||eu-1.nebula-collector.huawei.com^
 ||eu-adcenter.net^
 ||eu-album-api.vivoglobal.com^
 ||eu-cota.vivoglobal.com^
@@ -43168,6 +43180,7 @@
 ||fp-bj.fengkongcloud.com^
 ||fp-cdn.azureedge.net^
 ||fp-flame.vercel.app^
+||fp-it-acc.fengkongcloud.com^
 ||fp-it-acc.portal101.cn^
 ||fp-it.fengkongcloud.com^
 ||fp-na-it-acc.fengkongcloud.com^
@@ -44322,6 +44335,7 @@
 ||g650.delcotimes.com^
 ||g66ryy88z.com^
 ||g679.t27ozz9gomomctb4t9wo28ib.cyou^
+||g6f0w30cze.com^
 ||g6ird1tez2.com^
 ||g6nmrcqlx.qvq6kkeobmqunp4etfg.cyou^
 ||g6x2uvza37.com^
@@ -50793,6 +50807,7 @@
 ||httpdns1.cc.cdnhwc5.com^
 ||httpool.com^
 ||httpring.qq.com^
+||https-api.bytegle.tech^
 ||https-filtering-check.adtidy.org^
 ||httpsdns.baidu.com^
 ||httr.redskins.com^
@@ -57336,7 +57351,6 @@
 ||js.xz6d.com^
 ||js.yalongrope.cn^
 ||js.ydeprint.com^
-||js.yixui.com^
 ||js.yjbys.com^
 ||js.yulzm.com^
 ||js.zhuoyaju.com^
@@ -60929,6 +60943,7 @@
 ||lf-static.tiktokpangle-cdn-us.com^
 ||lf2cgxz0b.com^
 ||lf3-ad.searchpstatp.com^
+||lf3-analytics.bytescm.com.queniuuf.com^
 ||lfafacbfqrsom.online^
 ||lfapbe.quiksilver.co.jp^
 ||lfavcwgydohba.store^
@@ -63020,6 +63035,7 @@
 ||log.dantocmiennui.vn^
 ||log.daqi.com^
 ||log.dav.edu.vn^
+||log.dc.cn.happyelements.com^
 ||log.doanhnhan.vn^
 ||log.documentmanagerpdfdocxlssale.live^
 ||log.documentreaderapp.com^
@@ -63063,7 +63079,6 @@
 ||log.hemera.com.vn^
 ||log.hiapkdownload.com^
 ||log.hiiir.com^
-||log.homestyler.com^
 ||log.hotweathers.live^
 ||log.hunantv.com^
 ||log.hypebeast.com^
@@ -63170,6 +63185,7 @@
 ||log.stickflow.xyz^
 ||log.strawpoll.com^
 ||log.strm.yandex.ru^
+||log.study.163.com^
 ||log.sweepycleanplus.com^
 ||log.talkie-ai.com^
 ||log.tapchimattran.vn^
@@ -76425,6 +76441,7 @@
 ||odinclient.st^
 ||odinitedetraytopmaul.cyou^
 ||odinmod.org^
+||odj3j8dsff.com^
 ||odjdpy.jobware.de^
 ||odklzhubnglgy.space^
 ||odkvrg.pedrodelhierro.com^
@@ -76848,6 +76865,7 @@
 ||ojm4.palladiumhotelgroup.com^
 ||ojmeujydictlu.site^
 ||ojmkbdcctzwjr.website^
+||ojmv.cn^
 ||ojmxro.yatsan.com^
 ||ojn1zxz0ni.com^
 ||ojnzzwsshjjqn.website^
@@ -79022,6 +79040,7 @@
 ||p8q4zf3r59nnbpz5vp2f2.cfd^
 ||p8u.hinet.net^
 ||p9-ad-sign.byteimg.com^
+||p9-ad-sign.byteimg.com.bsgslb.com^
 ||p9.tribution.mobi^
 ||p99998888.com^
 ||p99c3kwxg.com^
@@ -81488,6 +81507,7 @@
 ||plausible.kdojang.com^
 ||plausible.kundenportal.io^
 ||plausible.lesbianromantic.com^
+||plausible.lobehub-inc.cn^
 ||plausible.logicboard.com^
 ||plausible.mattpruitt.com^
 ||plausible.mcj.co^
@@ -84602,6 +84622,7 @@
 ||qccxvtfbk.com^
 ||qcdhhtdtvxr.com^
 ||qceitjzynzcpj.space^
+||qcenter-metrics-device.api.myqnapcloud.cn^
 ||qceyjl.cellularoutfitter.com^
 ||qcgdmncatgybd.site^
 ||qcgg.net^
@@ -84911,7 +84932,6 @@
 ||qirqritp.com^
 ||qishituan.top^
 ||qishui-douyln.com.cn^
-||qishui-music.com.cn^
 ||qishui-vip.com.cn^
 ||qishui.bj.cn^
 ||qist.me^
@@ -85959,6 +85979,7 @@
 ||r.rover.com^
 ||r.scraperib.com^
 ||r.sdiapi.net^
+||r.sg.sec.miui.com^
 ||r.sib2.gardrops.com^
 ||r.silvertrck.com^
 ||r.skimresources.com^
@@ -99320,7 +99341,6 @@
 ||sp.wndoor.com^
 ||sp.wvoil.com^
 ||sp.ydr.com^
-||sp.yixui.com^
 ||sp.yorkdispatch.com^
 ||sp.zanesvilletimesrecorder.com^
 ||sp0.baidu.com^
@@ -101142,6 +101162,7 @@
 ||stat.moji.com^
 ||stat.mql5.com^
 ||stat.mtv3.fi^
+||stat.music.qq.com^
 ||stat.mydaddy.cc^
 ||stat.nate.com^
 ||stat.ncl.com^
@@ -101617,6 +101638,7 @@
 ||statistics.liusha.info^
 ||statistics.mailerlite.com^
 ||statistics.news1.kr^
+||statistics.qcc.com^
 ||statistics.rbi-nl.com^
 ||statistics.riskommunal.net^
 ||statistics.ro^
@@ -115947,6 +115969,7 @@
 ||vacuumcoconut.com^
 ||vacuumpressuredisarray.com^
 ||vacwrite.com^
+||vad-https-api.bytegle.tech^
 ||vads.net.vn^
 ||vads.vn^
 ||vaeth.cn^
@@ -120951,6 +120974,7 @@
 ||wslog-global-dual.coolacloud.com^
 ||wslog-global-dual.coolccloud.com^
 ||wslog-global-dual.coolfcloud.com^
+||wslog-global-dual.coolhcloud.com^
 ||wslog-global-dual.coolzcloud.com^
 ||wslubggeuxqtj.online^
 ||wsm-onead.cdn.hinet.net^
@@ -124956,6 +124980,7 @@
 ||yiwk.com^
 ||yiwqcxwajqouq.website^
 ||yixhy1vpln8bjuy1.cfd^
+||yixui.com^
 ||yixvbp.merkal.com^
 ||yiyfzwzlpxbym.site^
 ||yiyilm.com^
