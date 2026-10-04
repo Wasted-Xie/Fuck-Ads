@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-03 23:13:55
-! Block rules: 127484
+! Generated: 2026-10-04 02:47:26
+! Block rules: 127490
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 99457
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6056
+!   - easylistchina [w=3] block 6062
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 114412
 !   - cjx-annoyance [w=2] block 159
@@ -1307,6 +1307,7 @@
 ||2jdr5wuyzf.com^
 ||2jmis11eq.de^
 ||2jod3cl3j.de^
+||2ju7b73ton.com^
 ||2juyabihe.com^
 ||2k6eh90gs.de^
 ||2ka41vagh.com^
@@ -2333,6 +2334,7 @@
 ||59haloar.net^
 ||59jd.com^
 ||59kaixuan.com^
+||59ufs4hof5.com^
 ||59zzkdt8pj.com^
 ||5a5751fd6a.com^
 ||5a6b8cfaaf.com^
@@ -7595,6 +7597,7 @@
 ||adbestnet.com^
 ||adbetclickin.pink^
 ||adbetnetwork.com^
+||adbfkaoxvm.in^
 ||adbit.biz^
 ||adbite.com^
 ||adbits.online^
@@ -21610,6 +21613,7 @@
 ||buyimg.bianxianmao.com^
 ||buyjwsoadheqo.online^
 ||buyorselltnhomes.com^
+||buyrbto5z2.com^
 ||buysellads.com^
 ||buysellads.net^
 ||buyt.in^
@@ -99619,6 +99623,7 @@
 ||springolive.com^
 ||springsister.com^
 ||springsnails.com^
+||sprinkler69.com^
 ||sprinlof.com^
 ||sprintrade.com^
 ||sprkl.io^
@@ -115998,6 +116003,7 @@
 ||vbfssjmbsukaw.site^
 ||vbggtxpiiqnod.online^
 ||vbgyniffuy.com^
+||vbhbzhjaeudztw.com^
 ||vbje.linyankm.cn^
 ||vbjibjsftqxkq.site^
 ||vbjmrh.cn^
