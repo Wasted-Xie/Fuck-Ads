@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-05 05:59:54
-! Block rules: 128010
+! Generated: 2026-10-05 14:09:46
+! Block rules: 128014
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100113
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6076
+!   - easylistchina [w=3] block 6080
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 114892
 !   - cjx-annoyance [w=2] block 159
@@ -2699,6 +2699,7 @@
 ||6angebot.ch^
 ||6aontlsdf.com^
 ||6aoodbdx94.com^
+||6aqqzbehy.com^
 ||6avz.com^
 ||6b387ccb0e.ff35f7a0b5.com^
 ||6b8051dfcc.com^
@@ -61143,6 +61144,7 @@
 ||lfwotwipuezvd.online^
 ||lfxdqs.mamasandpapas.ae^
 ||lfxgbzxkfqhiy.space^
+||lfxm6qdn0.com^
 ||lfyatgjipbutg.website^
 ||lfyqsi.erborian.com^
 ||lfzibowrxoftr.online^
@@ -79131,6 +79133,7 @@
 ||p04.sc.origins.en25.com^
 ||p06.sc.origins.en25.com^
 ||p0b2hqyz.xyz^
+||p0h1nfzc2.com^
 ||p0l.cn^
 ||p0pn18sxvh.com^
 ||p0y.cn^
@@ -106526,6 +106529,7 @@
 ||teinfo.wps.cn^
 ||tejia.gaibang.fun^
 ||tejxthyxavhfb.site^
+||tek3shnfk.com^
 ||teksishe.net^
 ||tektositorrifytahltan.qpon^
 ||tel-tel-fie.com^
