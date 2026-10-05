@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-04 21:49:03
-! Block rules: 127864
+! Generated: 2026-10-05 00:21:27
+! Block rules: 127868
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100113
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6070
+!   - easylistchina [w=3] block 6074
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 114728
 !   - cjx-annoyance [w=2] block 159
@@ -1395,6 +1395,7 @@
 ||2vfpjcpy351cwug.63xr7vjq6v9xhp.cyou^
 ||2vv.cc^
 ||2waky.com^
+||2wg8pp90e.com^
 ||2wn4bycie4tznq44mf396xojlrl5f.cfd^
 ||2wqs6d2gp.com^
 ||2wygltrjq1.h79xho6zgijze24hv94.cyou^
@@ -3401,6 +3402,7 @@
 ||8h6oiw0uo.com^
 ||8h6whvlpnz.com^
 ||8h7j79qxm.com^
+||8hvq8jskh.com^
 ||8hw49hipgurimmzrcv8qh6r1e.cfd^
 ||8hx7k0211.com^
 ||8iav2fuiy.com^
@@ -18520,6 +18522,7 @@
 ||bedsitcovert.qpon^
 ||bedsockhelicin.cfd^
 ||beduncharrodegag.qpon^
+||bedwlzqwkxpzfc.com^
 ||bee.andreawhitmer.com^
 ||bee.jbkmobiledj.com^
 ||bee.kascend.com^
@@ -33648,6 +33651,7 @@
 ||dishonestthee.com^
 ||dishonourinventor.com^
 ||dishtrekkerunderfoot.com^
+||dishwasher46.com^
 ||dishwaterorganizationsomebody.com^
 ||disinheritguilewallow.com^
 ||disipxnziqeql.website^
