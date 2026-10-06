@@ -108,50 +108,59 @@ py Slim\build_lite_slim.py      :: 生成 Slim 版（同上）
 AdGuard Home 是**由您的设备去拉取规则**，国内网络直连 `raw.githubusercontent.com` 常常很慢甚至超时。
 此时可将下表任意一条地址粘贴到「DNS 拦截清单」使用（按推荐程度排序，**按设备性能选择对应那一列**）：
 
-| 方式 | 全量版（约 53 万条） | Lite 版（约 14.6 万条） | Slim 版（约 12.8 万条） |
-|---|---|---|---|
-| **jsDelivr CDN**（推荐：免费全球 CDN，自动跟随 main 分支，缓存约数分钟） | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt |
-| **gh-proxy.com** 代理 | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
-| **ghfast.top** 代理 | https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
-| **gh.ddlc.top** 代理 | https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
-| 直连 raw.githubusercontent.com | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
+| 方式 | 缓存时长 | 全量版（约 53 万条） | Lite 版（约 14.6 万条） | Slim 版（约 12.8 万条） |
+|---|---|---|---|---|
+| **gh-proxy.com**（首选：国内可直连，缓存最短） | 60 秒 | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
+| **jsDelivr CDN**（备用：全球 CDN，缓存较长见下） | **最长 12 小时** | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt |
+| 直连 raw.githubusercontent.com（国内常超时） | 5 分钟 | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
 
 一次性复制全部地址：
 
 全量版：
 
 ```text
-https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt
 https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
-https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
-https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
+https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt
 https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
 ```
 
 Lite 版：
 
 ```text
-https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt
 https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
-https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
-https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
+https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt
 https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
 ```
 
 Slim 版：
 
 ```text
-https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt
 https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt
-https://ghfast.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt
-https://gh.ddlc.top/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt
+https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt
 https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt
 ```
 
 注意事项：
 
-- jsDelivr 免费加速**公开仓库**且单文件需 ≤20 MB（全量约 7 MB、Lite 约 3.2 MB、Slim 约 2.8 MB，均满足）；列表更新后其缓存有数分钟到数小时的延迟，拉取到的可能不是最新版本，稍候再试即可。
-- 第三方代理站可能限速或失效，失效就换下一条；ghfast.top 等加速站域名偶尔变动，最新地址见其主页发布站。
+- **缓存时长直接决定「订阅多久才更新」**，实测数据（2026-10-06）：
+
+  | 渠道 | `Cache-Control` | 实际含义 |
+  |---|---|---|
+  | gh-proxy.com | `max-age=60` | 1 分钟，几乎实时 |
+  | raw.githubusercontent.com | `max-age=300` | 5 分钟 |
+  | jsDelivr | `s-maxage=43200` | **12 小时**，最慢 |
+
+- **jsDelivr 缓存问题**：其 CDN 边缘节点会缓存最长 12 小时，且各节点（`cdn` / `fastly` / `gcore` / `testingcf`）缓存互相独立——可能某个节点已是新版而另一个仍是旧版。若发现拉取到的规则数明显偏少，按以下任一方式处理：
+  1. 换用上表首行的 **gh-proxy.com**（1 分钟缓存，最可靠）；
+  2. 换用其它 jsDelivr 节点，例如把 `cdn.jsdelivr.net` 换成 `fastly.jsdelivr.net` 或 `gcore.jsdelivr.net`；
+  3. 主动清除 jsDelivr 缓存（浏览器打开即可，返回 `"status": "finished"` 表示成功）：
+     - 全量版 https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt
+     - Lite 版 https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt
+     - Slim 版 https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt
+
+- **如何确认自己拿到的是最新版**：打开订阅地址看文件头部，比对 `! Block rules:` 与 `! Generated:` 两个字段。若与仓库 [out/](out/) 目录中的文件不一致，说明命中了旧缓存。
+- jsDelivr 免费加速**公开仓库**且单文件需 ≤20 MB（全量约 12 MB、Lite 约 3.2 MB、Slim 约 2.9 MB，均满足）。
+- 第三方代理站可能限速或失效，失效就换下一条。
 - 加速站属于第三方服务，仅作下载加速，不影响列表内容本身。
 
 ## 关于国内网络环境的实测结论

@@ -55,19 +55,36 @@ jobs:
         run: python3 Lite/build_lite.py
 
       # slim 版：229MB 级内存设备用。
-      # 仅使用国内规则源 + 父域无损收敛，并在去重前先做品牌保护
-      # （360 只拦广告子域、简书整域放行），同样只读全量白名单、不改动全量产出。
+      # 仅使用国内规则源 + 父域无损收敛，简书整域放行；
+      # 同样只读全量白名单、不改动全量产出。
       - name: Build slim list
         run: python3 Slim/build_lite_slim.py
 
       - name: Commit and push when changed
+        id: commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add out/merged_dns_rules.txt out/merged_dns_rules_lite.txt out/merged_dns_rules_slim.txt
           if git diff --cached --quiet; then
             echo "No rule changes - nothing to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Update merged DNS rules"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # jsDelivr 的边缘节点会把产物缓存最长 12 小时（Cache-Control: s-maxage=43200），
+      # 且各节点（cdn / fastly / gcore / testingcf）缓存互相独立，会导致订阅方
+      # 长时间拉不到新规则。这里在产物确有变化时主动 purge，使订阅立即生效。
+      # purge 属第三方服务，失败只忽略、不影响规则更新主流程。
+      - name: Purge jsDelivr cache
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          for f in merged_dns_rules.txt merged_dns_rules_lite.txt merged_dns_rules_slim.txt; do
+            echo "Purging $f ..."
+            curl -sS --max-time 60 \
+              "https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/$f" || true
+            echo
+          done
