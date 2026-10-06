@@ -7,6 +7,7 @@
 #   hosts 行 (IP + 域名)：
 #       - IP 是 0.0.0.0 / 127.0.0.1 / ::1 等本地地址 -> 屏蔽，转成 ||domain^
 #       - IP 是其它地址                        -> 重定向(翻墙/加速/解锁)，排除并单独记录
+#   裸域名行 (无 IP 前缀，如 Spam404 / hblock)   -> 屏蔽，转成 ||domain^
 #   adblock 网络规则 ||domain^ / |http://domain^ -> 保留（仅接受纯域名，带路径的一律丢弃）
 #   adblock 白名单  @@||domain^                  -> 保留（带修饰符的场景限定豁免一律丢弃）
 #   含 $domain= / $app= 修饰符的规则             -> 丢弃（限定型，抽成整域会严重放大范围）
@@ -149,6 +150,9 @@ def parse_line(line):
         if local:
             return ("block", out)
         return ("redirect", (ip, out))
+    # 裸域名行（部分源为纯域名列表，如 Spam404 / Hblock 的 hmirror 版本）
+    if valid_domain(body) and " " not in body:
+        return ("block", [body])
     return ("skip", "other")
 
 

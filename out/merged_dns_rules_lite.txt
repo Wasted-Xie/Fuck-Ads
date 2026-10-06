@@ -2,30 +2,36 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-06 08:48:45
-! Block rules: 145721
-! Whitelist rules: 277
+! Generated: 2026-10-06 18:29:18
+! Block rules: 145737
+! Whitelist rules: 278
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 5581 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100113 / white 49, priority 2)
-!   - adgk: ADgk（国内） (block 3208 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6086 / white 11, priority 2)
+!   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
+!   - easylistchina: EasyList China (block 6087 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
-!   - xinggsf-rule: 乘风规则 (block 11 / white 1, priority 3)
-!   - xinggsf-mv: 乘风视频规则 (block 0 / white 0, priority 3)
+!   - xinggsf-rule: 乘风规则 (block 92 / white 1, priority 3)
+!   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 115159 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
 !   - filter_11: URLHaus（恶意网站/钓鱼） (block 3061 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
+||*.biz5.sandai.net^
+||*.cpm.cm.sandai.net^
+||*.cpm360.com^
 ||*.diwodiwo.xyz^
 ||*.exaapi.com^
 ||*.mmstat.com^
 ||*.p2p.huya.com^
+||*.samboc.com^
 ||*.va.huya.com^
 ||*.wap.xsbiquge.com^
+||*.ziye8.com^
+||*bashare.cn*^
 ||*mistat*.xiaomi.com^
 ||*serror*.wo.com.cn^
 ||*tsdk.vivo.com.cn^
@@ -762,6 +768,7 @@
 ||17loio.net^
 ||17mjq.gci4htc7y58on2btb1i.cyou^
 ||17ryi4j3qb.com^
+||17u.cn^
 ||17un.com^
 ||17voueek1zhzbe.cfd^
 ||17youzi.com^
@@ -2403,6 +2410,7 @@
 ||37cs.com^
 ||37d5a84293.cc38229b6c.com^
 ||37df14908d.com^
+||37gowan.com^
 ||37kx1.com^
 ||37lwjdaua.com^
 ||37mnm.com^
@@ -3611,6 +3619,7 @@
 ||5hebtbbgbo.com^
 ||5hffr1p22j.com^
 ||5ho41ueq7w.com^
+||5hte21mz.com^
 ||5hu7hee0pt.com^
 ||5icim50.de^
 ||5idxw.com^
@@ -21070,6 +21079,7 @@
 ||at.vodafone.de^
 ||at1.doubanio.com^
 ||at2.doubanio.com^
+||at3.doubanio.com^
 ||at32jaers.com^
 ||atableofcup.com^
 ||ataevsupyrqxg.website^
@@ -39004,6 +39014,7 @@
 ||dd.toponad.com^
 ||dd.viator.com^
 ||dd.wx16999.com^
+||dd.yiche.com^
 ||dd1.diymianmo.com^
 ||dd1.freep.cn^
 ||dd133.com^
@@ -40906,6 +40917,7 @@
 ||divorcedrefreshing.com^
 ||divscripty.net^
 ||divwbbyjikkkv.website^
+||diwenganzaoji.com^
 ||diwuyu.com^
 ||diwvsftmdqhyo.space^
 ||dixbvzvuzhvxbg.com^
@@ -62333,6 +62345,7 @@
 ||img.dubyc.com^
 ||img.dydab.com^
 ||img.e.sigsauer.com^
+||img.easypass.cn^
 ||img.exb.emaildwtc.com^
 ||img.fd7c.com^
 ||img.feitian001.com^
@@ -67162,6 +67175,7 @@
 ||js.kabutocho-dsp.net^
 ||js.kalvinbg.cn^
 ||js.kcolb.site^
+||js.kiwihk.net^
 ||js.kkraw.com^
 ||js.kt250.com^
 ||js.lanmoes.com^
@@ -92154,6 +92168,7 @@
 ||pfnxggbwxmrcl.online^
 ||pfosuclihgjxi.space^
 ||pfp.sina.com.cn^
+||pfp.sina.net^
 ||pfpip.sina.com^
 ||pfpmdbyighkrn.online^
 ||pfqndecyikdrm.site^
@@ -127311,6 +127326,7 @@
 ||tuiguang.meitu.com^
 ||tuiguang.yicha.cn^
 ||tuijian.baidu.com^
+||tuijian.sogou.com^
 ||tuinei.com^
 ||tuinfra.com^
 ||tuipenguin.com^
@@ -145992,6 +146008,7 @@
 @@||track.rutarget.ru^
 @@||track.webgains.com^
 @@||tracker.eu.org^
+@@||tracker.namitiyu.com^
 @@||trk.ecomm.lenovo.com^
 @@||tube.e.kuaishou.com^
 @@||tuhu.cn^

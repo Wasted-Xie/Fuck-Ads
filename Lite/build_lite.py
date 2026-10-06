@@ -129,23 +129,42 @@ def main():
     sorted_allows = sorted(allow_set)
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    with open(OUT_FILE, "w", encoding="utf-8", newline="\n") as fh:
-        fh.write("!\n")
-        fh.write("! Title: Merged DNS blocklist - LITE (China-focused)\n")
-        fh.write("! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；\n")
-        fh.write("!              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致\n")
-        fh.write(f"! Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        fh.write(f"! Block rules: {len(sorted_blocks)}\n")
-        fh.write(f"! Whitelist rules: {len(sorted_allows)}\n")
-        fh.write("! Sources (China-focused only):\n")
-        for name, desc, prio, nb, nw in per_source:
-            fh.write(f"!   - {name}: {desc} (block {nb} / white {nw}, priority {prio})\n")
-        fh.write("!\n")
-        fh.write("\n".join("||" + d + "^" for d in sorted_blocks))
-        fh.write("\n")
-        if sorted_allows:
-            fh.write("\n".join("@@" + "||" + d + "^" for d in sorted_allows))
-            fh.write("\n")
+
+    header = [
+        "!",
+        "! Title: Merged DNS blocklist - LITE (China-focused)",
+        "! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；",
+        "!              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致",
+        f"! Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+        f"! Block rules: {len(sorted_blocks)}",
+        f"! Whitelist rules: {len(sorted_allows)}",
+        "! Sources (China-focused only):",
+    ]
+    header += [f"!   - {name}: {desc} (block {nb} / white {nw}, priority {prio})"
+               for name, desc, prio, nb, nw in per_source]
+    header.append("!")
+
+    body = ["||" + d + "^" for d in sorted_blocks]
+    if sorted_allows:
+        body += ["@@" + "||" + d + "^" for d in sorted_allows]
+    new_text = "\n".join(header + body) + "\n"
+
+    # 与 Full/merge_dedup.py 保持一致：除生成时间戳外内容未变时不重写文件，
+    # 避免定时任务产生无意义的提交。
+    def content_key(text):
+        return [ln for ln in text.splitlines()
+                if not ln.startswith("! Generated:")]
+
+    changed = True
+    if os.path.exists(OUT_FILE):
+        with open(OUT_FILE, "r", encoding="utf-8") as f:
+            changed = content_key(f.read()) != content_key(new_text)
+    if changed:
+        with open(OUT_FILE, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(new_text)
+        out_status = "written (content changed)"
+    else:
+        out_status = "unchanged - file kept as-is"
 
     print("==== lite: per-source ====")
     for name, desc, prio, nb, nw in per_source:
@@ -161,7 +180,7 @@ def main():
     if full_blocks:
         print(f"full list size (unchanged)      : {len(full_blocks)}")
         print(f"lite / full                     : {len(sorted_blocks)*100//max(1,len(full_blocks))}%")
-    print(f"output                          : {os.path.relpath(OUT_FILE, ROOT_DIR)}")
+    print(f"output                          : {os.path.relpath(OUT_FILE, ROOT_DIR)}  [{out_status}]")
 
 
 if __name__ == "__main__":

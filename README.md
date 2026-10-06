@@ -1,15 +1,15 @@
 # Merged DNS Blocklist（合并 DNS 拦截列表）
 
-将 **21 个上游**黑名单/去广告列表（3 个主源 + 18 个附加源）**自动拉取 → 格式清洗 → 整行精确去重 → 合并**
+将 **31 个上游**黑名单/去广告列表（3 个主源 + 28 个附加源）**自动拉取 → 格式清洗 → 整行精确去重 → 合并**
 为 AdGuard 语法列表，可供 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) 作为 DNS 拦截清单订阅使用。
 
 每次运行产出**三套并列的列表**，可按设备性能任选其一订阅（同时订阅也不冲突）：
 
 | 版本 | 产物文件 | 规则量 | 适用场景 |
 |---|---|---|---|
-| **全量版** | `out/merged_dns_rules.txt` | 约 31 万条 | 性能充足的设备（软路由 / NAS / 小主机） |
-| **Lite 版** | `out/merged_dns_rules_lite.txt` | 约 14.7 万条 | 中等配置设备，优先保留国内域名拦截 |
-| **Slim 版** | `out/merged_dns_rules_slim.txt` | 约 12.9 万条 | **229MB 级内存的低配软路由**，仅用国内规则源 + 父域无损收敛 |
+| **全量版** | `out/merged_dns_rules.txt` | 约 53 万条 | 性能充足的设备（软路由 / NAS / 小主机） |
+| **Lite 版** | `out/merged_dns_rules_lite.txt` | 约 14.6 万条 | 中等配置设备，优先保留国内域名拦截 |
+| **Slim 版** | `out/merged_dns_rules_slim.txt` | 约 12.8 万条 | **229MB 级内存的低配软路由**，仅用国内规则源 + 父域无损收敛 |
 
 ## 特性
 
@@ -19,7 +19,6 @@
 - **完整保留白名单**：上游的 `@@` 白名单规则置于合并文件末尾，避免正常服务被误拦
 - **剔除 DNS 层无法表达的内容**：带路径规则、`$domain=` / `$app=` 站点限定规则、元素隐藏规则（`##`）、正则规则
 - **排除翻墙/加速类条目**：指向非本地 IP 的 hosts 重定向条目一律不纳入
-- **保护域名**：附加源中 360 系列的拦截被过滤（原有上游列表不受影响，一概照拦）
 - **三版本产物**：覆盖从高性能设备到 229MB 低配软路由的全部场景
 - **各版互不冲突**：三套列表共用同一份白名单，且都会剔除白名单中已有的域名，不会出现「A 版拦截 / B 版放行」的矛盾
 - 合并文件头部自动写入生成时间、来源与统计信息，便于审计
@@ -31,11 +30,11 @@
 
 ```
 .
-├── fetch_sources.py          # 公共：下载 21 个上游 + Lite 专用上游 → Cache/
+├── fetch_sources.py          # 公共：下载 31 个上游 + Lite 专用上游 → Cache/
 ├── integrate_sources.py      # 公共：附加源清洗（多格式解析 → 统一为 ||域名^）
 ├── CHANGELOG.md              # 版本变更记录
 │
-├── Full/                     # 全量版：21 个源全覆盖
+├── Full/                     # 全量版：31 个源全覆盖
 │   └── merge_dedup.py        #   → out/merged_dns_rules.txt
 ├── Lite/                     # Lite 版：国内向源，优先国内域名
 │   └── build_lite.py         #   → out/merged_dns_rules_lite.txt
@@ -44,7 +43,7 @@
 │
 ├── Cache/                    # 上游源文件缓存（脚本自动拉取，不入库）
 │   ├── raw/                  #   主源 + Lite 专用上游
-│   └── sources/              #   18 个附加源
+│   └── sources/              #   28 个附加源
 ├── out/                      # 最终产物（入库，供订阅）
 │   ├── integrated_extra.txt          # 中间产物（不入库）
 │   ├── excluded_redirect_entries.txt # 中间产物（不入库）
@@ -71,7 +70,7 @@
 2. **首次部署需确认一次仓库设置**：`Settings → Actions → General → Workflow permissions` 选择 **Read and write**，否则工作流没有权限把产物推回仓库；
 3. 想立刻验证：打开 `Actions` 标签页 → 选择 **Update merged DNS rules** → **Run workflow**。
 
-工作流每次执行：拉取 21 个源 + Lite 专用上游 → 格式清洗 → 合并去重（全量）→ 构建 Lite 版 → 构建 Slim 版 → **仅在有变化时**提交推送（三套产物一起提交）。
+工作流每次执行：拉取 31 个源 + Lite 专用上游 → 格式清洗 → 合并去重（全量）→ 构建 Lite 版 → 构建 Slim 版 → **仅在有变化时**提交推送（三套产物一起提交）。
 
 > 说明：GitHub 的定时触发为每 30 分钟（UTC 的 0 分与 30 分），高峰期可能有数分钟到数十分钟延迟；规则无变化时不产生提交。
 
@@ -98,9 +97,9 @@ py Slim\build_lite_slim.py      :: 生成 Slim 版（同上）
 
 | 版本 | 规则量 | 订阅地址 |
 |---|---|---|
-| 全量版 | 约 31 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt` |
-| Lite 版 | 约 14.7 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt` |
-| **Slim 版**（229MB 级设备） | 约 12.9 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt` |
+| 全量版 | 约 53 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt` |
+| Lite 版 | 约 14.6 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt` |
+| **Slim 版**（229MB 级设备） | 约 12.8 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt` |
 
 列表随上游自动更新（每 30 分钟检查一次）。
 
@@ -109,7 +108,7 @@ py Slim\build_lite_slim.py      :: 生成 Slim 版（同上）
 AdGuard Home 是**由您的设备去拉取规则**，国内网络直连 `raw.githubusercontent.com` 常常很慢甚至超时。
 此时可将下表任意一条地址粘贴到「DNS 拦截清单」使用（按推荐程度排序，**按设备性能选择对应那一列**）：
 
-| 方式 | 全量版（约 31 万条） | Lite 版（约 14.7 万条） | Slim 版（约 12.9 万条） |
+| 方式 | 全量版（约 53 万条） | Lite 版（约 14.6 万条） | Slim 版（约 12.8 万条） |
 |---|---|---|---|
 | **jsDelivr CDN**（推荐：免费全球 CDN，自动跟随 main 分支，缓存约数分钟） | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt |
 | **gh-proxy.com** 代理 | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
@@ -165,16 +164,16 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_
 
 ### 理由与数据
 
-**证据一：11 个独立维护的规则源，去重后只剩 12.9 万条**
+**证据一：11 个独立维护的规则源，去重后只剩 12.8 万条**
 
 | 处理阶段 | 规则数 | 说明 |
 |---|---|---|
-| 11 个源并集 | 143,806 | 多个源分别独立维护 |
-| 父域无损收敛后 | **128,883** | 仅减少 14,923 条（**10.4%**） |
+| 11 个源并集 | 143,157 | 多个源分别独立维护 |
+| 父域无损收敛后 | **128,368** | 仅减少 14,789 条（**10.3%**） |
 
 **11 个源、上百人年的维护积累，交叉重叠只带来了 10% 的冗余。** 如果国内广告域名集中在少数几个平台手里，各源之间的重叠率会高得多。对比国际源（StevenBlack、EasyList、AdAway、Mvps 等 4 源）：并集 126,907 条，父域收敛后 90,796 条，**减少 28.5%**——是国内向源的 **2.7 倍**。
 
-**证据二：12.9 万条规则散落在 10.8 万个独立注册域上**
+**证据二：12.8 万条规则散落在 10.8 万个独立注册域上**
 
 | 指标 | 数值 |
 |---|---|
@@ -206,7 +205,7 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_
 
 ### 定位
 
-Lite 版把规则量压到全量的约 **47%**（约 14.7 万条，3.2 MB），在保证国内广告拦截效果的前提下，降低 AdGuard Home 的内存占用与匹配开销。
+Lite 版把规则量压到全量的约 **27%**（约 14.6 万条，3.15 MB），在保证国内广告拦截效果的前提下，降低 AdGuard Home 的内存占用与匹配开销。
 
 ### 与全量版的关系
 
@@ -232,7 +231,7 @@ Lite 版把规则量压到全量的约 **47%**（约 14.7 万条，3.2 MB），�
 ### 手动调整
 
 ```bat
-py Lite\build_lite.py                    :: 默认：全部国内向源（约 14.7 万条）
+py Lite\build_lite.py                    :: 默认：全部国内向源（约 14.6 万条）
 py Lite\build_lite.py --max 120000       :: 限到 12 万条，超限时按「优先级 → .cn 优先 → 域名长度」裁剪
 py Lite\build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727 条）
 ```
@@ -241,28 +240,29 @@ py Lite\build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727
 
 ### 定位
 
-在 Lite 版基础上进一步压缩到 **约 12.9 万条（2.75 MB）**，适用于内存 256MB 上下的低配软路由。
+在 Lite 版基础上进一步压缩到 **约 12.8 万条（2.74 MB）**，适用于内存 256MB 上下的低配软路由。
 
 ### 与 Lite 版的差异
 
 | 项 | Lite 版 | Slim 版 |
 |---|---|---|
-| 规则数 | 148,726 | **128,874** |
+| 规则数 | 145,737 | **128,339** |
 | 上游源 | 国内向 11 源 + URLHaus | **仅国内向 11 源**（不含 URLHaus） |
-| 压缩手段 | 仅整行去重 | 整行去重 + **父域无损收敛**（-14,923） |
-| 品牌保护 | 无 | **360 只拦广告子域、简书整域放行** |
+| 压缩手段 | 仅整行去重 | 整行去重 + **父域无损收敛** |
+| 整域放行 | 无 | **简书整域放行** |
 | 保底清单 | 无 | **4 条强制保留** |
 
-**父域收敛**是 Slim 版独有的无损优化：AGH 中 `||a.com^` 已覆盖 `b.a.com`，因此所有被父域规则覆盖的子域规则都被删除，**不损失任何拦截能力**，却省下 14,923 条。
+**父域收敛**是 Slim 版独有的无损优化：AGH 中 `||a.com^` 已覆盖 `b.a.com`，因此所有被父域规则覆盖的子域规则都被删除，**不损失任何拦截能力**。
 
-### 品牌保护（按维护者要求）
+### 整域放行（按维护者要求）
 
 | 域名 | 策略 |
 |---|---|
-| `360.cn` / `360.com` / `360safe.com` / `360shouji.com` / `360os.com` / `360totalsecurity.com` / `360tpcdn.com` / `qhimg.com` / `qhmsg.com` / `qhres.com` / `so.com` / `360kan.com` | **只拦广告子域**（`ad.*`、`fenxi.*`、`lianmeng.*`、`union.*`、`s.*`、`tf.*`、`stat.*`、`inst.*`、`gamebox.*`、`wan.*` 等），主域与下载/更新/产品等功能域名一律放行 |
 | `jianshu.com` | **整域放行**（上游误判） |
 
-> 注意：名字里含 "360" 的**第三方**域名（`camera360.com`、`life360.com`、`leads360.com`、`360doc.com`、`insta360.com`、`360buy.com` 等）不属保护范围，照常拦截。
+> 360 品牌保护已**彻底移除**（含相关代码，非仅失效）。早期版本曾对 360 系列做「只拦广告子域、主域与功能域放行」的特殊处理，现 360 系列与其他域名一视同仁，一律照常拦截。
+>
+> 附注：上游 `anti-ad` 自带 2 条 360 白名单（`@@||profile*.se.360.cn^`、`@@||s.mvconf.f.360.cn^`），属上游规则内容，按「机械合并、不干预内容」原则原样保留。
 
 ### 保底清单
 
@@ -273,12 +273,12 @@ py Lite\build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727
 | `tanx.com` | 阿里妈妈广告交易平台（原易传媒 Tanx） |
 | `jiathis.com` | 加网分享按钮 |
 | `ad.m.iqiyi.com` | 爱奇艺移动端广告 |
-| `ad.jia.360.cn` | 360 广告投放域（仅此子域，不影响 360 主站） |
+| `ad.jia.360.cn` | 360 广告投放域 |
 
 ### 手动调整
 
 ```bat
-py Slim\build_lite_slim.py                  :: 默认：无损去重，不裁剪（约 12.9 万条）
+py Slim\build_lite_slim.py                  :: 默认：无损去重，不裁剪（约 12.8 万条）
 py Slim\build_lite_slim.py --max 80000      :: 内存紧张时裁到 8 万条（保底清单强制保留）
 py Slim\build_lite_slim.py --with-security  :: 额外纳入 URLHaus 安全源（默认不纳入）
 ```
@@ -289,7 +289,7 @@ AdGuard Home 的规则内存开销约为 **1–2 KB/条**（随版本与配置�
 
 | 规则数 | 估算内存 |
 |---|---|
-| 12.9 万（默认） | 126–252 MB |
+| 12.8 万（默认） | 125–250 MB |
 | 8 万（`--max 80000`） | 78–156 MB |
 | 5 万（`--max 50000`） | 49–98 MB |
 
@@ -315,7 +315,7 @@ AdGuard Home 的规则内存开销约为 **1–2 KB/条**（随版本与配置�
 |---|---|---|
 | AdBlock DNS **Lite**（217heidai/adblockfilters） | https://github.com/217heidai/adblockfilters | 与全量主源同一项目，但内容为**仅国内域名拦截**的精简版（约 5,173 条），由 `build_lite.py` 使用；全量流程不读取它 |
 
-### 附加源（18 个，经格式清洗）
+### 附加源（28 个，经格式清洗）
 
 附加源由 `integrate_sources.py` 清洗后再合并：
 
@@ -338,10 +338,22 @@ AdGuard Home 的规则内存开销约为 **1–2 KB/条**（随版本与配置�
 | CJX's Annoyance List | https://github.com/cjx82630/cjxlist | 自我推广 |
 | Adblock Warning Removal List | https://easylist-downloads.adblockplus.org/antiadblockfilters.txt | 反 Adblock 提示 |
 | I don't care about cookies | https://www.i-dont-care-about-cookies.eu/abp/ | Cookie 提示（DNS 层基本无有效规则） |
+| **halflife（My AdFilters）** | https://github.com/sbwml/halflife-list | 国内综合去广告（ABP 格式） |
+| **AWAvenue Ads Rule** | https://github.com/TG-Twilight/AWAvenue-Ads-Rule | 国内去广告（GPL-3.0） |
+| **Spam404** | https://github.com/Spam404/lists | 诈骗/盗版/外挂站点（纯域名格式） |
+| **Peter Lowe's List** | https://pgl.yoyo.org/adservers/ | 老牌广告服务器列表 |
+| **Dan Pollock's List** | https://someonewhocares.org/hosts/ | 综合拦截（0.0.0.0 版） |
+| **NoCoin Filter List** | https://github.com/hoshsadiq/adblock-nocoin-list | 浏览器挖矿域名（MIT） |
+| **neohosts** | https://github.com/neoFelhz/neohosts | 国内综合（已停更） |
+| **Scam Blocklist** | https://github.com/durablenapkin/scamblocklist | 诈骗域名（MIT） |
+| **AdGuard Chinese filter** | https://github.com/AdguardTeam/AdguardFilters | AdGuard 官方中文过滤器（GPL-3.0） |
+| **Hblock** | https://github.com/hectorm/hblock | 综合拦截（MIT；经官方镜像 [hmirror](https://github.com/hectorm/hmirror) 获取） |
 
-**附加源清单来源**：[otobtc/ADhosts](https://github.com/otobtc/ADhosts) (https://github.com/otobtc/ADhosts) —— 本项目的附加源即从该仓库的推荐列表中筛选非翻墙类源，再统一做格式清洗。
+**附加源清单来源**：[otobtc/ADhosts](https://github.com/otobtc/ADhosts) —— 本项目的附加源即从该仓库的推荐列表中筛选非翻墙类源，再统一做格式清洗。标粗的 10 个源于 v2.1.0 从 [BlueSkyXN/AdGuardHomeRules](https://github.com/BlueSkyXN/AdGuardHomeRules) 引用的规则源中补充引入。
 
 > 附加源各自适用其仓库声明的许可，使用与再分发前请查阅对应仓库。
+>
+> `Hblock` 官方站点 `hblock.molinero.dev` 在部分网络环境不可达，本项目改用其官方镜像项目 `hectorm/hmirror` 提供的同源数据（纯域名格式，体积更小）。
 
 ### 清洗规则明细
 
@@ -349,6 +361,7 @@ AdGuard Home 的规则内存开销约为 **1–2 KB/条**（随版本与配置�
 |---|---|
 | hosts 行 `0.0.0.0 域名` / `127.0.0.1 域名` / `::1 域名` | 视为屏蔽，转为 `\|\|域名^` |
 | hosts 行 `其它IP 域名` | 视为重定向（翻墙/加速/解锁），**排除**并单独记录到 `out/excluded_redirect_entries.txt` |
+| 裸域名行（无 IP 前缀，如 Spam404 / Hblock） | 视为屏蔽，转为 `\|\|域名^` |
 | `\|\|域名^` / `\|http://域名^` | 保留（仅接受纯域名形式） |
 | `\|\|域名^/路径`（带路径） | **丢弃**（DNS 层无法表达路径，抽成整域会造成误拦） |
 | `\|\|域名^$domain=x` / `$app=x`（站点/应用限定） | **丢弃**（转成整域会严重放大范围） |
@@ -356,10 +369,9 @@ AdGuard Home 的规则内存开销约为 **1–2 KB/条**（随版本与配置�
 | `@@\|\|域名^$generichide` 等带修饰符白名单 | **丢弃**（场景限定豁免，转成无条件豁免会放行本该拦截的广告域） |
 | 元素隐藏规则（含 `##`、`#@#`、`#?#`、`#$#`、`#%#`） | **丢弃**（DNS 层无效） |
 | 正则规则 `/regex/`、扩展名式规则（如 `\|\|*.js`）、IP 形式规则 | **丢弃** |
-| 保护域名（附加源中的 `360.cn` / `360.com` / `360safe.com` 等及其子域） | **过滤不拦**；主源不受此限制 |
 
 > 被整体排除的翻墙/加速专用源：`googlehosts`（内容全为 IP 重定向）。
-> 另外 `hblock`（站点在国内网络不可达）、`halflife`（已失效）以及 Koolproxy / Adbyby（代理端专用格式，非 DNS 规则）未纳入。
+> 另外 Koolproxy / Adbyby（代理端专用格式，非 DNS 规则）未纳入。
 
 ## 免责声明
 

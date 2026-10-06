@@ -65,6 +65,20 @@ EXTRA_SOURCES = (
     ("easylistchina.txt", "https://easylist-downloads.adblockplus.org/easylistchina.txt"),
     ("idontcarecookies.txt", "https://www.i-dont-care-about-cookies.eu/abp/"),
     ("antiadblock.txt", "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"),
+    # ---- 以下为新增源（取自 BlueSkyXN/AdGuardHomeRules 引用但本项目原先未使用的列表）----
+    ("halflife.txt", "https://raw.githubusercontent.com/sbwml/halflife-list/master/ad.txt"),
+    ("awavenue.txt", "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"),
+    ("spam404.txt", "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt"),
+    ("peterlowe.txt",
+     "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext"),
+    ("danpollock.txt", "https://someonewhocares.org/hosts/zero/hosts"),
+    ("nocoin.txt", "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt"),
+    ("neohosts.txt", "https://raw.githubusercontent.com/neoFelhz/neohosts/gh-pages/basic/hosts.txt"),
+    ("scamblocklist.txt", "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt"),
+    ("adguard-chinese.txt", "https://filters.adtidy.org/extension/ublock/filters/224.txt"),
+    # Hblock 官方站点 hblock.molinero.dev 在部分网络不可达，
+    # 改用其官方镜像项目 hectorm/hmirror 提供的同源数据（纯域名格式，体积更小）
+    ("hblock.txt", "https://raw.githubusercontent.com/hectorm/hmirror/master/data/molinero.dev/list.txt"),
 )
 
 # lite 版专用上游（217 Lite，仅国内域名）。
