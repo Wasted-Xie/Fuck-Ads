@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-06 18:29:18
-! Block rules: 145737
+! Generated: 2026-10-06 10:49:10
+! Block rules: 145739
 ! Whitelist rules: 278
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 5581 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100113 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6087 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6089 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -2724,6 +2724,7 @@
 ||3xx.vip^
 ||3y.twekj3b2jul7gfquk8hm34bygt7u7horfg8o.cfd^
 ||3yctok4ohflq1q1ien4u.33e4ko95j4xr967n86.cfd^
+||3ylj411rdn.com^
 ||3yx95kv3at.com^
 ||3z79b1kppwlhc3gqr1zit.rest^
 ||4-fizjos.shop^
@@ -141575,6 +141576,7 @@
 ||xtocpnhiv.jadoou.space^
 ||xtomralxdgoof.space^
 ||xtoogcyzmwmvf.space^
+||xtorbk1g3f.com^
 ||xtotmkmljtznt.website^
 ||xtpdsreqdoz.com^
 ||xtpselfqfeeui.space^
