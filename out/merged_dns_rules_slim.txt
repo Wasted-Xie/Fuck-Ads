@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-05 21:33:03
-! Block rules: 128086
+! Generated: 2026-10-06 02:00:15
+! Block rules: 128090
 ! Whitelist rules: 277
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100113
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3208
-!   - easylistchina [w=3] block 6080
+!   - easylistchina [w=3] block 6084
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 114892
 !   - cjx-annoyance [w=2] block 159
@@ -2846,6 +2846,7 @@
 ||6xigema.com^
 ||6xmgu8ocyqj9ujfv8vbqv.y6c6518mol6ye73.cyou^
 ||6xu7at70ok.com^
+||6y10di5jko.com^
 ||6ye.com.cn^
 ||6ynyejkv0j1s.app.tapmyback.com^
 ||6z6a2i0u.xyz^
@@ -44918,6 +44919,7 @@
 ||gcpafttmstljb.website^
 ||gcpcvtdsdztbz.website^
 ||gcprivacy.com^
+||gcqgmgq.com^
 ||gcqsidgeipqtr.online^
 ||gcrvzjxhgaeed.website^
 ||gcs1.cn^
@@ -107556,6 +107558,7 @@
 ||tightenluiseno.qpon^
 ||tightersnugged.cfd^
 ||tightpowder.com^
+||tightrope23.com^
 ||tigkeebnv.com^
 ||tiglck.technopolis.bg^
 ||tiglicclipei.shop^
@@ -127086,6 +127089,7 @@
 ||zhyhadnrqzpcd.site^
 ||zhylvhqdlkacm.space^
 ||zhzewgbwymarz.site^
+||zhzrvjmyqvdhrc.com^
 ||zhzzx.com^
 ||zi5o63t.el6hzguwug35zv8iy27u6b6tgjky9.cyou^
 ||zi8ivy4b0c7l.com^
