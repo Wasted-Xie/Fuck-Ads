@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-07 06:15:21
-! Block rules: 128591
+! Generated: 2026-10-07 13:41:00
+! Block rules: 128595
 ! Whitelist rules: 278
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100113
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6098
+!   - easylistchina [w=3] block 6102
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 115458
 !   - cjx-annoyance [w=2] block 159
@@ -8508,6 +8508,7 @@
 ||adnxs.net^
 ||adnyg.com^
 ||ado.delfi.ee^
+||ado35vj3i.com^
 ||adobe-analytics-dc.belastingdienst.nl^
 ||adobe-analytics.vionicshoes.com^
 ||adobe-dev-landingpageprefix.descubre.interbank.pe^
@@ -44571,6 +44572,7 @@
 ||g2048.rgluk.com^
 ||g2288.com^
 ||g2575096355.co^
+||g2afpbshj.com^
 ||g2afse.com^
 ||g2insights-cdn.azureedge.net^
 ||g2u9g28vywgnl8.cfd^
@@ -45705,6 +45707,7 @@
 ||gfbxsoxbywqvp.store^
 ||gfd.huigoushop.com^
 ||gfeede.theminda.com^
+||gfehmnq5e.com^
 ||gfesbjnadvxrb.online^
 ||gffoycbmmfptr.space^
 ||gfgcwf.vidaxl.lv^
@@ -71947,6 +71950,7 @@
 ||mluszz.eyelashgarage.jp^
 ||mlweb.dmlab.hu^
 ||mlxniwjfsxefz.site^
+||mly5hvbae.com^
 ||mlytics.com^
 ||mlzcakscicnqn.website^
 ||mm-api.agency^
