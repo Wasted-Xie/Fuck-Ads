@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-08 11:43:04
-! Block rules: 128913
-! Whitelist rules: 278
+! Generated: 2026-10-08 18:15:56
+! Block rules: 128920
+! Whitelist rules: 279
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 5541
+!   - adblockdnslite [w=5] block 5555
 !   - anti-ad [w=5] block 100674
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6108
+!   - easylistchina [w=3] block 6110
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 115753
 !   - cjx-annoyance [w=2] block 159
@@ -304,7 +304,6 @@
 ||0wk6gdkg8r.com^
 ||0wpfe0duo.com^
 ||0x01n2ptpuz3.com^
-||0x2beace.com^
 ||0x5.me^
 ||0x79jjyph7.com^
 ||0xclicks.com^
@@ -520,7 +519,6 @@
 ||125.net.jumia.co.ke^
 ||12551-1311572332.cos.ap-shanghai.myqcloud.com^
 ||125700.shop^
-||126.cn^
 ||127e2202ec.com^
 ||12915784.care.sanvello.com^
 ||12915784.help.sanvello.com^
@@ -2384,6 +2382,7 @@
 ||5bbac33484.ced8c68532.com^
 ||5bd3cec305.com^
 ||5bess6df0.com^
+||5bfjvunmrp.com^
 ||5bh.zovt2uiwqxm8rnj4b691.cyou^
 ||5bkhq0lwmq.com^
 ||5bpajgg436.com^
@@ -3447,6 +3446,7 @@
 ||8hw49hipgurimmzrcv8qh6r1e.cfd^
 ||8hx7k0211.com^
 ||8iav2fuiy.com^
+||8ieu7ue.cyou^
 ||8imo7.ghlp5h7y28qbq74oq.cyou^
 ||8inhjmd.usefathom.com^
 ||8j1f0af5.de^
@@ -9556,6 +9556,7 @@
 ||adserver.virginmedia.com^
 ||adserver.webproxy.idc-lorien21swww.bltheluxurystorontor.mgmt.toronto.ups.com.cn^
 ||adserver.xpanama.net^
+||adserver.yaboo.com^
 ||adserver.yahoo.com^
 ||adserver01.de^
 ||adserverplus.com^
@@ -22864,7 +22865,8 @@
 ||canidquott.shop^
 ||caninesindium.com^
 ||caningphloxesfeuage.cyou^
-||canjearppuntos.click^
+||canjepuntostotal.click^
+||canjepuntosvip.click^
 ||cank9.site^
 ||canlytics.com^
 ||cannedrestrict.com^
@@ -25810,13 +25812,9 @@
 ||cmz2.stm65i8.com^
 ||cmzaly.gebrueder-goetz.de^
 ||cn-beijing-c.dualstack.log.usd.alibabadns.com^
-||cn-feed-whatsapp.com.cn^
 ||cn-go.experian.com^
-||cn-gui-whatsapp.com.cn^
 ||cn-hangzhou-c.dualstack.log.usd.alibabadns.com^
 ||cn-hangzhou.dualstack.log.usd.alibabadns.com^
-||cn-peer-whatsapp.com.cn^
-||cn-ping-whatsapp.com.cn^
 ||cn-qingdao.dualstack.log.usd.alibabadns.com^
 ||cn.bidushe.com^
 ||cn.devglobal.biz^
@@ -25965,6 +25963,7 @@
 ||cnzz.trafficmanager.net^
 ||cnzz.yifenghuyu.com^
 ||cnzzlink.com^
+||co-cota.vivoglobal.com^
 ||co-domaincfg.vivoglobal.com^
 ||co-onrt-stsdk.vivoglobal.com^
 ||co-ort-stsdk.vivoglobal.com^
@@ -28735,7 +28734,6 @@
 ||css888.bceapp.com^
 ||cssdwkjzdxxqn.online^
 ||csstmrxvhyufk.site^
-||cstaticdun.126.net^
 ||cstats.sankakucomplex.com^
 ||cstm.baidu.com^
 ||cstmedia.com.cn^
@@ -44293,7 +44291,6 @@
 ||furiousexpansion.com^
 ||furlhp.kango.mynavi.jp^
 ||furnishings.bellacor.com^
-||furniture-store.shop^
 ||furnituredl.istaging.co^
 ||furoinalexas.com^
 ||furoleevehood.cyou^
@@ -44688,6 +44685,7 @@
 ||g2575096355.co^
 ||g2afpbshj.com^
 ||g2afse.com^
+||g2dgmgl9dy.com^
 ||g2insights-cdn.azureedge.net^
 ||g2u9g28vywgnl8.cfd^
 ||g2w9awdq0.com^
@@ -47524,6 +47522,7 @@
 ||gorilla.physio-soft.com^
 ||gorillapage.com^
 ||gorillatraffic.xyz^
+||gorituals.shop^
 ||gorod.tunt.lv^
 ||gorodyshka.link^
 ||gorrio.ru^
@@ -48952,6 +48951,7 @@
 ||hall3hook.com^
 ||halldata.com^
 ||halloosreacher.com^
+||halloweencostumes-ie.shop^
 ||hallucinatecognizance.com^
 ||haloapps.com^
 ||halocolor.com^
@@ -50103,6 +50103,7 @@
 ||hirmbzroviasa.online^
 ||hirony.xyz^
 ||hirsung.de^
+||hisearch-dra-dt-dbankcloud-com-dra.appacc.dbankedge.cn^
 ||hisearch-dra.dt.dbankcloud.com^
 ||hisearch-drcn.dt.dbankcloud.com^
 ||hisearch-dre.dt.dbankcloud.com^
@@ -50923,6 +50924,7 @@
 ||hourspaltrypointed.com^
 ||housebutsoon.com^
 ||housecarefullyidiotic.com^
+||housedeal-eu.shop^
 ||household35.top^
 ||householdjeopardy.com^
 ||housejomadkc.com^
@@ -51334,6 +51336,7 @@
 ||hubmetrics.samsclub.com^
 ||hubrisone.com^
 ||hubrus.com^
+||hubstat.sandai.net^
 ||hubtraffic.com^
 ||hubvisor.io^
 ||huchnomapout.cyou^
@@ -68670,6 +68673,7 @@
 ||matomo.datago.ru^
 ||matomo.datasanalytics.com^
 ||matomo.eduwill.net^
+||matomo.mdjpxw.com^
 ||matomo.menshealth.de^
 ||matomo.mobilism.org^
 ||matomo.motorpresse.de^
@@ -71229,6 +71233,7 @@
 ||metrics1.experian.com^
 ||metrics1.thankyou.com^
 ||metrics2.houselogic.com^
+||metrics2.unity.cn^
 ||metrics2.williamhill.com^
 ||metricsdirect.com^
 ||metricsinfo.edc.ca^
@@ -72171,7 +72176,6 @@
 ||mmccint.com^
 ||mmchkbriryqrl.space^
 ||mmctsvc.com^
-||mmda-mayhulika-ph.com^
 ||mmdamayhulikaph.com^
 ||mmdcokadaklfg.website^
 ||mmds.suning.com^
@@ -100045,6 +100049,7 @@
 ||soresidewalk.com^
 ||soretrain.com^
 ||sorghumfranger.com^
+||sorituals.shop^
 ||sorningkickup.qpon^
 ||sorosisscypha.cyou^
 ||sorrelsogives.com^
@@ -100971,6 +100976,7 @@
 ||srhuafeng.com^
 ||srhwazpvlyxua.online^
 ||srimzivocntgw.site^
+||sriramnwar-dpoae04723lz.edgeone.dev^
 ||srjqcahmdvhuh.online^
 ||srm4.destinia.co.no^
 ||srmdata-eur.com^
@@ -114902,6 +114908,7 @@
 ||umami.ikxin.com^
 ||umami.is^
 ||umami.mao.fan^
+||umami.mdjpxw.com^
 ||umami.spencerdevs.xyz^
 ||umami.vidfast.pro^
 ||umami.wakarimasen.moe^
@@ -116971,7 +116978,7 @@
 ||v5-bd-daily-reading-ad.qznovelvod.com^
 ||v5-ex-reading-ad.qznovelvod.com^
 ||v5-reading-ad.qznovelvod.com^
-||v5-se-bjtc-reading-ad.qznovelvod.com^
+||v5-se-ex-mc-reading-ad.qznovelvod.com^
 ||v5-se-gddgtc-reading-ad.qznovelvod.com^
 ||v5-se-sjy-daily-reading-ad.qznovelvod.com^
 ||v53groc9v.com^
@@ -127342,7 +127349,6 @@
 ||zakladybolslkzs.homes^
 ||zakladybolslkzw.homes^
 ||zakladykspl.shop^
-||zakladyspl.shop^
 ||zaktucdkuvw.com^
 ||zakuskananda.cyou^
 ||zakuskaorlopsaweto.qpon^
@@ -127833,6 +127839,7 @@
 ||zhichangwo.com^
 ||zhidian3g.cn^
 ||zhifupaypay.com^
+||zhigao5191.com^
 ||zhihu-web-analytics.zhihu.com^
 ||zhihu-web-analytics.zhihu.com.eo.dnse0.com^
 ||zhihu.xmcimg.com^
@@ -129163,6 +129170,7 @@
 @@||skydrivesync.policies.live.net^
 @@||smtp.focusgroupresearch.com^
 @@||sobot.com^
+@@||spartaindependent.com^
 @@||speedtest.net^
 @@||ssai.aniview.com^
 @@||stash.roistat.com^
