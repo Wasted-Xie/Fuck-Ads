@@ -22,7 +22,8 @@ OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules.txt")
 # 复用公共模块中的手写名单解析逻辑（Lite / Slim 同样使用它）
 sys.path.insert(0, ROOT_DIR)
 from integrate_sources import (                                   # noqa: E402
-    WHITELIST_FILE, BLOCKLIST_FILE, parse_domain, load_manual_list,
+    WHITELIST_FILE, BLOCKLIST_FILE, MIXED_FILE,
+    parse_domain, load_manual_list, load_mixed_list,
 )
 
 # Source definitions
@@ -90,22 +91,40 @@ def main(out_file=None, sources=None, title=None, description=None):
     all_blocks, all_whites = set(), set()
 
     # ---- 手动维护的名单（优先级高于上游）----
+    # 优先级：whitelist.txt > mixed.txt 的 @@ 放行 > blocklist.txt
+    #         > mixed.txt 的拦截 > 上游源
     manual_whitelist, wl_bad = load_manual_list(WHITELIST_FILE)
     manual_blocklist, bl_bad = load_manual_list(BLOCKLIST_FILE)
+    mixed_allow, mixed_block, mx_bad = load_mixed_list(MIXED_FILE)
 
-    for path, bad, label in ((WHITELIST_FILE, wl_bad, "whitelist"),
-                             (BLOCKLIST_FILE, bl_bad, "blocklist")):
+    for path, bad in ((WHITELIST_FILE, wl_bad),
+                      (BLOCKLIST_FILE, bl_bad),
+                      (MIXED_FILE, mx_bad)):
         for lineno, text in bad:
             print(f"[WARN] {os.path.relpath(path, ROOT_DIR)}:{lineno} "
                   f"无法解析，已忽略: {text}", file=sys.stderr)
 
-    # 两个手写名单冲突时以白名单为准
+    # 手写名单之间冲突时一律以「放行」为准
     manual_conflict = manual_whitelist & manual_blocklist
     if manual_conflict:
         for d in sorted(manual_conflict):
             print(f"[WARN] 域名同时出现在 whitelist 与 blocklist，按白名单处理: {d}",
                   file=sys.stderr)
         manual_blocklist -= manual_conflict
+
+    # mixed.txt 的放行条目与 whitelist.txt 同级；其拦截条目则在 blocklist 之后
+    mixed_conflict = (mixed_allow & manual_blocklist) | (mixed_block & manual_whitelist)
+    if mixed_conflict:
+        for d in sorted(mixed_conflict):
+            print(f"[WARN] 域名在 mixed.txt 与单用途名单中冲突，按放行处理: {d}",
+                  file=sys.stderr)
+    manual_blocklist -= mixed_allow
+    mixed_block -= manual_whitelist
+    mixed_block -= mixed_allow
+
+    # 合并后的总白名单 / 总拦截（手写部分）
+    manual_whitelist_all = manual_whitelist | mixed_allow
+    manual_blocklist_all = manual_blocklist | mixed_block
 
     for src in sources:
         path = src.get("path") or os.path.join(RAW_DIR, src["file"])
@@ -122,19 +141,19 @@ def main(out_file=None, sources=None, title=None, description=None):
         all_whites |= whites
 
     # ---- 把手写拦截名单并入黑名单 ----
-    for d in manual_blocklist:
+    for d in manual_blocklist_all:
         all_blocks.add("||" + d + "^")
 
     # ---- 手写白名单：加入白名单，并从黑名单中移除同名条目 ----
-    for d in manual_whitelist:
+    for d in manual_whitelist_all:
         all_whites.add("@@||" + d + "^")
 
     # 上游黑名单中与手写白名单冲突的条目一律移除（含其子域，避免父域规则继续拦截）
     manual_wl_removed = 0
     for rule in list(all_blocks):
         dom = rule[2:-1] if rule.startswith("||") and rule.endswith("^") else None
-        if dom and (dom in manual_whitelist
-                    or any(dom.endswith("." + w) for w in manual_whitelist)):
+        if dom and (dom in manual_whitelist_all
+                    or any(dom.endswith("." + w) for w in manual_whitelist_all)):
             all_blocks.discard(rule)
             manual_wl_removed += 1
 
@@ -159,6 +178,8 @@ def main(out_file=None, sources=None, title=None, description=None):
     header += [
         f"! Manual whitelist: Lists/whitelist.txt  ({len(manual_whitelist)} domains)",
         f"! Manual blocklist: Lists/blocklist.txt  ({len(manual_blocklist)} domains)",
+        f"! Manual mixed    : Lists/mixed.txt  "
+        f"(allow {len(mixed_allow)} / block {len(mixed_block)})",
     ]
     header.append("!")
 
@@ -193,8 +214,11 @@ def main(out_file=None, sources=None, title=None, description=None):
     print("==== Merge dedup result ====")
     print(f"Manual whitelist domains     : {len(manual_whitelist)}  (Lists/whitelist.txt)")
     print(f"Manual blocklist domains     : {len(manual_blocklist)}  (Lists/blocklist.txt)")
+    print(f"Manual mixed allow/block     : {len(mixed_allow)} / {len(mixed_block)}  (Lists/mixed.txt)")
     if manual_conflict:
         print(f"  whitelist/blocklist clashes: {len(manual_conflict)}  (whitelist wins)")
+    if mixed_conflict:
+        print(f"  mixed-vs-single clashes    : {len(mixed_conflict)}  (allow wins)")
     print(f"Upstream blocks removed by manual whitelist: {manual_wl_removed}")
     print(f"Total input rule lines       : {sum_total}")
     print(f"Block rules after dedup      : {len(sorted_blocks)}")

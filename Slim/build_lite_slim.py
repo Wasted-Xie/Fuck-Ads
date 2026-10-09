@@ -32,7 +32,9 @@ DEFAULT_OUT = os.path.join(OUT_DIR, "merged_dns_rules_slim.txt")
 
 sys.path.insert(0, ROOT_DIR)
 import integrate_sources as integ                                # noqa: E402
-from integrate_sources import BLOCKLIST_FILE, load_manual_list    # noqa: E402
+from integrate_sources import (                                   # noqa: E402
+    BLOCKLIST_FILE, MIXED_FILE, load_manual_list, load_mixed_list,
+)
 
 # 国内规则源：(源名, 路径, 权重)
 #   权重越高，越优先保留其规则
@@ -200,14 +202,21 @@ def main():
     else:
         print("must-keep injected                 : (all already present)")
 
-    # ---- 3b. 手动维护的拦截名单（Lists/blocklist.txt）----
+    # ---- 3b. 手动维护的拦截名单（blocklist.txt + mixed.txt 的拦截部分）----
     # 放在白名单冲突清理之后注入，确保手写条目不会被白名单剔除；
     # 同时给最高价值分，使其在 --max 裁剪时也不会被挤出。
+    # 注：手写白名单无需在此处理 —— 它已写入 Full 产物，上面的 allow_set 已包含。
     manual_blocks, bl_bad = load_manual_list(BLOCKLIST_FILE)
     for lineno, text in bl_bad:
         print(f"[WARN] Lists/blocklist.txt:{lineno} 无法解析，已忽略: {text}",
               file=sys.stderr)
-    manual_blocks -= allow_set              # 兜底：不与全量白名单冲突
+    mixed_allow, mixed_block, mx_bad = load_mixed_list(MIXED_FILE)
+    for lineno, text in mx_bad:
+        print(f"[WARN] Lists/mixed.txt:{lineno} 无法解析，已忽略: {text}",
+              file=sys.stderr)
+    manual_blocks |= mixed_block
+    manual_blocks -= mixed_allow            # 混合源内部冲突：放行优先
+    manual_blocks -= allow_set              # 兜底：不与 Full 白名单冲突
     manual_added = sorted(d for d in manual_blocks if d not in stage2)
     for d in manual_added:
         stage2.add(d)
