@@ -128,11 +128,13 @@ py Slim\build_lite_slim.py      :: 生成 Slim 版（同上）
 AdGuard Home 是**由您的设备去拉取规则**，国内网络直连 `raw.githubusercontent.com` 常常很慢甚至超时。
 此时可将下表任意一条地址粘贴到「DNS 拦截清单」使用（按推荐程度排序，**按设备性能选择对应那一列**）：
 
+> **建议同时添加 gh-proxy.com 与 jsDelivr 两条**（AGH 支持多个过滤器，重复规则无害）。两者互为兜底，任一条抖动时另一条仍能拉到。选择依据见下方 [AGH 订阅稳定性建议](#agh-订阅稳定性建议) 一节。
+
 | 方式 | 缓存时长 | Full 版（约 32 万条） | Pro 版（约 53 万条） |
 |---|---|---|---|
-| **gh-proxy.com**（首选：国内可直连，缓存最短） | 60 秒 | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt |
-| **jsDelivr CDN**（备用：全球 CDN，缓存较长见下） | **最长 12 小时** | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt |
-| 直连 raw.githubusercontent.com（国内常超时） | 5 分钟 | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt |
+| **gh-proxy.com**（首选：TTFB 最稳，波动仅 1.4 倍，缓存最短） | 60 秒 | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt |
+| **jsDelivr CDN**（备用：偶有 TTFB 尖峰，见下节） | **最长 12 小时** | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt |
+| 直连 raw.githubusercontent.com（**不推荐**：耗时波动可达 31 倍，偶发全部失败） | 5 分钟 | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt |
 
 ### Lite 版（约 14.6 万条）
 
@@ -208,6 +210,95 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_
 - jsDelivr 免费加速**公开仓库**且单文件需 ≤20 MB（Pro 约 12 MB、Full 约 7.2 MB、Lite 约 3.2 MB、Slim 约 2.8 MB，均满足）。
 - 第三方代理站可能限速或失效，失效就换下一条。
 - 加速站属于第三方服务，仅作下载加速，不影响列表内容本身。
+
+## AGH 订阅稳定性建议
+
+> 本节数据由本仓库在 **2026-10-09** 于中国大陆家庭宽带环境下实测得出（多轮直连，未经代理）。
+
+AdGuard Home 对过滤器源有自己的超时判定：**某次拉取超时或连接被重置，就会把该订阅标记为「连接不稳定」**，并在后续拉取中降低优先级甚至暂停。因此对 AGH 而言，**「每次都能在几秒内响应」比「平均速度快」更重要**——偶发的 20 秒尖峰比稳定的 2 秒更容易触发告警。
+
+### 各渠道实际表现
+
+> 下列两组数据来自**不同时段的两次独立测试**，raw 直连的表现差异很大（一次全失败、一次全成功）——这本身就是它不可靠的证据：能通但不可预期。
+
+**测试一：TTFB（首字节时间）稳定性**，同一文件连续 5 轮：
+
+| 渠道 | 各轮 TTFB（秒） | 平均 | 峰值/均值 | 评价 |
+|---|---|---|---|---|
+| **gh-proxy.com** | `0.52 0.32 0.31 0.29 0.41` | **0.37s** | **1.4x** | ✅ 最稳 |
+| jsDelivr `cdn` | `0.27 1.18 0.61 0.43 0.31` | 0.56s | 2.1x | ⚠️ 尚可 |
+| jsDelivr `fastly` | `1.64 0.25 20.51 0.52` + 1 次失败 | 5.73s | **3.6x** | ❌ 易触发超时 |
+| raw 直连 | 5 轮全部失败 | — | — | ❌ 不可靠 |
+
+**测试二：成功率**（3 轮，均校验返回内容是否为真规则文件）：
+
+| 渠道 | 成功率 | 平均耗时 |
+|---|---|---|
+| gh-proxy.com | 100% | 0.39s |
+| jsDelivr `cdn` | 100% | 0.90s |
+| jsDelivr `fastly` | 100% | 2.12s |
+| jsDelivr `gcore` | 33% | 2.09s |
+| ghfast.top | 33% | 0.79s |
+| raw 直连 | 100%（耗时波动 **0.34–10.69s**，达 31 倍） | 4.03s |
+
+**综合判断**：raw 直连两次测试结果相反，且耗时波动达 31 倍，不能作为 AGH 的稳定订阅源；gh-proxy.com 是唯一两项测试都稳定的渠道。
+
+### 为什么 jsDelivr 偶尔会被判为「连接不稳定」
+
+用 4 个国内公共 DNS（223.5.5.5 / 119.29.29.29 / 180.76.76.76 / 114.114.114.114）解析 jsDelivr 各节点，**全部返回境外 IP**：
+
+| 域名 | 解析结果 | 归属 |
+|---|---|---|
+| `cdn.jsdelivr.net` | `104.17.207.5` / `151.101.1.229` | Cloudflare / Fastly（境外） |
+| `fastly.jsdelivr.net` | `151.101.65.229` 等 | Fastly（境外） |
+| `gcore.jsdelivr.net` | `104.17.207.5` | Cloudflare（境外） |
+
+**没有任何国内节点 IP**。每次拉取都要跨境，于是出现「多数时候几百毫秒、偶尔 20 秒」的尖峰，这正是 AGH 判定不稳定的直接原因。
+
+此外 jsDelivr 的边缘节点缓存最长 12 小时（见上节），且各节点缓存互相独立——同一时刻不同节点可能返回不同版本，这也容易被误认为「连接有问题」。
+
+### 推荐配置
+
+**优先使用 gh-proxy.com**，它的 TTFB 波动最小（1.4x），不会触发 AGH 的超时判定：
+
+```text
+https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt
+```
+
+**建议同时订阅两条**（AGH 允许添加多个过滤器，重复规则无害），任一条故障时另一条兜底：
+
+```text
+首选  https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt
+备用  https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt
+```
+
+> 把上面两条里的 `merged_dns_rules_slim.txt` 换成 `merged_dns_rules.txt`（Full）、`merged_dns_rules_pro.txt`（Pro）或 `merged_dns_rules_lite.txt`（Lite）即可用于其它版本。
+
+### 若已被 AGH 标记为不稳定
+
+1. 在「过滤器 → DNS 拦截清单」中把该条**删掉重新添加**，AGH 会重置其失败计数；
+2. 换成 gh-proxy.com 地址；
+3. 若是内容问题（规则数偏少）而非连接问题，参考上节的 jsDelivr 缓存说明处理。
+
+### 关于第三方加速服务的现状
+
+同期实测（直连）**已失效**的常见加速站，供参考——网上流传的可用清单往往严重滞后：
+
+| 域名 | 实测结果 |
+|---|---|
+| `ghproxy.net` | 完全不可达 |
+| `gh.llkk.cc` | 完全不可达 |
+| `ghproxy.cn` | 返回 HTML 中间页，非规则文件 |
+| `gh.con.sh` | 服务已停（"Suspent due to abuse report"） |
+| `ghp.ci` | TLS 握手失败 |
+| `ghgo.xyz` | 返回 HTML 页面 |
+| `gitclone.com` | HTTP 500 |
+| `ghproxy.homeboyc.cn` | HTTP 403 |
+| `ghfast.top` | 3 轮中仅 1 轮成功 |
+| `hub.gitmirror.com` | 完全不可达 |
+| `ghproxy.link`（官方地址发布站） | 国内不可达 |
+
+> **结论**：国内 GitHub 加速生态变动频繁，任何静态清单都会很快过时。本项目因此推荐 **gh-proxy.com + jsDelivr 双订阅**，而不是依赖单一渠道。加速站失效时换下一条即可，列表内容本身不受影响。
 
 ## 关于国内网络环境的实测结论
 
