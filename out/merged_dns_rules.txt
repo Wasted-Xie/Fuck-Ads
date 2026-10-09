@@ -1,16 +1,17 @@
 !
 ! Title: Merged DNS blocklist (line-level dedup)
 ! Description: 4 个源按整行精确去重合并，白名单(@@)规则保留在文件末尾
-! Generated: 2026-10-09 09:10:18
-! Block rules: 318381
-! Whitelist rules: 278
+! Generated: 2026-10-09 09:27:55
+! Block rules: 318391
+! Whitelist rules: 280
 !
 ! Source 1: URLHaus (AdGuard Hostlists #11)  <-  https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt
 ! Source 2: GOODBYEADS dns  <-  https://github.com/8680/GOODBYEADS (mirror ghfast.top)
 ! Source 3: AdBlock DNS (217heidai)  <-  https://github.com/217heidai/adblockfilters
 ! Source 4: Integrated extra sources (18 lists)  <-  yhosts / ad-wars / 1024_hosts / AdAway / YousList / StevenBlack / anti-AD / EasyList family / ADgk / CJX / mvps / i-dont-care-about-cookies / Adblock Warning Removal List
-! Manual whitelist: Lists/whitelist.txt  (0 domains)
+! Manual whitelist: Lists/whitelist.txt  (2 domains)
 ! Manual blocklist: Lists/blocklist.txt  (0 domains)
+! Manual mixed    : Lists/mixed.txt  (allow 0 / block 0)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -33604,6 +33605,7 @@
 ||apartmentfinder.com.112.2o7.net^
 ||apartsbook.com^
 ||apas.aipai.com^
+||apasshippest.cfd^
 ||apatansicklesamritas.qpon^
 ||apatheticformingalbeit.com^
 ||apathicpictish.cyou^
@@ -64947,6 +64949,7 @@
 ||coxtv.us.intellitxt.com^
 ||coxx.one^
 ||coydogmurph.com^
+||coyestkerfjizzen.cyou^
 ||coyizl.embracon.com.br^
 ||coylycaptate.com^
 ||coylywinder.cyou^
@@ -75939,6 +75942,7 @@
 ||datt.ero-advertising.com^
 ||datum.appfleet.com^
 ||datum.jsdelivr.com^
+||datumdionaea.cfd^
 ||daturasthurgi.cfd^
 ||datvantage.com^
 ||dau.fyber.com^
@@ -81120,7 +81124,6 @@
 ||dot.texastribune.org^
 ||dot.tk^
 ||dot.wp.pl^
-||dota2.uuu9.com^
 ||dota2pot.com^
 ||dotados-anhaenger.com^
 ||dotaki.com^
@@ -96449,6 +96452,7 @@
 ||fixpass.net^
 ||fixpub.com^
 ||fixxermorsel.za.com^
+||fixxzeywgnnfm.website^
 ||fixya.us.intellitxt.com^
 ||fizjoterapia.5v.pl^
 ||fizmatklass.goaserv.com^
@@ -114351,6 +114355,7 @@
 ||hangarlastik.com^
 ||hangingduro.com^
 ||hangoverknock.com^
+||hangsflee.cfd^
 ||hanhooo.cn^
 ||hanif.nasibasilk.com^
 ||hankategrin.com^
@@ -133602,6 +133607,7 @@
 ||km.w2realestate.com^
 ||km.whkwpzz.cn^
 ||km.xxmvids.site^
+||km7ru2n2jhtfjurotvho91ulyl4gk1121v.cfd^
 ||kma.biz^
 ||kma1.biz^
 ||kmaa45.com^
@@ -138088,6 +138094,7 @@
 ||ligydaloca.com^
 ||lihi1.com^
 ||lihi3.cc^
+||liiheqkwi.com^
 ||liijacenkubom.site^
 ||liikepalvelu.com^
 ||liikxhzzebfwd.space^
@@ -167285,6 +167292,7 @@
 ||n3.nskfyl.com^
 ||n3.zuoyebang.cc^
 ||n30m.byehd3.life^
+||n3251ftnoz555ftmnq2kxrrfnx.rest^
 ||n339.asp-cc.com^
 ||n3567.com^
 ||n367tqpdxce0.quine.sh^
@@ -172213,6 +172221,7 @@
 ||nutentertainintermediate.com^
 ||nutga.com^
 ||nutletsbromian.qpon^
+||nutlikecrooch.cfd^
 ||nutmann.club^
 ||nutri.tamararolim.com^
 ||nutricesirene.qpon^
@@ -178101,6 +178110,7 @@
 ||over-clapmolt.xyz^
 ||overaptpretjaburan.cyou^
 ||overbidsettingunderfeed.com^
+||overbigkarch.qpon^
 ||overbitnsec.cfd^
 ||overboard27.com^
 ||overboardbilingual.com^
@@ -253364,6 +253374,7 @@
 ||tarsan.media-412.com^
 ||tarsepicard.qpon^
 ||tarsiabaldest.qpon^
+||tarsiascracker.qpon^
 ||tarsier.emitremmus.com^
 ||tarsier.kriterie.se^
 ||tarsieraloofrobs.cyou^
@@ -259417,6 +259428,7 @@
 ||toxsales1.com^
 ||toxsngyxcncej.website^
 ||toxtren.com^
+||toxwllaihbegb.website^
 ||toy.log.nexon.io^
 ||toybrickdeal.com^
 ||toye44404.goasrv.com^
@@ -273409,7 +273421,6 @@
 ||uustoughtonma.org^
 ||uuswphqtty.com^
 ||uutdjp.brooks.co.jp^
-||uuu9.tieba.com^
 ||uuucbm.kontramarka.de^
 ||uuuwxykgcvcgp.website^
 ||uuvmpwgygwuag.space^
@@ -318495,6 +318506,7 @@
 @@||data.orders.costco.com^
 @@||data.promo.timhortons.ca^
 @@||developers.google.com^
+@@||dot.360.cn^
 @@||download.adguard.com^
 @@||download.jumpw.com^
 @@||dxcloud.episerver.net^
@@ -318554,6 +318566,7 @@
 @@||login.gaijin.net^
 @@||login.sendpulse.com^
 @@||ltzn.9377.com^
+@@||lxmusic.ijinshan.com^
 @@||ma135-r.analytics.edgekey.net^
 @@||manwa.me^
 @@||marketing.net.idealo-partner.com^
