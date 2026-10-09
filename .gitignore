@@ -1,11 +1,14 @@
-# 上游源文件缓存（Cache/raw 主源、Cache/sources 附加源），不纳入版本库
+# 上游源文件缓存（Cache/raw 主源、Cache/sources 附加源、Cache/sources_pro Pro 专用源）
 Cache/
 raw/
 sources/
+sources_pro/
 
 # 合并流程的中间产物，不纳入版本库
 out/integrated_extra.txt
+out/integrated_extra_pro.txt
 out/excluded_redirect_entries.txt
+out/excluded_redirect_entries_pro.txt
 
 # Python 字节码缓存
 __pycache__/

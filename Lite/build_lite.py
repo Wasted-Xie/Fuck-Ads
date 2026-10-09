@@ -31,6 +31,7 @@ OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules_lite.txt")
 
 sys.path.insert(0, ROOT_DIR)
 import integrate_sources as integ                                # noqa: E402
+from integrate_sources import BLOCKLIST_FILE, load_manual_list    # noqa: E402
 
 # 国内向源：(标识, 路径, 说明, 优先级) —— 优先级数字越小越先保留
 CN_SOURCES = (
@@ -114,6 +115,17 @@ def main():
     allow_set = set(full_allows)
     dropped_by_whitelist = {d for d in origin_prio if d in allow_set}
     candidates = {d: p for d, p in origin_prio.items() if d not in allow_set}
+
+    # ---- 并入手动维护的拦截名单（Lists/blocklist.txt）----
+    # 手写名单优先级最高（给最小优先级数字），且不会被白名单剔除：
+    # 两个手写文件之间的冲突已在 merge_dedup.py 中按「白名单优先」处理过。
+    manual_blocks, bl_bad = load_manual_list(BLOCKLIST_FILE)
+    for lineno, text in bl_bad:
+        print(f"[WARN] Lists/blocklist.txt:{lineno} 无法解析，已忽略: {text}",
+              file=sys.stderr)
+    manual_blocks -= allow_set          # 兜底：仍不在全量白名单中出现
+    for d in manual_blocks:
+        candidates[d] = 0
 
     # ---- 规模控制 ----
     truncated = 0

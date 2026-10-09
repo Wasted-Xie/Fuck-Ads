@@ -3,26 +3,30 @@
 将 **31 个上游**黑名单/去广告列表（3 个主源 + 28 个附加源）**自动拉取 → 格式清洗 → 整行精确去重 → 合并**
 为 AdGuard 语法列表，可供 [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) 作为 DNS 拦截清单订阅使用。
 
-每次运行产出**三套并列的列表**，可按设备性能任选其一订阅（同时订阅也不冲突）：
+每次运行产出**四套并列的列表**，可按设备性能与拦截强度任选其一订阅（同时订阅也不冲突）：
 
-| 版本 | 产物文件 | 规则量 | 适用场景 |
-|---|---|---|---|
-| **全量版** | `out/merged_dns_rules.txt` | 约 53 万条 | 性能充足的设备（软路由 / NAS / 小主机） |
-| **Lite 版** | `out/merged_dns_rules_lite.txt` | 约 14.6 万条 | 中等配置设备，优先保留国内域名拦截 |
-| **Slim 版** | `out/merged_dns_rules_slim.txt` | 约 12.8 万条 | **229MB 级内存的低配软路由**，仅用国内规则源 + 父域无损收敛 |
+| 版本 | 产物文件 | 规则量 | 上游源 | 适用场景 |
+|---|---|---|---|---|
+| **Full 版** | `out/merged_dns_rules.txt` | 约 32 万条 | 21 个（3 主源 + 18 附加源） | 性能充足的设备，拦截面与资源占用的平衡点 |
+| **Pro 版** | `out/merged_dns_rules_pro.txt` | 约 53 万条 | 31 个（3 主源 + 28 附加源） | 追求最大拦截覆盖，接受更高内存占用 |
+| **Lite 版** | `out/merged_dns_rules_lite.txt` | 约 14.6 万条 | 国内向 12 个 | 中等配置设备，优先保留国内域名拦截 |
+| **Slim 版** | `out/merged_dns_rules_slim.txt` | 约 12.9 万条 | 仅国内向 11 个 | **229MB 级内存的低配软路由**，父域无损收敛 |
+
+> **Full 与 Pro 的区别**：Pro 在 Full 基础上额外并入 10 个补充源（Hblock、Spam404、halflife、AWAvenue、AdGuard Chinese、scamblocklist、NoCoin、Peter Lowe、Dan Pollock、neohosts），规则量约 1.7 倍。这些源偏重**反诈/恶意域名**且含大量廉价 TLD，若只需拦截广告，Full 版已足够。
 
 ## 特性
 
-- **多格式清洗**：自动识别 hosts 格式（`0.0.0.0 域名`）与 adblock 格式（`||域名^`），统一转换为 AdGuard 语法
+- **多格式清洗**：自动识别 hosts 格式（`0.0.0.0 域名`）、adblock 格式（`||域名^`）与裸域名格式，统一转换为 AdGuard 语法
 - **整行精确去重**：只删除完全相同的规则，不改写保留规则的写法
 - **父域无损收敛**：`||a.com^` 已覆盖 `b.a.com`，因此删除所有被父域规则覆盖的子域规则，**不损失任何拦截能力**
 - **完整保留白名单**：上游的 `@@` 白名单规则置于合并文件末尾，避免正常服务被误拦
 - **剔除 DNS 层无法表达的内容**：带路径规则、`$domain=` / `$app=` 站点限定规则、元素隐藏规则（`##`）、正则规则
 - **排除翻墙/加速类条目**：指向非本地 IP 的 hosts 重定向条目一律不纳入
-- **三版本产物**：覆盖从高性能设备到 229MB 低配软路由的全部场景
-- **各版互不冲突**：三套列表共用同一份白名单，且都会剔除白名单中已有的域名，不会出现「A 版拦截 / B 版放行」的矛盾
+- **自定义名单**：`Lists/whitelist.txt` 与 `Lists/blocklist.txt` 可手动增补，参与全部版本构建（见下文）
+- **四版本产物**：覆盖从最大拦截到 229MB 低配软路由的全部场景
+- **各版互不冲突**：四套列表共用同一份白名单，且都会剔除白名单中已有的域名，不会出现「A 版拦截 / B 版放行」的矛盾
 - 合并文件头部自动写入生成时间、来源与统计信息，便于审计
-- **全自动更新**：GitHub Actions 云端每 30 分钟拉取上游并重建三套列表，仅在有变化时提交
+- **全自动更新**：GitHub Actions 云端定时拉取上游并重建四套列表，仅在有变化时提交
 
 ## 目录结构
 
@@ -34,8 +38,10 @@
 ├── integrate_sources.py      # 公共：附加源清洗（多格式解析 → 统一为 ||域名^）
 ├── CHANGELOG.md              # 版本变更记录
 │
-├── Full/                     # 全量版：31 个源全覆盖
+├── Full/                     # Full 版：21 个源（3 主源 + 18 附加源）
 │   └── merge_dedup.py        #   → out/merged_dns_rules.txt
+├── Pro/                      # Pro 版：31 个源（在 Full 基础上 +10 补充源）
+│   └── merge_dedup_pro.py    #   → out/merged_dns_rules_pro.txt（复用 merge_dedup 的合并逻辑）
 ├── Lite/                     # Lite 版：国内向源，优先国内域名
 │   └── build_lite.py         #   → out/merged_dns_rules_lite.txt
 ├── Slim/                     # Slim 版：仅国内源 + 父域无损收敛
@@ -43,20 +49,27 @@
 │
 ├── Cache/                    # 上游源文件缓存（脚本自动拉取，不入库）
 │   ├── raw/                  #   主源 + Lite 专用上游
-│   └── sources/              #   28 个附加源
+│   ├── sources/              #   18 个附加源（Full 使用）
+│   └── sources_pro/          #   10 个 Pro 专用补充源
+├── Lists/                    # 手动维护的名单（入库，参与全部四个版本）
+│   ├── whitelist.txt         #   自定义白名单（放行）
+│   └── blocklist.txt         #   自定义拦截名单
 ├── out/                      # 最终产物（入库，供订阅）
-│   ├── integrated_extra.txt          # 中间产物（不入库）
-│   ├── excluded_redirect_entries.txt # 中间产物（不入库）
-│   ├── merged_dns_rules.txt          # 全量版
-│   ├── merged_dns_rules_lite.txt     # Lite 版
-│   └── merged_dns_rules_slim.txt     # Slim 版
+│   ├── integrated_extra.txt              # 中间产物（不入库）
+│   ├── integrated_extra_pro.txt          # 中间产物（不入库）
+│   ├── excluded_redirect_entries*.txt    # 中间产物（不入库）
+│   ├── merged_dns_rules.txt              # Full 版
+│   ├── merged_dns_rules_pro.txt          # Pro 版
+│   ├── merged_dns_rules_lite.txt         # Lite 版
+│   └── merged_dns_rules_slim.txt         # Slim 版
 ├── .github/workflows/
 │   └── update.yml            # GitHub Actions 定时工作流（每 30 分钟）
-└── .gitignore                # 忽略 Cache/、中间产物、__pycache__、test/
+└── .gitignore                # 忽略 Cache/、中间产物、__pycache__、test/、temp/
 ```
 
-> 三个版本目录中的脚本**只读取** `Cache/` 的源文件与 `out/` 中的全量产物，彼此不干扰；
-> 各版本脚本可独立运行，但存在顺序依赖：`integrate_sources.py` → `Full/` → `Lite/` 与 `Slim/`。
+> 四个版本目录中的脚本**只读取** `Cache/` 的源文件与 `out/` 中的产物，彼此不干扰；
+> 各版本脚本可独立运行，但存在顺序依赖：
+> `integrate_sources.py`（Full 与 Pro 各跑一次）→ `Full/` → `Pro/` → `Lite/` 与 `Slim/`（后两者以 Full 产物为白名单基准）。
 
 ## 使用方法
 
@@ -70,7 +83,7 @@
 2. **首次部署需确认一次仓库设置**：`Settings → Actions → General → Workflow permissions` 选择 **Read and write**，否则工作流没有权限把产物推回仓库；
 3. 想立刻验证：打开 `Actions` 标签页 → 选择 **Update merged DNS rules** → **Run workflow**。
 
-工作流每次执行：拉取 31 个源 + Lite 专用上游 → 格式清洗 → 合并去重（全量）→ 构建 Lite 版 → 构建 Slim 版 → **仅在有变化时**提交推送（三套产物一起提交）。
+工作流每次执行：拉取 31 个源 + Lite 专用上游 → 格式清洗（Full 与 Pro 各一次）→ 合并去重（Full）→ 合并去重（Pro）→ 构建 Lite 版 → 构建 Slim 版 → **仅在有变化时**提交推送（四套产物一起提交）。
 
 > 说明：GitHub 的定时触发为每 30 分钟（UTC 的 0 分与 30 分），高峰期可能有数分钟到数十分钟延迟；规则无变化时不产生提交。
 
@@ -83,9 +96,14 @@
 
 ```bat
 py fetch_sources.py             :: 下载全部上游 → Cache/
-py integrate_sources.py         :: 清洗附加源
-py Full\merge_dedup.py          :: 生成全量版（必须在 integrate 之后）
-py Lite\build_lite.py           :: 生成 Lite 版（需要全量产物作白名单基准）
+py integrate_sources.py         :: 清洗 Full 版附加源（18 个）
+py integrate_sources.py --src-dirs Cache/sources Cache/sources_pro ^
+    --out out/integrated_extra_pro.txt ^
+    --out-excluded out/excluded_redirect_entries_pro.txt ^
+    --title "Integrated extra sources for PRO (non-VPN only)"   :: 清洗 Pro 版附加源（28 个）
+py Full\merge_dedup.py          :: 生成 Full 版（必须在 integrate 之后）
+py Pro\merge_dedup_pro.py       :: 生成 Pro 版（复用 Full 的合并逻辑）
+py Lite\build_lite.py           :: 生成 Lite 版（需要 Full 产物作白名单基准）
 py Slim\build_lite_slim.py      :: 生成 Slim 版（同上）
 ```
 
@@ -93,35 +111,60 @@ py Slim\build_lite_slim.py      :: 生成 Slim 版（同上）
 
 ### 订阅
 
-在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅（三选一，或同时订阅均无冲突）：
+在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅（任选，或同时订阅均无冲突）：
 
 | 版本 | 规则量 | 订阅地址 |
 |---|---|---|
-| 全量版 | 约 53 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt` |
+| **Full 版** | 约 32 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt` |
+| **Pro 版** | 约 53 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt` |
 | Lite 版 | 约 14.6 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt` |
-| **Slim 版**（229MB 级设备） | 约 12.8 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt` |
+| **Slim 版**（229MB 级设备） | 约 12.9 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt` |
 
-列表随上游自动更新（每 30 分钟检查一次）。
+列表随上游自动更新（云端定时检查，通常每 4–6 小时一次）。
 
 ## 订阅加速镜像（GitHub 直连慢/超时时选用）
 
 AdGuard Home 是**由您的设备去拉取规则**，国内网络直连 `raw.githubusercontent.com` 常常很慢甚至超时。
 此时可将下表任意一条地址粘贴到「DNS 拦截清单」使用（按推荐程度排序，**按设备性能选择对应那一列**）：
 
-| 方式 | 缓存时长 | 全量版（约 53 万条） | Lite 版（约 14.6 万条） | Slim 版（约 12.8 万条） |
-|---|---|---|---|---|
-| **gh-proxy.com**（首选：国内可直连，缓存最短） | 60 秒 | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
-| **jsDelivr CDN**（备用：全球 CDN，缓存较长见下） | **最长 12 小时** | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt |
-| 直连 raw.githubusercontent.com（国内常超时） | 5 分钟 | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
+| 方式 | 缓存时长 | Full 版（约 32 万条） | Pro 版（约 53 万条） |
+|---|---|---|---|
+| **gh-proxy.com**（首选：国内可直连，缓存最短） | 60 秒 | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt |
+| **jsDelivr CDN**（备用：全球 CDN，缓存较长见下） | **最长 12 小时** | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt |
+| 直连 raw.githubusercontent.com（国内常超时） | 5 分钟 | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt |
+
+### Lite 版（约 14.6 万条）
+
+| 方式 | Lite 版地址 |
+|---|---|
+| **gh-proxy.com** | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt |
+| **jsDelivr CDN** | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt |
+| 直连 raw | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt |
+
+### Slim 版（约 12.9 万条）
+
+| 方式 | Slim 版地址 |
+|---|---|
+| **gh-proxy.com** | https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
+| **jsDelivr CDN** | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt |
+| 直连 raw | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
 
 一次性复制全部地址：
 
-全量版：
+Full 版：
 
 ```text
 https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
 https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt
 https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
+```
+
+Pro 版：
+
+```text
+https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt
+https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt
+https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt
 ```
 
 Lite 版：
@@ -154,12 +197,14 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_
   1. 换用上表首行的 **gh-proxy.com**（1 分钟缓存，最可靠）；
   2. 换用其它 jsDelivr 节点，例如把 `cdn.jsdelivr.net` 换成 `fastly.jsdelivr.net` 或 `gcore.jsdelivr.net`；
   3. 主动清除 jsDelivr 缓存（浏览器打开即可，返回 `"status": "finished"` 表示成功）：
-     - 全量版 https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt
+     - Full 版 https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt
+     - Pro 版 https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt
      - Lite 版 https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt
      - Slim 版 https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt
 
+  > 该清除操作已写入 Actions 工作流：每次产物有变化时会自动 purge 上述四个地址。
 - **如何确认自己拿到的是最新版**：打开订阅地址看文件头部，比对 `! Block rules:` 与 `! Generated:` 两个字段。若与仓库 [out/](out/) 目录中的文件不一致，说明命中了旧缓存。
-- jsDelivr 免费加速**公开仓库**且单文件需 ≤20 MB（全量约 12 MB、Lite 约 3.2 MB、Slim 约 2.9 MB，均满足）。
+- jsDelivr 免费加速**公开仓库**且单文件需 ≤20 MB（Pro 约 12 MB、Full 约 7.2 MB、Lite 约 3.2 MB、Slim 约 2.8 MB，均满足）。
 - 第三方代理站可能限速或失效，失效就换下一条。
 - 加速站属于第三方服务，仅作下载加速，不影响列表内容本身。
 
@@ -216,13 +261,13 @@ https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_
 
 Lite 版把规则量压到全量的约 **27%**（约 14.6 万条，3.15 MB），在保证国内广告拦截效果的前提下，降低 AdGuard Home 的内存占用与匹配开销。
 
-### 与全量版的关系
+### 与 Full 版的关系
 
 | 项 | 说明 |
 |---|---|
-| 产出方式 | `build_lite.py` 独立生成，**不修改全量版的任何产出逻辑** |
-| 白名单 | **直接沿用全量白名单**（274 条） |
-| 冲突处理 | Lite 屏蔽集会**剔除全量白名单中的域名**，杜绝两版结论相反 |
+| 产出方式 | `build_lite.py` 独立生成，**不修改 Full 版的任何产出逻辑** |
+| 白名单 | **直接沿用 Full 版白名单**（278 条） |
+| 冲突处理 | Lite 屏蔽集会**剔除 Full 版白名单中的域名**，杜绝两版结论相反 |
 | 订阅关系 | 两版可单独订阅，也可同时订阅（同时订阅时 Lite 是子集，无副作用） |
 
 ### 组成来源（按优先级）
@@ -235,7 +280,7 @@ Lite 版把规则量压到全量的约 **27%**（约 14.6 万条，3.15 MB），
 | P4 | 1024_hosts | 成人/赌博站点 |
 | P5 | URLHaus（filter_11） | 恶意网站/钓鱼（安全类，可用 `--no-security` 去掉） |
 
-> 注意：全量版中的国际源（EasyList、EasyPrivacy、StevenBlack、Mvps、AdAway、YousList 等）**不参与 Lite 版**，这是体量下降的主要来源。
+> 注意：Full 版中的国际源（EasyList、EasyPrivacy、StevenBlack、Mvps、AdAway、YousList 等）**不参与 Lite 版**，这是体量下降的主要来源。
 
 ### 手动调整
 
@@ -249,7 +294,7 @@ py Lite\build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727
 
 ### 定位
 
-在 Lite 版基础上进一步压缩到 **约 12.8 万条（2.74 MB）**，适用于内存 256MB 上下的低配软路由。
+在 Lite 版基础上进一步压缩到 **约 12.9 万条（2.76 MB）**，适用于内存 256MB 上下的低配软路由。
 
 ### 与 Lite 版的差异
 
@@ -287,7 +332,7 @@ py Lite\build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727
 ### 手动调整
 
 ```bat
-py Slim\build_lite_slim.py                  :: 默认：无损去重，不裁剪（约 12.8 万条）
+py Slim\build_lite_slim.py                  :: 默认：无损去重，不裁剪（约 12.9 万条）
 py Slim\build_lite_slim.py --max 80000      :: 内存紧张时裁到 8 万条（保底清单强制保留）
 py Slim\build_lite_slim.py --with-security  :: 额外纳入 URLHaus 安全源（默认不纳入）
 ```
@@ -303,6 +348,51 @@ AdGuard Home 的规则内存开销约为 **1–2 KB/条**（随版本与配置�
 | 5 万（`--max 50000`） | 49–98 MB |
 
 > **该数值为估算，不是实测值**——准确占用需在目标设备上运行 AdGuard Home 后查看其内存统计。若 229MB 设备运行默认版吃力，请用 `--max` 下调。
+
+## 自定义名单（手动维护）
+
+除了自动拉取的上游源，本项目还支持两个**手动维护**的名单，位于 `Lists/` 目录，**参与全部四个版本（Full / Pro / Lite / Slim）的构建**：
+
+| 文件 | 作用 |
+|---|---|
+| `Lists/whitelist.txt` | **放行**被上游误拦的域名 |
+| `Lists/blocklist.txt` | **拦截**上游未覆盖的域名 |
+
+### 书写格式
+
+两种写法都支持，任选其一（大小写不敏感）：
+
+```text
+# 裸域名
+example.com
+
+# AdGuard 语法
+@@||example.com^      ← 白名单写法
+||example.com^        ← 拦截名单写法
+```
+
+- 以 `!` 或 `#` 开头的行是注释，空行忽略
+- **写主域即可覆盖全部子域**（AdGuard Home 中 `@@||example.com^` 已含子域）
+- 不支持通配符（`*.example.com`）、路径（`a.com/path`）、`$` 修饰符——这类写法会被忽略并打印警告
+
+### 冲突处理
+
+| 情况 | 处理 |
+|---|---|
+| 域名同时写在 whitelist 与 blocklist | **白名单优先**，blocklist 中该条被忽略并打印警告 |
+| 手写白名单的域名同时在上游黑名单中 | 该域及其子域的上游黑名单条目被**自动移除**（避免既拦又放） |
+| 手写拦截名单的域名同时在全量白名单中 | 该条被忽略（兜底，防止自我矛盾） |
+
+### 生效方式
+
+推送到仓库后，GitHub Actions 会在下次运行时自动纳入，无需改脚本。产物头部会记录当前生效的条数：
+
+```text
+! Manual whitelist: Lists/whitelist.txt  (0 domains)
+! Manual blocklist: Lists/blocklist.txt  (0 domains)
+```
+
+> 两个文件默认只有注释、不含任何规则，因此初始状态下对产物**零影响**。
 
 ## 数据处理规则
 

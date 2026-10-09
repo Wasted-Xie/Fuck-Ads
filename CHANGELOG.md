@@ -6,6 +6,83 @@
 
 ---
 
+## [2.3.0] - 2026-10-09
+
+**规则集拆分为四版本**：原先的「全量版」被拆为 **Full 版（约 32 万条）** 与 **Pro 版（约 53 万条）**，Lite / Slim 保持不变。
+
+### 变更
+
+#### 版本拆分
+
+| 版本 | 产物 | 规则量 | 上游源 |
+|---|---|---|---|
+| **Full 版** | `out/merged_dns_rules.txt` | 约 32 万 | 21 个（3 主源 + 18 附加源） |
+| **Pro 版** | `out/merged_dns_rules_pro.txt` | 约 53 万 | 31 个（3 主源 + 28 附加源） |
+| Lite 版 | `out/merged_dns_rules_lite.txt` | 约 14.6 万 | 国内向 12 个 |
+| Slim 版 | `out/merged_dns_rules_slim.txt` | 约 12.9 万 | 仅国内向 11 个 |
+
+- **Full 版**回到 v2.0.0 时代的源构成（18 个附加源），规则量约 32 万条
+- **Pro 版**保留 v2.1.0 引入的 10 个补充源（Hblock / Spam404 / halflife / AWAvenue / AdGuard Chinese / scamblocklist / NoCoin / Peter Lowe / Dan Pollock / neohosts），规则量约 53 万条
+- `out/merged_dns_rules.txt` **文件名与订阅地址不变**，仍是 32 万条的 Full 版，既有订阅者不受影响
+
+#### 目录与脚本
+
+- 新增 `Pro/merge_dedup_pro.py`：复用 `Full/merge_dedup.py` 的合并逻辑（`main()` 已参数化为接受 `out_file` / `sources` / `title`），仅替换输入与输出，避免两套实现漂移
+- `fetch_sources.py`：新增 `PRO_EXTRA_SOURCES`（10 个），下载到 `Cache/sources_pro/`，与 Full 用的 `Cache/sources/` 隔离
+- `integrate_sources.py`：新增 `--src-dirs` / `--out` / `--out-excluded` / `--title` / `--only` 参数，支持一次清洗多个目录并输出到不同文件
+- `fetch_sources.py` 新增 `prune_stale()`：删除源目录中不属于本版本的残留文件
+
+### 修复
+
+- **源目录残留污染**：`actions/cache` 会恢复上次运行的 `Cache/sources/`，其中残留的 Pro 源会导致 Full 版规则量错误膨胀到 53 万。`prune_stale()` 在每次拉取前清理非本版本文件，已实测验证（放入假残留文件 → 被自动删除）
+
+### 说明
+
+- Lite / Slim 仍以 **Full 版**产物作为白名单基准（Pro 版白名单多 1 条 `tracker.namitiyu.com`，不影响两者）
+- 四个版本共用同一份手写名单（`Lists/whitelist.txt` 与 `Lists/blocklist.txt`）
+- Actions 工作流新增 Pro 构建与 Pro 产物的 jsDelivr purge；`actions/cache` 路径加入 `Cache/sources_pro`
+- 四份产物均通过幂等性验证
+
+---
+
+## [2.2.0] - 2026-10-07
+
+**新增自定义名单**：支持手动维护白名单与拦截名单，参与全部三个版本的构建。
+
+### 新增
+
+#### `Lists/` 目录与两个手动维护的名单
+
+| 文件 | 作用 |
+|---|---|
+| `Lists/whitelist.txt` | 放行被上游误拦的域名 |
+| `Lists/blocklist.txt` | 拦截上游未覆盖的域名 |
+
+- **格式**：两种写法都支持——裸域名（`example.com`）或 AdGuard 语法（`@@||example.com^` / `||example.com^`），大小写不敏感，`!` 与 `#` 开头为注释
+- **范围**：三个版本全部生效。Full 直接读取；Lite / Slim 通过继承全量白名单自动获得白名单，拦截名单则单独注入
+- **冲突处理**：
+  - 两个手写文件互相冲突 → **白名单优先**，并打印警告
+  - 手写白名单与上游黑名单冲突 → 自动移除上游黑名单条目（含子域），避免同一域名既拦又放
+  - 手写拦截名单与全量白名单冲突 → 该条被忽略（兜底）
+- **优先级**：手写拦截名单在 Lite / Slim 中获得最高优先级，即使使用 `--max` 裁剪也不会被挤出
+- **格式校验**：无法解析的行（通配符、路径、`$` 修饰符、无点号等）会被忽略并在 stderr 打印行号与内容，不影响构建
+
+#### 公共解析函数
+
+`integrate_sources.py` 新增 `parse_domain()` 与 `load_manual_list()`，供三个版本共用，避免重复实现。
+
+### 说明
+
+- 两个名单文件默认只含注释、无任何规则，因此**初始状态下对产物零影响**（实测：空名单时产物与改动前完全一致，532,868 / 145,737 / 128,339，白名单 278）
+- 产物头部新增两行记录手写名单的生效条数，便于审计：
+  ```text
+  ! Manual whitelist: Lists/whitelist.txt  (0 domains)
+  ! Manual blocklist: Lists/blocklist.txt  (0 domains)
+  ```
+- 已通过边界测试：非法格式告警但不中断；空名单、幂等性、三版本一致性均验证通过
+
+---
+
 ## [2.1.0] - 2026-10-06
 
 **上游源扩充**：从 [BlueSkyXN/AdGuardHomeRules](https://github.com/BlueSkyXN/AdGuardHomeRules) 引用的规则源中补充引入 10 个本项目原先未使用的源（附加源 18 → 28 个），全量版规则量由约 31 万条增至约 53 万条。同时**彻底移除 360 品牌保护**。

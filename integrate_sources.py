@@ -28,6 +28,11 @@ OUT_DIR = os.path.join(BASE_DIR, "out")
 OUT_RULES = os.path.join(OUT_DIR, "integrated_extra.txt")
 OUT_EXCLUDED = os.path.join(OUT_DIR, "excluded_redirect_entries.txt")
 
+# 手动维护的名单目录（入库）。三个版本共用同一套解析逻辑。
+LISTS_DIR = os.path.join(BASE_DIR, "Lists")
+WHITELIST_FILE = os.path.join(LISTS_DIR, "whitelist.txt")
+BLOCKLIST_FILE = os.path.join(LISTS_DIR, "blocklist.txt")
+
 # 整体排除的源（本身就是翻墙/加速专用，不含去广告内容）
 EXCLUDE_SOURCES = {"googlehosts"}
 
@@ -54,6 +59,48 @@ BAD_LAST_LABELS = {
     "pdf", "doc", "docx", "xls", "xlsx", "ppt", "pptx", "csv", "wasm", "map",
     "m3u8", "ts", "flv", "avi", "mkv", "torrent", "bin", "dat", "log",
 }
+
+
+def parse_domain(line):
+    """从一行手写名单中取出纯域名；无法识别时返回 None。
+
+    支持两种写法：
+        example.com          -> example.com
+        @@||example.com^     -> example.com
+        ||example.com^       -> example.com
+    以 ! 或 # 开头（以及 [ 开头）的行视为注释，返回 None。
+    带路径、通配符或 $ 修饰符的写法不支持，一律返回 None 交由调用方告警。
+    """
+    s = line.strip()
+    if not s or s.startswith("!") or s.startswith("#") or s.startswith("["):
+        return None
+    if s.startswith("@@"):
+        s = s[2:]
+    if s.startswith("||"):
+        s = s[2:]
+    s = s.strip().rstrip("^").strip().lower()
+    if not s or "/" in s or "$" in s or "*" in s or " " in s:
+        return None
+    if "." not in s or s.startswith(".") or s.endswith("."):
+        return None
+    return s
+
+
+def load_manual_list(path):
+    """读取一个手动维护的名单文件，返回 (域名集合, 无法解析的 (行号, 内容) 列表)。"""
+    domains, bad_lines = set(), []
+    if not os.path.exists(path):
+        return domains, bad_lines
+    with open(path, "r", encoding="utf-8") as f:
+        for lineno, raw_line in enumerate(f, 1):
+            if not raw_line.strip() or raw_line.strip().startswith(("!", "#", "[")):
+                continue
+            dom = parse_domain(raw_line)
+            if dom:
+                domains.add(dom)
+            else:
+                bad_lines.append((lineno, raw_line.strip()))
+    return domains, bad_lines
 
 
 def valid_domain(d):
@@ -157,13 +204,39 @@ def parse_line(line):
 
 
 def main():
-    if not os.path.isdir(SRC_DIR):
-        print(f"[ERROR] source dir not found: {SRC_DIR}")
-        sys.exit(1)
+    import argparse
+    ap = argparse.ArgumentParser(
+        description="清洗附加上游源，输出可被 merge_dedup 合并的规则文件")
+    ap.add_argument("--src-dirs", nargs="+", default=[SRC_DIR],
+                    help="待清洗的源目录，可指定多个（默认 Cache/sources）")
+    ap.add_argument("--out", default=OUT_RULES, help="输出规则文件路径")
+    ap.add_argument("--out-excluded", default=OUT_EXCLUDED,
+                    help="被判定为重定向而排除的条目输出路径")
+    ap.add_argument("--title", default="Integrated extra sources (non-VPN only)",
+                    help="输出文件头部标题")
+    ap.add_argument("--only", nargs="*", default=None,
+                    help="白名单式限定：只处理这些源名（不带 .txt）。"
+                         "用于防止目录中残留的非本版本源被误纳入")
+    args = ap.parse_args()
 
-    files = sorted(f for f in os.listdir(SRC_DIR) if f.endswith(".txt"))
+    src_dirs = [d if os.path.isabs(d) else os.path.join(BASE_DIR, d)
+                for d in args.src_dirs]
+    only = set(args.only) if args.only else None
+
+    files = []
+    for d in src_dirs:
+        if not os.path.isdir(d):
+            print(f"[ERROR] source dir not found: {d}", file=sys.stderr)
+            sys.exit(1)
+        for f in sorted(os.listdir(d)):
+            if not f.endswith(".txt"):
+                continue
+            if only is not None and os.path.splitext(f)[0] not in only:
+                print(f"[SKIP] {f}: not in --only list (stale file?)")
+                continue
+            files.append(os.path.join(d, f))
     if not files:
-        print(f"[ERROR] no source files in {SRC_DIR}")
+        print(f"[ERROR] no source files in {src_dirs}", file=sys.stderr)
         sys.exit(1)
 
     all_blocks = set()
@@ -171,9 +244,9 @@ def main():
     excluded_lines = []
     report = []
 
-    for fn in files:
+    for path in files:
+        fn = os.path.basename(path)
         name = os.path.splitext(fn)[0]
-        path = os.path.join(SRC_DIR, fn)
         with open(path, "r", encoding="utf-8", errors="replace") as fh:
             lines = fh.read().splitlines()
 
@@ -222,11 +295,11 @@ def main():
     sorted_blocks = sorted(all_blocks)
     sorted_allows = sorted(all_allows)
 
-    os.makedirs(OUT_DIR, exist_ok=True)
-    with open(OUT_RULES, "w", encoding="utf-8", newline="\n") as fh:
+    os.makedirs(os.path.dirname(args.out), exist_ok=True)
+    with open(args.out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("!\n")
-        fh.write("! Title: Integrated extra sources (non-VPN only)\n")
-        fh.write("! Description: 附加上游源整合产物，已排除翻墙/加速/重定向类条目；由 merge_dedup.py 合并\n")
+        fh.write(f"! Title: {args.title}\n")
+        fh.write("! Description: 附加上游源整合产物，已排除翻墙/加速/重定向类条目；由 merge_dedup 合并\n")
         fh.write(f"! Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         fh.write(f"! Block rules: {len(sorted_blocks)}\n")
         fh.write(f"! Whitelist rules: {len(sorted_allows)}\n")
@@ -241,7 +314,7 @@ def main():
             fh.write("\n".join("@@" + "||" + d + "^" for d in sorted_allows))
             fh.write("\n")
 
-    with open(OUT_EXCLUDED, "w", encoding="utf-8", newline="\n") as fh:
+    with open(args.out_excluded, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("# 判定为重定向(翻墙/加速/解锁)而排除的条目，格式: IP<TAB>域名<TAB>[来源]\n")
         fh.write("\n".join(excluded_lines))
         fh.write("\n")
@@ -270,8 +343,8 @@ def main():
     print(f"Unique whitelist domains                 : {len(sorted_allows)}")
     print(f"Blocklist/whitelist conflicts resolved   : {len(conflict)}")
     print(f"Redirect (anti-censorship) lines excluded: {len(excluded_lines)}")
-    print(f"Output rules    : {os.path.relpath(OUT_RULES, BASE_DIR)}")
-    print(f"Output excluded : {os.path.relpath(OUT_EXCLUDED, BASE_DIR)}")
+    print(f"Output rules    : {os.path.relpath(args.out, BASE_DIR)}")
+    print(f"Output excluded : {os.path.relpath(args.out_excluded, BASE_DIR)}")
 
 
 if __name__ == "__main__":

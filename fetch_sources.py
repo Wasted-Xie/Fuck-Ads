@@ -19,6 +19,7 @@ import urllib.error
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RAW_DIR = os.path.join(BASE_DIR, "Cache", "raw")
 EXTRA_DIR = os.path.join(BASE_DIR, "Cache", "sources")
+PRO_EXTRA_DIR = os.path.join(BASE_DIR, "Cache", "sources_pro")
 
 UA = "Mozilla/5.0 (compatible; fuck-ads-updater/1.0)"
 TIMEOUT = 45
@@ -45,7 +46,7 @@ PRIMARY_SOURCES = (
     )),
 )
 
-# 附加源：失败仅告警；GitHub 源自动附加镜像回退
+# 附加源（Full 版使用）：失败仅告警；GitHub 源自动附加镜像回退
 EXTRA_SOURCES = (
     ("yhosts.txt", "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts"),
     ("ad-wars.txt", "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts"),
@@ -65,7 +66,11 @@ EXTRA_SOURCES = (
     ("easylistchina.txt", "https://easylist-downloads.adblockplus.org/easylistchina.txt"),
     ("idontcarecookies.txt", "https://www.i-dont-care-about-cookies.eu/abp/"),
     ("antiadblock.txt", "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt"),
-    # ---- 以下为新增源（取自 BlueSkyXN/AdGuardHomeRules 引用但本项目原先未使用的列表）----
+)
+
+# Pro 版专用附加源（10 个）：取自 BlueSkyXN/AdGuardHomeRules 引用但本项目原先未使用的列表。
+# 单独存放在 Cache/sources_pro/，只有 Pro 版读取，Full 版不碰。
+PRO_EXTRA_SOURCES = (
     ("halflife.txt", "https://raw.githubusercontent.com/sbwml/halflife-list/master/ad.txt"),
     ("awavenue.txt", "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt"),
     ("spam404.txt", "https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt"),
@@ -146,9 +151,32 @@ def fetch_one(name, urls, dest_dir, critical):
     return "missing"
 
 
+def prune_stale(dest_dir, expected_names):
+    """删除目录中不属于本版本的 .txt 文件。
+
+    必要性：Actions 的 actions/cache 会恢复上一次运行的同名目录，若源在不同
+    版本间调整过归属，旧文件会残留并污染构建结果（例如 Full 版误纳入 Pro 源）。
+    """
+    if not os.path.isdir(dest_dir):
+        return
+    for fn in sorted(os.listdir(dest_dir)):
+        if not fn.endswith(".txt"):
+            continue
+        if fn not in expected_names:
+            path = os.path.join(dest_dir, fn)
+            os.remove(path)
+            print(f"[PRUNE] {os.path.basename(dest_dir)}/{fn} - not part of this version")
+
+
 def main():
     os.makedirs(RAW_DIR, exist_ok=True)
     os.makedirs(EXTRA_DIR, exist_ok=True)
+    os.makedirs(PRO_EXTRA_DIR, exist_ok=True)
+
+    # 清理各目录中的残留源，避免历史缓存影响本次构建
+    prune_stale(RAW_DIR, {n for n, _ in PRIMARY_SOURCES} | {n for n, _ in LITE_SOURCES})
+    prune_stale(EXTRA_DIR, {n for n, _ in EXTRA_SOURCES})
+    prune_stale(PRO_EXTRA_DIR, {n for n, _ in PRO_EXTRA_SOURCES})
 
     stats = {"updated": 0, "cached": 0, "missing": 0}
     critical_missing = []
@@ -166,6 +194,11 @@ def main():
     print("==== extra sources (sources/) ====")
     for name, url in EXTRA_SOURCES:
         result = fetch_one(name, with_mirrors(url), EXTRA_DIR, critical=False)
+        stats[result] += 1
+
+    print("==== pro-only extra sources (sources_pro/) ====")
+    for name, url in PRO_EXTRA_SOURCES:
+        result = fetch_one(name, with_mirrors(url), PRO_EXTRA_DIR, critical=False)
         stats[result] += 1
 
     print("==== lite sources (raw/) ====")

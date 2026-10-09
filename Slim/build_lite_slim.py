@@ -32,6 +32,7 @@ DEFAULT_OUT = os.path.join(OUT_DIR, "merged_dns_rules_slim.txt")
 
 sys.path.insert(0, ROOT_DIR)
 import integrate_sources as integ                                # noqa: E402
+from integrate_sources import BLOCKLIST_FILE, load_manual_list    # noqa: E402
 
 # 国内规则源：(源名, 路径, 权重)
 #   权重越高，越优先保留其规则
@@ -198,6 +199,22 @@ def main():
         print(f"must-keep injected                 : +{len(missing_keep)}  {missing_keep}")
     else:
         print("must-keep injected                 : (all already present)")
+
+    # ---- 3b. 手动维护的拦截名单（Lists/blocklist.txt）----
+    # 放在白名单冲突清理之后注入，确保手写条目不会被白名单剔除；
+    # 同时给最高价值分，使其在 --max 裁剪时也不会被挤出。
+    manual_blocks, bl_bad = load_manual_list(BLOCKLIST_FILE)
+    for lineno, text in bl_bad:
+        print(f"[WARN] Lists/blocklist.txt:{lineno} 无法解析，已忽略: {text}",
+              file=sys.stderr)
+    manual_blocks -= allow_set              # 兜底：不与全量白名单冲突
+    manual_added = sorted(d for d in manual_blocks if d not in stage2)
+    for d in manual_added:
+        stage2.add(d)
+        value[d] = max(value[d], 100)
+        consensus[d] = max(consensus[d], 99)
+    print(f"manual blocklist injected          : {len(manual_blocks)} domains"
+          f"  (+{len(manual_added)} new)")
 
     # ---- 4. 有损：按价值排序（--max>0 时才裁剪）----
     def sort_key(d):

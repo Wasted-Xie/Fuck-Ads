@@ -19,22 +19,35 @@ RAW_DIR = os.path.join(ROOT_DIR, "Cache", "raw")
 OUT_DIR = os.path.join(ROOT_DIR, "out")
 OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules.txt")
 
+# 复用公共模块中的手写名单解析逻辑（Lite / Slim 同样使用它）
+sys.path.insert(0, ROOT_DIR)
+from integrate_sources import (                                   # noqa: E402
+    WHITELIST_FILE, BLOCKLIST_FILE, parse_domain, load_manual_list,
+)
+
 # Source definitions
-SOURCES = [
-    {"label": "URLHaus (AdGuard Hostlists #11)", "file": "filter_11.txt",
-     "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt"},
-    {"label": "GOODBYEADS dns", "file": "goodbyeads_dns.txt",
-     "url": "https://github.com/8680/GOODBYEADS (mirror ghfast.top)"},
-    {"label": "AdBlock DNS (217heidai)", "file": "adblockdns.txt",
-     "url": "https://github.com/217heidai/adblockfilters"},
-    {"label": "Integrated extra sources (28 lists)", "file": "integrated_extra.txt",
-     "path": os.path.join(OUT_DIR, "integrated_extra.txt"),
-     "url": "yhosts / ad-wars / 1024_hosts / AdAway / YousList / StevenBlack / anti-AD / "
-            "EasyList family / ADgk / CJX / mvps / Hblock / Spam404 / halflife / "
-            "AWAvenue / AdGuard Chinese / scamblocklist / NoCoin / Peter Lowe / "
-            "Dan Pollock / neohosts / i-dont-care-about-cookies / etc.",
-     "optional": True},
-]
+# 「附加源整合产物」这个条目由 build_sources() 按版本注入，因为 Full 与 Pro
+# 使用不同的整合文件（integrated_extra.txt / integrated_extra_pro.txt）。
+def build_sources(extra_path, extra_label, extra_url):
+    return [
+        {"label": "URLHaus (AdGuard Hostlists #11)", "file": "filter_11.txt",
+         "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt"},
+        {"label": "GOODBYEADS dns", "file": "goodbyeads_dns.txt",
+         "url": "https://github.com/8680/GOODBYEADS (mirror ghfast.top)"},
+        {"label": "AdBlock DNS (217heidai)", "file": "adblockdns.txt",
+         "url": "https://github.com/217heidai/adblockfilters"},
+        {"label": extra_label, "file": os.path.basename(extra_path),
+         "path": extra_path, "url": extra_url, "optional": True},
+    ]
+
+
+FULL_EXTRA_LABEL = "Integrated extra sources (18 lists)"
+FULL_EXTRA_URL = ("yhosts / ad-wars / 1024_hosts / AdAway / YousList / StevenBlack / "
+                  "anti-AD / EasyList family / ADgk / CJX / mvps / "
+                  "i-dont-care-about-cookies / Adblock Warning Removal List")
+
+SOURCES = build_sources(os.path.join(OUT_DIR, "integrated_extra.txt"),
+                        FULL_EXTRA_LABEL, FULL_EXTRA_URL)
 
 def is_block_rule(line):
     return line.startswith("||")
@@ -69,11 +82,32 @@ def load_rules(path):
     return blocks, whites, total
 
 
-def main():
+def main(out_file=None, sources=None, title=None, description=None):
+    out_file = out_file or OUT_FILE
+    sources = sources if sources is not None else SOURCES
+    title = title or "Merged DNS blocklist (line-level dedup)"
     per_source = []
     all_blocks, all_whites = set(), set()
 
-    for src in SOURCES:
+    # ---- 手动维护的名单（优先级高于上游）----
+    manual_whitelist, wl_bad = load_manual_list(WHITELIST_FILE)
+    manual_blocklist, bl_bad = load_manual_list(BLOCKLIST_FILE)
+
+    for path, bad, label in ((WHITELIST_FILE, wl_bad, "whitelist"),
+                             (BLOCKLIST_FILE, bl_bad, "blocklist")):
+        for lineno, text in bad:
+            print(f"[WARN] {os.path.relpath(path, ROOT_DIR)}:{lineno} "
+                  f"无法解析，已忽略: {text}", file=sys.stderr)
+
+    # 两个手写名单冲突时以白名单为准
+    manual_conflict = manual_whitelist & manual_blocklist
+    if manual_conflict:
+        for d in sorted(manual_conflict):
+            print(f"[WARN] 域名同时出现在 whitelist 与 blocklist，按白名单处理: {d}",
+                  file=sys.stderr)
+        manual_blocklist -= manual_conflict
+
+    for src in sources:
         path = src.get("path") or os.path.join(RAW_DIR, src["file"])
         if not os.path.exists(path):
             if src.get("optional"):
@@ -87,6 +121,23 @@ def main():
         all_blocks |= blocks
         all_whites |= whites
 
+    # ---- 把手写拦截名单并入黑名单 ----
+    for d in manual_blocklist:
+        all_blocks.add("||" + d + "^")
+
+    # ---- 手写白名单：加入白名单，并从黑名单中移除同名条目 ----
+    for d in manual_whitelist:
+        all_whites.add("@@||" + d + "^")
+
+    # 上游黑名单中与手写白名单冲突的条目一律移除（含其子域，避免父域规则继续拦截）
+    manual_wl_removed = 0
+    for rule in list(all_blocks):
+        dom = rule[2:-1] if rule.startswith("||") and rule.endswith("^") else None
+        if dom and (dom in manual_whitelist
+                    or any(dom.endswith("." + w) for w in manual_whitelist)):
+            all_blocks.discard(rule)
+            manual_wl_removed += 1
+
     sorted_blocks = sorted(all_blocks)
     sorted_whites = sorted(all_whites)
 
@@ -95,8 +146,9 @@ def main():
 
     header = [
         "!",
-        "! Title: Merged DNS blocklist (line-level dedup)",
-        f"! Description: {len(per_source)} 个源按整行精确去重合并，白名单(@@)规则保留在文件末尾",
+        f"! Title: {title}",
+        description or (f"! Description: {len(per_source)} 个源按整行精确去重合并，"
+                        f"白名单(@@)规则保留在文件末尾"),
         f"! Generated: {stamp}",
         f"! Block rules: {len(sorted_blocks)}",
         f"! Whitelist rules: {len(sorted_whites)}",
@@ -104,6 +156,10 @@ def main():
     ]
     header += [f"! Source {i + 1}: {s['label']}  <-  {s['url']}"
                for i, s in enumerate(per_source)]
+    header += [
+        f"! Manual whitelist: Lists/whitelist.txt  ({len(manual_whitelist)} domains)",
+        f"! Manual blocklist: Lists/blocklist.txt  ({len(manual_blocklist)} domains)",
+    ]
     header.append("!")
 
     body = sorted_blocks + sorted_whites
@@ -116,12 +172,12 @@ def main():
                 if not ln.startswith("! Generated:")]
 
     changed = True
-    if os.path.exists(OUT_FILE):
-        with open(OUT_FILE, "r", encoding="utf-8") as f:
+    if os.path.exists(out_file):
+        with open(out_file, "r", encoding="utf-8") as f:
             old_text = f.read()
         changed = content_key(old_text) != content_key(new_text)
     if changed:
-        with open(OUT_FILE, "w", encoding="utf-8", newline="\n") as f:
+        with open(out_file, "w", encoding="utf-8", newline="\n") as f:
             f.write(new_text)
         out_status = "written (content changed)"
     else:
@@ -135,12 +191,17 @@ def main():
         print(f"{s['label']:<34} rules={s['total']:>7}  "
               f"(block {s['blocks']} / white {s['whites']})")
     print("==== Merge dedup result ====")
+    print(f"Manual whitelist domains     : {len(manual_whitelist)}  (Lists/whitelist.txt)")
+    print(f"Manual blocklist domains     : {len(manual_blocklist)}  (Lists/blocklist.txt)")
+    if manual_conflict:
+        print(f"  whitelist/blocklist clashes: {len(manual_conflict)}  (whitelist wins)")
+    print(f"Upstream blocks removed by manual whitelist: {manual_wl_removed}")
     print(f"Total input rule lines       : {sum_total}")
     print(f"Block rules after dedup      : {len(sorted_blocks)}")
     print(f"Whitelist rules after dedup  : {len(sorted_whites)}")
     print(f"Total after dedup            : {len(sorted_blocks) + len(sorted_whites)}")
     print(f"Duplicate lines removed      : {sum_total - len(sorted_blocks) - len(sorted_whites)}")
-    print(f"Output file                  : {os.path.relpath(OUT_FILE, ROOT_DIR)}  [{out_status}]")
+    print(f"Output file                  : {os.path.relpath(out_file, ROOT_DIR)}  [{out_status}]")
 
 
 if __name__ == "__main__":
