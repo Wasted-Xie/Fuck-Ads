@@ -1,8 +1,8 @@
 !
 ! Title: Merged DNS blocklist (line-level dedup)
 ! Description: 4 个源按整行精确去重合并，白名单(@@)规则保留在文件末尾
-! Generated: 2026-10-09 10:33:44
-! Block rules: 318396
+! Generated: 2026-10-09 10:47:05
+! Block rules: 318397
 ! Whitelist rules: 280
 !
 ! Source 1: URLHaus (AdGuard Hostlists #11)  <-  https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt
@@ -157157,6 +157157,7 @@
 ||medical.carway.net^
 ||medical.response.midmark.com^
 ||medical4u.eu^
+||medicalbeer.pro^
 ||medicalcandid.com^
 ||medicalcircle.net^
 ||medicalhero.fr^
