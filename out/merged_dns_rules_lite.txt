@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-09 10:33:46
-! Block rules: 146453
-! Whitelist rules: 280
+! Generated: 2026-10-09 13:12:56
+! Block rules: 146454
+! Whitelist rules: 281
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 5555 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100674 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6080 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6081 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -4037,6 +4037,7 @@
 ||6jm3ujowjxpg63hx.7lp3hrzqwzryni94.cyou^
 ||6jtqdplfz7.com^
 ||6jypv36yyh2jj54jg.cfd^
+||6k1alauto.com^
 ||6k2fehacp.com^
 ||6k2yw85g9cpf.rlexjviqhpwvfjl4hwnf7.cyou^
 ||6knlhnjfv.com^
@@ -146574,6 +146575,7 @@
 @@||data.orders.costco.com^
 @@||data.promo.timhortons.ca^
 @@||developers.google.com^
+@@||doh.360.cn^
 @@||dot.360.cn^
 @@||download.adguard.com^
 @@||download.jumpw.com^

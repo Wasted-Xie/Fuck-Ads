@@ -1,15 +1,15 @@
 !
 ! Title: Merged DNS blocklist (line-level dedup)
 ! Description: 4 个源按整行精确去重合并，白名单(@@)规则保留在文件末尾
-! Generated: 2026-10-09 10:47:05
-! Block rules: 318397
-! Whitelist rules: 280
+! Generated: 2026-10-09 13:12:54
+! Block rules: 318420
+! Whitelist rules: 281
 !
 ! Source 1: URLHaus (AdGuard Hostlists #11)  <-  https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt
 ! Source 2: GOODBYEADS dns  <-  https://github.com/8680/GOODBYEADS (mirror ghfast.top)
 ! Source 3: AdBlock DNS (217heidai)  <-  https://github.com/217heidai/adblockfilters
 ! Source 4: Integrated extra sources (18 lists)  <-  yhosts / ad-wars / 1024_hosts / AdAway / YousList / StevenBlack / anti-AD / EasyList family / ADgk / CJX / mvps / i-dont-care-about-cookies / Adblock Warning Removal List
-! Manual whitelist: Lists/whitelist.txt  (2 domains)
+! Manual whitelist: Lists/whitelist.txt  (3 domains)
 ! Manual blocklist: Lists/blocklist.txt  (0 domains)
 ! Manual mixed    : Lists/mixed.txt  (1146 rules / 152 comments, passed through verbatim)
 !
@@ -6183,6 +6183,7 @@
 ||6jm3ujowjxpg63hx.7lp3hrzqwzryni94.cyou^
 ||6jtqdplfz7.com^
 ||6jypv36yyh2jj54jg.cfd^
+||6k1alauto.com^
 ||6k2fehacp.com^
 ||6k2yw85g9cpf.rlexjviqhpwvfjl4hwnf7.cyou^
 ||6kflczrtc901.app.wefar.dev^
@@ -49704,6 +49705,7 @@
 ||bubblestat.com^
 ||bubblesweetcake.com^
 ||bubblewrapp.actonservice.com^
+||bubbly-guarantee.com^
 ||bubbly-sound.com^
 ||bubblyaction.com^
 ||bubblyzucchini.com^
@@ -67975,6 +67977,7 @@
 ||czechtradextrade.com^
 ||czeqgnnrivwmp.space^
 ||czernik.org^
+||czeuvjzicvhng.site^
 ||czf.cchfjz.com^
 ||czfjzpxdykhtz.space^
 ||czfkfrlqbbqjb.website^
@@ -99851,6 +99854,7 @@
 ||fvhdt.jodilomask.com^
 ||fvhzdtqprdoqq.online^
 ||fvibcxczgkhmd.website^
+||fvijnsuqxulfq.website^
 ||fvjjhpxpeaflj.space^
 ||fvk6k2jrdu.com^
 ||fvkobfbmfdjhp.website^
@@ -103750,6 +103754,7 @@
 ||glasstaken.com^
 ||glassvisual.pro^
 ||glasweld.net.mydays.de^
+||glauberfaultyabatua.cyou^
 ||glaucomaspiltunmatched.com^
 ||glaucous-fulvous-clutch.shop^
 ||glaverinsea.shop^
@@ -104143,6 +104148,7 @@
 ||glynneathdental.com^
 ||glyphblendvault.live^
 ||glyrcioxzpvvh.site^
+||glyydavkqrigx.website^
 ||glyyfm.hansungmall.net^
 ||glzsji.nordman.ru^
 ||gm-adkpf.gamemeca.com^
@@ -119129,6 +119135,7 @@
 ||hxuaodojgvxbt.website^
 ||hxvksgwv.luggagehero.com^
 ||hxvrvjts.e-byte.gr^
+||hxyeghyjvkqga.site^
 ||hxyzkpzzbzekl.site^
 ||hxzdmcgrkmxsz.website^
 ||hxzjiz.msckreuzfahrten.at^
@@ -119736,6 +119743,7 @@
 ||i83.mp5wyw11hyuzx82.cyou^
 ||i867.journal-advocate.com^
 ||i8ejqr.cfd^
+||i8kplh5mihj6ij1tlki16zj5c5ur.rest^
 ||i8xkjci7nd.com^
 ||i90ptshd.top^
 ||i953.greeleytribune.com^
@@ -126502,6 +126510,7 @@
 ||iqncjxw.com^
 ||iqniixil.7stax.com^
 ||iqniixil.try7stax.com^
+||iqnnkpmeaopaj.space^
 ||iqoczawzdbpai.space^
 ||iqofmyendnfju.site^
 ||iqoi.cn^
@@ -130175,6 +130184,7 @@
 ||jrolyrlmyrewj.top^
 ||jrolyrlmyrzrq.top^
 ||jromineconstruction.com^
+||jrozc69o.xyz^
 ||jrpfekf.angelfire.com^
 ||jrpkizae.com^
 ||jrpt.jrptweb.org^
@@ -133392,6 +133402,7 @@
 ||kkmacsqsbf.info^
 ||kkmjv.certapet.com^
 ||kknka.tndetoxcenter.com^
+||kknxsghlsbtik.website^
 ||kkopshcenbxot.site^
 ||kkpgv.kankan.com^
 ||kkpgv2.kankan.com^
@@ -134209,6 +134220,7 @@
 ||kpgzka.halegroves.com^
 ||kphgg.tulabluerope.com^
 ||kphjjanyryoih.site^
+||kphllpsnaqgrc.website^
 ||kphsqtglfxqim.space^
 ||kphxk.jaxxliving.com^
 ||kpi.mysoberhome.nl^
@@ -136974,6 +136986,7 @@
 ||learn.wolterskluwerlb.com^
 ||learn.wolterskluwerlr.com^
 ||learn.wow.wowforbusiness.com^
+||learnblowby.com^
 ||learnihinder.com^
 ||learning.heinemann.com^
 ||learning.hmhco.com^
@@ -145480,6 +145493,7 @@
 ||loansales.cbre.com^
 ||loansome-rare.xyz^
 ||loathesparkledisperse.com^
+||lobaacchoeuvo.online^
 ||lobariadizen.shop^
 ||lobarunextrade.com^
 ||lobbersfissive.shop^
@@ -148786,6 +148800,7 @@
 ||lupper.se^
 ||lups1.site^
 ||luptbq.lampsplus.com^
+||luqmwoap.in^
 ||luqqvdnqqgvqp.online^
 ||luqtazaqdcgyo.online^
 ||luqyvp.pandorashop.gr^
@@ -193698,6 +193713,7 @@
 ||qydpr.naternalvitamins.com.au^
 ||qyeavpkdevzzc.site^
 ||qyel.cn^
+||qyexjolwpv6wvgbet5wp.cfd^
 ||qygftliqdmhsu.space^
 ||qygpcxfqqvfhr.online^
 ||qygxrh.vandykes.com^
@@ -206505,6 +206521,7 @@
 ||searchteria.co.jp^
 ||searchtoexplore.com^
 ||searchtweaker.com^
+||searchusques.com^
 ||searchvity.com^
 ||searchwe.com^
 ||searcprol.store^
@@ -217676,6 +217693,7 @@
 ||sharethru.com^
 ||sharevault.cloud^
 ||sharexy.com^
+||shariathexarchdedans.qpon^
 ||sharing.kptncook.com^
 ||shark.rockyourlife.de^
 ||sharkedmarque.com^
@@ -226985,6 +227003,7 @@
 ||sorenad.com^
 ||soresidewalk.com^
 ||soresneeze.com^
+||soresripieno.com^
 ||soretaplundexar.org^
 ||sorethunder.com^
 ||soretrain.com^
@@ -271382,6 +271401,7 @@
 ||unshutcaitiff.com^
 ||unsightlyaffect.pro^
 ||unsilcatap.store^
+||unsizedeffray.com^
 ||unskilfulunpredictable.com^
 ||unskilledaccompanimentcircumstances.com^
 ||unslackyardmanseskin.cfd^
@@ -279023,6 +279043,7 @@
 ||vviav.leftonfriday.com^
 ||vvikao.brighton.com^
 ||vvjacrtsivivq.online^
+||vvjfyahvji.com^
 ||vvktyh.yotsuyagakuin.com^
 ||vvladxqdlpihl.online^
 ||vvldgmgejrhja.online^
@@ -313352,6 +313373,7 @@
 ||yeuszfvmmzsng.website^
 ||yev.moviesdirectpro.com^
 ||yevvzltyoxbuy.website^
+||yevzxhxxmukvi.online^
 ||yewrcd.govoyages.com^
 ||yewsgooney.com^
 ||yexex.comfortykive.xyz^
@@ -313692,6 +313714,7 @@
 ||yivxzt.doctor-agent.com^
 ||yiwanuu.com^
 ||yiwk.com^
+||yiwnwjzhlce.com^
 ||yiwqcxwajqouq.website^
 ||yixhy1vpln8bjuy1.cfd^
 ||yixui.com^
@@ -318512,6 +318535,7 @@
 @@||data.orders.costco.com^
 @@||data.promo.timhortons.ca^
 @@||developers.google.com^
+@@||doh.360.cn^
 @@||dot.360.cn^
 @@||download.adguard.com^
 @@||download.jumpw.com^
