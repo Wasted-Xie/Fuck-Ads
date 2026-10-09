@@ -23,7 +23,7 @@ OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules.txt")
 sys.path.insert(0, ROOT_DIR)
 from integrate_sources import (                                   # noqa: E402
     WHITELIST_FILE, BLOCKLIST_FILE, MIXED_FILE,
-    parse_domain, load_manual_list, load_mixed_list,
+    parse_domain, load_manual_list, load_verbatim_rules,
 )
 
 # Source definitions
@@ -93,13 +93,15 @@ def main(out_file=None, sources=None, title=None, description=None):
     # ---- 手动维护的名单（优先级高于上游）----
     # 优先级：whitelist.txt > mixed.txt 的 @@ 放行 > blocklist.txt
     #         > mixed.txt 的拦截 > 上游源
+    #
+    # mixed.txt 采用「原样透传」：其中的规则（含 $important 等修饰符、
+    # * 通配符、@@ 前缀）不经过域名解析，直接原文写入产物，交由 AdGuard Home
+    # 判定。这样它能作为 AGH 自定义规则的完整副本，能力不受本项目格式限制。
     manual_whitelist, wl_bad = load_manual_list(WHITELIST_FILE)
     manual_blocklist, bl_bad = load_manual_list(BLOCKLIST_FILE)
-    mixed_allow, mixed_block, mx_bad = load_mixed_list(MIXED_FILE)
+    mixed_vlines, mixed_nrules, mixed_ncomments = load_verbatim_rules(MIXED_FILE)
 
-    for path, bad in ((WHITELIST_FILE, wl_bad),
-                      (BLOCKLIST_FILE, bl_bad),
-                      (MIXED_FILE, mx_bad)):
+    for path, bad in ((WHITELIST_FILE, wl_bad), (BLOCKLIST_FILE, bl_bad)):
         for lineno, text in bad:
             print(f"[WARN] {os.path.relpath(path, ROOT_DIR)}:{lineno} "
                   f"无法解析，已忽略: {text}", file=sys.stderr)
@@ -112,19 +114,9 @@ def main(out_file=None, sources=None, title=None, description=None):
                   file=sys.stderr)
         manual_blocklist -= manual_conflict
 
-    # mixed.txt 的放行条目与 whitelist.txt 同级；其拦截条目则在 blocklist 之后
-    mixed_conflict = (mixed_allow & manual_blocklist) | (mixed_block & manual_whitelist)
-    if mixed_conflict:
-        for d in sorted(mixed_conflict):
-            print(f"[WARN] 域名在 mixed.txt 与单用途名单中冲突，按放行处理: {d}",
-                  file=sys.stderr)
-    manual_blocklist -= mixed_allow
-    mixed_block -= manual_whitelist
-    mixed_block -= mixed_allow
-
     # 合并后的总白名单 / 总拦截（手写部分）
-    manual_whitelist_all = manual_whitelist | mixed_allow
-    manual_blocklist_all = manual_blocklist | mixed_block
+    manual_whitelist_all = manual_whitelist
+    manual_blocklist_all = manual_blocklist
 
     for src in sources:
         path = src.get("path") or os.path.join(RAW_DIR, src["file"])
@@ -179,12 +171,21 @@ def main(out_file=None, sources=None, title=None, description=None):
         f"! Manual whitelist: Lists/whitelist.txt  ({len(manual_whitelist)} domains)",
         f"! Manual blocklist: Lists/blocklist.txt  ({len(manual_blocklist)} domains)",
         f"! Manual mixed    : Lists/mixed.txt  "
-        f"(allow {len(mixed_allow)} / block {len(mixed_block)})",
+        f"({mixed_nrules} rules / {mixed_ncomments} comments, passed through verbatim)",
     ]
     header.append("!")
 
     body = sorted_blocks + sorted_whites
-    new_text = "\n".join(header + body + [""])
+
+    # mixed.txt 的**全部行**（含注释分组与带修饰符的规则）原样追加到文件末尾，
+    # 保持与源文件一致的顺序，由 AdGuard Home 自行判定优先级。
+    # 它们不参与上面的去重统计。
+    mixed_section = []
+    if mixed_vlines:
+        mixed_section = ["", "! ==== Lists/mixed.txt (verbatim) ===="]
+        mixed_section += mixed_vlines
+
+    new_text = "\n".join(header + body + mixed_section + [""])
 
     # Rewrite only when something besides the generated timestamp changed,
     # so a scheduled run with identical rules creates no git commit.
@@ -214,11 +215,10 @@ def main(out_file=None, sources=None, title=None, description=None):
     print("==== Merge dedup result ====")
     print(f"Manual whitelist domains     : {len(manual_whitelist)}  (Lists/whitelist.txt)")
     print(f"Manual blocklist domains     : {len(manual_blocklist)}  (Lists/blocklist.txt)")
-    print(f"Manual mixed allow/block     : {len(mixed_allow)} / {len(mixed_block)}  (Lists/mixed.txt)")
+    print(f"Manual mixed (verbatim)      : {mixed_nrules} rules / {mixed_ncomments} comments"
+          f"  (Lists/mixed.txt)")
     if manual_conflict:
         print(f"  whitelist/blocklist clashes: {len(manual_conflict)}  (whitelist wins)")
-    if mixed_conflict:
-        print(f"  mixed-vs-single clashes    : {len(mixed_conflict)}  (allow wins)")
     print(f"Upstream blocks removed by manual whitelist: {manual_wl_removed}")
     print(f"Total input rule lines       : {sum_total}")
     print(f"Block rules after dedup      : {len(sorted_blocks)}")

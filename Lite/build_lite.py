@@ -32,7 +32,7 @@ OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules_lite.txt")
 sys.path.insert(0, ROOT_DIR)
 import integrate_sources as integ                                # noqa: E402
 from integrate_sources import (                                   # noqa: E402
-    BLOCKLIST_FILE, MIXED_FILE, load_manual_list, load_mixed_list,
+    BLOCKLIST_FILE, MIXED_FILE, load_manual_list, load_verbatim_rules,
 )
 
 # 国内向源：(标识, 路径, 说明, 优先级) —— 优先级数字越小越先保留
@@ -118,23 +118,20 @@ def main():
     dropped_by_whitelist = {d for d in origin_prio if d in allow_set}
     candidates = {d: p for d, p in origin_prio.items() if d not in allow_set}
 
-    # ---- 并入手动维护的拦截名单（Lists/blocklist.txt 与 Lists/mixed.txt 的拦截部分）----
-    # 手写名单优先级最高（给最小优先级数字），且不会被白名单剔除：
-    # 手写文件之间的冲突已在 merge_dedup.py 中按「放行优先」处理过。
-    # 注：手写白名单无需在此处理 —— 它已被写入 Full 产物，上面继承 allow_set 时一并生效。
+    # ---- 并入手动维护的拦截名单（Lists/blocklist.txt）----
+    # 手写名单优先级最高（给最小优先级数字），且不会被白名单剔除。
+    # 注 1：手写白名单无需在此处理 —— 它已被写入 Full 产物，上面继承 allow_set 时一并生效。
+    # 注 2：Lists/mixed.txt 走「原样透传」，不在此处解析为域名，见下方写文件部分。
     manual_blocks, bl_bad = load_manual_list(BLOCKLIST_FILE)
     for lineno, text in bl_bad:
         print(f"[WARN] Lists/blocklist.txt:{lineno} 无法解析，已忽略: {text}",
               file=sys.stderr)
-    mixed_allow, mixed_block, mx_bad = load_mixed_list(MIXED_FILE)
-    for lineno, text in mx_bad:
-        print(f"[WARN] Lists/mixed.txt:{lineno} 无法解析，已忽略: {text}",
-              file=sys.stderr)
-    manual_blocks |= mixed_block
-    manual_blocks -= mixed_allow         # 混合源内部冲突：放行优先
     manual_blocks -= allow_set           # 兜底：仍不在 Full 白名单中出现
     for d in manual_blocks:
         candidates[d] = 0
+
+    # mixed.txt 原文透传（全部行，含注释与带修饰符的规则）
+    mixed_vlines, mixed_nrules, mixed_ncomments = load_verbatim_rules(MIXED_FILE)
 
     # ---- 规模控制 ----
     truncated = 0
@@ -168,7 +165,14 @@ def main():
     body = ["||" + d + "^" for d in sorted_blocks]
     if sorted_allows:
         body += ["@@" + "||" + d + "^" for d in sorted_allows]
-    new_text = "\n".join(header + body) + "\n"
+
+    # mixed.txt 原样透传（含注释分组、$ 修饰符与 * 通配符）
+    mixed_section = []
+    if mixed_vlines:
+        mixed_section = ["", "! ==== Lists/mixed.txt (verbatim) ===="]
+        mixed_section += mixed_vlines
+
+    new_text = "\n".join(header + body + mixed_section) + "\n"
 
     # 与 Full/merge_dedup.py 保持一致：除生成时间戳外内容未变时不重写文件，
     # 避免定时任务产生无意义的提交。

@@ -156,6 +156,34 @@ def load_mixed_list(path):
     return allow, block, bad_lines
 
 
+def load_verbatim_rules(path):
+    """读取「原样透传」名单：按原始顺序保留每一行（含注释与规则）。
+
+    与 load_manual_list / load_mixed_list 的区别：
+        后两者把规则归一成纯域名（剥离 $ 修饰符、丢弃通配符），适合「只想要域名」的场景；
+        本函数则**逐行原样保留**，包括 $important 等修饰符、* 通配符、@@ 前缀，
+        以及 # 注释和分组说明（如「#针对转转App的放行规则，勿删」）。
+
+    返回 (全部行列表, 规则行数, 注释行数)。
+    全部行列表用于直接写入产物，保持与源文件一致的顺序与分组；
+    AdGuard Home 会忽略其中的注释行，故不影响规则解析。
+    """
+    lines, n_rule, n_comment = [], 0, 0
+    if not os.path.exists(path):
+        return lines, n_rule, n_comment
+    with open(path, "r", encoding="utf-8") as f:
+        for raw_line in f:
+            s = raw_line.strip()
+            if not s:
+                continue
+            lines.append(s)
+            if s.startswith(("#", "!")):
+                n_comment += 1
+            else:
+                n_rule += 1
+    return lines, n_rule, n_comment
+
+
 def valid_domain(d):
     """域名有效性检查"""
     if not d or len(d) > 255:
