@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-09 21:48:31
-! Block rules: 129674
+! Generated: 2026-10-10 01:25:42
+! Block rules: 129678
 ! Whitelist rules: 281
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100674
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6079
+!   - easylistchina [w=3] block 6083
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 116230
 !   - cjx-annoyance [w=2] block 159
@@ -854,6 +854,7 @@
 ||1j2n061x3td.www.digi.no^
 ||1j397opcuw.com^
 ||1j771bhgi.de^
+||1jlbewhnp5.com^
 ||1jlp1qbgu.com^
 ||1jpbh5iht.de^
 ||1jzocofm4.com^
@@ -1908,6 +1909,7 @@
 ||42ff946c7d.com^
 ||42g7o2fqjmb4v6.rest^
 ||42jdbcb.de^
+||42mu2c4akt.com^
 ||42r.cn^
 ||42vaywaovr.com^
 ||42ye.com^
@@ -44444,6 +44446,7 @@
 ||fumiestbougetcrinoid.cfd^
 ||fummd03je4.com^
 ||fun-hits.com^
+||funambulist98.com^
 ||funbrebutylic.qpon^
 ||funcallback.com^
 ||functionalcrown.com^
@@ -129355,6 +129358,7 @@
 ||ztsjdthngoeln.space^
 ||ztsmfmotoqtct.online^
 ||ztsrv.com^
+||zttrpnhufhdxno.com^
 ||zttsmufvcrvjw.space^
 ||ztudfmvgxozex.space^
 ||ztuspzjommety.space^
