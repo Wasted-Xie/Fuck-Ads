@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-11 06:42:21
-! Block rules: 129840
+! Generated: 2026-10-11 13:42:17
+! Block rules: 129846
 ! Whitelist rules: 281
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101209
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6096
+!   - easylistchina [w=3] block 6102
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 116408
 !   - cjx-annoyance [w=2] block 159
@@ -1410,6 +1410,7 @@
 ||2vcb9onxjm.com^
 ||2vfpjcpy351cwug.63xr7vjq6v9xhp.cyou^
 ||2vv.cc^
+||2w7urj3f2.com^
 ||2waky.com^
 ||2wg8pp90e.com^
 ||2wn4bycie4tznq44mf396xojlrl5f.cfd^
@@ -18329,6 +18330,8 @@
 ||bclicks.lyst.com^
 ||bclogin-check.com^
 ||bcloudhost.com^
+||bcmbmedbqx.icu^
+||bcmbmedbqx.top^
 ||bcmimhkecgwfj.space^
 ||bcnmnhublbnsw.website^
 ||bcnonwgwntvpv.website^
@@ -81107,6 +81110,7 @@
 ||pbdasszdkbtic.online^
 ||pbdiasnrimgbo.online^
 ||pbecrm.aquanet.ru^
+||pbeldhnbk.com^
 ||pbemlrfpiqbzn.site^
 ||pbfhahctctuoa.site^
 ||pbgcxdfyfgjlt.online^
@@ -119765,6 +119769,7 @@
 ||vvp.agzxj8990.com^
 ||vvqc95xhtx.com^
 ||vvqizy.witt-weiden.de^
+||vvs0eu66z.com^
 ||vvskgwkxrdtaf.space^
 ||vvslrpwkkqvwe.online^
 ||vvtpftuiqrbdha.com^
@@ -120650,6 +120655,7 @@
 ||wctgatauxfggq.space^
 ||wctomfpolmxxr.online^
 ||wctrk.com^
+||wcu79k85a.com^
 ||wcumiqigmpkoc.site^
 ||wcuujkywusvpv.online^
 ||wcvevntrztrdi.site^

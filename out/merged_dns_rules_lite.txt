@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-11 06:42:20
-! Block rules: 146851
+! Generated: 2026-10-11 13:42:15
+! Block rules: 146857
 ! Whitelist rules: 281
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8353 / white 17, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101209 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6096 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6102 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -1627,6 +1627,7 @@
 ||2vcb9onxjm.com^
 ||2vfpjcpy351cwug.63xr7vjq6v9xhp.cyou^
 ||2vv.cc^
+||2w7urj3f2.com^
 ||2waky.com^
 ||2wg8pp90e.com^
 ||2wn4bycie4tznq44mf396xojlrl5f.cfd^
@@ -23323,6 +23324,8 @@
 ||bclicks.lyst.com^
 ||bclogin-check.com^
 ||bcloudhost.com^
+||bcmbmedbqx.icu^
+||bcmbmedbqx.top^
 ||bcmej6hr.goodlifelakerentals.com^
 ||bcmimhkecgwfj.space^
 ||bcnmnhublbnsw.website^
@@ -92145,6 +92148,7 @@
 ||pbdasszdkbtic.online^
 ||pbdiasnrimgbo.online^
 ||pbecrm.aquanet.ru^
+||pbeldhnbk.com^
 ||pbemlrfpiqbzn.site^
 ||pbfhahctctuoa.site^
 ||pbgcxdfyfgjlt.online^
@@ -134251,6 +134255,7 @@
 ||vvp.agzxj8990.com^
 ||vvqc95xhtx.com^
 ||vvqizy.witt-weiden.de^
+||vvs0eu66z.com^
 ||vvskgwkxrdtaf.space^
 ||vvslrpwkkqvwe.online^
 ||vvtpftuiqrbdha.com^
@@ -135235,6 +135240,7 @@
 ||wctomfpolmxxr.online^
 ||wctrk.com^
 ||wctvn.mrslopezsings.org^
+||wcu79k85a.com^
 ||wcumiqigmpkoc.site^
 ||wcuujkywusvpv.online^
 ||wcvevntrztrdi.site^
