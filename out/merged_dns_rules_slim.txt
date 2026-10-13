@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-13 07:15:55
-! Block rules: 130727
+! Generated: 2026-10-13 15:11:10
+! Block rules: 130731
 ! Whitelist rules: 281
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101209
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6121
+!   - easylistchina [w=3] block 6124
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 117310
 !   - cjx-annoyance [w=2] block 159
@@ -17048,6 +17048,7 @@
 ||awokespiny.qpon^
 ||awowwo.forever21.com^
 ||awozdcvzjgbnh.online^
+||awp8r0f7q.com^
 ||awpcrpu.com^
 ||awpmzlkylwrnb.space^
 ||awprt.com^
@@ -57676,6 +57677,7 @@
 ||jgo4xb8cpimc4tz5i.cfd^
 ||jgo52y3vyt97c3w5rz8ep.cfd^
 ||jgovdupigzozf.online^
+||jgp0ohuv2.com^
 ||jgpo1zqhj.com^
 ||jgqccztrsqbtb.website^
 ||jgrxoyclbvisj.com^
@@ -87897,6 +87899,7 @@
 ||qxyvvfwjiqonx.online^
 ||qxzfdeagblwys.space^
 ||qy080.vip^
+||qy4l27p9f.com^
 ||qyatej.bocage.fr^
 ||qybratedbxyac.online^
 ||qycjgo19bq7j9he1j8ur6kc976.rest^
@@ -124705,6 +124708,7 @@
 ||x6img.com^
 ||x6kd8l204b.com^
 ||x6y1.com^
+||x70wk5e54.com^
 ||x7581.com^
 ||x7h.i3j1zw3x458btnfe86nlj69.cyou^
 ||x7i0.com^
