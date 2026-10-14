@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-14 10:24:20
-! Block rules: 131083
+! Generated: 2026-10-14 15:18:09
+! Block rules: 131095
 ! Whitelist rules: 281
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 8428
+!   - adblockdnslite [w=5] block 8215
 !   - anti-ad [w=5] block 101927
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5744
+!   - easylistchina [w=3] block 5746
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 117522
 !   - cjx-annoyance [w=2] block 159
@@ -2080,6 +2080,7 @@
 ||4fiz-jos.shop^
 ||4fizjosolp.shop^
 ||4fizjosport.shop^
+||4foutlet.shop^
 ||4fsportspl.shop^
 ||4fvk99z4.xyz^
 ||4g0.cc^
@@ -7165,6 +7166,8 @@
 ||ad-vortex.com^
 ||ad-x.co.uk^
 ||ad.100.tbn.ru^
+||ad.107.163.52.12.cn^
+||ad.107.163.53.12.cn^
 ||ad.12306.cn^
 ||ad.12306.cn.wscdns.com^
 ||ad.163.com^
@@ -7523,6 +7526,7 @@
 ||ad.xiaomi.com^
 ||ad.ximalaya.com^
 ||ad.xrea.com^
+||ad.xuanheng03.cn^
 ||ad.xunkids.com^
 ||ad.xxam.org^
 ||ad.yeshitv.com^
@@ -10156,6 +10160,7 @@
 ||advert-media-api.wb.ru^
 ||advert-media-api.wildberries.ru^
 ||advert-server.elecfans.com^
+||advert-statistic-vip.xunlei.com^
 ||advert.58.com^
 ||advert.api.thejoyrun.com^
 ||advert.bayarea.com^
@@ -12434,7 +12439,6 @@
 ||analysis.fi^
 ||analysis.polarisoffice.com^
 ||analysis.prod.joyfru.jiji.com^
-||analysis.shixunsuda.com^
 ||analysis.sooplive.co.kr^
 ||analysis.sooplive.com^
 ||analysis.tratao.com^
@@ -12815,7 +12819,6 @@
 ||analytics.floridatravellife.com^
 ||analytics.fnbfremont.com^
 ||analytics.fnni.com^
-||analytics.fontke.com^
 ||analytics.footballdb.com^
 ||analytics.foresee.com^
 ||analytics.formstack.com^
@@ -14054,7 +14057,6 @@
 ||api-event.falconnet.app^
 ||api-exponea.o2.cz^
 ||api-exponea.o2.sk^
-||api-flow.flyme.cn^
 ||api-flow.meizu.com^
 ||api-fp-retry-bj.fengkongcloud.com^
 ||api-fp-retry-na.fengkongcloud.com^
@@ -16769,7 +16771,6 @@
 ||auth-eu.hismarttv.com^
 ||auth-launcher-em.hismarttv.com^
 ||auth-launcher-eu.hismarttv.com^
-||auth-launcher-jp.hismarttv.com^
 ||auth-launcher-na.hismarttv.com^
 ||auth-launcher-sa.hismarttv.com^
 ||auth-na.hismarttv.com^
@@ -22768,6 +22769,7 @@
 ||c7249753ab.392f4e9ce8.com^
 ||c74l4kr3f2fjv8j.rest^
 ||c753738.r38.cf2.rackcdn.com^
+||c76us2sjda.com^
 ||c77777777.com^
 ||c79bf78725.a27fac55e0.com^
 ||c7bijgz6zr.com^
@@ -28639,6 +28641,7 @@
 ||crash-reporting.olaparty.com^
 ||crash.163.com^
 ||crash.browser.qq.com^
+||crash.rednote.life^
 ||crash.rnote.com^
 ||crash.rnote.com.eo.dnse0.com^
 ||crash.xiaohongshu.com^
@@ -39103,6 +39106,7 @@
 ||em.stauffersafety.com^
 ||em.thermofisher.com^
 ||em.touchtunes.com^
+||em4mzyvbiy.com^
 ||em6802.musesapp.com^
 ||em7ky342lo.com^
 ||em7zztbgb2413hvzq.5vguc732gqkcxkbp.cyou^
@@ -50878,7 +50882,6 @@
 ||hirmbzroviasa.online^
 ||hirony.xyz^
 ||hirsung.de^
-||hisearch-dra-dt-dbankcloud-com-dra.appacc.dbankedge.cn^
 ||hisearch-dra.dt.dbankcloud.com^
 ||hisearch-drcn.dt.dbankcloud.com^
 ||hisearch-dre.dt.dbankcloud.com^
@@ -51059,6 +51062,7 @@
 ||hjyhqbgodfdzg.website^
 ||hk-datareceiver.aki-game.net^
 ||hk-go.experian.com^
+||hk-sentry.pingpongx.com^
 ||hk.jtsh123.com^
 ||hk2.settings.data.microsoft.com.akadns.net^
 ||hk2.wns.windows.com^
@@ -51479,6 +51483,7 @@
 ||homeslick.com^
 ||homespl.shop^
 ||homespotaudience.com^
+||homeware-store.shop^
 ||homeyoupl.shop^
 ||homeyware.com^
 ||hominyfrijol.com^
@@ -64329,7 +64334,6 @@
 ||lm1.wkpcw.cn^
 ||lm10111.jtrincc.cn^
 ||lm1668.com^
-||lm335.com^
 ||lm4u6e80f.com^
 ||lm661.com^
 ||lma.npaw.com^
@@ -64710,7 +64714,6 @@
 ||log.dantocmiennui.vn^
 ||log.daqi.com^
 ||log.dav.edu.vn^
-||log.dc.cn.happyelements.com^
 ||log.doanhnhan.vn^
 ||log.documentmanagerpdfdocxlssale.live^
 ||log.documentreaderapp.com^
@@ -64781,6 +64784,7 @@
 ||log.kuaigeng.com^
 ||log.kuwo.cn^
 ||log.lichviet.org^
+||log.liepin.com^
 ||log.liusha.info^
 ||log.lnk.events^
 ||log.lovense-api.com^
@@ -72345,7 +72349,6 @@
 ||metrics.yy.com^
 ||metrics.zacks.com^
 ||metrics0.com^
-||metrics1-drcn-dt-dbankcloud-cn.gere.dbankedge.cn^
 ||metrics1-drcn.dt.dbankcloud.cn^
 ||metrics1-drcn.dt.dbankcloud.com^
 ||metrics1.citi.com^
@@ -80273,7 +80276,6 @@
 ||ot.obi.sk^
 ||ot3yic7jc7t81orj.cfd^
 ||ota.cartrawler.com^
-||ota.ptqy.gitv.tv^
 ||otaavlxnmqwyi.online^
 ||otakusphere.online^
 ||otalgyfab.qpon^
@@ -83171,6 +83173,7 @@
 ||pitbullmens.club^
 ||pitbullmensp.shop^
 ||pitbullspl.shop^
+||pitbullsportsa.shop^
 ||pitbullsportso.shop^
 ||pitchedbestuck.cfd^
 ||pitchedfurs.com^
@@ -86079,7 +86082,6 @@
 ||pulverizedangle.com^
 ||pulyxlgvrlqco.space^
 ||puma-api.iqiyi.com^
-||puma-api.ptqy.gitv.tv^
 ||puma.api.iqiyi.com^
 ||puma.islingtonmecc.org.uk^
 ||pumaqmqix.com^
@@ -88356,6 +88358,7 @@
 ||r5g13d8py3.com^
 ||r5gcp9.com^
 ||r5n8ic3on.com^
+||r6.mo.baidu.com^
 ||r61wpiyoy26q75zf436.cfd^
 ||r66net.com^
 ||r66net.net^
@@ -89826,6 +89829,7 @@
 ||report-europe2.agora.io^
 ||report-north-america.agora.io^
 ||report-oversea.agora.io^
+||report-oversea2.agora.io^
 ||report-ps.meettech.net^
 ||report-sg.uc.heytapmobile.com^
 ||report-uri.com^
@@ -103859,7 +103863,6 @@
 ||stat.wolterskluwer.pl^
 ||stat.wolterskluwer.pt^
 ||stat.ws.126.net^
-||stat.wup.huya.com^
 ||stat.xdplt.com^
 ||stat.xgo.com.cn^
 ||stat.xywy.com^
@@ -104430,6 +104433,7 @@
 ||stats.cassidyjames.com^
 ||stats.catholicluv.com^
 ||stats.celcom.com.my^
+||stats.centbrowser.cn^
 ||stats.centralswindonnorth-pc.gov.uk^
 ||stats.cfcasts.com^
 ||stats.chadly.net^
@@ -105260,8 +105264,10 @@
 ||statscollector-1-asia.agora.io^
 ||statscollector-1-europe.agora.io^
 ||statscollector-1-north-america.agora.io^
+||statscollector-1-oversea.agora.io^
 ||statscollector-1-south-america.agora.io^
 ||statscollector-1.agora.io^
+||statscollector-2-oversea.agora.io^
 ||statscollector.sd-rtn.com^
 ||statse-omtrdc.deka.de^
 ||statse.deka-etf.de^
@@ -107805,6 +107811,8 @@
 ||ta7tfk0o2h.com^
 ||ta80.com^
 ||taarurinarytitian.qpon^
+||taatis.shop^
+||taatisn.shop^
 ||tab.volces.com^
 ||tabcarts.com^
 ||taberedscaups.qpon^
@@ -115139,6 +115147,7 @@
 ||ttbu59z6hmxyfl.cfd^
 ||ttcdn.cn^
 ||ttdaomggbigdg.space^
+||ttdbh.com^
 ||ttdbj.com^
 ||ttedwm.com^
 ||ttfpil.2dehands.be^
@@ -121389,6 +121398,7 @@
 ||wangmeng.baidu.cn^
 ||wangmeng.baidu.com^
 ||wangmeng.sogou.com^
+||wangsu-smetrics.redhat.com.edgekey.net^
 ||wangsu-smetrics.redhat.com.edgekey.net.wanakadns.net^
 ||wangxiankang.top^
 ||wangyouxs.cn^
@@ -123643,6 +123653,7 @@
 ||wontonssendbald.qpon^
 ||wonwg.com^
 ||wooboo.com.cn^
+||woocall.sina.com.cn^
 ||woodcompartment.com^
 ||woodcushionfounded.com^
 ||wooden-comfort.com^
@@ -124642,6 +124653,7 @@
 ||www.tbvip19.com^
 ||www.teniucj.com^
 ||www.tinytapgame.com^
+||www.top-banners.com^
 ||www.trfmxt.com^
 ||www.u8xs.com^
 ||www.v61.com^
