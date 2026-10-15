@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-14 22:54:58
-! Block rules: 131279
+! Generated: 2026-10-15 01:09:37
+! Block rules: 131282
 ! Whitelist rules: 281
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101927
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5747
+!   - easylistchina [w=3] block 5750
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 117440
 !   - cjx-annoyance [w=2] block 159
@@ -12087,6 +12087,7 @@
 ||am0624.com^
 ||am15.net^
 ||am3s622gcd6m.tt.live^
+||am3ydgq1h.com^
 ||ama.planet-wissen.de^
 ||ama.quarks.de^
 ||ama.wdr.de^
@@ -43368,6 +43369,7 @@
 ||fixpass.net^
 ||fixxzeywgnnfm.website^
 ||fiyyutxomrsic.site^
+||fizmvbysarrvva.com^
 ||fizopp.duluthtrading.com^
 ||fizzersfullersinit.cyou^
 ||fizzyacerbitymellow.com^
@@ -66229,6 +66231,7 @@
 ||luyten-98c.com^
 ||luzfpa.dltviaggi.it^
 ||lv.myapks.com^
+||lv3f2bqnb.com^
 ||lv6ieqipi57n7vo888tcj.rest^
 ||lv6od3a4sz12.www.logology.co^
 ||lvaazvwlrlraq.top^
