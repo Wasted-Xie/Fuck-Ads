@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-15 19:57:04
-! Block rules: 148339
+! Generated: 2026-10-15 22:53:12
+! Block rules: 148341
 ! Whitelist rules: 281
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8241 / white 17, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101927 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5745 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5747 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -5061,6 +5061,7 @@
 ||94ab.com^
 ||94bd38d16d.com^
 ||94f7a76774.com^
+||94gjh3cedn.com^
 ||94lm.com^
 ||94rtb5yxlj13fw6.cfd^
 ||95090d6fb0.147c1e0584.com^
@@ -99376,6 +99377,7 @@
 ||qsvdftnuckecq.site^
 ||qswdme.modnakiecka.pl^
 ||qszftkiylgowv.site^
+||qt4wieces3.com^
 ||qt5jl7r111h7.allesvoormijnvakantie.nl^
 ||qtaxwgebqeplj.site^
 ||qtbaye.mona.ch^
