@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-16 10:00:27
-! Block rules: 131796
+! Generated: 2026-10-16 14:42:24
+! Block rules: 131810
 ! Whitelist rules: 281
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 8241
+!   - adblockdnslite [w=5] block 8258
 !   - anti-ad [w=5] block 101927
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5747
+!   - easylistchina [w=3] block 5749
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 117943
 !   - cjx-annoyance [w=2] block 159
@@ -3415,6 +3415,7 @@
 ||89oh4zt.8ei1bk1ctbuu7j8cm8pr8.cyou^
 ||89sa.com^
 ||89terraium.net^
+||89y84ta6xg.com^
 ||89z7o73lr4zhbu4.rest^
 ||8a4f3c8d93.com^
 ||8a54c826fe.660d588959.com^
@@ -7558,6 +7559,7 @@
 ||ad.xunkids.com^
 ||ad.xxam.org^
 ||ad.yeshitv.com^
+||ad.yicai.com^
 ||ad.yixin.im^
 ||ad.ymcdn.org^
 ||ad.youku.com^
@@ -8987,6 +8989,8 @@
 ||ads-splash-i1.xhscdn.com^
 ||ads-splash-i2.xhscdn.com^
 ||ads-splash-i2.xhscdn.com.w.cdngslb.com^
+||ads-splash-v1.xhscdn.com^
+||ads-splash-v2.xhscdn.com^
 ||ads-static.phonepe.com^
 ||ads-static.xhscdn.com^
 ||ads-thanhnien-vn.cdn.ampproject.org^
@@ -9002,6 +9006,7 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
+||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-yallo-production.imgix.net^
 ||ads.123net.jp^
@@ -9497,6 +9502,7 @@
 ||ads5-normal-lf.zijieapi.com.c.dsa.cdnbuild.net^
 ||ads5-normal-lq.zijieapi.com^
 ||ads5-normal-lq.zijieapi.com.c.dsa.cdnbuild.net^
+||ads5-normal-xh.zijieapi.com^
 ||ads5-normal.zijieapi.com^
 ||ads5-normal.zijieapi.com.c.dsa.cdnbuild.net^
 ||ads5.canoe.ca^
@@ -13235,6 +13241,7 @@
 ||analytics.skinit.com^
 ||analytics.skroutz.gr^
 ||analytics.skyscanner.net^
+||analytics.skywt.cn^
 ||analytics.slashdotmedia.com^
 ||analytics.slidesai.io^
 ||analytics.smart.mercedes-benz.com^
@@ -20130,6 +20137,7 @@
 ||blendedliteral.cfd^
 ||blendee.com^
 ||blendox.cfd^
+||blendstressgui.pro^
 ||blenskeys.cfd^
 ||blessdayservices.org^
 ||blessesunwary.com^
@@ -23504,6 +23512,7 @@
 ||cars.smartleasing.com.au^
 ||carsarace.com^
 ||carstat.bitauto.com^
+||cart.net.cn^
 ||cart8draw.com^
 ||carte.fleet-page.total.fr^
 ||cartelcabiria.cyou^
@@ -28769,7 +28778,6 @@
 ||crannycarbro.cyou^
 ||craptroopstammer.com^
 ||crapunpredictablefiddle.com^
-||crash-reporting.olaparty.com^
 ||crash.163.com^
 ||crash.browser.qq.com^
 ||crash.rednote.life^
@@ -31659,7 +31667,6 @@
 ||dafvng.sunrefre.jp^
 ||dagameuster.cyou^
 ||dagd0kz7sipfl.cloudfront.net^
-||dageyuan.cn^
 ||dagfs.com^
 ||dagnar.com^
 ||dagombaochreabuvette.qpon^
@@ -35249,6 +35256,7 @@
 ||do6256x8ae75.cloudfront.net^
 ||do67etikr7pwz.cloudfront.net^
 ||do69ll745l27z.cloudfront.net^
+||do7gsv4xsf.com^
 ||doabqu.s3.com.tw^
 ||doagpm.promart.pe^
 ||doakzcovnlibh.space^
@@ -43898,6 +43906,7 @@
 ||flytechb.com^
 ||flywayshackees.qpon^
 ||flywithexecutors.net^
+||flyye.cn^
 ||flzkgieecosgn.com^
 ||flznib.weblio.jp^
 ||flzrsrikaaymy.online^
@@ -46181,6 +46190,7 @@
 ||geek-nerd-server.firebaseapp.com^
 ||geekactive.com^
 ||geekbackyard.com^
+||geet3xanxc.com^
 ||geetecrlxnygu.online^
 ||geeunlessarcade.com^
 ||geezduh.com^
@@ -46942,6 +46952,7 @@
 ||ghyzimfjilvbt.online^
 ||ghzxqtvqjybuj.online^
 ||gi-client-tracking.goodgamestudios.com^
+||gi.cn^
 ||gi.inhaabit.com^
 ||gi.xi.gxabj.com^
 ||gi7a.structube.com^
@@ -49923,6 +49934,7 @@
 ||halberdosiery.com^
 ||halberdrandall.qpon^
 ||halcyoncanyon.com^
+||haldenorixa.pro^
 ||halduoculus.cfd^
 ||haleniablues.cfd^
 ||half1hell.com^
@@ -61866,7 +61878,6 @@
 ||l0nrjph1.xyz^
 ||l13go6917.8u2vb738fjfczzy3htb93gln5lwj1q5.cyou^
 ||l16-prod-all-sentry-trickcal-sgp.bilibiligame.net^
-||l17-dev-all-sentry-ghost-sgp.bilibiligame.net^
 ||l1bj5pxqzk.com^
 ||l1btkzh7rf3y.8jftebcmv5hoyrtontkmiwt4qm4b.cyou^
 ||l1h6k1g8tfq4gu.rest^
@@ -64908,6 +64919,7 @@
 ||locust.ausrebellion.earth^
 ||locusthospitable.com^
 ||lodfzblnojzfd.site^
+||lodgeaclaim.com^
 ||lodgeastronautadore.com^
 ||lodgerestless.com^
 ||lodgersflaser.qpon^
@@ -73614,6 +73626,7 @@
 ||mlinks.helloalfred.com^
 ||mliyokonw.com^
 ||mljurnlqnqdni.space^
+||mlkbjce.com^
 ||mlkblr.la-becanerie.com^
 ||mlkfloltdjhfh.site^
 ||mlkklg.suncamp.de^
@@ -95200,7 +95213,6 @@
 ||se.rfvtgbyhn.com^
 ||se05.biz^
 ||se967.com^
-||sea-log-rcv.vansound.com^
 ||sea-nov-1.com^
 ||sea.net.edu.cn^
 ||seabedswitney.cyou^
@@ -96031,7 +96043,6 @@
 ||sentry.eks.hoyoverse.com^
 ||sentry.epay.163.com^
 ||sentry.eventbus.me^
-||sentry.findaya.co.id^
 ||sentry.gametaptap.com^
 ||sentry.gitcode.com^
 ||sentry.globalsources.com^
@@ -104790,6 +104801,7 @@
 ||statistic.date^
 ||statistic.jac-systeme.de^
 ||statistic.live.126.net^
+||statistic.openlabelplus.com^
 ||statistic.qzone.qq.com^
 ||statistic.weimobdc.com^
 ||statistic2.reichelt.de^
@@ -110210,7 +110222,6 @@
 ||thestat.net^
 ||theta.sogou.com^
 ||theta.sogoucdn.com^
-||thetechnofreaks.com^
 ||thetestpage.39.net^
 ||thetiskikuyu.com^
 ||thetrafficstat.net^
@@ -120308,6 +120319,7 @@
 ||video-ads-module.ad-tech.nbcuni.com^
 ||video-ads.a2z.com^
 ||video-analytics-api.cloudinary.com^
+||video-api-gl.heytapmobile.com^
 ||video-dsp.pddpic.com^
 ||video-intel.pixels.ai^
 ||video-serve.com^
@@ -122374,6 +122386,7 @@
 ||wc74aa875.com^
 ||wcaos.com^
 ||wcbxugtfk.com^
+||wccvvpt7c.com^
 ||wcdmvjbbkdhzc.space^
 ||wcdzw.com^
 ||wcedifmyfokol.online^
@@ -131692,6 +131705,7 @@
 ||zxxvns.f64.ro^
 ||zxzbjqoyojpza.site^
 ||zxziyuan.com^
+||zxzs365.cn^
 ||zy8.org^
 ||zyavhhgzkdjfu.space^
 ||zyblzrevmklrb.top^
