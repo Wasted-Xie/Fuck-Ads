@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-16 21:51:51
-! Block rules: 148462
+! Generated: 2026-10-17 00:05:25
+! Block rules: 148466
 ! Whitelist rules: 281
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8252 / white 17, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102284 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5749 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5753 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -309,6 +309,7 @@
 ||0fs3mb0hh7.com^
 ||0fs6pe6w0j.com^
 ||0gjk78xazs6np76r.notifysrv.com^
+||0grzr3u2t.com^
 ||0gw7e6s3wrao9y3q.pro^
 ||0h9yewgei.com^
 ||0hagal2csg.com^
@@ -1305,6 +1306,7 @@
 ||1no.yooeiiqrbwm86x61.cyou^
 ||1nqrqa.de^
 ||1ns1rosb.de^
+||1nvnkyg65.com^
 ||1o0g85u7k1.com^
 ||1o1nuqbjea.com^
 ||1o23ptd0sv.com^
@@ -25998,6 +26000,7 @@
 ||bobsleddomesticglandular.com^
 ||bobswatches.actonservice.com^
 ||bobunrahhwcfa.online^
+||bobztdbqdxrdng.com^
 ||bocaconsumo.cyou^
 ||bocaiyouxiwangzhi.goasrv.com^
 ||bocaiyulechengkaihu18.go-static.info^
@@ -29469,6 +29472,7 @@
 ||cautiouscrate.com^
 ||cautiouscredit.com^
 ||cautiouslyanalysecrystal.com^
+||cavalcade86.com^
 ||cavallaholl.cyou^
 ||cavecurtain.com^
 ||caveletdoghoodanogra.cfd^

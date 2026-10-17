@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-16 21:51:53
-! Block rules: 131946
+! Generated: 2026-10-17 00:05:26
+! Block rules: 131950
 ! Whitelist rules: 281
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102284
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5749
+!   - easylistchina [w=3] block 5753
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 118417
 !   - cjx-annoyance [w=2] block 159
@@ -262,6 +262,7 @@
 ||0fmm.com^
 ||0fs3mb0hh7.com^
 ||0fs6pe6w0j.com^
+||0grzr3u2t.com^
 ||0gw7e6s3wrao9y3q.pro^
 ||0h9yewgei.com^
 ||0hagal2csg.com^
@@ -1179,6 +1180,7 @@
 ||1no.yooeiiqrbwm86x61.cyou^
 ||1nqrqa.de^
 ||1ns1rosb.de^
+||1nvnkyg65.com^
 ||1o0g85u7k1.com^
 ||1o1nuqbjea.com^
 ||1o23ptd0sv.com^
@@ -20870,6 +20872,7 @@
 ||bobpinching.com^
 ||bobsleddomesticglandular.com^
 ||bobunrahhwcfa.online^
+||bobztdbqdxrdng.com^
 ||bocaconsumo.cyou^
 ||bocasinsignaprelect.qpon^
 ||bocenrqhquopv.website^
@@ -23949,6 +23952,7 @@
 ||cautiouscrate.com^
 ||cautiouscredit.com^
 ||cautiouslyanalysecrystal.com^
+||cavalcade86.com^
 ||cavallaholl.cyou^
 ||cavecurtain.com^
 ||caveletdoghoodanogra.cfd^
