@@ -54,7 +54,7 @@
 ├── Lists/                    # 手动维护的名单（入库，参与全部四个版本）
 │   ├── whitelist.txt         #   自定义白名单（只放行）
 │   ├── blocklist.txt         #   自定义拦截名单（只拦截）
-│   └── mixed.txt             #   黑白混写（@@ 前缀表示放行）
+│   └── mixed.txt             #   黑白混写 强制写入规则集末尾（@@ 前缀表示放行）
 ├── out/                      # 最终产物（入库，供订阅）
 │   ├── integrated_extra.txt              # 中间产物（不入库）
 │   ├── integrated_extra_pro.txt          # 中间产物（不入库）
@@ -152,39 +152,6 @@ AdGuard Home 是**由您的设备去拉取规则**，国内网络直连 `raw.git
 | **jsDelivr CDN** | https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt |
 | 直连 raw | https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt |
 
-一次性复制全部地址：
-
-Full 版：
-
-```text
-https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
-https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt
-https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt
-```
-
-Pro 版：
-
-```text
-https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt
-https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt
-https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt
-```
-
-Lite 版：
-
-```text
-https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
-https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt
-https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt
-```
-
-Slim 版：
-
-```text
-https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt
-https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt
-https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt
-```
 
 注意事项：
 
@@ -298,7 +265,7 @@ https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/
 | `hub.gitmirror.com` | 完全不可达 |
 | `ghproxy.link`（官方地址发布站） | 国内不可达 |
 
-> **结论**：国内 GitHub 加速生态变动频繁，任何静态清单都会很快过时。本项目因此推荐 **gh-proxy.com + jsDelivr 双订阅**，而不是依赖单一渠道。加速站失效时换下一条即可，列表内容本身不受影响。
+> **结论**：国内 GitHub 加速生态变动频繁，任何静态清单都会很快过时。本项目推荐 **gh-proxy.com 订阅**。加速站失效时换下一条即可，列表内容本身不受影响。
 
 ## 关于国内网络环境的实测结论
 
@@ -406,7 +373,7 @@ py Lite\build_lite.py --no-security      :: 不纳入 URLHaus 安全源（-3,727
 |---|---|
 | `jianshu.com` | **整域放行**（上游误判） |
 
-> 360 品牌保护已**彻底移除**（含相关代码，非仅失效）。早期版本曾对 360 系列做「只拦广告子域、主域与功能域放行」的特殊处理，现 360 系列与其他域名一视同仁，一律照常拦截。
+> 360 保护已**彻底移除**（含相关代码，非仅失效）。早期版本曾对 360 系列做「只拦广告子域、主域与功能域放行」的特殊处理，现 360 系列与其他域名一视同仁，一律照常拦截。
 >
 > 附注：上游 `anti-ad` 自带 2 条 360 白名单（`@@||profile*.se.360.cn^`、`@@||s.mvconf.f.360.cn^`），属上游规则内容，按「机械合并、不干预内容」原则原样保留。
 
