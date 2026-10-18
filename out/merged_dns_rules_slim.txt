@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-17 16:04:00
-! Block rules: 132262
+! Generated: 2026-10-18 01:19:26
+! Block rules: 132266
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102284
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5760
+!   - easylistchina [w=3] block 5764
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 118747
 !   - cjx-annoyance [w=2] block 159
@@ -2398,6 +2398,7 @@
 ||4l5bbkug99.com^
 ||4lbk4yuhj5upn7vvkl.cfd^
 ||4link.it^
+||4lqs5j3ckn.com^
 ||4mlhn1ocg4.com^
 ||4mp.xewp5et8izo2eq.cyou^
 ||4mtj1r9x5gnbo4u7.rest^
@@ -11657,6 +11658,7 @@
 ||airserve.net^
 ||airshedcoart.com^
 ||airshedmammets.qpon^
+||airsick32.com^
 ||airthsmoshavcalles.qpon^
 ||airtightmodification.com^
 ||airwavetrouss.cfd^
@@ -58839,6 +58841,7 @@
 ||jlrp6l5xycwtg8ih9m.cfd^
 ||jltczmewqabda.online^
 ||jlujxipdixrw.com^
+||jlulrz094u.com^
 ||jlvffkip.com^
 ||jlvhwqtkmttgq.site^
 ||jlwz.cn^
@@ -130990,6 +130993,7 @@
 ||zewesamessustee.net^
 ||zewkj.com^
 ||zewuwkawo.com^
+||zexudnxmjadlzg.com^
 ||zexyivyvafozx.space^
 ||zeydoo.com^
 ||zeziswrbpmhez.site^
