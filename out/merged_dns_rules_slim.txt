@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-19 05:01:26
-! Block rules: 132790
+! Generated: 2026-10-19 11:01:59
+! Block rules: 132793
 ! Whitelist rules: 262
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102284
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5776
+!   - easylistchina [w=3] block 5779
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 119324
 !   - cjx-annoyance [w=2] block 159
@@ -118,6 +118,7 @@
 ||0377shujuhuifu.top^
 ||03850de51d.com^
 ||039858f297.com^
+||039ijdlg8.com^
 ||03h6fpes.xyz^
 ||03in08p3r1.com^
 ||03mhpavj25.com^
@@ -3440,6 +3441,7 @@
 ||7k1p812e9l.com^
 ||7k4c36c1r.com^
 ||7k7zc4ir6m3u6mq64cm.cfd^
+||7klc3u75r.com^
 ||7kprtners.com^
 ||7kqn7qz4g4.com^
 ||7kzwj.kangshouhuanbao.com^
@@ -74273,6 +74275,7 @@
 ||mldys.14yzc.cn^
 ||mldys.mfis6.cn^
 ||mldys.mqchy.cn^
+||mleqb8227.com^
 ||mlfolu.nabava.net^
 ||mlfyllnkqsizp.website^
 ||mlgubn.autouncle.de^

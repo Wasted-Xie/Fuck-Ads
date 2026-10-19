@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-19 05:01:25
-! Block rules: 149126
+! Generated: 2026-10-19 11:01:58
+! Block rules: 149129
 ! Whitelist rules: 262
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8088 / white 15, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102284 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5776 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5779 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -134,6 +134,7 @@
 ||0377shujuhuifu.top^
 ||03850de51d.com^
 ||039858f297.com^
+||039ijdlg8.com^
 ||03be2bbfe2.be09b02191.com^
 ||03f8e481e5.119dbc9238.com^
 ||03h6fpes.xyz^
@@ -4713,6 +4714,7 @@
 ||7k1p812e9l.com^
 ||7k4c36c1r.com^
 ||7k7zc4ir6m3u6mq64cm.cfd^
+||7klc3u75r.com^
 ||7kprtners.com^
 ||7kqn7qz4g4.com^
 ||7kzwj.kangshouhuanbao.com^
@@ -84268,6 +84270,7 @@
 ||mldys.14yzc.cn^
 ||mldys.mfis6.cn^
 ||mldys.mqchy.cn^
+||mleqb8227.com^
 ||mlfolu.nabava.net^
 ||mlfyllnkqsizp.website^
 ||mlgubn.autouncle.de^
