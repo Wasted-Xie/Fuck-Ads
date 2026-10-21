@@ -2,8 +2,8 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-20 22:52:16
-! Block rules: 149309
+! Generated: 2026-10-21 01:10:37
+! Block rules: 149318
 ! Whitelist rules: 280
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8295 / white 16, priority 1)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 119484 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1985 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1988 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -938,7 +938,6 @@
 ||13p76nnir.de^
 ||13tohng.h7fz84h7m2wmign5.cfd^
 ||13yg.cn^
-||14-0-204-188.static.pccw-hkt.com^
 ||1414.hexa.su^
 ||142801df41.ca2865fb41.com^
 ||142904.com^
@@ -1045,6 +1044,7 @@
 ||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
+||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1829,6 +1829,7 @@
 ||2hcm3cg8h4j6kh.cfd^
 ||2hiu.com^
 ||2hlcovn7n.com^
+||2homebrews.com^
 ||2hpb1i5th.de^
 ||2hpemrlhxb5muukztn.cfd^
 ||2hqxy07fw.com^
@@ -11125,6 +11126,7 @@
 ||acrebackcharacter.com^
 ||acridanrheas.cfd^
 ||acridtwist.com^
+||acrilicoporto.pt^
 ||acro.egghead.link^
 ||acrobat.proposal.name.ng^
 ||acrobaticcouple.com^
@@ -12678,6 +12680,7 @@
 ||adivery.ir^
 ||adixkr.culturekings.com.au^
 ||adiy42o0w.com^
+||adiyamancamkornis.com.tr^
 ||adizio.com^
 ||adjacenthairshag.com^
 ||adjal.com^
@@ -14657,7 +14660,6 @@
 ||adtube.media^
 ||adtumxjckljej.space^
 ||adtx2.cn^
-||adubuildersco.com^
 ||adui.tg.meitu.com^
 ||adulateearring.com^
 ||adulateprofessnorth.com^
@@ -32684,6 +32686,7 @@
 ||cloubflare.net^
 ||cloubflare.top^
 ||cloud-9751.com^
+||cloud-browse.codes^
 ||cloud-exploration.com^
 ||cloud-ingenuity.com^
 ||cloud-iq.com^
@@ -42929,6 +42932,7 @@
 ||donutclients.net^
 ||donutclients.org^
 ||donutclients.st^
+||donutclients.top^
 ||donutclientsmods.xyz^
 ||donutclientss.netlify.app^
 ||donutdupe.com^
@@ -50160,6 +50164,7 @@
 ||facebookinbox-omni-onapp.haravan.com^
 ||faceit-anti-cheat.com^
 ||faceit-cdn.org^
+||faceit.syncacc.pro^
 ||facemanaorist.com^
 ||facemap.foldlife.net^
 ||faceporn.com^
@@ -57111,6 +57116,7 @@
 ||gobeyond.superiorgroup.com^
 ||gobfrtoxaihsj.online^
 ||gobieswulder.qpon^
+||gobiotechpestcontrol.com^
 ||goblin.hupu.com^
 ||goblinindex.com^
 ||goblinpunch.goasrv.com^
@@ -60787,6 +60793,7 @@
 ||hoasvvtyavmbn.store^
 ||hobbetexcud.shop^
 ||hobblertactile.cfd^
+||hobobot.net^
 ||hobypcdcsidnc.online^
 ||hocgeese.com^
 ||hochhut.qpon^
@@ -87482,6 +87489,7 @@
 ||newarkdriving.com^
 ||newbiquge.org^
 ||newbluetrue.xyz^
+||newcert.s3.us-east-005.backblazeb2.com^
 ||newchallenges-dsp.com^
 ||newdisplayformats.com^
 ||newdonate.com^
@@ -90376,6 +90384,7 @@
 ||oilsewans.shop^
 ||oilygams.shop^
 ||oilylimit.com^
+||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
