@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-21 17:29:07
-! Block rules: 134686
+! Generated: 2026-10-21 23:51:15
+! Block rules: 134690
 ! Whitelist rules: 278
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 103069
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5803
+!   - easylistchina [w=3] block 5807
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 120632
 !   - cjx-annoyance [w=2] block 159
@@ -2320,6 +2320,7 @@
 ||47b5895cy6eil1.cfd^
 ||47c7zhqak.com^
 ||47cb693fa6.com^
+||47f9jdixm7.com^
 ||47g8quyf3m2izku.cfd^
 ||47r.cn^
 ||480executors.net^
@@ -33773,6 +33774,7 @@
 ||ddszuecklamvl.space^
 ||ddvbjehruuj5y.cloudfront.net^
 ||ddvfoj5yrl2oi.cloudfront.net^
+||ddwododotg.com^
 ||ddwqruebgyjuy.site^
 ||ddwt.am^
 ||ddxiejwiegzxa.website^
@@ -51544,6 +51546,7 @@
 ||hdesvtpufcd.com^
 ||hdggrhgzgptxg.site^
 ||hdhkwl.com^
+||hdhuxrsiymfbvs.com^
 ||hdicsm.autoscout24.be^
 ||hdj.baidu.com^
 ||hdjhsudhe.kuaizhan.com^
@@ -107083,6 +107086,7 @@
 ||statistics.werkenntdenbesten.de^
 ||statistics.wibiya.com^
 ||statistics311.net^
+||statistics46.com^
 ||statisticslinks.com^
 ||statisticsnail.com^
 ||statisticsplatform.com^

@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-21 17:29:05
-! Block rules: 150245
+! Generated: 2026-10-21 23:51:14
+! Block rules: 150249
 ! Whitelist rules: 278
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8287 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 103069 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5803 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5807 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -3352,6 +3352,7 @@
 ||47c.l75v1tpenow2eb97fex.cfd^
 ||47c7zhqak.com^
 ||47cb693fa6.com^
+||47f9jdixm7.com^
 ||47g8quyf3m2izku.cfd^
 ||47r.cn^
 ||4801186.notify6.com^
@@ -40421,6 +40422,7 @@
 ||ddszuecklamvl.space^
 ||ddvbjehruuj5y.cloudfront.net^
 ||ddvfoj5yrl2oi.cloudfront.net^
+||ddwododotg.com^
 ||ddwqruebgyjuy.site^
 ||ddwt.am^
 ||ddxiejwiegzxa.website^
@@ -59680,6 +59682,7 @@
 ||hdggcdn.bayimob.com^
 ||hdggrhgzgptxg.site^
 ||hdhkwl.com^
+||hdhuxrsiymfbvs.com^
 ||hdicsm.autoscout24.be^
 ||hdj.baidu.com^
 ||hdjhsudhe.kuaizhan.com^
@@ -119269,6 +119272,7 @@
 ||statistics.werkenntdenbesten.de^
 ||statistics.wibiya.com^
 ||statistics311.net^
+||statistics46.com^
 ||statisticslinks.com^
 ||statisticsnail.com^
 ||statisticsplatform.com^
