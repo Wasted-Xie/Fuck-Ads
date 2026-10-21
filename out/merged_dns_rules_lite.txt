@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-21 06:14:46
-! Block rules: 149448
+! Generated: 2026-10-21 12:08:35
+! Block rules: 149450
 ! Whitelist rules: 280
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8295 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 103069 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5799 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5801 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -5634,6 +5634,7 @@
 ||9ma1sr1tb1.com^
 ||9mbv.com^
 ||9mdg9cu59.com^
+||9mnmzh506.com^
 ||9n89mwfq3l1wen79.po6o4mxkqfwvit5.cyou^
 ||9nl.eu^
 ||9nugb4.orxo5m9nwcy4xk6w2n5jug8ve.cfd^
@@ -58804,6 +58805,7 @@
 ||h4pf6c4t.1zjyvwco2f6iy6jbl6v7b176xnc.cyou^
 ||h4soqcsrp5.com^
 ||h4tmdz92jq.com^
+||h4z2ko7lb.com^
 ||h5.7vyou.com^
 ||h5.analytics.126.net^
 ||h5.hpplay.com.cn^

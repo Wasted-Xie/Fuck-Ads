@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-21 06:14:48
-! Block rules: 133676
+! Generated: 2026-10-21 12:08:36
+! Block rules: 133678
 ! Whitelist rules: 280
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 103069
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5799
+!   - easylistchina [w=3] block 5801
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 119613
 !   - cjx-annoyance [w=2] block 159
@@ -4211,6 +4211,7 @@
 ||9ma1sr1tb1.com^
 ||9mbv.com^
 ||9mdg9cu59.com^
+||9mnmzh506.com^
 ||9n89mwfq3l1wen79.po6o4mxkqfwvit5.cyou^
 ||9nl.eu^
 ||9nwplq7y2o.com^
@@ -50640,6 +50641,7 @@
 ||h4pf6c4t.1zjyvwco2f6iy6jbl6v7b176xnc.cyou^
 ||h4soqcsrp5.com^
 ||h4tmdz92jq.com^
+||h4z2ko7lb.com^
 ||h5.7vyou.com^
 ||h5.isnssdk.com^
 ||h5.jiumaster.com^
