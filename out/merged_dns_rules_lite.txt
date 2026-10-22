@@ -2,8 +2,8 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-21 23:51:14
-! Block rules: 150249
+! Generated: 2026-10-22 02:45:32
+! Block rules: 150256
 ! Whitelist rules: 278
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8287 / white 16, priority 1)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 120632 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1774 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1781 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -24843,6 +24843,7 @@
 ||besantdecuria.cfd^
 ||besc.baidustatic.com^
 ||beschaffung-portal.de^
+||beschaffungszentrale.de^
 ||bescurfsubdued.cfd^
 ||beseechprose.com^
 ||beshamehairup.com^
@@ -98727,6 +98728,7 @@
 ||pub-00d54ae289e84e93a3c8640fb2301c5f.r2.dev^
 ||pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev^
 ||pub-0478b308b8cf46709a73d0eed5afd633.r2.dev^
+||pub-0aa1ca9c603a4b99b4e4dd7636b31f10.r2.dev^
 ||pub-0bf4d4ca8a6e426ea7d3d00ec3ecd192.r2.dev^
 ||pub-153d2a9e026942c4aff3b3aca8f80952.r2.dev^
 ||pub-1614932a526c40d79fe5bf23e71e3ff7.r2.dev^
@@ -116422,6 +116424,7 @@
 ||southflannelclassic.com^
 ||southremoval.com^
 ||southwest.pgaofamericagolf.com^
+||southwindsfineart.com^
 ||souvenirsespecially.com^
 ||souvenirsmascaraearphones.com^
 ||souvenirsrecognize.com^
@@ -120715,6 +120718,7 @@
 ||stomachscience.com^
 ||stommeplaatjes.geenstijl.nl^
 ||stonecalcom.com^
+||stonemart.pk^
 ||stonepole.com^
 ||stonetumble.com^
 ||stonierteddy.com^
@@ -135806,6 +135810,7 @@
 ||verdinstaurian.cfd^
 ||verdiva.life^
 ||veregostarrr.goasrv.com^
+||vergabe-zentrale.de^
 ||vergebelard.qpon^
 ||vergefauns.cfd^
 ||verhuur-bestelwagens.goaserv.com^
@@ -139198,6 +139203,8 @@
 ||weheepellilevoodoos.cyou^
 ||wehoiczh.com^
 ||wehoofurniture.com^
+||wehrtechnik-koblenz.de^
+||wehrtechnische-dienststelle.de^
 ||wehvdvjzgetzm.space^
 ||wei.8586635.com^
 ||weiakbtck.com^
