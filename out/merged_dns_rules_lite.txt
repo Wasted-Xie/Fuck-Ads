@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-23 10:19:53
-! Block rules: 151041
+! Generated: 2026-10-23 15:18:09
+! Block rules: 151051
 ! Whitelist rules: 282
 ! Sources (China-focused only):
-!   - adblockdnslite: 217 Lite（仅国内域名） (block 8425 / white 16, priority 1)
+!   - adblockdnslite: 217 Lite（仅国内域名） (block 8455 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 103838 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5821 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5823 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121357 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1772 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1768 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1044,10 +1044,8 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1135,6 +1133,7 @@
 ||19e408304d.9c867e2056.com^
 ||1a28484fbe.e452be28aa.com^
 ||1a715b8q5m3j.www.logology.co^
+||1a7pxa2r7.com^
 ||1a8f9rq9c.de^
 ||1a9cb1c203.7d7a497317.com^
 ||1aa0yygqst.com^
@@ -10851,6 +10850,7 @@
 ||acanthishoving.com^
 ||acaribleep.com^
 ||acaridtutrice.qpon^
+||acbcr.ro^
 ||acbogaffmdurj.site^
 ||acbp0020171456.page.tl^
 ||acc-hd.de^
@@ -12939,6 +12939,7 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
+||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -13535,7 +13536,6 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
-||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-wc.adaptv.advertising.com^
 ||ads-yallo-production.imgix.net^
@@ -18996,6 +18996,7 @@
 ||anybest.pw^
 ||anyclip-media.com^
 ||anyfilemot.com^
+||anyhoo.testeaza.eu^
 ||anylearieroxcheek.cfd^
 ||anym8.com^
 ||anymedia.lv^
@@ -23526,6 +23527,7 @@
 ||bagpipemonogamypercent.com^
 ||bagreefupgazed.cfd^
 ||bagsimportancepropose.com^
+||bagsrad.com^
 ||bagsurprise.com^
 ||baguettefactornervous.com^
 ||baguioattalea.com^
@@ -30870,6 +30872,7 @@
 ||cdp.cloud.unity3d.com^
 ||cdp.customer.io^
 ||cdp.howtotrade.com^
+||cdp.wovplaying.help^
 ||cdp.yna.co.kr^
 ||cdpilzgnucedh.online^
 ||cdptracker.hocmai.com.vn^
@@ -35899,6 +35902,7 @@
 ||cpmterra.com^
 ||cpmtree.com^
 ||cpnsbxkibvbhw.space^
+||cpofficial.com^
 ||cpokulack.com^
 ||cpoml.iask.sina.com.cn^
 ||cppm-kc2.net.jumia.ci^
@@ -36086,6 +36090,7 @@
 ||crash.rnote.com^
 ||crash.rnote.com.eo.dnse0.com^
 ||crash.safe.360.cn^
+||crash.taptap.com^
 ||crash.xiaohongshu.com^
 ||crash2.zhihu.com^
 ||crashapi.growingio.com^
@@ -37039,7 +37044,6 @@
 ||customad.cnn.com^
 ||customads.co^
 ||customaryprevention.com^
-||customcreationsmaine.com^
 ||customer-engagement.verintsystemsinc.com^
 ||customer-security.online^
 ||customer.heartinternet.co.uk^
@@ -43553,6 +43557,7 @@
 ||download.youzu.com^
 ||download.yuehlia.com^
 ||download.zikirapp.com^
+||download2.huduntech.com^
 ||download3.123cw.cn^
 ||downloada.dewmobile.net^
 ||downloadb.dewmobile.net^
@@ -51144,7 +51149,6 @@
 ||fdfuhymycyhuc.online^
 ||fdgcore.com^
 ||fdhaptzvzyukn.space^
-||fdhvczd.cn^
 ||fdi1rg6ihs.com^
 ||fdighyuwxtqpt.website^
 ||fdiinc.actonservice.com^
@@ -51557,6 +51561,7 @@
 ||ffyvsn.evisu.com^
 ||ffzljtcftssxn.space^
 ||ffzlvipdtkska.space^
+||fg.yilianqing.com^
 ||fg544vwr2v.com^
 ||fgbomsqo4j.com^
 ||fgf0r8ajvt.com^
@@ -54487,6 +54492,7 @@
 ||fzoggyqmjxyhg.space^
 ||fzojq.info^
 ||fzomznhnpgxee.website^
+||fzpress.com.cn^
 ||fzqfoil.cn^
 ||fzqjvw.oakandluna.com^
 ||fzrdbwljmrzsh.online^
@@ -55299,6 +55305,7 @@
 ||ge.cn^
 ||ge99lo1z2.com^
 ||gea-exchange-03.net.jumia.ug^
+||geaix.com^
 ||geakr.com^
 ||gear.echovisuals.com^
 ||gearbubbles.com^
@@ -71601,7 +71608,6 @@
 ||konsor.ru^
 ||kontentpage.pro^
 ||kontera.com^
-||konterlink.hippamsas.com^
 ||kontextua.com^
 ||kooappslogs.com^
 ||koocash.com^
@@ -87320,7 +87326,6 @@
 ||myapp.branch.rocks^
 ||myarab-me.j8inn1zektoe.com^
 ||myaudioads.com^
-||myayurvedashoppe.com^
 ||mybad.fr^
 ||mybestclick.net^
 ||mybestcpm.com^
@@ -91074,6 +91079,7 @@
 ||oe.tredsd.com^
 ||oe4q1ikwfqzj9vn.cfd^
 ||oe6fyhljyu66819umuzwxplqrg.cfd^
+||oe851k5an6.com^
 ||oe8mnxdtoi.com^
 ||oe9s24wy9.com^
 ||oeafttumojrto.site^
@@ -92343,6 +92349,7 @@
 ||oopt.norauto.es^
 ||oopursie.com^
 ||oopz.app^
+||oopz.name^
 ||ooqbml.tac-school.co.jp^
 ||ooqvye17t.com^
 ||oorljoimmwspw.website^
@@ -96671,6 +96678,7 @@
 ||placidactivity.com^
 ||placidityelite.com^
 ||placiditylever.com^
+||placidocn.com^
 ||placidperson.com^
 ||pladform.ru^
 ||plagaegasping.cyou^
@@ -97800,6 +97808,7 @@
 ||postgraduate2.smu.edu.sg^
 ||posthog.busy.app^
 ||posthog.casinoplus.top^
+||posthog.casinoplus.top.eo.dnse3.com^
 ||posthog.football24.ua^
 ||posthog.ikuai8.com^
 ||posthog.levacp.com^
@@ -99961,6 +99970,7 @@
 ||pwbs.l9c4s.cn^
 ||pwbxyinigxrju.website^
 ||pwcask.com^
+||pwdh28pof.com^
 ||pwfwyafdfwwiq.site^
 ||pwfyctstfkhcz.space^
 ||pwgp5xyv24j4njib.cfd^
@@ -110241,7 +110251,6 @@
 ||semnicneposilejte.cz^
 ||semplesapolune.com^
 ||semplicewebsites.com^
-||semprecardsecure.com^
 ||semqraso.net^
 ||semygruja.com^
 ||semywtuvmzujq.space^
@@ -110457,6 +110466,7 @@
 ||sentry.gitcode.com^
 ||sentry.globalsources.com^
 ||sentry.gryphline.com^
+||sentry.guangyapan.com^
 ||sentry.hetzner.company^
 ||sentry.huxiu.com^
 ||sentry.io^
@@ -110517,6 +110527,7 @@
 ||sentry.zwoastro.cn^
 ||sentry01.zerg.rambler.ru^
 ||sentry1.semsportal.com^
+||sentry2-pan01.yingxiong.com^
 ||sentry2.lx.netease.com^
 ||sentrymagic.com^
 ||senyuligtadad.store^
@@ -116596,6 +116607,7 @@
 ||somainpdeirit.online^
 ||somalosclentlucian.qpon^
 ||somatasoce.cyou^
+||somautomotivorj.com.br^
 ||sombernewspaper.com^
 ||somberscarecrow.com^
 ||sombersea.com^
@@ -119866,7 +119878,6 @@
 ||statistics.mailerlite.com^
 ||statistics.news1.kr^
 ||statistics.notifysrv.com^
-||statistics.one-all.cn^
 ||statistics.qcc.com^
 ||statistics.rbi-nl.com^
 ||statistics.riskommunal.net^
@@ -126122,7 +126133,6 @@
 ||ticklesign.com^
 ||tickneywicks.shop^
 ||ticomix.actonservice.com^
-||ticpc8a.com^
 ||tics.cortex.gg^
 ||tics.seeker.gg^
 ||tics.techdirt.com^
@@ -133414,6 +133424,7 @@
 ||ullrqcoqifslu.space^
 ||ulmdb.cn^
 ||ulmidxwcnglah.online^
+||ulmmoq87xp.com^
 ||ulmoyc.com^
 ||ulny.cn^
 ||ulog-sdk.gifshow.com^
@@ -139134,7 +139145,6 @@
 ||wbdds.com^
 ||wbdds.fr.ign.com^
 ||wbdx.fr^
-||wbesryx.cn^
 ||wbf9k9.com^
 ||wbgeaojtegeun.website^
 ||wbhqdaqufhhua.space^

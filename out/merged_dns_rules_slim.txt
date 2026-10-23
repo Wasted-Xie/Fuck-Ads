@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-23 10:19:55
-! Block rules: 135482
+! Generated: 2026-10-23 15:18:10
+! Block rules: 135489
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 8425
+!   - adblockdnslite [w=5] block 8455
 !   - anti-ad [w=5] block 103838
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5821
+!   - easylistchina [w=3] block 5823
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121357
 !   - cjx-annoyance [w=2] block 159
@@ -1026,6 +1026,7 @@
 ||19dkfu1wg.com^
 ||1a28484fbe.e452be28aa.com^
 ||1a715b8q5m3j.www.logology.co^
+||1a7pxa2r7.com^
 ||1a8f9rq9c.de^
 ||1a9cb1c203.7d7a497317.com^
 ||1aa0yygqst.com^
@@ -9408,7 +9409,6 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
-||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-yallo-production.imgix.net^
 ||ads.123net.jp^
@@ -29710,6 +29710,7 @@
 ||crash.rednote.life^
 ||crash.rnote.com^
 ||crash.rnote.com.eo.dnse0.com^
+||crash.taptap.com^
 ||crash.xiaohongshu.com^
 ||crash2.zhihu.com^
 ||crashchance.com^
@@ -43674,7 +43675,6 @@
 ||fdfuhymycyhuc.online^
 ||fdgcore.com^
 ||fdhaptzvzyukn.space^
-||fdhvczd.cn^
 ||fdi1rg6ihs.com^
 ||fdighyuwxtqpt.website^
 ||fdikpaoxayumd.site^
@@ -44037,6 +44037,7 @@
 ||ffyvsn.evisu.com^
 ||ffzljtcftssxn.space^
 ||ffzlvipdtkska.space^
+||fg.yilianqing.com^
 ||fg544vwr2v.com^
 ||fgbomsqo4j.com^
 ||fgf0r8ajvt.com^
@@ -46690,6 +46691,7 @@
 ||fzoggyqmjxyhg.space^
 ||fzojq.info^
 ||fzomznhnpgxee.website^
+||fzpress.com.cn^
 ||fzqfoil.cn^
 ||fzqjvw.oakandluna.com^
 ||fzrdbwljmrzsh.online^
@@ -81187,6 +81189,7 @@
 ||oe.tredsd.com^
 ||oe4q1ikwfqzj9vn.cfd^
 ||oe6fyhljyu66819umuzwxplqrg.cfd^
+||oe851k5an6.com^
 ||oe8mnxdtoi.com^
 ||oe9s24wy9.com^
 ||oeafttumojrto.site^
@@ -86425,6 +86428,7 @@
 ||placidactivity.com^
 ||placidityelite.com^
 ||placiditylever.com^
+||placidocn.com^
 ||placidperson.com^
 ||pladform.ru^
 ||plagaegasping.cyou^
@@ -87486,6 +87490,7 @@
 ||postgraduate2.smu.edu.sg^
 ||posthog.busy.app^
 ||posthog.casinoplus.top^
+||posthog.casinoplus.top.eo.dnse3.com^
 ||posthog.football24.ua^
 ||posthog.ikuai8.com^
 ||posthog.levacp.com^
@@ -89460,6 +89465,7 @@
 ||pwbs.l9c4s.cn^
 ||pwbxyinigxrju.website^
 ||pwcask.com^
+||pwdh28pof.com^
 ||pwfwyafdfwwiq.site^
 ||pwfyctstfkhcz.space^
 ||pwgp5xyv24j4njib.cfd^
@@ -98760,6 +98766,7 @@
 ||sentry.gitcode.com^
 ||sentry.globalsources.com^
 ||sentry.gryphline.com^
+||sentry.guangyapan.com^
 ||sentry.hetzner.company^
 ||sentry.huxiu.com^
 ||sentry.io^
@@ -98820,6 +98827,7 @@
 ||sentry.zwoastro.cn^
 ||sentry01.zerg.rambler.ru^
 ||sentry1.semsportal.com^
+||sentry2-pan01.yingxiong.com^
 ||sentry2.lx.netease.com^
 ||sentrymagic.com^
 ||senyuligtadad.store^
@@ -107674,7 +107682,6 @@
 ||statistics.liusha.info^
 ||statistics.mailerlite.com^
 ||statistics.news1.kr^
-||statistics.one-all.cn^
 ||statistics.qcc.com^
 ||statistics.rbi-nl.com^
 ||statistics.riskommunal.net^
@@ -120455,6 +120462,7 @@
 ||ullrqcoqifslu.space^
 ||ulmdb.cn^
 ||ulmidxwcnglah.online^
+||ulmmoq87xp.com^
 ||ulmoyc.com^
 ||ulny.cn^
 ||ulog-sdk.gifshow.com^
@@ -125710,7 +125718,6 @@
 ||wbdds.com^
 ||wbdds.fr.ign.com^
 ||wbdx.fr^
-||wbesryx.cn^
 ||wbf9k9.com^
 ||wbgeaojtegeun.website^
 ||wbhqdaqufhhua.space^
