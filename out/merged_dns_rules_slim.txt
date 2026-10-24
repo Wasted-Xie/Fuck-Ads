@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-23 19:24:33
-! Block rules: 135674
+! Generated: 2026-10-24 00:56:31
+! Block rules: 135680
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 103838
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5823
+!   - easylistchina [w=3] block 5829
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121548
 !   - cjx-annoyance [w=2] block 159
@@ -1189,6 +1189,7 @@
 ||1nimo.com^
 ||1no.yooeiiqrbwm86x61.cyou^
 ||1nqrqa.de^
+||1nrgur4y43.com^
 ||1ns1rosb.de^
 ||1nvnkyg65.com^
 ||1o0g85u7k1.com^
@@ -37961,6 +37962,7 @@
 ||dwwpaoatfgjvo.space^
 ||dwxlqmcwoyuub.space^
 ||dwyeuy.com^
+||dwzhvtvgknfjty.com^
 ||dwzhyllh.com^
 ||dwzymufmsgzlj.online^
 ||dx-cards-css.iqiyi.com^
@@ -78095,6 +78097,7 @@
 ||n5725.com^
 ||n5a92p9zo.com^
 ||n5eburo7gn.ir8ofm5xbnwjg1ybzk76h.cyou^
+||n5ku61z6km.com^
 ||n61xupfken4ucmcu.rest^
 ||n62vgkvmecgpiw.mj35ntghqhg8rzvro3.cyou^
 ||n6579.com^
@@ -80664,7 +80667,9 @@
 ||nxybzrasvicrd.website^
 ||nxydxafjirtwo.site^
 ||nxydz27pj.com^
+||nxynjy2kej.com^
 ||nxyvuicivosqz.site^
+||nxyzabhy3.com^
 ||ny2oqsu7et.com^
 ||ny70zesy5v.com^
 ||ny77jj.washingtonpost.com^
@@ -114577,6 +114582,7 @@
 ||toad.ettiennevorster.co.za^
 ||toad.frontendmentor.io^
 ||toasteemendole.cfd^
+||toaster22.com^
 ||toastibar-cdn.makeprosimp.com^
 ||toastparasolcrush.com^
 ||toasttutor.com^
