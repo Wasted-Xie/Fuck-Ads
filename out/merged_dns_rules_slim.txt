@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-24 09:41:20
-! Block rules: 135849
+! Generated: 2026-10-24 13:46:04
+! Block rules: 135861
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 8455
-!   - anti-ad [w=5] block 103838
+!   - adblockdnslite [w=5] block 8464
+!   - anti-ad [w=5] block 103837
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5832
+!   - easylistchina [w=3] block 5835
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -280,6 +280,7 @@
 ||0jghm60qg.com^
 ||0kl9n3q2b.com^
 ||0kplffrs42.com^
+||0kue3oryg.com^
 ||0l34c7sqy.com^
 ||0l7t5qhb4.com^
 ||0lai5bvkg.com^
@@ -7140,7 +7141,6 @@
 ||acgbase.com^
 ||acgbenzi.com^
 ||acgbryg.com^
-||acgshenshicha.cn^
 ||acgugjkxtebno.site^
 ||achaetabuceros.qpon^
 ||achaquetips.cfd^
@@ -7530,7 +7530,6 @@
 ||ad-incentive.ximalaya.com^
 ||ad-locus.com^
 ||ad-log-upload-os.hoyoverse.com^
-||ad-log-upload.mihoyo.com^
 ||ad-log.didiglobal.com^
 ||ad-m.asia^
 ||ad-manager.matsukiyococokara-online.com^
@@ -7813,6 +7812,7 @@
 ||ad.mh.163.com^
 ||ad.mi.com^
 ||ad.mingruidata.com^
+||ad.missionhillschina.com^
 ||ad.mnt123.com^
 ||ad.mobile.youku.com^
 ||ad.moe.video^
@@ -9657,6 +9657,7 @@
 ||ads.lot-tissimo.com^
 ||ads.luffy.my.id^
 ||ads.macsonuclari.mobi^
+||ads.manguoguo.com^
 ||ads.markettimes.vn^
 ||ads.marry.vn^
 ||ads.massinfra.nl^
@@ -9834,6 +9835,7 @@
 ||ads.webme.com^
 ||ads.websiteservices.com^
 ||ads.weilitoutiao.net^
+||ads.welltalky.cn^
 ||ads.wepiao.com^
 ||ads.wetpussy.sexy^
 ||ads.whoishostingthis.com^
@@ -9866,6 +9868,7 @@
 ||ads.zaloapp.com^
 ||ads.zestlink.net^
 ||ads.zhinengxiyifang.cn^
+||ads.zhios.cn^
 ||ads.zunia.vn^
 ||ads01.pages.dev^
 ||ads1-adnow.com^
@@ -10048,6 +10051,7 @@
 ||adserver.kimia.es^
 ||adserver.kozoom.com^
 ||adserver.lag.vn^
+||adserver.mtrust.cn^
 ||adserver.muaban.net^
 ||adserver.news.com.au^
 ||adserver.ngz-network.de^
@@ -13376,6 +13380,7 @@
 ||analytics.ekonsilio.io^
 ||analytics.electro-com.ru^
 ||analytics.elegela.us^
+||analytics.elim.cn^
 ||analytics.emol.com^
 ||analytics.emqx.com^
 ||analytics.emqx.com.w.cdngslb.com^
@@ -13521,6 +13526,7 @@
 ||analytics.joincambridge.com^
 ||analytics.jolonline.co.za^
 ||analytics.jonathancastro.com.br^
+||analytics.joomlass.com^
 ||analytics.jst.ai^
 ||analytics.julebu.co^
 ||analytics.junia.ai^
@@ -23489,6 +23495,7 @@
 ||c.51xmgys.com^
 ||c.6tuna.com^
 ||c.7times.top^
+||c.acgshenshicha.cn^
 ||c.adbxb.cn^
 ||c.algovid.com^
 ||c.alimama.com^
@@ -24693,6 +24700,7 @@
 ||cbvnzczrbcjoq.online^
 ||cbvyghlu.com^
 ||cbwbnoyukmxga.site^
+||cbxp9xqbnh.com^
 ||cbyisttpinnan.online^
 ||cbymgxvmx.com^
 ||cbymppcezjvvf.site^
@@ -29371,6 +29379,7 @@
 ||countino.de^
 ||countit.ch^
 ||countlessdispleased.com^
+||countly.dev.chnapss.com^
 ||countly.growatt.com^
 ||countly.mail.163.com^
 ||countnow.de^
@@ -42983,7 +42992,6 @@
 ||eyqbvz.greysonclothiers.com^
 ||eyqkpep11zh3kqxqyr.cfd^
 ||eyqsrrwmvhavp.website^
-||eyqw474.com^
 ||eyrewxoejzwer.website^
 ||eyriecavelwizen.qpon^
 ||eyrmhukohppgf.online^
@@ -50436,7 +50444,6 @@
 ||grrfeedqkfmbq.site^
 ||grs-dbankcloud-com-dra.appacc-region.dbankedge.cn^
 ||grs-dbankcloud-com-dra.appacc.dbankedge.cn^
-||grs-dbankcloud-com-drcn.wec.dbankedge.cn^
 ||grs-iot.platform.dbankcloud.cn^
 ||grs-iot.platform.dbankcloud.com^
 ||grs-iot.platform.dbankcloud.ru^
@@ -59065,7 +59072,6 @@
 ||iz64.com^
 ||izardtipped.qpon^
 ||izarspringe.cfd^
-||izatcloud.net^
 ||izavjtqqznucm.site^
 ||izaybwqvajljf.space^
 ||izbaminae.com^
@@ -65862,6 +65868,7 @@
 ||linkhealth-app.hotdoc.com.au^
 ||linkifier.com^
 ||linking.venueapp-system.com^
+||linkintec.cn^
 ||linkjg.cn^
 ||linkoffers.net^
 ||linkonclick.com^
@@ -67035,6 +67042,7 @@
 ||log.lovense-api.com^
 ||log.ltype.baofeng.com^
 ||log.lxjjkj.com^
+||log.lxqskj.com^
 ||log.m.sm.cn^
 ||log.ma-jin.jp^
 ||log.mailsturbo.com^
@@ -68453,6 +68461,7 @@
 ||lvsats.gardner-white.com^
 ||lvtezhupqcvtq.site^
 ||lvubwrnhxktlo.online^
+||lvuidh.shop^
 ||lvvbqeakmrkjm.top^
 ||lvvjsnuqhalcx.space^
 ||lvwetfey.com^
@@ -76075,6 +76084,7 @@
 ||mm.anqu.com^
 ||mm.jbzj.com^
 ||mm.jgchq.com^
+||mm.maxthon.cn^
 ||mm.melia.com^
 ||mm.morrellinc.com^
 ||mm.nwell.net^
@@ -81204,6 +81214,7 @@
 ||ocafujphzaqww.space^
 ||ocahqixhegnhc.online^
 ||ocardoniel.com^
+||ocbagmarket.shop^
 ||ocbv0.baiyangzs.com^
 ||ocbzhqjomdmxa.space^
 ||occasional-draft.pro^
@@ -87089,6 +87100,7 @@
 ||plugerr.com^
 ||pluggedaskings.cfd^
 ||pluggedlabs.com^
+||plugin-check.egret.com^
 ||plugin-sync-upgrade-juui.hismarttv.com^
 ||plugin.2easydroid.com^
 ||plugin.me2day.net^
@@ -98121,7 +98133,6 @@
 ||sdk.duihuashijie.com^
 ||sdk.hzsanjiaomao.com^
 ||sdk.hzzfcm.com^
-||sdk.loveota.net^
 ||sdk.m.youku.com^
 ||sdk.markmedia.com.cn^
 ||sdk.mobads.adwangmai.com^
@@ -99021,7 +99032,6 @@
 ||sentry.deyecloud.com^
 ||sentry.dhgate.com^
 ||sentry.duozhuayu.net^
-||sentry.dvdfab.cn^
 ||sentry.easycash.id^
 ||sentry.eks.hoyoverse.com^
 ||sentry.epay.163.com^
@@ -99081,7 +99091,6 @@
 ||sentry.wb.ru^
 ||sentry.willand.com^
 ||sentry.x5.ru^
-||sentry.xboxmechanichead.com^
 ||sentry.xiaomawang.com^
 ||sentry.xiaoyuzhoufm.com^
 ||sentry.xindong.com^
@@ -109119,6 +109128,7 @@
 ||statscollector-1-oversea.agora.io^
 ||statscollector-1-south-america.agora.io^
 ||statscollector-1.agora.io^
+||statscollector-2-europe.agora.io^
 ||statscollector-2-oversea.agora.io^
 ||statscollector.sd-rtn.com^
 ||statse-omtrdc.deka.de^
@@ -111653,6 +111663,7 @@
 ||t188.dazhonghua.cn^
 ||t19olm6fd.com^
 ||t1n.cn^
+||t1ufw6nz5f.com^
 ||t1viiujqi7piht.rest^
 ||t1w.pfqg753un1ekhnf.cyou^
 ||t2.58cdn.com.cn^
@@ -120872,6 +120883,7 @@
 ||umami.ikxin.com^
 ||umami.infessa.com^
 ||umami.insighttech.com.tr^
+||umami.ioiox.net^
 ||umami.is^
 ||umami.kiz.ac.cn^
 ||umami.lukron.app^
@@ -121999,6 +122011,7 @@
 ||us1.xvika.com^
 ||usa.bravo-dog.com^
 ||usa.cc^
+||usa01-client-report.honkaiimpact3.com^
 ||usabilitybook.com^
 ||usabilitytools.com^
 ||usabilla.com^
@@ -122927,7 +122940,6 @@
 ||uzvvqnaqblxvx.online^
 ||uzxksecxqrchr.online^
 ||uzyzsowhwgmmv.online^
-||uzzf.com^
 ||uzzxkatxegdzh.website^
 ||v-collector.dp.aws.charter.com^
 ||v-pack.net^
@@ -122939,6 +122951,7 @@
 ||v.76768hwj.cn^
 ||v.7times.top^
 ||v.9y88.com^
+||v.acgshenshicha.cn^
 ||v.ad.xelements.cn^
 ||v.adblockultimate.net^
 ||v.angha.me^
@@ -126041,6 +126054,7 @@
 ||wbdds.com^
 ||wbdds.fr.ign.com^
 ||wbdx.fr^
+||wbesryx.cn^
 ||wbf9k9.com^
 ||wbgeaojtegeun.website^
 ||wbhqdaqufhhua.space^
@@ -126259,6 +126273,7 @@
 ||web-ivcbrasil-tag.s3.us-west-2.amazonaws.com^
 ||web-perf.booking.com^
 ||web-security.cloud^
+||web-sentry.kurogame.com^
 ||web-sentry.kurogame.net^
 ||web-stat.*^
 ||web-stat.com^
@@ -129849,6 +129864,7 @@
 ||xexkerkgrfyaf.site^
 ||xeznjrljmzpnp.online^
 ||xf80vxk3rc.com^
+||xf9o6c6jnp.com^
 ||xfabqkelmfmrv.online^
 ||xfalmawladvew.site^
 ||xfatemfiemhdu.space^
@@ -131345,7 +131361,6 @@
 ||xmysmy.cn^
 ||xmyvhu.soxo.pl^
 ||xmyvtjuwanzjz.online^
-||xmywlyh.cn^
 ||xmzppziqajevl.site^
 ||xmzvrkniutbxy.space^
 ||xn--2qu92fhtx4ff.ink^
@@ -131373,7 +131388,6 @@
 ||xn--xhq9mt12cf5v.website^
 ||xn--xhq9mt12cf5v.xn--io0a7i^
 ||xn--yh4bx88a.com^
-||xn--zw0autp42d.cn^
 ||xnbbhxsnvxook.online^
 ||xncilrhkqmvrd.site^
 ||xndjh.hebiz.cn^
@@ -131422,7 +131436,6 @@
 ||xoiuprsewuyst.site^
 ||xoiztkesgkbdh.site^
 ||xokxqfxasjuaw.space^
-||xolerkr.cn^
 ||xolgghttwaufg.site^
 ||xolltgznjuwxi.space^
 ||xommzrn.com^
@@ -135026,7 +135039,6 @@
 ||zmg15qfvi.com^
 ||zmgzerfxzgkeq.online^
 ||zmhpphp.forum^
-||zmhqhuq.cn^
 ||zmhsxr.hometogo.com^
 ||zmiarjiioqzvm.site^
 ||zmiqtnsxzbthu.online^
