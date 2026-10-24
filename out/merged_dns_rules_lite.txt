@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-24 05:20:01
-! Block rules: 151418
+! Generated: 2026-10-24 09:41:18
+! Block rules: 151420
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8455 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 103838 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5830 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5832 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -63516,6 +63516,7 @@
 ||iftuzvnyudfus.online^
 ||ifunayaikechukwu.kesug.com^
 ||ifv.ninebox.cn^
+||ifvk56ft9o.com^
 ||ifvox.com^
 ||ifvrcwxxbmvoo.website^
 ||ifxijbhztrtvp.site^
@@ -94128,6 +94129,7 @@
 ||p16-tiktokcdn-com.akamaized.net.iberostar.com^
 ||p188.cn^
 ||p192.eastbaytimes.com^
+||p1oo54kz6d.com^
 ||p2-ad.adukwai.com^
 ||p2-be-pack-sign.pglstatp-toutiao.com^
 ||p2-jx.adukwai.com^
