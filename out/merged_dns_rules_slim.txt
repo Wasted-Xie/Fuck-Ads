@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-25 14:08:51
-! Block rules: 135876
+! Generated: 2026-10-25 17:44:39
+! Block rules: 135880
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 103837
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5844
+!   - easylistchina [w=3] block 5848
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2434,6 +2434,7 @@
 ||4jnzhl0d0.com^
 ||4k28959nr2pfj8cinwu5x.rest^
 ||4k3nzijpm0.com^
+||4k4zbfclm.com^
 ||4kngwxegq5.com^
 ||4l.vlgtgclmpk95tbf.cyou^
 ||4l5bbkug99.com^
@@ -58305,6 +58306,7 @@
 ||iotechnologies.com^
 ||iotfovmvclciq.site^
 ||iothkkqpgplrc.website^
+||iotj6oo90.com^
 ||iovation.com^
 ||iovfyeauzktts.site^
 ||iovgqvybqbdmm.website^
@@ -66410,6 +66412,7 @@
 ||ljybyqaakvlyj.top^
 ||ljyhzllzoymxq.space^
 ||ljyipz.nugnes1920.com^
+||ljyzic8cr.com^
 ||ljzwuvseqsecn.online^
 ||ljzxdu.largus.fr^
 ||lk.parisfoodies.fr^
@@ -132211,6 +132214,7 @@
 ||y2vorexg2u.com^
 ||y3.ifengimg.com^
 ||y3nouy9uobo.g3owuqu9y613jxqffj73o6.cyou^
+||y3yuih3s1.com^
 ||y4.97env3zux49c22i1i65tkw1tjnbq2yi.cyou^
 ||y4.o2v2nj7l366i9ihty6oq2ofrixm1fly.cyou^
 ||y40milgijh.com^

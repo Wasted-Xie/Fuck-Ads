@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-25 14:08:49
-! Block rules: 151446
+! Generated: 2026-10-25 17:44:38
+! Block rules: 151450
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8477 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 103837 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5844 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5848 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -3515,6 +3515,7 @@
 ||4k28959nr2pfj8cinwu5x.rest^
 ||4k3nzijpm0.com^
 ||4k4iard.tupek.store^
+||4k4zbfclm.com^
 ||4kngwxegq5.com^
 ||4l.vlgtgclmpk95tbf.cyou^
 ||4l5bbkug99.com^
@@ -66919,6 +66920,7 @@
 ||iotechnologies.com^
 ||iotfovmvclciq.site^
 ||iothkkqpgplrc.website^
+||iotj6oo90.com^
 ||iovation.com^
 ||iovfyeauzktts.site^
 ||iovgqvybqbdmm.website^
@@ -75458,6 +75460,7 @@
 ||ljybyqaakvlyj.top^
 ||ljyhzllzoymxq.space^
 ||ljyipz.nugnes1920.com^
+||ljyzic8cr.com^
 ||ljzwuvseqsecn.online^
 ||ljzxdu.largus.fr^
 ||lk.brand.sogou.com^
@@ -147575,6 +147578,7 @@
 ||y3.ifengimg.com^
 ||y32me8.com^
 ||y3nouy9uobo.g3owuqu9y613jxqffj73o6.cyou^
+||y3yuih3s1.com^
 ||y4.97env3zux49c22i1i65tkw1tjnbq2yi.cyou^
 ||y4.o2v2nj7l366i9ihty6oq2ofrixm1fly.cyou^
 ||y4.zfoo2relcykev7olu9okic9kq34pbye.cfd^
