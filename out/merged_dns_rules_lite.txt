@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-25 00:26:17
-! Block rules: 151442
+! Generated: 2026-10-25 05:03:11
+! Block rules: 151437
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8464 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 103837 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5839 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5843 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1782 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1778 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1045,7 +1045,6 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -4058,6 +4057,7 @@
 ||5w31xv1a2.com^
 ||5w3i1mcpy73fcv8iit7kjhv7fu4ez.cfd^
 ||5wapp.com^
+||5wczjm7h4.com^
 ||5wk6gvt164hxbuep.cfd^
 ||5wkni37mso.com^
 ||5wt390pvwz.com^
@@ -4274,7 +4274,6 @@
 ||698c6c5732.922f5b94e5.com^
 ||69a2bf0b8f.cb3a316b81.com^
 ||69b31e7623.com^
-||69cnc.duckdns.org^
 ||69g52yplxlrnv53blvk.cfd^
 ||69v.club^
 ||69vnqyxetpu4b.kbjwopl872ut84241zlxpkejt.cyou^
@@ -20988,6 +20987,7 @@
 ||appsecstudio.com^
 ||appsecurezomation.carte-gr.total.fr^
 ||appsentry-eu-ali.closeli.com^
+||appset.autos^
 ||appsflyer.com^
 ||appsflyersdk.com^
 ||appshake.adspirit.de^
@@ -27547,7 +27547,6 @@
 ||broadsidedaisysanta.com^
 ||broadstreet.ai^
 ||broadstreetads.com^
-||broadwalkindia.com^
 ||brobstubboy.cfd^
 ||brocardcored.com^
 ||brochfanons.com^
@@ -44852,6 +44851,7 @@
 ||dv.chemie.de^
 ||dv0uonokej56p.cloudfront.net^
 ||dv4ku.icu^
+||dv4o54c8p.com^
 ||dv59b.montecarlomeeting.com^
 ||dv663fc06d35i.cloudfront.net^
 ||dv7t7qyvgyrt5.cloudfront.net^
@@ -50766,7 +50766,6 @@
 ||fairfaxmedia.sharedcount.com^
 ||fairfaxpleasedmigrant.com^
 ||fairfeeling.com^
-||fairgroovetr.blog^
 ||fairiesbranch.com^
 ||fairlyleadingenquiry.com^
 ||fairscrew.com^
@@ -51473,7 +51472,6 @@
 ||femalesfellowship.com^
 ||fembed.com^
 ||femboy.center^
-||femboykisser.sbs^
 ||femcldsapntgd.space^
 ||femetrics.grammarly.io^
 ||femininebeams.com^
@@ -51883,6 +51881,7 @@
 ||filequanticore.com^
 ||filerit.com^
 ||files.54daysaverage.qzz.io^
+||files.8weeksaverage.xyz^
 ||files.adform.net^
 ||files.adriver.ru^
 ||files.info.posteitaliane.it^
@@ -59277,6 +59276,7 @@
 ||gzoozkenpgaua.online^
 ||gzoznnypuhodq.site^
 ||gzpinda.com^
+||gzq7cji8e.com^
 ||gzqczl.cn^
 ||gzqvd.cn^
 ||gzrlncudpybtf.site^
@@ -61660,7 +61660,6 @@
 ||hornet.newburycompanies.com^
 ||hornet.stechstudio.com^
 ||hornetywestersaloysia.cyou^
-||horno-rafelet.es^
 ||horntooth.com^
 ||hornymatches.com^
 ||hornyspots.com^
@@ -72146,6 +72145,7 @@
 ||kuaizip.com^
 ||kuaizitech.com^
 ||kuaizq.com^
+||kuakuawenjian.oss-cn-hangzhou.aliyuncs.com^
 ||kuanxin.top^
 ||kuaskqytzcrdq.site^
 ||kuaso.com^
@@ -86092,7 +86092,6 @@
 ||molecularrather.com^
 ||moleculebeams.com^
 ||moleculeordered.com^
-||molemole.my.id^
 ||molermaracan.cfd^
 ||mollnia.com^
 ||mollusk.working.actor^
@@ -89816,7 +89815,6 @@
 ||nornempapereroses.cyou^
 ||northbeam.io^
 ||northcoolingdiving.com^
-||northernvirginiaeyeassociates.com^
 ||northplains.actonservice.com^
 ||northsidemediagroup.actonservice.com^
 ||northstar.cr^
@@ -91694,7 +91692,6 @@
 ||oilsewans.shop^
 ||oilygams.shop^
 ||oilylimit.com^
-||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
@@ -102634,7 +102631,6 @@
 ||rarercopa.qpon^
 ||rareru.ru^
 ||raresummer.com^
-||rarewingvm.blog^
 ||rarityboastful.com^
 ||raritystandforester.com^
 ||rarnational.raisingareader.org^
@@ -108574,7 +108570,6 @@
 ||sandwichesbecomesorganism.com^
 ||sandybeachesandsunsets.com^
 ||sandypocket.com^
-||sandystudiogh.blog^
 ||sandytaco.com^
 ||saneeloisehat.com^
 ||sanejudgment.pro^
@@ -124452,6 +124447,7 @@
 ||tairgerdobos.com^
 ||taisi666.top^
 ||taiverturena.com^
+||taizi.fdstat.vip^
 ||taj1.ebis.ne.jp^
 ||taj2.ebis.ne.jp^
 ||tajdmtszoslff.site^
@@ -124537,7 +124533,6 @@
 ||tamfagaqmxc.in^
 ||tamgrt.com^
 ||tamilbirma.cfd^
-||tampareroofing.com^
 ||tampboddagh.shop^
 ||tampedennomic.shop^
 ||tampedirenica.com^
@@ -138729,6 +138724,7 @@
 ||vyomkbkvmryrw.top^
 ||vyplzy.job-medley.com^
 ||vypmgvwjvgztv.space^
+||vyq5segjv.com^
 ||vyqwljwavrzaw.top^
 ||vyragdxymcqtw.online^
 ||vyrwmrwmlozsq.site^
@@ -149142,7 +149138,6 @@
 ||yunpifu.cn^
 ||yunqishi8.com^
 ||yunshipei.com^
-||yunvasilsky.mooo.com^
 ||yunxish.com^
 ||yunzhanghe.cn^
 ||yunzuowen.com^

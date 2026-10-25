@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-25 00:26:18
-! Block rules: 135865
+! Generated: 2026-10-25 05:03:13
+! Block rules: 135869
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 103837
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5839
+!   - easylistchina [w=3] block 5843
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2886,6 +2886,7 @@
 ||5w31xv1a2.com^
 ||5w3i1mcpy73fcv8iit7kjhv7fu4ez.cfd^
 ||5wapp.com^
+||5wczjm7h4.com^
 ||5wk6gvt164hxbuep.cfd^
 ||5wkni37mso.com^
 ||5wt390pvwz.com^
@@ -37884,6 +37885,7 @@
 ||dv.chemie.de^
 ||dv0uonokej56p.cloudfront.net^
 ||dv4ku.icu^
+||dv4o54c8p.com^
 ||dv59b.montecarlomeeting.com^
 ||dv663fc06d35i.cloudfront.net^
 ||dv7t7qyvgyrt5.cloudfront.net^
@@ -51179,6 +51181,7 @@
 ||gzoozkenpgaua.online^
 ||gzoznnypuhodq.site^
 ||gzpinda.com^
+||gzq7cji8e.com^
 ||gzqczl.cn^
 ||gzqvd.cn^
 ||gzrlncudpybtf.site^
@@ -125373,6 +125376,7 @@
 ||vyomkbkvmryrw.top^
 ||vyplzy.job-medley.com^
 ||vypmgvwjvgztv.space^
+||vyq5segjv.com^
 ||vyqwljwavrzaw.top^
 ||vyragdxymcqtw.online^
 ||vyrwmrwmlozsq.site^
