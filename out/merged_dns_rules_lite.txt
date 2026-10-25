@@ -2,11 +2,11 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-25 09:58:53
-! Block rules: 151438
+! Generated: 2026-10-25 14:08:49
+! Block rules: 151446
 ! Whitelist rules: 282
 ! Sources (China-focused only):
-!   - adblockdnslite: 217 Lite（仅国内域名） (block 8464 / white 16, priority 1)
+!   - adblockdnslite: 217 Lite（仅国内域名） (block 8477 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 103837 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
 !   - easylistchina: EasyList China (block 5844 / white 11, priority 2)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1778 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1775 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -11065,6 +11065,7 @@
 ||acgbase.com^
 ||acgbenzi.com^
 ||acgbryg.com^
+||acgshenshicha.cn^
 ||acgugjkxtebno.site^
 ||achaetabuceros.qpon^
 ||achaquetips.cfd^
@@ -11475,6 +11476,7 @@
 ||ad-incentive.ximalaya.com^
 ||ad-locus.com^
 ||ad-log-upload-os.hoyoverse.com^
+||ad-log-upload.mihoyo.com^
 ||ad-log.dable.io^
 ||ad-log.didiglobal.com^
 ||ad-m.asia^
@@ -11574,6 +11576,7 @@
 ||ad.adx.adnxs.com^
 ||ad.afy11.net^
 ||ad.agrantsem.com^
+||ad.ah.jrgphq.cn^
 ||ad.aim-universe.co.jp^
 ||ad.alimama.com^
 ||ad.aloodo.com^
@@ -11715,6 +11718,7 @@
 ||ad.gyermekevek.hu^
 ||ad.happynest.vn^
 ||ad.hbv.de^
+||ad.hbwxfwl.top^
 ||ad.hefei.cc^
 ||ad.hiiir.com^
 ||ad.holaq.com^
@@ -11743,6 +11747,7 @@
 ||ad.iot.360.cn^
 ||ad.ipadview.com^
 ||ad.iplayer.org^
+||ad.itrwzs.cn^
 ||ad.iwhop.cn^
 ||ad.jamba.net^
 ||ad.jamster.co.uk^
@@ -11784,6 +11789,7 @@
 ||ad.lelongpp.com^
 ||ad.lflucky.com^
 ||ad.lgappstv.com^
+||ad.lhyghh.cn^
 ||ad.life.360.cn^
 ||ad.line-scdn.net^
 ||ad.linksynergy.com^
@@ -11962,6 +11968,7 @@
 ||ad.wz.cz^
 ||ad.xiaomi.com^
 ||ad.ximalaya.com^
+||ad.xmydch.cn^
 ||ad.xrea.com^
 ||ad.xtdrug.com^
 ||ad.xuanheng03.cn^
@@ -13544,6 +13551,7 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
+||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-wc.adaptv.advertising.com^
 ||ads-yallo-production.imgix.net^
@@ -13653,6 +13661,7 @@
 ||ads.channel4.com^
 ||ads.china.com^
 ||ads.ck101.com^
+||ads.cloud.huawei.com^
 ||ads.cloudsight.ai^
 ||ads.co.com^
 ||ads.cocomobi.com^
@@ -14879,6 +14888,7 @@
 ||advert-api.wildberries.ru^
 ||advert-media-api.wb.ru^
 ||advert-media-api.wildberries.ru^
+||advert-prod.hyrz.qq.com^
 ||advert-server.elecfans.com^
 ||advert-statistic-vip.xunlei.com^
 ||advert.58.com^
@@ -15288,7 +15298,6 @@
 ||aetfwitotdnvn.online^
 ||aetherius.live^
 ||aetherone.su^
-||aethersyncmatrix5.lol^
 ||aetvellt.net^
 ||aeuati.wedio.com^
 ||aeucjiicbgosj.site^
@@ -30382,6 +30391,7 @@
 ||cdl.lvsafe.io^
 ||cdl2.booksy.com^
 ||cdlfzyukmnvtu.site^
+||cdm.wovplaying.help^
 ||cdminlvb.goasrv.com^
 ||cdmnmrgwdltpe.site^
 ||cdn-10049480.file.myqcloud.com^
@@ -31430,6 +31440,7 @@
 ||channelsignal.actonservice.com^
 ||channelusa.samsung.com^
 ||channelwatcher.panda.tech^
+||chant98.com^
 ||chantcompass9.com^
 ||chaojilamei.cn^
 ||chaoku.oss-cn-chengdu.aliyuncs.com^
@@ -35980,6 +35991,7 @@
 ||cpmterra.com^
 ||cpmtree.com^
 ||cpnsbxkibvbhw.space^
+||cpofficial.com^
 ||cpokulack.com^
 ||cpoml.iask.sina.com.cn^
 ||cppm-kc2.net.jumia.ci^
@@ -42392,6 +42404,7 @@
 ||dishwaterorganizationsomebody.com^
 ||disinheritguilewallow.com^
 ||disipxnziqeql.website^
+||disk.360.yandex.ru^
 ||disk.accord1key.cn^
 ||diskaa.com^
 ||diskdem.cfd^
@@ -42547,6 +42560,7 @@
 ||dividedscientific.com^
 ||dividend56.top^
 ||divinesbaze.com^
+||divinex.to^
 ||divingamends.com^
 ||divingsubmissionvocational.com^
 ||division43.top^
@@ -55597,7 +55611,6 @@
 ||geo.digitalpoint.com^
 ||geo.emol.cl^
 ||geo.ertya.com^
-||geo.estimator-undermostshelving.in.net^
 ||geo.flurry.com^
 ||geo.go2s.co^
 ||geo.gorillanation.com^
@@ -61660,6 +61673,7 @@
 ||hornet.newburycompanies.com^
 ||hornet.stechstudio.com^
 ||hornetywestersaloysia.cyou^
+||horno-rafelet.es^
 ||horntooth.com^
 ||hornymatches.com^
 ||hornyspots.com^
@@ -85141,7 +85155,6 @@
 ||minnow.clintwinter.me^
 ||minnow.phasemedical.com^
 ||minnow.tapas-software.net^
-||minor-api.mihoyo.com^
 ||minorcattle.com^
 ||minorshort.weixin.qq.com^
 ||minosurgence.com^
@@ -87386,7 +87399,6 @@
 ||mwzovcuzsqpyv.site^
 ||mwztyflmatxei.site^
 ||mx-album-api.vivoglobal.com^
-||mx-cota.vivoglobal.com^
 ||mx-domaincfg.vivoglobal.com^
 ||mx-err-up.vivoglobal.com^
 ||mx-onrt-stsdk.vivoglobal.com^
@@ -92432,7 +92444,6 @@
 ||onlayusages.com^
 ||onlidex.com^
 ||online-adnetwork.com^
-||online-logger.webapp.163.com^
 ||online-metrix.net^
 ||online-mt-com-455208869.p06.elqsandbox.com^
 ||online.cnzz.com^
@@ -93203,7 +93214,6 @@
 ||oseboltjgeadu.website^
 ||oselaziffs.cyou^
 ||osezny.intheswim.com^
-||osfjkqoiw382r552q.hopto.org^
 ||osfota.cdn.aliyun.com^
 ||osfultrbriolenai.info^
 ||oshacampelis.com^
@@ -97192,6 +97202,7 @@
 ||play.kakao.com^
 ||play.maxgame.store^
 ||play.nekobot.vip^
+||play.nopixel-rp.ir^
 ||play.qs01.cn^
 ||play.rheo.tv^
 ||play.rooski.net^
@@ -105176,7 +105187,6 @@
 ||robinhoodwallet.dervano.vu^
 ||robinorchid.com^
 ||roblox-xeno.info^
-||roblox-xeno.net^
 ||robotbagpipe.com^
 ||robotflowermobile.com^
 ||robotgarages.com^
@@ -109507,6 +109517,7 @@
 ||sdk.hzzfcm.com^
 ||sdk.inmobi.com^
 ||sdk.look.360.cn^
+||sdk.loveota.net^
 ||sdk.m.youku.com^
 ||sdk.markmedia.com.cn^
 ||sdk.mediav.com^
@@ -124447,7 +124458,6 @@
 ||tairgerdobos.com^
 ||taisi666.top^
 ||taiverturena.com^
-||taizi.fdstat.vip^
 ||taj1.ebis.ne.jp^
 ||taj2.ebis.ne.jp^
 ||tajdmtszoslff.site^
@@ -126779,7 +126789,6 @@
 ||tjs.sjs.sinajs.cn^
 ||tjsbs003.sbs^
 ||tjskjndukyk.com^
-||tjsptech.com^
 ||tjswoufpfcltp.online^
 ||tjtawartfkjpb.site^
 ||tjtsctymepnds.space^
@@ -127774,7 +127783,6 @@
 ||toucan.ateliermilky.com^
 ||toucan.the-faithful.com^
 ||toucansryukyupawnage.qpon^
-||touch-moblie.com^
 ||touch.adeaz.com^
 ||touch.multitaction.com^
 ||touch.myntra.com^
@@ -133036,7 +133044,6 @@
 ||uads.cc^
 ||uadx.com^
 ||uaemarketing.sedgwick.com^
-||uafsoftware.in^
 ||uagzghuaqcmdo.online^
 ||uahgfhnjufgre.space^
 ||uahvjbwddzoki.com^
@@ -136292,9 +136299,7 @@
 ||v95-aw-reading-ad.qznovelvod.com^
 ||v95-se-zjwztc-reading-ad.qznovelvod.com^
 ||v95-ynkmtc-reading-ad.qznovelvod.com^
-||v95-zjjx2tc-reading-ad.qznovelvod.com^
 ||v9533.com^
-||v96-reading-ad.qznovelvod.com^
 ||v9banners-com.cdn.ampproject.org^
 ||v9banners.com^
 ||va-endpoint.com^
@@ -144155,7 +144160,6 @@
 ||www.xiniuz.com^
 ||www.xjyxgy.com^
 ||www.xmtrk.com^
-||www.xpdyqax.cn^
 ||www.xpj23222.com^
 ||www.xpjylc9977.com^
 ||www.xses.goaserv.com^
@@ -146713,6 +146717,7 @@
 ||xmysmy.cn^
 ||xmyvhu.soxo.pl^
 ||xmyvtjuwanzjz.online^
+||xmywlyh.cn^
 ||xmzppziqajevl.site^
 ||xmzvrkniutbxy.space^
 ||xn--2qu92fhtx4ff.ink^
@@ -146741,6 +146746,7 @@
 ||xn--xhq9mt12cf5v.website^
 ||xn--xhq9mt12cf5v.xn--io0a7i^
 ||xn--yh4bx88a.com^
+||xn--zw0autp42d.cn^
 ||xnbbhxsnvxook.online^
 ||xncilrhkqmvrd.site^
 ||xndjh.hebiz.cn^
@@ -146790,6 +146796,7 @@
 ||xoiztkesgkbdh.site^
 ||xokxqfxasjuaw.space^
 ||xolep1.tos-cn-beijing.volces.com^
+||xolerkr.cn^
 ||xolgghttwaufg.site^
 ||xolltgznjuwxi.space^
 ||xommzrn.com^
@@ -150569,6 +150576,7 @@
 ||zmg15qfvi.com^
 ||zmgzerfxzgkeq.online^
 ||zmhpphp.forum^
+||zmhqhuq.cn^
 ||zmhsxr.hometogo.com^
 ||zmiarjiioqzvm.site^
 ||zmiqtnsxzbthu.online^

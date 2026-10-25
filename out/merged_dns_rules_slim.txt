@@ -3,13 +3,13 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-25 09:58:54
-! Block rules: 135870
+! Generated: 2026-10-25 14:08:51
+! Block rules: 135876
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 8464
+!   - adblockdnslite [w=5] block 8477
 !   - anti-ad [w=5] block 103837
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
@@ -7142,6 +7142,7 @@
 ||acgbase.com^
 ||acgbenzi.com^
 ||acgbryg.com^
+||acgshenshicha.cn^
 ||acgugjkxtebno.site^
 ||achaetabuceros.qpon^
 ||achaquetips.cfd^
@@ -7531,6 +7532,7 @@
 ||ad-incentive.ximalaya.com^
 ||ad-locus.com^
 ||ad-log-upload-os.hoyoverse.com^
+||ad-log-upload.mihoyo.com^
 ||ad-log.didiglobal.com^
 ||ad-m.asia^
 ||ad-manager.matsukiyococokara-online.com^
@@ -7610,6 +7612,7 @@
 ||ad.adhouyi.cn^
 ||ad.adtrack.enlightent.cn^
 ||ad.advst.cp33.ott.cibntv.net^
+||ad.ah.jrgphq.cn^
 ||ad.aim-universe.co.jp^
 ||ad.alimama.com^
 ||ad.aloodo.com^
@@ -7730,6 +7733,7 @@
 ||ad.gyermekevek.hu^
 ||ad.happynest.vn^
 ||ad.hbv.de^
+||ad.hbwxfwl.top^
 ||ad.hefei.cc^
 ||ad.hiiir.com^
 ||ad.holaq.com^
@@ -7754,6 +7758,7 @@
 ||ad.intools.dev^
 ||ad.ipadview.com^
 ||ad.iplayer.org^
+||ad.itrwzs.cn^
 ||ad.iwhop.cn^
 ||ad.jamba.net^
 ||ad.jamster.co.uk^
@@ -7791,6 +7796,7 @@
 ||ad.lelongpp.com^
 ||ad.lflucky.com^
 ||ad.lgappstv.com^
+||ad.lhyghh.cn^
 ||ad.line-scdn.net^
 ||ad.lofter.com^
 ||ad.love.hu^
@@ -7947,6 +7953,7 @@
 ||ad.wz.cz^
 ||ad.xiaomi.com^
 ||ad.ximalaya.com^
+||ad.xmydch.cn^
 ||ad.xrea.com^
 ||ad.xtdrug.com^
 ||ad.xuanheng03.cn^
@@ -9419,6 +9426,7 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
+||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-yallo-production.imgix.net^
 ||ads.123net.jp^
@@ -9505,6 +9513,7 @@
 ||ads.channel4.com^
 ||ads.china.com^
 ||ads.ck101.com^
+||ads.cloud.huawei.com^
 ||ads.cloudsight.ai^
 ||ads.co.com^
 ||ads.cocomobi.com^
@@ -10617,6 +10626,7 @@
 ||advert-api.wildberries.ru^
 ||advert-media-api.wb.ru^
 ||advert-media-api.wildberries.ru^
+||advert-prod.hyrz.qq.com^
 ||advert-server.elecfans.com^
 ||advert-statistic-vip.xunlei.com^
 ||advert.58.com^
@@ -15038,6 +15048,7 @@
 ||api.tavuner.com^
 ||api.telemetry.watchabc.go.com^
 ||api.tongji.today^
+||api.touch-moblie.com^
 ||api.trafficfactory.com^
 ||api.trueaudience.io^
 ||api.trwl1.com^
@@ -23496,7 +23507,6 @@
 ||c.51xmgys.com^
 ||c.6tuna.com^
 ||c.7times.top^
-||c.acgshenshicha.cn^
 ||c.adbxb.cn^
 ||c.algovid.com^
 ||c.alimama.com^
@@ -75633,7 +75643,6 @@
 ||minnow.clintwinter.me^
 ||minnow.phasemedical.com^
 ||minnow.tapas-software.net^
-||minor-api.mihoyo.com^
 ||minorcattle.com^
 ||minorshort.weixin.qq.com^
 ||minosurgence.com^
@@ -77726,7 +77735,6 @@
 ||mwzovcuzsqpyv.site^
 ||mwztyflmatxei.site^
 ||mx-album-api.vivoglobal.com^
-||mx-cota.vivoglobal.com^
 ||mx-domaincfg.vivoglobal.com^
 ||mx-err-up.vivoglobal.com^
 ||mx-onrt-stsdk.vivoglobal.com^
@@ -82503,7 +82511,6 @@
 ||onlayusages.com^
 ||onlidex.com^
 ||online-adnetwork.com^
-||online-logger.webapp.163.com^
 ||online-metrix.net^
 ||online-mt-com-455208869.p06.elqsandbox.com^
 ||online.cphi.cn^
@@ -98139,6 +98146,7 @@
 ||sdk.duihuashijie.com^
 ||sdk.hzsanjiaomao.com^
 ||sdk.hzzfcm.com^
+||sdk.loveota.net^
 ||sdk.m.youku.com^
 ||sdk.markmedia.com.cn^
 ||sdk.mobads.adwangmai.com^
@@ -114196,7 +114204,6 @@
 ||tjs.sjs.sinajs.cn^
 ||tjsbs003.sbs^
 ||tjskjndukyk.com^
-||tjsptech.com^
 ||tjswoufpfcltp.online^
 ||tjtawartfkjpb.site^
 ||tjtsctymepnds.space^
@@ -115142,7 +115149,6 @@
 ||toucan.ateliermilky.com^
 ||toucan.the-faithful.com^
 ||toucansryukyupawnage.qpon^
-||touch-moblie.com^
 ||touch.multitaction.com^
 ||touch.myntra.com^
 ||touch.thenavisway.com^
@@ -122958,7 +122964,6 @@
 ||v.76768hwj.cn^
 ||v.7times.top^
 ||v.9y88.com^
-||v.acgshenshicha.cn^
 ||v.ad.xelements.cn^
 ||v.adblockultimate.net^
 ||v.angha.me^
@@ -123120,9 +123125,7 @@
 ||v95-aw-reading-ad.qznovelvod.com^
 ||v95-se-zjwztc-reading-ad.qznovelvod.com^
 ||v95-ynkmtc-reading-ad.qznovelvod.com^
-||v95-zjjx2tc-reading-ad.qznovelvod.com^
 ||v9533.com^
-||v96-reading-ad.qznovelvod.com^
 ||v9banners-com.cdn.ampproject.org^
 ||v9banners.com^
 ||va-endpoint.com^
@@ -129163,7 +129166,6 @@
 ||www.wwe23.com^
 ||www.xiaodaoyuedu.com^
 ||www.xmtrk.com^
-||www.xpdyqax.cn^
 ||www.yabovip2030.com^
 ||www.yjg2.com^
 ||www.yueba423.com^
@@ -131370,6 +131372,7 @@
 ||xmysmy.cn^
 ||xmyvhu.soxo.pl^
 ||xmyvtjuwanzjz.online^
+||xmywlyh.cn^
 ||xmzppziqajevl.site^
 ||xmzvrkniutbxy.space^
 ||xn--2qu92fhtx4ff.ink^
@@ -131397,6 +131400,7 @@
 ||xn--xhq9mt12cf5v.website^
 ||xn--xhq9mt12cf5v.xn--io0a7i^
 ||xn--yh4bx88a.com^
+||xn--zw0autp42d.cn^
 ||xnbbhxsnvxook.online^
 ||xncilrhkqmvrd.site^
 ||xndjh.hebiz.cn^
@@ -131445,6 +131449,7 @@
 ||xoiuprsewuyst.site^
 ||xoiztkesgkbdh.site^
 ||xokxqfxasjuaw.space^
+||xolerkr.cn^
 ||xolgghttwaufg.site^
 ||xolltgznjuwxi.space^
 ||xommzrn.com^
@@ -135048,6 +135053,7 @@
 ||zmg15qfvi.com^
 ||zmgzerfxzgkeq.online^
 ||zmhpphp.forum^
+||zmhqhuq.cn^
 ||zmhsxr.hometogo.com^
 ||zmiarjiioqzvm.site^
 ||zmiqtnsxzbthu.online^
