@@ -54,7 +54,7 @@
 ├── Lists/                    # 手动维护的名单（入库，参与全部四个版本）
 │   ├── whitelist.txt         #   自定义白名单（只放行）
 │   ├── blocklist.txt         #   自定义拦截名单（只拦截）
-│   └── mixed.txt             #   黑白混写 强制写入规则集末尾（@@ 前缀表示放行）
+│   └── Append.txt            #   黑白混写 强制写入规则集末尾（@@ 前缀表示放行）
 ├── out/                      # 最终产物（入库，供订阅）
 │   ├── integrated_extra.txt              # 中间产物（不入库）
 │   ├── integrated_extra_pro.txt          # 中间产物（不入库）
@@ -416,7 +416,7 @@ AdGuard Home 的规则内存开销约为 **1–2 KB/条**（随版本与配置�
 |---|---|---|
 | `Lists/whitelist.txt` | 只放行 | 裸域名即可（无需前缀） |
 | `Lists/blocklist.txt` | 只拦截 | 裸域名即可（无需前缀） |
-| `Lists/mixed.txt` | **黑白混写** | 需显式写 `@@` 前缀 |
+| `Lists/Append.txt` | **黑白混写** | 需显式写 `@@` 前缀 |
 
 ### 书写格式
 
@@ -426,7 +426,7 @@ AdGuard Home 的规则内存开销约为 **1–2 KB/条**（随版本与配置�
 # whitelist.txt / blocklist.txt：裸域名即可
 example.com
 
-# mixed.txt：靠前缀区分黑白
+# Append.txt：靠前缀区分黑白
 example.com            ← 拦截（裸域名默认按拦截处理）
 ||example.com^         ← 拦截
 @@||example.com^       ← 放行
@@ -435,7 +435,7 @@ example.com            ← 拦截（裸域名默认按拦截处理）
 - 以 `!` 或 `#` 开头的行是注释，空行忽略
 - **写主域即可覆盖全部子域**（AdGuard Home 中 `@@||example.com^` 已含子域）
 - 不支持通配符（`*.example.com`）、路径（`a.com/path`）、`$` 修饰符——这类写法会被忽略并打印警告
-- ⚠️ **`mixed.txt` 里的裸域名按「拦截」处理**，要放行必须显式写 `@@`
+- ⚠️ **`Append.txt` 里的裸域名按「拦截」处理**，要放行必须显式写 `@@`
 
 ### 优先级与冲突处理
 
@@ -443,17 +443,17 @@ example.com            ← 拦截（裸域名默认按拦截处理）
 
 ```
 1. Lists/whitelist.txt          手写白名单
-2. Lists/mixed.txt 的 @@ 条目    混合源放行
+2. Lists/Append.txt 的 @@ 条目    混合源放行
 3. Lists/blocklist.txt          手写拦截名单
-4. Lists/mixed.txt 的拦截条目    混合源拦截（裸域名）
+4. Lists/Append.txt 的拦截条目    混合源拦截（裸域名）
 5. 上游源
 ```
 
 | 情况 | 处理 |
 |---|---|
 | 同一域名写在 whitelist 与 blocklist | **放行优先**，拦截条目被忽略并打印警告 |
-| 同一域名在 mixed 与单用途名单中冲突 | **放行优先**，打印警告 |
-| 同一域名在 mixed.txt 内既写放行又写拦截 | **放行优先**（同一文件内自动处理） |
+| 同一域名在 Append 与单用途名单中冲突 | **放行优先**，打印警告 |
+| 同一域名在 Append.txt 内既写放行又写拦截 | **放行优先**（同一文件内自动处理） |
 | 手写放行的域名同时在上游黑名单中 | 该域及其**子域**的上游黑名单条目被自动移除（避免既拦又放） |
 | 手写拦截的域名同时在上游白名单中 | 该条被忽略（兜底，防止自我矛盾） |
 
@@ -464,7 +464,7 @@ example.com            ← 拦截（裸域名默认按拦截处理）
 ```text
 ! Manual whitelist: Lists/whitelist.txt  (0 domains)
 ! Manual blocklist: Lists/blocklist.txt  (0 domains)
-! Manual mixed    : Lists/mixed.txt  (allow 0 / block 0)
+! Manual append   : Lists/Append.txt  (1146 rules / 152 comments, passed through verbatim)
 ```
 
 > 三个文件默认只有注释、不含任何规则，因此初始状态下对产物**零影响**。

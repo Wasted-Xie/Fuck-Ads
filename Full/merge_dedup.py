@@ -22,7 +22,7 @@ OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules.txt")
 # 复用公共模块中的手写名单解析逻辑（Lite / Slim 同样使用它）
 sys.path.insert(0, ROOT_DIR)
 from integrate_sources import (                                   # noqa: E402
-    WHITELIST_FILE, BLOCKLIST_FILE, MIXED_FILE,
+    WHITELIST_FILE, BLOCKLIST_FILE, APPEND_FILE,
     parse_domain, load_manual_list, load_verbatim_rules,
 )
 
@@ -91,15 +91,15 @@ def main(out_file=None, sources=None, title=None, description=None):
     all_blocks, all_whites = set(), set()
 
     # ---- 手动维护的名单（优先级高于上游）----
-    # 优先级：whitelist.txt > mixed.txt 的 @@ 放行 > blocklist.txt
-    #         > mixed.txt 的拦截 > 上游源
+    # 优先级：whitelist.txt > Append.txt 的 @@ 放行 > blocklist.txt
+    #         > Append.txt 的拦截 > 上游源
     #
-    # mixed.txt 采用「原样透传」：其中的规则（含 $important 等修饰符、
+    # Append.txt 采用「原样透传」：其中的规则（含 $important 等修饰符、
     # * 通配符、@@ 前缀）不经过域名解析，直接原文写入产物，交由 AdGuard Home
     # 判定。这样它能作为 AGH 自定义规则的完整副本，能力不受本项目格式限制。
     manual_whitelist, wl_bad = load_manual_list(WHITELIST_FILE)
     manual_blocklist, bl_bad = load_manual_list(BLOCKLIST_FILE)
-    mixed_vlines, mixed_nrules, mixed_ncomments = load_verbatim_rules(MIXED_FILE)
+    append_vlines, append_nrules, append_ncomments = load_verbatim_rules(APPEND_FILE)
 
     for path, bad in ((WHITELIST_FILE, wl_bad), (BLOCKLIST_FILE, bl_bad)):
         for lineno, text in bad:
@@ -170,22 +170,22 @@ def main(out_file=None, sources=None, title=None, description=None):
     header += [
         f"! Manual whitelist: Lists/whitelist.txt  ({len(manual_whitelist)} domains)",
         f"! Manual blocklist: Lists/blocklist.txt  ({len(manual_blocklist)} domains)",
-        f"! Manual mixed    : Lists/mixed.txt  "
-        f"({mixed_nrules} rules / {mixed_ncomments} comments, passed through verbatim)",
+        f"! Manual append   : Lists/Append.txt  "
+        f"({append_nrules} rules / {append_ncomments} comments, passed through verbatim)",
     ]
     header.append("!")
 
     body = sorted_blocks + sorted_whites
 
-    # mixed.txt 的**全部行**（含注释分组与带修饰符的规则）原样追加到文件末尾，
+    # Append.txt 的**全部行**（含注释分组与带修饰符的规则）原样追加到文件末尾，
     # 保持与源文件一致的顺序，由 AdGuard Home 自行判定优先级。
     # 它们不参与上面的去重统计。
-    mixed_section = []
-    if mixed_vlines:
-        mixed_section = ["", "! ==== Lists/mixed.txt (verbatim) ===="]
-        mixed_section += mixed_vlines
+    append_section = []
+    if append_vlines:
+        append_section = ["", "! ==== Lists/Append.txt (verbatim) ===="]
+        append_section += append_vlines
 
-    new_text = "\n".join(header + body + mixed_section + [""])
+    new_text = "\n".join(header + body + append_section + [""])
 
     # Rewrite only when something besides the generated timestamp changed,
     # so a scheduled run with identical rules creates no git commit.
@@ -215,8 +215,8 @@ def main(out_file=None, sources=None, title=None, description=None):
     print("==== Merge dedup result ====")
     print(f"Manual whitelist domains     : {len(manual_whitelist)}  (Lists/whitelist.txt)")
     print(f"Manual blocklist domains     : {len(manual_blocklist)}  (Lists/blocklist.txt)")
-    print(f"Manual mixed (verbatim)      : {mixed_nrules} rules / {mixed_ncomments} comments"
-          f"  (Lists/mixed.txt)")
+    print(f"Manual append (verbatim)     : {append_nrules} rules / {append_ncomments} comments"
+          f"  (Lists/Append.txt)")
     if manual_conflict:
         print(f"  whitelist/blocklist clashes: {len(manual_conflict)}  (whitelist wins)")
     print(f"Upstream blocks removed by manual whitelist: {manual_wl_removed}")

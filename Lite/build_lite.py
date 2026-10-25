@@ -32,7 +32,7 @@ OUT_FILE = os.path.join(OUT_DIR, "merged_dns_rules_lite.txt")
 sys.path.insert(0, ROOT_DIR)
 import integrate_sources as integ                                # noqa: E402
 from integrate_sources import (                                   # noqa: E402
-    BLOCKLIST_FILE, MIXED_FILE, load_manual_list, load_verbatim_rules,
+    BLOCKLIST_FILE, APPEND_FILE, load_manual_list, load_verbatim_rules,
 )
 
 # 国内向源：(标识, 路径, 说明, 优先级) —— 优先级数字越小越先保留
@@ -121,7 +121,7 @@ def main():
     # ---- 并入手动维护的拦截名单（Lists/blocklist.txt）----
     # 手写名单优先级最高（给最小优先级数字），且不会被白名单剔除。
     # 注 1：手写白名单无需在此处理 —— 它已被写入 Full 产物，上面继承 allow_set 时一并生效。
-    # 注 2：Lists/mixed.txt 走「原样透传」，不在此处解析为域名，见下方写文件部分。
+    # 注 2：Lists/Append.txt 走「原样透传」，不在此处解析为域名，见下方写文件部分。
     manual_blocks, bl_bad = load_manual_list(BLOCKLIST_FILE)
     for lineno, text in bl_bad:
         print(f"[WARN] Lists/blocklist.txt:{lineno} 无法解析，已忽略: {text}",
@@ -130,8 +130,8 @@ def main():
     for d in manual_blocks:
         candidates[d] = 0
 
-    # mixed.txt 原文透传（全部行，含注释与带修饰符的规则）
-    mixed_vlines, mixed_nrules, mixed_ncomments = load_verbatim_rules(MIXED_FILE)
+    # Append.txt 原文透传（全部行，含注释与带修饰符的规则）
+    append_vlines, append_nrules, append_ncomments = load_verbatim_rules(APPEND_FILE)
 
     # ---- 规模控制 ----
     truncated = 0
@@ -166,13 +166,13 @@ def main():
     if sorted_allows:
         body += ["@@" + "||" + d + "^" for d in sorted_allows]
 
-    # mixed.txt 原样透传（含注释分组、$ 修饰符与 * 通配符）
-    mixed_section = []
-    if mixed_vlines:
-        mixed_section = ["", "! ==== Lists/mixed.txt (verbatim) ===="]
-        mixed_section += mixed_vlines
+    # Append.txt 原样透传（含注释分组、$ 修饰符与 * 通配符）
+    append_section = []
+    if append_vlines:
+        append_section = ["", "! ==== Lists/Append.txt (verbatim) ===="]
+        append_section += append_vlines
 
-    new_text = "\n".join(header + body + mixed_section) + "\n"
+    new_text = "\n".join(header + body + append_section) + "\n"
 
     # 与 Full/merge_dedup.py 保持一致：除生成时间戳外内容未变时不重写文件，
     # 避免定时任务产生无意义的提交。

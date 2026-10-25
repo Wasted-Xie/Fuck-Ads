@@ -32,7 +32,9 @@ OUT_EXCLUDED = os.path.join(OUT_DIR, "excluded_redirect_entries.txt")
 LISTS_DIR = os.path.join(BASE_DIR, "Lists")
 WHITELIST_FILE = os.path.join(LISTS_DIR, "whitelist.txt")
 BLOCKLIST_FILE = os.path.join(LISTS_DIR, "blocklist.txt")
-MIXED_FILE = os.path.join(LISTS_DIR, "mixed.txt")
+# 追加名单：规则原样透传到产物末尾（保留 $ 修饰符、* 通配符与注释）。
+# 原名 mixed.txt，2026-10-25 更名，语义上更贴近它的实际作用。
+APPEND_FILE = os.path.join(LISTS_DIR, "Append.txt")
 
 # 整体排除的源（本身就是翻墙/加速专用，不含去广告内容）
 EXCLUDE_SOURCES = {"googlehosts"}
@@ -87,32 +89,6 @@ def parse_domain(line):
     return s
 
 
-def parse_signed_domain(line):
-    """从一行手写名单中取出 (is_allow, domain)；无法识别时返回 None。
-
-    与 parse_domain 的区别：**保留黑白属性**，用于同一文件内混写拦截与放行。
-        example.com           -> (False, 'example.com')   裸域名按拦截处理
-        ||example.com^        -> (False, 'example.com')
-        @@||example.com^      -> (True,  'example.com')
-    以 ! 或 # 开头（以及 [ 开头）的行视为注释，返回 None。
-    """
-    s = line.strip()
-    if not s or s.startswith("!") or s.startswith("#") or s.startswith("["):
-        return None
-    is_allow = False
-    if s.startswith("@@"):
-        is_allow = True
-        s = s[2:]
-    if s.startswith("||"):
-        s = s[2:]
-    s = s.strip().rstrip("^").strip().lower()
-    if not s or "/" in s or "$" in s or "*" in s or " " in s:
-        return None
-    if "." not in s or s.startswith(".") or s.endswith("."):
-        return None
-    return (is_allow, s)
-
-
 def load_manual_list(path):
     """读取一个手动维护的名单文件，返回 (域名集合, 无法解析的 (行号, 内容) 列表)。
 
@@ -133,34 +109,11 @@ def load_manual_list(path):
     return domains, bad_lines
 
 
-def load_mixed_list(path):
-    """读取「黑白混写」名单，返回 (allow 集合, block 集合, 无法解析的行列表)。
-
-    同一域名若在文件内既写放行又写拦截，放行优先（从 block 中剔除）。
-    """
-    allow, block, bad_lines = set(), set(), []
-    if not os.path.exists(path):
-        return allow, block, bad_lines
-    with open(path, "r", encoding="utf-8") as f:
-        for lineno, raw_line in enumerate(f, 1):
-            if not raw_line.strip() or raw_line.strip().startswith(("!", "#", "[")):
-                continue
-            parsed = parse_signed_domain(raw_line)
-            if parsed is None:
-                bad_lines.append((lineno, raw_line.strip()))
-                continue
-            is_allow, dom = parsed
-            (allow if is_allow else block).add(dom)
-    # 文件内部冲突：放行优先
-    block -= allow
-    return allow, block, bad_lines
-
-
 def load_verbatim_rules(path):
     """读取「原样透传」名单：按原始顺序保留每一行（含注释与规则）。
 
-    与 load_manual_list / load_mixed_list 的区别：
-        后两者把规则归一成纯域名（剥离 $ 修饰符、丢弃通配符），适合「只想要域名」的场景；
+    与 load_manual_list 的区别：
+        后者把规则归一成纯域名（剥离 $ 修饰符、丢弃通配符），适合「只想要域名」的场景；
         本函数则**逐行原样保留**，包括 $important 等修饰符、* 通配符、@@ 前缀，
         以及 # 注释和分组说明（如「#针对转转App的放行规则，勿删」）。
 

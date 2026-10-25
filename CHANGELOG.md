@@ -6,6 +6,25 @@
 
 ---
 
+## [2.5.0] - 2026-10-25
+
+**更名** `Lists/mixed.txt` → `Lists/Append.txt`。
+
+### 变更
+
+- 文件名 `mixed.txt` 改为 `Append.txt`，更贴合它的实际作用：该文件的规则被**原样追加**到四份产物的末尾，而非参与域名解析与去重
+- 代码中的常量 `MIXED_FILE` 相应改为 `APPEND_FILE`，内部变量 `mixed_*` 改为 `append_*`
+- 产物头部标记随之变化：
+  - `! Manual mixed    : Lists/mixed.txt  (allow N / block N)`
+  - → `! Manual append   : Lists/Append.txt  (N rules / N comments, passed through verbatim)`
+  - `! ==== Lists/mixed.txt (verbatim) ====`
+  - → `! ==== Lists/Append.txt (verbatim) ====`
+- 文件内容、透传行为、与 `whitelist.txt` / `blocklist.txt` 的优先级关系**均未改变**
+
+> 历史版本记录（2.4.0 及更早）中仍保留原名 `mixed.txt`，不再回改。
+
+---
+
 ## [2.4.0] - 2026-10-09
 
 **新增黑白混写名单** `Lists/mixed.txt`：可在同一文件内同时写拦截与放行。
