@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-26 12:01:08
-! Block rules: 136271
+! Generated: 2026-10-26 18:46:03
+! Block rules: 136291
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 8442
+!   - adblockdnslite [w=5] block 8480
 !   - anti-ad [w=5] block 104582
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5856
+!   - easylistchina [w=3] block 5859
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -287,6 +287,7 @@
 ||0mkeb9vth.com^
 ||0n6h.cn^
 ||0network.com^
+||0nh9bt6v6a.com^
 ||0nyzdw2maq.com^
 ||0oaqgsk54hm5.com^
 ||0oi1ej7mo.com^
@@ -2993,6 +2994,7 @@
 ||6519114.mktg.almosafer.com^
 ||6519114.mktg.tajawal.com^
 ||6532208.com^
+||65362655721.edgeone.dev^
 ||653727308e.com^
 ||6554.net^
 ||65a16dd098.com^
@@ -8621,6 +8623,7 @@
 ||adim.pinduoduo.com^
 ||adimage.blm.net^
 ||adimage.bwton.com^
+||adimage.bwton.com.w.kunluncan.com^
 ||adimage.guardian.co.uk^
 ||adimage.sphdigital.com^
 ||adimages.associationheadquarters.com^
@@ -10635,7 +10638,6 @@
 ||advert-media-api.wildberries.ru^
 ||advert-prod.hyrz.qq.com^
 ||advert-server.elecfans.com^
-||advert-statistic-vip.xunlei.com^
 ||advert.58.com^
 ||advert.api.thejoyrun.com^
 ||advert.bayarea.com^
@@ -12073,6 +12075,7 @@
 ||akvqruhyqzsop.site^
 ||akxmcwvwliico.website^
 ||akxttaqmivp.in^
+||akydw.com^
 ||akydxrphsdaaq.site^
 ||akyidxbfhyqfd.online^
 ||akykvnbddvyjo.site^
@@ -13028,6 +13031,7 @@
 ||analysis.fi^
 ||analysis.polarisoffice.com^
 ||analysis.prod.joyfru.jiji.com^
+||analysis.shixunsuda.com^
 ||analysis.sooplive.co.kr^
 ||analysis.sooplive.com^
 ||analysis.tratao.com^
@@ -19332,6 +19336,7 @@
 ||bc34.wijnvoordeel.nl^
 ||bc3x4o7ltoy9uvq26i4tuvxw.rest^
 ||bc48fa9adc.com^
+||bc4zqavx5d.com^
 ||bc6dc48b743dc5d01.clicknplay.to^
 ||bcaadnibyntzm.space^
 ||bcaafgjmivr.in^
@@ -35038,6 +35043,7 @@
 ||dhkyrl.discountmags.com^
 ||dhl.135320.com^
 ||dhlh.org^
+||dhlpolska.edgeone.cool^
 ||dhmdja.trueprotein.com.au^
 ||dhnoynooncybj.com^
 ||dhobeynandi.com^
@@ -37360,6 +37366,7 @@
 ||dserdo.com^
 ||dserju.com^
 ||dsetx3.com^
+||dseulm.shop^
 ||dseyzk.com^
 ||dsfdzo.com^
 ||dsfe19.madeindesign.com^
@@ -41774,6 +41781,7 @@
 ||erriteskither.qpon^
 ||error-analytics-production.shopifysvc.com^
 ||error-analytics-sessions-production.shopifysvc.com^
+||error-code.jftechws.com^
 ||error-collector.ted.com^
 ||error-tracker.pages.dev^
 ||error-tracking.megamarket.tech^
@@ -51785,6 +51793,7 @@
 ||harvester.cms.markiza.sk^
 ||harvester.hbpl.co.uk^
 ||harvester.hnonline.sk^
+||harvestlanshop.shop^
 ||harvesttraffic.com^
 ||harveycarnet.cfd^
 ||hasaeblmtcadr.website^
@@ -53781,6 +53790,7 @@
 ||hqazaazwdnxle.site^
 ||hqbaanqvcscwl.space^
 ||hqbttzzvympnn.website^
+||hqcqz2.cn^
 ||hqdacihnnldfv.online^
 ||hqdhdyehelnks.online^
 ||hqeiwwnkce.icu^
@@ -67268,6 +67278,7 @@
 ||log.nhipcaudautu.vn^
 ||log.node.minigame.qq.com^
 ||log.nordot.jp^
+||log.ntyy888.com^
 ||log.nuomi.com^
 ||log.nvwa.baofeng.com^
 ||log.oceanzz.xyz^
@@ -75772,6 +75783,7 @@
 ||mindtake.com^
 ||mineinvoice.com^
 ||minemytraffic.com^
+||mineon.xin^
 ||minerad.com^
 ||minergate.com^
 ||minero-proxy-*.sh^
@@ -75830,6 +75842,7 @@
 ||minnow.clintwinter.me^
 ||minnow.phasemedical.com^
 ||minnow.tapas-software.net^
+||minor-api.mihoyo.com^
 ||minorcattle.com^
 ||minorshort.weixin.qq.com^
 ||minosurgence.com^
@@ -82730,6 +82743,7 @@
 ||onlayusages.com^
 ||onlidex.com^
 ||online-adnetwork.com^
+||online-logger.webapp.163.com^
 ||online-metrix.net^
 ||online-mt-com-455208869.p06.elqsandbox.com^
 ||online.cphi.cn^
@@ -85396,6 +85410,7 @@
 ||pdfxd.com^
 ||pdghwdpxgbpqf.site^
 ||pdgknglzhohbi.online^
+||pdhhmf.cn^
 ||pdhjdcvjnloyo.com^
 ||pdhkjnndwzwys.site^
 ||pdhsturqsejda.space^
@@ -90547,6 +90562,7 @@
 ||qezkdby1jj.com^
 ||qezodjntkbtah.site^
 ||qezpjlp.cn^
+||qf21yrnmnk.com^
 ||qf51ho9qtz.com^
 ||qf7fj5k1569ll8xrohk7f.cfd^
 ||qfanyeojjmkmw.online^
@@ -94391,6 +94407,7 @@
 ||ritkmczosfhgk.online^
 ||rittersjatki.com^
 ||ritualsbodys.shop^
+||ritualseur.shop^
 ||ritztutballoutly.cyou^
 ||ritzumafma.com^
 ||ritzyrepresentative.com^
@@ -99307,7 +99324,6 @@
 ||sentry-v2.coros.com^
 ||sentry-web.fantuan.ca^
 ||sentry-web.fosunhanig.com^
-||sentry-youxi.xunlei.com^
 ||sentry.123u.com^
 ||sentry.aishortdramaai.com^
 ||sentry.amflowbikes.com^
@@ -99347,7 +99363,6 @@
 ||sentry.kontur.host^
 ||sentry.ksztone.com^
 ||sentry.kuaishou.com^
-||sentry.kugou.com^
 ||sentry.ldplayer.net^
 ||sentry.mab.co.id^
 ||sentry.manmanbuy.com^
@@ -109196,6 +109211,7 @@
 ||stats.soundbite.so^
 ||stats.southernphone.com.au^
 ||stats.southswindon-pc.gov.uk^
+||stats.spacematchok.com^
 ||stats.spark.co.nz^
 ||stats.splinder.com^
 ||stats.spottedlublin.pl^
@@ -123267,6 +123283,7 @@
 ||uzvvqnaqblxvx.online^
 ||uzxksecxqrchr.online^
 ||uzyzsowhwgmmv.online^
+||uzzf.com^
 ||uzzxkatxegdzh.website^
 ||v-collector.dp.aws.charter.com^
 ||v-pack.net^
@@ -123439,7 +123456,9 @@
 ||v95-aw-reading-ad.qznovelvod.com^
 ||v95-se-zjwztc-reading-ad.qznovelvod.com^
 ||v95-ynkmtc-reading-ad.qznovelvod.com^
+||v95-zjjx2tc-reading-ad.qznovelvod.com^
 ||v9533.com^
+||v96-reading-ad.qznovelvod.com^
 ||v9banners-com.cdn.ampproject.org^
 ||v9banners.com^
 ||va-endpoint.com^
@@ -129516,6 +129535,7 @@
 ||www.wwe23.com^
 ||www.xiaodaoyuedu.com^
 ||www.xmtrk.com^
+||www.xpdyqax.cn^
 ||www.yabovip2030.com^
 ||www.yjg2.com^
 ||www.yueba423.com^
