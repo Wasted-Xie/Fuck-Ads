@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-26 00:55:19
-! Block rules: 151859
+! Generated: 2026-10-26 05:40:53
+! Block rules: 151833
 ! Whitelist rules: 282
 ! Sources (China-focused only):
-!   - adblockdnslite: 217 Lite（仅国内域名） (block 8477 / white 16, priority 1)
+!   - adblockdnslite: 217 Lite（仅国内域名） (block 8442 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 104582 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5852 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5855 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -2980,6 +2980,7 @@
 ||3j4vjpx7k.com^
 ||3j8c56p9.de^
 ||3jia5.com^
+||3jkb97w0tp.com^
 ||3jux3x6n.xgv6nvb3htofxib39zooggyl7h.cfd^
 ||3k2frl8r79.com^
 ||3kin8remefmhwq.cfd^
@@ -5468,7 +5469,6 @@
 ||97kuaixiu.com^
 ||97nexoleo.net^
 ||97papa.com^
-||97sky.cn^
 ||97uvo47k3y.com^
 ||97vk351gi.com^
 ||9800.com^
@@ -13560,7 +13560,6 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
-||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-wc.adaptv.advertising.com^
 ||ads-yallo-production.imgix.net^
@@ -27426,7 +27425,6 @@
 ||breezygrove.com^
 ||breixmdldvvfa.website^
 ||brendanaviletsere.qpon^
-||brenoes.shop^
 ||brenzcdjozwpw.website^
 ||brerdlimning.cyou^
 ||brespark.eccocar.com^
@@ -29659,9 +29657,6 @@
 ||canineschiller.cfd^
 ||caninesindium.com^
 ||caningphloxesfeuage.cyou^
-||canjepuntosplus.click^
-||canjepuntostotal.click^
-||canjepuntosvip.click^
 ||cank9.site^
 ||canlytics.com^
 ||cannedrestrict.com^
@@ -29942,8 +29937,6 @@
 ||cartining-specute.com^
 ||cartjoint.com^
 ||cartlug.com^
-||cartnests.com^
-||cartnetsnl.com^
 ||cartoon.hardalist.com^
 ||cartrigepromised.com^
 ||cartrigestale.com^
@@ -34809,7 +34802,6 @@
 ||console.ammoland.com^
 ||console.aqua-adserver.com^
 ||console.atlantamagazine.com^
-||console.bce.baidu.com^
 ||console.biohandel.de^
 ||console.blulab.net^
 ||console.cavalier-romand.ch^
@@ -35352,7 +35344,6 @@
 ||copymangrays.cfd^
 ||copypickets.qpon^
 ||copypoison.com^
-||copyright-policy-review-form.edgeone.dev^
 ||copyrightaccesscontrols.com^
 ||copyrightcontent.org^
 ||copyrightgenerateprotector.com^
@@ -51170,8 +51161,6 @@
 ||fav.simba.taobao.com^
 ||faves.grow.me^
 ||favigirningnonly.cfd^
-||favimeble.shop^
-||favipl.shop^
 ||favmaqyqgcirx.space^
 ||favor080227.shop^
 ||favorite-mine.com^
@@ -51939,7 +51928,6 @@
 ||figglefodge.com^
 ||fight.offtherecord.com^
 ||fightducklet.cfd^
-||fighter-shop.shop^
 ||fightingdesert.com^
 ||figocjidpbloj.website^
 ||figpii.com^
@@ -60007,7 +59995,6 @@
 ||haven-post.com^
 ||havenclick.com^
 ||havenyl.xyz^
-||haveon.shop^
 ||haverdentata.cfd^
 ||haversalgieba.qpon^
 ||havetestifyharriet.com^
@@ -61670,11 +61657,9 @@
 ||homeslick.com^
 ||homespotaudience.com^
 ||homeware-store.shop^
-||homeyoupl.shop^
 ||homeyware.com^
 ||hominyfrijol.com^
 ||homla.fit^
-||homlaspl.shop^
 ||homogenjustest.cyou^
 ||homyacetize.com^
 ||homyanus.com^
@@ -71068,7 +71053,6 @@
 ||kerbedallot.cfd^
 ||kerbedtexases.qpon^
 ||kerelwindock.shop^
-||kerenare54-dpwekmulre85.edgeone.dev^
 ||kermesssuing.cfd^
 ||kernelbudstwig.com^
 ||kernellife.com^
@@ -74171,7 +74155,6 @@
 ||lib.netyra.info^
 ||lib4orji46xr854ug59fl2zyu3c.cfd^
 ||liba.haotv8.com^
-||libaishuo.com^
 ||libbarddauted.cfd^
 ||libbarddibbles.cfd^
 ||libdjtedapsjs.website^
@@ -82934,7 +82917,6 @@
 ||meitubeauty.meitudata.com^
 ||meitumq.com^
 ||meitustat.com^
-||meivoas.shop^
 ||mejewusodovuca.com^
 ||mekzmrnqmpftx.online^
 ||melancholylucidity.com^
@@ -91067,6 +91049,7 @@
 ||o4svlxhjun.xyz^
 ||o4uxrk33.com^
 ||o5.uklbxk74ck8898ii2rgj83crbt19l234z3jfk.cyou^
+||o522zsxbgf.com^
 ||o5jz24jq.7gfhy999j6gefoorqgkrxt8w49lizgv.cyou^
 ||o5kniji94pv61t17.rest^
 ||o5tir3zfugeo6ej.rest^
@@ -91729,7 +91712,6 @@
 ||ofnsv69.com^
 ||ofnumeltor.com^
 ||ofoltekbn.com^
-||ofornaogu-dpzv6dife1hh.edgeone.dev^
 ||ofphxmkvkpdro.site^
 ||ofpnjkbiudjsd.site^
 ||ofppahlkiz.com^
@@ -95747,7 +95729,6 @@
 ||peiq.services^
 ||peisetoolers.com^
 ||peivwesshsygd.space^
-||peiyou.com^
 ||pejapiggpzldz.site^
 ||pejzeexukxo.com^
 ||pekeloused.com^
@@ -96797,7 +96778,6 @@
 ||pitbulllpl.shop^
 ||pitbullmens.club^
 ||pitbullmensp.shop^
-||pitbullspl.shop^
 ||pitbullsportsa.shop^
 ||pitbullsportsi.shop^
 ||pitbullsportso.shop^
@@ -97126,7 +97106,6 @@
 ||pkytxfiin.com^
 ||pl-go.experian.com^
 ||pl-pay.surf4623404.notify6.com^
-||pl-rituals.club^
 ||pl-ritualsbeat.club^
 ||pl-topgal.m-shop.me^
 ||pl.1feed.app^
@@ -104529,7 +104508,6 @@
 ||ressources.usine-digitale.com^
 ||ressources.usine-nouvelle.com^
 ||ressqretcwdkp.site^
-||rest-argus-ad.agoralab.co^
 ||rest.comfy.ua^
 ||rest.irs01.com^
 ||rest.sexypornvideo.net^
@@ -120460,7 +120438,6 @@
 ||statistic.live.126.net^
 ||statistic.openlabelplus.com^
 ||statistic.qzone.qq.com^
-||statistic.weimobdc.com^
 ||statistic.xiaoxiezi886.cn^
 ||statistic.yzyc.org^
 ||statistic2.reichelt.de^
@@ -128445,7 +128422,6 @@
 ||tr-romsp-unifyconfig.vivoglobal.com^
 ||tr-st-sl.vivoglobal.com^
 ||tr-stsdk.vivoglobal.com^
-||tr-suwen.shop^
 ||tr-timesync.vivoglobal.com^
 ||tr-usual.xyz^
 ||tr-vcode-api.vivoglobal.com^
@@ -134745,6 +134721,7 @@
 ||unproudcneorum.qpon^
 ||unputexorate.cyou^
 ||unpydqpidsfb.cdnvideo3.com^
+||unqm8c9dfk.com^
 ||unqsnzyrsdkuz.website^
 ||unquodbubaupfly.qpon^
 ||unqvaof.xyz^
@@ -144729,7 +144706,6 @@
 ||wwww.640640.com^
 ||wwww.649649.com^
 ||wwww.adleads.com^
-||wwwww-dpe7gpnooou7.edgeone.dev^
 ||wwwwzebojoqww.top^
 ||wwxeyxdyyitzl.space^
 ||wwyoqaf3g.com^
@@ -150029,8 +150005,6 @@
 ||zakelijkemarkt.vattenfall.nl^
 ||zakjvvjpjzesp.store^
 ||zakladyboleslawiechome-pl.shop^
-||zakladyboleslawieconsale-pl.shop^
-||zakladyboleslawieczone-pl.shop^
 ||zaktucdkuvw.com^
 ||zakuskananda.cyou^
 ||zakuskaorlopsaweto.qpon^

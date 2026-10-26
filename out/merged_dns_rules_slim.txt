@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-26 00:55:20
-! Block rules: 136295
+! Generated: 2026-10-26 05:41:02
+! Block rules: 136270
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 8477
+!   - adblockdnslite [w=5] block 8442
 !   - anti-ad [w=5] block 104582
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5852
+!   - easylistchina [w=3] block 5855
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2123,6 +2123,7 @@
 ||3j4vjpx7k.com^
 ||3j8c56p9.de^
 ||3jia5.com^
+||3jkb97w0tp.com^
 ||3k2frl8r79.com^
 ||3kin8remefmhwq.cfd^
 ||3ktn78iy5veugy.cfd^
@@ -4074,7 +4075,6 @@
 ||97kuaixiu.com^
 ||97nexoleo.net^
 ||97papa.com^
-||97sky.cn^
 ||97uvo47k3y.com^
 ||97vk351gi.com^
 ||9800.com^
@@ -9434,7 +9434,6 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
-||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-yallo-production.imgix.net^
 ||ads.123net.jp^
@@ -22285,7 +22284,6 @@
 ||breezygrove.com^
 ||breixmdldvvfa.website^
 ||brendanaviletsere.qpon^
-||brenoes.shop^
 ||brenzcdjozwpw.website^
 ||brerdlimning.cyou^
 ||brespark.eccocar.com^
@@ -24241,9 +24239,6 @@
 ||canineschiller.cfd^
 ||caninesindium.com^
 ||caningphloxesfeuage.cyou^
-||canjepuntosplus.click^
-||canjepuntostotal.click^
-||canjepuntosvip.click^
 ||cank9.site^
 ||canlytics.com^
 ||cannedrestrict.com^
@@ -24489,8 +24484,6 @@
 ||cartining-specute.com^
 ||cartjoint.com^
 ||cartlug.com^
-||cartnests.com^
-||cartnetsnl.com^
 ||cartoon.hardalist.com^
 ||cartrigepromised.com^
 ||cartrigestale.com^
@@ -29109,7 +29102,6 @@
 ||copymangrays.cfd^
 ||copypickets.qpon^
 ||copypoison.com^
-||copyright-policy-review-form.edgeone.dev^
 ||copyrightaccesscontrols.com^
 ||copyrightcontent.org^
 ||copyrightgenerateprotector.com^
@@ -43720,8 +43712,6 @@
 ||fav.simba.taobao.com^
 ||faves.grow.me^
 ||favigirningnonly.cfd^
-||favimeble.shop^
-||favipl.shop^
 ||favmaqyqgcirx.space^
 ||favor080227.shop^
 ||favorite-mine.com^
@@ -44414,7 +44404,6 @@
 ||figglefodge.com^
 ||fight.offtherecord.com^
 ||fightducklet.cfd^
-||fighter-shop.shop^
 ||fightingdesert.com^
 ||figocjidpbloj.website^
 ||figpii.com^
@@ -51870,7 +51859,6 @@
 ||haven-post.com^
 ||havenclick.com^
 ||havenyl.xyz^
-||haveon.shop^
 ||haverdentata.cfd^
 ||haversalgieba.qpon^
 ||havetestifyharriet.com^
@@ -53430,11 +53418,9 @@
 ||homeslick.com^
 ||homespotaudience.com^
 ||homeware-store.shop^
-||homeyoupl.shop^
 ||homeyware.com^
 ||hominyfrijol.com^
 ||homla.fit^
-||homlaspl.shop^
 ||homogenjustest.cyou^
 ||homyacetize.com^
 ||homyanus.com^
@@ -62239,7 +62225,6 @@
 ||kerbedallot.cfd^
 ||kerbedtexases.qpon^
 ||kerelwindock.shop^
-||kerenare54-dpwekmulre85.edgeone.dev^
 ||kermesssuing.cfd^
 ||kernelbudstwig.com^
 ||kernellife.com^
@@ -65188,7 +65173,6 @@
 ||lib.netyra.info^
 ||lib4orji46xr854ug59fl2zyu3c.cfd^
 ||liba.haotv8.com^
-||libaishuo.com^
 ||libbarddauted.cfd^
 ||libbarddibbles.cfd^
 ||libdjtedapsjs.website^
@@ -73527,7 +73511,6 @@
 ||meitubeauty.meitudata.com^
 ||meitumq.com^
 ||meitustat.com^
-||meivoas.shop^
 ||mejewusodovuca.com^
 ||mekzmrnqmpftx.online^
 ||melancholylucidity.com^
@@ -81206,6 +81189,7 @@
 ||o4svlxhjun.xyz^
 ||o4uxrk33.com^
 ||o5.uklbxk74ck8898ii2rgj83crbt19l234z3jfk.cyou^
+||o522zsxbgf.com^
 ||o5jz24jq.7gfhy999j6gefoorqgkrxt8w49lizgv.cyou^
 ||o5kniji94pv61t17.rest^
 ||o5tir3zfugeo6ej.rest^
@@ -81836,7 +81820,6 @@
 ||ofnsv69.com^
 ||ofnumeltor.com^
 ||ofoltekbn.com^
-||ofornaogu-dpzv6dife1hh.edgeone.dev^
 ||ofphxmkvkpdro.site^
 ||ofpnjkbiudjsd.site^
 ||ofppahlkiz.com^
@@ -85590,7 +85573,6 @@
 ||peiq.services^
 ||peisetoolers.com^
 ||peivwesshsygd.space^
-||peiyou.com^
 ||pejapiggpzldz.site^
 ||pejzeexukxo.com^
 ||pekeloused.com^
@@ -86586,7 +86568,6 @@
 ||pitbulllpl.shop^
 ||pitbullmens.club^
 ||pitbullmensp.shop^
-||pitbullspl.shop^
 ||pitbullsportsa.shop^
 ||pitbullsportsi.shop^
 ||pitbullsportso.shop^
@@ -86888,7 +86869,6 @@
 ||pkyrdvdcsuiua.site^
 ||pkytxfiin.com^
 ||pl-go.experian.com^
-||pl-rituals.club^
 ||pl-ritualsbeat.club^
 ||pl-topgal.m-shop.me^
 ||pl.1feed.app^
@@ -93828,7 +93808,6 @@
 ||ressources.usine-digitale.com^
 ||ressources.usine-nouvelle.com^
 ||ressqretcwdkp.site^
-||rest-argus-ad.agoralab.co^
 ||rest.comfy.ua^
 ||rest.sexypornvideo.net^
 ||rest.wildstar-online.com^
@@ -108267,7 +108246,6 @@
 ||statistic.live.126.net^
 ||statistic.openlabelplus.com^
 ||statistic.qzone.qq.com^
-||statistic.weimobdc.com^
 ||statistic.xiaoxiezi886.cn^
 ||statistic.yzyc.org^
 ||statistic2.reichelt.de^
@@ -115804,7 +115782,6 @@
 ||tr-romsp-unifyconfig.vivoglobal.com^
 ||tr-st-sl.vivoglobal.com^
 ||tr-stsdk.vivoglobal.com^
-||tr-suwen.shop^
 ||tr-timesync.vivoglobal.com^
 ||tr-usual.xyz^
 ||tr-vcode-api.vivoglobal.com^
@@ -121753,6 +121730,7 @@
 ||unpracticalwhich.org^
 ||unproudcneorum.qpon^
 ||unputexorate.cyou^
+||unqm8c9dfk.com^
 ||unqsnzyrsdkuz.website^
 ||unquodbubaupfly.qpon^
 ||unqvaof.xyz^
@@ -129658,7 +129636,6 @@
 ||wwww.551144.com^
 ||wwww.640640.com^
 ||wwww.649649.com^
-||wwwww-dpe7gpnooou7.edgeone.dev^
 ||wwwwzebojoqww.top^
 ||wwxeyxdyyitzl.space^
 ||wwyoqaf3g.com^
@@ -134565,8 +134542,6 @@
 ||zakelijkemarkt.vattenfall.nl^
 ||zakjvvjpjzesp.store^
 ||zakladyboleslawiechome-pl.shop^
-||zakladyboleslawieconsale-pl.shop^
-||zakladyboleslawieczone-pl.shop^
 ||zaktucdkuvw.com^
 ||zakuskananda.cyou^
 ||zakuskaorlopsaweto.qpon^
