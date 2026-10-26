@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-25 22:43:05
-! Block rules: 151846
+! Generated: 2026-10-26 00:55:19
+! Block rules: 151859
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8477 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 104582 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5850 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5852 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1775 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1780 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1045,6 +1045,7 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -10935,6 +10936,7 @@
 ||accessoryreflections.com^
 ||accessoutrageousimpetuous.com^
 ||accessplug.com^
+||accesstelematics.com^
 ||accesstrade.net^
 ||accessv.org^
 ||accidentalcrownincredible.com^
@@ -22380,7 +22382,6 @@
 ||autchoog.net^
 ||auteboon.net^
 ||autecyspatha.cyou^
-||auth-clo-id.cc^
 ||auth-em.hismarttv.com^
 ||auth-eu.hismarttv.com^
 ||auth-jp.hismarttv.com^
@@ -23505,7 +23506,6 @@
 ||baby.yf898.com^
 ||babyboomboomads.com^
 ||babybubble.cn^
-||babydiapersinturkey.com^
 ||babyhonoursspoken.com^
 ||babyhptlsrpca.site^
 ||babyishsteak.pro^
@@ -24642,6 +24642,7 @@
 ||beafdf.restaupro.com^
 ||beagle.prod.tda.link^
 ||beaglemanipulate.com^
+||beak.in^
 ||beakfuljato.com^
 ||bealafulup.com^
 ||bealanews.com^
@@ -26651,6 +26652,7 @@
 ||boise.goaserv.com^
 ||boisekundry.cfd^
 ||boitesunroted.cyou^
+||boitim.oss-eu-west-2.aliyuncs.com^
 ||bojegoju.top^
 ||bojel.com^
 ||bokbxunnvmxtm.online^
@@ -27402,7 +27404,6 @@
 ||breakfastsinew.com^
 ||breakingcapricorn.com^
 ||breakingunidentifiedperfection.com^
-||breakneckridgefarm.com^
 ||breakthrough.kronos.com^
 ||breaktime.com.tw^
 ||brealtime.com^
@@ -36665,7 +36666,6 @@
 ||cryoselarolla.com^
 ||cryptaloot.pro^
 ||cryptalsnakily.cyou^
-||cryptefilea.infy.click^
 ||crypter.gt.tc^
 ||crypter00.gt.tc^
 ||crypticgenius.com^
@@ -45076,6 +45076,7 @@
 ||dx00.live^
 ||dx6uy6q3udhkj.cloudfront.net^
 ||dx7.sosporntube.com^
+||dxa.multidex.life^
 ||dxaefmcqnsidp.online^
 ||dxaop.bcbsla.com^
 ||dxb.goasrv.com^
@@ -50323,6 +50324,7 @@
 ||expulsionelinorcorruption.com^
 ||expwycheapie.com^
 ||expycoster.qpon^
+||exq.messag.life^
 ||exqubzkygkntn.space^
 ||exr-mms.expertreviews.co.uk^
 ||exrcfdbcqiddp.space^
@@ -51976,6 +51978,7 @@
 ||file.iporngay.com^
 ||file.ppbk9.com^
 ||file.tugou.com.co^
+||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -60549,7 +60552,6 @@
 ||hero6bell.com^
 ||heroclick.cn^
 ||heroesdom.com^
-||heroestales.com^
 ||heroicfuneral.com^
 ||heroictoday.com^
 ||heroidsliming.qpon^
@@ -61541,6 +61543,7 @@
 ||hoasvvtyavmbn.store^
 ||hobbetexcud.shop^
 ||hobblertactile.cfd^
+||hobobot.net^
 ||hobypcdcsidnc.online^
 ||hocgeese.com^
 ||hochhut.qpon^
@@ -62003,6 +62006,7 @@
 ||hparksendgridstage.branch.rocks^
 ||hpast.pornpics.com^
 ||hpbrqr.daihatsu.co.jp^
+||hpbxrvnentfrre.com^
 ||hpcduz.shoemall.com^
 ||hpco.6fai2.cn^
 ||hpcv454rwp41tvbuelmzux2u7o6wjcv.rest^
@@ -67534,7 +67538,6 @@
 ||itchingunethical.com^
 ||itchystraitsbuilder.com^
 ||itcleffaom.com^
-||itco.pe^
 ||itcojnlsswzwt.site^
 ||itcslocgtbamh.site^
 ||itdcizejjqwes.website^
@@ -85276,7 +85279,6 @@
 ||mineinvoice.com^
 ||minemytraffic.com^
 ||mineplex.goasrv.com^
-||miner.pages.dev^
 ||minerad.com^
 ||minergate.com^
 ||minero-proxy-*.sh^
@@ -85872,6 +85874,7 @@
 ||mmmlwhgoylgwm.online^
 ||mmmubvcsmkjcz.online^
 ||mmnetwork.mobi^
+||mmns.oss-me-east-1.aliyuncs.com^
 ||mmnzwpegsihfr.site^
 ||mmobsz.edenviaggi.it^
 ||mmoframes.com^
@@ -88798,6 +88801,7 @@
 ||nervuscoomyamay.qpon^
 ||nesiotfiar.cfd^
 ||nesnts.cn^
+||nest-52.com^
 ||nestbuyers.com^
 ||nestledmph.com^
 ||nestlertalao.cyou^
@@ -90030,6 +90034,7 @@
 ||nornempapereroses.cyou^
 ||northbeam.io^
 ||northcoolingdiving.com^
+||northernvirginiaeyeassociates.com^
 ||northplains.actonservice.com^
 ||northsidemediagroup.actonservice.com^
 ||northstar.cr^
@@ -102561,6 +102566,7 @@
 ||r3.adwo.com^
 ||r30vhf31sv.com^
 ||r324842te63wnm3y9c7cf.rest^
+||r3lzu9.fernthema.shop^
 ||r3n3cy9l4wi6k7.cfd^
 ||r40xff8q48.com^
 ||r42tag.com^
@@ -118886,6 +118892,7 @@
 ||ssh.szxiuchang.com^
 ||ssh.yezijizhang.com^
 ||sshhfy.ray-ban.com^
+||ssi1gqcx0m.com^
 ||ssifumonehvyc.space^
 ||ssigpc.servusmarktplatz.com^
 ||ssindserving.com^
@@ -120017,6 +120024,7 @@
 ||static-xml.vespymedia.com^
 ||static.100conversions.com^
 ||static.1j1j.com^
+||static.3001.net^
 ||static.5411.com^
 ||static.9versemedia.com^
 ||static.a1.0network.com^
@@ -134720,6 +134728,7 @@
 ||uno-play.xyz^
 ||unobeseownness.cfd^
 ||unoldluridly.com^
+||unoplayy.com^
 ||unovertkiths.qpon^
 ||unownluluai.cfd^
 ||unpackelasticlens.com^
@@ -139953,6 +139962,7 @@
 ||wczaniwwrotyc.site^
 ||wd-edge.sharethis.com^
 ||wd.adcolony.com^
+||wda.messag.life^
 ||wdad.cc^
 ||wdaybyzzjnpri.online^
 ||wdbbnerscjscs.space^
@@ -145338,6 +145348,8 @@
 ||xemswfbrdhrts.website^
 ||xenlzn.icu^
 ||xeno-cheats.xyz^
+||xeno.baby^
+||xeno.watch^
 ||xenon.studio^
 ||xenonclient.com^
 ||xenonstill.cyou^
@@ -145562,6 +145574,7 @@
 ||xiaozhen.com^
 ||xiaozhuvideo.cn^
 ||xiaozuowen.net^
+||xiaozzz.oss-me-east-1.aliyuncs.com^
 ||xiapuhdhbdsmd.online^
 ||xiaxslpsgdblw.site^
 ||xiazai.cdren.com^
