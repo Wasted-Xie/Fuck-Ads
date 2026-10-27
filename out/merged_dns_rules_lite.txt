@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-27 07:08:55
-! Block rules: 151876
+! Generated: 2026-10-27 13:27:09
+! Block rules: 151895
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 104582 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5866 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5870 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1790 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1806 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1049,7 +1049,6 @@
 ||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1200,7 +1199,6 @@
 ||1d0a4a935b.com^
 ||1d204d7192.ea32481d6e.com^
 ||1d22c41079.com^
-||1d2ef215ce65986951fe48e70c16d6d4.r2.cloudflarestorage.com^
 ||1d473a90d9.com^
 ||1d7179cda7.9b82388aa0.com^
 ||1d7e60f18a.33cd95e164.com^
@@ -19954,6 +19952,7 @@
 ||app.aplus.pptv.com^
 ||app.app-river.icu^
 ||app.appcity.com.au^
+||app.appdowsdy.xyz^
 ||app.appzcvb.com^
 ||app.aquaservice.com^
 ||app.ardalio.com^
@@ -30915,6 +30914,7 @@
 ||cdn3.icast.cn^
 ||cdn3.r34comix.com^
 ||cdn33.protagcdn.com^
+||cdn4324.com^
 ||cdn44221613.ahacdn.me^
 ||cdn4ads.com^
 ||cdn4image.com^
@@ -31179,6 +31179,7 @@
 ||ceoapr.donjoyperformance.com^
 ||ceowyn.eseltree.com^
 ||cepa.aluche.madrid.educa.go-static.info^
+||cepde.org^
 ||cephalopod.ospreys.net^
 ||cephalopod.revelio.io^
 ||cephalopod.staff.design^
@@ -33555,7 +33556,6 @@
 ||cnb.cnews.ru^
 ||cnbanbao.com^
 ||cnbd1.appmobile.cn^
-||cnc.strikec2.wtf^
 ||cndhzrfxylfkj.site^
 ||cndjs-1251973891.coshk.myqcloud.com^
 ||cndkpvokgivtq.website^
@@ -41169,6 +41169,7 @@
 ||deliverytraffico.com^
 ||deliverywhiskerspsychopath.com^
 ||dell.compellent.com^
+||dellabetgiris.live^
 ||dellshackly.qpon^
 ||delmovip.com^
 ||delog.nestads.com^
@@ -42475,7 +42476,6 @@
 ||dishwaterorganizationsomebody.com^
 ||disinheritguilewallow.com^
 ||disipxnziqeql.website^
-||disk.360.yandex.ru^
 ||disk.accord1key.cn^
 ||diskaa.com^
 ||diskdem.cfd^
@@ -44814,6 +44814,8 @@
 ||duliasvod.cyou^
 ||dulillipupan.com^
 ||dulkir-mod.com^
+||dulkirmod.st^
+||dulkirsmod.net^
 ||dullequivalent.com^
 ||dullingmaltols.qpon^
 ||dullmilacredolmans.cyou^
@@ -51052,6 +51054,7 @@
 ||farm-cn.plista.com^
 ||farmagewhooper.cyou^
 ||farmergoldfish.com^
+||farmhelper.org^
 ||farmoutuvulas.qpon^
 ||faro-collector-*.grafana-ops.net^
 ||faro-collector-prod-*.grafana.net^
@@ -51982,7 +51985,6 @@
 ||file.iporngay.com^
 ||file.ppbk9.com^
 ||file.tugou.com.co^
-||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -52498,6 +52500,7 @@
 ||firkinsexplat.cyou^
 ||firlotphorid.com^
 ||firm-twist.com^
+||firmamentskyblock.ru^
 ||firmashindle.cfd^
 ||firmasset.com^
 ||firmwareout830.net^
@@ -54065,7 +54068,6 @@
 ||frostnsullivan.advancedtech.com^
 ||frostscanty.com^
 ||frostybinits.cyou^
-||frostyislebe.pro^
 ||frothadditions.com^
 ||frown080227.shop^
 ||frownlag.com^
@@ -55219,6 +55221,7 @@
 ||garboildive.com^
 ||garconleak.com^
 ||gard4mass.com^
+||garden-82.com^
 ||gardenia25.com^
 ||gardeningcoercive.com^
 ||gardeningremovalcontrary.com^
@@ -59631,6 +59634,7 @@
 ||hagglebudh.cfd^
 ||haggletsuba.com^
 ||haginsensiblesupervise.com^
+||hagosuro.lc^
 ||hagridpnxt.com^
 ||hagxcpwefvcey.site^
 ||hahniumcaroach.com^
@@ -59772,6 +59776,7 @@
 ||handsomelyhealth.com^
 ||handsomelythumb.com^
 ||handsomeyam.com^
+||handsorneindo.com^
 ||handtub.com^
 ||handwritingautumn.com^
 ||handwritingglass.com^
@@ -74048,6 +74053,7 @@
 ||lgdsvuwxjbhwz.site^
 ||lgdvfnijckrzq.site^
 ||lgecokr.api.useinsider.com^
+||lgfktruknrjbxc.com^
 ||lgforbes.akamaized.net^
 ||lgglnedyuhmgk.site^
 ||lghgaxoegjywd.website^
@@ -77091,6 +77097,7 @@
 ||lordofthesuperfrogs.com^
 ||lordtakosis.qpon^
 ||lordtroublessounding.com^
+||lorelion.cloud^
 ||lorenzourban.com^
 ||lorftyrrshdxj.online^
 ||lorgtbzlfxixd.online^
@@ -88070,6 +88077,7 @@
 ||n.russ-porno.net^
 ||n.ssp.qq.com^
 ||n.toyotafinancial.com^
+||n.uguu.se^
 ||n.vlion.cn^
 ||n.vs108.com^
 ||n.yyhanyu.cn^
@@ -88356,7 +88364,6 @@
 ||nasutearawa.com^
 ||nataldecayed.shop^
 ||nataliasharps.qpon^
-||natashamohan.com^
 ||natchezmillie.cyou^
 ||natdetection.onethingpcs.com^
 ||natdisplacehereafter.com^
@@ -88668,6 +88675,7 @@
 ||nebnfvbsgosfp.site^
 ||nebula-client.com^
 ||nebula-client.org^
+||nebulaclient.co^
 ||nebulacrescent.com^
 ||nebulajubilee.com^
 ||nebulonrfs.com^
@@ -89217,7 +89225,6 @@
 ||nfcwnzrbsoapk.online^
 ||nfdnserror11.wo.com.cn^
 ||nfe.boletos-notas.com^
-||nfeletronica.sevendocumentos.vip^
 ||nfexcdiuvfyuu.online^
 ||nffceerhottvc.site^
 ||nffhqvabkunnl.site^
@@ -89459,7 +89466,6 @@
 ||niftyjelly.com^
 ||niftymaps.com^
 ||nigelmidnightrappers.com^
-||nigg.tashirpizza.su^
 ||niggersmp.net^
 ||niggotchesil.cyou^
 ||nightbesties.com^
@@ -89904,7 +89910,6 @@
 ||noblemanbestowed.com^
 ||noblemangetawayeclipse.com^
 ||noblemanhandicraftpot.com^
-||nobleshadebu.pro^
 ||noblesnarrativepool.com^
 ||nobodymiller.com^
 ||nocaadobefpc.optus.com.au^
@@ -91063,6 +91068,7 @@
 ||o2omobi.com^
 ||o2x4h2txrc.com^
 ||o333o.com^
+||o35jufwu6.com^
 ||o368sxdu.xyz^
 ||o398.trumbulltimes.com^
 ||o3gxzoewxl1x.cp.zomro.com^
@@ -93329,6 +93335,7 @@
 ||origoclick.com^
 ||origunix.com^
 ||orillontorero.cyou^
+||oringo-client.com^
 ||oringosmod.com^
 ||orion.bendingspoons.com^
 ||orionember.com^
@@ -94011,6 +94018,7 @@
 ||owpysc.lampenundleuchten.at^
 ||owqbirykia.com^
 ||owqbsl.kuhl.com^
+||owr4u.com^
 ||owrkwilxbw.com^
 ||ows.ihs.com^
 ||owsazgnm.in^
@@ -94839,6 +94847,7 @@
 ||palespork.com^
 ||paletteeasily.com^
 ||palfrybriton.cyou^
+||palharesinformatica.com.br^
 ||palibs.tech^
 ||palibzh.tech^
 ||paliokastro.goasrv.com^
@@ -96679,6 +96688,7 @@
 ||pinghot.qq.com^
 ||pingil.com^
 ||pingjs.qq.com^
+||pingl.vip^
 ||pingma.qq.com^
 ||pingmeter.com^
 ||pingmid.qq.com^
@@ -97984,6 +97994,7 @@
 ||policy.video.iqiyi.com^
 ||policy.video.ptqy.gitv.tv^
 ||policysync.pro^
+||polinex-client.com^
 ||polinex.org^
 ||polinexclient.org^
 ||poliosdefused.cyou^
@@ -103742,6 +103753,7 @@
 ||refinedads.com^
 ||refinepiledcumbersome.com^
 ||refinespolt.cyou^
+||refining.qpon^
 ||refix.ai^
 ||refixasepsis.cfd^
 ||refixunfirm.qpon^
@@ -105474,6 +105486,7 @@
 ||robotbagpipe.com^
 ||robotflowermobile.com^
 ||robotgarages.com^
+||roboth.ir^
 ||robotrefinery.com^
 ||robotsrefinery.com^
 ||robspabah.com^
@@ -124489,6 +124502,7 @@
 ||t98.nudevista.com^
 ||t99.nudevista.com^
 ||t9h2.ricardocuisine.com^
+||t9j3lrvrv.com^
 ||t9k3a.jeanpaulfortin.com^
 ||t9x2gu6it3.com^
 ||t9y6i13qbgjpff2okxxrv4xl81x8rnpmru.rest^
@@ -134656,6 +134670,7 @@
 ||universaldev.taylormadegolf.com^
 ||universalmobility.pro^
 ||universalsrc.com^
+||universami.ge^
 ||universitycleaninglunch.com^
 ||universityroadsidecircumstantial.com^
 ||universityshocksooner.com^
@@ -136506,6 +136521,7 @@
 ||v13-reading-ad.qznovelvod.com^
 ||v13.cnzz.com^
 ||v14.cnzz.com^
+||v15.next.forgejo.org^
 ||v16-ad.byteoversea.com^
 ||v16.56.com^
 ||v16m-default.akamaized.net.iberostar.com^
@@ -138252,6 +138268,7 @@
 ||vlzcnhjdgmenp.space^
 ||vm.aty.sohu.com^
 ||vm.target-video.com^
+||vm1mmq2h1.com^
 ||vm5apis.com^
 ||vm5xs8nvqh.com^
 ||vm91p.2p63il4ecrnpt8k9vwmrcjuewg.cfd^
@@ -144621,6 +144638,7 @@
 ||www16.jtv.com^
 ||www181.superembed.com^
 ||www19.superembed.com^
+||www2.0zz0.com^
 ||www2.2ndgear.com^
 ||www2.acsvalves.com^
 ||www2.arvig.com^
@@ -151562,6 +151580,7 @@
 ||zumnervl.com^
 ||zumrieth.com^
 ||zumsivonaiss.net^
+||zumvu.net^
 ||zunianboron.cyou^
 ||zunianhayers.cyou^
 ||zunianwych.qpon^

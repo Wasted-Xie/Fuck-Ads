@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-27 07:08:56
-! Block rules: 136298
+! Generated: 2026-10-27 13:27:10
+! Block rules: 136302
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 104582
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5866
+!   - easylistchina [w=3] block 5870
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -65064,6 +65064,7 @@
 ||lgdsgmxbimlsm.site^
 ||lgdsvuwxjbhwz.site^
 ||lgdvfnijckrzq.site^
+||lgfktruknrjbxc.com^
 ||lgforbes.akamaized.net^
 ||lgglnedyuhmgk.site^
 ||lghgaxoegjywd.website^
@@ -81196,6 +81197,7 @@
 ||o2omobi.com^
 ||o2x4h2txrc.com^
 ||o333o.com^
+||o35jufwu6.com^
 ||o368sxdu.xyz^
 ||o398.trumbulltimes.com^
 ||o3gxzoewxl1x.cp.zomro.com^
@@ -112053,6 +112055,7 @@
 ||t98.nudevista.com^
 ||t99.nudevista.com^
 ||t9h2.ricardocuisine.com^
+||t9j3lrvrv.com^
 ||t9k3a.jeanpaulfortin.com^
 ||t9x2gu6it3.com^
 ||t9y6i13qbgjpff2okxxrv4xl81x8rnpmru.rest^
@@ -124953,6 +124956,7 @@
 ||vlyby.com^
 ||vlzcnhjdgmenp.space^
 ||vm.target-video.com^
+||vm1mmq2h1.com^
 ||vm5apis.com^
 ||vm5xs8nvqh.com^
 ||vm9etrih3y1jrjomvpoy9.rest^
