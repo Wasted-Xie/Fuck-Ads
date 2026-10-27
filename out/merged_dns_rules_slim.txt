@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-26 18:46:03
-! Block rules: 136291
+! Generated: 2026-10-27 01:52:00
+! Block rules: 136295
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 104582
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5859
+!   - easylistchina [w=3] block 5863
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -44870,6 +44870,7 @@
 ||fitchpmsa.com^
 ||fitgreatest.com^
 ||fitlivelywhup.com^
+||fitment47.com^
 ||fitnesseternalsignificant.com^
 ||fitnessflashyhopeless.com^
 ||fitnessmapper.com^
@@ -46404,6 +46405,7 @@
 ||fsuwiwvhtcfzm.space^
 ||fsx.i-run.fr^
 ||fsxmnnbfy.com^
+||fsxpdfugtwrzde.com^
 ||fsxqfjkg.com^
 ||fsz1.francoisesaget.com^
 ||fsz1.franziskasager.de^
@@ -84411,6 +84413,7 @@
 ||p5jrngqnp.com^
 ||p5mcwdbu.ginzo-buy.jp^
 ||p5r6bvm.ll51v9eyyi2npo.cyou^
+||p5regbg09.com^
 ||p5si0mu8u7.com^
 ||p5zrfflrhbhtp8img5995x.rest^
 ||p6-ad-sign.byteimg.com^
@@ -119865,6 +119868,7 @@
 ||tuumdollop.com^
 ||tuusjwrgtxigs.space^
 ||tuvevx.agent-sana.com^
+||tuxcpf6pq.com^
 ||tuxi.com.cn^
 ||tuysldlbgygf.com^
 ||tuzoufxhjnejx.online^
