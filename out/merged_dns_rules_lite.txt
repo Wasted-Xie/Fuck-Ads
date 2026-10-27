@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-27 13:27:09
-! Block rules: 151895
+! Generated: 2026-10-27 18:50:28
+! Block rules: 151914
 ! Whitelist rules: 282
 ! Sources (China-focused only):
-!   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
+!   - adblockdnslite: 217 Lite（仅国内域名） (block 8519 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 104582 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5870 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5871 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -11860,6 +11860,7 @@
 ||ad.otomedream.com^
 ||ad.oujdacity.net^
 ||ad.ourplay.com.cn^
+||ad.ourplay.net^
 ||ad.owlair.net^
 ||ad.ozone.ru^
 ||ad.palmmerchant.com^
@@ -11990,6 +11991,7 @@
 ||ad.ymcdn.org^
 ||ad.youku.com^
 ||ad.yun.wifi8.com^
+||ad.zamae.cn^
 ||ad.zankhana.ltd^
 ||ad.zdworks.com^
 ||ad.zetacx.net^
@@ -12687,7 +12689,6 @@
 ||adim.pinduoduo.com^
 ||adimage.blm.net^
 ||adimage.bwton.com^
-||adimage.bwton.com.w.kunluncan.com^
 ||adimage.guardian.co.uk^
 ||adimage.sphdigital.com^
 ||adimages.associationheadquarters.com^
@@ -13539,7 +13540,6 @@
 ||ads-shopping.shouqianba.com^
 ||ads-splash-i1.xhscdn.com^
 ||ads-splash-i2.xhscdn.com^
-||ads-splash-i2.xhscdn.com.w.cdngslb.com^
 ||ads-splash-v1.xhscdn.com^
 ||ads-splash-v2.xhscdn.com^
 ||ads-static.conde.digital^
@@ -17440,7 +17440,6 @@
 ||analysis.fi^
 ||analysis.polarisoffice.com^
 ||analysis.prod.joyfru.jiji.com^
-||analysis.shixunsuda.com^
 ||analysis.sooplive.co.kr^
 ||analysis.sooplive.com^
 ||analysis.tratao.com^
@@ -23600,6 +23599,7 @@
 ||baggyrepackingrocky.com^
 ||baghlashofars.qpon^
 ||baglanbize.net^
+||bagmarket.shop^
 ||bagnesvivax.shop^
 ||bagnfqmhhbkdt.online^
 ||bagpipemonogamypercent.com^
@@ -27002,6 +27002,7 @@
 ||bowwowsyrbk.qpon^
 ||box.anchorfree.net^
 ||box.bossdata.be^
+||box.pandora.xiaomi.com^
 ||boxandcover.com^
 ||boxbwxhkzwwpe.website^
 ||boxcargaults.qpon^
@@ -27664,6 +27665,7 @@
 ||browse-boost.com^
 ||browsecoherentunrefined.com^
 ||browsekeeper.com^
+||browser-api-th.heytapmobile.com^
 ||browser-intake-datadoghq.com^
 ||browser-intake-datadoghq.eu^
 ||browser-statistik.de^
@@ -29168,6 +29170,7 @@
 ||c5acd666f8.com^
 ||c5b0df73df.d594f004f4.com^
 ||c5c1f92a70.4ad4ba0610.com^
+||c5i6rfwyf.com^
 ||c5krw17gn0.com^
 ||c5mj81yuuo.com^
 ||c5mwwyqfvi.com^
@@ -41001,6 +41004,7 @@
 ||deeplinkuat.upoker.net^
 ||deepmetrix.com^
 ||deepretainer.com^
+||deepseek404.com^
 ||deeptack.com^
 ||deepz.cyou^
 ||deer.m1x.co^
@@ -57280,6 +57284,7 @@
 ||go.driveclutch.com^
 ||go.drivemyfreedom.com^
 ||go.drivencarsallaccess.ca^
+||go.drtuberlive.com^
 ||go.dubbi.com.br^
 ||go.dukane.com^
 ||go.dunnhumby.com^
@@ -77099,6 +77104,7 @@
 ||lordtroublessounding.com^
 ||lorelion.cloud^
 ||lorenzourban.com^
+||loreudkl.shop^
 ||lorftyrrshdxj.online^
 ||lorgtbzlfxixd.online^
 ||loriletspiry.cfd^
@@ -78900,6 +78906,7 @@
 ||m.panwenjun.top^
 ||m.papertrail.io^
 ||m.pbino.com^
+||m.pc6.com^
 ||m.pcaoo.com^
 ||m.pcmobile.ca^
 ||m.pcuna.com^
@@ -83353,6 +83360,7 @@
 ||metrics.abbott.com^
 ||metrics.abbottbrasil.com.br^
 ||metrics.abbvie.com^
+||metrics.abercrombie.cn^
 ||metrics.abercrombie.com^
 ||metrics.absolute.com^
 ||metrics.absolutetotalcare.com^
@@ -87615,6 +87623,7 @@
 ||mwzovcuzsqpyv.site^
 ||mwztyflmatxei.site^
 ||mx-album-api.vivoglobal.com^
+||mx-cota.vivoglobal.com^
 ||mx-domaincfg.vivoglobal.com^
 ||mx-err-up.vivoglobal.com^
 ||mx-onrt-stsdk.vivoglobal.com^
@@ -91259,6 +91268,7 @@
 ||obrqts.hudforeclosed.com^
 ||obrqupzkarrdx.site^
 ||obs.branderblender.com^
+||obs.com.cn^
 ||obs.du89buildings.com^
 ||obs.esnlocco.com^
 ||obs.forseasky.com^
@@ -91269,6 +91279,7 @@
 ||obs.system1onesource.com^
 ||obscenesidewalk.com^
 ||obscenityforearm.com^
+||obscj.com^
 ||obscureanyway.com^
 ||obscurespace.com^
 ||obsedelathed.com^
@@ -91287,6 +91298,7 @@
 ||obsidiangems.com^
 ||obsoletepaddlevehicular.com^
 ||obsoletepersistalec.com^
+||obsproject.com.cn^
 ||obstaclemotionoccurs.com^
 ||obstetrician36.com^
 ||obstinacyodds.com^
@@ -107080,6 +107092,7 @@
 ||rvxdfinwfunyj.site^
 ||rvz9.destinia.co.ro^
 ||rvzfh.5x8j9lzn1v1min9nhzclmiuztqu11m.cyou^
+||rvzlobj.cn^
 ||rvzzlpmsg.com^
 ||rw.marchex.io^
 ||rw360x.com^
@@ -111044,14 +111057,17 @@
 ||sentry-oversea.sunborngame.com^
 ||sentry-ovs.duowan.com^
 ||sentry-qa.sunborngame.com^
+||sentry-sa.weelife3d.com^
 ||sentry-sg.insta360.com^
 ||sentry-us.didiglobal.com^
 ||sentry-v2.coros.com^
 ||sentry-web.fantuan.ca^
 ||sentry-web.fosunhanig.com^
+||sentry-web.mexdin.mx^
 ||sentry.123u.com^
 ||sentry.aishortdramaai.com^
 ||sentry.amflowbikes.com^
+||sentry.baijia.com^
 ||sentry.banjixiaoguanjia.com^
 ||sentry.bankneo.co.id^
 ||sentry.bhbapp.cn^
@@ -111070,6 +111086,7 @@
 ||sentry.eks.hoyoverse.com^
 ||sentry.epay.163.com^
 ||sentry.eventbus.me^
+||sentry.findaya.co.id^
 ||sentry.galaxy-immi.com^
 ||sentry.gametaptap.com^
 ||sentry.gitcode.com^
@@ -111081,7 +111098,6 @@
 ||sentry.io^
 ||sentry.iptv.rt.ru^
 ||sentry.ituchong.com^
-||sentry.jiandaoyun.com^
 ||sentry.jingyunyilian.com^
 ||sentry.joybest.com.cn^
 ||sentry.jtexpress.com.cn^
@@ -111112,11 +111128,11 @@
 ||sentry.safexapp.com^
 ||sentry.sberauto.com^
 ||sentry.seayoo.com^
+||sentry.seekoo.io^
 ||sentry.semsportal.com^
 ||sentry.shoplazza.com^
 ||sentry.siepomaga.pl^
 ||sentry.tapsvc.com^
-||sentry.things-x.com^
 ||sentry.touchchat.me^
 ||sentry.useepay.com^
 ||sentry.viqeo.tv^
@@ -111124,6 +111140,7 @@
 ||sentry.wb.ru^
 ||sentry.willand.com^
 ||sentry.x5.ru^
+||sentry.xboxmechanichead.com^
 ||sentry.xiaomawang.com^
 ||sentry.xiaoyuzhoufm.com^
 ||sentry.xindong.com^
@@ -127120,6 +127137,7 @@
 ||tjs.sjs.sinajs.cn^
 ||tjsbs003.sbs^
 ||tjskjndukyk.com^
+||tjsptech.com^
 ||tjswoufpfcltp.online^
 ||tjtawartfkjpb.site^
 ||tjtsctymepnds.space^
@@ -128117,6 +128135,7 @@
 ||toucan.ateliermilky.com^
 ||toucan.the-faithful.com^
 ||toucansryukyupawnage.qpon^
+||touch-moblie.com^
 ||touch.adeaz.com^
 ||touch.multitaction.com^
 ||touch.myntra.com^
@@ -134227,6 +134246,7 @@
 ||umami.napoboczu.pl^
 ||umami.shiaqiang.cv^
 ||umami.spencerdevs.xyz^
+||umami.thousandrealms.win^
 ||umami.trackiq.com^
 ||umami.trapilot.ai^
 ||umami.vidfast.pro^
@@ -140113,7 +140133,6 @@
 ||web-perf.booking.com^
 ||web-sdk-cdn.singular.net^
 ||web-security.cloud^
-||web-sentry.kurogame.com^
 ||web-sentry.kurogame.net^
 ||web-stat.*^
 ||web-stat.com^
