@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-27 01:51:58
-! Block rules: 151873
+! Generated: 2026-10-27 07:08:55
+! Block rules: 151876
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 104582 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5863 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5866 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -3038,6 +3038,7 @@
 ||3rvt28fkv5.p4ncioik78e5nuc8cjkr4m4m14.cyou^
 ||3rw0usds.xyz^
 ||3s7m2ss7g.com^
+||3sbbnyzps.com^
 ||3sd6w6oga9.com^
 ||3shangyou.com^
 ||3skickasurf.tre.se^
@@ -63078,6 +63079,7 @@
 ||i.zwihqle6r4bz7ek.cyou^
 ||i0.letvimg.com^
 ||i06s7yrhn1.com^
+||i0gh0cpwb.com^
 ||i1.go2yd.com^
 ||i1.services.social.microsoft.com.nsatc.net^
 ||i1236.net^
@@ -107138,6 +107140,7 @@
 ||rx-test.capsulecares.com^
 ||rx.capsulecares.com^
 ||rx1iwebx2.com^
+||rx7pi9v1x.com^
 ||rxaap.actonservice.com^
 ||rxanqdkkmskmw.com^
 ||rxayc.com^

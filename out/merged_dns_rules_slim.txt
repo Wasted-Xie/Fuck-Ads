@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-27 01:52:00
-! Block rules: 136295
+! Generated: 2026-10-27 07:08:56
+! Block rules: 136298
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 104582
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5863
+!   - easylistchina [w=3] block 5866
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2174,6 +2174,7 @@
 ||3rvt28fkv5.p4ncioik78e5nuc8cjkr4m4m14.cyou^
 ||3rw0usds.xyz^
 ||3s7m2ss7g.com^
+||3sbbnyzps.com^
 ||3sd6w6oga9.com^
 ||3shangyou.com^
 ||3skickasurf.tre.se^
@@ -54700,6 +54701,7 @@
 ||i.zwihqle6r4bz7ek.cyou^
 ||i0.letvimg.com^
 ||i06s7yrhn1.com^
+||i0gh0cpwb.com^
 ||i1.go2yd.com^
 ||i1.services.social.microsoft.com.nsatc.net^
 ||i1236.net^
@@ -96154,6 +96156,7 @@
 ||rx-test.capsulecares.com^
 ||rx.capsulecares.com^
 ||rx1iwebx2.com^
+||rx7pi9v1x.com^
 ||rxanqdkkmskmw.com^
 ||rxayc.com^
 ||rxb4kvggbtqrbt1kz236.cfd^
