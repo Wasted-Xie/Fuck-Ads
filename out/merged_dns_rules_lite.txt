@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-28 07:55:02
-! Block rules: 151910
+! Generated: 2026-10-28 14:45:10
+! Block rules: 151929
 ! Whitelist rules: 282
 ! Sources (China-focused only):
-!   - adblockdnslite: 217 Lite（仅国内域名） (block 8466 / white 16, priority 1)
+!   - adblockdnslite: 217 Lite（仅国内域名） (block 8488 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 104582 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5874 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5878 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1808 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1806 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -968,6 +968,7 @@
 ||14k4.com^
 ||14k6z61kqkmtcb3u1.cfd^
 ||15.taboola.com^
+||150.co.il^
 ||1500020991.vodplayer.wxamedia.com^
 ||1500022744.vodplayer.wxamedia.com^
 ||1500026601.vodplayer.wxamedia.com^
@@ -5021,7 +5022,6 @@
 ||87uq.com^
 ||87uy133bg3x4xmkz.cfd^
 ||88-sms.com^
-||88.212.109.208.host.secureserver.net^
 ||880a6212c5.com^
 ||8820.pandasuite.io^
 ||88210212.com^
@@ -11495,6 +11495,7 @@
 ||ad-pay.de^
 ||ad-platform.jmty.jp^
 ||ad-plus.cn^
+||ad-pool.shiyuegame.com^
 ||ad-r.soulapp.cn^
 ||ad-recommend.com^
 ||ad-scope.com^
@@ -11694,6 +11695,7 @@
 ||ad.eva.vn^
 ||ad.evozi.com^
 ||ad.f1cd.ru^
+||ad.fanxingnet.cn^
 ||ad.firestorage.jp^
 ||ad.flipboard.com^
 ||ad.flurry.com^
@@ -13558,6 +13560,7 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
+||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-wc.adaptv.advertising.com^
 ||ads-yallo-production.imgix.net^
@@ -25551,6 +25554,7 @@
 ||bigdata.adups.com^
 ||bigdata.advmob.cn^
 ||bigdata.clarin.com^
+||bigdata.downza.com^
 ||bigelowcleaning.com^
 ||bigfishapparel.com^
 ||bigfluffycatexchange.crabdance.com^
@@ -27469,6 +27473,7 @@
 ||bridegaspjustification.com^
 ||bridge169.goasrv.com^
 ||bridge32.top^
+||bridge73.com^
 ||bridged.media^
 ||bridgedbxs.shop^
 ||bridgeoos.com^
@@ -31180,7 +31185,6 @@
 ||ceoapr.donjoyperformance.com^
 ||ceowyn.eseltree.com^
 ||cepa.aluche.madrid.educa.go-static.info^
-||cepde.org^
 ||cephalopod.ospreys.net^
 ||cephalopod.revelio.io^
 ||cephalopod.staff.design^
@@ -34813,6 +34817,7 @@
 ||console.ammoland.com^
 ||console.aqua-adserver.com^
 ||console.atlantamagazine.com^
+||console.bce.baidu.com^
 ||console.biohandel.de^
 ||console.blulab.net^
 ||console.cavalier-romand.ch^
@@ -38894,6 +38899,7 @@
 ||d3gi6isrskhoq.cloudfront.net^
 ||d3glbzj5024wpt.cloudfront.net^
 ||d3glxtkdbno0so.cloudfront.net^
+||d3h02f4xol.com^
 ||d3h2eyuxrf2jr9.cloudfront.net^
 ||d3h4vtr7axmx3p.cloudfront.net^
 ||d3hfiiy55cbi5t.cloudfront.net^
@@ -44814,6 +44820,7 @@
 ||dulewang.com^
 ||duliasvod.cyou^
 ||dulillipupan.com^
+||dulivo.vu^
 ||dulkir-mod.com^
 ||dulkirmod.st^
 ||dulkirsmod.net^
@@ -45401,6 +45408,7 @@
 ||e.aiyyu.com^
 ||e.ajiez.com^
 ||e.anmeilai.net^
+||e.api.adx.huazirc.com^
 ||e.apsalar.com^
 ||e.apxyz.com^
 ||e.armandgonczol.com^
@@ -46475,6 +46483,7 @@
 ||ec0d919893.com^
 ||ec2-44-233-143-239.us-west-2.compute.amazonaws.com^
 ||ec2b57e6e6.0339586393.com^
+||ec2ic6ew5k.com^
 ||ec34ot4zmfwem8t.cfd^
 ||ec375309c1.com^
 ||ec37d6572b.com^
@@ -51142,6 +51151,7 @@
 ||fastwavehilltop.com^
 ||fastwebtrends.com^
 ||faswobmmaqjqe.site^
+||fat-tracking-josh-strongly.trycloudflare.com^
 ||fatal-police.pro^
 ||fatal-scratch.pro^
 ||fataletipplybroil.cfd^
@@ -54664,6 +54674,7 @@
 ||fyewrocgieeog.site^
 ||fyezybabw.com^
 ||fygild.rueonline.com^
+||fyguhaghytusg.edgeone.dev^
 ||fyhnozamfqvvd.site^
 ||fyi1v4fcw3.com^
 ||fyiagfbaqknmi.space^
@@ -56996,7 +57007,6 @@
 ||gmads.net^
 ||gmaigshirczdk.site^
 ||gmanhua.com^
-||gmbh-hunt-dividend-arena.trycloudflare.com^
 ||gmboxx.com^
 ||gmcrxnkdru.com^
 ||gmcztlbk9zu5negv6bxi.cfd^
@@ -58845,6 +58855,7 @@
 ||gtiqupisxnouh.site^
 ||gtj1myjla.com^
 ||gtjpbvbdqwnlp.site^
+||gtkgxcfx5f.com^
 ||gtlmblpvpirgj.site^
 ||gtlp.net.cn^
 ||gtm-server.healthline.com^
@@ -61555,7 +61566,6 @@
 ||hoasvvtyavmbn.store^
 ||hobbetexcud.shop^
 ||hobblertactile.cfd^
-||hobobot.net^
 ||hobypcdcsidnc.online^
 ||hocgeese.com^
 ||hochhut.qpon^
@@ -67062,7 +67072,6 @@
 ||iosipa.b0.upaiyun.com^
 ||iosjscxobtbkk.store^
 ||iot-business.vodafone.com^
-||iot-earbuds-cn.heytapmobi.com^
 ||iot-eu-logser.realme.com^
 ||iot-in-logser.realme.com^
 ||iot-logser.realme.com^
@@ -76265,6 +76274,7 @@
 ||log.doanhnhan.vn^
 ||log.documentmanagerpdfdocxlssale.live^
 ||log.documentreaderapp.com^
+||log.dokichat.club^
 ||log.doubao.com^
 ||log.down61.com^
 ||log.dpa.com^
@@ -76279,6 +76289,7 @@
 ||log.espn.com^
 ||log.estand.jp^
 ||log.etoday.co.kr^
+||log.eu.xiaoyi.com^
 ||log.eufylife.com^
 ||log.event.hunantv.com^
 ||log.ezvizlife.com^
@@ -79677,6 +79688,7 @@
 ||mailservicesgroup.org^
 ||mailstat.us^
 ||mailtinker.com^
+||mailto-carmen-connected-paying.trycloudflare.com^
 ||mailtracking.tf1.com^
 ||mailx.carte-gr.total.fr^
 ||mailx.happ.social^
@@ -83344,6 +83356,7 @@
 ||metrics-relay.net^
 ||metrics-target.siriusxm.com^
 ||metrics-us.cometchat.io^
+||metrics-v1.shiyue.com^
 ||metrics-web.help^
 ||metrics.1800contacts.com^
 ||metrics.21-school.ru^
@@ -88373,6 +88386,7 @@
 ||nasutearawa.com^
 ||nataldecayed.shop^
 ||nataliasharps.qpon^
+||natashamohan.com^
 ||natchezmillie.cyou^
 ||natdetection.onethingpcs.com^
 ||natdisplacehereafter.com^
@@ -90210,6 +90224,7 @@
 ||novitrk7.com^
 ||novitrk8.com^
 ||novostimira.biz^
+||novrixs.net^
 ||novusbet.com^
 ||now.catersource.com^
 ||now.cummins.com^
@@ -101025,6 +101040,7 @@
 ||qcwhyhayjcxra.online^
 ||qcwvmdi.com^
 ||qcwx.medproad.com^
+||qcxitong.xyz^
 ||qcxpoulxosxnf.site^
 ||qcyfngmkrhcmg.website^
 ||qcytinjky.in^
@@ -103922,6 +103938,7 @@
 ||reinscreendecompose.com^
 ||reinvigorate.net^
 ||reitingi.lv^
+||reiventarseuconhecimento.com^
 ||rej-shkpi.wiki^
 ||rejectionwell.com^
 ||rejestr.org^
@@ -104563,6 +104580,7 @@
 ||ressources.usine-digitale.com^
 ||ressources.usine-nouvelle.com^
 ||ressqretcwdkp.site^
+||rest-argus-ad.agoralab.co^
 ||rest.comfy.ua^
 ||rest.irs01.com^
 ||rest.sexypornvideo.net^
@@ -105495,7 +105513,6 @@
 ||robin-flow.com^
 ||robinhoodwallet.dervano.vu^
 ||robinorchid.com^
-||roblox-xeno.info^
 ||robotbagpipe.com^
 ||robotflowermobile.com^
 ||robotgarages.com^
@@ -111772,7 +111789,6 @@
 ||sgtm.darryring.com^
 ||sgtm.depaul.edu^
 ||sgtm.dhgate.com^
-||sgtm.dhgate.com.cdngtm.com^
 ||sgtm.fewoferien.de^
 ||sgtm.holidayhomes.com^
 ||sgtm.hometogo.pt^
@@ -122600,6 +122616,7 @@
 ||suganndiesisagoho.cyou^
 ||sugar.zhihu.com^
 ||sugarfreedcup.co.za^
+||sugarfreedcupcake.co.za^
 ||sugarruse.com^
 ||sugentswear.cfd^
 ||suggestbingo.com^
@@ -136210,6 +136227,7 @@
 ||uuzkcflc.com^
 ||uuzu.com^
 ||uuzxaz.vidaxl.com^
+||uvaf6ko09w.com^
 ||uvbiyrhzsqcoq.space^
 ||uvccpk.1800petmeds.com^
 ||uvcourse.net^
@@ -136570,7 +136588,6 @@
 ||v20.events.data.microsoft.com^
 ||v20.vortex-win.data.microsoft.com^
 ||v2006.com^
-||v2202606372363474129.happysrv.de^
 ||v225.ksbw.com^
 ||v250.goaserv.com^
 ||v26-reading-ad.qznovelvod.com^
@@ -147924,6 +147941,7 @@
 ||xyztraffic.com^
 ||xyzz.amazecommerce.com^
 ||xyzznt.uterque.com^
+||xz-1507771301.cos.ap-singapore.myqcloud.com^
 ||xz-development.oss-cn-beijing.aliyuncs.com^
 ||xz.tongji.shouji56.com^
 ||xz0wefju.fun^
@@ -150419,6 +150437,7 @@
 ||zenmatefeedback.goaserv.com^
 ||zenmezaiaomenduqiu.goasrv.com^
 ||zenoviagroup.com^
+||zenstats.yzhy19.cn^
 ||zentrixads.com^
 ||zentryx.space^
 ||zenzuu.com^

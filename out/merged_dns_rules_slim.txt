@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-28 07:55:03
-! Block rules: 136314
+! Generated: 2026-10-28 14:45:12
+! Block rules: 136327
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
-!   - adblockdnslite [w=5] block 8466
+!   - adblockdnslite [w=5] block 8488
 !   - anti-ad [w=5] block 104582
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5874
+!   - easylistchina [w=3] block 5878
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -7553,6 +7553,7 @@
 ||ad-pay.de^
 ||ad-platform.jmty.jp^
 ||ad-plus.cn^
+||ad-pool.shiyuegame.com^
 ||ad-r.soulapp.cn^
 ||ad-recommend.com^
 ||ad-scope.com^
@@ -7714,6 +7715,7 @@
 ||ad.eva.vn^
 ||ad.evozi.com^
 ||ad.f1cd.ru^
+||ad.fanxingnet.cn^
 ||ad.firestorage.jp^
 ||ad.flipboard.com^
 ||ad.foxnetworks.com^
@@ -9436,6 +9438,7 @@
 ||ads-video-al.xhscdn.com.w.cdngslb.com^
 ||ads-video-qc.xhscdn.com^
 ||ads-vp5-xhscdn.tliveapp.com^
+||ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com^
 ||ads-vp5.xhscdn.com^
 ||ads-yallo-production.imgix.net^
 ||ads.123net.jp^
@@ -20517,6 +20520,7 @@
 ||bigdata-lbs-pri-c3.alb.xiaomi.com^
 ||bigdata-scfx-push.kucoin.plus^
 ||bigdata.clarin.com^
+||bigdata.downza.com^
 ||bigelowcleaning.com^
 ||bigfishapparel.com^
 ||bigfluffycatexchange.crabdance.com^
@@ -32397,6 +32401,7 @@
 ||d3gi6isrskhoq.cloudfront.net^
 ||d3glbzj5024wpt.cloudfront.net^
 ||d3glxtkdbno0so.cloudfront.net^
+||d3h02f4xol.com^
 ||d3h2eyuxrf2jr9.cloudfront.net^
 ||d3h4vtr7axmx3p.cloudfront.net^
 ||d3hfiiy55cbi5t.cloudfront.net^
@@ -38421,6 +38426,7 @@
 ||e.aiyyu.com^
 ||e.ajiez.com^
 ||e.anmeilai.net^
+||e.api.adx.huazirc.com^
 ||e.apxyz.com^
 ||e.armandgonczol.com^
 ||e.assetdisposalguide.com^
@@ -39428,6 +39434,7 @@
 ||ec00t7oue1.com^
 ||ec0d919893.com^
 ||ec2-44-233-143-239.us-west-2.compute.amazonaws.com^
+||ec2ic6ew5k.com^
 ||ec34ot4zmfwem8t.cfd^
 ||ec375309c1.com^
 ||ec37d6572b.com^
@@ -46860,6 +46867,7 @@
 ||fyewrocgieeog.site^
 ||fyezybabw.com^
 ||fygild.rueonline.com^
+||fyguhaghytusg.edgeone.dev^
 ||fyhnozamfqvvd.site^
 ||fyi1v4fcw3.com^
 ||fyiagfbaqknmi.space^
@@ -50775,6 +50783,7 @@
 ||gtiqupisxnouh.site^
 ||gtj1myjla.com^
 ||gtjpbvbdqwnlp.site^
+||gtkgxcfx5f.com^
 ||gtlmblpvpirgj.site^
 ||gtlp.net.cn^
 ||gtm-server.healthline.com^
@@ -58447,7 +58456,6 @@
 ||iosipa.b0.upaiyun.com^
 ||iosjscxobtbkk.store^
 ||iot-business.vodafone.com^
-||iot-earbuds-cn.heytapmobi.com^
 ||iot-eu-logser.realme.com^
 ||iot-in-logser.realme.com^
 ||iot-logser.realme.com^
@@ -67183,6 +67191,7 @@
 ||log.doanhnhan.vn^
 ||log.documentmanagerpdfdocxlssale.live^
 ||log.documentreaderapp.com^
+||log.dokichat.club^
 ||log.doubao.com^
 ||log.down61.com^
 ||log.dpa.com^
@@ -67197,6 +67206,7 @@
 ||log.espn.com^
 ||log.estand.jp^
 ||log.etoday.co.kr^
+||log.eu.xiaoyi.com^
 ||log.eufylife.com^
 ||log.event.hunantv.com^
 ||log.ezvizlife.com^
@@ -73892,6 +73902,7 @@
 ||metrics-prod.suno.com^
 ||metrics-target.siriusxm.com^
 ||metrics-us.cometchat.io^
+||metrics-v1.shiyue.com^
 ||metrics-web.help^
 ||metrics.1800contacts.com^
 ||metrics.21-school.ru^
@@ -93836,6 +93847,7 @@
 ||ressources.usine-digitale.com^
 ||ressources.usine-nouvelle.com^
 ||ressqretcwdkp.site^
+||rest-argus-ad.agoralab.co^
 ||rest.comfy.ua^
 ||rest.sexypornvideo.net^
 ||rest.wildstar-online.com^
@@ -99962,7 +99974,6 @@
 ||sgtm.darryring.com^
 ||sgtm.depaul.edu^
 ||sgtm.dhgate.com^
-||sgtm.dhgate.com.cdngtm.com^
 ||sgtm.fewoferien.de^
 ||sgtm.holidayhomes.com^
 ||sgtm.hometogo.pt^
@@ -123095,6 +123106,7 @@
 ||uuzkcflc.com^
 ||uuzu.com^
 ||uuzxaz.vidaxl.com^
+||uvaf6ko09w.com^
 ||uvbiyrhzsqcoq.space^
 ||uvccpk.1800petmeds.com^
 ||uvcourse.net^
@@ -134910,6 +134922,7 @@
 ||zenithurbanflirtatious.com^
 ||zenlkqmjfnnwd.website^
 ||zenoviagroup.com^
+||zenstats.yzhy19.cn^
 ||zentrixads.com^
 ||zentryx.space^
 ||zenzuu.com^
