@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-27 18:50:30
-! Block rules: 136320
+! Generated: 2026-10-28 01:57:15
+! Block rules: 136321
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 104582
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5871
+!   - easylistchina [w=3] block 5872
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -44810,6 +44810,7 @@
 ||firefly.bol.com^
 ||firefly.jamesbrowne.me^
 ||fireflyengagement.com^
+||fireplace32.com^
 ||fireplacedecency.com^
 ||firevent.jd.com^
 ||fireworkadservices.com^

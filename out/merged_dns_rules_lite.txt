@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-27 18:50:28
-! Block rules: 151914
+! Generated: 2026-10-28 01:57:13
+! Block rules: 151915
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8519 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 104582 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5871 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5872 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1806 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1808 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -511,7 +511,6 @@
 ||10sn95to9.de^
 ||10stepswp.advancedtech.com^
 ||10xlaunch.ai^
-||11-4xt.pages.dev^
 ||11.96131.com.cn^
 ||11.golang8.com^
 ||11.yiqig.cn^
@@ -1046,7 +1045,6 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -10240,6 +10238,7 @@
 ||aas.neom.com^
 ||aas.visitsaudi.com^
 ||aass111.tos-cn-beijing.volces.com^
+||aass1122.tos-cn-beijing.volces.com^
 ||aassp.wgzty.cn^
 ||aatkit.com^
 ||aaucna.casasbahia.com.br^
@@ -22566,6 +22565,7 @@
 ||avhxlgougslod.space^
 ||avid.actonservice.com^
 ||avideo.ifengcdn.com^
+||avidhosting.uk^
 ||aviecayman.qpon^
 ||avifwlqraveqt.online^
 ||aviijbyeajkjg.online^
@@ -25686,6 +25686,7 @@
 ||biomesbrome.cfd^
 ||bionicclick.com^
 ||biophysicsgroup.actonservice.com^
+||bioprot.com.ar^
 ||biopsypainless.com^
 ||biotechnologysciences.com^
 ||biphic.com^
@@ -27766,7 +27767,6 @@
 ||brzjthsubtlwj.site^
 ||brzvtueeyyqdo.space^
 ||bs-adserver.b-cdn.net^
-||bs-deliver-e817.61d8f0e6ac62c139abd08ba5.workers.dev^
 ||bs-pro-origin-pull.kwai.net.iberostar.com^
 ||bs.5442.com^
 ||bs.csshq.com.cn^
@@ -30083,6 +30083,7 @@
 ||caterpillarsigns.coversandall.com^
 ||caterpillarsigns.coversandall.com.au^
 ||caterpillarsigns.coversandall.eu^
+||caterprosoftware.com^
 ||catfish.phuclh.com^
 ||catfish.pressure.cooking^
 ||catfish.sofatido.ch^
@@ -30965,7 +30966,6 @@
 ||cdnonead-onead.cdn.hinet.net^
 ||cdnonetag-onead.cdn.hinet.net^
 ||cdnopw.com^
-||cdnorigin.net^
 ||cdnovs.multiopen.cn^
 ||cdnpa.hyperpromote.com^
 ||cdnpc.net^
@@ -36200,6 +36200,7 @@
 ||cracataum.com^
 ||crack928322.goaserv.com^
 ||crackedclients.com^
+||crackedclients.online^
 ||crackingoptimistic.com^
 ||crackrapt.com^
 ||cracksheck.cfd^
@@ -36528,6 +36529,7 @@
 ||croisesfasciae.com^
 ||croissed.info^
 ||croiszeroed.qpon^
+||crojam.com^
 ||crojikphytoid.qpon^
 ||croni.site^
 ||cronieinvtch.qpon^
@@ -42856,7 +42858,6 @@
 ||dl.orders.accredo.com^
 ||dl.orders.express-scripts.com^
 ||dl.popclub.co.in^
-||dl.proxiespool.wiki^
 ||dl.purplle.com^
 ||dl.right2vote.in^
 ||dl.rivafashion.com^
@@ -43930,7 +43931,6 @@
 ||dr6vcclmzwk74.cloudfront.net^
 ||dr8pk6ovub897.cloudfront.net^
 ||dr999.cc^
-||dra.com.ve^
 ||drab-week.com^
 ||drabbedhovenbauxite.cyou^
 ||drabimprovement.com^
@@ -51589,7 +51589,6 @@
 ||femalecook.com^
 ||femalesfellowship.com^
 ||fembed.com^
-||femboy.center^
 ||femcldsapntgd.space^
 ||femetrics.grammarly.io^
 ||femininebeams.com^
@@ -52491,6 +52490,7 @@
 ||firefly.goasrv.com^
 ||firefly.jamesbrowne.me^
 ||fireflyengagement.com^
+||fireplace32.com^
 ||fireplacedecency.com^
 ||firevent.jd.com^
 ||fireworkadservices.com^
@@ -53878,7 +53878,6 @@
 ||free.aol.com^
 ||free.babynameready.com^
 ||free.srcdn.xyz^
-||free.tiurl.top^
 ||freeadd.me^
 ||freeadultcomix.com^
 ||freebanner.com^
@@ -59605,7 +59604,6 @@
 ||hacefoldjcteb.website^
 ||hacekwarine.qpon^
 ||hacker.com.cn^
-||hackers.krd^
 ||hackianude.qpon^
 ||hackingshowery.cfd^
 ||hackmandoddard.com^
@@ -59757,6 +59755,7 @@
 ||hanaa.cn^
 ||hanadev.branch.rocks^
 ||hanaphumsaglycon.cyou^
+||hanasrmt.ca^
 ||hanastage.branch.rocks^
 ||hanatest.branch.rocks^
 ||hancockhealth.hancockregional.org^
@@ -61559,6 +61558,7 @@
 ||hoasvvtyavmbn.store^
 ||hobbetexcud.shop^
 ||hobblertactile.cfd^
+||hobobot.net^
 ||hobypcdcsidnc.online^
 ||hocgeese.com^
 ||hochhut.qpon^
@@ -63400,6 +63400,7 @@
 ||icon.eu.ptmnd.com^
 ||icon.eu.rfxmnd.com^
 ||icon.eu.twrmnd.com^
+||iconic-cracksds.vercel.app^
 ||iconmediapixel.com^
 ||iconnode.com^
 ||icons.mydrivers.com^
@@ -71053,7 +71054,6 @@
 ||keltmiacisassegai.cyou^
 ||kelun13.top^
 ||kelvvhqaqbzty.site^
-||kemaxglobalshippings.com^
 ||kempeyesome.com^
 ||kemrrbjymzwaa.space^
 ||kenaijabirucoyotes.qpon^
@@ -79829,6 +79829,7 @@
 ||manconsider.com^
 ||mandanelutes.cfd^
 ||mandant.net.anwalt.de^
+||mandarin.net.au^
 ||mandartoilerummies.cyou^
 ||mandatemuggles.cyou^
 ||mandatorypainter.com^
@@ -83171,7 +83172,10 @@
 ||meteachugood.holdmybeerconsulting.com^
 ||metelpardon.shop^
 ||meteolbiyrmjo.online^
+||meteor-sites-one.vercel.app^
+||meteoraddons.net^
 ||meteorclient.shop^
+||meteorclient.us^
 ||meteorclientplus.com^
 ||meteorclients.com^
 ||meteorrejects.net^
@@ -99840,7 +99844,6 @@
 ||pub-53fe969c6db649fba6466eb765f54359.r2.dev^
 ||pub-5590b15da27f4f219811312b19a8df05.r2.dev^
 ||pub-5aaa0feaeca64ddda0e256f8793ca2fd.r2.dev^
-||pub-5eee967508114192a40c0ca052a3bb9d.r2.dev^
 ||pub-5fd52250a6494c859025a3cd39713703.r2.dev^
 ||pub-6a90252f6d70443d960d6ac029dbd446.r2.dev^
 ||pub-72295f71e45d431995028c79cf261dae.r2.dev^
@@ -99964,6 +99967,7 @@
 ||publicsofa.com^
 ||publictelemetry.tophat.com^
 ||publicus.com^
+||publiempresa.es^
 ||publift.com^
 ||publinker.com^
 ||publir.com^
@@ -100173,6 +100177,7 @@
 ||pure-operation.pro^
 ||purebloom.net^
 ||pureecronishamuse.cfd^
+||purelypulse.media^
 ||purevideo.com^
 ||pureyyelpers.shop^
 ||purgergallium.com^
@@ -105076,6 +105081,7 @@
 ||rigill.com^
 ||riginvestigator.com^
 ||rigkqvfvsfevc.site^
+||rigmod.net^
 ||rigorlab.com^
 ||rihbxnftttvlp.website^
 ||rihhfqeqwimni.website^
@@ -112779,7 +112785,6 @@
 ||sisdtb.climatempo.com.br^
 ||sisseth.com^
 ||sistacked.com^
-||sistemasyusa.icu^
 ||sistentdiets.cfd^
 ||sistrenvaudism.cfd^
 ||sit-metrics.nab.com.au^
@@ -118803,7 +118808,6 @@
 ||ssc.mundonick.com^
 ||ssc.mundonick.com.br^
 ||ssc.newnownext.com^
-||ssc.nexajs.com^
 ||ssc.nick-asia.com^
 ||ssc.nick.co.uk^
 ||ssc.nick.com^
@@ -128295,7 +128299,6 @@
 ||tpiwuerxwtuyz.online^
 ||tpjdszootpiir.online^
 ||tpjhxbwkvjjvtq.com^
-||tpkpolus.ru^
 ||tpmedia-reactads.com^
 ||tpmedia.online^
 ||tpmexb.vans.co.nz^
@@ -133751,7 +133754,6 @@
 ||uezeoqumpbhxr.site^
 ||ufa9tt1n5.com^
 ||ufaexpert.com^
-||ufavalkplus.com^
 ||ufbkweixxpaoe.site^
 ||ufbpqmryrrctn.site^
 ||ufbxokkiootk6zpi.rest^
@@ -137198,7 +137200,6 @@
 ||vengingtrental.com^
 ||venisebleaknong.cfd^
 ||venocfzxlropn.store^
-||venom.rotero.vc^
 ||venomedrescan.cyou^
 ||venomerpreser.cyou^
 ||venomousvessel.com^
@@ -138338,7 +138339,6 @@
 ||vmvzzmv.shop^
 ||vmwody.seibu-k.co.jp^
 ||vmwoxqroobncg.online^
-||vmwrvtools.com^
 ||vmxckyomhbtcz.space^
 ||vmxneqttwxhcv.site^
 ||vmyhrogasgxkq.online^
@@ -142739,6 +142739,7 @@
 ||wurflcloud.com^
 ||wurldcergpkri.site^
 ||wurqaz.com^
+||wurstclient.org^
 ||wurvulned.cyou^
 ||wuscedrktaxsh.online^
 ||wusefjjxcqhwc.site^
