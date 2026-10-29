@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-29 00:08:02
-! Block rules: 152601
+! Generated: 2026-10-29 06:07:37
+! Block rules: 152621
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100077 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5878 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5884 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1806 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1772 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1046,8 +1046,10 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
+||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1189,6 +1191,7 @@
 ||1ccbt.com^
 ||1cctcm1gq.de^
 ||1cd21cb1e4.com^
+||1chtx8re2.com^
 ||1cimslrk3.com^
 ||1ckbfk08k.de^
 ||1cpbac.ru^
@@ -3519,6 +3522,7 @@
 ||4k4zbfclm.com^
 ||4kngwxegq5.com^
 ||4l.vlgtgclmpk95tbf.cyou^
+||4l0h5xxoc.com^
 ||4l5bbkug99.com^
 ||4lbk4yuhj5upn7vvkl.cfd^
 ||4link.it^
@@ -4103,7 +4107,6 @@
 ||6093ac4972.82067251a6.com^
 ||60999.cn^
 ||609999.xyz^
-||60aaf9c6.salamanderprocessing.pages.dev^
 ||60ah.com^
 ||61165.com^
 ||6118a9c9fe.171c856581.com^
@@ -25781,6 +25784,7 @@
 ||bit.beformance.com^
 ||bitads.net^
 ||bitbeat7.com^
+||bitbrowse.oss-cn-hongkong.aliyuncs.com^
 ||bitcasino365.b-cdn.net^
 ||bitclub.network^
 ||bitclubnetwork.com^
@@ -26828,6 +26832,7 @@
 ||bookofsex.com^
 ||books-analytics-events.apple.com^
 ||books-analytics-events.news.apple-dns.net^
+||bookshelf07.com^
 ||bookshelfcomplaint.com^
 ||booksyfellersfilea.cyou^
 ||booktakeaway.com^
@@ -29180,7 +29185,6 @@
 ||c32.statcounter.com^
 ||c33.statcounter.com^
 ||c34.statcounter.com^
-||c3436037.salamanderprocessing.pages.dev^
 ||c35.statcounter.com^
 ||c36.statcounter.com^
 ||c37.statcounter.com^
@@ -30701,6 +30705,7 @@
 ||cdn.fedykr.com^
 ||cdn.fegivja.com^
 ||cdn.fexyop.com^
+||cdn.file6.goodid.com^
 ||cdn.flurry.com^
 ||cdn.ftwpcn.com^
 ||cdn.g.wan.douyu.com^
@@ -31251,6 +31256,7 @@
 ||ceoapr.donjoyperformance.com^
 ||ceowyn.eseltree.com^
 ||cepa.aluche.madrid.educa.go-static.info^
+||cepde.org^
 ||cephalopod.ospreys.net^
 ||cephalopod.revelio.io^
 ||cephalopod.staff.design^
@@ -32041,6 +32047,7 @@
 ||ci.quickbooks.com^
 ||ci42.rgp.com^
 ||ciacervidperoxyl.cyou^
+||cianet.ir^
 ||cibhmyowgsmpa.store^
 ||cibj3rif9mw4gubu6.rest^
 ||cibjccxqwbetq.space^
@@ -36138,6 +36145,7 @@
 ||cpmterra.com^
 ||cpmtree.com^
 ||cpnsbxkibvbhw.space^
+||cpofficial.com^
 ||cpokulack.com^
 ||cpoml.iask.sina.com.cn^
 ||cppftnwmeaopm.online^
@@ -36805,7 +36813,6 @@
 ||cs.bankmillennium.pl^
 ||cs.coopeservidores.fi.cr^
 ||cs.dqwjzm.com^
-||cs.go.kg^
 ||cs.gssprt.jp^
 ||cs.hot.net.il^
 ||cs.ifedata.ru^
@@ -38416,7 +38423,6 @@
 ||d22v2nmahyeg2a.cloudfront.net^
 ||d22xmn10vbouk4.cloudfront.net^
 ||d22z575k8abudv.cloudfront.net^
-||d2314eac.solaraweb-alj.pages.dev^
 ||d232dy72shugnx.cloudfront.net^
 ||d235m8fpdlskx9.cloudfront.net^
 ||d236v5t33fsfwk.cloudfront.net^
@@ -43764,6 +43770,7 @@
 ||down.pcclear.com^
 ||down.qqfarmer.com.cn^
 ||down.rising.net.cn^
+||down.ruanmei.com^
 ||down.sandai.net^
 ||down.unicron-cdn.click^
 ||down.winads.cn^
@@ -47510,6 +47517,7 @@
 ||electosake.com^
 ||electoutnook.com^
 ||electranowel.com^
+||electri.billregulator.com^
 ||electricalbicyclelistnonfiction.com^
 ||electricfeminine.com^
 ||electricity2.tokyu-ps.jp^
@@ -52139,6 +52147,7 @@
 ||file.iporngay.com^
 ||file.ppbk9.com^
 ||file.tugou.com.co^
+||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -54863,6 +54872,7 @@
 ||fyzfvrnfmtzxm.online^
 ||fyznhp8inq9x.jaywilsonwebsolutions.com^
 ||fz.letv.com^
+||fz.tiansys.cn^
 ||fz1j7l8n2.com^
 ||fz55vq.site^
 ||fz6g5l9v8kmnrq.cfd^
@@ -55173,6 +55183,7 @@
 ||gae.karte.io^
 ||gaeldomyore.qpon^
 ||gaelspharoswokas.qpon^
+||gaenterprises.in^
 ||gafefhednctfh.site^
 ||gafferranch.qpon^
 ||gaffkyachamoslaccol.cyou^
@@ -62019,6 +62030,7 @@
 ||hornet.newburycompanies.com^
 ||hornet.stechstudio.com^
 ||hornetywestersaloysia.cyou^
+||horno-rafelet.es^
 ||horntooth.com^
 ||hornymatches.com^
 ||hornyspots.com^
@@ -62120,6 +62132,7 @@
 ||hoteljune2026.blogspot.com^
 ||hotelmate.asia^
 ||hotels-rates.goaserv.com^
+||hotelsalamander.pl^
 ||hotelscombined.com.au^
 ||hotelsep.blogspot.com^
 ||hoteluri.go-static.info^
@@ -67834,6 +67847,7 @@
 ||itjqbtkkofmqj.online^
 ||itjwjqlcvnsgw.site^
 ||itjzltjhglfzl.website^
+||itkdb58mo.com^
 ||itkdlu.equideow.com^
 ||itkldppgctfkx.site^
 ||itktymvfvnjps.website^
@@ -69351,6 +69365,7 @@
 ||jlonte.xyz^
 ||jloymapbukmdc.space^
 ||jlpbymrzollix.space^
+||jlpfbhmefcthbk.com^
 ||jlpghlczoauec.space^
 ||jlpuzawkaasxh.site^
 ||jlqjuiwrnprkm.online^
@@ -76360,7 +76375,6 @@
 ||loc.sexymilfspics.com^
 ||loc.xtr2020.com^
 ||local-shares.ri.la^
-||local-update.com^
 ||localaffectrecipe.com^
 ||localedgemedia.com^
 ||localfiles.live^
@@ -85616,6 +85630,7 @@
 ||mindmapper.cc^
 ||mindoccupy.com^
 ||mindopennews.com^
+||mindrix.top^
 ||mindtake.com^
 ||mindworks.goaserv.com^
 ||mine.nahnoji.cz^
@@ -86286,6 +86301,7 @@
 ||mn230126pb.com^
 ||mn586.com^
 ||mna.jasjas.site^
+||mna.multidex.life^
 ||mnaspm.com^
 ||mnbgbnrdqihyq.site^
 ||mnbvc34.com^
@@ -87987,6 +88003,7 @@
 ||mx2.happ.social^
 ||mx278ol2d.com^
 ||mx6.3pornhere.com^
+||mx9x.com^
 ||mxana.tacool.com^
 ||mxanalytics.youruncensoredai.workers.dev^
 ||mxapis.com^
@@ -88984,6 +89001,7 @@
 ||ndgrlo.visiondirect.com.au^
 ||ndgtvuwmlszsl.space^
 ||ndhadbeensoa.org^
+||ndhfz9zw2.com^
 ||ndhvcwnczxupa.online^
 ||ndhygbvffecvj.site^
 ||ndi.nuance.com^
@@ -95320,7 +95338,6 @@
 ||panel.adop.co^
 ||panel.adsaro.com^
 ||panel.adtryx.com^
-||panel.b2brouter-secure.com^
 ||panel.bcnmonetize.com^
 ||panel.mkk9991999912.observer^
 ||panelednordic.com^
@@ -95450,7 +95467,6 @@
 ||pardnerinlacedcachrys.cyou^
 ||pardonfidleys.qpon^
 ||pardonsslaking.cfd^
-||pardu.pages.dev^
 ||parenenvine.cfd^
 ||parentapp.byjus.com^
 ||parentpicture.com^
@@ -100258,7 +100274,6 @@
 ||pub-00d54ae289e84e93a3c8640fb2301c5f.r2.dev^
 ||pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev^
 ||pub-0462440f54f44b9fb3474df61e32d6ba.r2.dev^
-||pub-0478b308b8cf46709a73d0eed5afd633.r2.dev^
 ||pub-0aa1ca9c603a4b99b4e4dd7636b31f10.r2.dev^
 ||pub-0bf4d4ca8a6e426ea7d3d00ec3ecd192.r2.dev^
 ||pub-153d2a9e026942c4aff3b3aca8f80952.r2.dev^
@@ -100269,11 +100284,11 @@
 ||pub-1f5a501a59d74a6a97e77126cf1fc526.r2.dev^
 ||pub-2731c5c84ec94bb78b02c025b7b3f6c4.r2.dev^
 ||pub-309aaffb1a3643d58aaa9c444941fef3.r2.dev^
-||pub-364c6b3011ca492cab2354176cfaf3f0.r2.dev^
 ||pub-378362a70f714a30b26c109732cabca4.r2.dev^
 ||pub-37f3a615586d47f4996e932bf6df7670.r2.dev^
 ||pub-3bc1de741f8149f49bdbafa703067f24.r2.dev^
 ||pub-3e3889b5442b4ed4ab5f97beec5959ea.r2.dev^
+||pub-406c38dcf6254a1e9d626f6b34967826.r2.dev^
 ||pub-43fc211373d547278dd3d5bd0b4d9dac.r2.dev^
 ||pub-45a83f302a1943ed8d62418c2af947ef.r2.dev^
 ||pub-4cf232026b854c1e8bb06b595c8f7587.r2.dev^
@@ -100301,12 +100316,14 @@
 ||pub-a6ae2d4aa393400aa29f7b02ac7ab213.r2.dev^
 ||pub-ac263311e26f4866accaf2881f4fcc45.r2.dev^
 ||pub-algeriatenders.s3.eu-central-1.amazonaws.com^
+||pub-b0f74488c3df4fc5a193cc220a0f3bf1.r2.dev^
 ||pub-b98155d31c7b46ecbdf79eab5e37bae3.r2.dev^
 ||pub-bbbdebc2599c4d74b04c5d53e439f7a7.r2.dev^
 ||pub-bfc34934a91a4893817098f73415917a.r2.dev^
 ||pub-c1aae4eecd22436e835dc3a91e470062.r2.dev^
 ||pub-c6d653e19fd545129fdfd7d6f8cd8b17.r2.dev^
 ||pub-c9224963ee6a49b194bba4acac778b13.r2.dev^
+||pub-c9f0444b6f604c8d8f64366bb87d456d.r2.dev^
 ||pub-cbeeb81b1c2d40df823a412f702451a3.r2.dev^
 ||pub-cdd0dd27ae6a4aee9841d397e0496374.r2.dev^
 ||pub-ce02802067934e0eb072f69bf6427bf6.r2.dev^
@@ -100314,12 +100331,13 @@
 ||pub-cf9a2985033542d9a17b3c9a644b66be.r2.dev^
 ||pub-d21b4190a47f45628c828456f23dd66e.r2.dev^
 ||pub-d56457612c0b43ebbaf5c25537f2fb18.r2.dev^
+||pub-dafab31d7caf48478302d333de660bc3.r2.dev^
+||pub-deebd68623a947eebf94757bdf8f090b.r2.dev^
 ||pub-e10d56052d2542d0b2f74abed3691951.r2.dev^
 ||pub-e33c72ad3ac74028914da0187313eeb3.r2.dev^
 ||pub-e95a23a0e3944ef49a26647f1ec168e0.r2.dev^
 ||pub-eab9eb7761644f51bceeecfefdf0ec2b.r2.dev^
 ||pub-ebd75badb3504e77aa1924be8dbce949.r2.dev^
-||pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev^
 ||pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev^
 ||pub-f225fc4c925f4cad963c543c3378b1ae.r2.dev^
 ||pub-f36b05599c3043ddb16520acf6cc3cce.r2.dev^
@@ -104816,6 +104834,7 @@
 ||rereddit.com^
 ||rereeltyes.com^
 ||rergaxhihmuli.website^
+||rerollnow.cc^
 ||rertrc.abc-mart.net^
 ||rerunstezramilie.cyou^
 ||reryn3ce.com^
@@ -105529,6 +105548,7 @@
 ||riddmqqubqwnj.website^
 ||rideblackbird.com^
 ||rideradjective.com^
+||riderspin.com^
 ||ridfvncgizfjlq.com^
 ||ridge-cdn.lol^
 ||ridge-cdn.xyz^
@@ -109034,6 +109054,7 @@
 ||sail-horizon.com^
 ||sail-personalize.com^
 ||sail.autolabsouthgate.com^
+||sail91.com^
 ||sailfish.deck9.co^
 ||sailfish.historyoflegends.no^
 ||sailfish.hoap.com^
@@ -109109,7 +109130,6 @@
 ||salmon.thespiritualpsychologist.co.uk^
 ||salmoncontroversy.com^
 ||salmonfin.com^
-||salmosnet.duckdns.org^
 ||salmuphahdgcc.site^
 ||saloopsphonerenigua.cfd^
 ||salpoidviolan.qpon^
@@ -117560,6 +117580,7 @@
 ||softclick.com.br^
 ||softcloudtrail.com^
 ||softdl.360tpcdn.com^
+||softdl2.360tpcdn.com^
 ||softdl4.360.cn^
 ||softenedimmortalityprocedure.com^
 ||softestablishmentfill.com^
@@ -131743,7 +131764,6 @@
 ||tradetooth.com^
 ||tradetracker.net^
 ||trading-ad.net^
-||tradingengineers.in^
 ||traditionalboycottflung.com^
 ||traditionblindness.com^
 ||tradplus.cn^
@@ -135700,7 +135720,6 @@
 ||upload.luckyorange.net^
 ||upload_data.qq.com^
 ||uploadlog.p2p.qq.com^
-||uploadloop.com^
 ||uploadmix.net^
 ||uploads.traff-bull.com^
 ||uplog.inews.qq.com^
@@ -137403,6 +137422,7 @@
 ||vannicdoolees.cyou^
 ||vanrcoanza.in^
 ||vaokbuyvpiyzw.website^
+||vape-client-landing.netlify.app^
 ||vapedia.com^
 ||vapesbro.com^
 ||vapi.tiandi.com^
