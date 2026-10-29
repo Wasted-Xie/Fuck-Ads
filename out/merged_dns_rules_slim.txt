@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-29 13:27:35
-! Block rules: 137045
+! Generated: 2026-10-29 23:27:46
+! Block rules: 137049
 ! Whitelist rules: 282
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100077
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5886
+!   - easylistchina [w=3] block 5890
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -296,6 +296,7 @@
 ||0pengl.com^
 ||0qry58i9es.com^
 ||0qxfxqif0.com^
+||0r5e0xvwes.com^
 ||0s1wclct6.com^
 ||0s5qb3rfz.com^
 ||0sbm.consobaby.co.uk^
@@ -19133,6 +19134,7 @@
 ||barrister85.top^
 ||bars.funportal.info^
 ||barsomwryly.shop^
+||barstool59.com^
 ||bartcons.com^
 ||bartender.cc^
 ||bartererfaxtingling.com^
@@ -53643,6 +53645,7 @@
 ||holsat.shop^
 ||holsstola.qpon^
 ||holuagency.top^
+||holxlriacffphq.com^
 ||hom.mq6ropmunwzeog5k1kbqrvlxgi6l4.cyou^
 ||home.edm.globalsources.com^
 ||home.throne.ink^
@@ -62121,6 +62124,7 @@
 ||k9zxbudgix.com^
 ||ka1.sexvnhd.vip^
 ||ka1bsc6mm0.com^
+||ka9gcc8ifd.com^
 ||kaacsi.belvilla.nl^
 ||kaadqpoorrhsy.site^
 ||kaascypher.com^
