@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-30 09:22:41
-! Block rules: 152667
-! Whitelist rules: 282
+! Generated: 2026-10-30 16:07:11
+! Block rules: 152676
+! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
-!   - anti-ad: anti-AD（国内优质） (block 100077 / white 49, priority 2)
+!   - anti-ad: anti-AD（国内优质） (block 100073 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5892 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5895 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1836 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1848 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1049,7 +1049,6 @@
 ||178-83-121-204.cprapid.com^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1321,6 +1320,7 @@
 ||1nrgur4y43.com^
 ||1ns1rosb.de^
 ||1nvnkyg65.com^
+||1nvxl968le.com^
 ||1o0g85u7k1.com^
 ||1o1nuqbjea.com^
 ||1o23ptd0sv.com^
@@ -20122,6 +20122,7 @@
 ||app.domclick.ru^
 ||app.dreambox.ru.com^
 ||app.dtlphx.net^
+||app.dydowsdy.xyz^
 ||app.e.dowjones.com^
 ||app.e.flukecal.com^
 ||app.e.gettyimages.com^
@@ -36156,7 +36157,6 @@
 ||cpmterra.com^
 ||cpmtree.com^
 ||cpnsbxkibvbhw.space^
-||cpofficial.com^
 ||cpokulack.com^
 ||cpoml.iask.sina.com.cn^
 ||cppftnwmeaopm.online^
@@ -39274,6 +39274,7 @@
 ||d761erxl2qywg.cloudfront.net^
 ||d77777777.com^
 ||d7796e8499.bf608c30c9.com^
+||d78aab4760-db52-74aaa652cd4f.embergrab.cc^
 ||d7b.cn^
 ||d7c422bada.514df5b14c.com^
 ||d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com^
@@ -40350,7 +40351,6 @@
 ||datadog-service.mvfglobal.com^
 ||datadoghq-browser-agent.com^
 ||datadoghq.eu^
-||datadome.co^
 ||datadome.maisonsdumonde.com^
 ||datadsk.com^
 ||dataf.ads.oppomobile.com^
@@ -43615,6 +43615,7 @@
 ||donutsmpclientts.lovable.app^
 ||donutsmpdupe.com^
 ||donutsmpdupes.lol^
+||donutsmphackclient.netlify.app^
 ||donutsmputilitys.netlify.app^
 ||doo6pwib3qngu.cloudfront.net^
 ||doo888x.com^
@@ -43800,6 +43801,7 @@
 ||downlaod.xiaocen.com^
 ||downliegonophcymba.cfd^
 ||download-accelerator-plus.goasrv.com^
+||download-azhioss.space^
 ||download-juui-plugin.hismarttv.com^
 ||download-sougou.com.cn^
 ||download-staging.planify.io^
@@ -46404,6 +46406,7 @@
 ||eat9.thebeat925.ca^
 ||eatablesquare.com^
 ||eatcells.com^
+||eatcullt.com^
 ||eatenauroral.qpon^
 ||eatenmockingoverwhelm.com^
 ||eatersstoopsenflesh.cyou^
@@ -48720,7 +48723,6 @@
 ||ens.tagblatt.ch^
 ||ensealplaners.com^
 ||enseq50a.xyz^
-||ensighten.com^
 ||ensignpancreasrun.com^
 ||ensmwonhtzpdh.space^
 ||ensobercoquinsocking.cfd^
@@ -51277,7 +51279,6 @@
 ||fastclick.net^
 ||fastcmp.com^
 ||fastcounter.de^
-||fastdex.myddns.me^
 ||fastdntrk.com^
 ||fastemu.co^
 ||fastenermkt.averydennison.com^
@@ -52161,6 +52162,7 @@
 ||file.iporngay.com^
 ||file.ppbk9.com^
 ||file.tugou.com.co^
+||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -55832,7 +55834,6 @@
 ||geminidshotgun.top^
 ||geminisailingzillion.com^
 ||gemius.hu^
-||gemius.pl^
 ||gemlithium.com^
 ||gemmerdabby.cyou^
 ||gemmulesaponul.qpon^
@@ -72543,6 +72544,7 @@
 ||kryptonclientcrack.lovable.app^
 ||kryptonclientliista.lovable.app^
 ||kryptonclientplus.lovable.app^
+||kryptonofficial.org^
 ||kryvidmqdmlnm.space^
 ||krzckkukg.com^
 ||krzkasckoqvad.site^
@@ -75771,7 +75773,6 @@
 ||literallyflickercomplaints.com^
 ||litholcapsa.cyou^
 ||lithyunpawedwhew.cfd^
-||litix.io^
 ||litpluming.com^
 ||litpzshqdkjvn.online^
 ||litrefloored.com^
@@ -86484,7 +86485,6 @@
 ||mobifobi.com^
 ||mobil.hry.yt^
 ||mobil177.com^
-||mobilab.by^
 ||mobildev.in^
 ||mobile-10.com^
 ||mobile-campaigns.avast.com^
@@ -86499,6 +86499,7 @@
 ||mobile-events.eservice.emarsys.net.iberostar.com^
 ||mobile-production.content-square.net^
 ||mobile-pubt.ele.me^
+||mobile-service.segment.com^
 ||mobile-telemetry.multiball.forzafootball.net^
 ||mobile.2200120.com^
 ||mobile.Banzai.it^
@@ -88025,7 +88026,6 @@
 ||mx2.happ.social^
 ||mx278ol2d.com^
 ||mx6.3pornhere.com^
-||mx9x.com^
 ||mxana.tacool.com^
 ||mxanalytics.youruncensoredai.workers.dev^
 ||mxapis.com^
@@ -91665,6 +91665,7 @@
 ||obnrap.neimanmarcus.com^
 ||obnzriaaldxfc.site^
 ||oboe3broo.com^
+||obohands.com^
 ||obooom.robinmaybag.com^
 ||oborsckqxtpuf.online^
 ||obosnovano.su^
@@ -91870,6 +91871,7 @@
 ||octillion.tv^
 ||octo25.me^
 ||octoberads.space^
+||octoberfp.eastus.cloudapp.azure.com^
 ||octolinkcom.me^
 ||octomarket.com^
 ||octonewjs.com^
@@ -97696,7 +97698,6 @@
 ||placiditylever.com^
 ||placidocn.com^
 ||placidperson.com^
-||pladform.ru^
 ||plagaegasping.cyou^
 ||plagaerollers.qpon^
 ||plagaethulr.cyou^
@@ -99184,6 +99185,7 @@
 ||precariouscowardgreatly.com^
 ||precautionnoughtsam.com^
 ||precedentblackened.com^
+||preciosasjoyitas.com.mx^
 ||precious-election.com^
 ||precious-primary.com^
 ||preciousadequate.com^
@@ -100351,6 +100353,7 @@
 ||pub-bbbdebc2599c4d74b04c5d53e439f7a7.r2.dev^
 ||pub-bfc34934a91a4893817098f73415917a.r2.dev^
 ||pub-c1aae4eecd22436e835dc3a91e470062.r2.dev^
+||pub-c3947f4f3f2947e680cbf4cd2a18055d.r2.dev^
 ||pub-c6d653e19fd545129fdfd7d6f8cd8b17.r2.dev^
 ||pub-c9224963ee6a49b194bba4acac778b13.r2.dev^
 ||pub-c9f0444b6f604c8d8f64366bb87d456d.r2.dev^
@@ -100370,6 +100373,7 @@
 ||pub-ebd75badb3504e77aa1924be8dbce949.r2.dev^
 ||pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev^
 ||pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev^
+||pub-ef44c35b13984ebc836b5bb28bb93c95.r2.dev^
 ||pub-f225fc4c925f4cad963c543c3378b1ae.r2.dev^
 ||pub-f36b05599c3043ddb16520acf6cc3cce.r2.dev^
 ||pub-f9f2f77b53d14531ba49bd6d0bd18740.r2.dev^
@@ -102458,6 +102462,7 @@
 ||qtutulebptizh.website^
 ||qtvimspxpee.com^
 ||qtxxdm.levi.jp^
+||qty00vcqh8.com^
 ||qtycwy.modivo.cz^
 ||qtyjvrosgqwsq.online^
 ||qtyvaudism.cfd^
@@ -120118,6 +120123,7 @@
 ||stakingbasket.com^
 ||stakingshock.com^
 ||stakingsmile.com^
+||stakloram.rs^
 ||staldereeten.qpon^
 ||stale-father.com^
 ||stalenorkyn.cyou^
@@ -138779,6 +138785,7 @@
 ||vizury.com^
 ||vizvaz.com^
 ||vizyonuniversitesi.com.tr^
+||vizyonuniversitesi.web.tr^
 ||vizzit.se^
 ||vj.x-ssp.com^
 ||vj0.42422277.com^
@@ -139997,6 +140004,7 @@
 ||w6ecevvubhmntx.rest^
 ||w6f5f8r9.fun^
 ||w6n00vtw6.com^
+||w6v754e1uw.com^
 ||w6xwt2ygfq2o5z95.cfd^
 ||w7.berlin.de^
 ||w716eb02n9.ru^
@@ -142171,6 +142179,7 @@
 ||winads.cn^
 ||winasdaq.com^
 ||winbaicai.com^
+||winbitbrowser.com^
 ||winbuyer.com^
 ||winchesmondodenude.cfd^
 ||wind.ntlsmartfull.com^
@@ -152730,6 +152739,7 @@
 @@||api.docodoco.jp^
 @@||api.huangye.miui.com^
 @@||api.karte.io^
+@@||api.open.uc.cn^
 @@||app-advertise.zhihuishu.com^
 @@||app.adjust.com^
 @@||app.appsflyer.com^

@@ -3,17 +3,17 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-30 09:22:42
-! Block rules: 137051
-! Whitelist rules: 282
+! Generated: 2026-10-30 16:07:12
+! Block rules: 137050
+! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
 !   - adblockdnslite [w=5] block 8480
-!   - anti-ad [w=5] block 100077
+!   - anti-ad [w=5] block 100073
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5892
+!   - easylistchina [w=3] block 5895
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -1198,6 +1198,7 @@
 ||1nrgur4y43.com^
 ||1ns1rosb.de^
 ||1nvnkyg65.com^
+||1nvxl968le.com^
 ||1o0g85u7k1.com^
 ||1o1nuqbjea.com^
 ||1o23ptd0sv.com^
@@ -33725,7 +33726,6 @@
 ||datadog-service.mvfglobal.com^
 ||datadoghq-browser-agent.com^
 ||datadoghq.eu^
-||datadome.co^
 ||datadome.maisonsdumonde.com^
 ||datadsk.com^
 ||datafa.st^
@@ -41490,7 +41490,6 @@
 ||ens.tagblatt.ch^
 ||ensealplaners.com^
 ||enseq50a.xyz^
-||ensighten.com^
 ||ensignpancreasrun.com^
 ||ensmwonhtzpdh.space^
 ||ensobercoquinsocking.cfd^
@@ -47939,7 +47938,6 @@
 ||geminidshotgun.top^
 ||geminisailingzillion.com^
 ||gemius.hu^
-||gemius.pl^
 ||gemlithium.com^
 ||gemmerdabby.cyou^
 ||gemmulesaponul.qpon^
@@ -66751,7 +66749,6 @@
 ||literallyflickercomplaints.com^
 ||litholcapsa.cyou^
 ||lithyunpawedwhew.cfd^
-||litix.io^
 ||litpluming.com^
 ||litpzshqdkjvn.online^
 ||litrefloored.com^
@@ -79802,6 +79799,7 @@
 ||nextsmarty.com^
 ||nextstat.com^
 ||nexttopchef.com^
+||nexus.ensighten.com^
 ||nexus.officeapps.live.com^
 ||nexus.uniten.io^
 ||nexusbloom.xyz^
@@ -87416,7 +87414,6 @@
 ||placiditylever.com^
 ||placidocn.com^
 ||placidperson.com^
-||pladform.ru^
 ||plagaegasping.cyou^
 ||plagaerollers.qpon^
 ||plagaethulr.cyou^
@@ -91865,6 +91862,7 @@
 ||qtutulebptizh.website^
 ||qtvimspxpee.com^
 ||qtxxdm.levi.jp^
+||qty00vcqh8.com^
 ||qtycwy.modivo.cz^
 ||qtyjvrosgqwsq.online^
 ||qtyvaudism.cfd^
@@ -126589,6 +126587,7 @@
 ||w6ecevvubhmntx.rest^
 ||w6f5f8r9.fun^
 ||w6n00vtw6.com^
+||w6v754e1uw.com^
 ||w6xwt2ygfq2o5z95.cfd^
 ||w7.berlin.de^
 ||w716eb02n9.ru^
@@ -137119,6 +137118,7 @@
 @@||api.docodoco.jp^
 @@||api.huangye.miui.com^
 @@||api.karte.io^
+@@||api.open.uc.cn^
 @@||app-advertise.zhihuishu.com^
 @@||app.adjust.com^
 @@||app.appsflyer.com^
