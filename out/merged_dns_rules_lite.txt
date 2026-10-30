@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-29 23:27:45
-! Block rules: 152665
+! Generated: 2026-10-30 02:46:39
+! Block rules: 152666
 ! Whitelist rules: 282
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100077 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5890 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5891 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1832 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1836 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1049,6 +1049,7 @@
 ||178-83-121-204.cprapid.com^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
+||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1979,7 +1980,6 @@
 ||3.km7ru2n2jhtfjurotvho91ulyl4gk1121v.cfd^
 ||3.ssqzj.com^
 ||3.up.qingdaonews.com^
-||3.zhzy999.net^
 ||3.zhzy999.net3.zhzy999.net^
 ||3000fromenterprises.net^
 ||300daytravel.com^
@@ -4386,6 +4386,7 @@
 ||6ihxf34nnqw2cc.52gj1bci36yw83ibhu.cyou^
 ||6iiz8ni96v.com^
 ||6iuz5f65z4x6howk6r.cfd^
+||6iwulft12t.com^
 ||6iyq4atled.com^
 ||6j296m8k.de^
 ||6j7ywcn8sx.com^
@@ -12979,6 +12980,7 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
+||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -31266,6 +31268,7 @@
 ||ceoapr.donjoyperformance.com^
 ||ceowyn.eseltree.com^
 ||cepa.aluche.madrid.educa.go-static.info^
+||cepde.org^
 ||cephalopod.ospreys.net^
 ||cephalopod.revelio.io^
 ||cephalopod.staff.design^
@@ -36153,6 +36156,7 @@
 ||cpmterra.com^
 ||cpmtree.com^
 ||cpnsbxkibvbhw.space^
+||cpofficial.com^
 ||cpokulack.com^
 ||cpoml.iask.sina.com.cn^
 ||cppftnwmeaopm.online^
@@ -40766,6 +40770,7 @@
 ||dcv4p460uqa46.cloudfront.net^
 ||dcvssaited.com^
 ||dcvxhdgupnvau.space^
+||dcwblida.dz^
 ||dcwelerqwrbwe.site^
 ||dcwnhlzrvnlnj.website^
 ||dcwxbgqsmyvsn.site^
@@ -52156,7 +52161,6 @@
 ||file.iporngay.com^
 ||file.ppbk9.com^
 ||file.tugou.com.co^
-||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -61791,7 +61795,6 @@
 ||hoasvvtyavmbn.store^
 ||hobbetexcud.shop^
 ||hobblertactile.cfd^
-||hobobot.net^
 ||hobypcdcsidnc.online^
 ||hocgeese.com^
 ||hochhut.qpon^
@@ -89615,7 +89618,6 @@
 ||neztlwbosrksr.online^
 ||nezvjrpirpjis.site^
 ||nezygmobha.com^
-||nf.boletos-notas.com^
 ||nf1nknlw.mateforevents.com^
 ||nf4egyhllyxbuc8xmf4pjvq.cfd^
 ||nfa.jd.com^
@@ -89624,7 +89626,6 @@
 ||nfcliqjyhwatk.website^
 ||nfcwnzrbsoapk.online^
 ||nfdnserror11.wo.com.cn^
-||nfe.boletos-notas.com^
 ||nfexcdiuvfyuu.online^
 ||nffceerhottvc.site^
 ||nffhqvabkunnl.site^
@@ -96045,7 +96046,6 @@
 ||pdcqkazovygxp.online^
 ||pdebfoicutkdt.site^
 ||pdeedlkcbdqxbi.com^
-||pdf-bro.lat^
 ||pdf-editore.com^
 ||pdf.didgigo.com^
 ||pdfexpert.cc^
@@ -100368,6 +100368,7 @@
 ||pub-e95a23a0e3944ef49a26647f1ec168e0.r2.dev^
 ||pub-eab9eb7761644f51bceeecfefdf0ec2b.r2.dev^
 ||pub-ebd75badb3504e77aa1924be8dbce949.r2.dev^
+||pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev^
 ||pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev^
 ||pub-f225fc4c925f4cad963c543c3378b1ae.r2.dev^
 ||pub-f36b05599c3043ddb16520acf6cc3cce.r2.dev^
@@ -103270,6 +103271,7 @@
 ||raf.postnl.be^
 ||raf.postnl.nl^
 ||rafekunbi.com^
+||raffcow4.beget.tech^
 ||raffle-entry.info.smart.com^
 ||raffleprotectionbow.com^
 ||rafflewivern.shop^
@@ -133556,6 +133558,7 @@
 ||twisty.net^
 ||twistyscash.com^
 ||twitcamdosfamosos.goasrv.com^
+||twitch.tj^
 ||twitchegotistical.com^
 ||twitchplayswiki.goasrv.com^
 ||twitob.com^
@@ -138776,7 +138779,6 @@
 ||vizury.com^
 ||vizvaz.com^
 ||vizyonuniversitesi.com.tr^
-||vizyonuniversitesi.web.tr^
 ||vizzit.se^
 ||vj.x-ssp.com^
 ||vj0.42422277.com^
@@ -139900,7 +139902,6 @@
 ||w.yamaidei.cn^
 ||w.yinyuehu.cn^
 ||w.ymapp.com^
-||w.zhzy999.net^
 ||w0054.com^
 ||w0057.com^
 ||w0079.com^
