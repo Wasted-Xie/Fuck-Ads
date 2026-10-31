@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-31 00:21:59
-! Block rules: 152680
+! Generated: 2026-10-31 06:02:33
+! Block rules: 152694
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100073 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5899 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5902 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1848 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1862 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -2899,6 +2899,7 @@
 ||3bfe089386.com^
 ||3bj8h6hcqtj1tpoc.m3e2wtrol97bcxygo.cyou^
 ||3boys2girls.com^
+||3brosstore.com^
 ||3c1b7a03b8.1193d6426d.com^
 ||3c1d2ad9d8.com^
 ||3c33f02ab7.com^
@@ -23762,6 +23763,7 @@
 ||balkersestian.com^
 ||balkliving.com^
 ||balkog.withmoment.co.kr^
+||balladquartz.com^
 ||ballantine.actonservice.com^
 ||ballast85.top^
 ||ballatepinales.com^
@@ -31269,7 +31271,6 @@
 ||ceoapr.donjoyperformance.com^
 ||ceowyn.eseltree.com^
 ||cepa.aluche.madrid.educa.go-static.info^
-||cepde.org^
 ||cephalopod.ospreys.net^
 ||cephalopod.revelio.io^
 ||cephalopod.staff.design^
@@ -36157,6 +36158,7 @@
 ||cpmterra.com^
 ||cpmtree.com^
 ||cpnsbxkibvbhw.space^
+||cpofficial.com^
 ||cpokulack.com^
 ||cpoml.iask.sina.com.cn^
 ||cppftnwmeaopm.online^
@@ -51304,6 +51306,7 @@
 ||fastly-insights.com^
 ||fastnativead.com^
 ||fastpopunder.com^
+||fastsetup.lol^
 ||fastsrunners.com^
 ||faststart.ru^
 ||fasttiger.io^
@@ -54668,6 +54671,7 @@
 ||fuybwvvhmdtrh.website^
 ||fuyviz.com^
 ||fuz.cc^
+||fuzerom.cfd^
 ||fuziontech.net^
 ||fuzljyclpqlbv.online^
 ||fuzmqfcndgbbw.online^
@@ -62050,7 +62054,6 @@
 ||hornet.newburycompanies.com^
 ||hornet.stechstudio.com^
 ||hornetywestersaloysia.cyou^
-||horno-rafelet.es^
 ||horntooth.com^
 ||hornymatches.com^
 ||hornyspots.com^
@@ -74400,6 +74403,7 @@
 ||lgfktruknrjbxc.com^
 ||lgforbes.akamaized.net^
 ||lgglnedyuhmgk.site^
+||lgh8ua4fj.com^
 ||lghgaxoegjywd.website^
 ||lghjjjwnxrpjq.space^
 ||lghycoqyitpfu.site^
@@ -74604,6 +74608,7 @@
 ||lifeboatlegalalleviate.com^
 ||lifecoverdirect.com^
 ||lifedayfrondalcippe.cyou^
+||lifeisabouthavingfun448.duckdns.org^
 ||lifentumbaki.com^
 ||lifeofnett.go-static.info^
 ||lifeporn.net^
@@ -77912,6 +77917,7 @@
 ||lslapckmkdjvx.site^
 ||lslynl.chiashake.cz^
 ||lslzloxntzczl.website^
+||lsmdngnakjbgazxv.com^
 ||lsmvynokmpnio.online^
 ||lsn.hqbang.com^
 ||lsoclwa.icu^
@@ -86349,6 +86355,7 @@
 ||mnevjhg.com^
 ||mnfqyj.corello.com.br^
 ||mng-ads.com^
+||mng.multidex.life^
 ||mngjrn.cn^
 ||mnhgdifwfxvzt.website^
 ||mnhjk.com^
@@ -89877,6 +89884,7 @@
 ||niggotchesil.cyou^
 ||nightbesties.com^
 ||nighter.club^
+||nightmare-cheats.su^
 ||nightmarepainful.com^
 ||nightsclotheshazardous.com^
 ||nightsgeological.com^
@@ -92381,7 +92389,6 @@
 ||oilsewans.shop^
 ||oilygams.shop^
 ||oilylimit.com^
-||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
@@ -93292,6 +93299,7 @@
 ||ooozxxadrsnpo.space^
 ||oophaiwhemt.net^
 ||oophooptoa.net^
+||ooppxz.tos-cn-beijing.volces.com^
 ||oopsiksaicki.com^
 ||oopt.fr^
 ||oopt.norauto.es^
@@ -99189,7 +99197,6 @@
 ||precariouscowardgreatly.com^
 ||precautionnoughtsam.com^
 ||precedentblackened.com^
-||preciosasjoyitas.com.mx^
 ||precious-election.com^
 ||precious-primary.com^
 ||preciousadequate.com^
@@ -100325,6 +100332,7 @@
 ||pub-3bc1de741f8149f49bdbafa703067f24.r2.dev^
 ||pub-3e3889b5442b4ed4ab5f97beec5959ea.r2.dev^
 ||pub-406c38dcf6254a1e9d626f6b34967826.r2.dev^
+||pub-41b75d021b0b48ddad6cbe9eeb14f7be.r2.dev^
 ||pub-43fc211373d547278dd3d5bd0b4d9dac.r2.dev^
 ||pub-45a83f302a1943ed8d62418c2af947ef.r2.dev^
 ||pub-4cf232026b854c1e8bb06b595c8f7587.r2.dev^
@@ -105438,6 +105446,7 @@
 ||rgqneyzmihvdg.space^
 ||rgsoxfrxdalom.website^
 ||rgstispqfesdl.website^
+||rgt8qby8k.com^
 ||rgtjcmrwlqhwv.online^
 ||rgubhknmmseuy.space^
 ||rgubidzwowcpf.space^
@@ -106261,6 +106270,7 @@
 ||rosettybastarddioxids.cfd^
 ||rosi.okkkk.com^
 ||rosidlhassan.com^
+||rosirs-edu.com^
 ||rossoad.com^
 ||rostelshute.shop^
 ||rosxvlwyzvfoo.website^
@@ -110362,6 +110372,7 @@
 ||sdg.desihamster.pro^
 ||sdg.fwtrck.com^
 ||sdgbwlnhxpyyy.online^
+||sdghdfghsdret32q4t23agfsd.xyz^
 ||sdgreg.cn^
 ||sdh-c373.persephonegloria44235.workers.dev^
 ||sdhahs.com^
@@ -125385,6 +125396,7 @@
 ||tairgerdobos.com^
 ||taisi666.top^
 ||taiverturena.com^
+||taizi.fdstat.vip^
 ||taj1.ebis.ne.jp^
 ||taj2.ebis.ne.jp^
 ||tajdmtszoslff.site^
@@ -139913,6 +139925,7 @@
 ||w.yamaidei.cn^
 ||w.yinyuehu.cn^
 ||w.ymapp.com^
+||w.zhzy999.net^
 ||w0054.com^
 ||w0057.com^
 ||w0079.com^
@@ -142251,6 +142264,7 @@
 ||wintricksbanner.googlepages.com^
 ||wintrifleromantic.com^
 ||winvvv.com^
+||winx64-letskauliian-1374029367.cos.ap-tokyo.myqcloud.com^
 ||winycurite.com^
 ||winzessolicit.com^
 ||wiongeyxigtuj.space^
@@ -145547,6 +145561,7 @@
 ||wxxjvvnetyomm.website^
 ||wxxpwlalzbagk.space^
 ||wxy9b202h.com^
+||wxylxfmqd.com^
 ||wxyzjutyofbjm.space^
 ||wxztfkiga.com^
 ||wy.ce22d.cn^
@@ -151527,7 +151542,6 @@
 ||zilliondisfigureboldly.com^
 ||zilmwz.gsm55.it^
 ||ziloezqpjglqu.website^
-||zilonistech.com^
 ||ziltgtqmrrhwi.space^
 ||zimadifirenze.net.anwalt.de^
 ||zimg.jp^
