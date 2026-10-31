@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-31 06:02:33
-! Block rules: 152694
+! Generated: 2026-10-31 12:53:58
+! Block rules: 152697
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100073 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5902 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5905 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -3528,6 +3528,7 @@
 ||4lbk4yuhj5upn7vvkl.cfd^
 ||4link.it^
 ||4lqs5j3ckn.com^
+||4m0tg6axs.com^
 ||4mlhn1ocg4.com^
 ||4mp.xewp5et8izo2eq.cyou^
 ||4mtj1r9x5gnbo4u7.rest^
@@ -4027,6 +4028,7 @@
 ||5po228.19hekoc4x6bfpo557u6y.cyou^
 ||5pub.com^
 ||5q6oj.942xnmm3gfno7ghve2ulf.cyou^
+||5qnyx6k5w.com^
 ||5qryjrx3.xyz^
 ||5qtcc.h57ozk5mkk8z62fmumtkm.cyou^
 ||5qzone.net^
@@ -137160,6 +137162,7 @@
 ||v063.4029tv.com^
 ||v066.wxii12.com^
 ||v0su9ogte.com^
+||v0v9ko8q4.com^
 ||v1-ad.ixigua.com^
 ||v1-ad.video.yximgs.com^
 ||v1-be-pack.pglstatp-toutiao.com^

@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-31 06:02:34
-! Block rules: 137057
+! Generated: 2026-10-31 12:53:59
+! Block rules: 137060
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100073
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5902
+!   - easylistchina [w=3] block 5905
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2449,6 +2449,7 @@
 ||4lbk4yuhj5upn7vvkl.cfd^
 ||4link.it^
 ||4lqs5j3ckn.com^
+||4m0tg6axs.com^
 ||4mlhn1ocg4.com^
 ||4mp.xewp5et8izo2eq.cyou^
 ||4mtj1r9x5gnbo4u7.rest^
@@ -2860,6 +2861,7 @@
 ||5po228.19hekoc4x6bfpo557u6y.cyou^
 ||5pub.com^
 ||5q6oj.942xnmm3gfno7ghve2ulf.cyou^
+||5qnyx6k5w.com^
 ||5qryjrx3.xyz^
 ||5qtcc.h57ozk5mkk8z62fmumtkm.cyou^
 ||5qzone.net^
@@ -123992,6 +123994,7 @@
 ||v063.4029tv.com^
 ||v066.wxii12.com^
 ||v0su9ogte.com^
+||v0v9ko8q4.com^
 ||v1-ad.ixigua.com^
 ||v1-ad.video.yximgs.com^
 ||v1-dc-ad.ixigua.com^
