@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-01 03:40:08
-! Block rules: 137872
+! Generated: 2026-11-01 10:56:55
+! Block rules: 137877
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100909
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5910
+!   - easylistchina [w=3] block 5915
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -1352,6 +1352,7 @@
 ||20f866afaf.069667261e.com^
 ||20images36.com^
 ||20l2ldrn2.de^
+||20ml7x2sk.com^
 ||20rm.com^
 ||20tracks.com^
 ||21.cizhibaogao.org^
@@ -45729,6 +45730,7 @@
 ||fmmeesqlnspbb.website^
 ||fmmxfomnbpisz.space^
 ||fmnboblykckin.website^
+||fmnmuuo7c.com^
 ||fmnoaqebhe.com^
 ||fmnsrlcbqjncj.site^
 ||fmomyhramzsdf.online^
@@ -62460,6 +62462,7 @@
 ||k6cjfz4p7zluqe.rest^
 ||k6d.falang.net^
 ||k6f9acdo.xyz^
+||k6p5kaelz.com^
 ||k6wh2riqtbpfxn5r3o5ucfq.cfd^
 ||k7j7kk67x5or1le286ew.7tt2bb1vz5549q.cyou^
 ||k7m4co459k.com^
@@ -70791,6 +70794,7 @@
 ||m2.nsimg.net^
 ||m2.washmen.com^
 ||m292dfq9c.com^
+||m2fnnugqp.com^
 ||m2kz42x2n9puueem4c7ty1pu.rest^
 ||m2track.co^
 ||m2u.376710.com^
@@ -93096,6 +93100,7 @@
 ||r6yigjfvp.com^
 ||r71y7eil6p3rpkt141clch461quuj7pnblf.cfd^
 ||r7679cglrh7eiqhnvmvn9riccz.cfd^
+||r7aon5a2a.com^
 ||r7designllc.com^
 ||r7ls.net^
 ||r7pnnukr.xyz^
