@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-10-31 23:53:14
-! Block rules: 137867
+! Generated: 2026-11-01 03:40:08
+! Block rules: 137872
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 100909
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5905
+!   - easylistchina [w=3] block 5910
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -185,6 +185,7 @@
 ||07b5ec4fa6.com^
 ||07bfd39c76.com^
 ||08082c0ad5.com^
+||08137tabw.com^
 ||0817tt.com^
 ||0832fddfc8.com^
 ||086123.xyz^
@@ -4293,6 +4294,7 @@
 ||9tumza4dp4o9.com^
 ||9txnu9rlmd.com^
 ||9uza7fi60e.com^
+||9v0ptnfes.com^
 ||9v7sbm9zc.com^
 ||9vmbje748.com^
 ||9vns8.com^
@@ -54509,6 +54511,7 @@
 ||htdzeloriyeiw.space^
 ||hteniplvbxeqt.space^
 ||htewng.plesio.bg^
+||htfaxfwqywzfdo.com^
 ||htgbrsojxwczw.space^
 ||htgdeynqbsdpf.site^
 ||hthelulyq.com^
@@ -81325,6 +81328,7 @@
 ||npzc1yzag7.com^
 ||npzjrlkmmjjtxe.com^
 ||nq37f.cn^
+||nq6jitu4y.com^
 ||nqacsh.boosted.dk^
 ||nqcbgz.cocopanda.se^
 ||nqddcruxvklfa.site^
@@ -113295,6 +113299,7 @@
 ||tabjnarbsbhlk.space^
 ||tableland06.top^
 ||tableleaders.com^
+||tableware66.com^
 ||tabloidincapable.com^
 ||taboola.com^
 ||taboola.com.cn^

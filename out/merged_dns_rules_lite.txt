@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-10-31 23:53:13
-! Block rules: 153477
+! Generated: 2026-11-01 03:40:06
+! Block rules: 153501
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 100909 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5905 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5910 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1870 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1877 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -210,6 +210,7 @@
 ||07b5ec4fa6.com^
 ||07bfd39c76.com^
 ||08082c0ad5.com^
+||08137tabw.com^
 ||0817tt.com^
 ||0832fddfc8.com^
 ||086123.xyz^
@@ -5718,6 +5719,7 @@
 ||9txnu9rlmd.com^
 ||9uim1pc4ej4n.ru.themoneytizer.com^
 ||9uza7fi60e.com^
+||9v0ptnfes.com^
 ||9v7sbm9zc.com^
 ||9vmbje748.com^
 ||9vns8.com^
@@ -10958,6 +10960,7 @@
 ||accessoryreflections.com^
 ||accessoutrageousimpetuous.com^
 ||accessplug.com^
+||accesstelematics.com^
 ||accesstrade.net^
 ||accessv.org^
 ||accidentalcrownincredible.com^
@@ -24740,6 +24743,7 @@
 ||beafdf.restaupro.com^
 ||beagle.prod.tda.link^
 ||beaglemanipulate.com^
+||beak.in^
 ||beakfuljato.com^
 ||bealafulup.com^
 ||bealanews.com^
@@ -25678,6 +25682,7 @@
 ||bigrbmvjmorry.online^
 ||bigreal.org^
 ||bigrourg.net^
+||bigs.bikershop.biz^
 ||bigszjbmsvnl.com^
 ||bigtracker.com^
 ||bigtree.online^
@@ -28397,6 +28402,7 @@
 ||burt.io^
 ||burtonsmucin.cfd^
 ||burunduksha.link^
+||buruujtech.com^
 ||burwfuhpwjlme.site^
 ||burysmemburdens.qpon^
 ||bushcraftitaliablog.goaserv.com^
@@ -30795,6 +30801,7 @@
 ||cdn.fedykr.com^
 ||cdn.fegivja.com^
 ||cdn.fexyop.com^
+||cdn.file6.goodid.com^
 ||cdn.flurry.com^
 ||cdn.ftwpcn.com^
 ||cdn.g.wan.douyu.com^
@@ -32182,7 +32189,6 @@
 ||cilmdsifiezyk.space^
 ||cilvph.smartbuyglasses.com^
 ||cilvyqmins.com^
-||cim-kolea.com^
 ||cimage.adobe.com^
 ||cimarketingforms.aig.com^
 ||cimarketingforms.cimarketing.aig.com^
@@ -34497,6 +34503,7 @@
 ||community.actonline.org^
 ||community.axiscapital.com^
 ||community.chpw.org^
+||community.firm.in^
 ||community.fusesource.com^
 ||community.jerseyshoreonline.com^
 ||community.keeperz.app^
@@ -36618,6 +36625,7 @@
 ||cressessoken.qpon^
 ||cressforhowcoree.cyou^
 ||crestedsibylstopper.qpon^
+||cresvin.com^
 ||cresylsaccurseaffinal.cfd^
 ||creta.hubhubhub.name^
 ||cretgate.com^
@@ -40883,6 +40891,7 @@
 ||dcv4p460uqa46.cloudfront.net^
 ||dcvssaited.com^
 ||dcvxhdgupnvau.space^
+||dcwblida.dz^
 ||dcwelerqwrbwe.site^
 ||dcwnhlzrvnlnj.website^
 ||dcwxbgqsmyvsn.site^
@@ -41715,6 +41724,7 @@
 ||dev.atas.io^
 ||dev.bayimob.com^
 ||dev.email-signify.cjm.adobe.com^
+||dev.gestroom.it^
 ||dev.getcontact.me^
 ||dev.getemoji.me^
 ||dev.gldn.io^
@@ -42566,7 +42576,6 @@
 ||directdemsec.com^
 ||directdexchange.com^
 ||directdisplaymarketing.com^
-||directdownloadl.ink^
 ||direction-x.com^
 ||directionotterrecharger.com^
 ||directions.mdanderson.org^
@@ -46520,6 +46529,7 @@
 ||easycookie.io^
 ||easycounter.com^
 ||easycrafts.goaserv.com^
+||easycryptos.org^
 ||easyflirt-partners.biz^
 ||easyflirt.com^
 ||easygoingasperitydisconnect.com^
@@ -46811,7 +46821,6 @@
 ||eclick.baidu.com^
 ||eclick.vn^
 ||eclipseablebodied.com^
-||eclipsebible.com^
 ||eclk.club^
 ||eclkmpsa.com^
 ||eclkspbn.com^
@@ -52350,7 +52359,6 @@
 ||file.ipinyou.com.cn^
 ||file.iporngay.com^
 ||file.ppbk9.com^
-||file.tugou.com.co^
 ||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
@@ -53344,6 +53352,7 @@
 ||fluffytracing.com^
 ||fluidatter.cyou^
 ||fluidbagfulwag.com^
+||fluidfilm.bg^
 ||fluidsurveys.com^
 ||fluiyhtncueau.store^
 ||flukierkenyte.cfd^
@@ -55338,6 +55347,7 @@
 ||g594253006.co^
 ||g5kl83he.xyz^
 ||g5xu1dslr6.com^
+||g6.wtf^
 ||g64njjhyh.com^
 ||g650.delcotimes.com^
 ||g66ryy88z.com^
@@ -62815,6 +62825,7 @@
 ||htdzeloriyeiw.space^
 ||hteniplvbxeqt.space^
 ||htewng.plesio.bg^
+||htfaxfwqywzfdo.com^
 ||htgbrsojxwczw.space^
 ||htgdeynqbsdpf.site^
 ||hthelulyq.com^
@@ -63935,6 +63946,7 @@
 ||ico.58pic.com^
 ||icoffeecloud.com^
 ||icoktb.onygo.com^
+||icomsa.com.mx^
 ||icon.cnmo.com^
 ||icon.cnzz.com^
 ||icon.eu.afmndx.com^
@@ -74655,7 +74667,6 @@
 ||lets.useflash.app^
 ||lets.watcho.com^
 ||letsgetsocialnow.com^
-||letsgobok.com^
 ||letsupconfig.sbs^
 ||letterbox-path.com^
 ||letterboxtrail.com^
@@ -80556,6 +80567,7 @@
 ||malupieng.com.br^
 ||mam.netease.com^
 ||mam6.netease.com^
+||mamabearcoffee.com^
 ||mamaethicinvent.com^
 ||mamamia.vintageporno.stream^
 ||mamka.aviasales.ru^
@@ -90913,6 +90925,7 @@
 ||nornempapereroses.cyou^
 ||northbeam.io^
 ||northcoolingdiving.com^
+||northernvirginiaeyeassociates.com^
 ||northplains.actonservice.com^
 ||northsidemediagroup.actonservice.com^
 ||northstar.cr^
@@ -91177,6 +91190,7 @@
 ||npzc1yzag7.com^
 ||npzjrlkmmjjtxe.com^
 ||nq37f.cn^
+||nq6jitu4y.com^
 ||nqacsh.boosted.dk^
 ||nqcbgz.cocopanda.se^
 ||nqddcruxvklfa.site^
@@ -96267,6 +96281,7 @@
 ||pavercaphar.shop^
 ||pavesgrainykai.qpon^
 ||pavettathrove.cyou^
+||pavetto.com^
 ||pavgkykqcqgzz.site^
 ||paviliongiddy.com^
 ||paviorsdeodate.cyou^
@@ -97397,6 +97412,7 @@
 ||physicallysuddenassail.com^
 ||physicalrole.com^
 ||physiciancowardly.com^
+||physicsbyfiziks.org^
 ||physicsdiswontkeepers.cfd^
 ||physicspresume.com^
 ||physicstees.com^
@@ -99305,6 +99321,7 @@
 ||portslocked.com^
 ||porvootransitioncare.com^
 ||pos.baidu.com^
+||pos.nittosupport.ca^
 ||poseunprofessionalspecific.com^
 ||posewardenreligious.com^
 ||posgrados-unisabana-edu-co-1207474081.p04.elqsandbox.com^
@@ -104036,6 +104053,7 @@
 ||raptureinsanity.com^
 ||rapturevirtueblake.com^
 ||raqakkfowptuc.online^
+||raqmnh.com^
 ||raqtyigxkx.com^
 ||raqwjl.dienthoaigiakho.vn^
 ||rarebitblusher.com^
@@ -109652,7 +109670,6 @@
 ||safetravelsapp.progressive.com^
 ||safety.west.com^
 ||safetyessentially.com^
-||safeuploadz.com^
 ||safevisit.online^
 ||safewarns.com^
 ||safewarriorsinfected.com^
@@ -114047,6 +114064,7 @@
 ||sivatwin.qpon^
 ||sivietrremwoa.site^
 ||sivrex.click^
+||sivritepeinsaat.com^
 ||sivsjalnyugcu.site^
 ||siwashfetcher.top^
 ||six9e.canal.fr^
@@ -114273,6 +114291,7 @@
 ||skmcwz.haselmode.co.kr^
 ||skniymvvknmxx.space^
 ||sknkcklxjwohk.space^
+||skolazasisanjepasa.com^
 ||skorobeyka.link^
 ||skosgrill.openapp.link^
 ||skouthgoal.cfd^
@@ -121650,6 +121669,7 @@
 ||static.zctx8.com^
 ||static.zeusadx.com^
 ||static.zng.com^
+||static.zongheng.com^
 ||static.zorka.agency^
 ||static.zqwmedia.com^
 ||static0.exoclick.com^
@@ -123541,6 +123561,7 @@
 ||studiedroven.cyou^
 ||studio.joinsalut.com^
 ||studioalkaline.com^
+||studiogioeli.it^
 ||studiostack.com^
 ||studious-make.com^
 ||studiousenragereclaim.com^
@@ -123772,6 +123793,7 @@
 ||sud.holidayinsider.com^
 ||sud.holidays.hrs.de^
 ||sudanicknudsenorillon.cyou^
+||sudariocontabilidade.com.br^
 ||sudatetrifler.qpon^
 ||sudderifebridler.qpon^
 ||suddydeclare.shop^
@@ -123844,6 +123866,7 @@
 ||sulkweapon.com^
 ||sulkycook.com^
 ||sullanwashaki.com^
+||sultanaexecutive.com^
 ||sultrymomentarily.com^
 ||sultrytraffic.com^
 ||sumatoad.com^
@@ -125756,6 +125779,7 @@
 ||taatisv.shop^
 ||tab.volces.com^
 ||tabaccabler.com^
+||tabak.hr^
 ||tabcarts.com^
 ||taberedscaups.qpon^
 ||tabidlyginnedjt.qpon^
@@ -125765,6 +125789,7 @@
 ||tableland06.top^
 ||tableleaders.com^
 ||tablesafe.actonservice.com^
+||tableware66.com^
 ||tabloidincapable.com^
 ||taboola.com^
 ||taboola.com.cn^
@@ -127710,7 +127735,6 @@
 ||themselvespresentationfavourable.com^
 ||thenarilk.cfd^
 ||thenetwork18.com^
-||thenewcoffeshop.com^
 ||thensephasstooker.cfd^
 ||thenverser.cyou^
 ||theonecdn.com^
