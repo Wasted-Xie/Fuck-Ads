@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-02 07:06:11
-! Block rules: 138139
+! Generated: 2026-11-02 17:17:23
+! Block rules: 138142
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101176
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5921
+!   - easylistchina [w=3] block 5924
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -1406,6 +1406,7 @@
 ||22hgc.com^
 ||22lmsi1t5.de^
 ||22media.world^
+||22n5xlc6n0.com^
 ||22qcvn8hq.com^
 ||22qt1c4n.xyz^
 ||22svkcdbyp.com^
@@ -101172,6 +101173,7 @@
 ||sf3-ttcdn-tos.pstatp.com^
 ||sf4567w2a56q.branch.salesfloor.net^
 ||sf5q8gbnve37.branch.salesfloor.net^
+||sf5yzh4yqz.com^
 ||sfahuhmlwdjop.store^
 ||sfajfu.boulanger.com^
 ||sfaobvfic.in^
@@ -124700,6 +124702,7 @@
 ||uxcnhsf.cn^
 ||uxdse.sugarshape.de^
 ||uxdyrinxbhyrh.website^
+||uxee5bmf1k.com^
 ||uxek.85nv96.cn^
 ||uxeosvrofbl.com^
 ||uxerwhlrkkhsb.site^
