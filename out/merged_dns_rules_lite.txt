@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-02 00:56:08
-! Block rules: 153782
+! Generated: 2026-11-02 07:06:10
+! Block rules: 153796
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101176 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5919 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5921 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1905 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1896 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1049,6 +1049,7 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||179.248.3.202.ll.sta.mana.pf^
@@ -19446,6 +19447,7 @@
 ||api.abcdn.icu^
 ||api.abcsinsights.com^
 ||api.accelerator.intl.miui.com^
+||api.ace.homologacao.ingasaude.com.br^
 ||api.ad-locus.com^
 ||api.ad-platform.jmty.jp^
 ||api.ad-stir.com^
@@ -22516,7 +22518,6 @@
 ||autoappearancetraining.com^
 ||autoaudience.com^
 ||autobild.adsame.com^
-||autoclinic.autos^
 ||autoconfig.directory.notifysrv.com^
 ||autoflotte-vergabe.de^
 ||autographmarquisbuffet.com^
@@ -25706,6 +25707,7 @@
 ||bigrbmvjmorry.online^
 ||bigreal.org^
 ||bigrourg.net^
+||bigs.bikershop.biz^
 ||bigszjbmsvnl.com^
 ||bigtracker.com^
 ||bigtree.online^
@@ -27039,6 +27041,7 @@
 ||bot-checker.com^
 ||bot.agerun.jp^
 ||bot.asksyllable.com^
+||bot.lithium.zone^
 ||bot.stackbots.com^
 ||bot.streaktrivia.com^
 ||botanyreadersettlement.com^
@@ -29206,6 +29209,7 @@
 ||c0e5b87c.solaraweb-alj.pages.dev^
 ||c0i.ckoi.com^
 ||c0leri9om.com^
+||c0mcom.com^
 ||c0n.tubestash.com^
 ||c0nmelm3y2.com^
 ||c0p.cepsum.umontreal.ca^
@@ -29256,7 +29260,6 @@
 ||c2.l.qq.com^
 ||c2.popads.net^
 ||c2.statcounter.com^
-||c2.strikec2.wtf^
 ||c2.taboola.com^
 ||c2.teamzeroday.net^
 ||c20.statcounter.com^
@@ -30828,6 +30831,7 @@
 ||cdn.fedykr.com^
 ||cdn.fegivja.com^
 ||cdn.fexyop.com^
+||cdn.file6.goodid.com^
 ||cdn.flurry.com^
 ||cdn.ftwpcn.com^
 ||cdn.g.wan.douyu.com^
@@ -33416,6 +33420,7 @@
 ||cloudenterprise26.com^
 ||clouderrorreporting.googleapis.com^
 ||cloudflane.com^
+||cloudflare.gd^
 ||cloudflareinsights.com^
 ||cloudflrcdn.com^
 ||cloudfrale.com^
@@ -36291,6 +36296,7 @@
 ||cpmterra.com^
 ||cpmtree.com^
 ||cpnsbxkibvbhw.space^
+||cpofficial.com^
 ||cpokulack.com^
 ||cpoml.iask.sina.com.cn^
 ||cppftnwmeaopm.online^
@@ -36965,7 +36971,6 @@
 ||cs.bankmillennium.pl^
 ||cs.coopeservidores.fi.cr^
 ||cs.dqwjzm.com^
-||cs.go.kg^
 ||cs.gssprt.jp^
 ||cs.hot.net.il^
 ||cs.ifedata.ru^
@@ -45102,6 +45107,7 @@
 ||duefulcry.cyou^
 ||dueimmigratedebit.com^
 ||dueledmaidkin.cyou^
+||duelvalenza.it^
 ||duendesmolest.com^
 ||duenschdgoplh.online^
 ||dueobtiwztrvb.website^
@@ -48394,6 +48400,7 @@
 ||embed.polymarket.com^
 ||embeddedanalytics.com^
 ||embeddedhelpful.com^
+||embedone.com^
 ||embeds.beehiiv.com^
 ||embedspurted.cfd^
 ||embedx.name^
@@ -60534,6 +60541,7 @@
 ||harvesttraffic.com^
 ||harveycarnet.cfd^
 ||hasaeblmtcadr.website^
+||hasalltalent.com^
 ||hash.trafficmanager.net^
 ||hashcoin.co^
 ||hashedsolver.icu^
@@ -62435,6 +62443,7 @@
 ||hornet.newburycompanies.com^
 ||hornet.stechstudio.com^
 ||hornetywestersaloysia.cyou^
+||horno-rafelet.es^
 ||horntooth.com^
 ||hornymatches.com^
 ||hornyspots.com^
@@ -64039,6 +64048,7 @@
 ||ico.58pic.com^
 ||icoffeecloud.com^
 ||icoktb.onygo.com^
+||icomsa.com.mx^
 ||icon.cnmo.com^
 ||icon.cnzz.com^
 ||icon.eu.afmndx.com^
@@ -68146,6 +68156,7 @@
 ||ishuaejlhqsfk.space^
 ||isi-tracking.eventim.com^
 ||isicledepure.cfd^
+||isiore.com.co^
 ||isite.baidu.com^
 ||isitone.com^
 ||isiyxikfxjqwh.online^
@@ -71476,7 +71487,6 @@
 ||kaitongyewu.com^
 ||kaitoupiao.com^
 ||kaiu-marketing.com^
-||kaiwyrey.eu.cc^
 ||kaizenplatform.net^
 ||kajeputhorn.com^
 ||kajicam.com^
@@ -88119,9 +88129,6 @@
 ||mszvexqqyxrgc.site^
 ||mt-api.itpub.cloud^
 ||mt-business.vodafone.com^
-||mt-link.hxnxajp.club^
-||mt-link.jiosjcjp.club^
-||mt-link.qdhuzf.cc^
 ||mt.4go.cc^
 ||mt.9gag.com^
 ||mt.avellinfo.sbs^
@@ -95523,6 +95530,7 @@
 ||p0b2hqyz.xyz^
 ||p0h1nfzc2.com^
 ||p0l.cn^
+||p0m1qlvawp.com^
 ||p0pn18sxvh.com^
 ||p0y.cn^
 ||p0yixb3wfv.com^
@@ -96079,6 +96087,7 @@
 ||pannagesmyrna.cfd^
 ||pannahazes.com^
 ||panneltrepak.com^
+||pannki.com^
 ||panodewexyxibo.com^
 ||panorama.wixapps.net^
 ||panoramicplane.com^
@@ -123300,6 +123309,7 @@
 ||stepperfreddy.com^
 ||steppescooeed.cyou^
 ||steppesequence.com^
+||stepupnetworks.com^
 ||stepupslactoid.qpon^
 ||stepwisevideo.com^
 ||stereofixers.net.jumia.com.gh^
@@ -126352,6 +126362,7 @@
 ||tanceteventu.com^
 ||tangchaohes.cn^
 ||tangentskags.cyou^
+||tangentwaves.com^
 ||tangerskinker.cfd^
 ||tangible-drink.surge.sh^
 ||tangibleteam.com^
@@ -128276,6 +128287,7 @@
 ||ticklesign.com^
 ||tickneywicks.shop^
 ||ticomix.actonservice.com^
+||ticpc8a.com^
 ||tics.cortex.gg^
 ||tics.seeker.gg^
 ||tics.techdirt.com^
@@ -129542,6 +129554,7 @@
 ||topsite.lv^
 ||topsites.com.br^
 ||topsolutionsmedia.com^
+||topsolving.pt^
 ||topspin.npo.nl^
 ||topsrcs.com^
 ||topstat.cn^
@@ -147100,6 +147113,7 @@
 ||xenlzn.icu^
 ||xeno-cheats.xyz^
 ||xeno.baby^
+||xeno.qpon^
 ||xeno.watch^
 ||xenon.studio^
 ||xenonclient.com^
@@ -147561,6 +147575,7 @@
 ||xknhwv.mobile01.com^
 ||xkopvesrnertg.site^
 ||xkovtgxuynjef.site^
+||xkp30u4pxh.com^
 ||xkpwgeg.2y9qqbrbux17mu.cyou^
 ||xkqnjyckfbgta.site^
 ||xkrihxceguhfe.site^
@@ -150256,7 +150271,6 @@
 ||yffcsnkqpkrmy.online^
 ||yffuolhpfdjya.site^
 ||yfgdznsxuyfae.online^
-||yfghrey-1433552157.cos.ap-hongkong.myqcloud.com^
 ||yfhtpveefbodv.website^
 ||yfi8.com^
 ||yfiucflgsgbry.site^
