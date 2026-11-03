@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-03 05:27:25
-! Block rules: 153817
+! Generated: 2026-11-03 12:55:58
+! Block rules: 153821
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101176 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5930 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5934 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -367,6 +367,7 @@
 ||0x79jjyph7.com^
 ||0xclicks.com^
 ||0xr7ii3df.com^
+||0xxbtt1ov.com^
 ||0xzxwnkqdu.com^
 ||0yfqg4qm0.com^
 ||0yjeii25x4.com^
@@ -51835,6 +51836,7 @@
 ||fdrv.beeyuskincare.co.nz^
 ||fds.api.moji.com^
 ||fds.bmfwwz.top^
+||fdseb8s0y.com^
 ||fdsg4234.goasrv.com^
 ||fdsq.vb4rvq.cn^
 ||fdssklrlpqhxt.site^
@@ -71693,6 +71695,7 @@
 ||kc30leutua.top^
 ||kc75.com^
 ||kc9.cn^
+||kca7afgqg.com^
 ||kcafupebrgybq.website^
 ||kcbwifgbxzubj.site^
 ||kcbzxyxpbifjw.website^
@@ -138244,6 +138247,7 @@
 ||v6-fe-pack.pglstatp-toutiao.com^
 ||v6-reading-ad.qznovelvod.com^
 ||v6.cnzz.com^
+||v62hjyw4o.com^
 ||v66-ad.ndcjl.com^
 ||v66v66.com^
 ||v68.ink^

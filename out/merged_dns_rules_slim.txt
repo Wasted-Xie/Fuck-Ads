@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-03 05:27:26
-! Block rules: 138148
+! Generated: 2026-11-03 12:55:59
+! Block rules: 138152
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101176
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5930
+!   - easylistchina [w=3] block 5934
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -318,6 +318,7 @@
 ||0x79jjyph7.com^
 ||0xclicks.com^
 ||0xr7ii3df.com^
+||0xxbtt1ov.com^
 ||0xzxwnkqdu.com^
 ||0yfqg4qm0.com^
 ||0yjeii25x4.com^
@@ -44327,6 +44328,7 @@
 ||fdrolcpafasws.online^
 ||fds.api.moji.com^
 ||fds.bmfwwz.top^
+||fdseb8s0y.com^
 ||fdsq.vb4rvq.cn^
 ||fdssklrlpqhxt.site^
 ||fdsur.com^
@@ -62817,6 +62819,7 @@
 ||kc30leutua.top^
 ||kc75.com^
 ||kc9.cn^
+||kca7afgqg.com^
 ||kcafupebrgybq.website^
 ||kcbwifgbxzubj.site^
 ||kcbzxyxpbifjw.website^
@@ -124990,6 +124993,7 @@
 ||v6-daily-reading-ad.qznovelvod.com^
 ||v6-dc-ad.ixigua.com^
 ||v6-reading-ad.qznovelvod.com^
+||v62hjyw4o.com^
 ||v66-ad.ndcjl.com^
 ||v66v66.com^
 ||v68.ink^
