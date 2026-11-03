@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-02 23:58:09
-! Block rules: 153816
+! Generated: 2026-11-03 05:27:25
+! Block rules: 153817
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101176 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5928 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5930 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1888 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1881 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1042,8 +1042,6 @@
 ||1736js66.com^
 ||1755568.live173.com^
 ||175pt.com^
-||176.65.148.145.ptr.pfcloud.network^
-||176.65.149.168.ptr.pfcloud.network^
 ||176.net.jumia.ma^
 ||1766rr196ez3gypww949cnwyb1gh2yl83.cfd^
 ||176a7dbbe4.5355b252cf.com^
@@ -10002,6 +10000,7 @@
 ||a8netcv.crebiq.com^
 ||a8nikibi.ike-sunshine.co.jp^
 ||a8onlineshop.trendmicro.co.jp^
+||a8ougj16a.com^
 ||a8qwjt7dwi.com^
 ||a8redirect.cart.ec-sites.jp^
 ||a8shop.nihon-trim.co.jp^
@@ -11398,7 +11397,6 @@
 ||actstrialssuper.com^
 ||actuaixfhkwpq.online^
 ||actualdeals.com^
-||actualiza-red5g.app^
 ||actuallyfrustration.com^
 ||actuallyhierarchyjudgement.com^
 ||actuallypartsspiral.com^
@@ -15959,7 +15957,6 @@
 ||ahachi.dietnavi.com^
 ||ahachi.dreamdenki.jp^
 ||ahacsweuthuh.l.adsco.re^
-||ahad-cn.com^
 ||ahadsply.com^
 ||ahaformat.com^
 ||ahajmjcfkfqsx.site^
@@ -30058,6 +30055,7 @@
 ||carettareagent.com^
 ||cargas.actonservice.com^
 ||cargdk.bakerross.co.uk^
+||cargo-passion.com^
 ||cargoattachment.com^
 ||cargoswrinklesotik.qpon^
 ||cargrasp.com^
@@ -33216,6 +33214,7 @@
 ||clinidbluecap.cyou^
 ||clinidgrager.cyou^
 ||clinkspurtfirmly.com^
+||clinx.co.za^
 ||clipartonline.info^
 ||clipcentric.com^
 ||cliphotbokep.xyz^
@@ -36927,7 +36926,6 @@
 ||cryoselarolla.com^
 ||cryptaloot.pro^
 ||cryptalsnakily.cyou^
-||crypter.gt.tc^
 ||crypter00.gt.tc^
 ||crypticgenius.com^
 ||crypticrallye.com^
@@ -37742,7 +37740,6 @@
 ||cxvuaexnqejex.site^
 ||cxwisl.jetstereo.com^
 ||cxxjkmdjn.com^
-||cxxz.co.za^
 ||cxy88.friok.com^
 ||cxyfiyqatfbjx.space^
 ||cxygbvynojvnb.space^
@@ -41521,6 +41518,7 @@
 ||demo.emaillpb.adobe.com^
 ||demo.gomi.do^
 ||demo.jointreport-switch.com^
+||demo.moolsap.com^
 ||demo.stickyadstv.com^
 ||demo.tbllem.com^
 ||demo.xinqcr.com^
@@ -45111,6 +45109,7 @@
 ||duefulcry.cyou^
 ||dueimmigratedebit.com^
 ||dueledmaidkin.cyou^
+||duelvalenza.it^
 ||duendesmolest.com^
 ||duenschdgoplh.online^
 ||dueobtiwztrvb.website^
@@ -45182,7 +45181,6 @@
 ||duncishwhuffle.cfd^
 ||dunderaffiliates.com^
 ||dunesosiery.cfd^
-||dungeonfive.rf.gd^
 ||dungeonofsigns.go-static.info^
 ||dungsweighty.shop^
 ||dunhilltraveldeals.com^
@@ -56643,6 +56641,7 @@
 ||getpushmonkey.com^
 ||getpxq.rivolishop.com^
 ||getqonfi.com^
+||getreroll.cc^
 ||getresponse.com^
 ||getreview.pl^
 ||getrockerbox.com^
@@ -60561,6 +60560,9 @@
 ||hashvault.pro^
 ||hashzone.io^
 ||hasidagamian.click^
+||hasil-gov-my.shop^
+||hasilgov-my.my.id^
+||hasilgov-my.shop^
 ||hasinaimallets.cfd^
 ||hasletsbiopsic.qpon^
 ||haslockvayuunsing.cyou^
@@ -62451,7 +62453,6 @@
 ||hornet.newburycompanies.com^
 ||hornet.stechstudio.com^
 ||hornetywestersaloysia.cyou^
-||horno-rafelet.es^
 ||horntooth.com^
 ||hornymatches.com^
 ||hornyspots.com^
@@ -77895,7 +77896,6 @@
 ||lomeqpe.com^
 ||lomftcighpn.com^
 ||lominglaes.com^
-||lomiva.vu^
 ||lomvmz5ze3.com^
 ||lonarzelq.com^
 ||londonairportstransfer.co.uk^
@@ -85961,6 +85961,7 @@
 ||mhdufile.1391.com^
 ||mhetjxfaoxeyu.online^
 ||mhfjobnoamzsrx.com^
+||mhftee.my.id^
 ||mhglihmafzbhq.site^
 ||mhgu.cn^
 ||mhgulzhluhcvt.space^
@@ -86090,6 +86091,7 @@
 ||micstndasap.world^
 ||mid-round.com^
 ||mid.houyi.baofeng.net^
+||mida.cam^
 ||midas-i.com^
 ||midas-network.com^
 ||midas-tracker.hellay.net^
@@ -86450,7 +86452,6 @@
 ||mistimetearbaclin.cyou^
 ||mistralkachina.qpon^
 ||mistresscoat.com^
-||misty-cherry-cea3.uploadsimg.workers.dev^
 ||misty-president.com^
 ||mistydeposit.pro^
 ||mistyhorizon.com^
@@ -93054,7 +93055,6 @@
 ||oilsewans.shop^
 ||oilygams.shop^
 ||oilylimit.com^
-||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
@@ -106877,6 +106877,7 @@
 ||robin-flow.com^
 ||robinhoodwallet.dervano.vu^
 ||robinorchid.com^
+||roblox-expl.info^
 ||robotbagpipe.com^
 ||robotflowermobile.com^
 ||robotgarages.com^
@@ -107016,6 +107017,7 @@
 ||romotur.actonservice.com^
 ||romperspardesi.com^
 ||romsxqicvnbvx.store^
+||romwdc1mv.com^
 ||ronelmer.cyou^
 ||ronfjvonmo.com^
 ||rongangongzu.cn^
@@ -110462,6 +110464,7 @@
 ||satedoting.cfd^
 ||sateensfluking.qpon^
 ||satellitefetidtelegraph.com^
+||satgob-mx.shop^
 ||satgt.grafana.com^
 ||satinmaple4.com^
 ||satinsmachair.qpon^
@@ -114083,7 +114086,6 @@
 ||simplededicate.com^
 ||simplehitcounter.com^
 ||simpleincitetreacherous.com^
-||simplejack.lovestoblog.com^
 ||simplejsmenu.com^
 ||simplenaming.com^
 ||simplereach.com^
@@ -127184,6 +127186,7 @@
 ||techaddom8132.com^
 ||techadv.actonservice.com^
 ||techain.baidu.com^
+||techbud.ro^
 ||techcatcher.com^
 ||techconverter.com^
 ||techdrivethru.com^
@@ -127533,6 +127536,7 @@
 ||termerterfezvergi.qpon^
 ||terminalinmatesupreme.com^
 ||termite.queerburners.org^
+||termoglas.ba^
 ||termonvint.com^
 ||termskinch.com^
 ||termsvictim.com^
@@ -128304,7 +128308,6 @@
 ||ticklesign.com^
 ||tickneywicks.shop^
 ||ticomix.actonservice.com^
-||ticpc8a.com^
 ||tics.cortex.gg^
 ||tics.seeker.gg^
 ||tics.techdirt.com^
@@ -136262,7 +136265,6 @@
 ||universaldev.taylormadegolf.com^
 ||universalmobility.pro^
 ||universalsrc.com^
-||universami.ge^
 ||universitycleaninglunch.com^
 ||universityroadsidecircumstantial.com^
 ||universityshocksooner.com^
@@ -150102,7 +150104,6 @@
 ||ycyxddmy.com^
 ||yczl5qg8jr.com^
 ||yczpwjtvggloo.online^
-||yd.lyjt.cc^
 ||yd126.com^
 ||ydbcct.nikigolf.jp^
 ||ydbeuq.superpharm.pl^
