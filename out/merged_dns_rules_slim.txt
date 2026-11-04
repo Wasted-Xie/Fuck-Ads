@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-04 00:19:17
-! Block rules: 138157
+! Generated: 2026-11-04 06:47:55
+! Block rules: 138162
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101176
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5939
+!   - easylistchina [w=3] block 5944
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -1203,6 +1203,7 @@
 ||1ns1rosb.de^
 ||1nvnkyg65.com^
 ||1nvxl968le.com^
+||1ny5gaksj8.com^
 ||1o0g85u7k1.com^
 ||1o1nuqbjea.com^
 ||1o23ptd0sv.com^
@@ -2355,6 +2356,7 @@
 ||484l.com^
 ||48583ed9cf.com^
 ||4863232c.xyz^
+||487wlz7nbc.com^
 ||48c5089fa7.com^
 ||48cc0c0e07.com^
 ||48dd51f81a.com^
@@ -2862,6 +2864,7 @@
 ||5ob8leczt2ggv1p2t.rest^
 ||5olcvqmqp71qqy.rest^
 ||5p35xkp1p.com^
+||5p478n58i9.com^
 ||5pbe75llvxyxxt.cfd^
 ||5pi13h3q.de^
 ||5platforms.net^
@@ -61524,6 +61527,7 @@
 ||jprutbffhyhgi.space^
 ||jprzxoufuehde.space^
 ||jptgtr.astellas.jp^
+||jptifzvqhanvha.com^
 ||jptobh.network.com.tr^
 ||jptxlqkygrhdo.website^
 ||jpujdlotmzdyw.site^
@@ -91487,6 +91491,7 @@
 ||q6onifocc5u22rpz2.rest^
 ||q6zikgclq9.com^
 ||q7.hiden.live^
+||q70t79hxor.com^
 ||q752l299q4zlp7w.rest^
 ||q770.whittierdailynews.com^
 ||q777.sfchronicle.com^

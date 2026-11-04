@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-04 00:19:16
-! Block rules: 153829
+! Generated: 2026-11-04 06:47:54
+! Block rules: 153834
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101176 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5939 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5944 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1883 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1885 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1324,6 +1324,7 @@
 ||1ns1rosb.de^
 ||1nvnkyg65.com^
 ||1nvxl968le.com^
+||1ny5gaksj8.com^
 ||1o0g85u7k1.com^
 ||1o1nuqbjea.com^
 ||1o23ptd0sv.com^
@@ -3405,6 +3406,7 @@
 ||4863232c.xyz^
 ||4872274.notify6.com^
 ||4872816.notify6.com^
+||487wlz7nbc.com^
 ||4881146.notify6.com^
 ||4882844.notify6.com^
 ||4888136.notify6.com^
@@ -4031,6 +4033,7 @@
 ||5ob8leczt2ggv1p2t.rest^
 ||5olcvqmqp71qqy.rest^
 ||5p35xkp1p.com^
+||5p478n58i9.com^
 ||5pbe75llvxyxxt.cfd^
 ||5pi13h3q.de^
 ||5platforms.net^
@@ -14845,6 +14848,7 @@
 ||adv.blulab.net^
 ||adv.ccb.com^
 ||adv.consulcesi.it^
+||adv.dailytechinsight.com^
 ||adv.drtuber.com^
 ||adv.ettoday.net^
 ||adv.fjtv.net^
@@ -17148,7 +17152,6 @@
 ||amazingmeaning.com^
 ||amazingmelting.com^
 ||amazingyard.pro^
-||amazom.my^
 ||amazon-adsystem.com^
 ||amazon-email.branch.rocks^
 ||amazon.wii-info.fr^
@@ -22347,6 +22350,7 @@
 ||audhwnmaanyqg.website^
 ||audiblyacademyadaptation.com^
 ||audiblyjinx.com^
+||audicontadores.com^
 ||audid-api-sg.taobao.com^
 ||audid-api.taobao.com^
 ||audid.umeng.com^
@@ -23676,6 +23680,7 @@
 ||badjs.qq.com^
 ||badjs.weixinbridge.com^
 ||badlandlispyippee.com^
+||badmonner.s.gy^
 ||badsllcvgillm.space^
 ||badspads.com^
 ||badwolf.open-election-compass.com^
@@ -29886,7 +29891,6 @@
 ||cansojdrsopsz.online^
 ||cansoopaloid.com^
 ||canstrm.com^
-||canta-cn.com^
 ||cantatacymols.shop^
 ||canteenlupulusmahar.cyou^
 ||cantigabantayquiddle.cfd^
@@ -32499,7 +32503,6 @@
 ||cl3.webterren.com^
 ||cl4.webterren.com^
 ||cl5.webterren.com^
-||cla.stingold.com^
 ||clabberscended.com^
 ||clachanasor.cfd^
 ||clackafshar.shop^
@@ -36423,7 +36426,6 @@
 ||cqubdd.metro.co.uk^
 ||cqubdd.thisismoney.co.uk^
 ||cqvxrmwcwyvad.site^
-||cqylt.net^
 ||cqz6fn6aox.aporia.com^
 ||cqzddfxybkwcw.online^
 ||cqzrlquec45klq.cfd^
@@ -36928,7 +36930,6 @@
 ||cryoselarolla.com^
 ||cryptaloot.pro^
 ||cryptalsnakily.cyou^
-||crypter00.gt.tc^
 ||crypticgenius.com^
 ||crypticrallye.com^
 ||crypto-ads.net^
@@ -43637,6 +43638,7 @@
 ||dodgyfactoidprecut.com^
 ||dodi.86zhnc.cn^
 ||dodi.meng-an.cn^
+||dodiihome.com^
 ||dodk8rb03jif9.cloudfront.net^
 ||dodruajxyfeyi.site^
 ||dodsepaxial.com^
@@ -43759,7 +43761,6 @@
 ||domslc.com^
 ||domzpbsymwbtf.online^
 ||donagggfdfgzd.space^
-||donal.gt.tc^
 ||donalhumpier.cfd^
 ||donalpapmeat.com^
 ||donasi.lk21.de^
@@ -44012,6 +44013,7 @@
 ||download.adsage.com^
 ||download.backpackergame.com^
 ||download.bav.baidu.com^
+||download.bitbrowser-cn.cyou^
 ||download.bonnti.com^
 ||download.caihong.com^
 ||download.changhong.upgrade2.huan.tv^
@@ -44060,7 +44062,6 @@
 ||download.supercoating.com.hk^
 ||download.tfyxzai.com^
 ||download.tg1101.com^
-||download.ubua.online^
 ||download.vertex-software.digital^
 ||download.wan.sohu.com^
 ||download.wearelistening.co.nz^
@@ -48403,7 +48404,6 @@
 ||embed.polymarket.com^
 ||embeddedanalytics.com^
 ||embeddedhelpful.com^
-||embedone.com^
 ||embeds.beehiiv.com^
 ||embedspurted.cfd^
 ||embedx.name^
@@ -50373,7 +50373,6 @@
 ||evrgtqetom.com^
 ||evrlbehgntzaz.online^
 ||evrmwlh0dl.com^
-||evrookna.spb.ru^
 ||evrutaruizwbu.website^
 ||evs.data.ciceksepeti.com^
 ||evs.icy-lake.kickstarter.com^
@@ -52456,6 +52455,7 @@
 ||files.adriver.ru^
 ||files.info.posteitaliane.it^
 ||files.jb51.net^
+||files.mcclients.com^
 ||files.thetbull.com^
 ||files.urlinsgroup.com^
 ||files.xtpag.top^
@@ -53274,6 +53274,7 @@
 ||flexlinks.com^
 ||flexlinkspro.com^
 ||flexpod.ynsecureserver.net^
+||flexsportpools.com^
 ||flfazfrdjpntc.website^
 ||flfmmxdfhdisj.online^
 ||flfsoqkileuin.website^
@@ -63399,7 +63400,6 @@
 ||hwvzysmzxzpmf.online^
 ||hwwjsi.aboutyou.pl^
 ||hwwxwzzhlcxeg.site^
-||hwykplqn.xyz^
 ||hwyytk.verabradley.com^
 ||hwyyuy.ringcentral.com^
 ||hwzuwlghfqizh.space^
@@ -68976,6 +68976,7 @@
 ||javtvnow.xyz^
 ||javvso.newone-shop.com^
 ||javyvkzwwsf.com^
+||jawaratekno.com^
 ||jawfallsalvesdodlet.cfd^
 ||jawigcqrumbez.space^
 ||jawlessacing.qpon^
@@ -70298,6 +70299,7 @@
 ||jprutbffhyhgi.space^
 ||jprzxoufuehde.space^
 ||jptgtr.astellas.jp^
+||jptifzvqhanvha.com^
 ||jptobh.network.com.tr^
 ||jptxlqkygrhdo.website^
 ||jpujdlotmzdyw.site^
@@ -74735,7 +74737,6 @@
 ||leninsiloam.cyou^
 ||lenkmio.com^
 ||lenmit.com^
-||lenotecadiarqua.it^
 ||lenpmh.francoisesaget.com^
 ||lensmanminiverstuggy.cfd^
 ||lenta.sparrow.ru^
@@ -76248,7 +76249,6 @@
 ||linktest.itsdcode.com^
 ||linkto.driver.codes^
 ||linktrace.diningcity.cn^
-||linktrap.co^
 ||linkus.buddybet.com^
 ||linkv3c.com^
 ||linkvet.insights.md^
@@ -76276,7 +76276,6 @@
 ||lio8.destinia.com.pa^
 ||liod1ours.com^
 ||liohkiizoylww.online^
-||lion44.net^
 ||liondolularhenewre.com^
 ||liosix.mtvuutiset.fi^
 ||lipemiaaliptae.com^
@@ -77981,7 +77980,6 @@
 ||looseunits.com^
 ||loosishbeng.cyou^
 ||loosometime.com^
-||loosun.net^
 ||lootsanenddimeric.cfd^
 ||looverolent.shop^
 ||looxloqaeigjk.space^
@@ -80389,6 +80387,7 @@
 ||mackelse.cyou^
 ||mackerel.passiveincome.io^
 ||mackinsbirianiusurper.cyou^
+||macos.vettasy.com^
 ||macostruecloud.xyz^
 ||macro.adnami.io^
 ||macro4settings.net^
@@ -93214,6 +93213,7 @@
 ||okopuhtgqgelr.space^
 ||okoulvuvtzurb.site^
 ||okoumegastful.com^
+||okp.dailytechinsight.com^
 ||okq2b5zjft.com^
 ||okqefbozkgqvd.website^
 ||okr.sbdv.ru^
@@ -96540,7 +96540,6 @@
 ||payingtore.com^
 ||payload.adadapted.com^
 ||payment.yodo1api.com^
-||paymentautomations.biz^
 ||payments.acutx.org^
 ||payments.americanexpress.co.uk^
 ||paymentslink.dropp.cc^
@@ -100643,7 +100642,6 @@
 ||proper.io^
 ||propermessage.io^
 ||properties.insiterealestate.com^
-||propertiesofcayman.com^
 ||property.aon.com^
 ||property58.top^
 ||propertyofnews.com^
@@ -101460,6 +101458,7 @@
 ||pursuingconjunction.com^
 ||purtygoudy.com^
 ||purveyupcreep.cfd^
+||purxiyclient.org^
 ||puschl.langhaar-schaeferhunde.com^
 ||puscomosca.com^
 ||puseqbbpfngaf.site^
@@ -102101,6 +102100,7 @@
 ||q6onifocc5u22rpz2.rest^
 ||q6zikgclq9.com^
 ||q7.hiden.live^
+||q70t79hxor.com^
 ||q752l299q4zlp7w.rest^
 ||q770.whittierdailynews.com^
 ||q777.sfchronicle.com^
@@ -106884,6 +106884,7 @@
 ||robesadvertisement.com^
 ||robhahalands.com^
 ||robin-flow.com^
+||robinhood.media^
 ||robinhoodwallet.dervano.vu^
 ||robinorchid.com^
 ||roblox-expl.info^
@@ -135098,6 +135099,7 @@
 ||uc.ucweb.com^
 ||uc.whkwpzz.cn^
 ||uc.xddi.ru^
+||uc1fb1e965c6d803f97040b2d495.dl.dropboxusercontent.com^
 ||uc5gbql.c1qoyyyjlnkx4h.cyou^
 ||uc610.com^
 ||uc768.wk7oecq4nzen7pvf.cyou^
@@ -135109,14 +135111,17 @@
 ||ucads.ucweb.com^
 ||ucateopgdhrbq.online^
 ||ucb.1rjm53pqcyjmb632jq.cyou^
+||ucb795b953262a1f75be02669385.dl.dropboxusercontent.com^
 ||ucbaba.top^
 ||uccfioqedzfom.site^
+||ucd9bd7b2d78fd09cd6b92e4ab63.dl.dropboxusercontent.com^
 ||ucdesk.cn^
 ||ucdn.adgebra.co^
 ||ucdvze.gudrunsjoden.com^
 ||ucdwezftjdksn.site^
 ||ucenshxnmkguc.online^
 ||ucfdbmihcfwjb.online^
+||ucfea10e4d01e1b5c131c0c41850.dl.dropboxusercontent.com^
 ||ucfly.com^
 ||ucfosyrxfuryc.store^
 ||ucgmznzpnance.space^
