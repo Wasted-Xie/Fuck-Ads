@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-03 12:55:59
-! Block rules: 138152
+! Generated: 2026-11-04 00:19:17
+! Block rules: 138157
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101176
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5934
+!   - easylistchina [w=3] block 5939
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -22787,6 +22787,7 @@
 ||bsgbd77l.de^
 ||bsgefrduwiaxk.site^
 ||bshare.cn^
+||bshhyxoy62.com^
 ||bshr.ezodn.com^
 ||bshrdr.com^
 ||bsigxzskaybsw.website^
@@ -57515,6 +57516,7 @@
 ||inegasghvf.com^
 ||inencr.woodhouseclothing.com^
 ||ineoocqxztbzj.site^
+||inequation23.com^
 ||inertiawisent.cyou^
 ||inestimablereddencloset.com^
 ||inetlog.ru^
@@ -79303,6 +79305,7 @@
 ||mzy2014.com^
 ||mzykitcgblmwl.online^
 ||mzypnfarkhqww.site^
+||mzzueflt.com^
 ||mzzzpvllsjxpy.online^
 ||n-analytics.io^
 ||n-core-pipe.com^
@@ -82267,6 +82270,7 @@
 ||o911o.com^
 ||o9bu5251l9ghvm.rest^
 ||o9gvxuj9t6.com^
+||o9m5znv8ta.com^
 ||o9qdqbu6nu.com^
 ||o9tt6h08li.execute-api.eu-west-1.amazonaws.com^
 ||o9yt5w6t7x3z2vtncjn9.cfd^
@@ -125705,6 +125709,7 @@
 ||vfkwbnwrglemo.online^
 ||vflfrwugmxhjr.space^
 ||vfmahn.slevomat.cz^
+||vfmlgaxxc4.com^
 ||vfmqozdgawaii.website^
 ||vfnq.cn^
 ||vfnxqznmwbcee.store^
