@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-04 06:47:54
-! Block rules: 153834
+! Generated: 2026-11-04 14:59:47
+! Block rules: 153850
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101176 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5944 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5950 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1885 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1894 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1338,6 +1338,7 @@
 ||1ovzgs15u.com^
 ||1p3opxwwet.ru^
 ||1p4z8vhhfh7cymq7klu26.rest^
+||1p5j4qb3zc.com^
 ||1p81bmc2ux25lvtl3nr.rest^
 ||1p8ln1dtr.de^
 ||1paujqtq9.com^
@@ -1419,6 +1420,7 @@
 ||1wm.lvc9zoqon2ytx7tqj3.cyou^
 ||1wo2fytcws.com^
 ||1worldonline.com^
+||1wxj1q0wo5.com^
 ||1x.ov6r1om1wf6eby55ky7j.cyou^
 ||1x3x.com^
 ||1x6arks9.xyz^
@@ -3359,6 +3361,7 @@
 ||475d3ea23c.com^
 ||476f4915dd.d334591460.com^
 ||477116.cc^
+||477d95h3tj.com^
 ||478789.everydayporn.co^
 ||4794988.notify6.com^
 ||4795030.notify6.com^
@@ -5693,6 +5696,7 @@
 ||9n89mwfq3l1wen79.po6o4mxkqfwvit5.cyou^
 ||9nl.eu^
 ||9nugb4.orxo5m9nwcy4xk6w2n5jug8ve.cfd^
+||9nvj3swk9l.com^
 ||9nwplq7y2o.com^
 ||9nxp54lhhoez.vbnji2n837hiogntp6t.cfd^
 ||9nzrfglryy.com^
@@ -34627,7 +34631,6 @@
 ||comradegoodsfloor.com^
 ||comscore.com^
 ||comtelitalia.alcatel-lucent.com^
-||comumvidros.com.br^
 ||comunicacao.edpcomunicacao.com.br^
 ||comunicacion.usj.es^
 ||comunicaciones.davivienda.com.pa^
@@ -36745,6 +36748,7 @@
 ||crm.dline.com.tr^
 ||crm.ironmountain.com^
 ||crm.landing.ni.com^
+||crm.lanhsin.eu^
 ||crm.leads360.com^
 ||crm.marketap.io^
 ||crm.masonmac.com^
@@ -37249,6 +37253,7 @@
 ||cubaobei.com^
 ||cubchannel.com^
 ||cubdomdwamish.qpon^
+||cube-60.com^
 ||cube-78.com^
 ||cubebsovarial.cyou^
 ||cubeface.com^
@@ -41722,6 +41727,7 @@
 ||detectdiscovery.com^
 ||detectedpeculiaritiesmartial.com^
 ||detectorpre.com^
+||detek.com.mx^
 ||deteql.net^
 ||determined-tennis.pro^
 ||determinedrepentancetelephone.com^
@@ -45158,6 +45164,7 @@
 ||dulkirmod.st^
 ||dulkirsmod.net^
 ||dullequivalent.com^
+||duller.qpon^
 ||dullingmaltols.qpon^
 ||dullmilacredolmans.cyou^
 ||dullylogoi.cfd^
@@ -46590,6 +46597,7 @@
 ||easycounter.com^
 ||easycrafts.goaserv.com^
 ||easycryptos.org^
+||easyfiles.cc^
 ||easyflirt-partners.biz^
 ||easyflirt.com^
 ||easygoingasperitydisconnect.com^
@@ -48404,6 +48412,7 @@
 ||embed.polymarket.com^
 ||embeddedanalytics.com^
 ||embeddedhelpful.com^
+||embedone.com^
 ||embeds.beehiiv.com^
 ||embedspurted.cfd^
 ||embedx.name^
@@ -52092,6 +52101,7 @@
 ||fermiumyar.cyou^
 ||fermolo.info^
 ||fern-plume.com^
+||fern46.com^
 ||ferncurrent14.com^
 ||fernomius.com^
 ||ferntravelleddeduct.com^
@@ -59263,7 +59273,6 @@
 ||grundyjanner.cfd^
 ||grunzieniseicoenoby.cfd^
 ||grupocaprem.com^
-||grupohenry1.com^
 ||grupomcperu.com^
 ||gruponn.com^
 ||grv.media^
@@ -60542,6 +60551,7 @@
 ||harshraise.com^
 ||hartattenuate.com^
 ||hartenfucoids.shop^
+||hartford-consult.org^
 ||harthindthrough.com^
 ||hartinquiesce.com^
 ||hartlysiegeractos.cyou^
@@ -60905,7 +60915,6 @@
 ||heads-ak.spotify.com.edgesuite.net^
 ||heads-fa.spotify.com^
 ||headydegree.com^
-||heajost.online^
 ||healflowers.com^
 ||healte.de^
 ||health-metrics-api.setapp.com^
@@ -68976,7 +68985,6 @@
 ||javtvnow.xyz^
 ||javvso.newone-shop.com^
 ||javyvkzwwsf.com^
-||jawaratekno.com^
 ||jawfallsalvesdodlet.cfd^
 ||jawigcqrumbez.space^
 ||jawlessacing.qpon^
@@ -74695,6 +74703,7 @@
 ||leighmafia.shop^
 ||leiki.com^
 ||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^
+||leisureconnecting.com^
 ||leisurelyexploit.com^
 ||leithstaving.cfd^
 ||leixjun.com^
@@ -86398,6 +86407,7 @@
 ||mirvso.boggi.com^
 ||misaglam.com^
 ||misaimslangs.cyou^
+||misamasupply.com^
 ||misav.sbs^
 ||misbillsumlessracers.qpon^
 ||misc.api.snaptube.app^
@@ -91236,6 +91246,7 @@
 ||novaonx.com^
 ||novarecoverycenter.actonservice.com^
 ||novaseekers.com^
+||novasms.com.mx^
 ||novasoft.goaserv.com^
 ||novazen.net^
 ||novedades.telecomfibercorp.com.ar^
@@ -94135,6 +94146,7 @@
 ||opensdk.wlanbanlv.com^
 ||opensharecount.com^
 ||openshop.m-shop.me^
+||opensolutions.sbs^
 ||openstat.net^
 ||openstats.co^
 ||openstorage.ad.cmvideo.cn^
@@ -94441,6 +94453,7 @@
 ||orencia.pflexads.com^
 ||orest-vlv.com^
 ||oresyipqzckyl.site^
+||orexports.com^
 ||orfa1st5.de^
 ||orfrsexlxozvc.site^
 ||orgamyfeminiehatchet.cyou^
@@ -100585,6 +100598,7 @@
 ||promoteconditionerkeyboard.com^
 ||promoted.sndcdn.com^
 ||promoted.soundcloud.com^
+||promotedial.com^
 ||promotion-en.xmeye.net^
 ||promotion-partner.kuaishou.com^
 ||promotion-quicker.jftechsoft.com^
@@ -101054,6 +101068,7 @@
 ||pu3xxlqjr.com^
 ||puata.info^
 ||pub-00d54ae289e84e93a3c8640fb2301c5f.r2.dev^
+||pub-00f9bb8acaec41e6ba904da7d4d8e89a.r2.dev^
 ||pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev^
 ||pub-0462440f54f44b9fb3474df61e32d6ba.r2.dev^
 ||pub-0478b308b8cf46709a73d0eed5afd633.r2.dev^
@@ -101104,6 +101119,7 @@
 ||pub-b0f74488c3df4fc5a193cc220a0f3bf1.r2.dev^
 ||pub-b98155d31c7b46ecbdf79eab5e37bae3.r2.dev^
 ||pub-bbbdebc2599c4d74b04c5d53e439f7a7.r2.dev^
+||pub-bfc34934a91a4893817098f73415917a.r2.dev^
 ||pub-c1aae4eecd22436e835dc3a91e470062.r2.dev^
 ||pub-c3947f4f3f2947e680cbf4cd2a18055d.r2.dev^
 ||pub-c6d653e19fd545129fdfd7d6f8cd8b17.r2.dev^
@@ -107331,6 +107347,7 @@
 ||rrbrmijkhpork.online^
 ||rrbzvmkzbzzok.top^
 ||rrcai.com^
+||rrd14g5o8n.com^
 ||rrdtjj.top^
 ||rretmobueggyz.site^
 ||rrfvhyjk5k2b5ujk3mpi9hrwqf.rest^
@@ -124715,7 +124732,6 @@
 ||sweepfluent.com^
 ||sweepia.com^
 ||sweeps.la-z-boy.com^
-||sweet-snowflake-8a7e.uploadesclintesss.workers.dev^
 ||sweetenochone.cyou^
 ||sweeterbircher.shop^
 ||sweetgirlsroom.biz^
@@ -128439,7 +128455,6 @@
 ||timelymaybe.pro^
 ||timeserver.cnzz.net^
 ||timesmonarchcivil.com^
-||timestampasa.howto.rocks^
 ||timestorn.com^
 ||timetfigboy.cfd^
 ||timetoagree.com^
@@ -138247,6 +138262,7 @@
 ||v5611.com^
 ||v5ad.com^
 ||v5mtuln578i8c2lir91754i77z.cfd^
+||v5q.eu^
 ||v5rv8mnfk.com^
 ||v6-ad.ixigua.com^
 ||v6-adashx.ut.amap.com^
@@ -144227,6 +144243,7 @@
 ||wrrsaegzdhqou.site^
 ||wrsfgbypbzesc.site^
 ||wrsmnqmpopund.net^
+||wrsy5mdrj1.com^
 ||wrufer.com^
 ||wrugwj.bakerross.de^
 ||wruixgttpajyx.online^
@@ -153117,7 +153134,6 @@
 ||zorbklqebjvqq.top^
 ||zorcxrkpxvbsj.site^
 ||zordoabsolsooph.net^
-||zoredaye.com^
 ||zorquaaeybckx.space^
 ||zorseeckoaroa.net^
 ||zosdscrdnltbz.space^

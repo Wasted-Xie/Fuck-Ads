@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-04 06:47:55
-! Block rules: 138162
+! Generated: 2026-11-04 14:59:48
+! Block rules: 138168
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101176
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5944
+!   - easylistchina [w=3] block 5950
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -1216,6 +1216,7 @@
 ||1ovzgs15u.com^
 ||1p3opxwwet.ru^
 ||1p4z8vhhfh7cymq7klu26.rest^
+||1p5j4qb3zc.com^
 ||1p81bmc2ux25lvtl3nr.rest^
 ||1p8ln1dtr.de^
 ||1paujqtq9.com^
@@ -1293,6 +1294,7 @@
 ||1wm.lvc9zoqon2ytx7tqj3.cyou^
 ||1wo2fytcws.com^
 ||1worldonline.com^
+||1wxj1q0wo5.com^
 ||1x.ov6r1om1wf6eby55ky7j.cyou^
 ||1x3x.com^
 ||1x6arks9.xyz^
@@ -2341,6 +2343,7 @@
 ||47235645.xyz^
 ||475d3ea23c.com^
 ||477116.cc^
+||477d95h3tj.com^
 ||478789.everydayporn.co^
 ||47b48d19d4.com^
 ||47b5895cy6eil1.cfd^
@@ -4268,6 +4271,7 @@
 ||9mnmzh506.com^
 ||9n89mwfq3l1wen79.po6o4mxkqfwvit5.cyou^
 ||9nl.eu^
+||9nvj3swk9l.com^
 ||9nwplq7y2o.com^
 ||9nzrfglryy.com^
 ||9obmf866d.com^
@@ -96478,6 +96482,7 @@
 ||rrbrmijkhpork.online^
 ||rrbzvmkzbzzok.top^
 ||rrcai.com^
+||rrd14g5o8n.com^
 ||rrdtjj.top^
 ||rretmobueggyz.site^
 ||rrfvhyjk5k2b5ujk3mpi9hrwqf.rest^
@@ -130543,6 +130548,7 @@
 ||wrrsaegzdhqou.site^
 ||wrsfgbypbzesc.site^
 ||wrsmnqmpopund.net^
+||wrsy5mdrj1.com^
 ||wrufer.com^
 ||wrugwj.bakerross.de^
 ||wruixgttpajyx.online^
