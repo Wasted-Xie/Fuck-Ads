@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-05 08:49:50
-! Block rules: 154474
+! Generated: 2026-11-05 17:00:16
+! Block rules: 154494
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101831 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5955 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5962 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1903 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1917 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -192,6 +192,7 @@
 ||06df67950b.cd2ef10dae.com^
 ||06e6611fca.com^
 ||06evyxnibl.com^
+||06f2egypr.com^
 ||06f864e06a.com^
 ||06hkgn0jl3.com^
 ||0704a6c22b.com^
@@ -1049,7 +1050,6 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||179.248.3.202.ll.sta.mana.pf^
@@ -1536,6 +1536,7 @@
 ||21union.com^
 ||21wiz.com^
 ||22-trk-srv.com^
+||221.37.167.72.host.secureserver.net^
 ||22153974.branch.rocks^
 ||2222.ro^
 ||22222jsc.com^
@@ -2967,6 +2968,7 @@
 ||3fcu1sqox2.com^
 ||3fyrbmnccxz2zfh9p5bl75y94uu.cfd^
 ||3fz4hifewy.ozuml5jk9nnvenhmunf3rg4.cfd^
+||3g0p5hjwa.com^
 ||3g25ko2.de^
 ||3gbqdci2.de^
 ||3ge064tt79.com^
@@ -3042,6 +3044,7 @@
 ||3qx0pnhyzi.com^
 ||3r1kwxcd.top^
 ||3r54cb.kx2xpzbw2235ui6rjylhkflgn37i86.cyou^
+||3r6fs2855.com^
 ||3rc04o1rmy.com^
 ||3rd.t.sohu.com^
 ||3rdspacetech.com^
@@ -3431,6 +3434,7 @@
 ||49453k0l.vr.loveota.com^
 ||49453k0l.vs.loveota.com^
 ||4947244.notify6.com^
+||494b6x7u8.com^
 ||4960922.notify6.com^
 ||4983200.notify6.com^
 ||4983282.notify6.com^
@@ -16689,6 +16693,7 @@
 ||algorithmtoenergy.net^
 ||algrcr.sandro-paris.com^
 ||alhetcantish.qpon^
+||alhgxftiz.com^
 ||alhi.actonservice.com^
 ||alhiop.thehandsome.com^
 ||alhkanbodrbve.online^
@@ -24822,6 +24827,7 @@
 ||beafdf.restaupro.com^
 ||beagle.prod.tda.link^
 ||beaglemanipulate.com^
+||beak.in^
 ||beakfuljato.com^
 ||bealafulup.com^
 ||bealanews.com^
@@ -25183,6 +25189,7 @@
 ||bereaveundresscrowded.com^
 ||beretier.cyou^
 ||berg-6-82.com^
+||bergdorfgoodmanbag.com^
 ||bergmann-automobile.de^
 ||beringmedia.com^
 ||beringterm.com^
@@ -37031,7 +37038,6 @@
 ||cryptoloot.pro^
 ||cryptomaster.care^
 ||cryptomeshforge10.lol^
-||cryptomeshforge5.lol^
 ||cryptonewsdom.care^
 ||cryptonoter.com^
 ||cryptosplash.care^
@@ -42885,6 +42891,7 @@
 ||disinheritguilewallow.com^
 ||disintegratehesitate.com^
 ||disipxnziqeql.website^
+||disk.360.yandex.ru^
 ||disk.accord1key.cn^
 ||diskaa.com^
 ||diskdem.cfd^
@@ -44185,6 +44192,7 @@
 ||download.youzu.com^
 ||download.yuehlia.com^
 ||download.zikirapp.com^
+||download2.huduntech.com^
 ||download3.123cw.cn^
 ||downloada.dewmobile.net^
 ||downloadb.dewmobile.net^
@@ -52251,7 +52259,6 @@
 ||fermolo.info^
 ||fern-plume.com^
 ||fern46.com^
-||ferncurrent14.com^
 ||fernomius.com^
 ||ferntravelleddeduct.com^
 ||fernzenith.com^
@@ -55906,6 +55913,7 @@
 ||gap-telemetry-api.onewidgetworld.com^
 ||gapasjodvjul.in^
 ||gapcontroversialprodigal.com^
+||gapi.amplebatch.in.net^
 ||gapwadfcmeilz.space^
 ||gaqxkizfpyhpc.site^
 ||garage08062025.shop^
@@ -59164,7 +59172,6 @@
 ||gravitypics.com^
 ||gravityrd-services.com^
 ||gravyhuman.com^
-||gray-dyane-31.tiiny.site^
 ||gray.unlikebuck.com^
 ||graychalk.com^
 ||graylog.prod.cams.run^
@@ -61803,7 +61810,6 @@
 ||hindootabesoner.cyou^
 ||hindrancegate.com^
 ||hindsight.significanceapps.com^
-||hindustanagency.com^
 ||hindustancargologistic.com^
 ||hines.actonservice.com^
 ||hinet.go-static.info^
@@ -71104,6 +71110,7 @@
 ||juausnanolbbs.space^
 ||jubaaa.com^
 ||jubbie.de^
+||jubex.eu^
 ||jubilantaura.com^
 ||jubilantcanyon.com^
 ||jubilantglimmer.com^
@@ -88980,6 +88987,7 @@
 ||mx2.happ.social^
 ||mx278ol2d.com^
 ||mx6.3pornhere.com^
+||mx9x.com^
 ||mxana.tacool.com^
 ||mxanalytics.youruncensoredai.workers.dev^
 ||mxapis.com^
@@ -93398,6 +93406,7 @@
 ||ohvgbradcgcby.online^
 ||ohvtrokyq.com^
 ||ohvvvmxtyzvix.online^
+||ohwcadvisor.com^
 ||ohwhejfefovlo.space^
 ||ohxdkzbwzpvid.website^
 ||ohyppheeswnqu.online^
@@ -94513,6 +94522,7 @@
 ||openmsf.3g.qq.com^
 ||openrate.aweber.com^
 ||openrcv.baidu.com^
+||openrouter.srv-auth-dlt-msh.in.net^
 ||openrtb-banner.com^
 ||openrtb.in^
 ||opensdk.wlanbanlv.com^
@@ -97294,6 +97304,7 @@
 ||peatfarming.com^
 ||peavyegeria.cyou^
 ||pebafisk.com^
+||pebbleanthem.shop^
 ||pebblemedia.be^
 ||pebed.dm-event.net^
 ||pebfvv.icu^
@@ -101533,7 +101544,6 @@
 ||pub-c1aae4eecd22436e835dc3a91e470062.r2.dev^
 ||pub-c3947f4f3f2947e680cbf4cd2a18055d.r2.dev^
 ||pub-c6d653e19fd545129fdfd7d6f8cd8b17.r2.dev^
-||pub-c9224963ee6a49b194bba4acac778b13.r2.dev^
 ||pub-c9f0444b6f604c8d8f64366bb87d456d.r2.dev^
 ||pub-cbeeb81b1c2d40df823a412f702451a3.r2.dev^
 ||pub-cdd0dd27ae6a4aee9841d397e0496374.r2.dev^
@@ -102937,6 +102947,7 @@
 ||qgxdgxsrfxyyy.online^
 ||qgyjjanwpq.com^
 ||qgzaolbggkxis.site^
+||qh7ptb6mc.com^
 ||qhaelqata.com^
 ||qhangrotl.com^
 ||qhaqlvdbyjwdc.website^
@@ -104527,6 +104538,7 @@
 ||raf.postnl.be^
 ||raf.postnl.nl^
 ||rafekunbi.com^
+||raffcow4.beget.tech^
 ||raffle-entry.info.smart.com^
 ||raffleprotectionbow.com^
 ||rafflewivern.shop^
@@ -111320,6 +111332,7 @@
 ||schedulegoeshydrogen.com^
 ||schedulerationally.com^
 ||scheduling.qualifi.hr^
+||schemaleap1.com^
 ||schemasfinback.cyou^
 ||schemecontinuingwinning.com^
 ||schemedsins.cyou^
@@ -112013,6 +112026,7 @@
 ||secure-eugo.arrow.com^
 ||secure-it.imrworldwide.com^
 ||secure-jp.imrworldwide.com^
+||secure-link.club^
 ||secure-nz.imrworldwide.com^
 ||secure-sg.imrworldwide.com^
 ||secure-sin.adnxs.com^
@@ -127281,6 +127295,7 @@
 ||tarsingularsubmerge.com^
 ||tarsiusmounds.qpon^
 ||tarsiustembeshines.cfd^
+||tartaklegnica.pl^
 ||tartarewealden.cfd^
 ||tartarfeast.com^
 ||tartbyronic.cyou^
@@ -128472,6 +128487,7 @@
 ||thejavalane.com^
 ||thejierou.net^
 ||thekat.se^
+||thelkfklef.com^
 ||thelotter-affiliates.com^
 ||thelovebucks.com^
 ||themaintechnician.us^
@@ -136006,6 +136022,7 @@
 ||uiapoozgbrnyy.site^
 ||uibcqpgbxhsjt.site^
 ||uibjh29vqc.com^
+||uibpd67j6.com^
 ||uicjnk.gumtree.co.za^
 ||uicomputer.goasrv.com^
 ||uicrvgyafucof.website^
@@ -136888,7 +136905,9 @@
 ||uno-play.xyz^
 ||unobeseownness.cfd^
 ||unoldluridly.com^
+||unoparty.online^
 ||unoplayy.com^
+||unostroagesdeel.cc^
 ||unovertkiths.qpon^
 ||unownluluai.cfd^
 ||unpackelasticlens.com^
@@ -141035,6 +141054,7 @@
 ||vstat.rtr-vesti.ru^
 ||vstat.v.blog.sohu.com^
 ||vstats.me^
+||vstcl.com^
 ||vstixgqbvxdlq.site^
 ||vstlog.17u.cn^
 ||vstserv.com^

@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-05 08:49:51
-! Block rules: 138791
+! Generated: 2026-11-05 17:00:17
+! Block rules: 138798
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101831
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5955
+!   - easylistchina [w=3] block 5962
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -167,6 +167,7 @@
 ||06cp8ypn8j.com^
 ||06e6611fca.com^
 ||06evyxnibl.com^
+||06f2egypr.com^
 ||06f864e06a.com^
 ||06hkgn0jl3.com^
 ||0704a6c22b.com^
@@ -2109,6 +2110,7 @@
 ||3fabf0ce4f.com^
 ||3fcu1sqox2.com^
 ||3fyrbmnccxz2zfh9p5bl75y94uu.cfd^
+||3g0p5hjwa.com^
 ||3g25ko2.de^
 ||3gbqdci2.de^
 ||3ge064tt79.com^
@@ -2178,6 +2180,7 @@
 ||3qx0pnhyzi.com^
 ||3r1kwxcd.top^
 ||3r54cb.kx2xpzbw2235ui6rjylhkflgn37i86.cyou^
+||3r6fs2855.com^
 ||3rc04o1rmy.com^
 ||3rd.t.sohu.com^
 ||3rdspacetech.com^
@@ -2372,6 +2375,7 @@
 ||492tracker.net^
 ||49453k0l.vr.loveota.com^
 ||49453k0l.vs.loveota.com^
+||494b6x7u8.com^
 ||4984435e26.com^
 ||49a15e8b76.com^
 ||49dlt9myv.com^
@@ -12329,6 +12333,7 @@
 ||algorithmtoenergy.net^
 ||algrcr.sandro-paris.com^
 ||alhetcantish.qpon^
+||alhgxftiz.com^
 ||alhiop.thehandsome.com^
 ||alhkanbodrbve.online^
 ||alhnoakqwahiw.online^
@@ -92319,6 +92324,7 @@
 ||qgxdgxsrfxyyy.online^
 ||qgyjjanwpq.com^
 ||qgzaolbggkxis.site^
+||qh7ptb6mc.com^
 ||qhaelqata.com^
 ||qhangrotl.com^
 ||qhaqlvdbyjwdc.website^
@@ -122946,6 +122952,7 @@
 ||uiapoozgbrnyy.site^
 ||uibcqpgbxhsjt.site^
 ||uibjh29vqc.com^
+||uibpd67j6.com^
 ||uicjnk.gumtree.co.za^
 ||uicrvgyafucof.website^
 ||uid.ksosoft.com^
