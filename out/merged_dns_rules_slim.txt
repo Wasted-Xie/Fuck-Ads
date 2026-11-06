@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-05 17:00:17
-! Block rules: 138798
+! Generated: 2026-11-06 03:00:57
+! Block rules: 138804
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101831
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5962
+!   - easylistchina [w=3] block 5968
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -55,6 +55,7 @@
 ||00427011ae.com^
 ||005ad66f1d.com^
 ||00609c257b.com^
+||007bq3y7e5.com^
 ||0082tv.net^
 ||0086555.com^
 ||009f45b51c.com^
@@ -34437,6 +34438,7 @@
 ||ddfdgfgfghjhjbnnmklojhgfdghgbcvbnnmmdfgfvvvvbpvlgbdknfidgh.pages.dev^
 ||ddfnmo6ev4fd.cloudfront.net^
 ||ddfocqtbglcxt.website^
+||ddft5oqi7q.com^
 ||ddgjjj.com^
 ||ddhpwyarmgevw.online^
 ||ddhrzfgnufzoz.online^
@@ -36390,6 +36392,7 @@
 ||dkijbymomybjs.site^
 ||dkjn1bal2.com^
 ||dkjtppgsfoiqd.site^
+||dkkm83qokh.com^
 ||dkkqqhonowers.site^
 ||dklbwqjzpscsj.space^
 ||dkm6b5q0h53z4.cloudfront.net^
@@ -45493,6 +45496,7 @@
 ||fiveplusthree.com^
 ||fivesidedsquare.com^
 ||fivstoinoedtu.online^
+||fivvdbnotgndfg.com^
 ||fiwcuorvjpzmx.site^
 ||fiwekmyzlnvjx.site^
 ||fiwinet.firmenwissen.com^
@@ -53146,6 +53150,7 @@
 ||hepburnpulsant.qpon^
 ||hepsiads-gw.hepsiburada.com^
 ||hepsiads-ui.hepsiburada.com^
+||heptagon54.com^
 ||heptix.net^
 ||heptyllacto.shop^
 ||heqipjkwjhnnn.online^
@@ -115131,6 +115136,7 @@
 ||techreviewtech.com^
 ||techservices.trapptechnology.com^
 ||techsupport.balluff.com^
+||tecraccimk.com^
 ||tect.hellobya.cn^
 ||tectrixsnavvle.com^
 ||tecunonline.com^

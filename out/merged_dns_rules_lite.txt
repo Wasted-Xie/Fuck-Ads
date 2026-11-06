@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-05 17:00:16
-! Block rules: 154494
+! Generated: 2026-11-06 03:00:55
+! Block rules: 154502
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101831 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5962 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5968 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1917 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1915 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -61,6 +61,7 @@
 ||004f7f2622.d1b0ccfa6c.com^
 ||005ad66f1d.com^
 ||00609c257b.com^
+||007bq3y7e5.com^
 ||0082tv.net^
 ||0086555.com^
 ||009f45b51c.com^
@@ -19093,6 +19094,7 @@
 ||antiblock.info^
 ||antibot.me^
 ||antibot.wildberries.ru^
+||antibotchecker.pro^
 ||anticalonstand.com^
 ||anticipatedhatch.com^
 ||antico.openapp.link^
@@ -41106,6 +41108,7 @@
 ||ddfdgfgfghjhjbnnmklojhgfdghgbcvbnnmmdfgfvvvvbpvlgbdknfidgh.pages.dev^
 ||ddfnmo6ev4fd.cloudfront.net^
 ||ddfocqtbglcxt.website^
+||ddft5oqi7q.com^
 ||ddgjjj.com^
 ||ddhpwyarmgevw.online^
 ||ddhrzfgnufzoz.online^
@@ -43176,6 +43179,7 @@
 ||dkijbymomybjs.site^
 ||dkjn1bal2.com^
 ||dkjtppgsfoiqd.site^
+||dkkm83qokh.com^
 ||dkkqqhonowers.site^
 ||dklak.cam^
 ||dklbwqjzpscsj.space^
@@ -47444,7 +47448,6 @@
 ||effectivedisplayformats.com^
 ||effectivegatecpm.com^
 ||effectivegatetocontent.com^
-||effectively32.infinityfree.me^
 ||effectivemeasure.com^
 ||effectivemeasure.net^
 ||effectiveratecpm.com^
@@ -51897,6 +51900,7 @@
 ||fchmsorp.com^
 ||fchxrosjemara.site^
 ||fcifaypfepfvy.space^
+||fcitantibot.pro^
 ||fcizcj.burlingtonfreepress.com^
 ||fcjmpgwlxrzdv.space^
 ||fckbxx.com^
@@ -51914,6 +51918,7 @@
 ||fcm5kum7vbo.2pjcu7277jkcx67orn1qqkn6kelc.cyou^
 ||fcmatch.google.com^
 ||fcmatch.youtube.com^
+||fcmelle.de^
 ||fcmsplqtivmls.space^
 ||fcnbkyzloyfgx.site^
 ||fcnhjomrydsct.website^
@@ -53207,6 +53212,7 @@
 ||fiveplusthree.com^
 ||fivesidedsquare.com^
 ||fivstoinoedtu.online^
+||fivvdbnotgndfg.com^
 ||fiwcuorvjpzmx.site^
 ||fiwekmyzlnvjx.site^
 ||fiwinet.firmenwissen.com^
@@ -61357,6 +61363,7 @@
 ||hepburnpulsant.qpon^
 ||hepsiads-gw.hepsiburada.com^
 ||hepsiads-ui.hepsiburada.com^
+||heptagon54.com^
 ||heptix.net^
 ||heptyllacto.shop^
 ||heqipjkwjhnnn.online^
@@ -68523,6 +68530,7 @@
 ||itchingunethical.com^
 ||itchystraitsbuilder.com^
 ||itcleffaom.com^
+||itco.pe^
 ||itcojnlsswzwt.site^
 ||itcslocgtbamh.site^
 ||itdcizejjqwes.website^
@@ -69225,6 +69233,7 @@
 ||javtvnow.xyz^
 ||javvso.newone-shop.com^
 ||javyvkzwwsf.com^
+||jawaratekno.com^
 ||jawfallsalvesdodlet.cfd^
 ||jawigcqrumbez.space^
 ||jawlessacing.qpon^
@@ -80934,7 +80943,6 @@
 ||mailers.fusioncharts.com^
 ||mailers.unitedadlabel.com^
 ||mailgate.carte-gr.total.fr^
-||mailglobalsbg.com^
 ||mailgw.carte-gr.total.fr^
 ||mailiewarabi.cyou^
 ||mailin.carte-gr.total.fr^
@@ -84371,7 +84379,6 @@
 ||mergedlava.com^
 ||mergusgifts.com^
 ||meridadyeware.cyou^
-||meridia.rs^
 ||merisesdunts.cyou^
 ||meritvainlydarn.com^
 ||meritvolleyballturban.com^
@@ -92113,6 +92120,7 @@
 ||nurgyloyssaim.online^
 ||nurobi.info^
 ||nurryfegsobb.cfd^
+||nurse-trader.conohawing.com^
 ||nurse.fastaff.com^
 ||nurse.trustaff.com^
 ||nurseryillnesssensation.com^
@@ -105332,6 +105340,7 @@
 ||recommender-launcher.hismarttv.com^
 ||recompensemesmerize.com^
 ||recompenseointmentdaydream.com^
+||recon-rival.nyc.boxd.sh^
 ||reconditeprison.com^
 ||reconditerespect.com^
 ||reconsideroverweight.com^
@@ -106980,7 +106989,6 @@
 ||ripewing.com^
 ||ripgmuyfp.com^
 ||ripienoepirote.cfd^
-||rippled.cleverpondky.com^
 ||ripples.sh^
 ||riprapmocoanpriapus.cfd^
 ||riprlpruktwdz.space^
@@ -127738,6 +127746,7 @@
 ||techservices.trapptechnology.com^
 ||techsupport.balluff.com^
 ||techweb.iv.adsame.com^
+||tecraccimk.com^
 ||tect.hellobya.cn^
 ||tectrixsnavvle.com^
 ||tecunonline.com^
@@ -142359,7 +142368,6 @@
 ||weakerscripts.com^
 ||wealth.informabi.com^
 ||wealthcarecapital.actonservice.com^
-||wealthishealth.free.je^
 ||wealthn.com^
 ||weanersprionus.qpon^
 ||weanerssouls.com^
