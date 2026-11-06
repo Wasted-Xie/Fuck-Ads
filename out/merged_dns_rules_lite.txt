@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-06 11:15:48
-! Block rules: 154504
+! Generated: 2026-11-06 18:10:41
+! Block rules: 154515
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101831 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5967 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5971 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1915 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1920 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1053,7 +1053,6 @@
 ||178-83-121-204.cprapid.com^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1130,6 +1129,7 @@
 ||198b531aae.com^
 ||198game.com^
 ||198macros.org^
+||199.98.88.92.rev.sfr.net^
 ||199.teieparm.tv^
 ||1990tu.com^
 ||1991482557.rsc.cdn77.org^
@@ -5227,6 +5227,7 @@
 ||8fdmj67f5e.com^
 ||8feichai.com^
 ||8ff7b25bf4.4920b177cb.com^
+||8fjklyd4os.com^
 ||8foogy6qmq8vyf.cfd^
 ||8g2a7mifv.com^
 ||8girie4xi9h7j1o82y5re7bp22.cfd^
@@ -10932,6 +10933,7 @@
 ||acc.info.lumxpert.signify.com^
 ||acc.jiangsujiaxue.com^
 ||acc.marketing.adobedxcusteng.com^
+||acc.munber.life^
 ||accaii.com^
 ||accdab.net^
 ||accede.site^
@@ -15311,6 +15313,7 @@
 ||aeffe3nhrua5hua.com^
 ||aeg.offerup-apis.com^
 ||aegbkonatretu.online^
+||aegic.top^
 ||aegis.qq.com^
 ||aegis.trovo.live^
 ||aegmdwmvhesof.website^
@@ -19142,6 +19145,7 @@
 ||anuralicelike.shop^
 ||anuricridable.com^
 ||anuuhxdueoplv.site^
+||anvil13.com^
 ||anvilturpentineelitist.com^
 ||anwap.ru^
 ||anwdrumi.in^
@@ -29653,6 +29657,7 @@
 ||caixin.adsame.com^
 ||caixinimg.adsame.com^
 ||caiyifz.com^
+||caizom.eu.cc^
 ||cajcpnmhhqbjp.website^
 ||cajolespiquiatabific.qpon^
 ||cajonnickingplumps.qpon^
@@ -32389,7 +32394,6 @@
 ||citronsdaiva.cyou^
 ||citrusad.com^
 ||citrusad.net^
-||citrusmangos.ct.ws^
 ||city-ads.de^
 ||cityads.com^
 ||cityads.telus.net^
@@ -36775,6 +36779,7 @@
 ||crflqvwbmhhaqm.com^
 ||crgsugahlyzlu.site^
 ||crhdwghxjkbiulq.com^
+||crhhmd.top^
 ||crhvgfrhzsxmu.site^
 ||cricdensest.com^
 ||crickball.com^
@@ -40738,6 +40743,7 @@
 ||dax.yle.fi^
 ||dax3x3wqpt2q3.cloudfront.net^
 ||daxiu01.oss-accelerate.aliyuncs.com^
+||daxogon.top^
 ||daxtgseqgwbsn.space^
 ||daxtnnqlppovj.space^
 ||day13vh1xl0gh.cloudfront.net^
@@ -42637,6 +42643,7 @@
 ||dimmerlingowashable.com^
 ||dimml.io^
 ||dimmockvanglo.com^
+||dimonpert.com^
 ||dimoriceplot.com^
 ||dimpledplain.cyou^
 ||dimplesredness.cyou^
@@ -42895,7 +42902,6 @@
 ||disinheritguilewallow.com^
 ||disintegratehesitate.com^
 ||disipxnziqeql.website^
-||disk.360.yandex.ru^
 ||disk.accord1key.cn^
 ||diskaa.com^
 ||diskdem.cfd^
@@ -43937,6 +43943,7 @@
 ||donutsmpdupe.com^
 ||donutsmpdupes.lol^
 ||donutsmphackclient.netlify.app^
+||donutsmplarp.com^
 ||donutsmputilitys.netlify.app^
 ||doo6pwib3qngu.cloudfront.net^
 ||doo888x.com^
@@ -51879,6 +51886,7 @@
 ||fc.vodafone.de^
 ||fc.webmasterpro.de^
 ||fc.yahoo.com^
+||fc.yuo123.cc^
 ||fc2-ppv.xyz^
 ||fc2plus.site^
 ||fc2ppvdb.live^
@@ -67671,7 +67679,6 @@
 ||intelledox.actonservice.com^
 ||intelli-direct.com^
 ||intelli-shop.actonservice.com^
-||intelli-sys.co.zw^
 ||intelliad.de^
 ||intelliads.com^
 ||intellibanners.com^
@@ -69235,7 +69242,6 @@
 ||javtvnow.xyz^
 ||javvso.newone-shop.com^
 ||javyvkzwwsf.com^
-||jawaratekno.com^
 ||jawfallsalvesdodlet.cfd^
 ||jawigcqrumbez.space^
 ||jawlessacing.qpon^
@@ -71996,6 +72002,7 @@
 ||kcczyopijhtqk.space^
 ||kcdnbeczdhqea.space^
 ||kceksuitdqlnq.site^
+||kcfmfk.ltd^
 ||kcfq6g.ezrep55kkv42r9kmojc1t.cyou^
 ||kcgjjpqihtwly.online^
 ||kcgser.azialo.com^
@@ -73382,6 +73389,7 @@
 ||kryptonclientliista.lovable.app^
 ||kryptonclientplus.lovable.app^
 ||kryptonofficial.org^
+||kryptonv2-v1.lovable.app^
 ||kryvidmqdmlnm.space^
 ||krzckkukg.com^
 ||krzkasckoqvad.site^
@@ -73710,8 +73718,6 @@
 ||kwn91x0jke.top^
 ||kwnbtbkrqnltu.site^
 ||kwnqtbvozeejh.store^
-||kworker.eth.limo^
-||kworker.eth.link^
 ||kwpgeebopaqpn.site^
 ||kwphbfgfhehbm.online^
 ||kwpush.kuwo.cn^
@@ -99315,6 +99321,7 @@
 ||pluggedaskings.cfd^
 ||pluggedlabs.com^
 ||plugin-check.egret.com^
+||plugin-dex.forum^
 ||plugin-sync-upgrade-juui.hismarttv.com^
 ||plugin.2easydroid.com^
 ||plugin.me2day.net^
@@ -99522,6 +99529,7 @@
 ||po.funshion.com^
 ||po.ponant.com^
 ||po18.in^
+||po1c0tw4b2.com^
 ||po3x411qe3.com^
 ||poaceaestowth.qpon^
 ||poasauwhoothy.net^
@@ -101537,6 +101545,7 @@
 ||pub-81f2b77f5bc841c5ae64221394d67f53.r2.dev^
 ||pub-82f13abd468442119ddfb068e9f5ad33.r2.dev^
 ||pub-86c95a2c899a422ebe1c96f17984252f.r2.dev^
+||pub-8cd123cf29f247f8bf6c3b4507e3a5fb.r2.dev^
 ||pub-8ce03602555a436b80dbe377ce6f81de.r2.dev^
 ||pub-8d59738861b849e5a38b795cc17b1019.r2.dev^
 ||pub-8f07b712b50246eca5982f64bd695eea.r2.dev^
@@ -101551,7 +101560,6 @@
 ||pub-b98155d31c7b46ecbdf79eab5e37bae3.r2.dev^
 ||pub-bbbdebc2599c4d74b04c5d53e439f7a7.r2.dev^
 ||pub-bfc34934a91a4893817098f73415917a.r2.dev^
-||pub-c1aae4eecd22436e835dc3a91e470062.r2.dev^
 ||pub-c3947f4f3f2947e680cbf4cd2a18055d.r2.dev^
 ||pub-c6d653e19fd545129fdfd7d6f8cd8b17.r2.dev^
 ||pub-c9f0444b6f604c8d8f64366bb87d456d.r2.dev^
@@ -101905,6 +101913,7 @@
 ||pursuingconjunction.com^
 ||purtygoudy.com^
 ||purveyupcreep.cfd^
+||purxiy.org^
 ||purxiyclient.org^
 ||puschl.langhaar-schaeferhunde.com^
 ||puscomosca.com^
@@ -103880,7 +103889,6 @@
 ||qugesjhoibqjw.site^
 ||quhmzpwehvvkm.space^
 ||quick-counter.net^
-||quick-load.vercel.app^
 ||quick.openapp.link^
 ||quickads.net^
 ||quickclover.com^
@@ -122431,7 +122439,6 @@
 ||static.zctx8.com^
 ||static.zeusadx.com^
 ||static.zng.com^
-||static.zongheng.com^
 ||static.zorka.agency^
 ||static.zqwmedia.com^
 ||static0.exoclick.com^
@@ -129960,6 +129967,7 @@
 ||tools.ilewazy.pl^
 ||tools.indecentes-voisines.com^
 ||tools.kobieta.pl^
+||tools.lumma.cy^
 ||tools.mamotoja.pl^
 ||tools.medialab.go-static.info^
 ||tools.mojegotowanie.pl^
@@ -139643,6 +139651,7 @@
 ||vfzfi.voluumtrk.com^
 ||vg.aty.sohu.com^
 ||vg247-uk.vg247.com^
+||vg3z87oecg.com^
 ||vg4u8rvq65t6.com^
 ||vgavzy.spierandmackay.com^
 ||vgazda.krefel.be^
@@ -141526,6 +141535,7 @@
 ||w010w.com.cn^
 ||w07.xyz^
 ||w0973320589.go-static.info^
+||w0c42chjph.com^
 ||w0kaf7jjg.com^
 ||w0we.com^
 ||w0zk4pw7an.com^
@@ -144650,6 +144660,7 @@
 ||wpnsrv.com^
 ||wpnxiswpuyrfn.icu^
 ||wpoler.help^
+||wppluginindex.com^
 ||wppyub.mygenerator.com.au^
 ||wps-online.cn^
 ||wps.relateddigital.com^

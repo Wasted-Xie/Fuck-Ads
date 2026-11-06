@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-06 11:15:49
-! Block rules: 138806
+! Generated: 2026-11-06 18:10:42
+! Block rules: 138810
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101831
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5967
+!   - easylistchina [w=3] block 5971
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -3855,6 +3855,7 @@
 ||8fdmj67f5e.com^
 ||8feichai.com^
 ||8ff7b25bf4.4920b177cb.com^
+||8fjklyd4os.com^
 ||8foogy6qmq8vyf.cfd^
 ||8g2a7mifv.com^
 ||8girie4xi9h7j1o82y5re7bp22.cfd^
@@ -89150,6 +89151,7 @@
 ||po.funshion.com^
 ||po.ponant.com^
 ||po18.in^
+||po1c0tw4b2.com^
 ||po3x411qe3.com^
 ||poaceaestowth.qpon^
 ||poasauwhoothy.net^
@@ -126288,6 +126290,7 @@
 ||vfyuqjwausvfd.site^
 ||vfzfi.redirectvoluum.com^
 ||vg247-uk.vg247.com^
+||vg3z87oecg.com^
 ||vg4u8rvq65t6.com^
 ||vgavzy.spierandmackay.com^
 ||vgazda.krefel.be^
@@ -128040,6 +128043,7 @@
 ||w00tmedia.net^
 ||w010w.com.cn^
 ||w07.xyz^
+||w0c42chjph.com^
 ||w0kaf7jjg.com^
 ||w0we.com^
 ||w0zk4pw7an.com^
