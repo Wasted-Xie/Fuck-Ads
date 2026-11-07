@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-07 02:58:39
-! Block rules: 138815
+! Generated: 2026-11-07 09:42:23
+! Block rules: 138818
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101831
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5976
+!   - easylistchina [w=3] block 5979
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -1426,6 +1426,7 @@
 ||234y.com^
 ||235123.net^
 ||2398.pw^
+||23civw6cl.com^
 ||23cox7hu4.com^
 ||23dx6xe42.com^
 ||23hssicm9.de^
@@ -90808,6 +90809,7 @@
 ||ps1.reallifecam.to^
 ||ps2.camcaps.to^
 ||ps2.gamedl.qq.com^
+||ps2nsp6nz.com^
 ||psa1xoeve.com^
 ||psalmkahau.cfd^
 ||psaltauw.net^
@@ -92146,6 +92148,7 @@
 ||qdcode.com^
 ||qdcqpfhcnzzwe.space^
 ||qddlm.com^
+||qde87pge0.com^
 ||qdemrnocqeadj.site^
 ||qdgscaydqhmib.space^
 ||qdgyxhbasgytt.online^
