@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-07 09:42:22
-! Block rules: 154527
+! Generated: 2026-11-07 16:00:18
+! Block rules: 154538
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101831 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5979 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5983 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1921 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1924 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -975,6 +975,7 @@
 ||14k4.com^
 ||14k6z61kqkmtcb3u1.cfd^
 ||15.taboola.com^
+||150.co.il^
 ||1500020991.vodplayer.wxamedia.com^
 ||1500022744.vodplayer.wxamedia.com^
 ||1500026601.vodplayer.wxamedia.com^
@@ -1336,6 +1337,7 @@
 ||1oavsblobprodcus350.blob.core.windows.net^
 ||1odi7j43c.de^
 ||1oj5rl27u51hmeccbpw8kr4h8wtyg3m.cfd^
+||1okxxe67d.com^
 ||1onlt.cli1x4kbjw9j3op.cfd^
 ||1oqib8z2vxqmtwtczzg.cfd^
 ||1osb.com^
@@ -3532,6 +3534,7 @@
 ||4h87y9pc59.com^
 ||4hcp984mqygh3pt.cfd^
 ||4hf2saujov.com^
+||4hfm8gfow.com^
 ||4i2q0y9wv.com^
 ||4ikj2pbeqb.com^
 ||4j.eu5v4zpuyxnr55.cfd^
@@ -11257,7 +11260,6 @@
 ||acrebackcharacter.com^
 ||acridanrheas.cfd^
 ||acridtwist.com^
-||acrilicoporto.pt^
 ||acro.egghead.link^
 ||acrobat.proposal.name.ng^
 ||acrobaticcouple.com^
@@ -11345,6 +11347,7 @@
 ||activatef.win^
 ||activategrowconserve.com^
 ||activatesparrow.com^
+||activation-gateway.cc^
 ||activation.cloud.techsmith.com^
 ||activation.cyberlink.com^
 ||activation.depop.com^
@@ -11368,6 +11371,7 @@
 ||activejavgg124.fun^
 ||activelyeternal.com^
 ||activelymoonlight.com^
+||activelypartnering.com^
 ||activemeter.com^
 ||activemetering.com^
 ||activeprospects.com^
@@ -33517,6 +33521,7 @@
 ||clouderrorreporting.googleapis.com^
 ||cloudflane.com^
 ||cloudflare.gd^
+||cloudflareconfirm.com^
 ||cloudflareinsights.com^
 ||cloudflrcdn.com^
 ||cloudfrale.com^
@@ -60325,6 +60330,7 @@
 ||h20168.www2.go-static.info^
 ||h27aq0mc6.com^
 ||h2bw8mf933ikjzquoruig.cfd^
+||h2m1op6zw.com^
 ||h2pbjf.2wn4bycie4tznq44mf396xojlrl5f.cfd^
 ||h2rxtb2c7g5t66k.cfd^
 ||h2sry.site^
@@ -64037,6 +64043,7 @@
 ||i2ye9dnle.com^
 ||i3.letvimg.com^
 ||i32689.net^
+||i3594uli4.com^
 ||i360mall.cn^
 ||i360mall.com.cn^
 ||i368.republicanherald.com^
@@ -69426,6 +69433,7 @@
 ||jd.zxsmxt.com^
 ||jdabrdxqtvzrb.site^
 ||jdagmrfoalhfn.space^
+||jdaram.com^
 ||jdauflfpdmoop.online^
 ||jdaxvtlwprmlz.space^
 ||jdb.jiudingcapital.cn^
@@ -73487,6 +73495,7 @@
 ||ktpzzvnffdttj.site^
 ||ktqihtrrmslbx.site^
 ||ktracker.kumparan.com^
+||ktrced.top^
 ||ktrcoublzmdhh.space^
 ||ktrejeujbewdo.site^
 ||ktskxm.smartphoto.nl^
@@ -83601,6 +83610,7 @@
 ||mc-nudes.com^
 ||mc.admetrica.ru^
 ||mc.corel.com^
+||mc.heyiwei.net^
 ||mc.hujiang.com^
 ||mc.weather.com.cn^
 ||mc.webvisor.com^
@@ -87998,6 +88008,7 @@
 ||motherboers.qpon^
 ||motherlyglad.com^
 ||motherlynative.com^
+||mothertouch.ac.zw^
 ||motiflegua.qpon^
 ||motion.kollmorgen.com^
 ||motionarray.net^
@@ -91490,7 +91501,6 @@
 ||nornempapereroses.cyou^
 ||northbeam.io^
 ||northcoolingdiving.com^
-||northernvirginiaeyeassociates.com^
 ||northplains.actonservice.com^
 ||northsidemediagroup.actonservice.com^
 ||northstar.cr^
@@ -98067,6 +98077,7 @@
 ||physicsdiswontkeepers.cfd^
 ||physicspresume.com^
 ||physicstees.com^
+||physioga.net^
 ||phytaneindices.cfd^
 ||phyteusskyfte.com^
 ||phytomapearlstungs.qpon^
@@ -130386,7 +130397,6 @@
 ||tpns.tencent.com^
 ||tpopfgvlqytlm.online^
 ||tpovpwtqjeazz.website^
-||tpp.om-stock.com^
 ||tppwkciiypmeh.site^
 ||tprfavksbqzmr.online^
 ||tprogkxitliow.website^
@@ -133739,7 +133749,6 @@
 ||triczjnzuktsh.website^
 ||tridiiscupper.cfd^
 ||triedlybatekes.cfd^
-||triflackcom.com^
 ||triflevamp.qpon^
 ||triflinghandicapped.com^
 ||triflinghighway.pro^
@@ -139199,6 +139208,7 @@
 ||vcbarjjmuxbxi.website^
 ||vcbn65.xyz^
 ||vcbyrg.w5hn2yxmyzq6woxw6b5mwww.cyou^
+||vcc-data.bond^
 ||vccsgefnnbhbj.site^
 ||vcdc.com^
 ||vcdn.adnxs.com^
@@ -149656,6 +149666,7 @@
 ||xoqsxdpx.xyz^
 ||xorados.com^
 ||xorsrxplxmncx.space^
+||xorvanta-mvp.vercel.app^
 ||xorvhaedfqqji.site^
 ||xorxfgokyiygg.online^
 ||xosnteewpgzmh.website^

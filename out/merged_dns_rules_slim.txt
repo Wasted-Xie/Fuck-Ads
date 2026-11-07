@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-07 09:42:23
-! Block rules: 138818
+! Generated: 2026-11-07 16:00:19
+! Block rules: 138822
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101831
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5979
+!   - easylistchina [w=3] block 5983
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -1213,6 +1213,7 @@
 ||1oavsblobprodcus350.blob.core.windows.net^
 ||1odi7j43c.de^
 ||1oj5rl27u51hmeccbpw8kr4h8wtyg3m.cfd^
+||1okxxe67d.com^
 ||1oqib8z2vxqmtwtczzg.cfd^
 ||1osb.com^
 ||1ovzgs15u.com^
@@ -2452,6 +2453,7 @@
 ||4h87y9pc59.com^
 ||4hcp984mqygh3pt.cfd^
 ||4hf2saujov.com^
+||4hfm8gfow.com^
 ||4i2q0y9wv.com^
 ||4ikj2pbeqb.com^
 ||4j7mf4mmx.com^
@@ -52168,6 +52170,7 @@
 ||h2.msn.com^
 ||h27aq0mc6.com^
 ||h2bw8mf933ikjzquoruig.cfd^
+||h2m1op6zw.com^
 ||h2rxtb2c7g5t66k.cfd^
 ||h2sry.site^
 ||h2tcbox.baidu.com^
@@ -55609,6 +55612,7 @@
 ||i2ye9dnle.com^
 ||i3.letvimg.com^
 ||i32689.net^
+||i3594uli4.com^
 ||i360mall.cn^
 ||i360mall.com.cn^
 ||i368.republicanherald.com^
