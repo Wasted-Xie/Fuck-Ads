@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-08 03:44:11
-! Block rules: 139422
+! Generated: 2026-11-08 10:57:36
+! Block rules: 139428
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102459
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5988
+!   - easylistchina [w=3] block 5994
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -1211,6 +1211,7 @@
 ||1nvnkyg65.com^
 ||1nvxl968le.com^
 ||1ny5gaksj8.com^
+||1o057bolbb.com^
 ||1o0g85u7k1.com^
 ||1o1nuqbjea.com^
 ||1o23ptd0sv.com^
@@ -1281,6 +1282,7 @@
 ||1ts18.top^
 ||1ts19.top^
 ||1ts24.top^
+||1ttxjgo7fd.com^
 ||1tvg524vih.com^
 ||1tyc1.com^
 ||1u6hvoykk3.com^
@@ -2013,6 +2015,7 @@
 ||37mnm.com^
 ||37nu0riwfd.com^
 ||37pk49.com^
+||37rk0rihje.com^
 ||37see.com^
 ||37shrmvlju.com^
 ||37wan.com^
@@ -40302,6 +40305,7 @@
 ||edwmpt.com^
 ||edxokpyyqycra.space^
 ||edxwcxnfpukze.site^
+||edyr2ip7zg.com^
 ||edzusegqavqik.store^
 ||edzvubkgsokfg.online^
 ||ee.0pi84.cn^
@@ -56336,6 +56340,7 @@
 ||ifactz.com^
 ||ifadnfhgaozlo.store^
 ||ifaqirpgjntoc.site^
+||ifawj9hvvl.com^
 ||ifb33zuqc.com^
 ||ifbuvtzpalzxe.website^
 ||ifc58.com^
@@ -69693,6 +69698,7 @@
 ||lp3.dentsplysirona.com^
 ||lp340p7czf.com^
 ||lp4.io^
+||lp70zi3ou3.com^
 ||lp780937a.com^
 ||lp7n.cy6px.com^
 ||lpaitrekoe.com^
