@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-07 23:45:09
-! Block rules: 155106
+! Generated: 2026-11-08 03:44:10
+! Block rules: 155115
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102459 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5985 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5988 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1924 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1927 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -363,6 +363,7 @@
 ||0tqxca0k35.com^
 ||0u9w05cxo.com^
 ||0v0qj9fnwf.top^
+||0vpekhux1f.com^
 ||0wk6gdkg8r.com^
 ||0wpfe0duo.com^
 ||0x01n2ptpuz3.com^
@@ -1053,9 +1054,9 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -3547,6 +3548,7 @@
 ||4jh1le34m.com^
 ||4jnzhl0d0.com^
 ||4k.fanza18r.online^
+||4k1x3mkrus.com^
 ||4k28959nr2pfj8cinwu5x.rest^
 ||4k3nzijpm0.com^
 ||4k4iard.tupek.store^
@@ -31967,7 +31969,6 @@
 ||cheapmachinerywail.com^
 ||cheapromaunt.com^
 ||cheat-games-page.goasrv.com^
-||cheatclients.com^
 ||cheateecronus.com^
 ||cheatingagricultural.com^
 ||cheatmap.goasrv.com^
@@ -35494,6 +35495,7 @@
 ||contiamo.com^
 ||contididit.conti.pk^
 ||contineljs.com^
+||continentalgroup.net.in^
 ||continew.go-static.info^
 ||contingentsolemnlykettle.com^
 ||continue-download.com^
@@ -44231,6 +44233,7 @@
 ||down.xiazaidc.com^
 ||down.xiazaiyuan.net^
 ||down.zuoyexingchen.com^
+||down10d.zol.com.cn^
 ||downali.game.uc.cn^
 ||downbyrillowtobacco.qpon^
 ||downeconomywp.advancedtech.com^
@@ -48868,6 +48871,7 @@
 ||en.goaserv.com^
 ||en.jobs.goasrv.com^
 ||en.rtnews.pro^
+||en.taichuan.com^
 ||enablement.vmware.com^
 ||enablerbuncal.cfd^
 ||enablis.actonservice.com^
@@ -53472,7 +53476,6 @@
 ||fknxvqwumtbul.space^
 ||fkohxtufsvffz.online^
 ||fkondate.com^
-||fkoqonr2vgbsw7qu.public.blob.vercel-storage.com^
 ||fkozajhehnjjt.store^
 ||fkpfgfjmbtacq.space^
 ||fkqfsenwhfhge.online^
@@ -55565,6 +55568,7 @@
 ||fyzfvrnfmtzxm.online^
 ||fyznhp8inq9x.jaywilsonwebsolutions.com^
 ||fz.letv.com^
+||fz.tiansys.cn^
 ||fz1j7l8n2.com^
 ||fz55vq.site^
 ||fz6g5l9v8kmnrq.cfd^
@@ -68771,6 +68775,7 @@
 ||itchingunethical.com^
 ||itchystraitsbuilder.com^
 ||itcleffaom.com^
+||itco.pe^
 ||itcojnlsswzwt.site^
 ||itcslocgtbamh.site^
 ||itdcizejjqwes.website^
@@ -69542,6 +69547,7 @@
 ||jbkueagfgwphk.online^
 ||jblaptokniuuu.website^
 ||jbldfugqruigf.website^
+||jbnizvqmwmnldg.com^
 ||jbnkvvvgawjdd.site^
 ||jboppyhawqzfo.online^
 ||jbowosrjcuqgu.space^
@@ -79277,6 +79283,7 @@
 ||lulumao.com.cn^
 ||lulusbardo.qpon^
 ||lulusdunair.cyou^
+||lumacrea.com^
 ||lumaktoys.com^
 ||lumatag.co.uk^
 ||lumberamount.com^
@@ -84780,7 +84787,6 @@
 ||meteolbiyrmjo.online^
 ||meteor-sites-one.vercel.app^
 ||meteoraddons.net^
-||meteorclient.shop^
 ||meteorclient.us^
 ||meteorclientplus.com^
 ||meteorclients.com^
@@ -90352,6 +90358,7 @@
 ||ndi.nuance.com^
 ||ndifzhemlnlop.space^
 ||ndigitals.in^
+||ndjvmuvkoahnopfqn2jpva.on.drv.tw^
 ||ndkdobohmlqxw.website^
 ||ndm-onead.cdn.hinet.net^
 ||ndm.goasrv.com^
@@ -101908,7 +101915,6 @@
 ||pu3xxlqjr.com^
 ||puamwfdfltwzp.space^
 ||puata.info^
-||pub-00d54ae289e84e93a3c8640fb2301c5f.r2.dev^
 ||pub-00f9bb8acaec41e6ba904da7d4d8e89a.r2.dev^
 ||pub-0216fa08b2b94e129cb9e002cf7cb1f4.r2.dev^
 ||pub-0462440f54f44b9fb3474df61e32d6ba.r2.dev^
@@ -125735,6 +125741,7 @@
 ||swiftemergency.pro^
 ||swiftenwhindle.com^
 ||swiftfleta.cfd^
+||swiftfusion.tech^
 ||swiftintro.com^
 ||swiftladle.com^
 ||swiftlymonumentcheating.com^
@@ -130845,6 +130852,7 @@
 ||tpns.tencent.com^
 ||tpopfgvlqytlm.online^
 ||tpovpwtqjeazz.website^
+||tpp.om-stock.com^
 ||tppwkciiypmeh.site^
 ||tprfavksbqzmr.online^
 ||tprogkxitliow.website^
@@ -144354,6 +144362,7 @@
 ||windowsvow.com^
 ||windowthink.com^
 ||windowylarvule.com^
+||windriversfiles.imeitools.com^
 ||winds11.site^
 ||windscreenthomas.com^
 ||windsorflavo.qpon^

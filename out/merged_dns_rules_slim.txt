@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-07 23:45:11
-! Block rules: 139419
+! Generated: 2026-11-08 03:44:11
+! Block rules: 139422
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102459
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5985
+!   - easylistchina [w=3] block 5988
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -315,6 +315,7 @@
 ||0tqxca0k35.com^
 ||0u9w05cxo.com^
 ||0v0qj9fnwf.top^
+||0vpekhux1f.com^
 ||0wk6gdkg8r.com^
 ||0wpfe0duo.com^
 ||0x01n2ptpuz3.com^
@@ -2465,6 +2466,7 @@
 ||4jaehnfqizyx.controlconceptsusa.com^
 ||4jh1le34m.com^
 ||4jnzhl0d0.com^
+||4k1x3mkrus.com^
 ||4k28959nr2pfj8cinwu5x.rest^
 ||4k3nzijpm0.com^
 ||4k4zbfclm.com^
@@ -60819,6 +60821,7 @@
 ||jbkueagfgwphk.online^
 ||jblaptokniuuu.website^
 ||jbldfugqruigf.website^
+||jbnizvqmwmnldg.com^
 ||jbnkvvvgawjdd.site^
 ||jboppyhawqzfo.online^
 ||jbowosrjcuqgu.space^
