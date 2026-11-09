@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-08 16:55:03
-! Block rules: 155132
+! Generated: 2026-11-09 06:58:36
+! Block rules: 155136
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102459 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5994 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6000 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1929 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1919 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1054,7 +1054,6 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -5608,6 +5607,7 @@
 ||9bce82ca1a.com^
 ||9bd66765d7.0214217ebc.com^
 ||9bdb.pandasuite.io^
+||9bialak0c.com^
 ||9c03dda67d.8c66b76e9b.com^
 ||9c69fe7c20.com^
 ||9c6d95b6b3.com^
@@ -5766,6 +5766,7 @@
 ||9wdjf9va.xyz^
 ||9wee.com^
 ||9wipvg96g6t7ljh.7woqerclqww6j678em.cfd^
+||9wkvbvm90.com^
 ||9wmy9.iqjh32nrfhguxpucqo4ro7hr9vyg.cyou^
 ||9wushuo.com^
 ||9ww.h5xz4c5mj2f833n448nebgoq531jwb.cyou^
@@ -11270,7 +11271,6 @@
 ||acrebackcharacter.com^
 ||acridanrheas.cfd^
 ||acridtwist.com^
-||acrilicoporto.pt^
 ||acro.egghead.link^
 ||acrobat.proposal.name.ng^
 ||acrobaticcouple.com^
@@ -32272,7 +32272,6 @@
 ||christiantop1000.com^
 ||christoptwo.go-static.info^
 ||chromaprotestmelch.cyou^
-||chrome-windows.ru^
 ||chrome.browserdownloads.ru^
 ||chrome.windows-browser.net^
 ||chromylviewy.com^
@@ -41149,7 +41148,6 @@
 ||dcv4p460uqa46.cloudfront.net^
 ||dcvssaited.com^
 ||dcvxhdgupnvau.space^
-||dcwblida.dz^
 ||dcwelerqwrbwe.site^
 ||dcwnhlzrvnlnj.website^
 ||dcwxbgqsmyvsn.site^
@@ -45329,6 +45327,7 @@
 ||du2uh7rq0r0d3.cloudfront.net^
 ||du4rq1xqh3i1k.cloudfront.net^
 ||du99h8anpnevg.cloudfront.net^
+||du9kcdusj.com^
 ||duafznjfjcpdt.space^
 ||dualismaflower.qpon^
 ||dualping.com^
@@ -56571,7 +56570,6 @@
 ||generaltracking.de^
 ||generation456.com^
 ||generation74.com^
-||generationalwealthtraders.com^
 ||generationdissolvedplease.com^
 ||generationwindscreen.com^
 ||generic.gmx.net^
@@ -61473,6 +61471,7 @@
 ||heiw99ovji.com^
 ||heixidor.com^
 ||hej.henriksommerfeld.se^
+||hejdlnmicpblpm.com^
 ||hekhnn.turnkeyvr.com^
 ||hekowutus.com^
 ||heky0uxng.com^
@@ -63913,6 +63912,7 @@
 ||hxuaodojgvxbt.website^
 ||hxugfgodnrlkm.space^
 ||hxuquhggjucll.online^
+||hxuxv7vx0.com^
 ||hxyeghyjvkqga.site^
 ||hxyzkpzzbzekl.site^
 ||hxzdmcgrkmxsz.website^
@@ -67924,6 +67924,7 @@
 ||intelledox.actonservice.com^
 ||intelli-direct.com^
 ||intelli-shop.actonservice.com^
+||intelli-sys.co.zw^
 ||intelliad.de^
 ||intelliads.com^
 ||intellibanners.com^
@@ -68790,6 +68791,7 @@
 ||itchingunethical.com^
 ||itchystraitsbuilder.com^
 ||itcleffaom.com^
+||itco.pe^
 ||itcojnlsswzwt.site^
 ||itcslocgtbamh.site^
 ||itdcizejjqwes.website^
@@ -79297,7 +79299,6 @@
 ||lulumao.com.cn^
 ||lulusbardo.qpon^
 ||lulusdunair.cyou^
-||lumacrea.com^
 ||lumaktoys.com^
 ||lumatag.co.uk^
 ||lumberamount.com^
@@ -83912,6 +83913,7 @@
 ||mbyhanczuvsfo.space^
 ||mbytyeonamnqc.space^
 ||mbyvfmsxrdbigpk.com^
+||mc-goobaclient.netlify.app^
 ||mc-modhub.vercel.app^
 ||mc-nudes.com^
 ||mc.admetrica.ru^
@@ -88284,7 +88286,6 @@
 ||mortimeracquire.com^
 ||mortimersocalledvolume.com^
 ||mortypush.com^
-||moruk.xyz^
 ||morularkubera.com^
 ||morwongreliverserran.qpon^
 ||mosa86.com^
@@ -90373,6 +90374,7 @@
 ||ndi.nuance.com^
 ||ndifzhemlnlop.space^
 ||ndigitals.in^
+||ndjvmuvkoahnopfqn2jpva.on.drv.tw^
 ||ndkdobohmlqxw.website^
 ||ndm-onead.cdn.hinet.net^
 ||ndm.goasrv.com^
@@ -101146,7 +101148,6 @@
 ||privilegedturmoilanew.com^
 ||privilegemoreovermarijuana.com^
 ||privoar121.net^
-||privrawmirai.privnetwork.tech^
 ||privy.com^
 ||privymktg.com^
 ||prizeadultery.com^
@@ -101381,6 +101382,7 @@
 ||prohibitedarcher.com^
 ||prohibitedhesitatetransgress.com^
 ||proishestviyagoodru.vercel.app^
+||project360.hr^
 ||projecta-common-1258344701.file.myqcloud.com^
 ||projectagora.net^
 ||projectagora.s3.amazonaws.com^
@@ -122919,6 +122921,7 @@
 ||static.zctx8.com^
 ||static.zeusadx.com^
 ||static.zng.com^
+||static.zongheng.com^
 ||static.zorka.agency^
 ||static.zqwmedia.com^
 ||static0.exoclick.com^
@@ -126207,7 +126210,6 @@
 ||systemsfromhybrid.net^
 ||systemssummit.com^
 ||systyleeffront.cyou^
-||sysupdate.online^
 ||sytcyf.com^
 ||sytnuxvfhrpvm.space^
 ||sytuzk.nissanvimontlaval.com^
@@ -137145,6 +137147,7 @@
 ||understandwaspish.com^
 ||understatedplace.com^
 ||understoodocean.com^
+||undersurface08.com^
 ||undertale-underfell.go-static.info^
 ||undertone.com^
 ||undertow52.top^
@@ -153782,6 +153785,7 @@
 ||zhihu-web-analytics.zhihu.com.eo.dnse0.com^
 ||zhihu.xmcimg.com^
 ||zhihuiduijian.com^
+||zhikey.com^
 ||zhilingshidai.com^
 ||zhimaad.cn^
 ||zhimaly.com^

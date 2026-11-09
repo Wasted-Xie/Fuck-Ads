@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-08 10:57:36
-! Block rules: 139428
+! Generated: 2026-11-09 06:58:37
+! Block rules: 139434
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102459
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5994
+!   - easylistchina [w=3] block 6000
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -4198,6 +4198,7 @@
 ||9b6z324iy1zjr.jl8m7gvnqnfi2m43.cyou^
 ||9bce82ca1a.com^
 ||9bdb.pandasuite.io^
+||9bialak0c.com^
 ||9c69fe7c20.com^
 ||9c6d95b6b3.com^
 ||9c786ff5cd.com^
@@ -4334,6 +4335,7 @@
 ||9wad.com^
 ||9wdjf9va.xyz^
 ||9wee.com^
+||9wkvbvm90.com^
 ||9wmy9.iqjh32nrfhguxpucqo4ro7hr9vyg.cyou^
 ||9wushuo.com^
 ||9ww.h5xz4c5mj2f833n448nebgoq531jwb.cyou^
@@ -38364,6 +38366,7 @@
 ||du2uh7rq0r0d3.cloudfront.net^
 ||du4rq1xqh3i1k.cloudfront.net^
 ||du99h8anpnevg.cloudfront.net^
+||du9kcdusj.com^
 ||duafznjfjcpdt.space^
 ||dualismaflower.qpon^
 ||dualping.com^
@@ -53262,6 +53265,7 @@
 ||heiw99ovji.com^
 ||heixidor.com^
 ||hej.henriksommerfeld.se^
+||hejdlnmicpblpm.com^
 ||hekhnn.turnkeyvr.com^
 ||hekowutus.com^
 ||heky0uxng.com^
@@ -55542,6 +55546,7 @@
 ||hxuaodojgvxbt.website^
 ||hxugfgodnrlkm.space^
 ||hxuquhggjucll.online^
+||hxuxv7vx0.com^
 ||hxyeghyjvkqga.site^
 ||hxyzkpzzbzekl.site^
 ||hxzdmcgrkmxsz.website^
@@ -124042,6 +124047,7 @@
 ||understandwaspish.com^
 ||understatedplace.com^
 ||understoodocean.com^
+||undersurface08.com^
 ||undertone.com^
 ||undertow52.top^
 ||undertow88.com^
