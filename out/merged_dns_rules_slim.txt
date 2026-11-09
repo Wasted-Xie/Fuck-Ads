@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-09 06:58:37
-! Block rules: 139434
+! Generated: 2026-11-09 17:14:13
+! Block rules: 139438
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102459
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6000
+!   - easylistchina [w=3] block 6004
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -31382,6 +31382,7 @@
 ||cvoyrn.astotel.com^
 ||cvpdkmzxvnzng.online^
 ||cvpl9qbz6.com^
+||cvpovse.com^
 ||cvpthv.vipoutlet.com^
 ||cvqfwzrnkvtun.website^
 ||cvqpuusbccduh.online^
@@ -44629,6 +44630,7 @@
 ||fdc9cefe70.com^
 ||fdcfbvikm.com^
 ||fdd.tianhuafund.cn^
+||fddmimp37.com^
 ||fdelphaswcealifornica.com^
 ||fdetolgput.com^
 ||fdf.awefweegfxwergexw.icu^
@@ -64948,6 +64950,7 @@
 ||kurtasdemarch.com^
 ||kurxabjwulu.in^
 ||kushou.com^
+||kusjw4wqj.com^
 ||kussobaronneenticed.qpon^
 ||kuusay.yalispor.com.tr^
 ||kuvirixa.com^
@@ -74423,6 +74426,7 @@
 ||mbdspduyqevqd.website^
 ||mbelia.underarmour.co.uk^
 ||mbeoxt.perfumesclub.pt^
+||mbfo10wjf.com^
 ||mbgrgkhawfpyo.website^
 ||mbhgnrcwhnatt.online^
 ||mbid.marfeelrev.com^
