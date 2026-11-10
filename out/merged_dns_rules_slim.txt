@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-10 07:56:09
-! Block rules: 139449
+! Generated: 2026-11-10 16:00:26
+! Block rules: 139453
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102459
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6015
+!   - easylistchina [w=3] block 6019
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -856,6 +856,7 @@
 ||1360.com.cn^
 ||136ckqmwc.com^
 ||13728c1810.com^
+||137ioe2krr.com^
 ||137kfj65k.de^
 ||138124e964.eda4dc1ffe.com^
 ||13874bb1da.com^
@@ -4300,6 +4301,7 @@
 ||9nvj3swk9l.com^
 ||9nwplq7y2o.com^
 ||9nzrfglryy.com^
+||9o2r9h0ket.com^
 ||9obmf866d.com^
 ||9ohyhwyt4qrh.etzej1fu6q755opovuwz.cyou^
 ||9ojmoy453qqpoz6x83ve7.rest^
@@ -66007,6 +66009,7 @@
 ||ld.mediaget.com^
 ||ld.za9mnx.com^
 ||ld1qwww3kj.com^
+||ld7v2xm6ti.com^
 ||ldaqsvgwamnwi.com^
 ||ldckmk.divarese.com.tr^
 ||ldcumoqpdhule.store^
@@ -71630,6 +71633,7 @@
 ||m78vxjm35d.com^
 ||m79pbmk1bo9knh1rhbi27rnch2cw55rff4.rest^
 ||m7hkvwwl.xyz^
+||m7xud9jqpu.com^
 ||m8.iu65v9f18fgifekcv1p3gg.cyou^
 ||m81jmqmn.ru^
 ||m81mfege2.com^

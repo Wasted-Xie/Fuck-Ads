@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-10 07:56:07
-! Block rules: 155157
+! Generated: 2026-11-10 16:00:24
+! Block rules: 155167
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102459 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6015 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6019 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1929 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1935 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -933,6 +933,7 @@
 ||136ckqmwc.com^
 ||13713e71f7.9490517299.com^
 ||13728c1810.com^
+||137ioe2krr.com^
 ||137kfj65k.de^
 ||138124e964.eda4dc1ffe.com^
 ||13874bb1da.com^
@@ -1054,7 +1055,6 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -1859,7 +1859,6 @@
 ||2gg6ebbhh.de^
 ||2gnc.com^
 ||2goelectricity.cloud^
-||2goelectricity.co.za^
 ||2gvnr9sx9.com^
 ||2h4els889.com^
 ||2h6skj2da.de^
@@ -5729,6 +5728,7 @@
 ||9nwplq7y2o.com^
 ||9nxp54lhhoez.vbnji2n837hiogntp6t.cfd^
 ||9nzrfglryy.com^
+||9o2r9h0ket.com^
 ||9obmf866d.com^
 ||9ohyhwyt4qrh.etzej1fu6q755opovuwz.cyou^
 ||9ojmoy453qqpoz6x83ve7.rest^
@@ -10420,6 +10420,7 @@
 ||abc.douguo.com^
 ||abc.eastlady.cn^
 ||abc.espritshop.pl^
+||abc.highpnk.life^
 ||abc.hkepc.com^
 ||abc.hkepc.net^
 ||abc.kfyg.xyz^
@@ -14844,6 +14845,7 @@
 ||adtube.media^
 ||adtumxjckljej.space^
 ||adtx2.cn^
+||adubuildersco.com^
 ||adui.tg.meitu.com^
 ||adulateearring.com^
 ||adulateprofessnorth.com^
@@ -19460,7 +19462,6 @@
 ||api-cn.cdo.heytapmobi.com^
 ||api-data-collection.insta360.cn^
 ||api-deal.kechenggezi.com^
-||api-dns.org^
 ||api-dynhost.hismarttv.com^
 ||api-es.doglobal.net^
 ||api-eu.carrotquest.app^
@@ -21240,7 +21241,6 @@
 ||apssdc.epoise.com^
 ||apssdctest.epoise.com^
 ||apt-shine.com^
-||apt-update.com^
 ||aptare.actonservice.com^
 ||apteriapithos.com^
 ||aptitudebruise.com^
@@ -21427,7 +21427,6 @@
 ||archived.first.eloqua.extrahop.com^
 ||archived.learn.eloqua.extrahop.com^
 ||archivescane.com^
-||archivoscrosoft.com^
 ||archletsnobol.cyou^
 ||archonsomital.shop^
 ||archontsmacked.qpon^
@@ -27664,6 +27663,7 @@
 ||bratarfood.com^
 ||brationalfilarded.com^
 ||bratusferramentas.grupomoltz.com.br^
+||bravamktdigital.com.br^
 ||bravantrent.eccocar.com^
 ||braveagatarhamnus.cyou^
 ||bravebone.com^
@@ -31885,6 +31885,7 @@
 ||chantcompass9.com^
 ||chaojilamei.cn^
 ||chaoku.oss-cn-chengdu.aliyuncs.com^
+||chaomoinguoi.duckdns.org^
 ||chaopeng1.cn^
 ||chaosmonitor.com^
 ||chaoxianleather.ltd^
@@ -32191,6 +32192,7 @@
 ||chipnarrativefatherinlaw.com^
 ||chipperisle.com^
 ||chipspasteprowl.com^
+||chiptune.com^
 ||chiq-cloud.com^
 ||chirkgiulio.cyou^
 ||chirksreefers.cyou^
@@ -34313,6 +34315,7 @@
 ||cointraffic.io^
 ||coinunspedkartel.cyou^
 ||coinwebmining.com^
+||coinworknew.com^
 ||coinzilla.io^
 ||coinzillatag.com^
 ||coisj3nil.com^
@@ -40851,7 +40854,6 @@
 ||dawsbumbleddefused.qpon^
 ||dax.yle.fi^
 ||dax3x3wqpt2q3.cloudfront.net^
-||daxiahealthcare.com^
 ||daxiu01.oss-accelerate.aliyuncs.com^
 ||daxogon.top^
 ||daxtgseqgwbsn.space^
@@ -41749,6 +41751,7 @@
 ||demo-mktg.vodafone.com^
 ||demo.adsame.com^
 ||demo.emaillpb.adobe.com^
+||demo.eugas8job.online^
 ||demo.gomi.do^
 ||demo.jointreport-switch.com^
 ||demo.moolsap.com^
@@ -43974,6 +43977,7 @@
 ||dolphin4.ftimg.net^
 ||dolphinpaper.com^
 ||dolphinsrule.com^
+||dolphsa.cloud^
 ||dolpxahogqsqk.space^
 ||dolrfm.fotoregistro.com.br^
 ||dolu.goasrv.com^
@@ -48828,6 +48832,7 @@
 ||empaquatlbsgn.space^
 ||emparkfluky.shop^
 ||empdat.com^
+||empergr.qpon^
 ||emperor.go-static.info^
 ||emperorinspiring.com^
 ||emperorzosma.qpon^
@@ -49896,7 +49901,6 @@
 ||essiawywovudm.space^
 ||essic.goaserv.com^
 ||essivesirshipcontext.cfd^
-||essizs.com^
 ||essmnx.edreams.ch^
 ||establishedclevermatters.com^
 ||establishscarcely.com^
@@ -51071,7 +51075,6 @@
 ||exponent69.com^
 ||exponential.com^
 ||exporder-patuility.com^
-||export.kesug.com^
 ||export.voffka.com^
 ||exportdialog.com^
 ||exportseats.com^
@@ -51102,6 +51105,7 @@
 ||ext.goguardian.com^
 ||ext.host-tracker.com^
 ||ext.spinwheelapp.com^
+||ext.xweny.lol^
 ||extend.tv^
 ||extendedcontaminaterigorous.com^
 ||extender.goasrv.com^
@@ -62663,6 +62667,7 @@
 ||hoasvvtyavmbn.store^
 ||hobbetexcud.shop^
 ||hobblertactile.cfd^
+||hobobot.net^
 ||hobxlluzuvifk.website^
 ||hobypcdcsidnc.online^
 ||hocgeese.com^
@@ -62992,7 +62997,6 @@
 ||hosting.miarroba.info^
 ||hosting24.com^
 ||hostingcloud.racing^
-||hostingcloud.science^
 ||hostingcloud.trade^
 ||hostingcloud.win^
 ||hostip.info^
@@ -75029,6 +75033,7 @@
 ||ld.mediaget.com^
 ||ld.za9mnx.com^
 ||ld1qwww3kj.com^
+||ld7v2xm6ti.com^
 ||ldaqsvgwamnwi.com^
 ||ldckmk.divarese.com.tr^
 ||ldcumoqpdhule.store^
@@ -80968,6 +80973,7 @@
 ||m78vxjm35d.com^
 ||m79pbmk1bo9knh1rhbi27rnch2cw55rff4.rest^
 ||m7hkvwwl.xyz^
+||m7xud9jqpu.com^
 ||m8.iu65v9f18fgifekcv1p3gg.cyou^
 ||m81jmqmn.ru^
 ||m81mfege2.com^
@@ -84333,7 +84339,6 @@
 ||media-advcycle.imgsmail.ru^
 ||media-analytic.com^
 ||media-atl3-1.cdn.whatsapp.net.iberostar.com^
-||media-aviation.run.place^
 ||media-cdg4-1.cdn.whatsapp.net.iberostar.com^
 ||media-click.ru^
 ||media-ext.wanarun.net^
@@ -90394,7 +90399,6 @@
 ||ndi.nuance.com^
 ||ndifzhemlnlop.space^
 ||ndigitals.in^
-||ndjvmuvkoahnopfqn2jpva.on.drv.tw^
 ||ndkdobohmlqxw.website^
 ||ndm-onead.cdn.hinet.net^
 ||ndm.goasrv.com^
@@ -90960,6 +90964,7 @@
 ||nexgrids.site^
 ||nexioniect.com^
 ||nexium33bv.com^
+||nexorafoundry.com^
 ||nexstep.zdworks.com^
 ||next-sail.pro^
 ||nextacdn.top^
@@ -102009,6 +102014,7 @@
 ||pub-cbeeb81b1c2d40df823a412f702451a3.r2.dev^
 ||pub-cdd0dd27ae6a4aee9841d397e0496374.r2.dev^
 ||pub-ce02802067934e0eb072f69bf6427bf6.r2.dev^
+||pub-ce256d2118c14becb5bbce4cc0655db9.r2.dev^
 ||pub-ce4d5a76d41f4db48601a0a54208636e.r2.dev^
 ||pub-cf9a2985033542d9a17b3c9a644b66be.r2.dev^
 ||pub-d21b4190a47f45628c828456f23dd66e.r2.dev^
@@ -106507,6 +106513,7 @@
 ||reply.osv.com^
 ||replyhawinvest.com^
 ||replytangerine.com^
+||repo.huaweicloud.com^
 ||repo.rakanto.com^
 ||reporo.net^
 ||report-ads-sdk.upltv.com^
@@ -106906,6 +106913,7 @@
 ||resurgehyblan.com^
 ||reswardamuairbill.cfd^
 ||reswimcaunch.com^
+||ret.cloudrack.in.net^
 ||ret.xinlongrubber.com^
 ||retag.xyz^
 ||retagro.com^
@@ -119520,6 +119528,7 @@
 ||softonicads.com^
 ||softpopads.com^
 ||softscales.com^
+||softshare.eeriiootw.com^
 ||softsign.pro^
 ||softstart.kugou.com^
 ||softsunpath.com^
@@ -122939,6 +122948,7 @@
 ||static.zctx8.com^
 ||static.zeusadx.com^
 ||static.zng.com^
+||static.zongheng.com^
 ||static.zorka.agency^
 ||static.zqwmedia.com^
 ||static0.exoclick.com^
@@ -127938,7 +127948,6 @@
 ||tbk-app.com^
 ||tbknig.ecc.jp^
 ||tblcontent.com^
-||tblcxmo.duckdns.org^
 ||tblfnrrzotiko.site^
 ||tblsbzfxvamuk.website^
 ||tblxkwbobzpha.online^
@@ -130373,6 +130382,7 @@
 ||toluidslocust.cyou^
 ||tolvsoxmzazfb.online^
 ||tolwpowisuggm.site^
+||tom2.mitechsystems.net^
 ||tomamuscovi.cyou^
 ||tomatobarrel.com^
 ||tomatoqqamber.click^
@@ -130889,6 +130899,7 @@
 ||tpns.tencent.com^
 ||tpopfgvlqytlm.online^
 ||tpovpwtqjeazz.website^
+||tpp.om-stock.com^
 ||tppwkciiypmeh.site^
 ||tprfavksbqzmr.online^
 ||tprogkxitliow.website^
@@ -134810,7 +134821,6 @@
 ||truehits1.gits.net.th^
 ||truehits2.gits.net.th^
 ||truehits3.gits.net.th^
-||trueinggrik.com^
 ||truejasmine.com^
 ||trueloveonlinee.com^
 ||truemanalhenakling.cyou^
@@ -144523,7 +144533,6 @@
 ||withiesjimbo.cyou^
 ||withnimeddies.cfd^
 ||withnimhexeris.com^
-||without.kesug.com^
 ||withoutandwhich.com^
 ||withouthuzzah.com^
 ||withsharks.com^
@@ -150882,6 +150891,7 @@
 ||xy-log.tagtic.cn^
 ||xy-log2.tagtic.cn^
 ||xy.com^
+||xy.jzhh.pro^
 ||xy.shijialianzuishuai.com^
 ||xy33.smallable.com^
 ||xya4.groupefsc.com^
