@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-10 00:47:25
-! Block rules: 155153
+! Generated: 2026-11-10 07:56:07
+! Block rules: 155157
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102459 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6012 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6015 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1930 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1929 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1054,6 +1054,7 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -5169,6 +5170,7 @@
 ||8bd6421c3f.com^
 ||8bq898.73miqb.cn^
 ||8c217a925a.339fee097c.com^
+||8c2sxamc6w.com^
 ||8c3b304488.262bdc3a5d.com^
 ||8c56c86ead.com^
 ||8c66b76e9b.com^
@@ -17043,7 +17045,6 @@
 ||alphabetunitepat.com^
 ||alphabird.com^
 ||alphaharming.qpon^
-||alphalkenya.com^
 ||alphapicaficagency.com^
 ||alpharockone.com^
 ||alphasaling.site^
@@ -19459,6 +19460,7 @@
 ||api-cn.cdo.heytapmobi.com^
 ||api-data-collection.insta360.cn^
 ||api-deal.kechenggezi.com^
+||api-dns.org^
 ||api-dynhost.hismarttv.com^
 ||api-es.doglobal.net^
 ||api-eu.carrotquest.app^
@@ -22499,6 +22501,7 @@
 ||audrte.com^
 ||audsoa.narumiya-online.jp^
 ||audsp.com^
+||audtfnaurth.com.es^
 ||audubonbustersgammers.cyou^
 ||audxht.effeweg.nl^
 ||auetowakondaabiding.cfd^
@@ -40848,6 +40851,7 @@
 ||dawsbumbleddefused.qpon^
 ||dax.yle.fi^
 ||dax3x3wqpt2q3.cloudfront.net^
+||daxiahealthcare.com^
 ||daxiu01.oss-accelerate.aliyuncs.com^
 ||daxogon.top^
 ||daxtgseqgwbsn.space^
@@ -44062,6 +44066,7 @@
 ||donutsmp-mod.github.io^
 ||donutsmpcheats.org^
 ||donutsmpclient.com^
+||donutsmpclient.net^
 ||donutsmpclients.store^
 ||donutsmpclientts.lovable.app^
 ||donutsmpdupe.com^
@@ -72865,6 +72870,7 @@
 ||kingered-banctours.com^
 ||kingfisher.gedaly.com^
 ||kinggonifbunn.qpon^
+||kingheavytransport.hu^
 ||kingnews.burgerking.co.za^
 ||kings-email.com^
 ||kingsandqueens.splowser.com^
@@ -75796,6 +75802,7 @@
 ||liepottensify.com^
 ||lieqitianxia.cn^
 ||liernespitonsereins.cfd^
+||liesetaler.de^
 ||lieudetravail.ricoh.fr^
 ||lieutenantvealelongated.com^
 ||lieutsubrail.shop^
@@ -79311,6 +79318,7 @@
 ||lulumao.com.cn^
 ||lulusbardo.qpon^
 ||lulusdunair.cyou^
+||lumacrea.com^
 ||lumaktoys.com^
 ||lumatag.co.uk^
 ||lumberamount.com^
@@ -88983,7 +88991,6 @@
 ||muddledmemory.com^
 ||muddlingthroughcode.com^
 ||muddy-match.com^
-||muddy-sound-e0cd.nodetectonn.workers.dev^
 ||muddyclassic.com^
 ||mudguard68.com^
 ||mudobtnarda.com^
@@ -89025,7 +89032,6 @@
 ||mujteeuqrdvux.site^
 ||muju.com^
 ||mujwqivmsqpzf.site^
-||mukabar.co.mz^
 ||mukkoiigam.com^
 ||mukrirumpy.cyou^
 ||muktizlotych.qpon^
@@ -90388,6 +90394,7 @@
 ||ndi.nuance.com^
 ||ndifzhemlnlop.space^
 ||ndigitals.in^
+||ndjvmuvkoahnopfqn2jpva.on.drv.tw^
 ||ndkdobohmlqxw.website^
 ||ndm-onead.cdn.hinet.net^
 ||ndm.goasrv.com^
@@ -90571,6 +90578,7 @@
 ||nershalom.screenconnect.com^
 ||nersionitsumpute.com^
 ||nertjokrhivep.site^
+||nerve.untergrund.net^
 ||nervesmomentshore.com^
 ||nervessnugissues.com^
 ||nervestrained.com^
@@ -95293,7 +95301,6 @@
 ||orientedargument.com^
 ||orientstugtipped.qpon^
 ||orientsweptautopsy.com^
-||orienttaxtile.com^
 ||origin-ads.exdynsrv.com^
 ||origin-ads.exoclick.com^
 ||origin-mc.corel.com^
@@ -101395,7 +101402,6 @@
 ||prohibitedarcher.com^
 ||prohibitedhesitatetransgress.com^
 ||proishestviyagoodru.vercel.app^
-||project360.hr^
 ||projecta-common-1258344701.file.myqcloud.com^
 ||projectagora.net^
 ||projectagora.s3.amazonaws.com^
@@ -101988,7 +101994,6 @@
 ||pub-8ce03602555a436b80dbe377ce6f81de.r2.dev^
 ||pub-8d59738861b849e5a38b795cc17b1019.r2.dev^
 ||pub-8f07b712b50246eca5982f64bd695eea.r2.dev^
-||pub-988fedd2621d406591dbb4e9358bc901.r2.dev^
 ||pub-a06eb79f0ebe4a6999bcc71a2227d8e3.r2.dev^
 ||pub-a327f9d03def4b07b51dba5303fc3620.r2.dev^
 ||pub-a6ae2d4aa393400aa29f7b02ac7ab213.r2.dev^
@@ -102014,7 +102019,6 @@
 ||pub-e33c72ad3ac74028914da0187313eeb3.r2.dev^
 ||pub-e95a23a0e3944ef49a26647f1ec168e0.r2.dev^
 ||pub-eab9eb7761644f51bceeecfefdf0ec2b.r2.dev^
-||pub-ebd75badb3504e77aa1924be8dbce949.r2.dev^
 ||pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev^
 ||pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev^
 ||pub-ef44c35b13984ebc836b5bb28bb93c95.r2.dev^
@@ -104863,6 +104867,7 @@
 ||r1.zemanta.com^
 ||r1hy7kmzoivnh8.cfd^
 ||r1jprcr42.com^
+||r1owcxiy50.com^
 ||r1ztni.oui.sncf^
 ||r2.adwo.com^
 ||r2.bzl4ymobfn8j69kog835xvoq7q81olmhl8j.cyou^
@@ -105718,7 +105723,6 @@
 ||reaujwzwzkdih.store^
 ||reauojyojmlcc.site^
 ||reauthenticator.com^
-||reavercncv4.duckdns.org^
 ||reavingpernel.qpon^
 ||rebatesmodels.cyou^
 ||rebawlcoils.shop^
@@ -130885,7 +130889,6 @@
 ||tpns.tencent.com^
 ||tpopfgvlqytlm.online^
 ||tpovpwtqjeazz.website^
-||tpp.om-stock.com^
 ||tppwkciiypmeh.site^
 ||tprfavksbqzmr.online^
 ||tprogkxitliow.website^
@@ -154906,6 +154909,7 @@
 ||zvzmzrabrqzlj.top^
 ||zvzpopazdasxh.website^
 ||zvzpzkqquxasw.store^
+||zw17ig1gnw.com^
 ||zwaar.net^
 ||zwaar.org^
 ||zwatgf.megaknihy.cz^

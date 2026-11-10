@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-10 00:47:26
-! Block rules: 139446
+! Generated: 2026-11-10 07:56:09
+! Block rules: 139449
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102459
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6012
+!   - easylistchina [w=3] block 6015
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -3833,6 +3833,7 @@
 ||8bd6421c3f.com^
 ||8bq898.73miqb.cn^
 ||8c217a925a.339fee097c.com^
+||8c2sxamc6w.com^
 ||8c56c86ead.com^
 ||8c66b76e9b.com^
 ||8c6fac8fda.com^
@@ -94169,6 +94170,7 @@
 ||r1.mail.ru^
 ||r1hy7kmzoivnh8.cfd^
 ||r1jprcr42.com^
+||r1owcxiy50.com^
 ||r1ztni.oui.sncf^
 ||r2.bzl4ymobfn8j69kog835xvoq7q81olmhl8j.cyou^
 ||r2.tschewang.com^
@@ -139211,6 +139213,7 @@
 ||zvzmzrabrqzlj.top^
 ||zvzpopazdasxh.website^
 ||zvzpzkqquxasw.store^
+||zw17ig1gnw.com^
 ||zwaar.net^
 ||zwaar.org^
 ||zwatgf.megaknihy.cz^
