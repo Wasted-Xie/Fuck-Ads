@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-09 17:14:13
-! Block rules: 139438
+! Generated: 2026-11-10 00:47:26
+! Block rules: 139446
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102459
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6004
+!   - easylistchina [w=3] block 6012
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2843,6 +2843,7 @@
 ||5hdz1gnue.com^
 ||5hebtbbgbo.com^
 ||5hffr1p22j.com^
+||5hi8d6076.com^
 ||5ho41ueq7w.com^
 ||5hte21mz.com^
 ||5hu7hee0pt.com^
@@ -64893,6 +64894,7 @@
 ||kudxyhdiidlxa.online^
 ||kuebyeaqklsre.online^
 ||kueezrtb.com^
+||kuerlefc.com^
 ||kuesunheart.cfd^
 ||kuffobduumzwl.space^
 ||kufvqdstaemar.site^
@@ -70216,6 +70218,7 @@
 ||lvjquuyugqirb.space^
 ||lvksiviwpenew.website^
 ||lvkwz.com^
+||lvnqnjiocnfvvk.com^
 ||lvojjayvorbav.top^
 ||lvpktwenaifrf.site^
 ||lvsats.gardner-white.com^
@@ -99086,6 +99089,7 @@
 ||s3bltexcm.com^
 ||s3d4.cn^
 ||s3g6.com^
+||s3kokfksap.com^
 ||s3m.milkjpg.com^
 ||s3network1.com^
 ||s3r.zerkalo.io^
@@ -107597,6 +107601,7 @@
 ||solution.agc-chemicals.com^
 ||solution.resonac.com^
 ||solution911.com^
+||solution97.com^
 ||solutionbiologyisle.com^
 ||solutions.a-1freeman.com^
 ||solutions.aampglobal.com^
@@ -116957,6 +116962,7 @@
 ||tjgeagvhlpxru.site^
 ||tjgssn.com^
 ||tjhhr.com^
+||tjhi6gplu.com^
 ||tjhoocqyksmsm.site^
 ||tjhuajiantang.com^
 ||tjinit-event.babybus.com^
@@ -127604,6 +127610,7 @@
 ||vlgtgjpcgoiqa.online^
 ||vlhdwxtvqvqvi.site^
 ||vlhpssfra.com^
+||vlifpif.com^
 ||vlink6.com^
 ||vlion.cn^
 ||vlitag.com^
@@ -128250,6 +128257,7 @@
 ||vukgifjbxdeml.space^
 ||vukifrwnczdwk.online^
 ||vukqsoyedcbzg.website^
+||vul4a3k0kt.com^
 ||vulcanhutchet.cfd^
 ||vulgateemptily.com^
 ||vulkffvikdndo.website^
