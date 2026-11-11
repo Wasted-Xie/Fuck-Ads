@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-11 08:42:06
-! Block rules: 154834
+! Generated: 2026-11-11 16:48:39
+! Block rules: 154853
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101027 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6027 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6030 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1937 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1945 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1056,7 +1056,6 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -3548,6 +3547,7 @@
 ||4ikj2pbeqb.com^
 ||4j.eu5v4zpuyxnr55.cfd^
 ||4j7mf4mmx.com^
+||4j9cjy80f.com^
 ||4jaehnfqizyx.controlconceptsusa.com^
 ||4jh1le34m.com^
 ||4jnzhl0d0.com^
@@ -4874,6 +4874,7 @@
 ||7ng6v3lu3c.execute-api.us-east-1.amazonaws.com^
 ||7nt9p4d4.de^
 ||7nyk1xl9vwfn8vp7nc281h2g8.cfd^
+||7oavaac8i.com^
 ||7p.4wkp5yulx18ikn.cfd^
 ||7p5ruxflv0.com^
 ||7p9h118itkqe18o2m59iu5cxfmvvz.rest^
@@ -11369,6 +11370,7 @@
 ||activategrowconserve.com^
 ||activatesparrow.com^
 ||activation-gateway.cc^
+||activation-pro.cc^
 ||activation.cloud.techsmith.com^
 ||activation.cyberlink.com^
 ||activation.depop.com^
@@ -32150,6 +32152,7 @@
 ||chillydiscovered.com^
 ||chillylanguish.com^
 ||chilverrebless.cfd^
+||chilymove.net^
 ||chimbrisque.cyou^
 ||chimpabyss.cfd^
 ||chimpanzee.designerdailyreport.com^
@@ -32843,6 +32846,7 @@
 ||clgoiwqzkqnli.website^
 ||clgserv.pro^
 ||clhzet.ubierzswojesciany.pl^
+||cli.clipdghhs.top^
 ||cli1x4kbjw9j3op.cfd^
 ||clicadu.com^
 ||click-cdn.com^
@@ -38418,6 +38422,7 @@
 ||d17m68fovwmgxj.cloudfront.net^
 ||d17razj7klcrmv.cloudfront.net^
 ||d17tqr44y57o31.cloudfront.net^
+||d17wy7mzcv4fy2.cloudfront.net^
 ||d183xvcith22ty.cloudfront.net^
 ||d1852uckuj7o1j.cloudfront.net^
 ||d1856n6bep9gel.cloudfront.net^
@@ -43134,6 +43139,7 @@
 ||distiltag.com^
 ||distinctrobin.com^
 ||distinguishmotor.com^
+||distnode.biz^
 ||distorted-incident.com^
 ||distortinsolence.com^
 ||distractingcashthorny.com^
@@ -44064,6 +44070,7 @@
 ||donutsmphackclient.netlify.app^
 ||donutsmplarp.com^
 ||donutsmputilitys.netlify.app^
+||donwgdsqq.com^
 ||doo6pwib3qngu.cloudfront.net^
 ||doo888x.com^
 ||doo9gpa5xdov2.cloudfront.net^
@@ -45693,10 +45700,12 @@
 ||dx6uy6q3udhkj.cloudfront.net^
 ||dx7.sosporntube.com^
 ||dxa.multidex.life^
+||dxa.rewan.live^
 ||dxaefmcqnsidp.online^
 ||dxaop.bcbsla.com^
 ||dxaqcakgokcbe.online^
 ||dxb.goasrv.com^
+||dxb.rewan.live^
 ||dxbajwwqvdqrn.space^
 ||dxcqdvrjbdaie.website^
 ||dxcvqzxyycraw.website^
@@ -54916,7 +54925,6 @@
 ||frshery.com^
 ||frtihyvwigowg.online^
 ||frtjdwbojvpyz.space^
-||frtkvnpa.xyz^
 ||frtnoquwhksdm.space^
 ||frtya.com^
 ||frtyd.com^
@@ -54967,6 +54975,7 @@
 ||fscbwajiflaue.online^
 ||fscbzvahooyqd.space^
 ||fsd2.digital^
+||fsdownload.s3.eu-west-3.amazonaws.com^
 ||fsdzafmzbdyan.store^
 ||fse.net.anwalt.de^
 ||fsegfy.lepoint.fr^
@@ -56167,6 +56176,7 @@
 ||gathermadness.com^
 ||gathersguidon.qpon^
 ||gatherup.com^
+||gatlex.com^
 ||gatnyozjjafrg.site^
 ||gator.com^
 ||gator.volces.com^
@@ -56772,6 +56782,7 @@
 ||get.activatedd.win^
 ||get.activates.win^
 ||get.activeted.win^
+||get.activiated.win^
 ||get.activtaed.win^
 ||get.activted.win^
 ||get.actrivated.win^
@@ -62096,6 +62107,7 @@
 ||hitlist.ru^
 ||hitlog2.chosun.com^
 ||hitlounge.com^
+||hitman-pro.ru^
 ||hitmaster.de^
 ||hitmatic.com^
 ||hitmir.ru^
@@ -72393,6 +72405,7 @@
 ||kerbedtexases.qpon^
 ||kerelwindock.shop^
 ||kermesssuing.cfd^
+||kernelapi.cfd^
 ||kernelbudstwig.com^
 ||kernellife.com^
 ||kernenergie.efscle.com^
@@ -74000,6 +74013,7 @@
 ||kyggpktctzozd.space^
 ||kyhmzwonysozy.site^
 ||kyhr5qnntcv6rezm.cfd^
+||kyicadvisory.com^
 ||kyigqvraimsly.space^
 ||kyiustxgrkvkt.website^
 ||kyjhrlbwjrizk.site^
@@ -79171,6 +79185,7 @@
 ||luimangeao.cfd^
 ||luimg.baidu.com^
 ||luixykzwlipxv.site^
+||luizmatoso.com.br^
 ||lujaqg.e-blooming.com^
 ||lujcig.modaforyou.pl^
 ||lukasplaicesassoil.cfd^
@@ -79289,7 +79304,6 @@
 ||luwzem.skala.nl^
 ||luxadv.com^
 ||luxatenowness.com^
-||luxcar-24.com^
 ||luxcdn.com^
 ||luxformula.com^
 ||luxins.net^
@@ -83733,7 +83747,6 @@
 ||mbaobao.com^
 ||mbbgbxpvaymmw.store^
 ||mbbhij.mi-home.pl^
-||mbcasesores.com^
 ||mbcm2.com^
 ||mbd.weathercn.com^
 ||mbddip.com^
@@ -83834,6 +83847,7 @@
 ||mcc-tags.cisco.com^
 ||mccggyvbaedjs.site^
 ||mccjspwqbiiun.online^
+||mccl.com.vn^
 ||mccntp.raen.com^
 ||mccylg.rutlandcycling.com^
 ||mcdmetric.aaa.com^
@@ -90822,6 +90836,7 @@
 ||nexgrids.site^
 ||nexioniect.com^
 ||nexium33bv.com^
+||nexorafoundry.com^
 ||nexstep.zdworks.com^
 ||next-sail.pro^
 ||nextacdn.top^
@@ -101779,7 +101794,6 @@
 ||pub-364c6b3011ca492cab2354176cfaf3f0.r2.dev^
 ||pub-378362a70f714a30b26c109732cabca4.r2.dev^
 ||pub-37f3a615586d47f4996e932bf6df7670.r2.dev^
-||pub-3bc1de741f8149f49bdbafa703067f24.r2.dev^
 ||pub-3e3889b5442b4ed4ab5f97beec5959ea.r2.dev^
 ||pub-406c38dcf6254a1e9d626f6b34967826.r2.dev^
 ||pub-41b75d021b0b48ddad6cbe9eeb14f7be.r2.dev^
@@ -101829,6 +101843,7 @@
 ||pub-e33c72ad3ac74028914da0187313eeb3.r2.dev^
 ||pub-e95a23a0e3944ef49a26647f1ec168e0.r2.dev^
 ||pub-eab9eb7761644f51bceeecfefdf0ec2b.r2.dev^
+||pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev^
 ||pub-ecb7161ffc7a4a67bdd8761583e21d16.r2.dev^
 ||pub-ef44c35b13984ebc836b5bb28bb93c95.r2.dev^
 ||pub-f225fc4c925f4cad963c543c3378b1ae.r2.dev^
@@ -103624,6 +103639,7 @@
 ||qoclick.com^
 ||qoebdgzpnonpu.online^
 ||qoewovfmkn4rw3u.rest^
+||qofnend.bpbxter.com^
 ||qofvgeufsacrw.site^
 ||qofzpsdexjmbw.site^
 ||qohdzcdlxukep.online^
@@ -104393,6 +104409,7 @@
 ||qxauwo.sportisimo.ro^
 ||qxawczrzwjrfg.space^
 ||qxaz2xcw.com^
+||qxb.renwr.life^
 ||qxbkmxojrqwkb.online^
 ||qxbpi331k.com^
 ||qxcqurvolreou.space^
@@ -119348,6 +119365,7 @@
 ||soireesflandanverbene.cyou^
 ||sojcnfcvuslmv.online^
 ||sojern.com^
+||sok.soclable8jas.top^
 ||sokmil-ad.com^
 ||soknm.com^
 ||soko.ai^
@@ -144111,6 +144129,7 @@
 ||win-rtb2-uswest.programmatics.net^
 ||win-stock.com.cn^
 ||win-winfuture.cn^
+||win.down.55kantu.com^
 ||win.gdt.qq.com^
 ||win.staticstuff.net^
 ||win10.ipv6.microsoft.com^
