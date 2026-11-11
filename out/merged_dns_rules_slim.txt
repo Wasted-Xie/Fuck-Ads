@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-11 01:38:16
-! Block rules: 139127
+! Generated: 2026-11-11 08:42:08
+! Block rules: 139131
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101027
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6023
+!   - easylistchina [w=3] block 6027
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -208,6 +208,7 @@
 ||098d7a8fec.com^
 ||09e07385f6.com^
 ||0a186254d0.cf25ba90cc.com^
+||0a1t46qpf.com^
 ||0a4717b2d2.731cf893fe.com^
 ||0a66kw9r8.com^
 ||0a8de3ea12.com^
@@ -4844,6 +4845,7 @@
 ||a4e04bceda.com^
 ||a4g.com^
 ||a4j126meg3.com^
+||a4k2h8jii.com^
 ||a4xvv2g18l.com^
 ||a504afac3d.a11d5f507e.com^
 ||a51wzxssu.com^
@@ -31380,6 +31382,7 @@
 ||cvk.supklik.com^
 ||cvkzdwbkfscrz.online^
 ||cvlb.dev^
+||cvmnq9cre.com^
 ||cvmrmpaepcmpa.site^
 ||cvngacuwqodke.site^
 ||cvoyrn.astotel.com^
@@ -55010,6 +55013,7 @@
 ||htirmsdzegmjn.site^
 ||htixr7ex4lukh9quf1kvp1qlk5rzvkyu6yv.cfd^
 ||htjchtyeyjluw.site^
+||htjkgmxcg.com^
 ||htjvxemjtdaom.site^
 ||htkcm.com^
 ||htkyarsmdltca.site^

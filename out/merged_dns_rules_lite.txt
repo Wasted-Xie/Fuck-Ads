@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-11 01:38:14
-! Block rules: 154830
+! Generated: 2026-11-11 08:42:06
+! Block rules: 154834
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101027 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6023 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6027 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -241,6 +241,7 @@
 ||09fa0ed0b8.223f211e77.com^
 ||0a186254d0.cf25ba90cc.com^
 ||0a18ad853c.a77d59b9bb.com^
+||0a1t46qpf.com^
 ||0a2bdfc424.0e176a58eb.com^
 ||0a4717b2d2.731cf893fe.com^
 ||0a66kw9r8.com^
@@ -8694,6 +8695,7 @@
 ||a4e04bceda.com^
 ||a4g.com^
 ||a4j126meg3.com^
+||a4k2h8jii.com^
 ||a4xvv2g18l.com^
 ||a5.codejumps.com^
 ||a504afac3d.a11d5f507e.com^
@@ -37827,6 +37829,7 @@
 ||cvk.supklik.com^
 ||cvkzdwbkfscrz.online^
 ||cvlb.dev^
+||cvmnq9cre.com^
 ||cvmrmpaepcmpa.site^
 ||cvngacuwqodke.site^
 ||cvoyrn.astotel.com^
@@ -63350,6 +63353,7 @@
 ||htirmsdzegmjn.site^
 ||htixr7ex4lukh9quf1kvp1qlk5rzvkyu6yv.cfd^
 ||htjchtyeyjluw.site^
+||htjkgmxcg.com^
 ||htjvxemjtdaom.site^
 ||htkcm.com^
 ||htkyarsmdltca.site^
