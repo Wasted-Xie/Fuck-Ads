@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-11 16:48:41
-! Block rules: 139134
+! Generated: 2026-11-11 23:14:49
+! Block rules: 139137
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101027
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6030
+!   - easylistchina [w=3] block 6033
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2184,6 +2184,7 @@
 ||3pkf5m0gd.com^
 ||3pkp65u9w9pi1oomn385n3.rest^
 ||3pohpyurxxirl1mqtzj1mj2p1ftj.cfd^
+||3pq0vah1e0.com^
 ||3prz994f2fkjc5.rest^
 ||3pxq2zh6ukxi5hc9j.3qpgtez5tol14x75t7k.cyou^
 ||3q3l.cn^
@@ -42359,6 +42360,7 @@
 ||era67hfo92w.com^
 ||erabaru.net^
 ||eradisciplinemomentary.com^
+||eraf2uzhji.com^
 ||erafbtkgkirqe.site^
 ||eralway.com^
 ||eranistsenesce.qpon^
@@ -79224,6 +79226,7 @@
 ||multipledrawers.com^
 ||multiplewhenceingredient.com^
 ||multiplication29.top^
+||multiplicator98.com^
 ||multiplier47.top^
 ||multiply5.top^
 ||multirackaffability.com^
