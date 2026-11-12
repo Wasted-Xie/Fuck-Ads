@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-12 12:17:52
-! Block rules: 139140
+! Generated: 2026-11-12 20:14:07
+! Block rules: 139142
 ! Whitelist rules: 283
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101027
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6036
+!   - easylistchina [w=3] block 6038
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -65961,6 +65961,7 @@
 ||ldwqexkxritii.com^
 ||ldxgnxqtowtum.site^
 ||ldxpmz.people.com^
+||ldxxawzpy9.com^
 ||ldy.adqku.cn^
 ||ldy.zfdvzp.cn^
 ||ldy5.com^
@@ -93970,6 +93971,7 @@
 ||r3n3cy9l4wi6k7.cfd^
 ||r40xff8q48.com^
 ||r42tag.com^
+||r44r4l5na1.com^
 ||r451.jamanetwork.com^
 ||r45j15.com^
 ||r4nds.absorba.com^

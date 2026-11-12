@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-12 12:17:51
-! Block rules: 154854
+! Generated: 2026-11-12 20:14:05
+! Block rules: 154869
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101027 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6036 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6038 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1942 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1953 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1732,6 +1732,7 @@
 ||288a224bc3.ee2b93a3a4.com^
 ||288ze6cfvyocywwm5zhb48pnjgx9j41x.cfd^
 ||28a0578796.com^
+||28ac1a-47fe-97aa9fa-081953438-583a20e8.brackendell.cc^
 ||28aff8bff0.3b9d481d08.com^
 ||28c47a5183.ab045d5856.com^
 ||28c9492ebe.309e7ed67e.com^
@@ -25169,6 +25170,7 @@
 ||belstat.de^
 ||belstat.fr^
 ||belstat.nl^
+||belt-hiking-round-skirt.trycloudflare.com^
 ||beltanekwarta.click^
 ||beltcological.com^
 ||beltenefloit.com^
@@ -29470,6 +29472,7 @@
 ||c31945ec5c.7550f3b810.com^
 ||c319tpiw462o.segops.madisonspecs.com^
 ||c32.statcounter.com^
+||c32f4dda3dceee6b85ba1f5f2f3308bf.r2.cloudflarestorage.com^
 ||c33.statcounter.com^
 ||c34.statcounter.com^
 ||c3436037.salamanderprocessing.pages.dev^
@@ -30876,6 +30879,7 @@
 ||cdn.710k.com^
 ||cdn.7nsc.cn^
 ||cdn.810236.com^
+||cdn.876553.xyz^
 ||cdn.90mm1.com^
 ||cdn.9823df.com^
 ||cdn.99kia.com^
@@ -33931,7 +33935,6 @@
 ||cn.mywd.com^
 ||cn.pub.vpon.com^
 ||cn.ultraiso.net^
-||cn.unionlever.com^
 ||cn.vortex-win.data.microsoft.com^
 ||cn1.stadiumgoods.com^
 ||cn2.stadiumgoods.com^
@@ -37734,6 +37737,7 @@
 ||cuvannuqxzpek.space^
 ||cuwqhujkat.in^
 ||cux.io^
+||cuyarts.com.pe^
 ||cuybnvyuqlizr.space^
 ||cuynezbxgjxwr.online^
 ||cuyqcrsfopxtb.online^
@@ -44246,7 +44250,6 @@
 ||down.ruanmei.com^
 ||down.sandai.net^
 ||down.stellarcedar.live^
-||down.unicron-cdn.click^
 ||down.winads.cn^
 ||down.winbaicai.com^
 ||down.xiazaidc.com^
@@ -44378,6 +44381,7 @@
 ||doylymagnify.com^
 ||doyroevtmrqgh.site^
 ||dozemarchedconserve.com^
+||dozen-touched-but-flyer.trycloudflare.com^
 ||dozensshih.cyou^
 ||dozententag.ni.com^
 ||dozepriv.cyou^
@@ -52275,6 +52279,7 @@
 ||feedperfect.com^
 ||feeds.videosz.com^
 ||feedten.com^
+||feedweave14.com^
 ||feedyourheadmag.com^
 ||feelsjet.com^
 ||feelwarmth.com^
@@ -53338,7 +53343,6 @@
 ||fistfulrilly.qpon^
 ||fistpoke.com^
 ||fitchpmsa.com^
-||fitforevercavan.ie^
 ||fitgreatest.com^
 ||fitlivelywhup.com^
 ||fitlyzincic.com^
@@ -54586,6 +54590,7 @@
 ||fr.contact.alphabet.com^
 ||fr.exoclick.com^
 ||fr.lucanet.com^
+||fr.mcgrorys.top^
 ||fr.sharpmarketing.eu^
 ||fr0z3nc0zysm1le.xyz^
 ||fraalb.cebanatural.com^
@@ -55871,7 +55876,6 @@
 ||gae.karte.io^
 ||gaeldomyore.qpon^
 ||gaelspharoswokas.qpon^
-||gaenterprises.in^
 ||gafefhednctfh.site^
 ||gafferranch.qpon^
 ||gaffkyachamoslaccol.cyou^
@@ -57340,6 +57344,7 @@
 ||gi7a.structube.com^
 ||gi7n1lmo4o.com^
 ||gia.jd.com^
+||giafroge.biz^
 ||giantaffiliates.com^
 ||gianthoppy.cyou^
 ||gianthypes.com^
@@ -61688,6 +61693,7 @@
 ||hflksbttglwou.com^
 ||hflpchbqhobkg.website^
 ||hflxmfjkugjeh.site^
+||hfm-qnyxrf78xc1i0k.cfd^
 ||hfmogh.piatradesign.ro^
 ||hfmphs.loccitane.com^
 ||hfnfoupaytndf.space^
@@ -68503,7 +68509,6 @@
 ||irksomereplica.com^
 ||irl-api.twibida.com^
 ||irltirjzdusup.website^
-||irm.st^
 ||irmegmmxxbvll.site^
 ||irmjefamskvpb.site^
 ||irmlutzpydekm.website^
@@ -74990,6 +74995,7 @@
 ||ldwqexkxritii.com^
 ||ldxgnxqtowtum.site^
 ||ldxpmz.people.com^
+||ldxxawzpy9.com^
 ||ldy.350.com^
 ||ldy.adqku.cn^
 ||ldy.zfdvzp.cn^
@@ -77453,6 +77459,7 @@
 ||lo42y56tmy.com^
 ||lo842bh92z4zct.4tmyj6zv8gbh84fkezlm2tty.cyou^
 ||load-res-static.lol^
+||load-reservationerror8247.com^
 ||load-static-res.xyz^
 ||load.fomo.com^
 ||load.lolsauce.net^
@@ -90279,7 +90286,6 @@
 ||ndi.nuance.com^
 ||ndifzhemlnlop.space^
 ||ndigitals.in^
-||ndjvmuvkoahnopfqn2jpva.on.drv.tw^
 ||ndkdobohmlqxw.website^
 ||ndm-onead.cdn.hinet.net^
 ||ndm.goasrv.com^
@@ -90840,6 +90846,7 @@
 ||nexage.com^
 ||nexeps.com^
 ||nexgrids.site^
+||nexguard.pro^
 ||nexioniect.com^
 ||nexium33bv.com^
 ||nexorafoundry.com^
@@ -91619,7 +91626,6 @@
 ||node7seat.com^
 ||nodeclaim.com^
 ||nodeddriven.shop^
-||nodemetrics3379.com^
 ||nodenotify.com^
 ||nodestrengthenrecorder.com^
 ||nodethisweek.com^
@@ -94365,6 +94371,7 @@
 ||on.hellostake.com^
 ||on.leagueapps.com^
 ||on.librestream.com^
+||on.mcgrorys.top^
 ||on24-webinars.co.uk^
 ||onalskillsexkce.org^
 ||onapp.haravan.com^
@@ -104070,6 +104077,7 @@
 ||quartetgibbi.qpon^
 ||quartic.pl^
 ||quartosnudity.cyou^
+||quartz-pearl.com^
 ||quaruzon.com^
 ||quashescardol.cfd^
 ||quasicurrant.com^
@@ -104133,6 +104141,7 @@
 ||questionfly.com^
 ||questioningraisin.com^
 ||questionmarket.com^
+||questionnaire-buzz-row-trainer.trycloudflare.com^
 ||questionneuroticgrief.com^
 ||questions-adv.ozon.ru^
 ||questions.theanswerco.com^
@@ -104681,6 +104690,7 @@
 ||r3n3cy9l4wi6k7.cfd^
 ||r40xff8q48.com^
 ||r42tag.com^
+||r44r4l5na1.com^
 ||r451.jamanetwork.com^
 ||r45j15.com^
 ||r4nds.absorba.com^
@@ -106195,6 +106205,7 @@
 ||remorsefulsympathy.pro^
 ||remorseoblivionnations.com^
 ||remorsetrumpet.com^
+||remote-helpdesk.com^
 ||remote.carte-gr.total.fr^
 ||remote4350.net^
 ||remote88.com^
@@ -109148,6 +109159,7 @@
 ||runconverge.com^
 ||runelight.net^
 ||runelite.cc^
+||runelitepluginhub.net^
 ||runeliteplus.net^
 ||runetki.co^
 ||runetki.com^
@@ -115107,6 +115119,7 @@
 ||sitterfabledslich.qpon^
 ||situateddivine.com^
 ||situatepariet.qpon^
+||situation-significance-replace-coral.trycloudflare.com^
 ||situations-clarity-pill-preceding.trycloudflare.com^
 ||situationsparkler.com^
 ||situduiacvaek.site^
@@ -118864,7 +118877,6 @@
 ||smlog.co.kr^
 ||smlypotr.net^
 ||smmnclhggakto.website^
-||smmnet.store^
 ||smmnukhmkbffv.site^
 ||smmx3.cn^
 ||smn.dankore.jp^
@@ -121803,6 +121815,7 @@
 ||stacy.hubhubhub.name^
 ||stacylackers.shop^
 ||stacyshutes.cfd^
+||stacysublett.com^
 ||stadac.mobilapp.io^
 ||stadig.ifeng.com^
 ||stadig0.ifeng.com^
@@ -125700,6 +125713,7 @@
 ||swziwafflvfbq.site^
 ||sx.adm.adeaz.com^
 ||sx.fakjkwp.cn^
+||sx.mcgrorys.top^
 ||sx2sg2t5sd.com^
 ||sxarakia.openapp.link^
 ||sxcclxzqbmxvi.space^
@@ -130508,6 +130522,7 @@
 ||toruk.tanx.com^
 ||torulapelites.shop^
 ||torupypxhtrci.space^
+||torurr.click^
 ||torvousrottle.qpon^
 ||tosfeed.com^
 ||toskbuffier.cyou^
@@ -135288,6 +135303,7 @@
 ||tw.cx^
 ||tw.goasrv.com^
 ||tw.mall.yahoo.com^
+||tw.mcgrorys.top^
 ||tw.pub.vpon.com^
 ||tw.rd.yahoo.com^
 ||tw.reppublika.com^
@@ -142048,7 +142064,6 @@
 ||waescyne.com^
 ||waeshana.com^
 ||waexhoxdqigad.space^
-||waf.proxytunnel.co^
 ||wafflemakers.net^
 ||wafflestee.com^
 ||wafmedia6.com^
@@ -148117,7 +148132,6 @@
 ||xemswfbrdhrts.website^
 ||xenlzn.icu^
 ||xeno-cheats.xyz^
-||xeno.baby^
 ||xeno.qpon^
 ||xeno.watch^
 ||xenon.studio^
@@ -150239,6 +150253,7 @@
 ||xsrzqh.oferte360.ro^
 ||xsrzqh.the-star.co.ke^
 ||xsrzqh.vietnamplus.vn^
+||xss-1253555722.cos.ap-singapore.myqcloud.com^
 ||xssncc2tv.com^
 ||xsswcg.moglix.com^
 ||xstar.cc^
