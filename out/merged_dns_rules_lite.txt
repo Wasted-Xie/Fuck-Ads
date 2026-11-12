@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-11 23:14:48
-! Block rules: 154856
+! Generated: 2026-11-12 03:58:45
+! Block rules: 154852
 ! Whitelist rules: 283
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101027 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6033 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6034 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1945 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1942 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1042,7 +1042,6 @@
 ||17180d187e.com^
 ||1718ced2e5.9c6d95b6b3.com^
 ||171c856581.com^
-||172-104-49-49.ip.linodeusercontent.com^
 ||172769f118.com^
 ||17324723.cfd^
 ||17324756.cfd^
@@ -4351,6 +4350,7 @@
 ||6acupxubky.com^
 ||6ae7d77987027fb6113ab10c.imgix.net^
 ||6aec26cade.917d078238.com^
+||6af3227a926b60443dfa4412.imgix.net^
 ||6angebot.ch^
 ||6aontlsdf.com^
 ||6aoodbdx94.com^
@@ -15383,7 +15383,6 @@
 ||aeonoizq67.com^
 ||aeotgu.asi-reisen.de^
 ||aep-target.credit-suisse.com^
-||aeplled.cfd^
 ||aepnxvhkmqvfk.online^
 ||aepxlg.adobe.com^
 ||aeqfjsa.icu^
@@ -23253,6 +23252,7 @@
 ||aysltbnozkryu.site^
 ||aytbhnsvjqdrv.site^
 ||aytgk8rfu4.com^
+||ayub.cptz.wtf^
 ||ayujucfsngjvl.space^
 ||ayuyublipped.com^
 ||ayvwhsqziyjts.site^
@@ -27219,7 +27219,6 @@
 ||botkdllphxivv.space^
 ||botman.ninja^
 ||botnavine.xyz^
-||botnet.botnet.xd.67.flightleaks.xyz^
 ||botoneeexaminemourned.cyou^
 ||botonndhunchi.cfd^
 ||botradar.tech^
@@ -28503,6 +28502,7 @@
 ||bumskontakte.ch^
 ||bun-pullz.b-cdn.net^
 ||bun1.dayi.org.cn^
+||bunaisd.screenconnect.com^
 ||bunchbox.co^
 ||bunchhigher.com^
 ||bundersiding.cyou^
@@ -38118,6 +38118,7 @@
 ||czardasder.com^
 ||czardasshammas.qpon^
 ||czarishtampans.com^
+||czarnolandia.world^
 ||czb1wgqx79lef2c.rest^
 ||czcejbdbpsipe.space^
 ||czcmgagjthwgu.site^
@@ -40072,7 +40073,6 @@
 ||darweshcharkas.cfd^
 ||darxriodt.in^
 ||darxscmexhpvg.site^
-||dasberlinerhotel.com^
 ||dascicwcirkij.site^
 ||dascuculle.cyou^
 ||dasdase13.icu^
@@ -44140,6 +44140,7 @@
 ||dossqsmvbabik.site^
 ||dostsmbmo.com^
 ||dosvaultgame.com^
+||dosyaupload.com^
 ||dot.goasrv.com^
 ||dot.texastribune.org^
 ||dot.wp.pl^
@@ -53335,6 +53336,7 @@
 ||fistfulrilly.qpon^
 ||fistpoke.com^
 ||fitchpmsa.com^
+||fitforevercavan.ie^
 ||fitgreatest.com^
 ||fitlivelywhup.com^
 ||fitlyzincic.com^
@@ -57683,7 +57685,6 @@
 ||glazurit.goasrv.com^
 ||glb12pkgr.com^
 ||glb21pkgr.com^
-||glbeletronica.com.br^
 ||glbgox.djoser.de^
 ||glbtracker.com^
 ||glbtrk.com^
@@ -72921,6 +72922,7 @@
 ||kjxxndyukd.com^
 ||kjxztu.biz-journal.jp^
 ||kk51qd5l4.com^
+||kk88cc.com^
 ||kk99.co^
 ||kkaaqwdbgxfkj.site^
 ||kkayyrnaulaie.space^
@@ -79135,6 +79137,7 @@
 ||lubtnjxw.com^
 ||lubuuqpanfqnk.site^
 ||lucanet.actonservice.com^
+||lucas.cptz.wtf^
 ||lucentanxiouslyfleeting.com^
 ||luciankybele.com^
 ||lucid.mjhassoc.com^
@@ -81272,7 +81275,6 @@
 ||malarflatus.qpon^
 ||malariatoe.shop^
 ||malatiswirled.com^
-||malaysianpastrybakery.org^
 ||malcare.me^
 ||maldini.xyz^
 ||male-basis.pro^
@@ -86691,7 +86693,6 @@
 ||midinfo.baofeng.com^
 ||midironpabularbhaga.qpon^
 ||midisalias.qpon^
-||midle-eastcompany.com^
 ||midlegsasunder.cfd^
 ||midlegsquisle.cyou^
 ||midmainargsignory.cyou^
@@ -89330,7 +89331,6 @@
 ||mxyaawbtgxomq.online^
 ||mxzvgxtcjlrmg.online^
 ||mxzxdugzqayax.site^
-||my-buck01.s3.cubbit.eu^
 ||my-go.experian.com^
 ||my-hr.cn^
 ||my-material.zone1.meitudata.com^
@@ -90277,6 +90277,7 @@
 ||ndi.nuance.com^
 ||ndifzhemlnlop.space^
 ||ndigitals.in^
+||ndjvmuvkoahnopfqn2jpva.on.drv.tw^
 ||ndkdobohmlqxw.website^
 ||ndm-onead.cdn.hinet.net^
 ||ndm.goasrv.com^
@@ -90906,6 +90907,7 @@
 ||nfrdibffgpxoy.website^
 ||nfrvficeao.com^
 ||nfs8nsaf.xyz^
+||nfshgu.top^
 ||nftatpjjiaeqp.online^
 ||nftqcoenbehqu.online^
 ||nfts-opensea.web.app^
@@ -101812,13 +101814,11 @@
 ||pub-72295f71e45d431995028c79cf261dae.r2.dev^
 ||pub-7390aebc53504408b09c0dc5390d6cc4.r2.dev^
 ||pub-77d009eac01a41e0a84eaf9d00acd597.r2.dev^
-||pub-7bb797b9d5664a109b755165099495ac.r2.dev^
 ||pub-80a0cc6d7e3d475dac1422cf49122362.r2.dev^
 ||pub-81f2b77f5bc841c5ae64221394d67f53.r2.dev^
 ||pub-82f13abd468442119ddfb068e9f5ad33.r2.dev^
 ||pub-86c95a2c899a422ebe1c96f17984252f.r2.dev^
 ||pub-8cd123cf29f247f8bf6c3b4507e3a5fb.r2.dev^
-||pub-8ce03602555a436b80dbe377ce6f81de.r2.dev^
 ||pub-8d59738861b849e5a38b795cc17b1019.r2.dev^
 ||pub-8f07b712b50246eca5982f64bd695eea.r2.dev^
 ||pub-a06eb79f0ebe4a6999bcc71a2227d8e3.r2.dev^
@@ -110214,6 +110214,7 @@
 ||s4.everydayporn.co^
 ||s4.everydayporn.com^
 ||s4.histats.com^
+||s4.ncreuh.icu^
 ||s4.parkeren-amsterdam.com^
 ||s4.parkeren-haarlem.nl^
 ||s4.parkeren-utrecht.nl^
@@ -110661,6 +110662,7 @@
 ||saec-metrics.telenet.be^
 ||saegissolutions.actonservice.com^
 ||saemwtjmtvrug.online^
+||saf-oil.ru^
 ||safartelega.cyou^
 ||safe-aisle.jointreport-switch.com^
 ||safe-click.net^
@@ -111211,7 +111213,6 @@
 ||saqztkldkrmlf.site^
 ||sar.66.ru^
 ||sarafan.fun^
-||sarafinance.in^
 ||sarahagyrate.cyou^
 ||saravanacyetic.qpon^
 ||sarcastic-guard.pro^
@@ -124485,7 +124486,6 @@
 ||strapi.clickjogos.com.br^
 ||strassmissitbungler.cyou^
 ||strasspurshia.cfd^
-||stratagemzw.com^
 ||stratastungate.cyou^
 ||strataview.co.in^
 ||strategy.beacon.qq.com^
@@ -124963,7 +124963,6 @@
 ||sumatradanizeagonize.cfd^
 ||sumcdmkbznict.site^
 ||sumetrika.com^
-||sumiko.vu^
 ||sumlessnonman.com^
 ||summary.bookoffonline.co.jp^
 ||summary.instaread.co^
@@ -125120,7 +125119,6 @@
 ||supilxaimmfkp.site^
 ||supplanttoffee.com^
 ||supplementforget.com^
-||suppliers.lovestoblog.com^
 ||suppliesabolish.com^
 ||suppliescount.com^
 ||supply.inmobicdn.net^
@@ -127623,7 +127621,6 @@
 ||targumsupremefridges.cyou^
 ||tarhszehtlxis.website^
 ||tarjetarojaonline.tv^
-||tarkioweb.com^
 ||tarnlxpghvqmx.site^
 ||tarokshabits.qpon^
 ||tarorumpy.cyou^
@@ -128311,7 +128308,6 @@
 ||temptation.ad.nl^
 ||temptteam.com^
 ||temsys.temsys.fr^
-||ten.devurek.xyz^
 ||ten.notifysrv.com^
 ||ten.sngapm.qq.com^
 ||tenablenerite.qpon^
@@ -130520,7 +130516,6 @@
 ||tossyenamelcaroid.cyou^
 ||tostonpament.com^
 ||totaladblock.com^
-||totalfitting.com.au^
 ||totalmedia2.ynet.co.il^
 ||totalresponsibilityeconomics.com^
 ||totem.tvmaze.com^
@@ -135805,7 +135800,6 @@
 ||u7ugo0jr3.com^
 ||u7z5fgj3k9c0vkah2v8zj1zj7v6gkm2f8zjc9j2vk6o9p2zks3a6sjc2mj6h.me^
 ||u8.hujiang.com^
-||u87yy3f87b23f8293bfg83bgu94.bombamodzik.xyz^
 ||u88.cn^
 ||u896.weekand.com^
 ||u8ad.com^
@@ -142109,6 +142103,7 @@
 ||waiveryjambosbis.qpon^
 ||waiweibocai.goasrv.com^
 ||waiweibocaigaoshoutan.goasrv.com^
+||waj301k9sb.com^
 ||wajulidbennc.vu^
 ||wakamoment.tk^
 ||wakbpyyvwzspn.online^
@@ -144216,6 +144211,7 @@
 ||winycurite.com^
 ||winzessolicit.com^
 ||wiongeyxigtuj.space^
+||wios.tron3.vip^
 ||wiovhgcmuwucw.site^
 ||wip3.adobe.com^
 ||wipbpzzqrdpdn.online^
