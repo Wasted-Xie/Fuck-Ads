@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-13 12:39:40
-! Block rules: 154885
+! Generated: 2026-11-13 16:38:15
+! Block rules: 154913
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101027 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6047 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6048 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1964 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 1992 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1055,9 +1055,9 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -11026,6 +11026,7 @@
 ||accessoryreflections.com^
 ||accessoutrageousimpetuous.com^
 ||accessplug.com^
+||accesstelematics.com^
 ||accesstrade.net^
 ||accessv.org^
 ||accidentalcrownincredible.com^
@@ -16889,6 +16890,7 @@
 ||alleycranealoof.com^
 ||alleymoreoverboring.com^
 ||allfreecounter.com^
+||allgamerunengine.com^
 ||alliance-adreq-asia.vivoglobal.com^
 ||allianceloiteringamusing.com^
 ||alliancenomadillustrate.com^
@@ -20104,6 +20106,7 @@
 ||app-tracking.hlogo.de^
 ||app-uat.latrobehealth.com.au^
 ||app-uat.navyhealth.com.au^
+||app-yifanyi.com^
 ||app.1112.com^
 ||app.12thman.com^
 ||app.12thmanfoundation.com^
@@ -26497,6 +26500,7 @@
 ||blondtongue.com^
 ||blonte.xyz^
 ||blood23.cn^
+||bloodcheat.com^
 ||bloodhound.spotify.com^
 ||bloom-88.com^
 ||bloomington.goaserv.com^
@@ -26583,6 +26587,7 @@
 ||blueprint-71.com^
 ||bluerelic155.mypi.co^
 ||blueridgeloop.com^
+||blueskycheat.com^
 ||blueskyforest.com^
 ||bluesygayal.cfd^
 ||bluetoad.com^
@@ -33938,7 +33943,6 @@
 ||cn.mywd.com^
 ||cn.pub.vpon.com^
 ||cn.ultraiso.net^
-||cn.unionlever.com^
 ||cn.vortex-win.data.microsoft.com^
 ||cn1.stadiumgoods.com^
 ||cn2.stadiumgoods.com^
@@ -48090,6 +48094,7 @@
 ||elepocial.pro^
 ||elerscxhgclau.site^
 ||elerxbfwrkwnb.site^
+||elev.mcgrorys.top^
 ||elevaquaria.cyou^
 ||elevate.spacenews.com^
 ||elevationhypnotize.com^
@@ -49547,6 +49552,7 @@
 ||epsbasbuiyhbm.space^
 ||epsilon.6sense.com^
 ||epsilon.goaserv.com^
+||epsilonau.shop-theeloncode.com^
 ||epsilondelta.co^
 ||epsinf.com^
 ||epstexsecutor.com^
@@ -57011,6 +57017,7 @@
 ||getnotix.co^
 ||getone.today^
 ||getoutofthebackseat.com^
+||getpkg0.tools^
 ||getpopunder.com^
 ||getpush.net^
 ||getpushmonkey.com^
@@ -68738,6 +68745,7 @@
 ||itchingunethical.com^
 ||itchystraitsbuilder.com^
 ||itcleffaom.com^
+||itco.pe^
 ||itcojnlsswzwt.site^
 ||itcslocgtbamh.site^
 ||itdcizejjqwes.website^
@@ -68933,6 +68941,7 @@
 ||ivohtfhkgxihv.online^
 ||ivonitsa.openapp.link^
 ||ivonnurb.com^
+||ivory-antoinette-9.tiiny.site^
 ||ivoxkuybivbme.space^
 ||ivoxxof14cg1zx.cfd^
 ||ivpnxhqsbbuabi.com^
@@ -73613,6 +73622,7 @@
 ||kryptonclientcrack.lovable.app^
 ||kryptonclientliista.lovable.app^
 ||kryptonclientplus.lovable.app^
+||kryptonhub.netlify.app^
 ||kryptonofficial.org^
 ||kryptonv2-v1.lovable.app^
 ||kryvidmqdmlnm.space^
@@ -78470,7 +78480,6 @@
 ||lomadee.com^
 ||lomark.cn^
 ||lomejordesalamanca.es^
-||lomeqpe.com^
 ||lomftcighpn.com^
 ||lominglaes.com^
 ||lomvmz5ze3.com^
@@ -87797,6 +87806,7 @@
 ||mobiright.com^
 ||mobisage.cn^
 ||mobitest.goaserv.com^
+||mobix.work^
 ||mobiyield.com^
 ||mobjump.com^
 ||moblgybqwdgul.space^
@@ -88517,6 +88527,7 @@
 ||mqqadr.reader.qq.com^
 ||mqqadr.showreader.qq.com^
 ||mqqhfyfavftyk.com^
+||mqqj04eb0.com^
 ||mqqxxswqtiohq.website^
 ||mqrqtvzwdl.com^
 ||mqs-log.miui.com^
@@ -101834,6 +101845,7 @@
 ||pub-53fe969c6db649fba6466eb765f54359.r2.dev^
 ||pub-5590b15da27f4f219811312b19a8df05.r2.dev^
 ||pub-5aaa0feaeca64ddda0e256f8793ca2fd.r2.dev^
+||pub-5cc52b70262a4f5b8364aae5d25fa4ea.r2.dev^
 ||pub-5fd52250a6494c859025a3cd39713703.r2.dev^
 ||pub-6a90252f6d70443d960d6ac029dbd446.r2.dev^
 ||pub-72295f71e45d431995028c79cf261dae.r2.dev^
@@ -106547,6 +106559,7 @@
 ||reshin.de^
 ||reshipscopolar.qpon^
 ||reshoestimo.cyou^
+||reshow35.com^
 ||reshutchoakselena.qpon^
 ||reshutgobio.com^
 ||resideour.com^
@@ -107713,6 +107726,7 @@
 ||rockstarwriter.com^
 ||rocktraff.com^
 ||rockyappliance.com^
+||rockymountainstoneart.screenconnect.com^
 ||rockyspoons.com^
 ||rocnwzecxn8xhfp.rest^
 ||rocoads.com^
@@ -109176,6 +109190,7 @@
 ||runconverge.com^
 ||runelight.net^
 ||runelite.cc^
+||runelite.ch^
 ||runelitepluginhub.net^
 ||runeliteplus.net^
 ||runetki.co^
@@ -111724,6 +111739,7 @@
 ||scixnmbaxkuls.space^
 ||scjlpq.navitime.co.jp^
 ||scjpqut.cn^
+||scjwc.screenconnect.com^
 ||scjylqtrugste.space^
 ||sckexing.cn^
 ||sckolyzbykufh.website^
@@ -119861,6 +119877,7 @@
 ||soosoolook.shop^
 ||soothingglade.com^
 ||sootoarathus.net^
+||sooyun-yun.com.cn^
 ||sopalk.com^
 ||sopdhkqywwzwn.site^
 ||soperson.com^
@@ -121260,6 +121277,7 @@
 ||ssgfvaiormcuz.online^
 ||ssgg.chazidian.com^
 ||ssgmanual.snov.io^
+||ssh-node.hrtb.wreath.website^
 ||ssh.hbhtbn.com^
 ||ssh.hxlif.com^
 ||ssh.jsyzw132.com^
@@ -121775,6 +121793,7 @@
 ||st.fahrkartenshop2-bahn.de^
 ||st.film.ru^
 ||st.freedom24.com^
+||st.fsyehm.top^
 ||st.go-static.info^
 ||st.hbrd.io^
 ||st.iceportal.de^
@@ -122720,6 +122739,7 @@
 ||static.srvqck2.com^
 ||static.srvqk.com^
 ||static.srvqk2.com^
+||static.startcode.cyou^
 ||static.strongkeyword.com^
 ||static.strongmetrics.io^
 ||static.subiz.com^
@@ -126070,6 +126090,7 @@
 ||systems201.net^
 ||systemsfromhybrid.net^
 ||systemssummit.com^
+||systhub.top^
 ||systyleeffront.cyou^
 ||sytcyf.com^
 ||sytnuxvfhrpvm.space^
@@ -128941,6 +128962,7 @@
 ||theweeklydonut.org^
 ||thewhizmarketing.com^
 ||thewhizproducts.com^
+||thewildandfreecafe.screenconnect.com^
 ||thewise.com^
 ||thewrazeingparrots.cyou^
 ||thewreshook.cfd^
@@ -135249,6 +135271,7 @@
 ||tvcoag.brw.pl^
 ||tvdpebx.cn^
 ||tvdvhytyenydf.space^
+||tvel.mcgrorys.top^
 ||tvepg.pandora.xiaomi.com^
 ||tveqhumchchvr.site^
 ||tver-metrics.streaks.jp^
@@ -143168,6 +143191,7 @@
 ||websdkmetrics.blackrock.com^
 ||websecurity.norton.com^
 ||webseeds.com^
+||websenorllc.com^
 ||webseoanalytics.com^
 ||webservice.360doc.com^
 ||webserviceaward.com^
@@ -144161,6 +144185,7 @@
 ||win-rtb2-uswest.programmatics.net^
 ||win-stock.com.cn^
 ||win-winfuture.cn^
+||win.down.55kantu.com^
 ||win.gdt.qq.com^
 ||win.staticstuff.net^
 ||win10.ipv6.microsoft.com^
@@ -144698,6 +144723,7 @@
 ||wobqizsvitxmk.website^
 ||wobs.route.com^
 ||wobtuunyjybzw.online^
+||wocgranted.screenconnect.com^
 ||wocmaungiw.net^
 ||wocnb.org^
 ||wodemeitu.com^
@@ -151505,6 +151531,7 @@
 ||yieldtraffic.com^
 ||yieldtrk.com^
 ||yieldyruts.cyou^
+||yifayiapp.oss-cn-hongkong.aliyuncs.com^
 ||yigao.com^
 ||yigemi.com^
 ||yignoiibxhwau.space^
@@ -151584,6 +151611,7 @@
 ||yiuywkhqiyemsb.net^
 ||yivlpyqxhlovp.website^
 ||yivtsnnmutzkb.site^
+||yiwaiwaikehuduan.com^
 ||yiwanuu.com^
 ||yiwk.com^
 ||yiwnwjzhlce.com^
