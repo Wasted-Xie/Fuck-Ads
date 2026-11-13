@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Wasted-Xie
+#
+# 本脚本采用 MIT 许可，详见仓库根目录 LICENSE 文件。
+# 注意：脚本生成的 out/ 规则产物汇编自多个上游黑名单，其许可为 GPL-3.0，
+#       详见 LICENSE-GPL-3.0 与 README「许可协议」一节。
 # merge_dedup_pro.py
 # Pro 版规则集：在 Full 版（18 个附加源）基础上，额外并入 10 个补充源，
 # 规则量约为 Full 版的 1.7 倍。

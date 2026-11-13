@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Wasted-Xie
+#
+# 本脚本采用 MIT 许可，详见仓库根目录 LICENSE 文件。
+# 注意：脚本生成的 out/ 规则产物汇编自多个上游黑名单，其许可为 GPL-3.0，
+#       详见 LICENSE-GPL-3.0 与 README「许可协议」一节。
 # merge_dedup.py
 # Merge three DNS blocklist sources under raw/ and deduplicate at line level,
 # producing one AdGuard-syntax list.

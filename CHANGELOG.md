@@ -6,6 +6,70 @@
 
 ---
 
+## [2.6.1] - 2026-11-13
+
+**文档修正**：`Append.txt` 的描述与实际行为不符，已更正；补充来源标注；README 精简。
+
+### 修复
+
+- README 中 `Append.txt` 被描述为「黑白混写名单」，并列出「`@@` 条目优先级」「与单用途名单冲突时放行优先」「裸域名按拦截处理」等规则——**这些均不存在**。该文件自 2.4.0 起即为原样透传，构建脚本不解析、不清洗、不做冲突处理。共修正 7 处错误表述。
+- `Lists/Append.txt` 自身的文件头注释含同样的错误描述，一并重写
+- 重新定位为「追加扩展区」：逐行原样写入产物末尾，是否有效完全由 AdGuard Home 判定
+
+### 新增
+
+- 标注 `Append.txt` 的内容来源：[liuzq2002/Adguard-Home-For-Magisk-Mod](https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod) 的 release 包内 `AdGuardHome.yaml` 的 `user_rules` 字段（1263 条）
+  - 来源仓库许可证 **MIT**（Copyright 2025 liuzq2002）
+  - 该仓库 README 声明其规则基础为 **GOODBYEADS**（MIT）+ 自定义增补
+  - 已实测：yaml 的 1263 条 user_rules **全部包含**在 Append.txt 中，后者多出的 27 行为模板说明注释
+- 许可章节说明：Append 部分源自 MIT 链，与 GPL-3.0 兼容，可合法并入产物；但单独取用 `Append.txt` 时适用其原始 MIT 许可
+
+### 变更
+
+- `extract_agh_rules.py` 重写：
+  - 主输出改为 **Append 格式**（`temp/agh_rules/agh_user_rules.txt`），可直接替换 `Lists/Append.txt`
+  - 新增 `--out-file`（指定输出路径）、`--no-header`（只输出规则）、`--split`（额外生成分离清单）
+  - 修正过时注释：原文档称「Lists/ 目录不支持修饰符」「不支持通配符」——这是 `Append.txt` 出现前的限制，现已不适用
+  - 加入 SPDX 版权头
+  - 运行时提示**不会写入 `Lists/Append.txt`**，并打印差异比对命令（该文件末尾有 2 条手工追加规则不在 yaml 中，直接覆盖会丢失）
+- README 从 605 行精简至 302 行（−50%），合并了三处重复的订阅地址（完整地址由 6 次降至 1 次）
+- 详细实测数据与 Lite/Slim 参数移入 `docs/analysis.md`（205 行）
+
+---
+
+## [2.6.0] - 2026-11-13
+
+**许可拆分**：代码改为 MIT，规则产物明确为 GPL-3.0。
+
+### 变更
+
+- 根目录 `LICENSE` 改为 **MIT**，覆盖脚本、工作流与文档
+- 原 GPL-3.0 全文保留为 `LICENSE-GPL-3.0`，现专门适用于 `out/` 下的规则产物
+- 6 个主脚本（`fetch_sources.py`、`integrate_sources.py`、`Full/merge_dedup.py`、`Pro/merge_dedup_pro.py`、`Lite/build_lite.py`、`Slim/build_lite_slim.py`）加入 SPDX 版权头
+- README 开头新增「许可协议」章节，说明代码与产物许可分离的原因、上游许可明细与使用者义务
+
+### 依据
+
+`out/` 产物是多个上游黑名单的汇编，其版权状态继承自输入源。按 [GNU GPL FAQ #GPLOutput](https://www.gnu.org/licenses/gpl-faq.en.html#GPLOutput)：
+
+> when a program translates its input into some other form, the copyright status of the output inherits that of the input it was generated from.
+
+实测上游许可（GitHub API + 官方声明）：
+
+| 上游源 | 许可证 |
+|---|---|
+| EasyList / EasyPrivacy / EasyList China | GPL-3.0 或 CC BY-SA 3.0（双许可） |
+| AdguardTeam/HostlistsRegistry（URLHaus） | GPL-3.0 |
+| 217heidai/adblockfilters | GPL-3.0 |
+| AdguardTeam/AdguardFilters | GPL-3.0 |
+| TG-Twilight/AWAvenue-Ads-Rule | GPL-3.0 |
+| AdAway/AdAway | GPL-3.0 |
+| GOODBYEADS、StevenBlack、hblock、Scam Blocklist、NoCoin、FadeMind | MIT |
+
+因产物含 GPL-3.0 内容，整体按 GPL-3.0 分发；脚本本身不含任何上游规则内容，故可用 MIT。
+
+---
+
 ## [2.5.0] - 2026-10-25
 
 **更名** `Lists/mixed.txt` → `Lists/Append.txt`。
