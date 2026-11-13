@@ -4,40 +4,16 @@
 
 每次运行产出**四套并列的列表**，按设备性能任选其一（同时订阅也不冲突）：
 
-| 版本 | 产物 | 规则量 | 上游源 | 适用场景 |
-|---|---|---|---|---|
-| **Full** | `merged_dns_rules.txt` | 约 34 万 | 21 个（3 主源 + 18 附加源） | 性能充足设备，拦截与占用的平衡点 |
-| **Pro** | `merged_dns_rules_pro.txt` | 约 56 万 | 31 个（3 主源 + 28 附加源） | 追求最大拦截覆盖，接受更高内存 |
-| **Lite** | `merged_dns_rules_lite.txt` | 约 15 万 | 国内向 12 个 | 中等配置，优先国内域名 |
-| **Slim** | `merged_dns_rules_slim.txt` | 约 13.6 万 | 仅国内向 11 个 | **229MB 级内存低配软路由** |
+| 版本 | 产物 | 规则量 | 上游源 | 适用场景 | 订阅 |
+|---|---|---|---|---|---|
+| **Full** | `merged_dns_rules.txt` | 约 36 万 | 21 个（3 主源 + 18 附加源） | 性能充足设备，拦截与占用的平衡点 | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt) |
+| **Pro** | `merged_dns_rules_pro.txt` | 约 56 万 | 31 个（3 主源 + 28 附加源） | 追求最大拦截覆盖，接受更高内存 | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt) |
+| **Lite** | `merged_dns_rules_lite.txt` | 约 15 万 | 国内向 12 个 | 中等配置，优先国内域名 | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt) |
+| **Slim** | `merged_dns_rules_slim.txt` | 约 14 万 | 仅国内向 11 个 | **229MB 级内存低配软路由** | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt) |
+
+> 上表「订阅」链接走 gh-proxy.com（国内可直连）。其它加速渠道见 [订阅加速镜像](#订阅加速镜像)。
 
 > **Full 与 Pro 的区别**：Pro 额外并入 10 个补充源（Hblock、Spam404、halflife、AWAvenue、AdGuard Chinese、scamblocklist、NoCoin、Peter Lowe、Dan Pollock、neohosts），规则量约 1.7 倍。这些源偏重**反诈/恶意域名**，若只需拦截广告，Full 已足够。
-
-## 许可协议
-
-**代码与产物适用不同许可**：
-
-| 范围 | 内容 | 许可证 |
-|---|---|---|
-| 代码与文档 | Python 脚本、Actions 工作流、Markdown | **MIT** — [LICENSE](LICENSE) |
-| 规则产物 | `out/` 下四份 `.txt` | **GPL-3.0** — [LICENSE-GPL-3.0](LICENSE-GPL-3.0) |
-
-**产物为何是 GPL-3.0**：`out/` 是多个上游黑名单的汇编，版权状态继承自输入源。按 [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.en.html#GPLOutput)：*"when a program translates its input into some other form, the copyright status of the output inherits that of the input it was generated from."*
-
-本项目上游中，EasyList 系（GPL-3.0 或 CC BY-SA 3.0 双许可）、URLHaus、217heidai/adblockfilters、AdguardFilters、AWAvenue、AdAway **均为 GPL-3.0**，故产物整体按 GPL-3.0 分发。
-
-**关于 `Lists/Append.txt`**：该文件追加的 1146 条规则提取自 [liuzq2002/Adguard-Home-For-Magisk-Mod](https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod) 的 release（**MIT**，其规则基础 GOODBYEADS 亦为 MIT）。MIT 与 GPL-3.0 兼容，这部分内容可合法地并入 GPL-3.0 产物；但**单独取用 `Append.txt` 时，适用其原始 MIT 许可**。
-
-**代码为何是 MIT**：脚本只做下载、清洗、去重、合并，不含任何上游规则内容。GNU FAQ 亦指出自由软件许可"cannot limit what data you use the interpreter on"——代码许可与它处理的数据无关。
-
-**你的义务**：
-
-- 仅订阅使用 → 无需任何操作
-- 再分发 `out/` 列表 → 遵守 GPL-3.0，注明来源与本项目
-- 单独复用 `Lists/Append.txt` → 遵守 MIT，注明来源 liuzq2002 与 GOODBYEADS
-- 复用/修改脚本 → 遵守 MIT，保留版权声明
-
-> 各源许可明细见 [数据处理规则](#数据处理规则)。
 
 ## 特性
 
@@ -117,18 +93,20 @@ py Slim\build_lite_slim.py      :: 生成 Slim（同上）
 
 ### 订阅
 
-在 AdGuard Home → 过滤器 → DNS 拦截清单中订阅：
+在 AdGuard Home → 过滤器 → DNS 拦截清单中添加以下地址（点击即复制到剪贴板）：
 
-| 版本 | 规则量 | 地址（raw 直连） |
+| 版本 | 规则量 | 订阅地址 |
 |---|---|---|
-| **Full** | 约 34 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt` |
-| **Pro** | 约 56 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt` |
-| Lite | 约 15 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt` |
-| Slim | 约 13.6 万 | `https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt` |
+| **Full** | 约 36 万 | [订阅](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt) |
+| **Pro** | 约 56 万 | [订阅](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt) |
+| Lite | 约 15 万 | [订阅](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt) |
+| Slim | 约 14 万 | [订阅](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt) |
+
+> 上表为 raw 直连地址，国内常超时。**推荐使用文档开头表格中的 gh-proxy 订阅链接**，其它加速渠道见下方 [订阅加速镜像](#订阅加速镜像)。
 
 ## 订阅加速镜像
 
-AGH 由**你的设备**拉取规则，国内直连 `raw.githubusercontent.com` 常超时。下表任选一条粘贴到「DNS 拦截清单」。
+AGH 由**你的设备**拉取规则，国内直连 `raw.githubusercontent.com` 常超时。下表按稳定性排序，任选一条添加到「DNS 拦截清单」。
 
 **建议同时添加 gh-proxy.com 与 jsDelivr 两条**（AGH 支持多过滤器，重复规则无害），互为兜底。
 
@@ -138,26 +116,27 @@ AGH 由**你的设备**拉取规则，国内直连 `raw.githubusercontent.com` �
 | **jsDelivr** | 最长 12 小时 | 偶有 TTFB 尖峰，作备用 |
 | raw 直连 | 5 分钟 | 耗时波动可达 31 倍，**不推荐** |
 
-拼接规律固定，把下方文件名替换成对应版本即可：
+### gh-proxy.com（首选）
 
-```text
-首选  https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/<文件名>
-备用  https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/<文件名>
-```
-
-| 版本 | `<文件名>` |
+| 版本 | 订阅地址 |
 |---|---|
-| Full | `merged_dns_rules.txt` |
-| Pro | `merged_dns_rules_pro.txt` |
-| Lite | `merged_dns_rules_lite.txt` |
-| Slim | `merged_dns_rules_slim.txt` |
+| **Full** | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt) |
+| **Pro** | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt) |
+| Lite | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt) |
+| Slim | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt) |
 
-**jsDelivr 缓存异常时**：换 `fastly.jsdelivr.net` / `gcore.jsdelivr.net` 节点，或主动清缓存（浏览器打开，返回 `"status": "finished"` 即成功）：
+### jsDelivr（备用）
 
-```text
-https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/<文件名>
-```
+| 版本 | 订阅地址 |
+|---|---|
+| **Full** | [订阅](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt) |
+| **Pro** | [订阅](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt) |
+| Lite | [订阅](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt) |
+| Slim | [订阅](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt) |
 
+> jsDelivr 缓存异常时，把 `cdn.jsdelivr.net` 换成 `fastly.jsdelivr.net` 或 `gcore.jsdelivr.net` 再试。
+> 也可主动清缓存（浏览器打开，返回 `"status": "finished"` 即成功）：[清 Full](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt) · [清 Pro](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt) · [清 Lite](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt) · [清 Slim](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt)
+>
 > 该清除已写入 Actions：产物有变化时自动 purge 四个地址。
 
 **确认拿到最新版**：看文件头部 `! Block rules:` 与 `! Generated:`，与仓库 [out/](out/) 不一致即命中旧缓存。
@@ -298,5 +277,36 @@ example.com
 
 ## License
 
-代码 **MIT**（[LICENSE](LICENSE)），产物 **GPL-3.0**（[LICENSE-GPL-3.0](LICENSE-GPL-3.0)）。
-详见开头 [许可协议](#许可协议) 一节。
+本项目**代码与产物适用不同许可**：
+
+| 范围 | 内容 | 许可证 |
+|---|---|---|
+| 代码与文档 | Python 脚本、Actions 工作流、Markdown | **MIT** — [LICENSE](LICENSE) |
+| 规则产物 | `out/` 下四份 `.txt` | **GPL-3.0** — [LICENSE-GPL-3.0](LICENSE-GPL-3.0) |
+
+### 产物为何是 GPL-3.0
+
+`out/` 是多个上游黑名单的汇编，版权状态继承自输入源。按 [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.en.html#GPLOutput)：
+
+> when a program translates its input into some other form, the copyright status of the output inherits that of the input it was generated from.
+
+本项目上游中，EasyList 系（GPL-3.0 或 CC BY-SA 3.0 双许可）、URLHaus、217heidai/adblockfilters、AdguardFilters、AWAvenue、AdAway **均为 GPL-3.0**，故产物整体按 GPL-3.0 分发。
+
+### 关于 Lists/Append.txt
+
+该文件追加的 1164 条规则提取自 [liuzq2002/Adguard-Home-For-Magisk-Mod](https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod) 的 release（**MIT**，其规则基础 GOODBYEADS 亦为 MIT）。MIT 与 GPL-3.0 兼容，这部分内容可合法地并入 GPL-3.0 产物；但**单独取用 `Append.txt` 时，适用其原始 MIT 许可**。
+
+### 代码为何是 MIT
+
+脚本只做下载、清洗、去重、合并，不含任何上游规则内容。GNU FAQ 亦指出自由软件许可"cannot limit what data you use the interpreter on"——代码许可与它处理的数据无关。
+
+### 你的义务
+
+| 使用方式 | 要求 |
+|---|---|
+| 仅订阅使用 | 无需任何操作 |
+| 再分发 `out/` 列表 | 遵守 GPL-3.0，注明来源与本项目 |
+| 单独复用 `Lists/Append.txt` | 遵守 MIT，注明来源 liuzq2002 与 GOODBYEADS |
+| 复用/修改脚本 | 遵守 MIT，保留版权声明 |
+
+> 各源许可明细见 [数据处理规则](#数据处理规则)。
