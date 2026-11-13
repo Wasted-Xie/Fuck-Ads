@@ -4,14 +4,14 @@
 
 每次运行产出**四套并列的列表**，按设备性能任选其一（同时订阅也不冲突）：
 
-| 版本 | 产物 | 规则量 | 上游源 | 适用场景 | 订阅 |
-|---|---|---|---|---|---|
-| **Full** | `merged_dns_rules.txt` | 约 36 万 | 21 个（3 主源 + 18 附加源） | 性能充足设备，拦截与占用的平衡点 | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt) |
-| **Pro** | `merged_dns_rules_pro.txt` | 约 56 万 | 31 个（3 主源 + 28 附加源） | 追求最大拦截覆盖，接受更高内存 | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt) |
-| **Lite** | `merged_dns_rules_lite.txt` | 约 15 万 | 国内向 12 个 | 中等配置，优先国内域名 | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt) |
-| **Slim** | `merged_dns_rules_slim.txt` | 约 14 万 | 仅国内向 11 个 | **229MB 级内存低配软路由** | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt) |
+| 版本 | 产物 | 规则量 | 上游源 | 适用场景 |
+|---|---|---|---|---|
+| **Full** | `merged_dns_rules.txt` | 约 36 万 | 21 个（3 主源 + 18 附加源） | 性能充足设备，拦截与占用的平衡点 |
+| **Pro** | `merged_dns_rules_pro.txt` | 约 56 万 | 31 个（3 主源 + 28 附加源） | 追求最大拦截覆盖，接受更高内存 |
+| **Lite** | `merged_dns_rules_lite.txt` | 约 15 万 | 国内向 12 个 | 中等配置，优先国内域名 |
+| **Slim** | `merged_dns_rules_slim.txt` | 约 14 万 | 仅国内向 11 个 | **229MB 级内存低配软路由** |
 
-> 上表「订阅」链接走 gh-proxy.com（国内可直连）。其它加速渠道见 [订阅加速镜像](#订阅加速镜像)。
+> 订阅地址见 [订阅](#订阅) 一节。
 
 > **Full 与 Pro 的区别**：Pro 额外并入 10 个补充源（Hblock、Spam404、halflife、AWAvenue、AdGuard Chinese、scamblocklist、NoCoin、Peter Lowe、Dan Pollock、neohosts），规则量约 1.7 倍。这些源偏重**反诈/恶意域名**，若只需拦截广告，Full 已足够。
 
@@ -91,52 +91,40 @@ py Slim\build_lite_slim.py      :: 生成 Slim（同上）
 
 产物输出到 `out/`，文件名与云端一致。
 
-### 订阅
+## 订阅
 
-在 AdGuard Home → 过滤器 → DNS 拦截清单中添加以下地址（点击即复制到剪贴板）：
+在 AdGuard Home → 过滤器 → DNS 拦截清单中添加。**四个版本选其一即可**（同时订阅多个版本会导致规则重复）。
 
-| 版本 | 规则量 | 订阅地址 |
+**使用建议**：
+
+1. 性能充足 → 选 **Full**；追求最大拦截覆盖 → 选 **Pro**；低配设备 → 选 **Lite**（中等）或 **Slim**（229MB 级）
+2. 国内网络优先点 **加速链接 1**（gh-proxy.com，1 分钟缓存，最稳）；它失效时依次试加速链接 2 / 3
+3. 四个版本语法相同（均为 AdGuard 通用语法：`||域名^`、`@@` 放行、`*` 通配符、`$important`），**AdGuard Home、AdGuard 浏览器插件、AdGuard for Windows/Mac/Android 均可使用**
+
+| 版本 | 规则量 | 原始链接 | 加速链接 1 | 加速链接 2 | 加速链接 3 | 适配说明 |
+|---|---|---|---|---|---|---|
+| **Full** | 约 36 万 | [原始](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt) | [gh-proxy](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt) | [fastly](https://fastly.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt) | AdGuard Home、AdGuard 全系 |
+| **Pro** | 约 56 万 | [原始](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt) | [gh-proxy](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt) | [fastly](https://fastly.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt) | AdGuard Home、AdGuard 全系 |
+| **Lite** | 约 15 万 | [原始](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt) | [gh-proxy](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt) | [fastly](https://fastly.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt) | AdGuard Home、AdGuard 全系 |
+| **Slim** | 约 14 万 | [原始](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt) | [gh-proxy](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt) | [jsDelivr](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt) | [fastly](https://fastly.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt) | AdGuard Home、AdGuard 全系 |
+
+### 各渠道说明
+
+| 渠道 | 缓存时长 | 说明 |
 |---|---|---|
-| **Full** | 约 36 万 | [订阅](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt) |
-| **Pro** | 约 56 万 | [订阅](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt) |
-| Lite | 约 15 万 | [订阅](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt) |
-| Slim | 约 14 万 | [订阅](https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt) |
+| 原始链接 | 5 分钟 | `raw.githubusercontent.com` 直连，国内常超时，耗时波动可达 31 倍 |
+| **加速链接 1**（gh-proxy.com） | 60 秒 | **首选**。国内可直连，TTFB 最稳（波动仅 1.4 倍） |
+| 加速链接 2（jsDelivr cdn） | 最长 12 小时 | 备用。偶有 TTFB 尖峰 |
+| 加速链接 3（jsDelivr fastly） | 最长 12 小时 | 备用。`cdn` 节点异常时换这个 |
 
-> 上表为 raw 直连地址，国内常超时。**推荐使用文档开头表格中的 gh-proxy 订阅链接**，其它加速渠道见下方 [订阅加速镜像](#订阅加速镜像)。
+> **建议同时订阅两条**（如 Full 的加速链接 1 + 加速链接 2）互为兜底。AGH 允许添加多个过滤器，同一版本重复规则不会冲突。
 
-## 订阅加速镜像
+### jsDelivr 缓存异常时
 
-AGH 由**你的设备**拉取规则，国内直连 `raw.githubusercontent.com` 常超时。下表按稳定性排序，任选一条添加到「DNS 拦截清单」。
+把 `cdn.jsdelivr.net` 换成 `fastly.jsdelivr.net` 或 `gcore.jsdelivr.net` 再试；也可主动清缓存（浏览器打开，返回 `"status": "finished"` 即成功）：
 
-**建议同时添加 gh-proxy.com 与 jsDelivr 两条**（AGH 支持多过滤器，重复规则无害），互为兜底。
+[清 Full](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt) · [清 Pro](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt) · [清 Lite](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt) · [清 Slim](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt)
 
-| 渠道 | 缓存 | 特点 |
-|---|---|---|
-| **gh-proxy.com** | 60 秒 | TTFB 最稳（波动 1.4 倍），**首选** |
-| **jsDelivr** | 最长 12 小时 | 偶有 TTFB 尖峰，作备用 |
-| raw 直连 | 5 分钟 | 耗时波动可达 31 倍，**不推荐** |
-
-### gh-proxy.com（首选）
-
-| 版本 | 订阅地址 |
-|---|---|
-| **Full** | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules.txt) |
-| **Pro** | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_pro.txt) |
-| Lite | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_lite.txt) |
-| Slim | [订阅](https://gh-proxy.com/https://raw.githubusercontent.com/Wasted-Xie/Fuck-Ads/main/out/merged_dns_rules_slim.txt) |
-
-### jsDelivr（备用）
-
-| 版本 | 订阅地址 |
-|---|---|
-| **Full** | [订阅](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt) |
-| **Pro** | [订阅](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt) |
-| Lite | [订阅](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt) |
-| Slim | [订阅](https://cdn.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt) |
-
-> jsDelivr 缓存异常时，把 `cdn.jsdelivr.net` 换成 `fastly.jsdelivr.net` 或 `gcore.jsdelivr.net` 再试。
-> 也可主动清缓存（浏览器打开，返回 `"status": "finished"` 即成功）：[清 Full](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules.txt) · [清 Pro](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_pro.txt) · [清 Lite](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_lite.txt) · [清 Slim](https://purge.jsdelivr.net/gh/Wasted-Xie/Fuck-Ads@main/out/merged_dns_rules_slim.txt)
->
 > 该清除已写入 Actions：产物有变化时自动 purge 四个地址。
 
 **确认拿到最新版**：看文件头部 `! Block rules:` 与 `! Generated:`，与仓库 [out/](out/) 不一致即命中旧缓存。
