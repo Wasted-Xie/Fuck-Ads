@@ -3,9 +3,9 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-13 12:10:28
+! Generated: 2026-11-13 12:16:23
 ! Block rules: 139148
-! Whitelist rules: 284
+! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
@@ -139289,6 +139289,7 @@
 @@||email.elitedangerous.com^
 @@||emails.educause.edu^
 @@||f-gear.ec-optimizer.com^
+@@||fast.uc.cn^
 @@||feed.adrelayer.com^
 @@||feed.mix.sina.com.cn^
 @@||forum.notebookreview.com^

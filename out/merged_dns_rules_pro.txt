@@ -1,15 +1,15 @@
 !
 ! Title: Merged DNS blocklist - PRO (full + 10 extra sources)
 ! Description: 在 Full 版基础上额外并入 10 个补充源，整行精确去重，白名单(@@)规则保留在文件末尾
-! Generated: 2026-11-13 12:10:25
-! Block rules: 560677
-! Whitelist rules: 285
+! Generated: 2026-11-13 12:16:20
+! Block rules: 560678
+! Whitelist rules: 286
 !
 ! Source 1: URLHaus (AdGuard Hostlists #11)  <-  https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt
 ! Source 2: GOODBYEADS dns  <-  https://github.com/8680/GOODBYEADS (mirror ghfast.top)
 ! Source 3: AdBlock DNS (217heidai)  <-  https://github.com/217heidai/adblockfilters
 ! Source 4: Integrated extra sources (28 lists)  <-  yhosts / ad-wars / 1024_hosts / AdAway / YousList / StevenBlack / anti-AD / EasyList family / ADgk / CJX / mvps / i-dont-care-about-cookies / Adblock Warning Removal List / Hblock / Spam404 / halflife / AWAvenue / AdGuard Chinese / scamblocklist / NoCoin / Peter Lowe / Dan Pollock / neohosts
-! Manual whitelist: Lists/whitelist.txt  (7 domains)
+! Manual whitelist: Lists/whitelist.txt  (8 domains)
 ! Manual blocklist: Lists/blocklist.txt  (0 domains)
 ! Manual append   : Lists/Append.txt  (1164 rules / 153 comments, passed through verbatim)
 !
@@ -313848,6 +313848,7 @@
 ||npplbfnehrr.com^
 ||nppmwatch.com^
 ||npprbbybvimxj.online^
+||npqyomh7c2fm4obmgh4.cfd^
 ||npr.black.news^
 ||npr.d7ntof.cfd^
 ||nprki.shopbboutique.co^
@@ -560807,6 +560808,7 @@
 @@||email.elitedangerous.com^
 @@||emails.educause.edu^
 @@||f-gear.ec-optimizer.com^
+@@||fast.uc.cn^
 @@||feed.adrelayer.com^
 @@||feed.mix.sina.com.cn^
 @@||forum.notebookreview.com^

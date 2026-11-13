@@ -2,9 +2,9 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-13 12:10:26
+! Generated: 2026-11-13 12:16:21
 ! Block rules: 154883
-! Whitelist rules: 284
+! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101027 / white 49, priority 2)
@@ -155019,6 +155019,7 @@
 @@||email.elitedangerous.com^
 @@||emails.educause.edu^
 @@||f-gear.ec-optimizer.com^
+@@||fast.uc.cn^
 @@||feed.adrelayer.com^
 @@||feed.mix.sina.com.cn^
 @@||forum.notebookreview.com^
