@@ -1,17 +1,17 @@
 !
 ! Title: Merged DNS blocklist (line-level dedup)
 ! Description: 4 个源按整行精确去重合并，白名单(@@)规则保留在文件末尾
-! Generated: 2026-11-13 08:22:09
-! Block rules: 357147
-! Whitelist rules: 283
+! Generated: 2026-11-13 12:10:23
+! Block rules: 357206
+! Whitelist rules: 284
 !
 ! Source 1: URLHaus (AdGuard Hostlists #11)  <-  https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt
 ! Source 2: GOODBYEADS dns  <-  https://github.com/8680/GOODBYEADS (mirror ghfast.top)
 ! Source 3: AdBlock DNS (217heidai)  <-  https://github.com/217heidai/adblockfilters
 ! Source 4: Integrated extra sources (18 lists)  <-  yhosts / ad-wars / 1024_hosts / AdAway / YousList / StevenBlack / anti-AD / EasyList family / ADgk / CJX / mvps / i-dont-care-about-cookies / Adblock Warning Removal List
-! Manual whitelist: Lists/whitelist.txt  (6 domains)
+! Manual whitelist: Lists/whitelist.txt  (7 domains)
 ! Manual blocklist: Lists/blocklist.txt  (0 domains)
-! Manual append   : Lists/Append.txt  (1146 rules / 152 comments, passed through verbatim)
+! Manual append   : Lists/Append.txt  (1164 rules / 153 comments, passed through verbatim)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -2272,6 +2272,7 @@
 ||1vcd.com^
 ||1vd2esrss.com^
 ||1ve7m9brbf78g2c2pt.rest^
+||1vtkmu16.xyz^
 ||1vx1w1-cg.myshopify.com^
 ||1vyt1eguj27.ommasign.com^
 ||1wallpaper.net^
@@ -14677,6 +14678,7 @@
 ||abfukv.123bestdeal.nl^
 ||abgcrap.icu^
 ||abgghj.moustakastoys.gr^
+||abgixxupwhfnem.com^
 ||abgku.onewillow.com^
 ||abgztrwbtcduz.website^
 ||abh.jp^
@@ -14725,6 +14727,7 @@
 ||abkhascourage.cyou^
 ||abkifkamcbfls.space^
 ||abkobh.chobirich.com^
+||abkveuccpsorj.website^
 ||abkweb-whatsapp.com^
 ||abkxyinpiffsk.site^
 ||abkzitollpce.com^
@@ -15496,7 +15499,6 @@
 ||account.paypal-inc.tribesiren.com^
 ||account.romisingh.com^
 ||account.rottne.com^
-||account.wps.cn^
 ||accountancy.bppeloqua.com^
 ||accountantflowerrespiration.com^
 ||accountantoffense.com^
@@ -56191,6 +56193,7 @@
 ||bxerfbkaoasof.space^
 ||bxexuenssx.com^
 ||bxfgfcmeltucf.site^
+||bxflacvuc.com^
 ||bxfvaugytecwq.online^
 ||bxg68.com^
 ||bxgame-casino.fr^
@@ -69139,6 +69142,7 @@
 ||compteur.org^
 ||compteur.websiteout.net^
 ||compteurdevisite.com^
+||comptlychopped.cfd^
 ||compucelunlock.net^
 ||compufixshop.com^
 ||compugen.actonservice.com^
@@ -85561,6 +85565,7 @@
 ||dekedgodkin.com^
 ||dekeifblwjuou.online^
 ||dekingcossack.top^
+||dekkoharem.com^
 ||dekkopinolin.com^
 ||dekkuavzjodbz.space^
 ||deknv.fifteentwenty.com^
@@ -88506,6 +88511,7 @@
 ||djyfslurdhtgq.site^
 ||djyokoo.com^
 ||djz9es32qen64.cloudfront.net^
+||djzdmuwaomkaw.website^
 ||djzooj.planetahuerto.es^
 ||dk-ad-lgsmartad-com.aws-prd.net^
 ||dk-da.goasrv.com^
@@ -91147,6 +91153,7 @@
 ||dsbexk.com^
 ||dsbhmq.com^
 ||dsbixe.com^
+||dsbktckfycinl.online^
 ||dsbmvn.com^
 ||dsbous.com^
 ||dsbpgj.com^
@@ -94462,6 +94469,7 @@
 ||eatingremeantsarum.cfd^
 ||eatingwell.us.intellitxt.com^
 ||eatjav.ekosport.fr^
+||eatljtfoutptu.online^
 ||eatmgo.stylenoriter.co.kr^
 ||eatmycookies.mockingbirdcinema.com^
 ||eatonaero.advancedtech.com^
@@ -96359,6 +96367,7 @@
 ||eiglvuts.eu.malinandgoetz.com^
 ||eiglvuts.www.malinandgoetz.com^
 ||eigneflorealmatchy.cyou^
+||eigzldopocmhs.online^
 ||eihcaairynifs.space^
 ||eihtu.happiestbaby.com^
 ||eiiknsfpyarmi.site^
@@ -96432,6 +96441,7 @@
 ||ej.progresas.lt^
 ||ej.tincheldeluce.com^
 ||ej2ugx2kar.eload.io^
+||ej3vqlrfilo8i2.cfd^
 ||ej5lycf66bpn68v.cyou^
 ||ej8f5vk381.com^
 ||ej8his.afrodiaq.com^
@@ -96823,6 +96833,7 @@
 ||elia.thermofisher.com^
 ||elicaowl.com^
 ||elicrochet.shop^
+||elidesevetideinverts.cyou^
 ||elidoro.net^
 ||elidoroappfrance.com^
 ||eliezerpmsa.com^
@@ -98625,6 +98636,7 @@
 ||enlvs.com^
 ||enlvxl.sichime.com^
 ||enlyom.neonail.pl^
+||enmftyfedastk.space^
 ||enmityclaspexperiments.com^
 ||enmitycornealpulasan.cyou^
 ||enmlvg.plusdental.at^
@@ -100557,6 +100569,7 @@
 ||euidbljssisql.website^
 ||euinyvddekrni.online^
 ||euiofapbmmtw.l.adsco.re^
+||euiyudfbgdkdd.space^
 ||eujgdrvqhgrpv.site^
 ||eukova.com^
 ||eukvqv.mitchellstores.com^
@@ -103271,6 +103284,7 @@
 ||faggotry.com^
 ||faggotyarterin.com^
 ||faggrim.com^
+||fagidsflbophd.site^
 ||fagloafexeele.com^
 ||fagmiethe.com^
 ||fagtgb.acorn.com^
@@ -103668,6 +103682,7 @@
 ||faqserv.com^
 ||faqtjp.redley.com.br^
 ||faqts.us.intellitxt.com^
+||far-great.com^
 ||far.dishalifestylebd.com^
 ||far.offday.com.bd^
 ||far.tribabd.com^
@@ -104739,6 +104754,7 @@
 ||feelytaler.qpon^
 ||feesee.com^
 ||feetleeringperakim.qpon^
+||feezedmundalalces.cfd^
 ||feezv.mycheerleadingbox.com^
 ||fefd.go-static.info^
 ||fefdn27beios.eu.cc^
@@ -105471,6 +105487,7 @@
 ||fiduciaaxis.digital^
 ||fiduciaryfirst.actonservice.com^
 ||fie.alldent-zahnzentrum-dresden.de^
+||fiedctgudxctv.space^
 ||fiehff.com^
 ||field-garnet-duckling.glitch.me^
 ||fieldatlasstudio.bond^
@@ -112223,6 +112240,7 @@
 ||fzdimble.com^
 ||fzdwgedlxtgpw.site^
 ||fzdwntsrbrodu.space^
+||fzdxspljwjfbp.site^
 ||fze8.carrefour-banque.fr^
 ||fzedel.victorinoxstore.com.br^
 ||fzehebhsdrwrk.online^
@@ -142778,6 +142796,7 @@
 ||jbrieonvryioo.space^
 ||jbriyba0f.com^
 ||jbsmediaventures.com^
+||jbsvgmoshntii.website^
 ||jbsy20riz9.com^
 ||jbtcsd.ivy-oak.de^
 ||jbtlg.nectarsleep.com^
@@ -145541,6 +145560,7 @@
 ||jshoppingbox.joinsmsn.com^
 ||jshosting.it^
 ||jshosting.win^
+||jshqqisdaghkz.space^
 ||jshvwhcznwigo.site^
 ||jshwg.maku-industrie.de^
 ||jsinfo.net^
@@ -146198,6 +146218,7 @@
 ||jvunf.modernblaze.com^
 ||jvuxggqjhrcr.com^
 ||jvvhj.memoryone.my^
+||jvvykkopbzejv.site^
 ||jvwfnfgr.airtoxfaceoff.dk^
 ||jvwlfsxydhjmy.website^
 ||jvwuejwrelcst.space^
@@ -149264,6 +149285,7 @@
 ||knocjjwgvsrub.site^
 ||knockoutdisembarkauution.info^
 ||knocs.crowdershop.com^
+||knollsstepups.cfd^
 ||knopnf.asambeauty.com^
 ||knopsdewfall.rest^
 ||knorex.com^
@@ -153882,6 +153904,7 @@
 ||lhycc.com^
 ||lhyioq.domodesign.kr^
 ||lhyykevpkiqhyp3n7zc.cfd^
+||lhzstiyymquwg.space^
 ||lhzulh.tribeamrapali.com^
 ||lhzvkxkf.radarsaw.com^
 ||lhzxdptexntmf.space^
@@ -156094,6 +156117,7 @@
 ||ljgi22.zapis58.art^
 ||ljgrjkosayabm.site^
 ||ljhegojhmluyx.website^
+||ljhieelsnvsgk.space^
 ||ljhoc.destify.com^
 ||ljhwxaqcvdbae.site^
 ||ljijbovhzytkj.online^
@@ -156161,6 +156185,7 @@
 ||lkalite.info^
 ||lkanga.com^
 ||lkaowvjzjfkyd.store^
+||lkawmnxjuuusb.space^
 ||lkbf.0532ci.com.cn^
 ||lkcdlxgj.newfitozdrav.com^
 ||lkcfyglveryvl.online^
@@ -167880,6 +167905,7 @@
 ||lydownload.net^
 ||lyedpdomdgykd.site^
 ||lyeempccaxuwq.site^
+||lyefmxeaaqkoi.site^
 ||lyegyo.bluenile.com^
 ||lyepmjjjcwghi.online^
 ||lyevznvskwrji.space^
@@ -187200,6 +187226,7 @@
 ||mstcs.info^
 ||mstfbz.zenklub.com.br^
 ||mstm.motorsport.com^
+||mstpimqyhnviq.site^
 ||mstrlytcs.com^
 ||msttz.tst98.com^
 ||msub.mmail.northeast.aaa.com^
@@ -192588,6 +192615,7 @@
 ||nimkni7r6lp8rlw2oyi.cfd^
 ||nimmingmiscommmmunication.info^
 ||nimp.org^
+||nimrmexhbfzcq.site^
 ||nimrodchelas.cyou^
 ||nimrute.com^
 ||nimwold.net^
@@ -193092,6 +193120,7 @@
 ||nlvkkmososyji.website^
 ||nlvmu.korres.com^
 ||nlvnht.miror.jp^
+||nlvqtzbjgtvdh.online^
 ||nlvuh.longtermdenial.com^
 ||nlvxcyxcnwxlp.space^
 ||nlvxwyesryreu.space^
@@ -195490,6 +195519,7 @@
 ||nzme-ads.co.nz^
 ||nzmkzl.mytheresa.com^
 ||nzmsgb.atu.de^
+||nzmzseltmfytx.space^
 ||nznoxxx.com^
 ||nzoebvbnminei.website^
 ||nzonduetevcmj.online^
@@ -197370,6 +197400,7 @@
 ||oimg.universalorlandovacations.com^
 ||oimg.universalstudioshollywood.com^
 ||oimsgad.qq.com^
+||oimywcipilemcn.com^
 ||oinhg.pacificroots.com^
 ||oinkedbowls.com^
 ||oinkedcerreroophrys.cfd^
@@ -197553,6 +197584,7 @@
 ||okdebrid.com^
 ||okdghubvs.com^
 ||okdigital.me^
+||okdrsswojarvb.website^
 ||okead.com^
 ||okean-qoj.com^
 ||okeeblr.com^
@@ -201811,6 +201843,7 @@
 ||oyswfrgkhzeuh.space^
 ||oyszek.weddingnews.jp^
 ||oytbhgkolkhdo.space^
+||oytjgrmglhegv.site^
 ||oytnuqskillmx.online^
 ||oytudnrubcwqp.online^
 ||oyudmaizidpnx.space^
@@ -217295,6 +217328,7 @@
 ||qicjybogkonik.site^
 ||qicngcehenxgg.space^
 ||qicponpbnzrfr.site^
+||qicvqevlmqtja.website^
 ||qidblight.top^
 ||qidfamogebcku.space^
 ||qidianad.com^
@@ -224267,6 +224301,7 @@
 ||rivolfasce.store^
 ||rivolsanzi.store^
 ||rivrai.com^
+||rivrpvcrflpta.website^
 ||rivunvesalora.com^
 ||riwkmo.spacemarket.com^
 ||riwnccdialbrm.online^
@@ -230005,6 +230040,7 @@
 ||sablesong.com^
 ||sableviolet.com^
 ||sablezinsgrove.com^
+||sablycandide.click^
 ||sablymuscot.cyou^
 ||sabre.com.tw^
 ||sabrevalorif.com^
@@ -248104,6 +248140,7 @@
 ||skellat-erness.shop^
 ||skellat-sonsy.shop^
 ||skelljanoswaratah.cyou^
+||skelpcherts.cfd^
 ||skelvarynodrumeq.net^
 ||skematersportspl.shop^
 ||skempgiterne.cfd^
@@ -248268,6 +248305,7 @@
 ||skullmagnets.com^
 ||skullteeth.com^
 ||skullysmarter.com^
+||skulpgodlikeagamous.cyou^
 ||skunk.gameworkersolidarity.com^
 ||skunkedgryde.com^
 ||skupjajek.pl^
@@ -253906,6 +253944,7 @@
 ||smile-angel.com^
 ||smile.glendale.wellnessimplants.com^
 ||smile.optilaboratories.com^
+||smilepubes.click^
 ||smilerbefoam.qpon^
 ||smilered.com^
 ||smileshiplogistics.com^
@@ -256458,6 +256497,7 @@
 ||sparteo.com^
 ||sparverliardbimotor.cyou^
 ||spasmedschofleuret.cyou^
+||spasmgame.com^
 ||spasmingmouunal.info^
 ||spatacquaint.com^
 ||spatheddecatyl.cyou^
@@ -285362,6 +285402,7 @@
 ||tasletsporal.cyou^
 ||taslg.modernofficefurniture.com^
 ||tassagovibex.shop^
+||tassardbasenet.cyou^
 ||tasscyclo.cyou^
 ||tasselapp.com^
 ||tassetmimmedbarfing.cfd^
@@ -288199,6 +288240,7 @@
 ||tguyxzkrxgzqt.online^
 ||tgvpr.universalcolours.com^
 ||tgvrfc4.com^
+||tgvrpepuulrav.site^
 ||tgvrxkqtehauz.space^
 ||tgvtlpjqnsiwm.site^
 ||tgvweb-whatsapp.com^
@@ -289588,6 +289630,7 @@
 ||tintuc-24h.com^
 ||tintuc24h.xyz^
 ||tintucnhanh.online^
+||tinvshqgogwhm.online^
 ||tinwaldinhalestaata.qpon^
 ||tiny-ambition.com^
 ||tiny-ova.shop^
@@ -290992,6 +291035,7 @@
 ||toguecaloyer.cyou^
 ||toguefallace.cfd^
 ||togvnrchpuflt.site^
+||togwdsxeqahfs.space^
 ||togxfwvfslruy.space^
 ||toheroatheism.cfd^
 ||tohoef.com^
@@ -301304,6 +301348,7 @@
 ||tvuser-ch.cedock.com^
 ||tvutso.menbur.com^
 ||tvvbtwcvbcygh.online^
+||tvvrrateqfvep.online^
 ||tvvydeysyzwnl.site^
 ||tvwkgywoyjvwo.online^
 ||tvwofyvaksbuy.online^
@@ -304961,6 +305006,7 @@
 ||unsuccessfulimmense.com^
 ||unsung-comment.com^
 ||unsunnybirse.com^
+||unsweatquintar.cfd^
 ||unsylbridl.store^
 ||unta.cn^
 ||untackreviler.com^
@@ -306197,6 +306243,7 @@
 ||usesponsorarrange.com^
 ||useweb-whatsapp.com^
 ||usewmeukdgmnh.website^
+||usfpeusrzbcfo.website^
 ||usfstpete.goaserv.com^
 ||usg-freight.com^
 ||usgutmbdobzni.website^
@@ -309353,6 +309400,7 @@
 ||veyrkf.4510arte.jp^
 ||veyszc.com^
 ||veyzafer.saesonvis.dk^
+||veyzjyazfksxj.site^
 ||vezdrabhdgbhj.website^
 ||vezetmne.ru^
 ||vezsyr.bxblue.com.br^
@@ -309406,6 +309454,7 @@
 ||vfnab.vegamour.com^
 ||vfnq.cn^
 ||vfnxqznmwbcee.store^
+||vfnyvizdsdwtw.site^
 ||vfo.voyage-prive.co.uk^
 ||vfo4.carrefour-banque.fr^
 ||vfojvcbvfbekp.online^
@@ -312337,6 +312386,7 @@
 ||vqbidy.benetton.com^
 ||vqbmxyzda.icu^
 ||vqbod.modgents.com^
+||vqbrvsizdcxzv.space^
 ||vqdqbloehwafw.online^
 ||vqdxejiolkutu.website^
 ||vqegwfgpmnrrc.site^
@@ -312412,6 +312462,7 @@
 ||vrasto.openapp.link^
 ||vratislavialex.pl^
 ||vrauwhahnrjuh.space^
+||vrbcauaviehga.space^
 ||vrbrothers.com^
 ||vrbzg.craftclubco.com^
 ||vrcamdl.istaging.com^
@@ -313016,6 +313067,7 @@
 ||vwetgvfpqybfu.space^
 ||vweuk9vf.hf7mlgjm6twbb5hjyn6b9xi2u.cyou^
 ||vwexrk.englishhome.com.tr^
+||vwfmulz6xkovbl.rest^
 ||vwfspzlxijfwh.website^
 ||vwfwdxariknxp.website^
 ||vwfxuhjgwwent.online^
@@ -318498,6 +318550,7 @@
 ||wmcdpt.com^
 ||wmce68.4ikc8g4miq6t723891egjw4p4kfttr8ik.cyou^
 ||wmced.com^
+||wmceimkrlnrgo.space^
 ||wmcgihquguzey.site^
 ||wmcgmujyedmxu.site^
 ||wmclickz.ru^
@@ -347051,6 +347104,7 @@
 ||xarukaawenabr.site^
 ||xarvilo.com^
 ||xasf32easzx.appspot.com^
+||xasfsktzrmrbz.online^
 ||xatech.com^
 ||xatosmxz.in^
 ||xatsjwiuwtgkm.site^
@@ -349405,6 +349459,7 @@
 ||xmtmelmhgtcdi.site^
 ||xmtrading.com^
 ||xmtsh.levenger.com^
+||xmuurcgrdjufl.website^
 ||xmuwxndzrvaqy.site^
 ||xmvawickdvmhc.online^
 ||xmvlep.toposoutdoor.com^
@@ -351876,6 +351931,7 @@
 ||yiookflg.3rdplanetproducts.com^
 ||yiookflg.celebratorofficial.com^
 ||yip.su^
+||yipeslallans.click^
 ||yipnhryqyfelw.space^
 ||yippeeidle.com^
 ||yiqfhmnmqqlam.space^
@@ -352370,6 +352426,7 @@
 ||yodleeinc.tt.omtrdc.net^
 ||yodo1.com^
 ||yodrvdmm.shop^
+||yodsvexer.cyou^
 ||yoebympnetbjx.site^
 ||yoeixwvecnumq.site^
 ||yoenutty.cfd^
@@ -355581,6 +355638,7 @@
 ||zledtotceuknr.space^
 ||zleptppccidro.website^
 ||zlerebiomenrq.online^
+||zlettlrdieark.website^
 ||zlfiiacommoaq.website^
 ||zlfjbr.florsheim.com^
 ||zlfrwiqfzrefk.space^
@@ -355949,6 +356007,7 @@
 ||zombieslayer.kano.link^
 ||zomdufobhmfmm.space^
 ||zomhfzodazcnz.space^
+||zomnkbohityxo.site^
 ||zona-games.net^
 ||zona1.at.ua^
 ||zonalcalculate.net^
@@ -357166,6 +357225,7 @@
 @@||a.sellpoint.net^
 @@||aax-fe.amazon.co.jp^
 @@||ac.ebis.ne.jp^
+@@||account.wps.cn^
 @@||acs-m.daraz.com.bd^
 @@||acs-m.daraz.pk^
 @@||acs.m.taobao.com^
@@ -357446,37 +357506,44 @@
 
 ! ==== Lists/Append.txt (verbatim) ====
 # ============================================================================
-# 自定义混合名单 —— 手动维护
+# 追加扩展区 —— 原样写入产物末尾，不参与清洗
 # ============================================================================
 #
-# 用途：在同一个文件里同时写「要拦截」和「要放行」的域名。
-#       本文件参与全部四个版本（Full / Pro / Lite / Slim）的构建。
+# 作用：
+#     本文件的每一行（含注释）会被**原样追加**到四份产物（Full / Pro / Lite /
+#     Slim）的末尾。构建脚本不做任何解析、清洗、去重或冲突处理。
 #
-# 格式：靠前缀区分黑白，两种都支持
+#     即：你写什么，产物末尾就是什么，规则是否有效完全由 AdGuard Home 判定。
 #
-# 规则说明：
-#     - 以 ! 或 # 开头的行视为注释，空行忽略
-#     - 大小写不敏感，会自动转为小写
-#     - **裸域名一律按「拦截」处理**，要放行必须显式写 @@ 前缀
+# 与另外两个名单的区别：
+#     - Lists/whitelist.txt  解析为域名 → 加入白名单（参与清洗）
+#     - Lists/blocklist.txt  解析为域名 → 加入黑名单（参与清洗）
+#     - 本文件               原样追加，不解析、不清洗、不做冲突检查
 #
-# 冲突优先级（从高到低）：
-#     1. Lists/whitelist.txt        手写白名单
-#     2. 本文件的 @@ 放行条目
-#     3. Lists/blocklist.txt        手写拦截名单
-#     4. 本文件的拦截条目
-#     5. 上游源
-#   即：放行一律优先于拦截；若同一域名在本文件内既写放行又写拦截，放行生效。
+# 因此本文件支持 AdGuard 全部语法：
+#     $important 等修饰符、* 通配符、正则、元素隐藏规则、注释分组……
+#     这些都不会被过滤。
 #
-# 与另两个文件的关系：
-#     - Lists/whitelist.txt  只放行（无需 @@ 前缀）
-#     - Lists/blocklist.txt  只拦截（无需 || 前缀）
-#     - 本文件               两者混写（需用 @@ 前缀表示放行）
-#   三个文件最终合并处理，效果等价于把它们按上述优先级叠加。
+# 注意：因为不解析，裸域名（如 example.com）不会被自动转成 ||example.com^。
+#     请直接写完整的 AdGuard 语法。
+#
+# ----------------------------------------------------------------------------
+# 内容来源：
+#     由 extract_agh_rules.py 从 AdGuard Home 配置文件提取
+#     源文件：C:\Projects\ads拦截合并\temp\AdGuardHome.yaml
+#     提取时间：2026-11-13 20:04:43
+#     规则数：1278 条（注释 114 / 有效规则 1164）
+#
+#     原始来源：liuzq2002/Adguard-Home-For-Magisk-Mod 的 release 包内
+#     AdGuardHome.yaml 的 user_rules 字段
+#     https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod
+#
+#     来源仓库许可证：MIT（Copyright 2025 liuzq2002）
+#     该仓库 README 声明其规则基础为 GOODBYEADS（MIT）+ 自定义增补
+# ----------------------------------------------------------------------------
 #
 # 生效方式：提交本文件后，GitHub Actions 会在下次运行时自动纳入。
 # ============================================================================
-# --- 在下面逐行添加：不加 @@ 的为拦截，加 @@ 的为放行 ---
-# 示例（去掉行首的 # 即可生效）：
 #针对转转App的放行规则，勿删
 @@||zhuanzhuan.com^$important
 #针对天猫校园的拦截规则，勿删
@@ -357562,7 +357629,7 @@
 ||topdalao.lanzoui.com^$important
 ||z23r562938.iask.in^$importa
 ||zzhc.vnet.cn^$important
-||sentry.io^$importantnt
+||sentry.io^$important
 ||api.umengcn.org^$important
 @@||iyfbodn.com^$important
 ||update.googleapis.com^$important
@@ -357631,7 +357698,6 @@
 ||holvxfq.com^$important
 ||iymgmtq.com^$important
 ||eavztdi.com^$important
-||xn--*.com^$important
 ||jiejie51-*.cc^$important
 ||www.cnhan.com^$important
 ||qwcghh.kxlddy.com^$important
@@ -358215,6 +358281,19 @@
 ||dns.yy.com^$important
 ||dig.zjurl.cn^$important
 ||dns2.q2cdn.com^$important
+||xaywl.top^$important
+||z7e9h3es.top^$important
+||etgahx.cn^$important
+||33495737.com^$important
+||v38w6w.top^$important
+||afxgnjg.cn^$important
+||7hgwx.com^$important
+||275ldy0608.cc^$important
+||2750249.cc^$important
+||api-dc2-prod-08.cyou^$important
+||elsmjsttx.cc^$important
+||yvresguot.cc^$important
+||moiqlwyyfmauwpyhcfezmtnxz.com^$important
 #针对网易云音乐的广告拦截规则
 ||nstool.netease.com^$important
 ||ssp-landing.taptap.cn^$important
@@ -358342,8 +358421,6 @@
 ||news.app.autohome.com.cn^$important
 ||guanceyun.autohome.com.cn^$important
 ||leads.*^$important
-#拦截腾讯微信相关域名
-||apd-pcdnwxlogin.teg.tencent-cloud.net^$important
 #针对两步路户外助手广告拦截
 ||shop45920354.m.youzan.com^$important
 ||ad.*^$important
@@ -358536,6 +358613,7 @@
 ||vip.aqdm349.com^$important
 ||vip.huijujiavip.com^$important
 #针对酷狗音乐的广告拦截规则
+||adsfile.kugou.com^$important
 ||voowebpbssdl.kugou.com^$important
 ||h5retry.kugou.com^$important
 ||adserviceretry.kglink.cn^$important
@@ -358586,8 +358664,6 @@
 #针对驾校一点通的广告拦截规则
 ||richmanrank.ksedt.com^$important
 ||resauth.kuwo.cn^$important
-#针对谷歌商店更新应用的误杀放行
-@@||rr*---sn-*.xn--ngstr-lra8j.com^$important
 #针对微信游戏小程序的误杀放行
 @@||game.weixin.qq.com^$important
 @@||szlong.weixin.qq.com^$important
@@ -358611,8 +358687,6 @@
 ||sharkcloud.app^$important
 ||789free.fun^$important
 ||iqq*.work^$important
-#针对饭太硬视频源的放行规则
-@@||www.xn--sss604efuw.com^$important
 #针对腾讯软件更新下载的放行规则
 @@||imtt.dd.qq.com^$important
 @@||down-update.qq.com^$important
@@ -358623,9 +358697,6 @@
 ||ssp.vivo.com.cn^$important
 ||ssp-sdk-config.uc.cn^$important
 ||partner.uc.cn^$important
-#针对一些机场的误杀放行规则
-@@||xn--ehqx7tcnnope.com^$important
-@@||xn--4gqu8tcnnope.com^$important
 #针对豆包APP的误杀放行规则
 @@||log.snssdk.com^$important
 @@||tnc3-alisc1.snssdk.com^$important
@@ -358663,8 +358734,6 @@
 @@||ac.opapp.cn^$important
 #针对徐小包奶茶小程序误杀放行规则
 @@||acs-m.koubei.com^$important
-#针对clicli动漫的误杀放行规则
-@@||xn--vhq3x51dn9bivas49nfps.com^$important
 #针对萤石云视频的广告拦截规则
 ||ad-material.*.com^$important
 ||appdownload.ys7.com^$important
@@ -358689,8 +358758,6 @@
 ||djvod.ndcimgs.com^$important
 #针对王者荣耀活动误杀放行规则
 @@||img.ssl.msdk.qq.com^$important
-#针对小米应用商店误杀放行规则
-@@||xn--osvr71goa.com^$important
 #针对午夜AV的广告拦截规则
 ||s1-a1.global-cdn.me^$important
 ||pptstatic.wyav.tv^$important
@@ -358732,14 +358799,26 @@
 #针对淘宝闪购商家零售版放行规则
 @@||nracc.ele.me^$important
 #针对决胜巅峰的误杀放行规则
-@@||ad.moonton.cn^$important
+@@||moonton.cn^$important
+@@||moontonapp.com^$important
+@@||youngjoygame.com^$important
 @@||tapapis.cn^$important
 @@||log.dailygn.com^$important
-#阻断ECH公钥链接防止流量绕过
-||_https.*^$important
-||_svcb.*^$important
-#小米应用安装器的放行规则
+#小米部分系统应用的误杀放行规则
 @@||api.installer.xiaomi.com^$important
-#
-@@||fast.uc.cn^$important
-@@||lxmusic.ijinshan.com^$important
+@@||tracking.miui.com^$important
+@@||logupdate.avlyun.sec.miui.com^$important
+#针对神马搜索的误杀放行规则
+@@||m.sm.cn^$important
+#拦截小米监控后门域名
+||flash.sec.miui.com^$important
+||api.sec.miui.com^$important
+||virus-engine.sec.miui.com^$important
+||detection-aigc.engine.miui.com^$important
+||fraud-detection.engine.miui.com^$important
+||dm.wo.com.cn^$important
+||eps.caict.ac.cn^$important
+||gateway-papa.cloud.weizhi.com^$important
+||srv.sec.miui.com^$important
+||pn-tracking-bak.onetrack.mi.com^$important
+||framework.sec.miui.com^$important

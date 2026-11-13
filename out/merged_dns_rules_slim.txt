@@ -3,9 +3,9 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-13 08:22:14
-! Block rules: 139149
-! Whitelist rules: 283
+! Generated: 2026-11-13 12:10:28
+! Block rules: 139148
+! Whitelist rules: 284
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
 ! Sources (China only):
@@ -7164,7 +7164,6 @@
 ||accordinglypoet.com^
 ||accordinglysaddleknew.com^
 ||account.beauty^
-||account.wps.cn^
 ||accountancy.bppeloqua.com^
 ||accountantflowerrespiration.com^
 ||accountantoffense.com^
@@ -139179,6 +139178,7 @@
 @@||a.sellpoint.net^
 @@||aax-fe.amazon.co.jp^
 @@||ac.ebis.ne.jp^
+@@||account.wps.cn^
 @@||acs-m.daraz.com.bd^
 @@||acs-m.daraz.pk^
 @@||acs.m.taobao.com^
@@ -139459,37 +139459,44 @@
 
 ! ==== Lists/Append.txt (verbatim) ====
 # ============================================================================
-# 自定义混合名单 —— 手动维护
+# 追加扩展区 —— 原样写入产物末尾，不参与清洗
 # ============================================================================
 #
-# 用途：在同一个文件里同时写「要拦截」和「要放行」的域名。
-#       本文件参与全部四个版本（Full / Pro / Lite / Slim）的构建。
+# 作用：
+#     本文件的每一行（含注释）会被**原样追加**到四份产物（Full / Pro / Lite /
+#     Slim）的末尾。构建脚本不做任何解析、清洗、去重或冲突处理。
 #
-# 格式：靠前缀区分黑白，两种都支持
+#     即：你写什么，产物末尾就是什么，规则是否有效完全由 AdGuard Home 判定。
 #
-# 规则说明：
-#     - 以 ! 或 # 开头的行视为注释，空行忽略
-#     - 大小写不敏感，会自动转为小写
-#     - **裸域名一律按「拦截」处理**，要放行必须显式写 @@ 前缀
+# 与另外两个名单的区别：
+#     - Lists/whitelist.txt  解析为域名 → 加入白名单（参与清洗）
+#     - Lists/blocklist.txt  解析为域名 → 加入黑名单（参与清洗）
+#     - 本文件               原样追加，不解析、不清洗、不做冲突检查
 #
-# 冲突优先级（从高到低）：
-#     1. Lists/whitelist.txt        手写白名单
-#     2. 本文件的 @@ 放行条目
-#     3. Lists/blocklist.txt        手写拦截名单
-#     4. 本文件的拦截条目
-#     5. 上游源
-#   即：放行一律优先于拦截；若同一域名在本文件内既写放行又写拦截，放行生效。
+# 因此本文件支持 AdGuard 全部语法：
+#     $important 等修饰符、* 通配符、正则、元素隐藏规则、注释分组……
+#     这些都不会被过滤。
 #
-# 与另两个文件的关系：
-#     - Lists/whitelist.txt  只放行（无需 @@ 前缀）
-#     - Lists/blocklist.txt  只拦截（无需 || 前缀）
-#     - 本文件               两者混写（需用 @@ 前缀表示放行）
-#   三个文件最终合并处理，效果等价于把它们按上述优先级叠加。
+# 注意：因为不解析，裸域名（如 example.com）不会被自动转成 ||example.com^。
+#     请直接写完整的 AdGuard 语法。
+#
+# ----------------------------------------------------------------------------
+# 内容来源：
+#     由 extract_agh_rules.py 从 AdGuard Home 配置文件提取
+#     源文件：C:\Projects\ads拦截合并\temp\AdGuardHome.yaml
+#     提取时间：2026-11-13 20:04:43
+#     规则数：1278 条（注释 114 / 有效规则 1164）
+#
+#     原始来源：liuzq2002/Adguard-Home-For-Magisk-Mod 的 release 包内
+#     AdGuardHome.yaml 的 user_rules 字段
+#     https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod
+#
+#     来源仓库许可证：MIT（Copyright 2025 liuzq2002）
+#     该仓库 README 声明其规则基础为 GOODBYEADS（MIT）+ 自定义增补
+# ----------------------------------------------------------------------------
 #
 # 生效方式：提交本文件后，GitHub Actions 会在下次运行时自动纳入。
 # ============================================================================
-# --- 在下面逐行添加：不加 @@ 的为拦截，加 @@ 的为放行 ---
-# 示例（去掉行首的 # 即可生效）：
 #针对转转App的放行规则，勿删
 @@||zhuanzhuan.com^$important
 #针对天猫校园的拦截规则，勿删
@@ -139575,7 +139582,7 @@
 ||topdalao.lanzoui.com^$important
 ||z23r562938.iask.in^$importa
 ||zzhc.vnet.cn^$important
-||sentry.io^$importantnt
+||sentry.io^$important
 ||api.umengcn.org^$important
 @@||iyfbodn.com^$important
 ||update.googleapis.com^$important
@@ -139644,7 +139651,6 @@
 ||holvxfq.com^$important
 ||iymgmtq.com^$important
 ||eavztdi.com^$important
-||xn--*.com^$important
 ||jiejie51-*.cc^$important
 ||www.cnhan.com^$important
 ||qwcghh.kxlddy.com^$important
@@ -140228,6 +140234,19 @@
 ||dns.yy.com^$important
 ||dig.zjurl.cn^$important
 ||dns2.q2cdn.com^$important
+||xaywl.top^$important
+||z7e9h3es.top^$important
+||etgahx.cn^$important
+||33495737.com^$important
+||v38w6w.top^$important
+||afxgnjg.cn^$important
+||7hgwx.com^$important
+||275ldy0608.cc^$important
+||2750249.cc^$important
+||api-dc2-prod-08.cyou^$important
+||elsmjsttx.cc^$important
+||yvresguot.cc^$important
+||moiqlwyyfmauwpyhcfezmtnxz.com^$important
 #针对网易云音乐的广告拦截规则
 ||nstool.netease.com^$important
 ||ssp-landing.taptap.cn^$important
@@ -140355,8 +140374,6 @@
 ||news.app.autohome.com.cn^$important
 ||guanceyun.autohome.com.cn^$important
 ||leads.*^$important
-#拦截腾讯微信相关域名
-||apd-pcdnwxlogin.teg.tencent-cloud.net^$important
 #针对两步路户外助手广告拦截
 ||shop45920354.m.youzan.com^$important
 ||ad.*^$important
@@ -140549,6 +140566,7 @@
 ||vip.aqdm349.com^$important
 ||vip.huijujiavip.com^$important
 #针对酷狗音乐的广告拦截规则
+||adsfile.kugou.com^$important
 ||voowebpbssdl.kugou.com^$important
 ||h5retry.kugou.com^$important
 ||adserviceretry.kglink.cn^$important
@@ -140599,8 +140617,6 @@
 #针对驾校一点通的广告拦截规则
 ||richmanrank.ksedt.com^$important
 ||resauth.kuwo.cn^$important
-#针对谷歌商店更新应用的误杀放行
-@@||rr*---sn-*.xn--ngstr-lra8j.com^$important
 #针对微信游戏小程序的误杀放行
 @@||game.weixin.qq.com^$important
 @@||szlong.weixin.qq.com^$important
@@ -140624,8 +140640,6 @@
 ||sharkcloud.app^$important
 ||789free.fun^$important
 ||iqq*.work^$important
-#针对饭太硬视频源的放行规则
-@@||www.xn--sss604efuw.com^$important
 #针对腾讯软件更新下载的放行规则
 @@||imtt.dd.qq.com^$important
 @@||down-update.qq.com^$important
@@ -140636,9 +140650,6 @@
 ||ssp.vivo.com.cn^$important
 ||ssp-sdk-config.uc.cn^$important
 ||partner.uc.cn^$important
-#针对一些机场的误杀放行规则
-@@||xn--ehqx7tcnnope.com^$important
-@@||xn--4gqu8tcnnope.com^$important
 #针对豆包APP的误杀放行规则
 @@||log.snssdk.com^$important
 @@||tnc3-alisc1.snssdk.com^$important
@@ -140676,8 +140687,6 @@
 @@||ac.opapp.cn^$important
 #针对徐小包奶茶小程序误杀放行规则
 @@||acs-m.koubei.com^$important
-#针对clicli动漫的误杀放行规则
-@@||xn--vhq3x51dn9bivas49nfps.com^$important
 #针对萤石云视频的广告拦截规则
 ||ad-material.*.com^$important
 ||appdownload.ys7.com^$important
@@ -140702,8 +140711,6 @@
 ||djvod.ndcimgs.com^$important
 #针对王者荣耀活动误杀放行规则
 @@||img.ssl.msdk.qq.com^$important
-#针对小米应用商店误杀放行规则
-@@||xn--osvr71goa.com^$important
 #针对午夜AV的广告拦截规则
 ||s1-a1.global-cdn.me^$important
 ||pptstatic.wyav.tv^$important
@@ -140745,14 +140752,26 @@
 #针对淘宝闪购商家零售版放行规则
 @@||nracc.ele.me^$important
 #针对决胜巅峰的误杀放行规则
-@@||ad.moonton.cn^$important
+@@||moonton.cn^$important
+@@||moontonapp.com^$important
+@@||youngjoygame.com^$important
 @@||tapapis.cn^$important
 @@||log.dailygn.com^$important
-#阻断ECH公钥链接防止流量绕过
-||_https.*^$important
-||_svcb.*^$important
-#小米应用安装器的放行规则
+#小米部分系统应用的误杀放行规则
 @@||api.installer.xiaomi.com^$important
-#
-@@||fast.uc.cn^$important
-@@||lxmusic.ijinshan.com^$important
+@@||tracking.miui.com^$important
+@@||logupdate.avlyun.sec.miui.com^$important
+#针对神马搜索的误杀放行规则
+@@||m.sm.cn^$important
+#拦截小米监控后门域名
+||flash.sec.miui.com^$important
+||api.sec.miui.com^$important
+||virus-engine.sec.miui.com^$important
+||detection-aigc.engine.miui.com^$important
+||fraud-detection.engine.miui.com^$important
+||dm.wo.com.cn^$important
+||eps.caict.ac.cn^$important
+||gateway-papa.cloud.weizhi.com^$important
+||srv.sec.miui.com^$important
+||pn-tracking-bak.onetrack.mi.com^$important
+||framework.sec.miui.com^$important
