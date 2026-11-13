@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-13 12:16:21
-! Block rules: 154883
+! Generated: 2026-11-13 12:39:40
+! Block rules: 154885
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101027 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6045 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6047 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -78922,6 +78922,7 @@
 ||lpzxed.superesportes.com.br^
 ||lpzxed.uai.com.br^
 ||lq3icz5yuze.kh347ew9knnjzncjjllr3gekrxn.cyou^
+||lq72mfje7.com^
 ||lqbe7i5gf.com^
 ||lqbinr.locker-room.co.kr^
 ||lqbvjmkewzwjk.top^
@@ -80794,6 +80795,7 @@
 ||m.zzchuy.cn^
 ||m08.goaserv.com^
 ||m0mentum.net^
+||m0q6xvc7c.com^
 ||m0rsq075u.com^
 ||m1.27com.com^
 ||m1.51kaowang.com^
