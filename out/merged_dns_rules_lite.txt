@@ -2,8 +2,8 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-14 09:41:43
-! Block rules: 156147
+! Generated: 2026-11-14 16:16:47
+! Block rules: 156163
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2006 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2020 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1059,6 +1059,7 @@
 ||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
+||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1450,6 +1451,7 @@
 ||1zw5kzrzjm.com^
 ||2-05.com^
 ||2.1010pic.com^
+||2.57.122.176.nip.io^
 ||2.92caijing.com^
 ||2.aili.com^
 ||2.arpun.com^
@@ -13295,6 +13297,7 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
+||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -15083,7 +15086,6 @@
 ||adtube.media^
 ||adtumxjckljej.space^
 ||adtx2.cn^
-||adubuildersco.com^
 ||adui.tg.meitu.com^
 ||adulateearring.com^
 ||adulateprofessnorth.com^
@@ -16568,6 +16570,7 @@
 ||airtightafternoon.com^
 ||airtightmodification.com^
 ||airwavetrouss.cfd^
+||airwayhost.com^
 ||airyjaderidge.com^
 ||airyorchid.com^
 ||aiscsaxgwwdtj.online^
@@ -25183,7 +25186,6 @@
 ||beafdf.restaupro.com^
 ||beagle.prod.tda.link^
 ||beaglemanipulate.com^
-||beak.in^
 ||beakfuljato.com^
 ||bealafulup.com^
 ||bealanews.com^
@@ -26464,6 +26466,7 @@
 ||bjycsb.com^
 ||bjydccyqkjcxj.website^
 ||bjygagpjabhbt.website^
+||bjyunte.com^
 ||bjzabeeqjktyy.website^
 ||bk.brookeo.fr^
 ||bk.qc83qy2pyl9znre.cyou^
@@ -28798,6 +28801,7 @@
 ||bullpupknurls.shop^
 ||bullwhip.cloud^
 ||bulochka.xyz^
+||buloru.com^
 ||bulozc.tui.be^
 ||bulrev.com^
 ||bulten.goaserv.com^
@@ -33872,6 +33876,7 @@
 ||clockangrilypotter.com^
 ||clockwiseleaderfilament.com^
 ||clockwisequillwilfrid.com^
+||clod.lippasswer.top^
 ||clodsplit.com^
 ||clog.go.com^
 ||clog.lghv.net^
@@ -42980,7 +42985,6 @@
 ||digitalmarketing.smu.edu.sg^
 ||digitalmediapp.com^
 ||digitalmerkat.com^
-||digitalonline.cl^
 ||digitaloptout.com^
 ||digitalpush.org^
 ||digitaltarget.ru^
@@ -44388,6 +44392,7 @@
 ||dolphin4.ftimg.net^
 ||dolphinpaper.com^
 ||dolphinsrule.com^
+||dolphlinksan.online^
 ||dolphsa.cloud^
 ||dolpxahogqsqk.space^
 ||dolrfm.fotoregistro.com.br^
@@ -44765,6 +44770,7 @@
 ||downloads.coface.com^
 ||downloads.go-xlr.com^
 ||downloads.goaserv.com^
+||downloads.goxlr.studio^
 ||downloads.mcgladrey.com^
 ||downloadshi.b-cdn.net^
 ||downloadxml.changhong.upgrade2.huan.tv^
@@ -51342,6 +51348,7 @@
 ||executeknowledge.com^
 ||execution-ci360.rai.it^
 ||executivehoroscope.com^
+||executorhub.pro^
 ||executorhub.space^
 ||executors110.net^
 ||executorswith620.net^
@@ -54828,7 +54835,6 @@
 ||fotos.brandnewapp.pro^
 ||fotos.vote-in.eu3715633.notifysrv.com^
 ||fotoschop.cl^
-||fotosdepuebla.org^
 ||fotwupmfmlace.space^
 ||fouanalytics.com^
 ||foucqegmupzjw.site^
@@ -68472,7 +68478,6 @@
 ||intelledox.actonservice.com^
 ||intelli-direct.com^
 ||intelli-shop.actonservice.com^
-||intelli-sys.co.zw^
 ||intelliad.de^
 ||intelliads.com^
 ||intellibanners.com^
@@ -68804,6 +68809,7 @@
 ||iojyknduuyebm.site^
 ||iojzzlodyluyl.online^
 ||iokhsx.unionmonthly.jp^
+||ioknet.kehma.online^
 ||iokyzmpkwtepa.space^
 ||iomaduexiqtho.space^
 ||iomlsfqgvugaf.space^
@@ -91601,7 +91607,6 @@
 ||newspapervaluessignature.com^
 ||newsplusultra.es^
 ||newspush.sinajs.cn^
-||newstan.online^
 ||newstemptation.com^
 ||newstodiscuss.com^
 ||newstogram.com^
@@ -95210,6 +95215,7 @@
 ||on.allposters.com^
 ||on.art.com^
 ||on.dextra.ch^
+||on.fixlow.shop^
 ||on.hellostake.com^
 ||on.leagueapps.com^
 ||on.librestream.com^
@@ -101809,6 +101815,7 @@
 ||primeix.net^
 ||primeleech.com^
 ||primetag.net^
+||primetextechnologies.com^
 ||primevideospot.com^
 ||primia24.net^
 ||primis-amp.tech^
@@ -102728,6 +102735,7 @@
 ||pub-8cd123cf29f247f8bf6c3b4507e3a5fb.r2.dev^
 ||pub-8d59738861b849e5a38b795cc17b1019.r2.dev^
 ||pub-8f07b712b50246eca5982f64bd695eea.r2.dev^
+||pub-9edd485f8a3c4fb1942935530b075a5d.r2.dev^
 ||pub-a06eb79f0ebe4a6999bcc71a2227d8e3.r2.dev^
 ||pub-a327f9d03def4b07b51dba5303fc3620.r2.dev^
 ||pub-a6ae2d4aa393400aa29f7b02ac7ab213.r2.dev^
@@ -112326,6 +112334,7 @@
 ||savageavowmidland.com^
 ||savamea.org^
 ||save.adp.ca^
+||save.nosehhankjh.top^
 ||save.salary.com.au^
 ||save.smartsalary.com.au^
 ||savebt.net^
@@ -114785,6 +114794,7 @@
 ||severewall.pro^
 ||severidades.cfd^
 ||severn.viessmann.co.uk^
+||sevt.mcgrorys.top^
 ||sewagespiemag.cfd^
 ||sewboldlyavow.com^
 ||sewdialogueconcealment.com^
@@ -125391,6 +125401,10 @@
 ||storage.29293.com^
 ||storage.anastasiadate.com^
 ||storage.lulu-row1.com^
+||storage2.hyperfx.info^
+||storage5.hyperfx.info^
+||storage6.hyperfx.info^
+||storage7.hyperfx.info^
 ||storageimagedisplay.com^
 ||storagerecurrent.com^
 ||storagetechnology.arrow.com^
@@ -125691,6 +125705,7 @@
 ||studentadvantage.actonservice.com^
 ||students16.screenconnect.com^
 ||studiedroven.cyou^
+||studio-cf.com^
 ||studio.joinsalut.com^
 ||studioalkaline.com^
 ||studiogagnegagne.screenconnect.com^
@@ -128191,7 +128206,6 @@
 ||tairgerdobos.com^
 ||taisi666.top^
 ||taiverturena.com^
-||taizi.fdstat.vip^
 ||taj1.ebis.ne.jp^
 ||taj2.ebis.ne.jp^
 ||tajdmtszoslff.site^
@@ -131264,6 +131278,7 @@
 ||toluidslocust.cyou^
 ||tolvsoxmzazfb.online^
 ||tolwpowisuggm.site^
+||tom.eqraa.org.sa^
 ||tom2.mitechsystems.net^
 ||tomamuscovi.cyou^
 ||tomatobarrel.com^
@@ -140976,6 +140991,7 @@
 ||versionsphysicaldropper.com^
 ||verstespremiss.com^
 ||versuswall.com^
+||vertansoft.com^
 ||vertexcs.actonservice.com^
 ||vertical-leap.co.uk^
 ||vertical-leap.net^
