@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-14 02:34:03
-! Block rules: 140376
+! Generated: 2026-11-14 09:41:44
+! Block rules: 140381
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102047
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6051
+!   - easylistchina [w=3] block 6056
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -47224,6 +47224,7 @@
 ||fpwwjcyugtakd.online^
 ||fpxewa.ilmeteo.it^
 ||fpyf8.com^
+||fpz4gr87mq.com^
 ||fq9vy0muyqi3.www.madrigalmaps.com^
 ||fqadcwyr.com^
 ||fqayoymigvmbw.website^
@@ -83125,6 +83126,7 @@
 ||ntopcd.underarmour.nl^
 ||ntphyl.milan-jeunesse.com^
 ||ntplsyboguywj.store^
+||ntpyrbdgxzpjxy.com^
 ||ntracker-collector.naver.com^
 ||ntreqriypgoef.online^
 ||ntrfr.leovegas.com^
@@ -93031,6 +93033,7 @@
 ||q1qfc323.com^
 ||q1scv.vov0.com^
 ||q1txsah8s.com^
+||q1v2f4.com^
 ||q1yv4669q6.com^
 ||q20jqurls0y7gk8.info^
 ||q2f3fw9st.com^
@@ -94860,6 +94863,7 @@
 ||r0d2dzltw7.com^
 ||r1.ati.su^
 ||r1.mail.ru^
+||r12ukq68l8.com^
 ||r1hy7kmzoivnh8.cfd^
 ||r1jprcr42.com^
 ||r1owcxiy50.com^
@@ -126733,6 +126737,7 @@
 ||uyunad.com^
 ||uyupgd.goalzero.com^
 ||uyuspjzupkmao.site^
+||uyux77jurw.com^
 ||uyvgrrcqcvvjx.online^
 ||uywfpprhavyog.site^
 ||uywtigklrhywd.online^
