@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-15 00:36:17
-! Block rules: 140382
+! Generated: 2026-11-15 07:24:55
+! Block rules: 140387
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102047
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6057
+!   - easylistchina [w=3] block 6062
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -318,6 +318,7 @@
 ||0u9w05cxo.com^
 ||0v0qj9fnwf.top^
 ||0vpekhux1f.com^
+||0vtqrw86o.com^
 ||0wk6gdkg8r.com^
 ||0wpfe0duo.com^
 ||0x01n2ptpuz3.com^
@@ -2904,6 +2905,7 @@
 ||5pub.com^
 ||5q6oj.942xnmm3gfno7ghve2ulf.cyou^
 ||5qnyx6k5w.com^
+||5qpogztzt.com^
 ||5qryjrx3.xyz^
 ||5qtcc.h57ozk5mkk8z62fmumtkm.cyou^
 ||5qzone.net^
@@ -70859,6 +70861,7 @@
 ||lwknozljwjqip.space^
 ||lwkvkd.maison-objet.com^
 ||lwlcflypc.com^
+||lwlqblkcucbrjy.com^
 ||lwlqsgr.cn^
 ||lwlybwd5zq.com^
 ||lwmbc.cn^
@@ -94887,6 +94890,7 @@
 ||r44r4l5na1.com^
 ||r451.jamanetwork.com^
 ||r45j15.com^
+||r45jho6ug.com^
 ||r4nds.absorba.com^
 ||r4uws5iu3g.com^
 ||r528e.cn^
@@ -126649,6 +126653,7 @@
 ||uwz7l3c.62epx4fjt3xgtgif3b.cyou^
 ||uwzwqadqkcjgw.site^
 ||uxahhowennlqf.website^
+||uxawyas.com^
 ||uxaz.fxnfk.cn^
 ||uxazhgibyblus.store^
 ||uxb030ku4s.com^

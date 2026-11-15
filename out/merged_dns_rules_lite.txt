@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-15 00:36:16
-! Block rules: 156164
+! Generated: 2026-11-15 07:24:54
+! Block rules: 156173
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102047 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6057 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6062 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2020 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2023 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -366,6 +366,7 @@
 ||0u9w05cxo.com^
 ||0v0qj9fnwf.top^
 ||0vpekhux1f.com^
+||0vtqrw86o.com^
 ||0wk6gdkg8r.com^
 ||0wpfe0duo.com^
 ||0x01n2ptpuz3.com^
@@ -1019,6 +1020,7 @@
 ||165tchuang.com^
 ||166br.com^
 ||166f.com^
+||167-148-195-171.sslip.io^
 ||1675450967.rsc.cdn77.org^
 ||16775c6f0c.e427d04a02.com^
 ||168.it168.com^
@@ -1059,7 +1061,6 @@
 ||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1435,6 +1436,7 @@
 ||1wm.lvc9zoqon2ytx7tqj3.cyou^
 ||1wo2fytcws.com^
 ||1worldonline.com^
+||1wvfp73huh.ufs.sh^
 ||1wxj1q0wo5.com^
 ||1x.ov6r1om1wf6eby55ky7j.cyou^
 ||1x3x.com^
@@ -4077,6 +4079,7 @@
 ||5pub.com^
 ||5q6oj.942xnmm3gfno7ghve2ulf.cyou^
 ||5qnyx6k5w.com^
+||5qpogztzt.com^
 ||5qryjrx3.xyz^
 ||5qtcc.h57ozk5mkk8z62fmumtkm.cyou^
 ||5qzone.net^
@@ -13297,7 +13300,6 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
-||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -25186,6 +25188,7 @@
 ||beafdf.restaupro.com^
 ||beagle.prod.tda.link^
 ||beaglemanipulate.com^
+||beak.in^
 ||beakfuljato.com^
 ||bealafulup.com^
 ||bealanews.com^
@@ -34289,7 +34292,6 @@
 ||cn.mywd.com^
 ||cn.pub.vpon.com^
 ||cn.ultraiso.net^
-||cn.unionlever.com^
 ||cn.vortex-win.data.microsoft.com^
 ||cn1.stadiumgoods.com^
 ||cn2.stadiumgoods.com^
@@ -51348,7 +51350,6 @@
 ||executeknowledge.com^
 ||execution-ci360.rai.it^
 ||executivehoroscope.com^
-||executorhub.pro^
 ||executorhub.space^
 ||executors110.net^
 ||executorswith620.net^
@@ -54320,6 +54321,7 @@
 ||fly.caljetelite.com^
 ||flyads1.com^
 ||flybolezposxy.space^
+||flycheats.xyz^
 ||flyerscongius.shop^
 ||flyersquare.com^
 ||flyflapchoom.shop^
@@ -55746,7 +55748,6 @@
 ||funnedravage.com^
 ||funnelbox.actonservice.com^
 ||funneld.com^
-||funneldiy.com^
 ||funnelserv.systems^
 ||funnelytics.io^
 ||funniestpins.com^
@@ -73046,6 +73047,7 @@
 ||kejet.net^
 ||kejwsfsmcdvyd.space^
 ||kejyrcp923.com^
+||kekman.space^
 ||kekmwvqrrexim.online^
 ||kekop.cn^
 ||kektds.com^
@@ -79918,6 +79920,7 @@
 ||ludopope.qpon^
 ||ludpvyyfohlgi.space^
 ||ludurxwgzzvdg.site^
+||luegner.top^
 ||luegnh.sneakercage.gr^
 ||lueiwsihcbodq.site^
 ||lufax.com^
@@ -80146,6 +80149,7 @@
 ||lwknozljwjqip.space^
 ||lwkvkd.maison-objet.com^
 ||lwlcflypc.com^
+||lwlqblkcucbrjy.com^
 ||lwlqsgr.cn^
 ||lwlybwd5zq.com^
 ||lwmbc.cn^
@@ -89116,6 +89120,7 @@
 ||movspmlmujhmbo.com^
 ||movzfexeonufj.site^
 ||mowayazmagacp.space^
+||mowcangler.co.uk^
 ||mowcoordinateegypt.com^
 ||mowgloriousdeem.com^
 ||mowgoats.com^
@@ -97587,6 +97592,7 @@
 ||pakarurutbekam.goaserv.com^
 ||pakawandonnee.com^
 ||pakbanners.com^
+||pakdigital.org^
 ||pakdru.altrarunning.com^
 ||pakehajerid.cfd^
 ||paktongforfex.qpon^
@@ -102723,7 +102729,6 @@
 ||pub-53fe969c6db649fba6466eb765f54359.r2.dev^
 ||pub-5590b15da27f4f219811312b19a8df05.r2.dev^
 ||pub-5aaa0feaeca64ddda0e256f8793ca2fd.r2.dev^
-||pub-5cc52b70262a4f5b8364aae5d25fa4ea.r2.dev^
 ||pub-5fd52250a6494c859025a3cd39713703.r2.dev^
 ||pub-6a90252f6d70443d960d6ac029dbd446.r2.dev^
 ||pub-72295f71e45d431995028c79cf261dae.r2.dev^
@@ -105643,6 +105648,7 @@
 ||r44r4l5na1.com^
 ||r451.jamanetwork.com^
 ||r45j15.com^
+||r45jho6ug.com^
 ||r4nds.absorba.com^
 ||r4uws5iu3g.com^
 ||r528e.cn^
@@ -107065,6 +107071,7 @@
 ||relay.fiverr.com^
 ||relay.happ.social^
 ||relay.information.maileva.com^
+||relay.lecoindudiabetique.com^
 ||relay.talking-avatar.dev^
 ||relay.velpa.pl^
 ||relaybaseinreplicas.net^
@@ -107786,7 +107793,6 @@
 ||revelationwilfridscience.com^
 ||reveledgoodish.com^
 ||revelerkarstic.shop^
-||revengegrompegroups.pl^
 ||revengine-tracker.remp.dailymaverick.co.za^
 ||revenue.com^
 ||revenue.net^
@@ -125406,6 +125412,7 @@
 ||storage5.hyperfx.info^
 ||storage6.hyperfx.info^
 ||storage7.hyperfx.info^
+||storage8.hyperfx.info^
 ||storageimagedisplay.com^
 ||storagerecurrent.com^
 ||storagetechnology.arrow.com^
@@ -129950,6 +129957,7 @@
 ||therapeuticcars.com^
 ||therapistla.com^
 ||therapygeorgia.com^
+||therb.fixlow.shop^
 ||thereafterblazingclass.com^
 ||theredramekin.com^
 ||thereforeprisoniso.com^
@@ -136396,6 +136404,7 @@
 ||tw.alimama.cn^
 ||tw.api.vpon.com^
 ||tw.cx^
+||tw.fixlow.shop^
 ||tw.goasrv.com^
 ||tw.mall.yahoo.com^
 ||tw.mcgrorys.top^
@@ -139939,6 +139948,7 @@
 ||uwz7l3c.62epx4fjt3xgtgif3b.cyou^
 ||uwzwqadqkcjgw.site^
 ||uxahhowennlqf.website^
+||uxawyas.com^
 ||uxaz.fxnfk.cn^
 ||uxazhgibyblus.store^
 ||uxb030ku4s.com^
@@ -140247,7 +140257,6 @@
 ||v2e5kim4o.com^
 ||v2html.atm.youku.com^
 ||v2mi.gdt.qq.com^
-||v2raynapps.com.cn^
 ||v2st.shinobi.jp^
 ||v2z.kpjpu8m6p9bj685b7ijlewh7bb4o4q2v.cfd^
 ||v3-ad.ixigua.com^
