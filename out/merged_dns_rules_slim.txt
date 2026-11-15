@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-15 07:24:55
-! Block rules: 140387
+! Generated: 2026-11-15 14:53:43
+! Block rules: 140391
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102047
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6062
+!   - easylistchina [w=3] block 6066
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -3591,6 +3591,7 @@
 ||7nb71ub2xi.com^
 ||7ng6v3lu3c.execute-api.us-east-1.amazonaws.com^
 ||7nt9p4d4.de^
+||7nwt5qq78.com^
 ||7nyk1xl9vwfn8vp7nc281h2g8.cfd^
 ||7oavaac8i.com^
 ||7p5ruxflv0.com^
@@ -62279,6 +62280,7 @@
 ||jnmncpoktqope.online^
 ||jnmqhpecyjrnf.online^
 ||jnn-pa.googleapis.com^
+||jnno9y1a9.com^
 ||jnoxpedpszqfok.com^
 ||jnppwfozovsqd.online^
 ||jnps3tlw.xyz^
@@ -135864,6 +135866,7 @@
 ||xs.searchacg.org^
 ||xs.swagger1.com^
 ||xs213.javgg.club^
+||xs27ycutl.com^
 ||xsa1.qwertdd.pw^
 ||xsapp.cdn.bcebos.com^
 ||xsapykbbsdm.net^
@@ -138434,6 +138437,7 @@
 ||z2uyyp069d.com^
 ||z3617cz9ep.fitness.tappbrothers.com^
 ||z371.chicoer.com^
+||z3vkcnj9f.com^
 ||z444o.com^
 ||z451hzjrn3ntu1.cfd^
 ||z492.ctinsider.com^

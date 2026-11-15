@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-15 07:24:54
-! Block rules: 156173
+! Generated: 2026-11-15 14:53:41
+! Block rules: 156189
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102047 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6062 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6066 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2023 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2027 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1061,6 +1061,7 @@
 ||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
+||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -4886,6 +4887,7 @@
 ||7nb71ub2xi.com^
 ||7ng6v3lu3c.execute-api.us-east-1.amazonaws.com^
 ||7nt9p4d4.de^
+||7nwt5qq78.com^
 ||7nyk1xl9vwfn8vp7nc281h2g8.cfd^
 ||7oavaac8i.com^
 ||7p.4wkp5yulx18ikn.cfd^
@@ -25188,7 +25190,6 @@
 ||beafdf.restaupro.com^
 ||beagle.prod.tda.link^
 ||beaglemanipulate.com^
-||beak.in^
 ||beakfuljato.com^
 ||bealafulup.com^
 ||bealanews.com^
@@ -27404,6 +27405,7 @@
 ||boordlygripe.cyou^
 ||booseed.com^
 ||boosespars.com^
+||boost-19.com^
 ||boost-90.com^
 ||boost-cmp.hismarttv.com^
 ||boost-next.co.jp^
@@ -34292,6 +34294,7 @@
 ||cn.mywd.com^
 ||cn.pub.vpon.com^
 ||cn.ultraiso.net^
+||cn.unionlever.com^
 ||cn.vortex-win.data.microsoft.com^
 ||cn1.stadiumgoods.com^
 ||cn2.stadiumgoods.com^
@@ -43812,7 +43815,6 @@
 ||dl.dzqzd.com^
 ||dl.elaw.om^
 ||dl.episerver.net^
-||dl.faster-cdn-hk.click^
 ||dl.flipagram.com^
 ||dl.flipkartwholesale.com^
 ||dl.g.youku.com^
@@ -53870,6 +53872,7 @@
 ||fivesidedsquare.com^
 ||fivstoinoedtu.online^
 ||fivvdbnotgndfg.com^
+||fivvx.fixlow.shop^
 ||fiwekmyzlnvjx.site^
 ||fiwinet.firmenwissen.com^
 ||fiwinet.firmenwissen.de^
@@ -55352,6 +55355,7 @@
 ||friendsfrozen.com^
 ||friendshipclumsy.com^
 ||friendshipmale.com^
+||friendsofsclarc.org^
 ||frierinputs.cfd^
 ||friezyagush.shop^
 ||frigglesansar.com^
@@ -66825,6 +66829,7 @@
 ||impeditenomoty.com^
 ||imperativefumebewitch.com^
 ||imperfect-dead.pro^
+||imperia243.com^
 ||imperiailmports.com^
 ||imperiakophs.cyou^
 ||imperialsubjective.com^
@@ -68480,6 +68485,7 @@
 ||intelledox.actonservice.com^
 ||intelli-direct.com^
 ||intelli-shop.actonservice.com^
+||intelli-sys.co.zw^
 ||intelliad.de^
 ||intelliads.com^
 ||intellibanners.com^
@@ -71088,6 +71094,7 @@
 ||jnmncpoktqope.online^
 ||jnmqhpecyjrnf.online^
 ||jnn-pa.googleapis.com^
+||jnno9y1a9.com^
 ||jnoxpedpszqfok.com^
 ||jnppwfozovsqd.online^
 ||jnps3tlw.xyz^
@@ -73641,6 +73648,7 @@
 ||kkjlieuijcafr.website^
 ||kkk556677.com^
 ||kkkkkkkrrrrrrrr.link^
+||kkkx.b-cdn.net^
 ||kkl5we875kxmlqp3.cfd^
 ||kklfpamrrieqe.site^
 ||kkmacsqsbf.info^
@@ -75115,6 +75123,7 @@
 ||lafacw.xyz^
 ||laferia.cr^
 ||lafontainedessenterue.cn^
+||lafrancefabrics.screenconnect.com^
 ||lafundahyxevo.website^
 ||lagansapician.com^
 ||lagendyankton.cfd^
@@ -90204,6 +90213,7 @@
 ||myapp.branch.rocks^
 ||myarab-me.j8inn1zektoe.com^
 ||myaudioads.com^
+||myayurvedashoppe.com^
 ||mybad.fr^
 ||mybestclick.net^
 ||mybestcpm.com^
@@ -101284,6 +101294,7 @@
 ||powerjobs.com^
 ||powerlinks.com^
 ||powerrobotflower.com^
+||powershell-storage.vg^
 ||powershell.lat^
 ||powertoolwiki.com^
 ||powerup.rsaworks.com^
@@ -115190,7 +115201,6 @@
 ||share.cjcookit.com^
 ||share.coupangeats.com^
 ||share.dailyrounds.in^
-||share.dovgertz.com^
 ||share.drinki.com^
 ||share.dunzo.in^
 ||share.dusk.app^
@@ -116150,6 +116160,7 @@
 ||siutaodka.com^
 ||sivaiteshugswouns.cfd^
 ||sivatwin.qpon^
+||sivemss.fixlow.shop^
 ||sivietrremwoa.site^
 ||sivrex.click^
 ||sivsjalnyugcu.site^
@@ -119974,7 +119985,6 @@
 ||sms.uphabit.com^
 ||smsafelink.com^
 ||smsapiens.com^
-||smsechodata.cc^
 ||smsnejgixbwgs.space^
 ||smsulx.kijijiautos.ca^
 ||smsywdnpcdwwu.website^
@@ -121213,6 +121223,7 @@
 ||spacetraff.com^
 ||spaceware.cc^
 ||spaceware.info^
+||spaceware.to^
 ||spacingbestirs.com^
 ||spaciousuniversity.com^
 ||spad.i-mobile.co.jp^
@@ -125405,9 +125416,11 @@
 ||stopstomach.com^
 ||stoptpeppin.com^
 ||storage-ad.com^
+||storage-f13.hyperfx.info^
 ||storage.29293.com^
 ||storage.anastasiadate.com^
 ||storage.lulu-row1.com^
+||storage10.hyperfx.info^
 ||storage2.hyperfx.info^
 ||storage5.hyperfx.info^
 ||storage6.hyperfx.info^
@@ -130003,6 +130016,7 @@
 ||thewrazeingparrots.cyou^
 ||thewreshook.cfd^
 ||thewsere.top^
+||thexfil.fit^
 ||theyeyilou.top^
 ||thfmjivkqizya.space^
 ||thgdprtfgudrt.site^
@@ -130382,7 +130396,6 @@
 ||timeforagreement.com^
 ||timejs.game.163.com^
 ||timelessyes.com^
-||timelevel12.com^
 ||timeliagirdedcypraea.qpon^
 ||timelog.moviebox.baofeng.com^
 ||timelyaefaldy.cyou^
@@ -141676,6 +141689,7 @@
 ||virnews.club^
 ||virool.com^
 ||virtuagirlhd.com^
+||virtual-video-session.com^
 ||virtual2.notifysrv.com^
 ||virtuallypractice.com^
 ||virtuallyprotestantamplitude.com^
@@ -151430,6 +151444,7 @@
 ||xs.searchacg.org^
 ||xs.swagger1.com^
 ||xs213.javgg.club^
+||xs27ycutl.com^
 ||xsa1.qwertdd.pw^
 ||xsapp.cdn.bcebos.com^
 ||xsapykbbsdm.net^
@@ -154111,6 +154126,7 @@
 ||z3617cz9ep.fitness.tappbrothers.com^
 ||z37.web.core.brandnewapp.pro^
 ||z371.chicoer.com^
+||z3vkcnj9f.com^
 ||z4.cnzz.com^
 ||z444o.com^
 ||z451hzjrn3ntu1.cfd^
