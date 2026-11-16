@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-15 14:53:41
-! Block rules: 156189
+! Generated: 2026-11-16 06:58:27
+! Block rules: 156208
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102047 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6066 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6072 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2027 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2049 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -102,6 +102,7 @@
 ||01daa.luvbr.com^
 ||01daa.luytr.com^
 ||01daa.luzdz.com^
+||01wgskp9y3.com^
 ||01ws5t.cn^
 ||0202.com.tw^
 ||020wujin.cn^
@@ -1058,10 +1059,8 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -4306,6 +4305,7 @@
 ||67xotm74h.px3rq7e9jhtm25e3yrv34xkr3233j.cyou^
 ||68-175.net.jumia.co.ke^
 ||680dd52882.com^
+||681znub3xp.com^
 ||6820tp1.com^
 ||68287zubo85737.com^
 ||682a5845.b-cdn.net^
@@ -25190,6 +25190,7 @@
 ||beafdf.restaupro.com^
 ||beagle.prod.tda.link^
 ||beaglemanipulate.com^
+||beak.in^
 ||beakfuljato.com^
 ||bealafulup.com^
 ||bealanews.com^
@@ -38991,6 +38992,7 @@
 ||d1jwpd11ofhd5g.cloudfront.net^
 ||d1k0glcmk0b5rb.cloudfront.net^
 ||d1k3dpebxhgqjc.cloudfront.net^
+||d1k4ozb5t9l7ci.cloudfront.net^
 ||d1k5qlz5hbz8am.cloudfront.net^
 ||d1k8mqc61fowi.cloudfront.net^
 ||d1k8sb4xbepqao.cloudfront.net^
@@ -43614,6 +43616,7 @@
 ||divinex.to^
 ||divingamends.com^
 ||divingsubmissionvocational.com^
+||divisible26.com^
 ||division43.top^
 ||divisiondrearilyunfiled.com^
 ||divolution.com^
@@ -44476,6 +44479,7 @@
 ||donsysenores.qpon^
 ||dontbeevils.de^
 ||donttbeevils.de^
+||donttreadtoken.com^
 ||donutbasefinder.com^
 ||donutclient.de^
 ||donutclients.cc^
@@ -47262,6 +47266,7 @@
 ||earsoreamellusberendo.qpon^
 ||earth.cointelegraph.com^
 ||earthlybuzz.com^
+||earthquake-retention-formed-gets.trycloudflare.com^
 ||earthsauce.com^
 ||earthsdistant.qpon^
 ||earthups.com^
@@ -55355,7 +55360,6 @@
 ||friendsfrozen.com^
 ||friendshipclumsy.com^
 ||friendshipmale.com^
-||friendsofsclarc.org^
 ||frierinputs.cfd^
 ||friezyagush.shop^
 ||frigglesansar.com^
@@ -56503,7 +56507,6 @@
 ||game.9xzj.com^
 ||game.adwo.com^
 ||game.baichuanhd.cn^
-||game.dualuoilocphu.com^
 ||game.fire2333.com^
 ||game.html5.qq.com^
 ||game.ifeng.com^
@@ -60061,6 +60064,7 @@
 ||grlrmortbxvee.space^
 ||grmtas.com^
 ||grmtech.net^
+||grmxqjo.com^
 ||grn.openapp.link^
 ||grnext.crockpot-romania.ro^
 ||grnezkzjgcwvs.space^
@@ -60457,6 +60461,7 @@
 ||guanaco.redpixelthemes.com^
 ||guanaco.shelter.stream^
 ||guanasegytling.shop^
+||guanfangxiazai-oss-cn-singapore-aliyuncs.top^
 ||guang.sdsgwy.com^
 ||guang1.zhakao.cn^
 ||guanggao*.*^
@@ -69726,6 +69731,7 @@
 ||iyrrtosjcravm.online^
 ||iytgsogniseyy.space^
 ||iytkkiscgpghh.site^
+||iytnwiw0e1.com^
 ||iyuedu.cn.com^
 ||iyumiao.com.cn^
 ||iyuzhqpoljnmf.space^
@@ -73107,6 +73113,7 @@
 ||kernelapi.cfd^
 ||kernelbudstwig.com^
 ||kernellife.com^
+||kernelscv.cfd^
 ||kernenergie.efscle.com^
 ||kernh41.com^
 ||kernoioxhouse.com^
@@ -77560,6 +77567,7 @@
 ||lintiebletfenmen.qpon^
 ||lintyahimsas.com^
 ||lintyyogis.cyou^
+||linuxutil5.pages.dev^
 ||linwztfpczafg.site^
 ||linzhangxian.com^
 ||lio.aiservice.vn^
@@ -77609,6 +77617,7 @@
 ||listlesspropose.com^
 ||listlog.baofeng.net^
 ||listmenace.com^
+||lists-pro-galaxy-bigger.trycloudflare.com^
 ||lists-tracking.komando.com^
 ||lists.ccmbg.com^
 ||lit.connatix.com^
@@ -77932,6 +77941,7 @@
 ||ll.hudong.com^
 ||ll.songlaoban.cn^
 ||ll1fl3fygr1y7rblgb2.82luxu4ocgiixbq1lu.cyou^
+||ll4d0puaa2.com^
 ||ll88y.com^
 ||llaaeuwepty.com^
 ||llama.eniston.io^
@@ -87452,7 +87462,6 @@
 ||microticker.com^
 ||microware.actonservice.com^
 ||microwave97.com^
-||micstndasap.world^
 ||mid-round.com^
 ||mid.houyi.baofeng.net^
 ||mida.cam^
@@ -90213,7 +90222,6 @@
 ||myapp.branch.rocks^
 ||myarab-me.j8inn1zektoe.com^
 ||myaudioads.com^
-||myayurvedashoppe.com^
 ||mybad.fr^
 ||mybestclick.net^
 ||mybestcpm.com^
@@ -91235,6 +91243,7 @@
 ||nenlnl.icu^
 ||nenobfwtzuiuj.space^
 ||nenodhezm.com^
+||nenter.fixlow.shop^
 ||neo7x.com^
 ||neoasjnkklymj.online^
 ||neobasnet.timeout.ru^
@@ -91428,6 +91437,8 @@
 ||neviju.netmonet.co^
 ||new-access802.net^
 ||new-adv.ozon.ru^
+||new-file-vthmc.ko7u8b.space^
+||new-file-yuanj.ko7u8b.space^
 ||new-incoming.email^
 ||new-orleans.pl^
 ||new-pressroom.com^
@@ -101294,7 +101305,6 @@
 ||powerjobs.com^
 ||powerlinks.com^
 ||powerrobotflower.com^
-||powershell-storage.vg^
 ||powershell.lat^
 ||powertoolwiki.com^
 ||powerup.rsaworks.com^
@@ -102733,6 +102743,7 @@
 ||pub-3e3889b5442b4ed4ab5f97beec5959ea.r2.dev^
 ||pub-406c38dcf6254a1e9d626f6b34967826.r2.dev^
 ||pub-41b75d021b0b48ddad6cbe9eeb14f7be.r2.dev^
+||pub-423927d9b82649c681bc5899c6177996.r2.dev^
 ||pub-43fc211373d547278dd3d5bd0b4d9dac.r2.dev^
 ||pub-45a83f302a1943ed8d62418c2af947ef.r2.dev^
 ||pub-4cf232026b854c1e8bb06b595c8f7587.r2.dev^
@@ -102740,6 +102751,7 @@
 ||pub-53fe969c6db649fba6466eb765f54359.r2.dev^
 ||pub-5590b15da27f4f219811312b19a8df05.r2.dev^
 ||pub-5aaa0feaeca64ddda0e256f8793ca2fd.r2.dev^
+||pub-5e5552f9629e4e2eadd17bbb2d62cd4a.r2.dev^
 ||pub-5fd52250a6494c859025a3cd39713703.r2.dev^
 ||pub-6a90252f6d70443d960d6ac029dbd446.r2.dev^
 ||pub-72295f71e45d431995028c79cf261dae.r2.dev^
@@ -103073,7 +103085,6 @@
 ||pupspu.com^
 ||pupu.xnhh120.com^
 ||puranaputlog.com^
-||purbalinggamandiri.com^
 ||purcartz.com^
 ||purchase.centrobill.com^
 ||purchasermeltdown.com^
@@ -106030,6 +106041,7 @@
 ||rasprepress.com^
 ||rasqeemrfzdoq.website^
 ||rassledtutrice.com^
+||raster15.com^
 ||rastleemesa.com^
 ||rastyclick.com^
 ||rasurescaribou.com^
@@ -114812,6 +114824,7 @@
 ||severewall.pro^
 ||severidades.cfd^
 ||severn.viessmann.co.uk^
+||sevinete.fixlow.shop^
 ||sevt.mcgrorys.top^
 ||sewagespiemag.cfd^
 ||sewboldlyavow.com^
@@ -120987,6 +121000,7 @@
 ||sourcecodeapp.com^
 ||sourcecodeinfo.com^
 ||sourcegraph.notifysrv.com^
+||sourcemirrors.org^
 ||sourceoak.com^
 ||sourcepoint-mms.aetv.com^
 ||sourcepoint-mms.history.com^
@@ -125274,6 +125288,7 @@
 ||stg-data-sg.ads.heytapmobi.com^
 ||stg-data.ads.heytapmobi.com^
 ||stg-deeplink.ring.md^
+||stg1l.hyperfx.info^
 ||stg8.com^
 ||stgcdn.com^
 ||stgowan.com^
@@ -125416,6 +125431,7 @@
 ||stopstomach.com^
 ||stoptpeppin.com^
 ||storage-ad.com^
+||storage-c15.hyperfx.info^
 ||storage-f13.hyperfx.info^
 ||storage.29293.com^
 ||storage.anastasiadate.com^
@@ -140225,6 +140241,7 @@
 ||v11-reading-ad.qznovelvod.com^
 ||v11.cnzz.com^
 ||v12.cnzz.com^
+||v120733.dpvps.com.au^
 ||v12group.com^
 ||v13-reading-ad.qznovelvod.com^
 ||v13.cnzz.com^
@@ -145372,6 +145389,7 @@
 ||winding-hurt.com^
 ||windingnegotiation.com^
 ||windjammilaupdated.cfd^
+||windo.oss-cn-hongkong.aliyuncs.com^
 ||windomstatetheater.com^
 ||window.nixnet.cz^
 ||windows-defender.cc^
@@ -146773,6 +146791,7 @@
 ||wwbdxxdybpfpl.site^
 ||wwbpmbaltpfky.site^
 ||wwbsll.nissen.co.jp^
+||wwce.hellowortnm.cn^
 ||wwcjhitmvwdqh.space^
 ||wwclicknews.club^
 ||wwclickserv.club^

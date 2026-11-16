@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-15 14:53:43
-! Block rules: 140391
+! Generated: 2026-11-16 06:58:29
+! Block rules: 140397
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102047
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6066
+!   - easylistchina [w=3] block 6072
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -91,6 +91,7 @@
 ||01daa.luvbr.com^
 ||01daa.luytr.com^
 ||01daa.luzdz.com^
+||01wgskp9y3.com^
 ||01ws5t.cn^
 ||0202.com.tw^
 ||020wujin.cn^
@@ -3100,6 +3101,7 @@
 ||67xotm74h.px3rq7e9jhtm25e3yrv34xkr3233j.cyou^
 ||68-175.net.jumia.co.ke^
 ||680dd52882.com^
+||681znub3xp.com^
 ||6820tp1.com^
 ||68287zubo85737.com^
 ||682a5845.b-cdn.net^
@@ -36799,6 +36801,7 @@
 ||divinesbaze.com^
 ||divingamends.com^
 ||divingsubmissionvocational.com^
+||divisible26.com^
 ||division43.top^
 ||divisiondrearilyunfiled.com^
 ||divolution.com^
@@ -51927,6 +51930,7 @@
 ||grlrmortbxvee.space^
 ||grmtas.com^
 ||grmtech.net^
+||grmxqjo.com^
 ||grn.openapp.link^
 ||grnext.crockpot-romania.ro^
 ||grnezkzjgcwvs.space^
@@ -60972,6 +60976,7 @@
 ||iyrrtosjcravm.online^
 ||iytgsogniseyy.space^
 ||iytkkiscgpghh.site^
+||iytnwiw0e1.com^
 ||iyuedu.cn.com^
 ||iyumiao.com.cn^
 ||iyuzhqpoljnmf.space^
@@ -68772,6 +68777,7 @@
 ||ll.gxsky.com^
 ||ll.hudong.com^
 ||ll1fl3fygr1y7rblgb2.82luxu4ocgiixbq1lu.cyou^
+||ll4d0puaa2.com^
 ||ll88y.com^
 ||llaaeuwepty.com^
 ||llama.eniston.io^
