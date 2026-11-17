@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-17 08:42:57
-! Block rules: 140515
+! Generated: 2026-11-17 18:01:49
+! Block rules: 140518
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101222
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6084
+!   - easylistchina [w=3] block 6087
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -21925,6 +21925,7 @@
 ||bmxavtdjqvdqn.store^
 ||bmxpsxdqliuhj.space^
 ||bmyudk.clarins.de^
+||bmznrj7oi.com^
 ||bmzuyj.nifty.com^
 ||bmzzojmzu.com^
 ||bn.adasgxsp.cc^
@@ -56422,6 +56423,7 @@
 ||i4320rdrta.com^
 ||i4i8vf6v2pu9m4b329epo4ezeplril1p87.rest^
 ||i5.akjunshi.com^
+||i5dtd6dfl.com^
 ||i5e.19gzjg6grxxpty.cyou^
 ||i5ixiwch2f.themakersmob.com^
 ||i5le8m3qxs.com^
@@ -72288,6 +72290,7 @@
 ||m3v8x28jut.com^
 ||m43ly4u7yfq4yx1kg1tnf2.cfd^
 ||m43ocq1uoj.com^
+||m4820qu4n.com^
 ||m485oq2gym.top^
 ||m4dynuge4.com^
 ||m4n.nl^
