@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-17 18:01:49
-! Block rules: 140518
+! Generated: 2026-11-18 01:05:59
+! Block rules: 140521
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101222
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6087
+!   - easylistchina [w=3] block 6090
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -42145,6 +42145,7 @@
 ||enamelhurdleunpaid.com^
 ||enamiteaer.com^
 ||enappstat.xbext.com^
+||enar18ahs1.com^
 ||enbazj.ilbianconero.com^
 ||enbfjiwrdsdzb.site^
 ||enbpnlaiatvav.space^
@@ -56125,6 +56126,7 @@
 ||hy.huangye88.net^
 ||hy2jprm21n913mwwph.rest^
 ||hy2qvo4qfomw3rx.cfd^
+||hy851xvexj.com^
 ||hyaccgrjkbsoz.online^
 ||hyalitehydrol.cfd^
 ||hyaloidsatury.com^
@@ -127269,6 +127271,7 @@
 ||variablesthirdtransparent.com^
 ||variablestreet.pro^
 ||variacgaia.click^
+||variance36.com^
 ||variationbelovedsplit.com^
 ||variationconfused.com^
 ||variety.tc.qq.com^
