@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-18 08:45:47
-! Block rules: 140525
+! Generated: 2026-11-18 17:43:16
+! Block rules: 140530
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101222
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6094
+!   - easylistchina [w=3] block 6097
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -323,6 +323,7 @@
 ||0wk6gdkg8r.com^
 ||0wpfe0duo.com^
 ||0x01n2ptpuz3.com^
+||0x2jt61f3l.com^
 ||0x5.me^
 ||0x79jjyph7.com^
 ||0xclicks.com^
@@ -4534,7 +4535,6 @@
 ||a.frezeporn.site^
 ||a.fucker.com^
 ||a.fwsso.com^
-||a.fxltsbl.com^
 ||a.fxnetworks.com^
 ||a.gemen.site^
 ||a.getemoji.me^
@@ -31158,6 +31158,7 @@
 ||cryvggjyqlhji.site^
 ||cryweb.github.io^
 ||crzohw.intersport.gr^
+||crzzbyrea5.com^
 ||cs-bailing.com.cn^
 ||cs-feige.iqiyi.com^
 ||cs-op.douyucdn.cn^
@@ -37236,6 +37237,7 @@
 ||dm.syntelli.com^
 ||dm.toutiao.com^
 ||dm.wenshenxiu.com^
+||dm.wo.com.cn^
 ||dm.xiazaibao.xunlei.com^
 ||dm.zjut.cc^
 ||dm.zuowenku.net^
@@ -43292,6 +43294,7 @@
 ||eu1-rum-openway.guance.com^
 ||eu1-sentry.deyecloud.com^
 ||eu49r5rrpo9u1cfg9gbf2p5krcoj.cfd^
+||eu4as22g0c.com^
 ||eu5b3bzx51zgyr.f3r4hbt4lli8eiuo99g2x.cyou^
 ||eu5v4zpuyxnr55.cfd^
 ||eu8759jwcy6q6nw.rest^
@@ -48203,6 +48206,7 @@
 ||fxjvakbsprxyl.space^
 ||fxkrcuqdwsnfdm.com^
 ||fxlskwhqjtzym.website^
+||fxltsbl.com^
 ||fxmdjr.mamastar.jp^
 ||fxmdjr.saita-puls.com^
 ||fxmdjr.yogajournal.jp^
@@ -123724,6 +123728,7 @@
 ||tyol8xnp41pvrzp.cfd^
 ||tyotxwymbciuy.space^
 ||tyouqyiehilym.online^
+||typdm.tydevice.com^
 ||typeouttrudge.com^
 ||typepredict.com^
 ||typewebsite.com^
