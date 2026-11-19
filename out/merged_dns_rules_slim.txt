@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-19 05:22:49
-! Block rules: 140533
+! Generated: 2026-11-19 14:35:41
+! Block rules: 140536
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 101222
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6100
+!   - easylistchina [w=3] block 6103
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -79813,6 +79813,7 @@
 ||msg1.video.qiyi.com^
 ||msg2.video.ptqy.gitv.tv^
 ||msg2.video.qiyi.com^
+||msg3zn5w9.com^
 ||msga.ptqy.gitv.tv^
 ||msgacs-m.lazada.co.id^
 ||msgacs-m.lazada.co.th^
@@ -87116,6 +87117,7 @@
 ||p30rank.ir^
 ||p329.si.com^
 ||p35ip1ovbguthem92fi5y.cfd^
+||p3bqgc0pi.com^
 ||p3lj34e33yz6ug5z.rest^
 ||p3p.mmstat.com^
 ||p3p.sogou.com^
@@ -114726,6 +114728,7 @@
 ||szgistaexaeaj.space^
 ||szhbxgrzzsiw.com^
 ||szhomes.net^
+||szhtkldy4.com^
 ||szhyzkj.com^
 ||szjbo9a13.com^
 ||szjjiwlyfkeyv.site^
