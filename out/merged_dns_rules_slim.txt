@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-20 03:49:04
-! Block rules: 141422
+! Generated: 2026-11-20 12:23:26
+! Block rules: 141428
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102131
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6105
+!   - easylistchina [w=3] block 6111
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -62298,6 +62298,7 @@
 ||jhpmmffqajjcz.site^
 ||jhpqntyyeezpds.com^
 ||jhprvk.skstoa.com^
+||jhpt4yvqu4.com^
 ||jhpwrn.laredoute.ch^
 ||jhqdosdrbczka.space^
 ||jhqieljrzibnr.store^
@@ -64124,6 +64125,7 @@
 ||k.xmtsyg.com^
 ||k030.koco.com^
 ||k0398.com^
+||k04y9ezfjw.com^
 ||k06kldksi3.com^
 ||k08999.com^
 ||k08tn5uk9.com^
@@ -87742,6 +87744,7 @@
 ||pa.pinpoll.com^
 ||pa.travelwhiz.app^
 ||pa.wbso.ai^
+||pa4u6c6lqv.com^
 ||pa5ka.com^
 ||pa5xjc.m1guelpf.me^
 ||paa-reporting-advertising.amazon^
@@ -93671,6 +93674,7 @@
 ||pzhrcssjaridu.website^
 ||pziad.com^
 ||pzimff.com^
+||pzjgxlbejmhrli.com^
 ||pzjoonojxxtuf.online^
 ||pzjzhawiuvkzuj.com^
 ||pzkaqvyqypgyd.site^
@@ -103789,6 +103793,7 @@
 ||sg2p.wns.windows.com^
 ||sg3.notarize.com^
 ||sg92.com^
+||sga2frwjjh.com^
 ||sgabozoerhnan.space^
 ||sgaijlnojrrok.site^
 ||sgali-mcs.byteoversea.com^
@@ -130202,6 +130207,7 @@
 ||vwzrmuzcjxpkh.space^
 ||vwzusobugmrad.space^
 ||vx2tbw9xin.com^
+||vx5l3i9l18.com^
 ||vxaasbedwoypm.site^
 ||vxamslnbndqv.com^
 ||vxbstsvddlepb.online^
