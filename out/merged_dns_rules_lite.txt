@@ -2,8 +2,8 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-20 12:23:24
-! Block rules: 157260
+! Generated: 2026-11-20 20:37:18
+! Block rules: 157273
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2090 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2096 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1065,7 +1065,6 @@
 ||178-83-121-204.cprapid.com^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -11538,6 +11537,7 @@
 ||acrebackcharacter.com^
 ||acridanrheas.cfd^
 ||acridtwist.com^
+||acrilicoporto.pt^
 ||acro.egghead.link^
 ||acrobat.proposal.name.ng^
 ||acrobaticcouple.com^
@@ -13325,6 +13325,7 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
+||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -22946,7 +22947,6 @@
 ||auth.be.sec.miui.com^
 ||auth.carte-gr.total.fr^
 ||auth.wosms.cn^
-||auth2api.site^
 ||authbe.sec.intl.miui.com^
 ||authcaptcha.com^
 ||authedmine.com^
@@ -26265,6 +26265,7 @@
 ||bikm1.hypstock.info^
 ||bikm2.hypstock.info^
 ||bikm3.hypstock.info^
+||bikm4.hypstock.info^
 ||bikolyenite.com^
 ||bilahh.feuvert.fr^
 ||bilboaiortnredelay.cyou^
@@ -27179,6 +27180,7 @@
 ||bn4sch102110124.wns.windows.com^
 ||bn5x.net^
 ||bnakoeekmxmyl.website^
+||bnbflip.xyz^
 ||bnbgdqjurxsoo.site^
 ||bnbjvtppkkeak.space^
 ||bnbklsss.homes^
@@ -31495,6 +31497,7 @@
 ||cdn.fedykr.com^
 ||cdn.fegivja.com^
 ||cdn.fexyop.com^
+||cdn.file6.goodid.com^
 ||cdn.flurry.com^
 ||cdn.ftwpcn.com^
 ||cdn.g.wan.douyu.com^
@@ -34142,7 +34145,6 @@
 ||cloudconf-app-th.heytapmobile.com^
 ||cloudconf.fengkongcloud.com^
 ||cloudeliveryenterprise.com^
-||cloudenterprise26.com^
 ||clouderrorreporting.googleapis.com^
 ||cloudflane.com^
 ||cloudflare.gd^
@@ -36534,6 +36536,7 @@
 ||costwinner.com^
 ||cosystraight.com^
 ||cot.nomarax.com^
+||cotecsecuritygroup.com^
 ||cotefulremixt.cfd^
 ||cotemaison.np6.com^
 ||coticedconduit.qpon^
@@ -41467,6 +41470,7 @@
 ||daxiu01.oss-accelerate.aliyuncs.com^
 ||daxnqytedjvry.website^
 ||daxogon.top^
+||daxogon.xyz^
 ||daxtgseqgwbsn.space^
 ||daxtnnqlppovj.space^
 ||day13vh1xl0gh.cloudfront.net^
@@ -41770,7 +41774,6 @@
 ||dcvigbosdkrhp.space^
 ||dcvssaited.com^
 ||dcvxhdgupnvau.space^
-||dcwblida.dz^
 ||dcwelerqwrbwe.site^
 ||dcwnhlzrvnlnj.website^
 ||dcwxbgqsmyvsn.site^
@@ -42304,7 +42307,6 @@
 ||delivery06.ad4game.com^
 ||delivery51.com^
 ||deliveryinterference.com^
-||deliverymailreport.co.za^
 ||deliverytraffico.com^
 ||deliverywhiskerspsychopath.com^
 ||dell.compellent.com^
@@ -42721,6 +42723,7 @@
 ||dex50.deteql.net^
 ||dexchangegenius.com^
 ||dexchangeinc.com^
+||dexf5.fixlow.shop^
 ||dexinyi.cn^
 ||dexpredict.com^
 ||dexterbulbel.qpon^
@@ -45208,7 +45211,6 @@
 ||drankexpertstroll.com^
 ||drankinjectioncircumference.com^
 ||draperyrevolvertiara.com^
-||drastok.xyz^
 ||dratetillage.com^
 ||dratexalt.com^
 ||dratio.com^
@@ -46456,6 +46458,7 @@
 ||dxx11xa.fixlow.shop^
 ||dxx22xa.fixlow.shop^
 ||dxx33xa.fixlow.shop^
+||dxx44xa.fixlow.shop^
 ||dxx5.fixlow.shop^
 ||dxx5g.fixlow.shop^
 ||dxx5o.fixlow.shop^
@@ -52331,7 +52334,6 @@
 ||facebook.us13.go-static.info^
 ||facebookads.com^
 ||facebookinbox-omni-onapp.haravan.com^
-||faceit-anti-cheat.com^
 ||faceit-cdn.org^
 ||faceit.pairacc.com^
 ||faceit.syncacc.pro^
@@ -61406,6 +61408,7 @@
 ||h-adashx4yt.ut.taobao.com^
 ||h-bid.com^
 ||h-cast.jp^
+||h-hss-za.co^
 ||h.atdmt.com^
 ||h.b5qpg.cn^
 ||h.baminw.cn^
@@ -61914,6 +61917,7 @@
 ||harveycarnet.cfd^
 ||hasaeblmtcadr.website^
 ||hasalltalent.com^
+||hasansunnah.xyz^
 ||hash.trafficmanager.net^
 ||hashcoin.co^
 ||hashedsolver.icu^
@@ -62371,6 +62375,7 @@
 ||hebrbnezqsgie.online^
 ||hecdwyyphbblq.space^
 ||hechaocheng.cn^
+||hechman.top^
 ||heckledpusill.cyou^
 ||hectorspankasked.com^
 ||hectorstatic.baidu.com^
@@ -62777,6 +62782,7 @@
 ||hhba03230kdh.com^
 ||hhbekxxw5d9e.pflexads.com^
 ||hhbetevelthyg.site^
+||hhbs.hhu.edu.cn^
 ||hhbxcs.tylko.com^
 ||hhbypdoecp.com^
 ||hhcjvomohnlpq.site^
@@ -62972,6 +62978,7 @@
 ||hilariousdeposit.pro^
 ||hilariouseconomics.com^
 ||hilariouszinc.com^
+||hilbetadres.com^
 ||hilerant.site^
 ||hilledgaboncares.cyou^
 ||hillglamorous.com^
@@ -73307,6 +73314,7 @@
 ||kavijaseuranta.fi^
 ||kavtqkbsyrpzt.site^
 ||kavxx.com^
+||kavyasourcing.com^
 ||kawa11.space^
 ||kawo77.com^
 ||kawtsayrnwyar.store^
@@ -73523,7 +73531,6 @@
 ||kedcnefhjkzra.online^
 ||kedeng.xin^
 ||kee.e1brxg23xloe7kbm9eqy7qhj.cyou^
-||kee126.com^
 ||keejasezeehi.xyz^
 ||keekedlegman.cyou^
 ||keelersphered.cfd^
@@ -89334,7 +89341,6 @@
 ||momrollback.com^
 ||momsg.wps.cn^
 ||momyjw.jobninja.com^
-||mon-blanc-03.cfd^
 ||mon-com-01.com^
 ||mon-com-net.com^
 ||mon-pagerank.com^
@@ -96182,6 +96188,7 @@
 ||oomiacsstriker.cyou^
 ||oomiakyetapa.com^
 ||ooml5r5wlvpivb.cfd^
+||oomnk.duckdns.org^
 ||oomyv.com^
 ||ooniu.com^
 ||oonsthriftmaunch.qpon^
@@ -98783,7 +98790,6 @@
 ||pawsconservation.com^
 ||pawsleapedfishy.com^
 ||pawsnug.com^
-||pawsockenjoyer.site^
 ||pawsplus.actonservice.com^
 ||paxillidespotbashaw.cfd^
 ||paxmedia.net^
@@ -99052,6 +99058,7 @@
 ||pdfdoyrcfev.com^
 ||pdfexpert.cc^
 ||pdfmun.software^
+||pdfonlineinvoi745.icu^
 ||pdfsearchhq.com^
 ||pdftfe.thekooples.com^
 ||pdfxd.com^
@@ -101931,6 +101938,7 @@
 ||postmedia-ai.wehaacdn.com^
 ||postquare.com^
 ||postrelease.com^
+||postu.cloud^
 ||postut.cn^
 ||potassnomnem.qpon^
 ||potatoinvention.com^
@@ -102200,7 +102208,6 @@
 ||practicemanagement.securitiesamerica.com^
 ||practiceparlour.com^
 ||practiserussiangarments.com^
-||practisingcertificateprotection.com^
 ||practitioner23.com^
 ||practivate.adobe.com^
 ||praddpro.de^
@@ -106624,6 +106631,7 @@
 ||ralishswarmer.com^
 ||rallytrck.website^
 ||ralodithas.com^
+||ralph-schinagl.com^
 ||ralphrostral.com^
 ||ralqzevtvfmgd.online^
 ||rals4alum.com^
@@ -109423,6 +109431,7 @@
 ||robinorchid.com^
 ||roblox-expl.info^
 ||robloxscript.top^
+||robloxscript1.top^
 ||robotbagpipe.com^
 ||robotflowermobile.com^
 ||robotgarages.com^
@@ -112591,6 +112600,7 @@
 ||sales.avis.com^
 ||sales.disneylandparis.com^
 ||sales.hot.net.il^
+||sales.ifree.page^
 ||sales.northeastind.com^
 ||sales.pandasuite.io^
 ||sales.texturacorp.com^
@@ -116899,10 +116909,12 @@
 ||site.emarketer.com^
 ||site.firstnet.com^
 ||site.infosysbpm.com^
+||site.jiancai008.com^
 ||site.johnlewis-insurance.com^
 ||site.newzstand.com^
 ||site.tdk.cn^
 ||site.tdk.com^
+||site.vietnam852.com^
 ||site.waitrose.com^
 ||site2.emarketer.com^
 ||site24x7rum.com^
@@ -141868,6 +141880,7 @@
 ||venusgloria.com^
 ||venusrevival.com^
 ||veoci.actonservice.com^
+||veod1.hypstock.info^
 ||veodccuvtympn.space^
 ||veoojoowqrkwm.top^
 ||veosfi.woonexpress.nl^
@@ -146363,7 +146376,6 @@
 ||windowthink.com^
 ||windowylarvule.com^
 ||windriversfiles.imeitools.com^
-||winds11.site^
 ||windscreenthomas.com^
 ||windsorflavo.qpon^
 ||windsplay.com^
@@ -149581,6 +149593,7 @@
 ||www16.jtv.com^
 ||www181.superembed.com^
 ||www19.superembed.com^
+||www2.0zz0.com^
 ||www2.2ndgear.com^
 ||www2.acsvalves.com^
 ||www2.arvig.com^
