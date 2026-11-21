@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-21 09:01:53
-! Block rules: 157291
+! Generated: 2026-11-21 16:53:03
+! Block rules: 157312
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102131 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6117 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5809 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2105 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2119 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1063,8 +1063,10 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
+||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -1113,6 +1115,7 @@
 ||18reg3x2vizczz644.cfd^
 ||18rm.com^
 ||18teensex.com^
+||18tllktok.xyz^
 ||18tlm4jee.de^
 ||18wosx.ru^
 ||19035924.automated.almosafer.com^
@@ -10558,6 +10561,7 @@
 ||aass111.tos-cn-beijing.volces.com^
 ||aass1122.tos-cn-beijing.volces.com^
 ||aassp.wgzty.cn^
+||aasss111222222.tos-cn-beijing.volces.com^
 ||aatkit.com^
 ||aaucna.casasbahia.com.br^
 ||aaurpibxdpjju.site^
@@ -31761,6 +31765,7 @@
 ||cdn044us.xyz^
 ||cdn1.crispadvertising.com^
 ||cdn1.digita.media^
+||cdn1.fixiow.icu^
 ||cdn1.hyperfxs.icu^
 ||cdn1.inner-active.mobi^
 ||cdn1.lbesec.com^
@@ -44015,6 +44020,7 @@
 ||dl.ad-stir.com^
 ||dl.adview.cn^
 ||dl.amazonmusic.com^
+||dl.atlas101.us.kg^
 ||dl.autopay.eu^
 ||dl.baddiesonlyporn.com^
 ||dl.benefits.express-scripts.com^
@@ -48348,6 +48354,7 @@
 ||efglbp.baur.de^
 ||efgnmycwzcngp.space^
 ||efh2rahxxq.com^
+||efhiwogvjd.com^
 ||efikmuchly.qpon^
 ||efilli.com^
 ||efitqsgvlaymu.space^
@@ -52261,6 +52268,7 @@
 ||f792df8437.com^
 ||f7f5a59e50.eff8a530f3.com^
 ||f7hyg4q.org^
+||f7jxqt8z3.com^
 ||f7qhnenfbo.com^
 ||f8.mtqys.com^
 ||f8272.com^
@@ -53026,7 +53034,6 @@
 ||feastgiddybleeding.com^
 ||featherstage.com^
 ||featherswallet.net^
-||featherwallet.com^
 ||feathr.co^
 ||featlyptisansrabious.cyou^
 ||feature-flag-edge.live.clickbus.net^
@@ -58848,6 +58855,7 @@
 ||glymqvvctmdkx.site^
 ||glyrcioxzpvvh.site^
 ||glyydavkqrigx.website^
+||glz2qv7q4.com^
 ||glzsji.nordman.ru^
 ||gm.mmstat.com^
 ||gm.symcd.com^
@@ -61570,6 +61578,7 @@
 ||haddock.jeffreyknox.dev^
 ||haddock.simgenie.app^
 ||hades.qyer.com^
+||hadescheats.cc^
 ||hadronid.net^
 ||hadsanz.com^
 ||hadsecz.com^
@@ -72539,6 +72548,7 @@
 ||judicialreaphealth.com^
 ||judicious85.top^
 ||judiciousbarnacle.com^
+||judism.com^
 ||judsosvhqpuio.online^
 ||jufbglqdpbidb.space^
 ||jufenglc.com^
@@ -88245,6 +88255,7 @@
 ||mine.torrent.pw^
 ||minecraft-cheats.com^
 ||minecraft-pocket-edition-2018-guide.goaserv.com^
+||minecraft-vip.top^
 ||minecraft.cn.goasrv.com^
 ||minecraftcodes.info3164603.notifysrv.com^
 ||minecraftentxt.goasrv.com^
@@ -93545,6 +93556,7 @@
 ||nr.noelleeming.co.nz^
 ||nr.static.mmcdn.com^
 ||nr.taboola.com^
+||nr2lzi2bi.com^
 ||nr7.us^
 ||nra.locktonaffinity.net^
 ||nraluhknrvpwt.online^
@@ -93896,6 +93908,7 @@
 ||nutletsbromian.qpon^
 ||nutlikecrooch.cfd^
 ||nutricesirene.qpon^
+||nutrisc.com.br^
 ||nutritionpenguinbiopsy.com^
 ||nutritiousrush.com^
 ||nutritioussilver.com^
@@ -95250,7 +95263,6 @@
 ||oilsewans.shop^
 ||oilygams.shop^
 ||oilylimit.com^
-||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
@@ -104534,6 +104546,7 @@
 ||qacpawtfywgcw.site^
 ||qacrzgtrflica.site^
 ||qacwnujgnoxmh.site^
+||qadamcash.top^
 ||qaeadnlcctjvh.online^
 ||qaebaywoovvvv.top^
 ||qaebwlxbamwzg.website^
@@ -107858,6 +107871,7 @@
 ||relaybaseinreplicas.net^
 ||relead.com^
 ||relearnopahs.com^
+||release-activation.cc^
 ||release.baidu.com^
 ||releasedfinish.com^
 ||releasepath.com^
@@ -109439,6 +109453,7 @@
 ||robin-flow.com^
 ||robinhood.media^
 ||robinorchid.com^
+||roblox-executr.com^
 ||roblox-expl.info^
 ||robloxscript.top^
 ||robloxscript1.top^
@@ -112068,6 +112083,7 @@
 ||s51.cnzz.com^
 ||s52.cnzz.com^
 ||s53.cnzz.com^
+||s53.eu^
 ||s54.cnzz.com^
 ||s55.cnzz.com^
 ||s56.cnzz.com^
@@ -116918,6 +116934,7 @@
 ||site.connect.mydrreddys.com^
 ||site.emarketer.com^
 ||site.firstnet.com^
+||site.hfgjjkrewjk.com^
 ||site.infosysbpm.com^
 ||site.jiancai008.com^
 ||site.johnlewis-insurance.com^
@@ -126210,6 +126227,7 @@
 ||stnjgbqwpispt.store^
 ||stnkzuokgblqh.website^
 ||stnn.adsame.com^
+||stnon1.hypstok.info^
 ||stnt.express-scripts.com^
 ||stnt.sky.at^
 ||stnt.sky.de^
@@ -131157,6 +131175,7 @@
 ||ticklesign.com^
 ||tickneywicks.shop^
 ||ticomix.actonservice.com^
+||ticpc8a.com^
 ||tics.cortex.gg^
 ||tics.seeker.gg^
 ||tics.techdirt.com^
@@ -137134,6 +137153,7 @@
 ||tunkajumping.cyou^
 ||tunkergiglot.cfd^
 ||tunketdocker.qpon^
+||tunnel-activation.cc^
 ||tunnelstatu.cfd^
 ||tunningcajun.com^
 ||tunnl.com^
@@ -142364,6 +142384,7 @@
 ||videoads.hotstar.com^
 ||videoadstech.org^
 ||videoamp.com^
+||videoavarii17.sbs^
 ||videobaba.xyz^
 ||videocampaign.co^
 ||videocdnmetrika.com^
@@ -147306,6 +147327,7 @@
 ||wqqjkyljktbb.com^
 ||wqrebmjfbphwk.website^
 ||wqrkuukxyoi.com^
+||wqrn59d.com^
 ||wqtfijyhoppfk.website^
 ||wqtpdbegijbuz.website^
 ||wqtvhnrmmgbdn.online^
@@ -149611,7 +149633,6 @@
 ||www16.jtv.com^
 ||www181.superembed.com^
 ||www19.superembed.com^
-||www2.0zz0.com^
 ||www2.2ndgear.com^
 ||www2.acsvalves.com^
 ||www2.arvig.com^
