@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-21 01:54:40
-! Block rules: 141430
+! Generated: 2026-11-21 09:01:55
+! Block rules: 141434
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102131
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 6113
+!   - easylistchina [w=3] block 6117
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -57100,6 +57100,7 @@
 ||id1.cn^
 ||id5-sync.com^
 ||id6.me^
+||id8zba92r.com^
 ||ida.cnool.net^
 ||idaeanaplite.cyou^
 ||idat.production.ippen.space^
@@ -63047,6 +63048,7 @@
 ||jpgfychjclfxh.site^
 ||jpgpnobrgquzb.site^
 ||jpgubykgtkioj.online^
+||jpgupp8mi.com^
 ||jpgxftqgnucg.com^
 ||jph.itiexue.net^
 ||jpheacrrnllaq.space^
@@ -66999,6 +67001,7 @@
 ||lbpzmnnrhnfhf.website^
 ||lbqcwmucunix8ygv6.rest^
 ||lbqoewlxbeydk.site^
+||lbr3rnhge.com^
 ||lbstatic-a.akamaihd.net^
 ||lbszsbzuupnoe.online^
 ||lbtnxitwwfdqd.site^
@@ -133577,6 +133580,7 @@
 ||ws2.hbssjd.cn^
 ||ws3.smartp.com^
 ||ws9jdpz802.com^
+||wsa1ov5uo.com^
 ||wsaovlmqyzglj.space^
 ||wsapi.master.live^
 ||wsd.guonongllc.com^
