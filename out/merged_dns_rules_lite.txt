@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-20 20:37:18
-! Block rules: 157273
+! Generated: 2026-11-21 01:54:39
+! Block rules: 157287
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102131 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 6111 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 6113 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2096 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2105 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -11537,7 +11537,6 @@
 ||acrebackcharacter.com^
 ||acridanrheas.cfd^
 ||acridtwist.com^
-||acrilicoporto.pt^
 ||acro.egghead.link^
 ||acrobat.proposal.name.ng^
 ||acrobaticcouple.com^
@@ -13325,7 +13324,6 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
-||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -34336,6 +34334,7 @@
 ||cmgadx.com^
 ||cmgfbg.billetreduc.com^
 ||cmhmpr.lolaliza.com^
+||cmir.mx^
 ||cmiupqlouwnnw.website^
 ||cmjwzfzuwisst.site^
 ||cmkhsigydgefs.site^
@@ -34721,7 +34720,6 @@
 ||cocoawu.b0.upaiyun.com^
 ||cocojen.cdn.bcebos.com^
 ||coconts.com^
-||coconutoficial.com.br^
 ||coconuts.boy.jp^
 ||cocoonelectronicsconfined.com^
 ||cocoonstwistle.qpon^
@@ -36536,7 +36534,6 @@
 ||costwinner.com^
 ||cosystraight.com^
 ||cot.nomarax.com^
-||cotecsecuritygroup.com^
 ||cotefulremixt.cfd^
 ||cotemaison.np6.com^
 ||coticedconduit.qpon^
@@ -41774,6 +41771,7 @@
 ||dcvigbosdkrhp.space^
 ||dcvssaited.com^
 ||dcvxhdgupnvau.space^
+||dcwblida.dz^
 ||dcwelerqwrbwe.site^
 ||dcwnhlzrvnlnj.website^
 ||dcwxbgqsmyvsn.site^
@@ -47848,7 +47846,6 @@
 ||ecchvrxiftetv.website^
 ||ecclesbacalaoahi.cyou^
 ||eccmdrazvyrgj.space^
-||eccmice.com^
 ||ecctjf.leroymerlin.com.br^
 ||eccvzhzyxcdvo.space^
 ||eccztfkgzgean.site^
@@ -51583,6 +51580,7 @@
 ||exaltedlucy.com^
 ||exaltedsleep.com^
 ||examafeard.cyou^
+||examples2.pages.dev^
 ||exampleshake.com^
 ||exapxl.de^
 ||exasperatebubblyorthodox.com^
@@ -53027,6 +53025,8 @@
 ||feasteddeliantecon.cfd^
 ||feastgiddybleeding.com^
 ||featherstage.com^
+||featherswallet.net^
+||featherwallet.com^
 ||feathr.co^
 ||featlyptisansrabious.cyou^
 ||feature-flag-edge.live.clickbus.net^
@@ -57183,6 +57183,7 @@
 ||gbnocxrrfzlbj.online^
 ||gbnzaveoacflu.site^
 ||gbotvisit.com^
+||gboutros.howto.rocks^
 ||gbqofs.com^
 ||gbrorlauokmsq.website^
 ||gbtracking.cubiq.com^
@@ -61074,6 +61075,7 @@
 ||guzbespot.com^
 ||guzbriirddblp.space^
 ||guzsjdl.cn^
+||gv0a0qcb0e.com^
 ||gv0oi9ecji.com^
 ||gvbekpgazjwy.com^
 ||gvbfpvzdenqtg.site^
@@ -61993,6 +61995,7 @@
 ||havelberme.qpon^
 ||haven-post.com^
 ||havenclick.com^
+||havenleaf3.com^
 ||havenyl.xyz^
 ||haverdentata.cfd^
 ||haversalgieba.qpon^
@@ -63620,6 +63623,7 @@
 ||hoasvvtyavmbn.store^
 ||hobbetexcud.shop^
 ||hobblertactile.cfd^
+||hobobot.net^
 ||hobxlluzuvifk.website^
 ||hobypcdcsidnc.online^
 ||hocgeese.com^
@@ -90990,6 +90994,7 @@
 ||mysketchpad.com^
 ||mysmbkoapuust.website^
 ||mysocialpixel.com^
+||mysoliq.lat^
 ||mysoreaumil.shop^
 ||mystat-in.net^
 ||mystat.hu^
@@ -95242,6 +95247,7 @@
 ||oilsewans.shop^
 ||oilygams.shop^
 ||oilylimit.com^
+||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
@@ -103460,6 +103466,7 @@
 ||pub-72295f71e45d431995028c79cf261dae.r2.dev^
 ||pub-7390aebc53504408b09c0dc5390d6cc4.r2.dev^
 ||pub-77d009eac01a41e0a84eaf9d00acd597.r2.dev^
+||pub-7e21bf5022574a289ca67b5509e84015.r2.dev^
 ||pub-80a0cc6d7e3d475dac1422cf49122362.r2.dev^
 ||pub-81f2b77f5bc841c5ae64221394d67f53.r2.dev^
 ||pub-82f13abd468442119ddfb068e9f5ad33.r2.dev^
@@ -121296,6 +121303,7 @@
 ||solidsub.com^
 ||solionenzymes.com^
 ||solionsbebops.cyou^
+||soliq-qaytarish.pro^
 ||solispartner.com^
 ||solitaire47.com^
 ||solitaire50.top^
@@ -122818,6 +122826,7 @@
 ||sroork.mrmarvis.nl^
 ||srpsnvtisuznr.site^
 ||srpx.net^
+||srqeavxrk.com^
 ||srqponmd.carte-gr.total.fr^
 ||srqxnvjdd.com^
 ||srratl.mona-mode.at^
@@ -127522,6 +127531,7 @@
 ||swiftemergency.pro^
 ||swiftenwhindle.com^
 ||swiftfleta.cfd^
+||swiftfusion.tech^
 ||swiftintro.com^
 ||swiftladle.com^
 ||swiftlymonumentcheating.com^
@@ -127642,6 +127652,8 @@
 ||sxcdn6.now.sh^
 ||sxchbpyobqvxj.site^
 ||sxdanke.cn^
+||sxdx1.fixlow.shop^
+||sxdx2.fixlow.shop^
 ||sxdxdxezkc.com^
 ||sxdyrq.com^
 ||sxeimx.mydays.de^
@@ -146429,6 +146441,8 @@
 ||wiongeyxigtuj.space^
 ||wios.tron3.vip^
 ||wiovhgcmuwucw.site^
+||wiow2.hypstock.info^
+||wiow3.hypstock.info^
 ||wip3.adobe.com^
 ||wiptzgjtcvbdw.website^
 ||wiqccpxjtvkjs.store^
