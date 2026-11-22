@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-22 09:12:36
-! Block rules: 157316
+! Generated: 2026-11-22 17:16:26
+! Block rules: 157347
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102131 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5815 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5818 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2117 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2145 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1063,6 +1063,7 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -4105,6 +4106,7 @@
 ||5rx58mikcenx5ozf2f.cfd^
 ||5sghirlr5b.com^
 ||5t5z6augl3.com^
+||5tei0pomwk.com^
 ||5tf1zp1jgb.com^
 ||5tgkx4vff.qe1zwooolvi6tozubf.cyou^
 ||5thu3nutpnc55uoonx4w.rest^
@@ -12739,6 +12741,7 @@
 ||adcs-ap.myappsget.com^
 ||adcs-ue.myappsget.com^
 ||adcs.myappsget.com^
+||adctanzania.co.tz^
 ||adcy.net^
 ||adcycle.com^
 ||add.luffy.my.id^
@@ -13327,6 +13330,7 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
+||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -17114,6 +17118,7 @@
 ||aliwjo.com^
 ||aliyoo999.com^
 ||aliyosskivie.qpon^
+||alizfv2ls3.com^
 ||aljothcgodyrw.space^
 ||aljoxrnwaatx.in^
 ||alkbztuvuctbn.online^
@@ -31267,6 +31272,7 @@
 ||cdbacxwbxcsdz.site^
 ||cdbgmj12.com^
 ||cdbnx5.com^
+||cdc.fixiow.icu^
 ||cdc4dd5d44.com^
 ||cdceed.de^
 ||cdclub.net^
@@ -31501,6 +31507,7 @@
 ||cdn.fedykr.com^
 ||cdn.fegivja.com^
 ||cdn.fexyop.com^
+||cdn.file6.goodid.com^
 ||cdn.flurry.com^
 ||cdn.ftwpcn.com^
 ||cdn.g.wan.douyu.com^
@@ -36373,6 +36380,7 @@
 ||coralcanarydepend.com^
 ||coralcranes.com^
 ||coralogix.com^
+||coralpac.com^
 ||coralreverie.com^
 ||coralrimed.cfd^
 ||coralwatches.com^
@@ -41390,6 +41398,7 @@
 ||datatechdrift.com^
 ||datatechone.com^
 ||datatechonert.com^
+||datatimes.centralus.cloudapp.azure.com^
 ||datau.kigumi.online^
 ||dataunion.com.br^
 ||dataunlocker.com^
@@ -45258,6 +45267,7 @@
 ||dreammember-journey.com^
 ||dreamsdome.com^
 ||dreamteamaffiliates.com^
+||dreamwatchevent.com^
 ||dreary-version.pro^
 ||drearyenchantment.com^
 ||dredgedemplacesurg.cfd^
@@ -46502,6 +46512,7 @@
 ||dygtrbrfakhei.online^
 ||dygudhixkfwew.online^
 ||dyh1wzegu1j6z.cloudfront.net^
+||dyhuiying.com^
 ||dyimtqeyetofl.site^
 ||dyingsixth.com^
 ||dyiyqgxgmle.com^
@@ -52984,7 +52995,6 @@
 ||fdseb8s0y.com^
 ||fdsg4234.goasrv.com^
 ||fdsq.vb4rvq.cn^
-||fdstat.vip^
 ||fdsur.com^
 ||fdsz.n27lw.cn^
 ||fdt.kraken.com^
@@ -53037,6 +53047,7 @@
 ||feastgiddybleeding.com^
 ||featherstage.com^
 ||featherswallet.net^
+||featherwallet.com^
 ||feathr.co^
 ||featlyptisansrabious.cyou^
 ||feature-flag-edge.live.clickbus.net^
@@ -63736,6 +63747,7 @@
 ||holmicsabins.cfd^
 ||holmicwrenlet.shop^
 ||holmorigans.qpon^
+||holodeo.net^
 ||holsat.shop^
 ||holsstola.qpon^
 ||holsteracool.com^
@@ -65134,6 +65146,7 @@
 ||hzvnt399h7.com^
 ||hzvs1.cnzz.com^
 ||hzvsld.fr.filorga.com^
+||hzwbl.com^
 ||hzwcurbrndedx.space^
 ||hzxcaq-github-io.pages.dev^
 ||hzxfmc.com^
@@ -66968,6 +66981,7 @@
 ||img-bss.csdn.net^
 ||img-c.heytapimage.com^
 ||img-cdn-spot.ymcdn.cn^
+||img-codes-cloude.info^
 ||img-dsp.oss-cn-beijing.aliyuncs.com^
 ||img-x.jd.com^
 ||img.0279.net^
@@ -67693,6 +67707,7 @@
 ||infineon-community.com^
 ||infinigraph.com^
 ||infinite-ads.com^
+||infinitevote.com^
 ||infinity-info.com^
 ||infinity-tracking.com^
 ||infinity-tracking.net^
@@ -70474,6 +70489,7 @@
 ||jakobcia.qpon^
 ||jakocxxpvbvsw.site^
 ||jakrkwyjptezk.site^
+||jalebel7abeb.com^
 ||jaleeazymous.cfd^
 ||jalousedoglesswejack.cfd^
 ||jalrlgochsjoe.space^
@@ -72906,6 +72922,7 @@
 ||jxoaza.yourmystar.jp^
 ||jxpieseudktcy.site^
 ||jxpsrh.casamundo.co.uk^
+||jxpxknskuarn.github.io^
 ||jxqfu.cn^
 ||jxrceejdygfap.site^
 ||jxryswulqobyu.space^
@@ -97227,6 +97244,7 @@
 ||outletdoorstepconnected.com^
 ||outletpeople.com^
 ||outliercrocker.qpon^
+||outline-willow.com^
 ||outlinedesignateinstalment.com^
 ||outlinedistinguish.com^
 ||outlookabsorb.com^
@@ -101637,6 +101655,7 @@
 ||polsterquintet.com^
 ||polwagonrymanifer.cfd^
 ||polyad.net^
+||polyaris-beta.com^
 ||polydarth.com^
 ||polyfill-js.cn^
 ||polyfill.io^
@@ -115928,6 +115947,7 @@
 ||sgxkm.com^
 ||sgxlziqbahhqb.store^
 ||sgxpmmdheuufd.website^
+||sh-mylike.com^
 ||sh.apigw.tencentcs.com^
 ||sh.b.inhaabit.com^
 ||sh.classera.com^
@@ -116000,6 +116020,7 @@
 ||shannyrusot.shop^
 ||shanorin.com^
 ||shantygrewt.cyou^
+||shanxisaide.com^
 ||shanyi.info^
 ||shapecamping.com^
 ||shapecomb.com^
@@ -126027,6 +126048,8 @@
 ||stc-nas.nixcdn.com^
 ||stc-support-app-brand.zdn.vn^
 ||stc.nas.nixcdn.com^
+||stca.topickks.icu^
+||stcc.topickks.icu^
 ||std.o.globalacademycme.com^
 ||std.o.medicinenet.com^
 ||std.o.medscape.com^
@@ -127554,6 +127577,7 @@
 ||swiftemergency.pro^
 ||swiftenwhindle.com^
 ||swiftfleta.cfd^
+||swiftfusion.tech^
 ||swiftintro.com^
 ||swiftladle.com^
 ||swiftlymonumentcheating.com^
@@ -130687,6 +130711,7 @@
 ||tglyr.co^
 ||tgmbxplmlsclp.space^
 ||tgmklw.productreview.com.au^
+||tgnllqvbzqhl.github.io^
 ||tgnvngbiwnfcv.space^
 ||tgocketieimfj.site^
 ||tgodwwsydkht.com^
@@ -136049,6 +136074,7 @@
 ||trepanation07.top^
 ||treppenunky.com^
 ||trerqekuw.com^
+||tresoctavos.com.mx^
 ||tressedgibes.shop^
 ||trestle59.com^
 ||tretrbcbrptmv.site^
@@ -137026,6 +137052,7 @@
 ||tublikeopsy.com^
 ||tubmvfsqcjuvm.space^
 ||tubroaffs.org^
+||tubularservices.com^
 ||tubularstypsis.com^
 ||tubulihae.cyou^
 ||tubyour.qpon^
@@ -141414,6 +141441,7 @@
 ||valentine.xhamster.*^
 ||valeriascarts.com^
 ||valeriehoc.shop^
+||valerovati03.github.io^
 ||valesalon.cfd^
 ||valestimulatesettle.com^
 ||valestumble.com^
@@ -147884,6 +147912,7 @@
 ||www-connect-secure-wellcfargo.sekolahkejarpaket.com^
 ||www-contractseries-com.filesusr.com^
 ||www-ebis.384.co.jp^
+||www-featherwallet.org^
 ||www-google-analytics.l.google.com^
 ||www-googletagmanager.l.google.com^
 ||www-path.com^
@@ -153943,6 +153972,7 @@
 ||yiwk.com^
 ||yiwnwjzhlce.com^
 ||yiwqcxwajqouq.website^
+||yiwvywwuxkaz.github.io^
 ||yixhy1vpln8bjuy1.cfd^
 ||yixui.com^
 ||yixvbp.merkal.com^
@@ -155232,6 +155262,7 @@
 ||z3617cz9ep.fitness.tappbrothers.com^
 ||z37.web.core.brandnewapp.pro^
 ||z371.chicoer.com^
+||z3uf7yie2f.com^
 ||z3vkcnj9f.com^
 ||z4.cnzz.com^
 ||z444o.com^

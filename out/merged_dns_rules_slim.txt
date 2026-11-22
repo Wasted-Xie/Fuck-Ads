@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-22 09:12:38
-! Block rules: 141443
+! Generated: 2026-11-22 17:16:27
+! Block rules: 141446
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102131
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5815
+!   - easylistchina [w=3] block 5818
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2931,6 +2931,7 @@
 ||5rx58mikcenx5ozf2f.cfd^
 ||5sghirlr5b.com^
 ||5t5z6augl3.com^
+||5tei0pomwk.com^
 ||5tf1zp1jgb.com^
 ||5tgkx4vff.qe1zwooolvi6tozubf.cyou^
 ||5thu3nutpnc55uoonx4w.rest^
@@ -12734,6 +12735,7 @@
 ||aliwjo.com^
 ||aliyoo999.com^
 ||aliyosskivie.qpon^
+||alizfv2ls3.com^
 ||aljothcgodyrw.space^
 ||aljoxrnwaatx.in^
 ||alkbztuvuctbn.online^
@@ -139468,6 +139470,7 @@
 ||z2uyyp069d.com^
 ||z3617cz9ep.fitness.tappbrothers.com^
 ||z371.chicoer.com^
+||z3uf7yie2f.com^
 ||z3vkcnj9f.com^
 ||z444o.com^
 ||z451hzjrn3ntu1.cfd^
