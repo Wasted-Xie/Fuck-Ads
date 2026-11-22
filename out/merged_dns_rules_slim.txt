@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-22 01:55:59
-! Block rules: 141440
+! Generated: 2026-11-22 09:12:38
+! Block rules: 141443
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102131
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5812
+!   - easylistchina [w=3] block 5815
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -19109,6 +19109,7 @@
 ||b7c0ba3a64.com^
 ||b7d021a17f.58abee1628.com^
 ||b7ec509038.com^
+||b7f6867m0u.com^
 ||b7ijghyla1.com^
 ||b7pgs2ifvq.com^
 ||b7sw62.pingshu8.xyz^
@@ -117024,6 +117025,7 @@
 ||tc.zxcvbnml.com^
 ||tc2.hometogo.net^
 ||tc72vx6m6xqm8jwpoow2yfl9.y7rl72l281fz174.cyou^
+||tc7y2avdw2.com^
 ||tc911.vip^
 ||tcactivity.net^
 ||tcads.net^
@@ -128613,6 +128615,7 @@
 ||vfyfldhdthlin.space^
 ||vfymgla.com^
 ||vfyuqjwausvfd.site^
+||vfyz2jncwu.com^
 ||vfzfi.redirectvoluum.com^
 ||vg247-uk.vg247.com^
 ||vg3z87oecg.com^
