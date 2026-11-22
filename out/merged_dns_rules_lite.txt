@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-21 16:53:03
-! Block rules: 157312
+! Generated: 2026-11-22 01:55:57
+! Block rules: 157313
 ! Whitelist rules: 285
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 102131 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5809 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5812 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2119 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2117 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -1063,10 +1063,8 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
-||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
-||179.248.3.202.ll.sta.mana.pf^
 ||1797wan.com^
 ||17bqg.top^
 ||17ce57fe70.com^
@@ -5487,6 +5485,7 @@
 ||93819zqt6epxrhz2tv15p.zf97x7hgi8gm8u.cyou^
 ||939aeeb8d7.51344d90e9.com^
 ||93a83c07e9.7c1569a605.com^
+||93cwt9hr8s.com^
 ||93e854d43b.c635e33b2e.com^
 ||93e8580522.83b803c2d5.com^
 ||93gtx4pc2w.com^
@@ -17556,6 +17555,7 @@
 ||ambientservicescentre.com^
 ||ambienttwantgibuses.cyou^
 ||ambientvaluessalad.com^
+||ambifpskje.com^
 ||ambiguitycivil.com^
 ||ambiguityhalfmoon.com^
 ||ambiguityornamenttell.com^
@@ -31253,6 +31253,7 @@
 ||cd2ef10dae.com^
 ||cd607a72c0.7277af1ba3.com^
 ||cd828.com^
+||cda.fixiow.icu^
 ||cda.omsules.life^
 ||cda5e3eeec.com^
 ||cda7k-ddok.com^
@@ -31499,7 +31500,6 @@
 ||cdn.fedykr.com^
 ||cdn.fegivja.com^
 ||cdn.fexyop.com^
-||cdn.file6.goodid.com^
 ||cdn.flurry.com^
 ||cdn.ftwpcn.com^
 ||cdn.g.wan.douyu.com^
@@ -46330,6 +46330,7 @@
 ||dw.koudaibl.com^
 ||dw.xcar.com.cn^
 ||dw0c.sfr.fr^
+||dw3wytlo38.com^
 ||dw55pg05c2rl5.cloudfront.net^
 ||dw7u.hotelsbarriere.com^
 ||dw7vmlojkx16k.cloudfront.net^
@@ -52982,6 +52983,7 @@
 ||fdseb8s0y.com^
 ||fdsg4234.goasrv.com^
 ||fdsq.vb4rvq.cn^
+||fdstat.vip^
 ||fdsur.com^
 ||fdsz.n27lw.cn^
 ||fdt.kraken.com^
@@ -63632,7 +63634,6 @@
 ||hoasvvtyavmbn.store^
 ||hobbetexcud.shop^
 ||hobblertactile.cfd^
-||hobobot.net^
 ||hobxlluzuvifk.website^
 ||hobypcdcsidnc.online^
 ||hocgeese.com^
@@ -93908,7 +93909,6 @@
 ||nutletsbromian.qpon^
 ||nutlikecrooch.cfd^
 ||nutricesirene.qpon^
-||nutrisc.com.br^
 ||nutritionpenguinbiopsy.com^
 ||nutritiousrush.com^
 ||nutritioussilver.com^
@@ -125995,6 +125995,7 @@
 ||stayingspartan.cyou^
 ||stayrarelycontract.com^
 ||staysafeonlinetoday.com^
+||stb.hypstok.info^
 ||stbdktrfpkjsl.online^
 ||stbg.bankonline.sboff.com^
 ||stbg.looksee.co.za^
@@ -127552,7 +127553,6 @@
 ||swiftemergency.pro^
 ||swiftenwhindle.com^
 ||swiftfleta.cfd^
-||swiftfusion.tech^
 ||swiftintro.com^
 ||swiftladle.com^
 ||swiftlymonumentcheating.com^
@@ -131175,7 +131175,6 @@
 ||ticklesign.com^
 ||tickneywicks.shop^
 ||ticomix.actonservice.com^
-||ticpc8a.com^
 ||tics.cortex.gg^
 ||tics.seeker.gg^
 ||tics.techdirt.com^
@@ -142384,6 +142383,7 @@
 ||videoads.hotstar.com^
 ||videoadstech.org^
 ||videoamp.com^
+||videoavarii17-sbs.pages.dev^
 ||videoavarii17.sbs^
 ||videobaba.xyz^
 ||videocampaign.co^
@@ -146029,6 +146029,7 @@
 ||white-band-a6fb.to-o-ls-mee.workers.dev^
 ||white-eyes.com^
 ||white-mode-a35b.modpages.workers.dev^
+||white-vpn.top^
 ||whiteclick.biz^
 ||whitedescription.pro^
 ||whitefish.antonopoulos-stores.gr^
