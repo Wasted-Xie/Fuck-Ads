@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-23 03:25:12
-! Block rules: 142301
+! Generated: 2026-11-23 13:24:47
+! Block rules: 142306
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102699
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5822
+!   - easylistchina [w=3] block 5827
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2230,6 +2230,7 @@
 ||3sqvexc60y.com^
 ||3t4j5adg9x.com^
 ||3tv4botiq.com^
+||3twgodwqu.com^
 ||3u3ymbqj.xyz^
 ||3u9ym82na.com^
 ||3uoq2upcx3rfcqh6jtywr.cfd^
@@ -2528,6 +2529,7 @@
 ||4q7unmlg5.com^
 ||4r78.mpptrmrlqkn2pq.cyou^
 ||4rabettraff.com^
+||4rlqjv5c5.com^
 ||4ro76m7k2n.com^
 ||4rw6x0b.cn^
 ||4rzph5ytr.com^
@@ -2674,6 +2676,7 @@
 ||52shouyou.com.cn^
 ||52xiyou.com^
 ||52zdm.com^
+||533upqfg6.com^
 ||5345ll.com^
 ||5355b252cf.com^
 ||5363316.marketing.numi.com^
@@ -53514,6 +53517,7 @@
 ||h16tyqyrk3y6xjxrh9k3cmmej4n.cfd^
 ||h1883c5wn.com^
 ||h1cn8nwng.com^
+||h1tv22icy.com^
 ||h1yfrt.com^
 ||h2.18sd.cn^
 ||h2.msn.com^
@@ -69868,6 +69872,7 @@
 ||lmgyjug31.com^
 ||lmhrchi.com^
 ||lmhvhlxacgtmb.site^
+||lmhx6w4tm.com^
 ||lmiatiqshwntg.space^
 ||lmisbaqcaxxjr.site^
 ||lmiutil.com^
