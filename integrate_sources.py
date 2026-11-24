@@ -42,6 +42,9 @@ BLOCKLIST_FILE = os.path.join(LISTS_DIR, "blocklist.txt")
 # 原名 mixed.txt，2026-10-25 更名，语义上更贴近它的实际作用。
 APPEND_FILE = os.path.join(LISTS_DIR, "Append.txt")
 
+# $ 符号：避免在 f-string 与正则里反复转义
+DOLLAR = chr(36)
+
 # 整体排除的源（本身就是翻墙/加速专用，不含去广告内容）
 EXCLUDE_SOURCES = {"googlehosts"}
 
@@ -141,6 +144,69 @@ def load_verbatim_rules(path):
             else:
                 n_rule += 1
     return lines, n_rule, n_comment
+
+
+RULE_DOMAIN_RE = re.compile(r"^\|\|([^/^$|]+)")
+
+
+def rule_domain(line):
+    """从任意 AdGuard 规则行里尽量取出域名（忽略 $ 修饰符、路径与 ^ 分隔符）。
+
+        ||a.b.com^$important  ->  a.b.com
+        @@||a.b.com^          ->  a.b.com
+        ||a.b.com/path        ->  a.b.com
+        ||*.a.com^            ->  *.a.com（通配符原样返回，由 domain_is_whitelisted 判定）
+        其他（regex / cosmetic / 裸域名）-> None
+    """
+    s = line.strip()
+    if s.startswith("@@"):
+        s = s[2:]
+    m = RULE_DOMAIN_RE.match(s)
+    if not m:
+        return None
+    d = m.group(1).strip().lower()
+    return d or None
+
+
+def domain_is_whitelisted(domain, whitelist):
+    """域名本身或其任一父域被白名单覆盖时返回 True。
+
+    - 白名单写 a.com 时，b.a.com 也视为放行（与 AGH 的父域语义一致）
+    - 形如 *.a.com 的通配规则按去掉 "*." 后的域名判定
+    - 域名中间带通配符（a.*.com）无法静态判定，保守返回 False
+    - 白名单条目里的通配符不参与匹配
+    """
+    if not domain or not whitelist:
+        return False
+    d = domain
+    if d.startswith("*."):
+        d = d[2:]
+    elif "*" in d:
+        return False
+    if d in whitelist:
+        return True
+    return any(d.endswith("." + w) for w in whitelist)
+
+
+def filter_append_by_whitelist(append_lines, whitelist):
+    """（已废弃，保留仅为兼容旧调用）
+
+    Append.txt 采用纯追加写模式，不参与任何清洗。与白名单的冲突交由
+    AdGuard 自身的 $important 优先级机制决断：白名单输出 @@||d^$important，
+    其优先级高于 Append 里的 ||d^$important。
+    """
+    return append_lines, []
+
+
+def whitelist_rule(domain):
+    """生成白名单规则：@@||domain^$important
+
+    必须带 $important，否则压不住 Append.txt 里带 $important 的拦截规则。
+    AdGuard 的优先级顺序为：
+        $important 例外 > $important 拦截 > 普通例外 > 普通拦截
+    因此 @@||d^$important 能覆盖 ||d^$important。
+    """
+    return "@@||" + domain + "^" + DOLLAR + "important"
 
 
 def valid_domain(d):

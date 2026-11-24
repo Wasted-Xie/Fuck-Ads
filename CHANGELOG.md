@@ -6,6 +6,70 @@
 
 ---
 
+## [2.6.2] - 2026-11-25
+
+**修复白名单对带修饰符规则与 Append.txt 无效的问题**；白名单改用 `$important` 优先级机制。
+
+### 修复
+
+#### 白名单对 `$important` 规则完全失效
+
+`Full/merge_dedup.py` 删除上游黑名单时用 `rule.endswith("^")` 取域名：
+
+```python
+dom = rule[2:-1] if rule.startswith("||") and rule.endswith("^") else None
+```
+
+`||a.com^$important` 的结尾是 `t` 而非 `^`，因此 `dom=None`，**永不匹配白名单**。实测 `Lists/Append.txt` 的 1164 条规则中 **1061 条带 `$`、0 条以 `^` 结尾**，即旧逻辑对其 100% 失效。
+
+对现网 358,271 条拦截规则套用旧逻辑，白名单命中 **0 条**。
+
+#### `Lite` / `Slim` 读 Full 产物白名单同样漏读
+
+`Lite/load_full_output()` 与 `Slim/load_full_allows()` 都用了 `endswith("^")`。改为 `$important` 白名单后，这两处会把**全部白名单漏读**（`@@||d^$important` 结尾不是 `^`），导致 Lite/Slim 放行完全失效。
+
+### 新增
+
+#### `integrate_sources.py`
+
+| 函数 | 作用 |
+|---|---|
+| `rule_domain(line)` | 从任意规则取域名，支持 `$important`、路径、`*.` 通配符 |
+| `domain_is_whitelisted(domain, whitelist)` | 父域语义匹配；`*.a.com` 去星号后判定 |
+| `whitelist_rule(domain)` | 生成 `@@||domain^$important` |
+| `DOLLAR` 常量 | 避免 `$` 在 f-string / 正则中反复转义 |
+
+#### 白名单改用 `$important` 优先级机制
+
+白名单规则由 `@@||d^` 改为 **`@@||d^$important`**，依靠 AdGuard 自身的优先级决断与 `Append.txt` 的冲突：
+
+```
+1. $important 例外      @@||d^$important     ← 本项目白名单
+2. $important 拦截      ||d^$important       ← Append.txt 里的规则
+3. 普通例外            @@||d^
+4. 普通拦截            ||d^
+```
+
+**`Append.txt` 保持纯追加写，不做任何清洗**，因此可随上游同步更新而不影响白名单效果。产物中两条规则同时存在，由 AGH 按优先级判定。
+
+### 变更
+
+- `Lists/whitelist.txt`：新增 3 条 JMComic3 线路配置分发端点（`rup4a04-c01/c02/c03` 的 `bytepluses.com` 域）。这些 TOS 桶只用于下发 `/newsvr-2025.txt`（AES 加密线路列表），被 `Append.txt` 的「针对字节跳动系列广告」分组误拦；拦掉会导致 App 拿不到可用线路而无法启动（内置兜底线路已失效：`cdnaspa.vip` 404、`cdnplaystation6.cc` 301）
+- 上游黑名单删除逻辑保留（无损体积优化），但改用 `rule_domain` / `domain_is_whitelisted`
+- README 新增「与 Append.txt 的冲突如何处理」小节，说明优先级机制
+- README 数据更新：Append 1164 条规则（1061 拦截 + 103 放行）+ 153 行注释；白名单 11 条
+
+### 验证
+
+| 测试 | 结果 |
+|---|---|
+| 单元测试（`rule_domain` / `domain_is_whitelisted` / `filter` 共 10 项断言） | 全部通过 |
+| 最小回归（模拟上游仍带拦截 + Append 保留） | 6/6 通过 |
+| 影响面核对（现网 358,271 条拦截） | 旧逻辑命中 0 条，新逻辑命中 1 条（无误伤） |
+| Lite / Slim 冒烟 | 白名单 213/213 带 `$important`，Append 拦截保留 |
+
+---
+
 ## [2.6.1] - 2026-11-13
 
 **文档修正**：`Append.txt` 的描述与实际行为不符，已更正；补充来源标注；README 精简。

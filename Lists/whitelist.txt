@@ -19,7 +19,6 @@
 
 # --- 在下面逐行添加需要放行的域名 ---
 
-# 示例（去掉行首的 # 即可生效）：
 dot.360.cn
 doh.360.cn
 lxmusic.ijinshan.com
@@ -28,3 +27,13 @@ download.bt.cn
 api.open.uc.cn
 account.wps.cn
 fast.uc.cn
+
+# --- JMComic3 线路配置分发端点 ---
+# 被 Lists/Append.txt 的「针对字节跳动系列广告的拦截规则」分组误拦。
+# 这三个 TOS 桶只用于下发 /newsvr-2025.txt（AES 加密的线路列表），
+# 与广告业务无关；拦掉会导致 App 拿不到可用线路而无法启动
+# （APK 内置兜底线路已失效：cdnaspa.vip 404、cdnplaystation6.cc 301）。
+# 写在这里而非改 Append.txt，是为了让 Append 能随上游同步更新而不失效。
+rup4a04-c02.tos-cn-hongkong.bytepluses.com
+rup4a04-c01.tos-ap-southeast-1.bytepluses.com
+rup4a04-c03.tos-cn-beijing.bytepluses.com.cn

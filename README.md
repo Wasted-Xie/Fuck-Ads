@@ -163,12 +163,20 @@ example.com
 - **写主域即覆盖全部子域**（AGH 中 `@@||example.com^` 已含子域）
 - 不支持通配符（`*`）、路径（`/`）、`$` 修饰符——这类写法会被忽略并打印警告
 
+**产物中的白名单规则带 `$important`**：`whitelist.txt` 里的 `example.com` 会被写成
+
+```text
+@@||example.com^$important
+```
+
+原因见下方 [与 Append.txt 的冲突如何处理](#与-appendtxt-的冲突如何处理)。
+
 两者的冲突处理：
 
 | 冲突情况 | 处理 |
 |---|---|
 | 同一域名同时写在两个文件 | 放行优先，打印警告 |
-| 手写放行的域在上游黑名单中 | 该域**及子域**的上游黑名单条目自动移除 |
+| 手写放行的域在上游黑名单中 | 该域**及子域**的上游黑名单条目自动移除（减小产物体积，无损） |
 | 手写拦截的域在上游白名单中 | 该条被忽略（兜底） |
 
 ### Append.txt（不参与清洗）
@@ -191,7 +199,7 @@ example.com
 - 该仓库 README 声明其规则基础为 **GOODBYEADS**（MIT）+ 自定义增补
 - 提取方式：`py extract_agh_rules.py`（本地工具，不入库）
 
-规则构成：1146 条规则（1040 拦截 + 106 放行）+ 152 行分组注释，覆盖各 App 的定向拦截/放行（腾讯、百度、字节、快手、美团、喜马拉雅、哔哩哔哩、网易云等），其中约 91% 的规则不在本项目的其它上游源中。
+规则构成：1164 条规则（1061 拦截 + 103 放行）+ 153 行分组注释，覆盖各 App 的定向拦截/放行（腾讯、百度、字节、快手、美团、喜马拉雅、哔哩哔哩、网易云等），其中约 91% 的规则不在本项目的其它上游源中。
 
 > **重新提取时注意**：`extract_agh_rules.py` 只输出到 `temp/agh_rules/`，**不会写入 `Lists/Append.txt`**。该文件末尾有手工追加的规则（不在 yaml 中），直接覆盖会丢失。替换前请先比对差异，脚本运行后会打印比对命令。
 
@@ -204,12 +212,38 @@ example.com
 
 > ⚠️ 因为不参与清洗，**如果你在 `Append.txt` 里写了裸域名（如 `example.com`），它不会像 `blocklist.txt` 那样被自动转成 `||example.com^`**。请直接写完整的 AdGuard 语法。
 
+### 与 Append.txt 的冲突如何处理
+
+`Append.txt` 保持**纯追加写**，不参与任何清洗。当它里面的拦截规则与 `whitelist.txt` 冲突时，**不靠脚本删除，而由 AdGuard 自身的 `$important` 优先级机制决断**。
+
+AdGuard 的规则优先级（高 → 低）：
+
+```
+1. $important 例外      @@||d^$important
+2. $important 拦截      ||d^$important
+3. 普通例外            @@||d^
+4. 普通拦截            ||d^
+```
+
+因此本项目的白名单**统一输出 `@@||d^$important`**，它位于最高优先级，能压过 `Append.txt` 里 `||d^$important` 形态的拦截规则。
+
+产物中两条规则会同时存在：
+
+```text
+@@||rup4a04-c02.tos-cn-hongkong.bytepluses.com^$important   ← 白名单，优先级最高
+||rup4a04-c02.tos-cn-hongkong.bytepluses.com^$important    ← Append 原样保留
+```
+
+这样做的好处：**`Append.txt` 可以随上游同步更新而不影响白名单效果**，无需每次同步后手工改 Append。
+
+> 注：上游源里的同名规则仍会被脚本删除（那部分不参与追加写，删除是无损的体积优化）。
+
 ### 产物头部记录
 
 ```text
-! Manual whitelist: Lists/whitelist.txt  (5 domains)
+! Manual whitelist: Lists/whitelist.txt  (11 domains)
 ! Manual blocklist: Lists/blocklist.txt  (0 domains)
-! Manual append   : Lists/Append.txt  (1146 rules / 152 comments, passed through verbatim)
+! Manual append   : Lists/Append.txt  (1164 rules / 153 comments, passed through verbatim)
 ```
 
 > 三个文件默认只有注释、无规则，初始状态对产物**零影响**。推送后 Actions 下次运行自动纳入。

@@ -30,6 +30,7 @@ sys.path.insert(0, ROOT_DIR)
 from integrate_sources import (                                   # noqa: E402
     WHITELIST_FILE, BLOCKLIST_FILE, APPEND_FILE,
     parse_domain, load_manual_list, load_verbatim_rules,
+    rule_domain, domain_is_whitelisted, whitelist_rule,
 )
 
 # Source definitions
@@ -143,15 +144,20 @@ def main(out_file=None, sources=None, title=None, description=None):
         all_blocks.add("||" + d + "^")
 
     # ---- 手写白名单：加入白名单，并从黑名单中移除同名条目 ----
+    # 白名单规则带 $important：Append.txt 里存在 ||d^$important 形态的拦截规则，
+    # 普通 @@||d^ 优先级不足以覆盖它们。AdGuard 的优先级顺序为：
+    #     $important 例外 > $important 拦截 > 普通例外 > 普通拦截
+    # 因此 @@||d^$important 可以压过 Append 的拦截，无需改动 Append.txt。
     for d in manual_whitelist_all:
-        all_whites.add("@@||" + d + "^")
+        all_whites.add(whitelist_rule(d))
 
     # 上游黑名单中与手写白名单冲突的条目一律移除（含其子域，避免父域规则继续拦截）
+    # 这是无损清理：白名单已能靠 $important 覆盖，删除只是为了减小产物体积。
+    # 注意必须能解析带修饰符（||a.com^$important）与带路径的规则，
+    # 否则白名单对这类形态完全失效。
     manual_wl_removed = 0
     for rule in list(all_blocks):
-        dom = rule[2:-1] if rule.startswith("||") and rule.endswith("^") else None
-        if dom and (dom in manual_whitelist_all
-                    or any(dom.endswith("." + w) for w in manual_whitelist_all)):
+        if domain_is_whitelisted(rule_domain(rule), manual_whitelist_all):
             all_blocks.discard(rule)
             manual_wl_removed += 1
 

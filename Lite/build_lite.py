@@ -39,6 +39,7 @@ sys.path.insert(0, ROOT_DIR)
 import integrate_sources as integ                                # noqa: E402
 from integrate_sources import (                                   # noqa: E402
     BLOCKLIST_FILE, APPEND_FILE, load_manual_list, load_verbatim_rules,
+    rule_domain, whitelist_rule,
 )
 
 # 国内向源：(标识, 路径, 说明, 优先级) —— 优先级数字越小越先保留
@@ -80,17 +81,27 @@ def load_source(path):
 
 
 def load_full_output():
-    """读取全量产物，返回 (block 域名集合, allow 域名列表)"""
+    """读取全量产物，返回 (block 域名集合, allow 域名列表)
+
+    注意：Full 产物里的白名单带 $important（@@||d^$important），
+    黑名单也可能带修饰符。这里用 rule_domain() 取域名，不能用 endswith("^")，
+    否则带修饰符的规则会被全部漏掉。
+    """
     blocks, allows = set(), []
     if not os.path.exists(FULL_FILE):
         return blocks, allows
     with open(FULL_FILE, "r", encoding="utf-8", errors="replace") as fh:
         for line in fh:
             line = line.strip()
-            if line.startswith("@@||") and line.endswith("^"):
-                allows.append(line[4:-1])
-            elif line.startswith("||") and line.endswith("^"):
-                blocks.add(line[2:-1])
+            if not line or line.startswith("!"):
+                continue
+            d = rule_domain(line)
+            if not d:
+                continue
+            if line.startswith("@@"):
+                allows.append(d)
+            else:
+                blocks.add(d)
     return blocks, allows
 
 
@@ -170,7 +181,10 @@ def main():
 
     body = ["||" + d + "^" for d in sorted_blocks]
     if sorted_allows:
-        body += ["@@" + "||" + d + "^" for d in sorted_allows]
+        # 白名单带 $important：Append.txt 里存在 ||d^$important 形态的拦截规则，
+        # 普通 @@||d^ 优先级不足以覆盖它们（AdGuard 优先级：
+        # $important 例外 > $important 拦截 > 普通例外 > 普通拦截）。
+        body += [whitelist_rule(d) for d in sorted_allows]
 
     # Append.txt 原样透传（含注释分组、$ 修饰符与 * 通配符）
     append_section = []
