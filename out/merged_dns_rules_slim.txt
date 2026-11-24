@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-23 13:24:47
-! Block rules: 142306
+! Generated: 2026-11-24 01:06:01
+! Block rules: 142311
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102699
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5827
+!   - easylistchina [w=3] block 5832
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2798,6 +2798,7 @@
 ||598n8mpd6.com^
 ||59d4336924.com^
 ||59haloar.net^
+||59j22m33n.com^
 ||59jd.com^
 ||59kaixuan.com^
 ||59ufs4hof5.com^
@@ -4908,6 +4909,7 @@
 ||a6d8f8172f.com^
 ||a6f50f55d7.0fbee846c6.com^
 ||a6iemt79.xyz^
+||a6j9wqsyq6.com^
 ||a6o69f9ky0.com^
 ||a6s.1cakeclub.com^
 ||a6s.modoupai.com^
@@ -61890,6 +61892,7 @@
 ||j3.dthznc.com^
 ||j3.jpibq11kgcwkey61ytpbbfe.cyou^
 ||j300.dailynews.com^
+||j31pozck4v.com^
 ||j33xvvanl.com^
 ||j348.citizensvoice.com^
 ||j3fvhzit0.com^
@@ -97607,6 +97610,7 @@
 ||relyonit.americanexpress.co.uk^
 ||rem-track.bild.de^
 ||remailtarget.com^
+||remainder22.com^
 ||remainder38.com^
 ||remaininghopefully.com^
 ||remainmother.com^
@@ -131898,6 +131902,7 @@
 ||wcwpnipkfluae.space^
 ||wcwxkbakmbtct.space^
 ||wcwysdfmiznik.online^
+||wcx3gf.site^
 ||wcxgvwihfoimx.site^
 ||wcydtrbulrgob.online^
 ||wcyvjdpduqxym.site^
