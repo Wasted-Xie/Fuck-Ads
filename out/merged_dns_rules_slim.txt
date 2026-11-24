@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-24 01:06:01
-! Block rules: 142311
+! Generated: 2026-11-24 11:17:38
+! Block rules: 142316
 ! Whitelist rules: 285
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102699
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5832
+!   - easylistchina [w=3] block 5837
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -2415,6 +2415,7 @@
 ||49a15e8b76.com^
 ||49dlt9myv.com^
 ||49ioqq6kt.com^
+||49ivw88hj9.com^
 ||49o4m4a5eo.com^
 ||49toactivate.net^
 ||49uncbmi6n1fbpny6qjp6vz7h4.cfd^
@@ -33920,6 +33921,7 @@
 ||d9tnvwv7i2n85.cloudfront.net^
 ||d9w.fl1c.com^
 ||d9yk47of1efyy.cloudfront.net^
+||d9zkof.com^
 ||d9zx24n0d.com^
 ||da-ads.com^
 ||da.bodenhaus.de^
@@ -39696,6 +39698,7 @@
 ||dysuze6ljcmcr.cloudfront.net^
 ||dytuj6zs26.com^
 ||dyv1bugovvq1g.cloudfront.net^
+||dyv86qq19o.com^
 ||dyvkswbqkgfhp.space^
 ||dyvoursbending.com^
 ||dywjcc.top^
@@ -47775,6 +47778,7 @@
 ||fprpdlurhlwde.website^
 ||fprqdwuxgn.com^
 ||fprrpv.icu^
+||fps3xggxro.com^
 ||fpt.commerce.adobe.com^
 ||fpt.inxinternational.com^
 ||fpt.microsoft.com^
@@ -47799,6 +47803,7 @@
 ||fqdpqpwruidrz.store^
 ||fqdqgeulweele.site^
 ||fqeyqzuncvkpx.website^
+||fqfhznr3qn.com^
 ||fqfuegxuujfzs.website^
 ||fqgcltsfrjuln.space^
 ||fqgogpouhtjlp.space^
