@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-25 04:24:48
-! Block rules: 142293
+! Generated: 2026-11-25 14:44:49
+! Block rules: 142298
 ! Whitelist rules: 388
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102699
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5843
+!   - easylistchina [w=3] block 5848
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -4396,6 +4396,7 @@
 ||9xnmcpxyznhmtp81x4kw514il4cc6zvty.cfd^
 ||9xob25oszs.com^
 ||9xu.com^
+||9xxne23lm.com^
 ||9yad.com^
 ||9yspkomgq.com^
 ||9ywl0cwf7e37m5yi.tapin.gg^
@@ -61901,6 +61902,7 @@
 ||j4s12kfavg.com^
 ||j4u2ndz50a.com^
 ||j59g6ff5k.com^
+||j5gv7t9sv.com^
 ||j5sgdum5n4.com^
 ||j694fx3bp.com^
 ||j6gi9jgjpb.com^
@@ -79687,6 +79689,7 @@
 ||mn-tz.com^
 ||mn1nm.com^
 ||mn230126pb.com^
+||mn3hdpe1y.com^
 ||mn586.com^
 ||mna.jasjas.site^
 ||mnaspm.com^
@@ -81890,6 +81893,7 @@
 ||nagolympics.com^
 ||nagrande.com^
 ||nagualdoorway.com^
+||nah9b3ag8.com^
 ||nahdlvqwqkzxby.com^
 ||nahg4lhbr.com^
 ||nahnoji.cz^
@@ -141134,6 +141138,7 @@
 ||zisdqzcpzgarq.space^
 ||zisu.cn.com^
 ||zitdither.com^
+||zitdymshto.icu^
 ||zither89.com^
 ||zitigammondhooti.cyou^
 ||zitternborghi.com^
