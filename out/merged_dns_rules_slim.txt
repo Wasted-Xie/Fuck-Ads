@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-24 16:44:00
-! Block rules: 142289
+! Generated: 2026-11-25 04:24:48
+! Block rules: 142293
 ! Whitelist rules: 388
 ! Max limit: none (lossless dedup only)
 ! Must-keep (never dropped): tanx.com, jiathis.com, ad.m.iqiyi.com, ad.jia.360.cn
@@ -13,7 +13,7 @@
 !   - anti-ad [w=5] block 102699
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5839
+!   - easylistchina [w=3] block 5843
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -286,6 +286,7 @@
 ||0i2nax2di.com^
 ||0iem8mw1lx.com^
 ||0ihw4ipvm5.com^
+||0jbyj9d2l.com^
 ||0jghm60qg.com^
 ||0kl9n3q2b.com^
 ||0kplffrs42.com^
@@ -97134,6 +97135,7 @@
 ||recruiting.dukekunshan.edu.cn^
 ||recs.atgsvcs.com^
 ||recsys-crawl.4paradigm.com^
+||rectangle20.com^
 ||rectangle99.com^
 ||rectangledevelopernewspapers.com^
 ||rectangular10.com^
@@ -125362,6 +125364,7 @@
 ||uaaoiuxdriogb.space^
 ||uaaooa.stansberryresearch.com^
 ||uaas.yandex.ru^
+||uaazwczowtfswj.com^
 ||uablxavqtlinl.space^
 ||uabvfvyfpawye.site^
 ||uabvpjljbbaqa.website^
@@ -126259,6 +126262,7 @@
 ||umbretturb.com^
 ||umbrilkanae.qpon^
 ||umc.danuoyi.alicdn.com^
+||umd8dz8x9.com^
 ||umdc.aliapp.org^
 ||umdlbn.globetrotter.de^
 ||umdpva.gakumado.mynavi.jp^
