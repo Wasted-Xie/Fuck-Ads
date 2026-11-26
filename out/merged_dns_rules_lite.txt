@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-26 13:02:47
-! Block rules: 158036
+! Generated: 2026-11-26 15:32:18
+! Block rules: 158050
 ! Whitelist rules: 388
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101989 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5859 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5860 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2133 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2141 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -958,6 +958,7 @@
 ||13p76nnir.de^
 ||13tohng.h7fz84h7m2wmign5.cfd^
 ||13yg.cn^
+||14-0-204-188.static.pccw-hkt.com^
 ||1414.hexa.su^
 ||142801df41.ca2865fb41.com^
 ||142904.com^
@@ -5498,6 +5499,7 @@
 ||937785.com^
 ||937791.com^
 ||9377ne.com^
+||9380washington-blvd.oss-cn-hongkong.aliyuncs.com^
 ||93819zqt6epxrhz2tv15p.zf97x7hgi8gm8u.cyou^
 ||939aeeb8d7.51344d90e9.com^
 ||93a83c07e9.7c1569a605.com^
@@ -21691,6 +21693,7 @@
 ||aqgsrrzajswir.site^
 ||aqhz.xyz^
 ||aqi.wd.amberweather.com^
+||aqianniao.com^
 ||aqifslbgumtev.online^
 ||aqkqlshhyfmbf.store^
 ||aqkvvkwriwqzm.space^
@@ -21828,6 +21831,7 @@
 ||archtfisc.cyou^
 ||archtphenenecuppers.qpon^
 ||archway.cozyvistany.com^
+||arclabio.com^
 ||arclet.net^
 ||arcmocbztwfsu.space^
 ||arcsaewdsptzt.space^
@@ -29085,6 +29089,7 @@
 ||bundiesledgers.com^
 ||bundle.9gtb.com^
 ||bundle.dyn-rev.app^
+||bundle.kpzip.com^
 ||bundle.ppas.monster^
 ||bundle.ppass.xyz^
 ||bundlemoviepumice.com^
@@ -37887,7 +37892,6 @@
 ||cryptonoter.com^
 ||cryptosplash.care^
 ||cryptotyc.care^
-||cryptovectorhub1.lol^
 ||cryptovot.com^
 ||crystalapp.miguvideo.com^
 ||crystalbloom.bid^
@@ -45144,6 +45148,7 @@
 ||download.youzu.com^
 ||download.yuehlia.com^
 ||download.zikirapp.com^
+||download2.huduntech.com^
 ||download3.123cw.cn^
 ||downloada.dewmobile.net^
 ||downloadb.dewmobile.net^
@@ -52204,6 +52209,7 @@
 ||eynaxnvzruafs.online^
 ||eynol.xyz^
 ||eyouv.cn^
+||eyp.hyperseqk.icu^
 ||eyp7uowejx.com^
 ||eyqbvz.greysonclothiers.com^
 ||eyqkpep11zh3kqxqyr.cfd^
@@ -52532,7 +52538,6 @@
 ||facebook.us13.go-static.info^
 ||facebookads.com^
 ||facebookinbox-omni-onapp.haravan.com^
-||faceit-cdn.org^
 ||faceit.pairacc.com^
 ||faceit.pairacc.pro^
 ||faceit.syncacc.pro^
@@ -53801,6 +53806,7 @@
 ||file.ipinyou.com.cn^
 ||file.iporngay.com^
 ||file.ppbk9.com^
+||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -60294,8 +60300,6 @@
 ||gowofhdmdtdhi.online^
 ||gowtkqcxftzkp.online^
 ||gowwtsfqlwyfxn.com^
-||goxlr.io^
-||goxlrutility.net^
 ||goxsvozfwjktk.space^
 ||goxuptilts.cyou^
 ||goylecalmy.com^
@@ -62754,6 +62758,7 @@
 ||help.exoclick.com^
 ||help.japandigest.info^
 ||help.juicyads.com^
+||help.windows64.men^
 ||help.yunaq.com^
 ||helpcollar.com^
 ||helpdesk.thinkhdi.com^
@@ -64226,7 +64231,6 @@
 ||hosting.miarroba.info^
 ||hosting24.com^
 ||hostingcloud.racing^
-||hostingcloud.science^
 ||hostingcloud.trade^
 ||hostingcloud.win^
 ||hostip.info^
@@ -64354,6 +64358,7 @@
 ||hozardbykdvxn.site^
 ||hozbkgsiaa.com^
 ||hozrlqkkuwskb.website^
+||hp.duxlip.icu^
 ||hp.gcafe.vn^
 ||hp.hubs.vn^
 ||hp.hyperseqk.icu^
@@ -70673,6 +70678,7 @@
 ||j7b5e91q85i2kw7lcpjxxeoeio756.cfd^
 ||j7kuo30qtn.com^
 ||j7kv55pr70.com^
+||j7tracker.gb.net^
 ||j83ad.speedrun.com^
 ||j85izots6.com^
 ||j8inn1zektoe.com^
@@ -74290,7 +74296,6 @@
 ||kilergghettos.cfd^
 ||killdeesolaria.com^
 ||killsremedy.com^
-||killurself1337-cdn.doxbin.mom^
 ||kilnribfirsts.cyou^
 ||kilo6alga.com^
 ||kiloh.ovh^
@@ -74955,6 +74960,7 @@
 ||kopszingani.qpon^
 ||koranagoupin.com^
 ||koraniccreases.cfd^
+||koreanuniversal.com^
 ||korehinds.com^
 ||koreomneity.com^
 ||korexnode.duckdns.org^
@@ -79171,6 +79177,7 @@
 ||loans.rategenius.com^
 ||loansales.cbre.com^
 ||loathesparkledisperse.com^
+||loayardes.cc^
 ||lobaacchoeuvo.online^
 ||lobariadizen.shop^
 ||lobbersfissive.shop^
@@ -87175,6 +87182,7 @@
 ||metrics.gnc.com^
 ||metrics.goalfinancial.net^
 ||metrics.gobank.com^
+||metrics.gocloudmaps.com^
 ||metrics.goindigo.in^
 ||metrics.goinggoing.com^
 ||metrics.goldcoastbulletin.com.au^
@@ -93799,6 +93807,7 @@
 ||noxiouswear.pro^
 ||noxthxomoccyr.site^
 ||noxtinulxrdor.online^
+||noxtzixkdg.com^
 ||noxxclient.org^
 ||noyfulbailer.shop^
 ||noytopjuwebxb.online^
@@ -95654,6 +95663,7 @@
 ||oiluduwwfxxng.site^
 ||oilygams.shop^
 ||oilylimit.com^
+||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
@@ -95710,6 +95720,7 @@
 ||oj2q8.montecarlosbm.book-secure.com^
 ||oj44472.com^
 ||oj95rctd5.com^
+||ojang.pe.kr^
 ||ojaoaqtmzkyqm.website^
 ||ojbuupgvpxg.com^
 ||ojdcebrmfzcnf.store^
@@ -105961,6 +105972,7 @@
 ||qqqajygpfmdea.space^
 ||qqqbvlafzdqwr.space^
 ||qqqfrcxyeecpp.space^
+||qqqwww2222222.tos-cn-shanghai.volces.com^
 ||qqrfjmgmkwfa.com^
 ||qqrjliivwakm.com^
 ||qqrkcmwxsoreq.space^
@@ -111303,6 +111315,7 @@
 ||ru.net^
 ||ru.video.intl.xiaomi.com^
 ||ru4.com^
+||ru4w1dq.com^
 ||rua50s4es8.com^
 ||ruagony.cyou^
 ||ruan.cn^
@@ -113115,6 +113128,7 @@
 ||sales.avis.com^
 ||sales.disneylandparis.com^
 ||sales.hot.net.il^
+||sales.ifree.page^
 ||sales.northeastind.com^
 ||sales.pandasuite.io^
 ||sales.texturacorp.com^
@@ -121732,7 +121746,6 @@
 ||soft-com.biz^
 ||soft-place.top^
 ||soft-queen-7e9a.maggiejonhson23.workers.dev^
-||soft-update.dev^
 ||soft.110route.com^
 ||soft.chaomeng8.com^
 ||soft.data.weather.360.cn^
@@ -125018,6 +125031,7 @@
 ||static.i-bidder.com^
 ||static.i.mediav.com^
 ||static.ichehome.com^
+||static.ilclock.com^
 ||static.imagineobx.com^
 ||static.img.imagecdn.cn^
 ||static.imprexis.biz^
@@ -125171,7 +125185,6 @@
 ||static.time-bid.com^
 ||static.timetreeads.com^
 ||static.tionhesaidnd.org^
-||static.tnkjmec.com^
 ||static.topxgun.com^
 ||static.toro-bid.com^
 ||static.trackandfieldnews.com^
@@ -130807,7 +130820,6 @@
 ||telemetry.vtex.com^
 ||telemetry.webasto.com^
 ||telemetrydeck.com^
-||telemetryloop.net^
 ||telepang.com^
 ||telephoneapparatus.com^
 ||teleport.soom.la^
@@ -132127,6 +132139,7 @@
 ||tjzcxcvwqytic.online^
 ||tjzvuo.youcom.com.br^
 ||tk-1464303226.cos.ap-guangzhou.myqcloud.com^
+||tk-1500200614.cos.ap-guangzhou.myqcloud.com^
 ||tk.504pk.com^
 ||tk.abt.com^
 ||tk.agrizone.net^
@@ -141387,6 +141400,7 @@
 ||utzxfxtxyyvhx.site^
 ||utzzytfmbfekv.website^
 ||uu.85655095.com^
+||uu.bais66993.com^
 ||uu.domainforlite.com^
 ||uu.qq.com^
 ||uu.v2raynapps.com.cn^
