@@ -6,6 +6,81 @@
 
 ---
 
+## [2.6.3] - 2026-11-26
+
+**移除硬编码放行**：代码不再对任何特定域名做特殊处理，放行统一走 `Lists/whitelist.txt`。
+
+### 变更
+
+#### 删除 `ALLOW_DOMAINS`（Slim）
+
+`Slim/build_lite_slim.py` 原本硬编码放行 `jianshu.com` 整域（含子域），用于绕开上游对简书的误判。现改为按需在 `whitelist.txt` 中维护，代码中不再保留任何域名白名单。
+
+删除内容：
+
+| 项 | 说明 |
+|---|---|
+| `ALLOW_DOMAINS = ("jianshu.com",)` | 常量 |
+| `is_allowed_domain()` | 判断函数 |
+| `drop_allowed()` | 剔除函数 |
+| 构建流程中的「步骤 0：整域放行清理」 | 调用点 |
+
+实际影响：4 条规则恢复拦截（`jianshu.com`、`tr.jianshu.com`、`udiab1.jianshu.com`、`udiab2.jianshu.com`）。
+
+#### 删除 `MUST_KEEP`（Slim）
+
+`MUST_KEEP`（`tanx.com`、`jiathis.com`、`ad.m.iqiyi.com`、`ad.jia.360.cn`）原本用于豁免父域收敛与 `--max` 裁剪。实测其当前唯一实际作用是保住 1 条规则：
+
+| 域名 | 在源中 | 父域覆盖 | 移除后 |
+|---|---|---|---|
+| `tanx.com` | 有 | 无 | 保留 |
+| `jiathis.com` | 有 | 无 | 保留 |
+| `ad.m.iqiyi.com` | 有 | 无 | 保留 |
+| `ad.jia.360.cn` | 有 | `360.cn` | 被收敛（拦截效果不变） |
+
+用同一份输入（11 源并集 144,061 条）对比：
+
+```
+旧逻辑（豁免 MUST_KEEP）: 129,267
+新逻辑（无豁免）        : 129,266   ← 少 1 条
+```
+
+`ad.jia.360.cn` 虽被删，但产物中 `||360.cn^` 已覆盖它，**拦截效果不受影响**。另外 `--max` 默认为 0（不裁剪），Actions 也未传参，故裁剪豁免逻辑实际从未触发。
+
+删除内容：
+
+| 项 | 说明 |
+|---|---|
+| `MUST_KEEP` 常量 | 4 条域名 |
+| 父域收敛的 `keep=MUST_KEEP` 参数 | 2 处调用 |
+| 缺失补入逻辑（`missing_keep`） | 第 184–193 行 |
+| `--max` 裁剪豁免（`keepset`） | 第 211–213 行 |
+| 最终强制补入循环 | 第 224–226 行 |
+| 产物头部 `! Must-keep (never dropped): ...` | 输出行 |
+| `drop_parent_covered()` 的 `keep` 参数 | 函数签名简化 |
+
+> 若将来需要确保某条规则不被收敛/裁剪，写进 `Lists/blocklist.txt`——它在收敛之后注入，且给最高价值分，效果等价。
+
+### 放行方式
+
+需要放行某个域名时，写进 `Lists/whitelist.txt`：
+
+```text
+example.com
+```
+
+产物中会输出为 `@@||example.com^$important`，优先级高于任何拦截规则（含 `Append.txt` 里的 `||d^$important`）。该文件参与全部四个版本的构建，无需改代码。
+
+### 文档
+
+- README 从 335 行精简至 200 行（−40%）
+- 新建 `docs/rules-and-license.md`（161 行）：收纳数据处理规则、**优先级顺序详解**（构建时 vs 运行时两层、冲突判定速查表、Lite/Slim 白名单继承）、许可说明
+- README「数据处理规则」与「License」章节改为链接索引表
+- README「自定义名单」保留用法，删去原理详解
+- `docs/analysis.md`：删除「整域放行」小节，改为「关于硬编码放行」
+
+---
+
 ## [2.6.2] - 2026-11-25
 
 **修复白名单对带修饰符规则与 Append.txt 无效的问题**；白名单改用 `$important` 优先级机制。

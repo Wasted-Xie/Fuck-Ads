@@ -71,36 +71,16 @@ SECURITY_SOURCES = (
     ("filter_11", os.path.join(RAW_DIR, "filter_11.txt"), 2),             # URLHaus 恶意网站
 )
 
-# 保底清单：无论去重收敛或裁剪如何，这些域名**必须**出现在最终产物中。
-# 来源：slim 版校验时发现未被任何保留规则覆盖的国内广告域。
-MUST_KEEP = (
-    "tanx.com",          # 阿里妈妈广告交易平台（原易传媒 Tanx）
-    "jiathis.com",       # 加网分享按钮（国内站点广泛使用）
-    "ad.m.iqiyi.com",    # 爱奇艺移动端广告
-    "ad.jia.360.cn",     # 360 广告投放域
-)
-
-# 整域放行（含其子域）：简书被上游误判，按用户要求放行主站
-ALLOW_DOMAINS = ("jianshu.com",)
-
-
-def is_allowed_domain(domain):
-    """是否属于「整域放行」的域名（自身或其子域）"""
-    for a in ALLOW_DOMAINS:
-        if domain == a or domain.endswith("." + a):
-            return True
-    return False
-
-
-def drop_allowed(domains):
-    """移除「整域放行」范围内的规则，返回 (保留集, 移除数)。
-
-    历史上此函数还负责 360 品牌保护（只拦广告子域、放行主域与功能域），
-    该保护已按用户要求彻底移除：360 系列现与其他域名一视同仁，一律照常拦截。
-    当前唯一会被移出的只有 ALLOW_DOMAINS（简书）。
-    """
-    kept = {d for d in domains if not is_allowed_domain(d)}
-    return kept, len(domains) - len(kept)
+# 注 1：本脚本不再对任何域名做硬编码放行。
+# 需要放行某个域名时，写进 Lists/whitelist.txt 即可——它参与全部四个版本的构建，
+# 且输出为 @@||d^$important，优先级高于任何拦截规则。
+#
+# 注 2：曾有一个 MUST_KEEP 保底清单（tanx.com / jiathis.com / ad.m.iqiyi.com /
+# ad.jia.360.cn），用于豁免父域收敛与 --max 裁剪。该清单已移除：
+#   - 这 4 个域名都由上游源正常提供，无需硬编码兜底
+#   - ad.jia.360.cn 虽会被 ||360.cn^ 收敛掉，但拦截效果不受影响（父域已覆盖）
+# 若将来需要确保某条规则不被收敛/裁剪，写进 Lists/blocklist.txt——它在收敛之后注入，
+# 且给最高价值分，效果等价。
 
 
 def load_source(path):
@@ -141,17 +121,15 @@ def load_full_allows():
     return allows
 
 
-def drop_parent_covered(domains, keep=()):
+def drop_parent_covered(domains):
     """删除已被更短父域规则覆盖的域名（AGH 中父域规则已覆盖其全部子域）。
 
-    keep 中的域名永不删除（保底清单）。
+    例：集合中存在 a.com 时，b.a.com 会被删除——a.com 的规则已覆盖它，
+    拦截能力不受影响。
     """
-    keep = set(keep)
     s = set(domains)
     drop = set()
     for d in s:
-        if d in keep:
-            continue
         parts = d.split(".")
         for i in range(1, len(parts) - 1):
             if ".".join(parts[i:]) in s:
@@ -187,15 +165,8 @@ def main():
     print(f"sources used                       : {len(sources)} (China only)")
     print(f"candidate domains (raw union)      : {len(all_domains)}")
 
-    # ---- 0. 整域放行清理 ----
-    # 剔除 ||jianshu.com^ 这类整域规则（含其子域）。放在父域收敛之前执行，
-    # 避免放行域名被当作父域规则参与后续收敛。
-    # 注：此步历史上还承担 360 品牌保护，该保护已彻底移除。
-    all_domains, removed = drop_allowed(all_domains)
-    print(f"allow-list domains dropped         : {len(all_domains)}  (-{removed})")
-
-    # ---- 1. 无损：父域覆盖收敛（保底清单豁免）----
-    stage1 = drop_parent_covered(all_domains, keep=MUST_KEEP)
+    # ---- 1. 无损：父域覆盖收敛 ----
+    stage1 = drop_parent_covered(all_domains)
     print(f"after parent-covered removal       : {len(stage1)}  (-{len(all_domains)-len(stage1)})")
 
     # ---- 2. 无损：白名单冲突清理 ----
@@ -206,18 +177,7 @@ def main():
     stage2 = {d for d in stage1 if d not in allow_set}
     print(f"after whitelist conflict removal   : {len(stage2)}  (-{len(stage1)-len(stage2)})")
 
-    # ---- 3. 保底清单：不在池中的直接补入 ----
-    missing_keep = [d for d in MUST_KEEP if d not in stage2]
-    for d in missing_keep:
-        stage2.add(d)
-        value[d] = max(value[d], 100)      # 给最高价值分，确保排序时位于最前
-        consensus[d] = max(consensus[d], 99)
-    if missing_keep:
-        print(f"must-keep injected                 : +{len(missing_keep)}  {missing_keep}")
-    else:
-        print("must-keep injected                 : (all already present)")
-
-    # ---- 3b. 手动维护的拦截名单（Lists/blocklist.txt）----
+    # ---- 3. 手动维护的拦截名单（Lists/blocklist.txt）----
     # 放在白名单冲突清理之后注入，确保手写条目不会被白名单剔除；
     # 同时给最高价值分，使其在 --max 裁剪时也不会被挤出。
     # 注 1：手写白名单无需在此处理 —— 它已写入 Full 产物，上面的 allow_set 已包含。
@@ -246,22 +206,15 @@ def main():
     ordered = sorted(stage2, key=sort_key)
     if args.max and len(ordered) > args.max:
         selected = ordered[:args.max]
-        # 保底清单强制保留（即使被挤出配额）
-        keepset = set(MUST_KEEP)
-        selected = list(dict.fromkeys(list(selected) + [d for d in MUST_KEEP if d in ordered]))
         print(f"after value-based truncation       : {len(selected)}  (-{len(ordered)-len(selected)})")
     else:
         selected = ordered
         print(f"no truncation (kept all)           : {len(selected)}")
 
-    # 裁剪后可能出现新的父域冗余，再收敛一次（保底清单豁免）
-    final = drop_parent_covered(selected, keep=MUST_KEEP)
+    # 裁剪后可能出现新的父域冗余，再收敛一次
+    final = drop_parent_covered(selected)
     if len(final) < len(selected):
         print(f"after final parent collapse        : {len(final)}  (-{len(selected)-len(final)})")
-
-    # 最终确保保底清单存在
-    for d in MUST_KEEP:
-        final.add(d)
 
     sorted_blocks = sorted(final)
     sorted_allows = sorted(allow_set)
@@ -279,7 +232,6 @@ def main():
         f"! Block rules: {len(sorted_blocks)}",
         f"! Whitelist rules: {len(sorted_allows)}",
         f"! Max limit: {args.max if args.max else 'none (lossless dedup only)'}",
-        "! Must-keep (never dropped): " + ", ".join(MUST_KEEP),
         "! Sources (China only):",
     ]
     header += [f"!   - {name} [w={weight}] block {nb}" for name, weight, nb in per_source]

@@ -24,6 +24,7 @@
 - **剔除 DNS 层无法表达的内容**：带路径规则、`$domain=` / `$app=` 限定规则、元素隐藏（`##`）、正则
 - **排除翻墙/加速条目**：指向非本地 IP 的 hosts 重定向一律不纳入
 - **自定义名单**：`Lists/` 下三个手写文件参与全部版本构建
+- **无硬编码放行**：代码中不对任何域名做特殊处理，需放行时写进 `Lists/whitelist.txt` 即可
 - **四版本产物**：覆盖从最大拦截到 229MB 低配设备
 - **各版互不冲突**：共用同一份白名单，且都剔除白名单已有域名
 - **全自动更新**：Actions 定时拉取重建，仅在有变化时提交
@@ -50,7 +51,9 @@
 │   ├── blocklist.txt         #   只拦截（裸域名即可，参与清洗）
 │   └── Append.txt            #   扩展区：原样追加到产物末尾，不参与清洗
 ├── out/                      # 最终产物（入库，供订阅）
-├── docs/analysis.md          # 详细实测数据与参数说明
+├── docs/
+│   ├── rules-and-license.md  # 数据处理规则、优先级、许可说明
+│   └── analysis.md           # Lite/Slim 参数与实测数据
 ├── .github/workflows/update.yml
 └── .gitignore
 ```
@@ -143,100 +146,24 @@ AGH 对过滤器源有超时判定：**某次拉取超时或连接被重置，�
 
 ## 自定义名单（手动维护）
 
-`Lists/` 下有三个手写文件，但它们的处理方式**完全不同**：
+`Lists/` 下三个手写文件，处理方式完全不同：
 
-| 文件 | 处理方式 | 是否参与清洗 |
+| 文件 | 作用 | 写法 |
 |---|---|---|
-| `whitelist.txt` | 解析为域名 → 加入白名单 | 是 |
-| `blocklist.txt` | 解析为域名 → 加入黑名单 | 是 |
-| `Append.txt` | **原样追加到产物末尾** | **否** |
+| `whitelist.txt` | **放行**（参与清洗） | 裸域名，如 `example.com` |
+| `blocklist.txt` | **拦截**（参与清洗） | 裸域名，如 `example.com` |
+| `Append.txt` | **原样追加**到产物末尾（不参与清洗） | 完整 AdGuard 语法 |
 
-### whitelist.txt / blocklist.txt（参与清洗）
+**放行一个域名**：写进 `Lists/whitelist.txt`，一行一个。产物会输出为 `@@||example.com^$important`——最高优先级，能压过任何拦截规则（含 `Append.txt` 里的 `||d^$important`）。
 
-裸域名即可，大小写不敏感：
+**拦截一个域名**：写进 `Lists/blocklist.txt`。
 
-```text
-example.com
-```
+**Append.txt 是"扩展区"，不是名单**：内容逐行原样追加，脚本不解析、不清洗、不做冲突检查。写什么，产物末尾就是什么，是否有效完全由 AGH 判定。因此它支持 `$important`、`*` 通配符、注释分组等全部语法。
 
-- 以 `!` 或 `#` 开头为注释，空行忽略
-- **写主域即覆盖全部子域**（AGH 中 `@@||example.com^` 已含子域）
-- 不支持通配符（`*`）、路径（`/`）、`$` 修饰符——这类写法会被忽略并打印警告
+> ⚠️ `Append.txt` 里写裸域名**不会**被自动转成 `||域名^`，请写完整语法。
 
-**产物中的白名单规则带 `$important`**：`whitelist.txt` 里的 `example.com` 会被写成
-
-```text
-@@||example.com^$important
-```
-
-原因见下方 [与 Append.txt 的冲突如何处理](#与-appendtxt-的冲突如何处理)。
-
-两者的冲突处理：
-
-| 冲突情况 | 处理 |
-|---|---|
-| 同一域名同时写在两个文件 | 放行优先，打印警告 |
-| 手写放行的域在上游黑名单中 | 该域**及子域**的上游黑名单条目自动移除（减小产物体积，无损） |
-| 手写拦截的域在上游白名单中 | 该条被忽略（兜底） |
-
-### Append.txt（不参与清洗）
-
-**这个文件是"扩展区"，不是"名单"。** 它的内容逐行原样追加到产物末尾，构建脚本**不做任何解析、清洗、去重或冲突处理**：
-
-- 不判断 `@@` 前缀，不区分黑白
-- 不剥离 `$` 修饰符
-- 不过滤通配符 `*`、路径、正则、元素隐藏规则
-- 不与 `whitelist.txt` / `blocklist.txt` / 上游源做冲突检查
-- 保留注释行（`#` 开头）与原始顺序
-
-换句话说：**你写什么，产物末尾就是什么**，规则是否有效完全由 AdGuard Home 判定。
-
-#### 内容来源
-
-当前内容提取自 [liuzq2002/Adguard-Home-For-Magisk-Mod](https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod) 的 release 包内 `AdGuardHome.yaml` 的 `user_rules` 字段（1263 条），加上文件头的模板说明注释，以及末尾 2 条手工追加的规则。
-
-- 来源仓库许可证：**MIT**（Copyright 2025 liuzq2002）
-- 该仓库 README 声明其规则基础为 **GOODBYEADS**（MIT）+ 自定义增补
-- 提取方式：`py extract_agh_rules.py`（本地工具，不入库）
-
-规则构成：1164 条规则（1061 拦截 + 103 放行）+ 153 行分组注释，覆盖各 App 的定向拦截/放行（腾讯、百度、字节、快手、美团、喜马拉雅、哔哩哔哩、网易云等），其中约 91% 的规则不在本项目的其它上游源中。
-
-> **重新提取时注意**：`extract_agh_rules.py` 只输出到 `temp/agh_rules/`，**不会写入 `Lists/Append.txt`**。该文件末尾有手工追加的规则（不在 yaml 中），直接覆盖会丢失。替换前请先比对差异，脚本运行后会打印比对命令。
-
-```text
-# 原样保留，不解析
-#针对转转App的放行规则，勿删
-@@||zhuanzhuan.com^$important
-||tnc*-aliec*.zijieapi.com^$important
-```
-
-> ⚠️ 因为不参与清洗，**如果你在 `Append.txt` 里写了裸域名（如 `example.com`），它不会像 `blocklist.txt` 那样被自动转成 `||example.com^`**。请直接写完整的 AdGuard 语法。
-
-### 与 Append.txt 的冲突如何处理
-
-`Append.txt` 保持**纯追加写**，不参与任何清洗。当它里面的拦截规则与 `whitelist.txt` 冲突时，**不靠脚本删除，而由 AdGuard 自身的 `$important` 优先级机制决断**。
-
-AdGuard 的规则优先级（高 → 低）：
-
-```
-1. $important 例外      @@||d^$important
-2. $important 拦截      ||d^$important
-3. 普通例外            @@||d^
-4. 普通拦截            ||d^
-```
-
-因此本项目的白名单**统一输出 `@@||d^$important`**，它位于最高优先级，能压过 `Append.txt` 里 `||d^$important` 形态的拦截规则。
-
-产物中两条规则会同时存在：
-
-```text
-@@||rup4a04-c02.tos-cn-hongkong.bytepluses.com^$important   ← 白名单，优先级最高
-||rup4a04-c02.tos-cn-hongkong.bytepluses.com^$important    ← Append 原样保留
-```
-
-这样做的好处：**`Append.txt` 可以随上游同步更新而不影响白名单效果**，无需每次同步后手工改 Append。
-
-> 注：上游源里的同名规则仍会被脚本删除（那部分不参与追加写，删除是无损的体积优化）。
+> 优先级细节（构建时 vs 运行时、冲突判定速查表、Lite/Slim 的白名单继承）见
+> [docs/rules-and-license.md](docs/rules-and-license.md#优先级顺序)。
 
 ### 产物头部记录
 
@@ -248,48 +175,22 @@ AdGuard 的规则优先级（高 → 低）：
 
 > 三个文件默认只有注释、无规则，初始状态对产物**零影响**。推送后 Actions 下次运行自动纳入。
 
-## 数据处理规则
+## 数据处理与许可
 
-### 主源（3 个，未经格式改写）
-
-由 `merge_dedup.py` 直接读取，**整行精确去重，不做格式改写或豁免**：
-
-| 源 | 许可证 | 内容 |
-|---|---|---|
-| [URLHaus](https://github.com/AdguardTeam/HostlistsRegistry)（Hostlists #11） | GPL-3.0；数据源头 abuse.ch 无标准开源许可，仅 Fair Use + ToS | 恶意网站/钓鱼/木马 |
-| [GOODBYEADS dns](https://github.com/8680/GOODBYEADS) | MIT | 去广告域名 |
-| [AdBlock DNS](https://github.com/217heidai/adblockfilters) | GPL-3.0 | 去广告合并域名（含 `@@`） |
-
-> URLhaus 数据"available free of charge under the fair use principles"，商业用途可能需 abuse.ch 商业 API；再分发请遵守其 [ToS](https://urlhaus.abuse.ch/faq/#tos)。
-
-### 附加源（28 个，经格式清洗）
-
-经 `integrate_sources.py` 清洗后合并。Full 用 18 个（`Cache/sources/`），Pro 另加 10 个（`Cache/sources_pro/`）。
-
-| 源 | 许可证 / 说明 |
+| 想了解 | 见 |
 |---|---|
-| yhosts、ad-wars、1024_hosts、xinggsf、cjx-annoyance、adgk | 国内去广告 |
-| AdAway、Mvps、YousList、StevenBlack、EasyList、EasyPrivacy、EasyList China | 国际主流（EasyList 系为 GPL-3.0 或 CC BY-SA 3.0） |
-| anti-AD、antiadblock、i-dont-care-about-cookies | 综合/专项 |
-| **Pro 专用**：Hblock、Spam404、halflife、AWAvenue、AdGuard Chinese、scamblocklist、NoCoin、Peter Lowe、Dan Pollock、neohosts | 反诈/恶意域名为主 |
+| 31 个上游源的清单与许可证 | [docs/rules-and-license.md](docs/rules-and-license.md#一数据处理规则) |
+| 清洗规则明细（哪些规则被丢弃） | [docs/rules-and-license.md](docs/rules-and-license.md#清洗规则明细) |
+| **黑白名单 / Append / 上游源的优先级** | [docs/rules-and-license.md](docs/rules-and-license.md#优先级顺序) |
+| 代码与产物的许可差异、你的义务 | [docs/rules-and-license.md](docs/rules-and-license.md#二许可说明) |
+| Lite / Slim 的详细参数与实测数据 | [docs/analysis.md](docs/analysis.md) |
 
-> 附加源各自适用其仓库声明的许可，使用与再分发前请查阅对应仓库。
+简要说明：
 
-### 清洗规则明细
-
-| 输入形态 | 处理 |
-|---|---|
-| `0.0.0.0 域名` / `127.0.0.1 域名` | 转为 `\|\|域名^` |
-| 非本地 IP 的 hosts 重定向 | **排除**（翻墙/加速/解锁类） |
-| `\|\|域名^`、`\|\|域名^$important` | 保留（剥离修饰符后取域名） |
-| `@@\|\|域名^` | 进白名单 |
-| `\|\|域名^$domain=` / `$app=` | **丢弃**（站点限定型，放大范围） |
-| 带路径 `/`、正则 `/.../` | **丢弃**（DNS 层无法表达） |
-| 元素隐藏 `##`、`#@#`、`#?#`、`#$#`、`#%#` | **丢弃**（非 DNS 层） |
-| 裸域名 | 按拦截处理 |
-
-> 上表仅适用于**上游源**与 `whitelist.txt` / `blocklist.txt`。
-> `Lists/Append.txt` 不经过上述任何清洗步骤，内容原样追加到产物末尾。
+- **代码**（脚本、工作流、文档）为 **MIT** — [LICENSE](LICENSE)
+- **产物**（`out/` 四份列表）为 **GPL-3.0** — [LICENSE-GPL-3.0](LICENSE-GPL-3.0)
+  - 原因：产物是上游黑名单的汇编，版权继承自输入源，而上游多为 GPL-3.0
+  - 仅订阅使用无需任何操作；再分发产物需遵守 GPL-3.0
 
 ## 免责声明
 
@@ -297,38 +198,3 @@ AdGuard 的规则优先级（高 → 低）：
 - 误拦正常服务时，请在 `Lists/whitelist.txt` 中添加对应域名
 - 使用本列表产生的任何后果由使用者自行承担
 
-## License
-
-本项目**代码与产物适用不同许可**：
-
-| 范围 | 内容 | 许可证 |
-|---|---|---|
-| 代码与文档 | Python 脚本、Actions 工作流、Markdown | **MIT** — [LICENSE](LICENSE) |
-| 规则产物 | `out/` 下四份 `.txt` | **GPL-3.0** — [LICENSE-GPL-3.0](LICENSE-GPL-3.0) |
-
-### 产物为何是 GPL-3.0
-
-`out/` 是多个上游黑名单的汇编，版权状态继承自输入源。按 [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.en.html#GPLOutput)：
-
-> when a program translates its input into some other form, the copyright status of the output inherits that of the input it was generated from.
-
-本项目上游中，EasyList 系（GPL-3.0 或 CC BY-SA 3.0 双许可）、URLHaus、217heidai/adblockfilters、AdguardFilters、AWAvenue、AdAway **均为 GPL-3.0**，故产物整体按 GPL-3.0 分发。
-
-### 关于 Lists/Append.txt
-
-该文件追加的 1164 条规则提取自 [liuzq2002/Adguard-Home-For-Magisk-Mod](https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod) 的 release（**MIT**，其规则基础 GOODBYEADS 亦为 MIT）。MIT 与 GPL-3.0 兼容，这部分内容可合法地并入 GPL-3.0 产物；但**单独取用 `Append.txt` 时，适用其原始 MIT 许可**。
-
-### 代码为何是 MIT
-
-脚本只做下载、清洗、去重、合并，不含任何上游规则内容。GNU FAQ 亦指出自由软件许可"cannot limit what data you use the interpreter on"——代码许可与它处理的数据无关。
-
-### 你的义务
-
-| 使用方式 | 要求 |
-|---|---|
-| 仅订阅使用 | 无需任何操作 |
-| 再分发 `out/` 列表 | 遵守 GPL-3.0，注明来源与本项目 |
-| 单独复用 `Lists/Append.txt` | 遵守 MIT，注明来源 liuzq2002 与 GOODBYEADS |
-| 复用/修改脚本 | 遵守 MIT，保留版权声明 |
-
-> 各源许可明细见 [数据处理规则](#数据处理规则)。
