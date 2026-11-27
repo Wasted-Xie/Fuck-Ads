@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-26 15:32:20
-! Block rules: 142169
+! Generated: 2026-11-27 00:13:07
+! Block rules: 142171
 ! Whitelist rules: 388
 ! Max limit: none (lossless dedup only)
 ! Sources (China only):
@@ -12,7 +12,7 @@
 !   - anti-ad [w=5] block 101989
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5860
+!   - easylistchina [w=3] block 5862
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -95422,6 +95422,7 @@
 ||quackupsilon.com^
 ||quadquality.com^
 ||quadran.eu^
+||quadrant59.com^
 ||quaedamchaeta.cfd^
 ||quaffedpigpens.com^
 ||quaffspap.cfd^
@@ -101109,6 +101110,7 @@
 ||s2564.sc.origins.en25.com^
 ||s2d6.com^
 ||s2dln6sdu.com^
+||s2glduwz1.com^
 ||s2plb194m.com^
 ||s2sterra.com^
 ||s2v36b902.com^
