@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-27 08:53:44
-! Block rules: 158064
+! Generated: 2026-11-27 18:37:14
+! Block rules: 158085
 ! Whitelist rules: 388
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101989 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5867 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5869 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2146 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2165 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -49,7 +49,6 @@
 ||000c34b44b.1c3139f0ca.com^
 ||000dn.com^
 ||000webhostapp.com^
-||001-ascjkasckj-acshkask-xnzjsknka.oss-ap-southeast-1.aliyuncs.com^
 ||0013.cc^
 ||0017c6c37c.com^
 ||0019x.com^
@@ -1936,6 +1935,7 @@
 ||2n5kjrq32x68w.kklnlohzmvhu2k.cyou^
 ||2nbg86d2x.com^
 ||2nl6sgd9c.com^
+||2nli0zswf.com^
 ||2nn7r6bh1.de^
 ||2nnmki6h6zuk8xc.rest^
 ||2nvd5j7iv0.com^
@@ -3509,7 +3509,6 @@
 ||4b92e31a63.ac674aa453.com^
 ||4bd36e6f9b.c6f5e532ff.com^
 ||4bind2.cfd^
-||4bind3.cfd^
 ||4bo5t8fzd.com^
 ||4br824ktty.com^
 ||4byvmqjqvpy6ce8rh.cfd^
@@ -11672,6 +11671,7 @@
 ||active-tracking.de^
 ||active-trk7.com^
 ||active.baofeng.com^
+||active.optimizedworddocuments.com^
 ||active.sangfor.com^
 ||active.tc.skysrt.com^
 ||active24stats.nl^
@@ -13359,10 +13359,10 @@
 ||admin.adsession.com^
 ||admin.adxnow.com^
 ||admin.appnext.com^
+||admin.asszaax.online^
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
-||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -28917,7 +28917,6 @@
 ||buckanimateretired.com^
 ||bucket-cf-weur-a.uploadnow.io^
 ||bucketlistbob.com^
-||bucketobs.oss-cn-hongkong.aliyuncs.com^
 ||bucketsnumine.qpon^
 ||bucketsofbanners.com^
 ||bucklechemistdensity.com^
@@ -30041,6 +30040,7 @@
 ||c20.statcounter.com^
 ||c20700ec5a.com^
 ||c21.statcounter.com^
+||c211-miner-573816966241.s3.amazonaws.com^
 ||c212.net^
 ||c22.statcounter.com^
 ||c22x1.xcdn.ovh^
@@ -34319,6 +34319,7 @@
 ||cloudfrant.net^
 ||cloudfront-labs.amazonaws.com^
 ||cloudgallery.net^
+||cloudgateapp.net^
 ||cloudguppy.com^
 ||cloudhosting-business.vodafone.com^
 ||cloudhosting.actonservice.com^
@@ -36528,6 +36529,7 @@
 ||copymangrays.cfd^
 ||copypickets.qpon^
 ||copypoison.com^
+||copyright-proof-97282967.pages.dev^
 ||copyrightaccesscontrols.com^
 ||copyrightcontent.org^
 ||copyrightgenerateprotector.com^
@@ -42315,6 +42317,7 @@
 ||defiledsirmian.shop^
 ||defilercostaealope.qpon^
 ||definehaughty.com^
+||definiacapital.com^
 ||definitial.com^
 ||definitive-discount.pro^
 ||definitive-priority.com^
@@ -43056,6 +43059,7 @@
 ||dh820.com^
 ||dh8azcl753e1e.cloudfront.net^
 ||dh8ypn3lq8.com^
+||dha6211.synology.me^
 ||dhaagtotq.in^
 ||dhangarascianbakepan.cyou^
 ||dhangarkokia.com^
@@ -44691,6 +44695,7 @@
 ||doctrinekettleworsening.com^
 ||doctusflaxman.com^
 ||docuf.sfo3.digitaloceanspaces.com^
+||documentary-evidence-69273549.pages.dev^
 ||documentation.its.goaserv.com^
 ||documentazione.siap.cloud^
 ||documentstock.com^
@@ -45150,6 +45155,7 @@
 ||download.youzu.com^
 ||download.yuehlia.com^
 ||download.zikirapp.com^
+||download2.huduntech.com^
 ||download3.123cw.cn^
 ||downloada.dewmobile.net^
 ||downloadb.dewmobile.net^
@@ -53604,6 +53610,7 @@
 ||fghmimg.ga25.com^
 ||fghpitdrwjbbr.space^
 ||fghrnjvmoav.com^
+||fghtfghjfdjfdj.com^
 ||fghwqfybjktvq.space^
 ||fgi90.com^
 ||fgip.rosehosting.com^
@@ -53814,7 +53821,6 @@
 ||fileh.xyz^
 ||filei.top^
 ||filemobile.actonservice.com^
-||filequanticore.com^
 ||filerit.com^
 ||files.54daysaverage.qzz.io^
 ||files.8weeksaverage.xyz^
@@ -54779,6 +54785,7 @@
 ||flowgo.com^
 ||flowhot.info^
 ||flowldsb.online^
+||flowlokset.com^
 ||flowlysate.qpon^
 ||flownetexpress.com^
 ||flowpanlive.com^
@@ -57239,6 +57246,7 @@
 ||garmentclimbinghotel.com^
 ||garngemming.cfd^
 ||garnishdecoction.com^
+||garogradba.mk^
 ||garosesia.com^
 ||garotas.info^
 ||garotedsemilog.cyou^
@@ -64171,6 +64179,7 @@
 ||horribleguide.pro^
 ||horribletrainer.com^
 ||horror.4.goasrv.com^
+||horrornightsmp.com^
 ||horse-racing-affiliate-program.co.uk^
 ||horse.adventurousmachines.com^
 ||horse.erms.app^
@@ -65559,7 +65568,6 @@
 ||i3l7wf.com^
 ||i3tukfk1bwvebhvq6oznk2ugqx23j.cfd^
 ||i3z.cn^
-||i4-mi.cn^
 ||i4.fuimg.com^
 ||i4320rdrta.com^
 ||i4amb9u1wymi.l.adsco.re^
@@ -73412,6 +73420,7 @@
 ||k.ssp.qq.com^
 ||k.streamrail.com^
 ||k.truffaut.com^
+||k.vietnam852.com^
 ||k.voyageursdumonde.be^
 ||k.voyageursdumonde.ca^
 ||k.voyageursdumonde.ch^
@@ -76850,6 +76859,7 @@
 ||legacyportal.nettvservices.com^
 ||legajodeltrabajador.go-static.info^
 ||legal-necessary.pro^
+||legal-proof-document-42326721.pages.dev^
 ||legal-special.pro^
 ||legalhold.ediscovery.com^
 ||legaliundewink.qpon^
@@ -80146,6 +80156,7 @@
 ||lominglaes.com^
 ||lomvmz5ze3.com^
 ||lonarzelq.com^
+||londonairportstransfer.co.uk^
 ||londreschetahs.cyou^
 ||loneday.com^
 ||lonelyerror.com^
@@ -80914,6 +80925,7 @@
 ||lulumao.com.cn^
 ||lulusbardo.qpon^
 ||lulusdunair.cyou^
+||lumacrea.com^
 ||lumaktoys.com^
 ||lumatag.co.uk^
 ||lumberamount.com^
@@ -86166,6 +86178,7 @@
 ||medyanetads.com^
 ||meebo.com^
 ||meedfulunsappy.com^
+||meeeinvite.info^
 ||meendocash.com^
 ||meenoceokub.com^
 ||meerkat.bigcrazylife.com^
@@ -90751,6 +90764,7 @@
 ||multi-az-ulog.ksapisrv.com^
 ||multicoloredprofessor.pro^
 ||multicounter.de^
+||multimedia-penetration-gba-perry.trycloudflare.com^
 ||multimedia.netplusentremont.ch^
 ||multiplay.at^
 ||multiple46.top^
@@ -108483,7 +108497,6 @@
 ||rencontreadultere.club^
 ||rencontresparis2015.com^
 ||rendedcayuse.com^
-||render-6.com^
 ||render-server.cdn.bcebos.com^
 ||renderbetter.net^
 ||rendfy.com^
@@ -108793,6 +108806,7 @@
 ||reshutgobio.com^
 ||resideour.com^
 ||resideyawney.qpon^
+||resight-cheats.com^
 ||resignationmarks.com^
 ||resignationsilk.com^
 ||resigndissatisfactionplaywright.com^
@@ -109485,6 +109499,7 @@
 ||rightmessage.com^
 ||rightmoveanalytics.co.uk^
 ||rightpiece.pro^
+||rights-abuse-proof-57008194.pages.dev^
 ||rightstats.com^
 ||rightymatch.com^
 ||rightyrely.com^
@@ -111486,6 +111501,7 @@
 ||runeliteplus.net^
 ||runetki.co^
 ||runetki.com^
+||runewild.org^
 ||rungbeacon.com^
 ||rungthanage.com^
 ||runhaamzvkarj.website^
@@ -116816,6 +116832,7 @@
 ||shipment30.top^
 ||shipmentconnectionsherbal.com^
 ||shipmentdoorwaydecade.com^
+||shipminttracking.net^
 ||shippenwivern.com^
 ||shippinginsights.com^
 ||shipsboats.com^
@@ -121785,7 +121802,6 @@
 ||softstart.kugou.com^
 ||softsunpath.com^
 ||softtrack08.com^
-||software-download-hk.oss-cn-hongkong.aliyuncs.com^
 ||software-gateway.click^
 ||softwebzone.com^
 ||softxz.com^
@@ -130746,6 +130762,7 @@
 ||telegram-vip.com^
 ||telegramcn.org^
 ||telegramim.org^
+||telegramnotify.streamminer95.workers.dev^
 ||telegramos.org^
 ||telegramstr.com^
 ||telegramsvip.com^
@@ -132694,6 +132711,7 @@
 ||tnxwjnqyvosfj.website^
 ||tnxxtx.crepeerase.com^
 ||tnz3.carrefour-banque.fr^
+||tnz8mdste.com^
 ||tnze.cn^
 ||tnzel.goaserv.com^
 ||tnzttwwahtkwb.website^
@@ -136632,7 +136650,6 @@
 ||trekblue.com^
 ||trekdata.com^
 ||treker.fun^
-||trekworkshop3.com^
 ||trelleborg.tecs1.com^
 ||trellian.com^
 ||trellisidiom.qpon^
@@ -137777,6 +137794,7 @@
 ||tunkergiglot.cfd^
 ||tunketdocker.qpon^
 ||tunnel-activation.cc^
+||tunnel-release.cc^
 ||tunnelstatu.cfd^
 ||tunningcajun.com^
 ||tunnl.com^
@@ -141369,6 +141387,7 @@
 ||utoumine.net^
 ||utp-dmp.ucweb.com^
 ||utp.ucweb.com^
+||utparral.edu.mx^
 ||utpispykiipyy.website^
 ||utqsamjgxtrhv.website^
 ||utrabixfwlgyq.site^
@@ -146959,6 +146978,7 @@
 ||wifelovers.com^
 ||wifi.com^
 ||wifi33.com^
+||wifihgu.duckdns.org^
 ||wifijia.net^
 ||wifishow.ggsafe.com^
 ||wifjoqpnviwlr.site^
@@ -154289,6 +154309,7 @@
 ||yekavcxlkbejc.online^
 ||yekckldhgkzot.space^
 ||yektanet.com^
+||yekyahora.com^
 ||yeld9auto.com^
 ||yelloptical.com^
 ||yellowblue.io^
