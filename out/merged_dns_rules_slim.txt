@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-27 00:13:07
-! Block rules: 142171
+! Generated: 2026-11-27 08:53:45
+! Block rules: 142176
 ! Whitelist rules: 388
 ! Max limit: none (lossless dedup only)
 ! Sources (China only):
@@ -12,7 +12,7 @@
 !   - anti-ad [w=5] block 101989
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5862
+!   - easylistchina [w=3] block 5867
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -56602,6 +56602,7 @@
 ||huzytgmqsnecd.website^
 ||huzzahfor.com^
 ||huzzahsmetze.cyou^
+||hv3lixzlc.com^
 ||hv7n2iyreenqet6nr.rest^
 ||hv7w3au49.com^
 ||hvac.goodcoinc.com^
@@ -62823,6 +62824,7 @@
 ||jiwwtotahc.in^
 ||jiwxkhotybddx.site^
 ||jixdwtlveqhrl.online^
+||jixgkxfhfp.icu^
 ||jixie.io^
 ||jixing.cc^
 ||jixjkorwlxfoc.site^
@@ -128963,6 +128965,7 @@
 ||ve.tsdlp.com^
 ||ve.velocityclinical.com^
 ||ve8wil7nvknmvkobvtiebepppj7xfqyn.cfd^
+||ve9gs6j44.com^
 ||veaifvwjboylc.site^
 ||vealbkvekmvez.top^
 ||vealbkvlvrjry.top^
@@ -135814,6 +135817,7 @@
 ||xgyvaf.easydew.co.kr^
 ||xgzxpdy.com^
 ||xh1tsu69.xyz^
+||xh2ei17sy.com^
 ||xh33g.net^
 ||xh83333.com^
 ||xhaahvpleugdp.site^
@@ -138711,6 +138715,7 @@
 ||ygbjoob9by1g5gvz5.cfd^
 ||ygbpowseebsvu.online^
 ||ygcbqnceieyqy.website^
+||ygcmsecmzzhaup.com^
 ||ygdogx.hearstmagazines.co.uk^
 ||ygdvundpxjbbn.online^
 ||ygdwvwept.com^
