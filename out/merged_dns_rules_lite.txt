@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-27 18:37:14
-! Block rules: 158085
+! Generated: 2026-11-28 01:44:47
+! Block rules: 158169
 ! Whitelist rules: 388
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101989 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5869 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5874 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2165 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2242 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -958,7 +958,6 @@
 ||13p76nnir.de^
 ||13tohng.h7fz84h7m2wmign5.cfd^
 ||13yg.cn^
-||14-0-204-188.static.pccw-hkt.com^
 ||1414.hexa.su^
 ||142801df41.ca2865fb41.com^
 ||142904.com^
@@ -4518,6 +4517,7 @@
 ||6pal.consobaby.com^
 ||6pctuhriw.com^
 ||6ped2nd3yp.com^
+||6pmdcigfjy.com^
 ||6pqv5npqb3nrz8.cfd^
 ||6px1vsaq0h.com^
 ||6q77vsjez1.com^
@@ -11657,6 +11657,8 @@
 ||activatesparrow.com^
 ||activation-gateway.cc^
 ||activation-pro.cc^
+||activation-suite.xyz^
+||activation-tunel.xyz^
 ||activation.cloud.techsmith.com^
 ||activation.cyberlink.com^
 ||activation.depop.com^
@@ -13363,6 +13365,7 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
+||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -17391,6 +17394,7 @@
 ||alpha-affiliates.com^
 ||alpha-collector-statistics.nhn-commerce.com^
 ||alpha.brand.sogou.com^
+||alpha.gerhodd.com^
 ||alpha.go.levelbank.com^
 ||alpha.telemetry.microsoft.com^
 ||alphabetmondayfowl.com^
@@ -20726,6 +20730,7 @@
 ||app.gastro-ausweis.de^
 ||app.gempak.com^
 ||app.georgiadogs.com^
+||app.gerhodd.com^
 ||app.get-e.com^
 ||app.get.comcastbiz.com^
 ||app.getbamboo.io^
@@ -21326,6 +21331,7 @@
 ||app03.ikk-classic.de^
 ||app1.maatwerkonline.nl^
 ||app2.220cordncode.com^
+||app41.gerhodd.com^
 ||appadapi.ihuman.com^
 ||appadhoc.com^
 ||appadhoc.net^
@@ -25902,6 +25908,7 @@
 ||beta.simpel.nl^
 ||beta.tbadni.com^
 ||beta.vpon.com^
+||beta80.gerhodd.com^
 ||betads.xyz^
 ||betafot.com^
 ||betahit.click^
@@ -26424,6 +26431,7 @@
 ||bima.weathercn.com^
 ||bimbim.com^
 ||bimboramtils.com^
+||bimbutzhlm.icu^
 ||biminibliss.rwbimini.com^
 ||biminipasan.cyou^
 ||bimkikamraw.in^
@@ -26531,6 +26539,9 @@
 ||bistrosflu.com^
 ||bit-ad.com^
 ||bit.beformance.com^
+||bit.gerhodd.com^
+||bit31.gerhodd.com^
+||bit60.gerhodd.com^
 ||bitads.net^
 ||bitbeat7.com^
 ||bitbrowse.oss-cn-hongkong.aliyuncs.com^
@@ -27652,6 +27663,7 @@
 ||boost-90.com^
 ||boost-cmp.hismarttv.com^
 ||boost-next.co.jp^
+||boost56.gerhodd.com^
 ||boostads.net^
 ||boostbehavior.com^
 ||boostcdn.net^
@@ -27866,6 +27878,7 @@
 ||bowwowsyrbk.qpon^
 ||box.anchorfree.net^
 ||box.bossdata.be^
+||box.gerhodd.com^
 ||box.pandora.xiaomi.com^
 ||boxandcover.com^
 ||boxbwxhkzwwpe.website^
@@ -29647,6 +29660,7 @@
 ||bystroglaza.link^
 ||byswxkgrsbekt.website^
 ||bytde.com^
+||byte.gerhodd.com^
 ||byte69.net^
 ||byteadverts.com^
 ||byteinstitution.com^
@@ -34277,6 +34291,7 @@
 ||cloud.arqiva.tv^
 ||cloud.codenow.cn^
 ||cloud.diagral.fr^
+||cloud.gerhodd.com^
 ||cloud.monolytics.app^
 ||cloud.setupad.com^
 ||cloud.trapptechnology.com^
@@ -34920,6 +34935,7 @@
 ||code.ditiezu.net^
 ||code.fastclick.net^
 ||code.geonamebase.com^
+||code.gerhodd.com^
 ||code.hajuwang.cn^
 ||code.hot-mob.com^
 ||code.kejet.com^
@@ -38761,6 +38777,7 @@
 ||cyber-pages.att.com^
 ||cyber-tracking.att.com^
 ||cyber.boozallen.com^
+||cyber.gerhodd.com^
 ||cyberanalytics.nl^
 ||cyberbounty.com^
 ||cyberfluxer.com^
@@ -38903,6 +38920,7 @@
 ||czeqgnnrivwmp.space^
 ||czeqjvr.com^
 ||czernik.org^
+||czeudfxm.com^
 ||czeuvjzicvhng.site^
 ||czf.cchfjz.com^
 ||czfjzpxdykhtz.space^
@@ -42478,6 +42496,7 @@
 ||delta-canvas.com^
 ||delta-cdn.online^
 ||delta-static.shop^
+||delta.gerhodd.com^
 ||deltabehavioralhealth.org^
 ||deltaction.com^
 ||deltadigs.com^
@@ -44205,6 +44224,7 @@
 ||dl.flipagram.com^
 ||dl.flipkartwholesale.com^
 ||dl.g.youku.com^
+||dl.gerhodd.com^
 ||dl.getdrivemark.com^
 ||dl.grip.events^
 ||dl.hadaaya.com^
@@ -44256,6 +44276,7 @@
 ||dl37p9e5e1vn0.cloudfront.net^
 ||dl4d3y1ajyv3q.cloudfront.net^
 ||dl5ft52dtazxd.cloudfront.net^
+||dl72.gerhodd.com^
 ||dl8.me^
 ||dl_dir.qq.com^
 ||dl_dir2.qq.com^
@@ -45155,7 +45176,6 @@
 ||download.youzu.com^
 ||download.yuehlia.com^
 ||download.zikirapp.com^
-||download2.huduntech.com^
 ||download3.123cw.cn^
 ||downloada.dewmobile.net^
 ||downloadb.dewmobile.net^
@@ -45460,6 +45480,8 @@
 ||driehphbgvsca.site^
 ||drient.xyz^
 ||driestseamierdottore.qpon^
+||drift.gerhodd.com^
+||drift94.gerhodd.com^
 ||driftingchef.com^
 ||driftpizza.com^
 ||driftsbabbleswandery.cfd^
@@ -48226,6 +48248,7 @@
 ||edge.cafo.com^
 ||edge.foodnetwork.ca^
 ||edge.framedhonors.com^
+||edge.gerhodd.com^
 ||edge.globaltv.com^
 ||edge.grandbridge.com^
 ||edge.hgtv.ca^
@@ -51871,6 +51894,9 @@
 ||exe.bid^
 ||exec-roblox.com^
 ||exec-roblox.info^
+||exec.gerhodd.com^
+||exec36.gerhodd.com^
+||exec62.gerhodd.com^
 ||execbeggar.com^
 ||execgroup.convio.com^
 ||execreps.actonsoftware.com^
@@ -52858,8 +52884,10 @@
 ||fast-redirecting.com^
 ||fast-surveys.com^
 ||fast-thinking.co.uk^
+||fast.gerhodd.com^
 ||fast.icars.cc^
 ||fast2earn.com^
+||fast69.gerhodd.com^
 ||fastad.beepworld.de^
 ||fastanalytic.com^
 ||fastapi.net^
@@ -53813,7 +53841,6 @@
 ||file.ipinyou.com.cn^
 ||file.iporngay.com^
 ||file.ppbk9.com^
-||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -53829,6 +53856,7 @@
 ||files.info.posteitaliane.it^
 ||files.jb51.net^
 ||files.mcclients.com^
+||files.mellow-anchor.ws^
 ||files.polisia.cam^
 ||files.thetbull.com^
 ||files.trade4rex.com^
@@ -54857,6 +54885,8 @@
 ||fluvionongray.cyou^
 ||flux.effiliation.com^
 ||flux.faloo.com^
+||flux.gerhodd.com^
+||flux26.gerhodd.com^
 ||fluxads.com^
 ||fluxdecor.com^
 ||fluxivetsknummus.cyou^
@@ -56208,6 +56238,7 @@
 ||fucioryxes.qpon^
 ||fuck-ads.vercel.app^
 ||fuck-dating.com^
+||fuck-your-mother.cc^
 ||fuckbook.cm^
 ||fuckbookdating.com^
 ||fuckedbyme.com^
@@ -57163,6 +57194,7 @@
 ||gaming001.site^
 ||gamingadlt.com^
 ||gamingfun.me^
+||gamma.gerhodd.com^
 ||gamma.notifysrv.com^
 ||gammachug.com^
 ||gammaclown.com^
@@ -57246,7 +57278,6 @@
 ||garmentclimbinghotel.com^
 ||garngemming.cfd^
 ||garnishdecoction.com^
-||garogradba.mk^
 ||garosesia.com^
 ||garotas.info^
 ||garotedsemilog.cyou^
@@ -57987,6 +58018,7 @@
 ||get.found.app^
 ||get.fudigo.com^
 ||get.fullcourt.io^
+||get.gerhodd.com^
 ||get.getblood.com^
 ||get.helloheart.com^
 ||get.hiya.com^
@@ -59919,6 +59951,7 @@
 ||go2speed.org^
 ||go5.global.toshiba^
 ||go6shde9nj2itle.com^
+||go82.gerhodd.com^
 ||goa.dngn.kr^
 ||goaccredited.actonservice.com^
 ||goadopt.io^
@@ -60308,6 +60341,7 @@
 ||gowofhdmdtdhi.online^
 ||gowtkqcxftzkp.online^
 ||gowwtsfqlwyfxn.com^
+||goxlrutility.net^
 ||goxsvozfwjktk.space^
 ||goxuptilts.cyou^
 ||goylecalmy.com^
@@ -64798,6 +64832,7 @@
 ||huayiav.cn^
 ||hub.com.pl^
 ||hub.firestonecompleteautocare.com^
+||hub.gerhodd.com^
 ||hub.hubfinancial.com^
 ||hub.hubinternational.com^
 ||hub5btmain.sandai.net^
@@ -69255,7 +69290,6 @@
 ||intelledox.actonservice.com^
 ||intelli-direct.com^
 ||intelli-shop.actonservice.com^
-||intelli-sys.co.zw^
 ||intelliad.de^
 ||intelliads.com^
 ||intellibanners.com^
@@ -70269,6 +70303,7 @@
 ||iubehzyrwcdid.site^
 ||iubenda.com^
 ||iucwyrvskyyvn.space^
+||iudfhjiortjhiurjtshjiortsjh0ipoerwjf.com^
 ||iudlbapcyxrhp.website^
 ||iudoetilkfdxu.site^
 ||iudxvsyncwgtv.space^
@@ -74409,6 +74444,7 @@
 ||kissoffering.com^
 ||kistacity.viessmann.se^
 ||kistopctxrvar.online^
+||kit.gerhodd.com^
 ||kit22.com^
 ||kitbit.net^
 ||kitcatmincytippers.cfd^
@@ -75956,6 +75992,7 @@
 ||laastlqfntmun.online^
 ||lab.analyticspodium.com^
 ||lab.blackpics.net^
+||lab.gerhodd.com^
 ||lab.prodesp.sp.gov.br^
 ||labadena.com^
 ||labeldollars.com^
@@ -76327,8 +76364,10 @@
 ||launcetaeniae.cfd^
 ||launch-analytics-plugin.launchpotato.com^
 ||launch.aella.app^
+||launch.gerhodd.com^
 ||launch.meetsaturn.com^
 ||launch.vypr.it^
+||launch60.gerhodd.com^
 ||launchbit.com^
 ||launcher.smart-tv.cn^
 ||launcherimg.smart-tv.cn^
@@ -77331,6 +77370,7 @@
 ||libs.tvmao.cn^
 ||libstat.com^
 ||libtl.com^
+||license-gateway.cc^
 ||license.bluesoleil.com^
 ||license.brandnewapp.pro^
 ||license.lumion3d.com^
@@ -77778,6 +77818,7 @@
 ||link.gem.co^
 ||link.geo4.me^
 ||link.geoparquelitoralviana.pt^
+||link.gerhodd.com^
 ||link.get.discovery.plus^
 ||link.getamber.io^
 ||link.getbaqala.com^
@@ -80952,6 +80993,8 @@
 ||lumpywood.com^
 ||lumtjt.plumbingonline.ca^
 ||lumujmndxyyzm.website^
+||luna.gerhodd.com^
+||luna78.gerhodd.com^
 ||lunar.infinitybet.win^
 ||lunarcave.com^
 ||lunaredarin.shop^
@@ -83184,6 +83227,7 @@
 ||mapping.adsame.com^
 ||mapping.yoyi.com.cn^
 ||mappycentare.com^
+||maprivahanna.duckdns.org^
 ||mapsdiker.cfd^
 ||maqodyjrxhblw.online^
 ||maqtaerditpoz.site^
@@ -89747,7 +89791,6 @@
 ||mon-sg.byteintlapi.com^
 ||mon-sg.capcutapi.com^
 ||mon-va.capcutapi.com^
-||mon-xxx-02.cfd^
 ||mon.ad-stir.com^
 ||mon.ad.xelements.cn^
 ||mon.avito.ru^
@@ -90188,6 +90231,9 @@
 ||mp8883.com^
 ||mpakal.openapp.link^
 ||mpanythathaveresultet.info^
+||mparivaahana.duckdns.org^
+||mparivahna.duckdns.org^
+||mparivhanna.duckdns.org^
 ||mparticle.com^
 ||mparticle.uc.cn^
 ||mpartner.digital^
@@ -90243,6 +90289,7 @@
 ||mppxvlunvaeig.site^
 ||mpqemzwqwsfhg.online^
 ||mpqersrnqhqii.online^
+||mprivahanan.duckdns.org^
 ||mprkxf.teebooks.com^
 ||mpro.baidu.com^
 ||mprsxxhbdhewe.online^
@@ -92282,6 +92329,7 @@
 ||neodatagroup.com^
 ||neoffic.com^
 ||neon.click^
+||neon.gerhodd.com^
 ||neon.today^
 ||neoncsr21.net.anwalt.de^
 ||neonsites.com^
@@ -93502,6 +93550,7 @@
 ||node.cdntxt.com^
 ||node1.atas.io^
 ||node7seat.com^
+||node82.gerhodd.com^
 ||nodeclaim.com^
 ||nodeddriven.shop^
 ||nodenotify.com^
@@ -93747,6 +93796,7 @@
 ||nova-client.st^
 ||nova-healthcare.actonservice.com^
 ||nova.dice.net^
+||nova.gerhodd.com^
 ||novaabrilnet.goaserv.com^
 ||novadune.com^
 ||novagames.cc^
@@ -95682,6 +95732,7 @@
 ||oiluduwwfxxng.site^
 ||oilygams.shop^
 ||oilylimit.com^
+||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
@@ -97170,6 +97221,8 @@
 ||oringo-client.com^
 ||oringosmod.com^
 ||orion.bendingspoons.com^
+||orion.gerhodd.com^
+||orion83.gerhodd.com^
 ||orionember.com^
 ||orionkeraily.fi^
 ||orionmarketing.actonservice.com^
@@ -100925,6 +100978,7 @@
 ||pixel.ex.co^
 ||pixel.facebook.com^
 ||pixel.fohr.co^
+||pixel.gerhodd.com^
 ||pixel.glimr.io^
 ||pixel.homebook.pl^
 ||pixel.innocom.vn^
@@ -100990,6 +101044,7 @@
 ||pixel.yola.com^
 ||pixel2.realclever.com^
 ||pixel6.wp.pl^
+||pixel94.gerhodd.com^
 ||pixelcounter.marca.com^
 ||pixeledhub.com^
 ||pixeleze.com^
@@ -101476,6 +101531,7 @@
 ||play.b-t11.com^
 ||play.colorplay.fun^
 ||play.fanslide.com^
+||play.gerhodd.com^
 ||play.goldplay.me^
 ||play.jdb888.club^
 ||play.journey8.com^
@@ -101495,6 +101551,7 @@
 ||play.waka8et.com^
 ||play.wan.panda.tv^
 ||play.wavelength.zone^
+||play30.gerhodd.com^
 ||play4traffic.com^
 ||playable-stats.mindworks-creative.com^
 ||playafterdark.com^
@@ -103012,6 +103069,7 @@
 ||primavera.actonservice.com^
 ||prime-ever.com^
 ||prime-vpnet.com^
+||prime.gerhodd.com^
 ||prime.net.jumia.co.tz^
 ||prime420.net^
 ||primead.jp^
@@ -103149,6 +103207,7 @@
 ||pro.baidu.com^
 ||pro.bizportal.co.il^
 ||pro.cn^
+||pro.gerhodd.com^
 ||pro.heiguang.com^
 ||pro.hoye.letv.com^
 ||pro.iweihai.cn^
@@ -103162,6 +103221,7 @@
 ||proapoetics.com^
 ||proarmyduskingtaenial.cfd^
 ||proasuresh.com^
+||probability31.com^
 ||probablebassinvoke.com^
 ||probablepartner.com^
 ||probalanvils.cfd^
@@ -106251,6 +106311,8 @@
 ||quantedmesquin.qpon^
 ||quanticcoterie.cyou^
 ||quantserve.com^
+||quantum.gerhodd.com^
+||quantum72.gerhodd.com^
 ||quantumads.com^
 ||quantumdex.io^
 ||quantumlagoon.com^
@@ -111489,6 +111551,7 @@
 ||rumt-zh.com^
 ||rumtgbtbgtixo.site^
 ||run-syndicate.com^
+||run.gerhodd.com^
 ||run.go-track.net^
 ||runative-syndicate.com^
 ||runative.com^
@@ -113830,6 +113893,7 @@
 ||sbtiulwkstzpt.space^
 ||sbttlj.togetter.com^
 ||sbvlizqzbccif.space^
+||sbvpsl7wxa.com^
 ||sbvxtnnfuwnkv.space^
 ||sbw.ysjweb.com^
 ||sbwpwveyqunmi.space^
@@ -116167,6 +116231,7 @@
 ||settlingbucket.com^
 ||settlingdishwasher.com^
 ||setup.physiapp.com^
+||setup31.gerhodd.com^
 ||setupad.net^
 ||setupmonarchyconnections.com^
 ||setuptrust.com^
@@ -116792,6 +116857,7 @@
 ||shieldsompay.qpon^
 ||shiersgilling.com^
 ||shieryuefajkix.com^
+||shift.gerhodd.com^
 ||shihuo-new.log.shihuocdn.cn^
 ||shihuo.log.shihuocdn.cn^
 ||shiismlarder.cfd^
@@ -117159,6 +117225,7 @@
 ||sienitemarek.cfd^
 ||sienokeeryirp.online^
 ||sieostialsaphena.cfd^
+||sierra.gerhodd.com^
 ||sierraechappetweeze.cyou^
 ||sierrakermit.com^
 ||sierrakonradreorganize.com^
@@ -121846,6 +121913,7 @@
 ||soladelapse.qpon^
 ||solanosawmont.cyou^
 ||solanrenegueacies.cyou^
+||solar.gerhodd.com^
 ||solar.sharpmarketing.eu^
 ||solar.sunpower.com^
 ||solar.sunpowercorp.com^
@@ -122683,6 +122751,7 @@
 ||spargetunful.cfd^
 ||spark-dev.ad4game.com^
 ||spark.ad4game.com^
+||spark.gerhodd.com^
 ||spark.thelyst.com^
 ||sparkbeach.me^
 ||sparkgoal.com^
@@ -123062,6 +123131,7 @@
 ||sportybrains.com^
 ||sportyforum.com^
 ||spot-01.atas.io^
+||spot.gerhodd.com^
 ||spot.spsfactory.com^
 ||spotforlee.com^
 ||spotlersearchanalytics.com^
@@ -124287,6 +124357,7 @@
 ||stablesunflower.com^
 ||stabsrunner.com^
 ||stack-sonar.com^
+||stack.gerhodd.com^
 ||stackadapt.com^
 ||stackattacka.com^
 ||stackcoalitionmole.com^
@@ -124474,6 +124545,7 @@
 ||start.adelaide.edu.au^
 ||start.amateurcommunity.com^
 ||start.digitaltext.rtl.de^
+||start.gerhodd.com^
 ||start.hearsaysocial.com^
 ||start.luscii.com^
 ||start.mediware.com^
@@ -124483,6 +124555,7 @@
 ||start.sexpartnercommunity.com^
 ||start.sharpclinical.com^
 ||start.spark-thinking.com^
+||start79.gerhodd.com^
 ||startapp.com^
 ||startappexchange.com^
 ||startappservice.com^
@@ -125057,7 +125130,6 @@
 ||static.i-bidder.com^
 ||static.i.mediav.com^
 ||static.ichehome.com^
-||static.ilclock.com^
 ||static.imagineobx.com^
 ||static.img.imagecdn.cn^
 ||static.imprexis.biz^
@@ -128479,6 +128551,7 @@
 ||sync.ero-advertising.com^
 ||sync.extend.tv^
 ||sync.fastclick.net^
+||sync.gerhodd.com^
 ||sync.getpublica.com^
 ||sync.gonet-ads.com^
 ||sync.gsyndication.com^
@@ -131465,6 +131538,7 @@
 ||thensephasstooker.cfd^
 ||thenverser.cyou^
 ||theonecdn.com^
+||theonepropertydevelopment.com^
 ||theonesstoodtheirground.com^
 ||theorem12.top^
 ||theoreticalchatter.com^
@@ -136534,7 +136608,9 @@
 ||travis.bosscasinos.com^
 ||traxex.gannettdigital.com^
 ||traxltbwvenps.website^
+||tray.gerhodd.com^
 ||tray0bury.com^
+||tray31.gerhodd.com^
 ||trbas.com^
 ||trbpuxwbtvfnn.space^
 ||trc-china.taboola.com^
@@ -139975,9 +140051,12 @@
 ||unlitui.com^
 ||unloadonly.com^
 ||unloadyourself.com^
+||unlock-tool.cc^
+||unlock-tools.org^
 ||unlockads.com^
 ||unlockedforward.com^
 ||unlockfilenow.com^
+||unlocktool.click^
 ||unlocky.org^
 ||unlocky.xyz^
 ||unlsgohnfabkf.site^
@@ -142059,6 +142138,7 @@
 ||vaguishmonks.cyou^
 ||vaguishtrepak.com^
 ||vahanagigge.cyou^
+||vahanechalan.duckdns.org^
 ||vahlnd.bogsfootwear.com^
 ||vahqmyowjp.com^
 ||vahwhnqhkkpts.site^
@@ -142511,6 +142591,7 @@
 ||veerypiracy.cfd^
 ||veezljzoaejol.top^
 ||vefmfptjnucij.online^
+||vega.gerhodd.com^
 ||vegaschina.cn^
 ||vegetableamusement.xyz^
 ||vegetablebleachdeprive.com^
@@ -147090,10 +147171,12 @@
 ||win-winfuture.cn^
 ||win.down.55kantu.com^
 ||win.gdt.qq.com^
+||win.gerhodd.com^
 ||win.staticstuff.net^
 ||win10.ipv6.microsoft.com^
 ||win1710.ipv6.microsoft.com^
 ||win4.notifysrv.com^
+||win49.gerhodd.com^
 ||win8.ipv6.microsoft.com^
 ||winads.cn^
 ||winasdaq.com^
@@ -157273,6 +157356,7 @@
 ||zonariabema.cyou^
 ||zone1.bestbdsm24.com^
 ||zone1.bestporn24.com^
+||zone21.gerhodd.com^
 ||zonealta.com^
 ||zonedguenonpayt.qpon^
 ||zonedphenosebetroth.cfd^

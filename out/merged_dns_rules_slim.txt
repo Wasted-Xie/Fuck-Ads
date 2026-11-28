@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-27 18:37:15
-! Block rules: 142178
+! Generated: 2026-11-28 01:44:48
+! Block rules: 142183
 ! Whitelist rules: 388
 ! Max limit: none (lossless dedup only)
 ! Sources (China only):
@@ -12,7 +12,7 @@
 !   - anti-ad [w=5] block 101989
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5869
+!   - easylistchina [w=3] block 5874
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -3281,6 +3281,7 @@
 ||6pal.consobaby.com^
 ||6pctuhriw.com^
 ||6ped2nd3yp.com^
+||6pmdcigfjy.com^
 ||6pqv5npqb3nrz8.cfd^
 ||6px1vsaq0h.com^
 ||6q77vsjez1.com^
@@ -21346,6 +21347,7 @@
 ||bima.weathercn.com^
 ||bimbim.com^
 ||bimboramtils.com^
+||bimbutzhlm.icu^
 ||biminibliss.rwbimini.com^
 ||biminipasan.cyou^
 ||bimkikamraw.in^
@@ -32389,6 +32391,7 @@
 ||czeqgnnrivwmp.space^
 ||czeqjvr.com^
 ||czernik.org^
+||czeudfxm.com^
 ||czeuvjzicvhng.site^
 ||czf.cchfjz.com^
 ||czfjzpxdykhtz.space^
@@ -92595,6 +92598,7 @@
 ||proapoetics.com^
 ||proarmyduskingtaenial.cfd^
 ||proasuresh.com^
+||probability31.com^
 ||probablebassinvoke.com^
 ||probablepartner.com^
 ||probalanvils.cfd^
@@ -102264,6 +102268,7 @@
 ||sbtiulwkstzpt.space^
 ||sbttlj.togetter.com^
 ||sbvlizqzbccif.space^
+||sbvpsl7wxa.com^
 ||sbvxtnnfuwnkv.space^
 ||sbw.ysjweb.com^
 ||sbwpwveyqunmi.space^
