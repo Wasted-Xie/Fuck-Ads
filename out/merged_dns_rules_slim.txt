@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-28 01:44:48
-! Block rules: 142183
+! Generated: 2026-11-28 09:39:51
+! Block rules: 142187
 ! Whitelist rules: 388
 ! Max limit: none (lossless dedup only)
 ! Sources (China only):
@@ -12,7 +12,7 @@
 !   - anti-ad [w=5] block 101989
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5874
+!   - easylistchina [w=3] block 5878
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -3649,6 +3649,7 @@
 ||7t.57r4h8y2wycn42b.cyou^
 ||7t2j56vcv4zi8q395jnp8mv3mxl4.cfd^
 ||7tbjg1umzwheog959ur.cfd^
+||7tbs5iz3q6.com^
 ||7tm.nuibkb6t38m1k5.cyou^
 ||7tshsz6k1.com^
 ||7u56ymmz9f6imft6jnhf5w.rest^
@@ -94338,6 +94339,7 @@
 ||qbhsocu.com^
 ||qbiapxkofrlix.online^
 ||qbiavgzkhyqji.space^
+||qbicp2n4d4.com^
 ||qbipmmfyscior.site^
 ||qbixxhbamudnt.space^
 ||qbjjhdagqlpbm.site^
@@ -102925,6 +102927,7 @@
 ||sdtieta.com^
 ||sdtwvqywgbjgw.website^
 ||sdtzadpayrgsc.space^
+||sdveio8xk2.com^
 ||sdvpvjlspoz.com^
 ||sdvwvbayyhvzp.website^
 ||sdxitong.com^
@@ -135085,6 +135088,7 @@
 ||wwww.649649.com^
 ||wwwwzebojoqww.top^
 ||wwxeyxdyyitzl.space^
+||wwyheoyifctigp.com^
 ||wwyoqaf3g.com^
 ||wwyorfapt.in^
 ||wwyoyuutoudbf.space^

@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-28 01:44:47
-! Block rules: 158169
+! Generated: 2026-11-28 09:39:50
+! Block rules: 158173
 ! Whitelist rules: 388
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101989 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5874 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5878 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -4952,6 +4952,7 @@
 ||7t.57r4h8y2wycn42b.cyou^
 ||7t2j56vcv4zi8q395jnp8mv3mxl4.cfd^
 ||7tbjg1umzwheog959ur.cfd^
+||7tbs5iz3q6.com^
 ||7tm.nuibkb6t38m1k5.cyou^
 ||7tshsz6k1.com^
 ||7u56ymmz9f6imft6jnhf5w.rest^
@@ -105139,6 +105140,7 @@
 ||qbhsocu.com^
 ||qbiapxkofrlix.online^
 ||qbiavgzkhyqji.space^
+||qbicp2n4d4.com^
 ||qbipmmfyscior.site^
 ||qbixxhbamudnt.space^
 ||qbjjhdagqlpbm.site^
@@ -114627,6 +114629,7 @@
 ||sdtwvqywgbjgw.website^
 ||sdtzadpayrgsc.space^
 ||sdu.adwo.com^
+||sdveio8xk2.com^
 ||sdvpvjlspoz.com^
 ||sdvwvbayyhvzp.website^
 ||sdxitong.com^
@@ -150577,6 +150580,7 @@
 ||wwww.adleads.com^
 ||wwwwzebojoqww.top^
 ||wwxeyxdyyitzl.space^
+||wwyheoyifctigp.com^
 ||wwyoqaf3g.com^
 ||wwyorfapt.in^
 ||wwyoyuutoudbf.space^
