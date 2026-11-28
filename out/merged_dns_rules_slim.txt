@@ -3,8 +3,8 @@
 ! Description: 面向 229MB 级内存软路由的极简规则集；仅使用国内规则源，
 !              已做父域无损收敛 + 白名单冲突消除 + 价值排序裁剪；
 !              与全量/lite 版共用同一份白名单
-! Generated: 2026-11-28 09:39:51
-! Block rules: 142187
+! Generated: 2026-11-28 17:53:34
+! Block rules: 142190
 ! Whitelist rules: 388
 ! Max limit: none (lossless dedup only)
 ! Sources (China only):
@@ -12,7 +12,7 @@
 !   - anti-ad [w=5] block 101989
 !   - yhosts [w=4] block 6419
 !   - adgk [w=3] block 3209
-!   - easylistchina [w=3] block 5878
+!   - easylistchina [w=3] block 5881
 !   - ad-wars [w=3] block 1645
 !   - goodbyeads_dns [w=3] block 121721
 !   - cjx-annoyance [w=2] block 159
@@ -18452,6 +18452,7 @@
 ||awecre.com^
 ||awecrptjmp.com^
 ||aweekyeasty.com^
+||awej1m7rwu.com^
 ||awejmp.com^
 ||awembd.com^
 ||awemdia.com^
@@ -43141,6 +43142,7 @@
 ||eperlanskiffs.qpon^
 ||epernn.cn^
 ||epezqy.plaisio.gr^
+||epfbzwz7ni.com^
 ||epfpjvxydyxux.website^
 ||epglwmppludtu.online^
 ||eph-adsjutarnji.cdn.sysbee.net^
@@ -94813,6 +94815,7 @@
 ||qixipi.kathykuohome.com^
 ||qixiwangluo.com^
 ||qixledkawgizq.space^
+||qixw9yf7wy.com^
 ||qiydigatu.com^
 ||qiye11.ejunshi.net^
 ||qiyeb.iaskbus.com^

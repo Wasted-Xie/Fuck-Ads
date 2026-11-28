@@ -2,14 +2,14 @@
 ! Title: Merged DNS blocklist - LITE (China-focused)
 ! Description: 面向极低配置软路由的精简规则，优先保留国内域名拦截；
 !              已排除翻墙类内容，白名单与全量版 merged_dns_rules.txt 保持一致
-! Generated: 2026-11-28 09:39:50
-! Block rules: 158173
+! Generated: 2026-11-28 17:53:32
+! Block rules: 158187
 ! Whitelist rules: 388
 ! Sources (China-focused only):
 !   - adblockdnslite: 217 Lite（仅国内域名） (block 8480 / white 16, priority 1)
 !   - anti-ad: anti-AD（国内优质） (block 101989 / white 49, priority 2)
 !   - adgk: ADgk（国内） (block 3209 / white 29, priority 2)
-!   - easylistchina: EasyList China (block 5878 / white 11, priority 2)
+!   - easylistchina: EasyList China (block 5881 / white 11, priority 2)
 !   - yhosts: yhosts（国内站点） (block 6419 / white 0, priority 2)
 !   - ad-wars: 大圣净化（国内视频） (block 1645 / white 0, priority 2)
 !   - cjx-annoyance: CJX's Annoyance (block 159 / white 0, priority 3)
@@ -17,7 +17,7 @@
 !   - xinggsf-mv: 乘风视频规则 (block 27 / white 0, priority 3)
 !   - goodbyeads_dns: GOODBYEADS（国内项目） (block 121721 / white 0, priority 3)
 !   - 1024_hosts: 1024_hosts（成人/赌博站点） (block 3240 / white 0, priority 4)
-!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2242 / white 0, priority 5)
+!   - filter_11: URLHaus（恶意网站/钓鱼） (block 2249 / white 0, priority 5)
 !
 ||*-analytics*.huami.com^
 ||*.biz5.sandai.net^
@@ -528,6 +528,7 @@
 ||10sn95to9.de^
 ||10stepswp.advancedtech.com^
 ||10xlaunch.ai^
+||10xmac.com^
 ||11.96131.com.cn^
 ||11.golang8.com^
 ||11.yiqig.cn^
@@ -958,6 +959,7 @@
 ||13p76nnir.de^
 ||13tohng.h7fz84h7m2wmign5.cfd^
 ||13yg.cn^
+||14-0-204-188.static.pccw-hkt.com^
 ||1414.hexa.su^
 ||142801df41.ca2865fb41.com^
 ||142904.com^
@@ -1064,6 +1066,7 @@
 ||177o.com^
 ||177tvbxs.com^
 ||178-83-121-204.cprapid.com^
+||178.248.3.202.ll.sta.mana.pf^
 ||178d4a7678.11b5e84fb9.com^
 ||178gg.com^
 ||1797wan.com^
@@ -2024,7 +2027,6 @@
 ||3.km7ru2n2jhtfjurotvho91ulyl4gk1121v.cfd^
 ||3.ssqzj.com^
 ||3.up.qingdaonews.com^
-||3.zhzy999.net^
 ||3.zhzy999.net3.zhzy999.net^
 ||3000fromenterprises.net^
 ||300daytravel.com^
@@ -13366,7 +13368,6 @@
 ||admin.byte.in.ua^
 ||admin.etology.com^
 ||admin.exoclick.com^
-||admin.gestroom.it^
 ||admin.gettopple.com^
 ||admin.giaminhmedia.vn^
 ||admin.jetsetz.com^
@@ -23326,6 +23327,7 @@
 ||awecre.com^
 ||awecrptjmp.com^
 ||aweekyeasty.com^
+||awej1m7rwu.com^
 ||awejmp.com^
 ||awembd.com^
 ||awemdia.com^
@@ -40839,7 +40841,6 @@
 ||dasdase13.icu^
 ||dasensiblem.org^
 ||daserver.ultraweb.hu^
-||dasgems.com^
 ||dash.bloblohub.com^
 ||dash.ezmob.com^
 ||dash.getsitecontrol.com^
@@ -41956,6 +41957,7 @@
 ||dd.browser.360.cn^
 ||dd.control4.com^
 ||dd.dante2007.com^
+||dd.feelkls.icu^
 ||dd.g2.com^
 ||dd.garena.com^
 ||dd.iask.cn^
@@ -44738,6 +44740,7 @@
 ||dof9zd9l290mz.cloudfront.net^
 ||doffscrumps.shop^
 ||doffsmofette.cfd^
+||dofpod.com^
 ||dog.christinamoore.us^
 ||dog.justsketch.me^
 ||dog.orbit.love^
@@ -45131,7 +45134,6 @@
 ||download.createyournextcustomer.com^
 ||download.dackinc.com^
 ||download.dnv.com^
-||download.doumaibiji.cn^
 ||download.foden.site^
 ||download.frolit.io^
 ||download.fuyuncc.com^
@@ -45177,6 +45179,7 @@
 ||download.youzu.com^
 ||download.yuehlia.com^
 ||download.zikirapp.com^
+||download2.huduntech.com^
 ||download3.123cw.cn^
 ||downloada.dewmobile.net^
 ||downloadb.dewmobile.net^
@@ -50461,6 +50464,7 @@
 ||eperlanskiffs.qpon^
 ||epernn.cn^
 ||epezqy.plaisio.gr^
+||epfbzwz7ni.com^
 ||epfpjvxydyxux.website^
 ||epglwmppludtu.online^
 ||eph-adsjutarnji.cdn.sysbee.net^
@@ -53842,6 +53846,7 @@
 ||file.ipinyou.com.cn^
 ||file.iporngay.com^
 ||file.ppbk9.com^
+||file.uhsea.com^
 ||file3size.com^
 ||file47.goaserv.com^
 ||fileget.plumbco.co.nz^
@@ -56297,6 +56302,7 @@
 ||fuixbmllpzabg.website^
 ||fujbgprpchvlp.space^
 ||fujeigroup.com^
+||fujibildern.online^
 ||fujifilmdb.fujifilmdiosynth.com^
 ||fujita.go-static.info^
 ||fuk.xckxjtbg.com^
@@ -57341,6 +57347,7 @@
 ||gathermadness.com^
 ||gathersguidon.qpon^
 ||gatherup.com^
+||gathkenya.com^
 ||gathvx.com^
 ||gatlex.com^
 ||gatnyozjjafrg.site^
@@ -58692,7 +58699,6 @@
 ||gitajwl.com^
 ||gitalinnuance.com^
 ||gitcrumbs.com^
-||github-software.su^
 ||gitoku.com^
 ||gitoninmegrel.com^
 ||gitoxgmnnauiz.space^
@@ -60342,7 +60348,6 @@
 ||gowofhdmdtdhi.online^
 ||gowtkqcxftzkp.online^
 ||gowwtsfqlwyfxn.com^
-||goxlrutility.net^
 ||goxsvozfwjktk.space^
 ||goxuptilts.cyou^
 ||goylecalmy.com^
@@ -64406,6 +64411,7 @@
 ||hp.gcafe.vn^
 ||hp.hubs.vn^
 ||hp.hyperseqk.icu^
+||hp.mergeps.icu^
 ||hp.myway.com^
 ||hp.smiler-ad.com^
 ||hp.taboola.com^
@@ -65368,6 +65374,7 @@
 ||hyssmmwdgmpfg.website^
 ||hystericalcloth.com^
 ||hystericalfinger.com^
+||hystericproject.xyz^
 ||hyt.comp.360os.com^
 ||hythcbagqssst.website^
 ||hythroqu.com^
@@ -76966,6 +76973,7 @@
 ||lemnisk.co^
 ||lemogracorban.shop^
 ||lemonadds.com^
+||lemonbalmstele.net^
 ||lemonpi.io^
 ||lemonpier.com^
 ||lemonsandjoy.com^
@@ -80198,7 +80206,6 @@
 ||lominglaes.com^
 ||lomvmz5ze3.com^
 ||lonarzelq.com^
-||londonairportstransfer.co.uk^
 ||londreschetahs.cyou^
 ||loneday.com^
 ||lonelyerror.com^
@@ -90499,6 +90506,7 @@
 ||msdk.qq.com^
 ||msdk.voiceads.cn^
 ||msdkcoll.emarbox.com^
+||msdnn.anondns.net^
 ||msdoj.com^
 ||msecret.cn^
 ||msecure108.com^
@@ -95733,7 +95741,6 @@
 ||oiluduwwfxxng.site^
 ||oilygams.shop^
 ||oilylimit.com^
-||oim.doganltd.com.tr^
 ||oimagea2.ydstatic.com^
 ||oimechirps.qpon^
 ||oimg.login.cnbc.com^
@@ -99865,6 +99872,7 @@
 ||peppedpiing.click^
 ||pepper.com^
 ||pepperjamnetwork.com^
+||peppermintpylon.net^
 ||peppermintthorpeguess.com^
 ||pepperrun.com^
 ||peppinisurus.cfd^
@@ -102439,6 +102447,7 @@
 ||possiblepencil.com^
 ||posst.co^
 ||possumlyeryspeckly.cyou^
+||post-49.com^
 ||post-log.pushwoosh.com^
 ||post.carte-gr.total.fr^
 ||post.ra.icast.cn^
@@ -104000,6 +104009,7 @@
 ||pub-5aaa0feaeca64ddda0e256f8793ca2fd.r2.dev^
 ||pub-5e5552f9629e4e2eadd17bbb2d62cd4a.r2.dev^
 ||pub-6a90252f6d70443d960d6ac029dbd446.r2.dev^
+||pub-720ec92112d749e2a923776fab99461d.r2.dev^
 ||pub-72295f71e45d431995028c79cf261dae.r2.dev^
 ||pub-7390aebc53504408b09c0dc5390d6cc4.r2.dev^
 ||pub-77d009eac01a41e0a84eaf9d00acd597.r2.dev^
@@ -105621,6 +105631,7 @@
 ||qixipi.kathykuohome.com^
 ||qixiwangluo.com^
 ||qixledkawgizq.space^
+||qixw9yf7wy.com^
 ||qiydigatu.com^
 ||qiye11.ejunshi.net^
 ||qiyeb.iaskbus.com^
@@ -108561,6 +108572,7 @@
 ||rencontreadultere.club^
 ||rencontresparis2015.com^
 ||rendedcayuse.com^
+||render-96.com^
 ||render-server.cdn.bcebos.com^
 ||renderbetter.net^
 ||rendfy.com^
@@ -109999,6 +110011,7 @@
 ||rnywgmiidmivb.online^
 ||rnzisffvgfmjq.online^
 ||ro-go.experian.com^
+||ro-shade.lol^
 ||roachesagistorzizzle.qpon^
 ||roadcontagion.com^
 ||roaddynamics.com^
@@ -121846,7 +121859,6 @@
 ||soft.data.weather.360.cn^
 ||soft.jiegeng.com^
 ||soft.tbs.imtt.qq.com^
-||soft.wsyhn.com^
 ||soft.zhidian3g.cn^
 ||softballabnegatemailman.com^
 ||softballpeckrobust.com^
@@ -125286,6 +125298,7 @@
 ||static.time-bid.com^
 ||static.timetreeads.com^
 ||static.tionhesaidnd.org^
+||static.tnkjmec.com^
 ||static.topxgun.com^
 ||static.toro-bid.com^
 ||static.trackandfieldnews.com^
@@ -140098,6 +140111,7 @@
 ||unojoin.com^
 ||unoldluridly.com^
 ||unoparty.online^
+||unoplaytogether.com^
 ||unoplayy.com^
 ||unostroagesdeel.cc^
 ||unovertkiths.qpon^
@@ -142934,6 +142948,7 @@
 ||vgexzbbuusqxf.space^
 ||vgf.zuihuixuan.com^
 ||vgfarjwduljqm.com^
+||vgfgfttfyug76567877655.cfd^
 ||vgfyzxruvnjfr.site^
 ||vghd.com^
 ||vghxvngafvxtf.space^
@@ -144843,7 +144858,6 @@
 ||w.yamaidei.cn^
 ||w.yinyuehu.cn^
 ||w.ymapp.com^
-||w.zhzy999.net^
 ||w0054.com^
 ||w0057.com^
 ||w0079.com^
